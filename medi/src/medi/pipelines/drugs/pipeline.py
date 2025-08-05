@@ -1,6 +1,6 @@
 
 from kedro.pipeline import node, Pipeline, pipeline
-from . import nodes, extract_ob, get_marketing
+from . import nodes, extract_ob, get_marketing, get_earliest_approval_date_ob
 
 
 
@@ -13,6 +13,12 @@ def create_pipeline(**kwargs) -> Pipeline:
             outputs = "ob-with-marketing-tags",
             name = "get-marketing-tags-ob"
         ),
+        node(
+            func=get_earliest_approval_date_ob.acquire_earliest_approval_dates,
+            inputs = "ob-with-marketing-tags",
+            outputs = "ob-reformatted-dates",
+            name = "reformat-dates-ob"
+        )
         # node(
         #     func=nodes.create_standardized_columns,
         #     inputs=[
