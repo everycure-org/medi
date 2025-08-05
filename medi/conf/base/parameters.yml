@@ -18,3 +18,13 @@ name_resolver_params:
 
 orangebook_zip: https://www.fda.gov/media/76860/download?attachment
 
+
+standardization_cols_in_ob:
+  ingredients: Ingredient
+  approval_date: approval_date
+  marketing_status: marketing_status_usa
+
+standardization_cols_out_ob:
+  ingredients: source_ingredients
+  approval_date: earliest_approval_date
+  marketing_status_usa: marketing_status_usa

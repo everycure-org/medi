@@ -8,6 +8,8 @@ error_log:
   load_args:
     sep: "\t"
 
+
+
 # Orange book raw data extraction
 orange-book-products:
   type: pandas.CSVDataset
@@ -24,3 +26,7 @@ ob-with-marketing-tags:
 ob-reformatted-dates:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ob_with_approval_dates.csv
+
+ob-standardized:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ob_standardized.csv

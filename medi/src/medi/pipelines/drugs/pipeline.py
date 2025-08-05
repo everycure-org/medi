@@ -18,6 +18,16 @@ def create_pipeline(**kwargs) -> Pipeline:
             inputs = "ob-with-marketing-tags",
             outputs = "ob-reformatted-dates",
             name = "reformat-dates-ob"
+        ),
+        node(
+            func = nodes.standardize_dataframe,
+            inputs = [
+                "ob-reformatted-dates",
+                "params:standardization_cols_in_ob",
+                "params:standardization_cols_out_ob",
+            ],
+            outputs = "ob-standardized",
+            name = "standardize-orangebook"
         )
         # node(
         #     func=nodes.create_standardized_columns,
