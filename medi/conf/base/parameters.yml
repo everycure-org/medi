@@ -1,4 +1,4 @@
-nameres_params:
+nodenorm_params:
   base_url: https://nodenormalization-sri.renci.org/1.5/
   query: get_normalized_nodes
   params:
@@ -6,4 +6,15 @@ nameres_params:
     drug_chemical_conflate: True
     description: False
     individual_types: False
-    
+
+name_resolver_params:
+  url: https://name-resolution-sri.renci.org/
+  service: lookup
+  headers:
+    autocomplete_setting: true
+    id_limit: 10
+    offset: 0
+
+
+orangebook_zip: https://www.fda.gov/media/76860/download?attachment
+

@@ -6,7 +6,7 @@ from functools import cache
 
 
 
-def identify(name: str, params: dict[str, str]):
+def identify(name: str, params: dict):
     """
     Args:
         name (str): string to be identified
@@ -17,7 +17,7 @@ def identify(name: str, params: dict[str, str]):
         resolvedLabel (str): labels associated with respective resolvedName items.
 
     """
-    if not name:
+    if not name or type(name) == float:
         print("No name provided or blank name provided")
         return ['Error'], ['Error']
     

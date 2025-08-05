@@ -53,9 +53,11 @@ def normalize_column(df:pd.DataFrame, column_name:str) -> pd.DataFrame:
     return df
 
 
+def batch_normalize(items: list[str], norm_params:dict[str, bool])
+
 
 @cache
-def normalize(item: str):
+def normalize(item: str, norm_params:dict):
     item_request = f"https://nodenormalization-sri.renci.org/1.5/get_normalized_nodes?curie={item}&conflate=true&drug_chemical_conflate=true&description=false&individual_types=false"    
     success = False
     failedCounts = 0
