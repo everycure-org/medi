@@ -10,33 +10,41 @@ import tempfile
 from tqdm import tqdm
 
 
-def standardize_dataframe(df, cols_in, cols_out):
+def standardize_dataframe (df, col_mapping):
     """
-    Select and rename columns in a DataFrame according to mapping dicts.
+    Extracts specified columns from a DataFrame and renames them.
 
-    Parameters:
-    - df (pd.DataFrame): The input DataFrame.
-    - cols_in (dict): Mapping of desired column names to actual column names in df.
-    - cols_out (dict): Mapping of actual column names to new column names for output.
+    Args:
+        df (pd.DataFrame): The input DataFrame.
+        col_mapping (dict): Dictionary where keys are source column names,
+                            and values are new column names.
 
     Returns:
-    - pd.DataFrame: A new DataFrame with selected and renamed columns.
+        pd.DataFrame: A new DataFrame with selected and renamed columns.
     """
-    # Map input keys to actual column names
-    selected_cols = {key: cols_in[key] for key in cols_in if cols_in[key] in df.columns}
-
-    # Create inverse map of cols_out: actual_col_name -> new_col_name
-    rename_map = {cols_in[k]: cols_out[v] if v in cols_out else v for k, v in cols_in.items() if cols_in[k] in df.columns}
-
-    # Select and rename
-    return df[list(selected_cols.values())].rename(columns=rename_map)
+    return df[list(col_mapping.keys())].rename(columns=col_mapping)
 
 def add_full_column_identical_strings(df, colname:str, value: str) -> pd.DataFrame:
     df[colname]=value
     return df
 
-def deduplicate(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
-    
+def deduplicate_dataframe(df: pd.DataFrame, dedup_cols: list) -> pd.DataFrame:
+    """
+    Deduplicates a DataFrame based on a subset of columns.
+
+    Parameters:
+        df (pd.DataFrame): The input DataFrame.
+        dedup_cols (list): List of column names to deduplicate on.
+
+    Returns:
+        pd.DataFrame: A deduplicated DataFrame.
+    """
+    if not all(col in df.columns for col in dedup_cols):
+        missing = [col for col in dedup_cols if col not in df.columns]
+        raise ValueError(f"Columns not found in DataFrame: {missing}")
+
+    deduped_df = df.drop_duplicates(subset=dedup_cols).reset_index(drop=True)
+    return deduped_df
 
 
 

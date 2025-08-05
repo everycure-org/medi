@@ -23,11 +23,19 @@ def create_pipeline(**kwargs) -> Pipeline:
             func = nodes.standardize_dataframe,
             inputs = [
                 "ob-reformatted-dates",
-                "params:standardization_cols_in_ob",
-                "params:standardization_cols_out_ob",
+                "params:standardization_mapping_ob",
             ],
             outputs = "ob-standardized",
             name = "standardize-orangebook"
+        ),
+        node(
+            func=nodes.deduplicate_dataframe,
+            inputs = [
+                "ob-standardized",
+                "params:deduplication_columns",
+            ],
+            outputs = "ob-deduplicated",
+            name = "deduplicate-ob"
         )
         # node(
         #     func=nodes.create_standardized_columns,

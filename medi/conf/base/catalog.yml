@@ -18,15 +18,15 @@ orange-book-products:
     sep: '~'
   save_args:
     sep: '~'
-
 ob-with-marketing-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ob_with_marketing_tags.csv
-
 ob-reformatted-dates:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ob_with_approval_dates.csv
-
 ob-standardized:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ob_standardized.csv
+ob-deduplicated:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ob_deduplicated.csv
