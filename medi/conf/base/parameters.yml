@@ -1,0 +1,9 @@
+nameres_params:
+  base_url: https://nodenormalization-sri.renci.org/1.5/
+  query: get_normalized_nodes
+  params:
+    conflate: True
+    drug_chemical_conflate: True
+    description: False
+    individual_types: False
+    
