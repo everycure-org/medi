@@ -10,10 +10,10 @@ nodenorm_params:
 name_resolver_params:
   url: https://name-resolution-sri.renci.org/
   service: lookup
-  headers:
-    autocomplete_setting: true
-    id_limit: 10
-    offset: 0
+  
+  autocomplete_setting: true
+  id_limit: 10
+  offset: 0
 
 
 orangebook_zip: https://www.fda.gov/media/76860/download?attachment

@@ -30,3 +30,6 @@ ob-standardized:
 ob-deduplicated:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ob_deduplicated.csv
+ob-nameresolved:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ob_with_ids.csv

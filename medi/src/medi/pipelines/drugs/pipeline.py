@@ -2,6 +2,9 @@
 from kedro.pipeline import node, Pipeline, pipeline
 from . import nodes, extract_ob, get_marketing, get_earliest_approval_date_ob
 
+import os
+#print(str(os.getcwd()))
+from medi.utils import nameres
 
 
 
@@ -24,9 +27,10 @@ def create_pipeline(**kwargs) -> Pipeline:
             inputs = [
                 "ob-reformatted-dates",
                 "params:standardization_mapping_ob",
+
             ],
             outputs = "ob-standardized",
-            name = "standardize-orangebook"
+            name = "standardize-ob"
         ),
         node(
             func=nodes.deduplicate_dataframe,
@@ -36,6 +40,16 @@ def create_pipeline(**kwargs) -> Pipeline:
             ],
             outputs = "ob-deduplicated",
             name = "deduplicate-ob"
+        ),
+        node(
+            func = nameres.nameres_column,
+            inputs = [
+                "ob-deduplicated",
+                "params:standardization_mapping_ob.Ingredient",
+                "params:name_resolver_params"
+            ],
+            outputs = "ob-nameresolved",
+            name = "nameres-ob"
         )
         # node(
         #     func=nodes.create_standardized_columns,
