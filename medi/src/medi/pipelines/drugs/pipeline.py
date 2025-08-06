@@ -5,6 +5,8 @@ from . import nodes, extract_ob, get_marketing, get_earliest_approval_date_ob
 import os
 #print(str(os.getcwd()))
 from medi.utils import nameres
+from medi.utils import openai_tags
+
 
 
 
@@ -50,6 +52,11 @@ def create_pipeline(**kwargs) -> Pipeline:
             ],
             outputs = "ob-nameresolved",
             name = "nameres-ob"
+        ),
+        node(
+            func=nodes.add_full_column_identical_strings,
+            inputs = "ob-nameresolved",
+            outputs="ob-usa-approved-tags"
         )
         # node(
         #     func=nodes.create_standardized_columns,

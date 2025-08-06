@@ -1,5 +1,4 @@
-# ERRORS
-
+# Error Log
 error_log:
   type: pandas.CSVDataset
   filepath: data/08_reporting/errors.tsv
@@ -33,3 +32,8 @@ ob-deduplicated:
 ob-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ob_with_ids.csv
+
+ob-usa-approved-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ob_with_usa_tag.csv
+  

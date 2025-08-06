@@ -45,7 +45,3 @@ def deduplicate_dataframe(df: pd.DataFrame, dedup_cols: list) -> pd.DataFrame:
 
     deduped_df = df.drop_duplicates(subset=dedup_cols).reset_index(drop=True)
     return deduped_df
-
-
-
-

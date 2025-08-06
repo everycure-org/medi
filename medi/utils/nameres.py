@@ -73,3 +73,4 @@ def nameres_multiple_columns(df: pd.DataFrame, colnames: list[str], params:dict)
         df = nameres_column(df, item, params)
     
     return df
+
