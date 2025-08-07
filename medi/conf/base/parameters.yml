@@ -1,3 +1,6 @@
+true_bool: True
+false_bool: False
+
 nodenorm_params:
   base_url: https://nodenormalization-sri.renci.org/1.5/
   query: get_normalized_nodes
@@ -27,11 +30,13 @@ deduplication_columns:
   - marketing_status_usa
 
 approval_tags:
-  - usa: approved_usa
-  - eur: approved_europe
-  - jpn: approved_japan
+  usa: approved_usa
+  eur: approved_europe
+  jpn: approved_japan
 
-enrichment_tags_ec:
+
+
+enrichment_tags:
   steroid:
     input_col: label
     output_col: is_steroid
@@ -103,11 +108,23 @@ enrichment_tags_ec:
       prompt: Is this drug used as a primary treatment for cancer or in conjunction with cancer therapy? Return TRUE or FALSE only.
       temperature: 0.2
 
-
-
-
-
-
+combo_therapy_tags:      
+  combination_therapy_tag_drug:
+    input_col: source_ingredients
+    output_col: is_combination_therapy
+    model_params:
+      model: gpt-4o
+      prompt: "Is the following a representation of a coformulated drug or combination therapy? If it is two salts of the same active moiety, do not consider it to be a combination therapy. Return TRUE or FALSE only. DRUG:"
+      temperature: 0
+  combination_therapy_split_drug:
+    input_col: source_ingredients
+    output_col: combination_therapy_ingredients
+    model_params:
+      model: gpt-4o
+      prompt: "Please split the drug name into a structured list of drugs eg 'drug1|drug2|drug3|...|drugN'. and return ONLY the list. DRUG:"
+      temperature: 0
+  
+component_ids_colname: ingredient_ids
 
 
 id_correct_incorrect_tag_drug:

@@ -55,9 +55,35 @@ def create_pipeline(**kwargs) -> Pipeline:
         ),
         node(
             func=nodes.add_full_column_identical_strings,
-            inputs = "ob-nameresolved",
-            outputs="ob-usa-approved-tags"
+            inputs = [
+                "ob-nameresolved",
+                "params:approval_tags.usa",
+                "params:true_bool",
+            ],
+            outputs="ob-usa-approved-tags",
+            name = "add-approval-tags-ob"
+        ),
+        node(
+            func=openai_tags.add_tags,
+            inputs = [
+                "ob-usa-approved-tags",
+                "params:combo_therapy_tags",
+            ],
+            outputs = "ob-combo-therapy-tags",
+            name = 'tag-combo-therapies-ob'
+        ),
+        node(
+            func=nameres.identify_components,
+            inputs=[
+                "ob-combo-therapy-tags",
+                "params:combo_therapy_tags.combination_therapy_split_drug.output_col",
+                "params:component_ids_colname",
+                "params:name_resolver_params",
+            ],
+            outputs = "ob-component-ids",
+            name = "identify-ingredients-ob"
         )
+
         # node(
         #     func=nodes.create_standardized_columns,
         #     inputs=[

@@ -9,7 +9,7 @@ error_log:
 
 
 
-# Orange book raw data extraction
+# Orange book list build
 orange-book-products:
   type: pandas.CSVDataset
   filepath: data/drugs/01_raw/products.txt
@@ -32,8 +32,12 @@ ob-deduplicated:
 ob-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ob_with_ids.csv
-
 ob-usa-approved-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ob_with_usa_tag.csv
-  
+ob-with-combo-therapy-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ob_combo_therapy_tags.csv
+ob-component-ids:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ob_combo_therapies_with_id.csv

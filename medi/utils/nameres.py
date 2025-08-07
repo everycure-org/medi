@@ -68,6 +68,18 @@ def nameres_column (df: pd.DataFrame, colname: str, params: dict) -> pd.DataFram
 
     return df
 
+def identify_components(df: pd.DataFrame, colname_in: str, colname_out:str, params: dict) -> pd.DataFrame:
+    out_ingredient_ids = []
+    for _, row in tqdm(df.iterrows(), total=len(df), desc="identifying combination therapy components"):
+        component_ids = []
+        components = row[colname_in].split("|")
+        for component in components:
+            id, _ = identify(component, params)
+            component_ids.append(id)
+        out_ingredient_ids.append(component_ids)
+    df[colname_out]=out_ingredient_ids
+    return df
+
 def nameres_multiple_columns(df: pd.DataFrame, colnames: list[str], params:dict) -> pd.DataFrame:
     for item in colnames:
         df = nameres_column(df, item, params)
