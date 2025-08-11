@@ -1,6 +1,7 @@
 true_bool: True
 false_bool: False
 
+
 nodenorm_params:
   base_url: https://nodenormalization-sri.renci.org/1.5/
   query: get_normalized_nodes
@@ -21,20 +22,37 @@ orangebook_zip: https://www.fda.gov/media/76860/download?attachment
 
 standardization_mapping_ob:
   Ingredient: source_ingredients
-  approval_date: approval_date
-  marketing_status_usa: marketing_status_usa
+  Approval_Date: approval_date
+  Type: marketing_status_usa
+
+standardization_mapping_ema:
+  International non-proprietary name (INN) / common name: source_ingredients
+  Marketing authorisation date: approval_date
+  ATC code (human): atc_code
+
+standardization_mapping_pmda:
+  "Active Ingredient (underlined: new active ingredient)": source_ingredients
+  Approval Date: approval_date
+
+standardization_mapping_purple_book:
+  "Proper Name": source_ingredients
+  Approval Date: approval_date
+  Marketing Status: marketing_status_usa
+
+
+deduplication_columns_usa:
+  - source_ingredients
+  - approval_date
+  - marketing_status_usa
 
 deduplication_columns:
   - source_ingredients
   - approval_date
-  - marketing_status_usa
 
 approval_tags:
   usa: approved_usa
   eur: approved_europe
   jpn: approved_japan
-
-
 
 enrichment_tags:
   steroid:
@@ -113,19 +131,18 @@ combo_therapy_tags:
     input_col: source_ingredients
     output_col: is_combination_therapy
     model_params:
-      model: gpt-4o
+      model: gpt-4.1
       prompt: "Is the following a representation of a coformulated drug or combination therapy? If it is two salts of the same active moiety, do not consider it to be a combination therapy. Return TRUE or FALSE only. DRUG:"
       temperature: 0
   combination_therapy_split_drug:
     input_col: source_ingredients
     output_col: combination_therapy_ingredients
     model_params:
-      model: gpt-4o
+      model: gpt-4.1
       prompt: "Please split the drug name into a structured list of drugs eg 'drug1|drug2|drug3|...|drugN'. and return ONLY the list. DRUG:"
       temperature: 0
   
 component_ids_colname: ingredient_ids
-
 
 id_correct_incorrect_tag_drug:
   model_params:
@@ -140,3 +157,11 @@ llm_best_id_tag_drug:
     temperature: 0
 
 
+date_reformatting_tag:      
+  params:
+    input_col: source_ingredients
+    output_col: reformatted_date_tag
+    model_params:
+      model: gpt-4.1
+      prompt: "Is the following a representation of a coformulated drug or combination therapy? If it is two salts of the same active moiety, do not consider it to be a combination therapy. Return TRUE or FALSE only. DRUG:"
+      temperature: 0

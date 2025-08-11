@@ -17,10 +17,14 @@ def identify(name: str, params: dict):
         resolvedLabel (str): labels associated with respective resolvedName items.
 
     """
+
+
+
     if not name or type(name) == float:
         print("No name provided or blank name provided")
         return ['Error'], ['Error']
-    
+    # need space following semicolon delimiter but eliminate double spaces
+    name = name.replace(";", "; ").replace("  ", " ")
     itemRequest = (params['url']+
                    params['service']+
                    '?string='+

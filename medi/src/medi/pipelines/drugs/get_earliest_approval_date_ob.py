@@ -2,7 +2,7 @@ import pandas as pd
 from tqdm import tqdm 
 from datetime import datetime
 
-def get_approval_dates(ob: pd.DataFrame, ingredient: str) -> list[str]:
+def get_approval_dates(df: pd.DataFrame, ingredient: str) -> list[str]:
     """
     Return all approval dates for a given ingredient string in the orange book dataframe.
 
@@ -13,12 +13,16 @@ def get_approval_dates(ob: pd.DataFrame, ingredient: str) -> list[str]:
     Returns:
         list[str]: list of dates. Note: may include the phrase 'Approved Prior to Jan 1, 1982' 
     """
-    indices = [i for i,x in enumerate(list(ob['Ingredient'])) if x==ingredient]
-    dates = list(ob["Approval_Date"][indices])
+    mask = df['source_ingredients']==ingredient
+    ing_df = df[mask]
+    return list(ing_df['approval_date'])
+    #indices = [i for i,x in enumerate(list(ob['Ingredient'])) if x==ingredient]
+    
+    #dates = list(ob["Approval_Date"][indices])
     # print(type(dates[0]))
     # print(ingredient)
     # print(dates)
-    return dates
+    #return dates
 
 
 def get_earliest_date_list(date_list):
@@ -67,7 +71,7 @@ def acquire_earliest_approval_dates(ob: pd.DataFrame) -> pd.DataFrame:
     cache = {}
     new_dates = []
     for idx, row in tqdm(ob.iterrows()):
-        ingredient = row['Ingredient']
+        ingredient = row['source_ingredients']
         if ingredient in cache:
             new_dates.append(cache[ingredient])
         else:

@@ -6,6 +6,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from tqdm import tqdm 
 
+
 def extract_outputs_and_prompts(data_dict):
     output_cols = []
     prompts = []
@@ -26,7 +27,7 @@ def add_tags(in_df: pd.DataFrame, tags: dict) -> pd.DataFrame:
     input_cols, feature_names, feature_descriptions, model, temp= extract_outputs_and_prompts(tags)
     for label_col, feature_name, feature_description, model, temp in tqdm(zip(input_cols, feature_names, feature_descriptions, model, temp)):
         if feature_name not in df.columns:
-            df = generate_features(df, feature_name, feature_description, label_col, model, temp)
+            df = generate_features(input_df=df, new_feature_name=feature_name, feature_description=feature_description, label_colname=label_col, model_name=model, temp=temp)
             print(f"{feature_name} generated")
         else:
             print(f"{feature_name} already exists")
@@ -59,7 +60,7 @@ def generate_features(input_df: pd.DataFrame, new_feature_name: str, feature_des
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         raise ValueError("OPENAI_API_KEY environment variable not set")
-    model = ChatOpenAI(name=model_name, temperature=temp, max_retries=3, model_kwargs={"response_format": {"type": "json_object"}})
+    model = ChatOpenAI(model=model_name, temperature=temp, max_retries=3, model_kwargs={"response_format": {"type": "json_object"}})
     df[new_feature_name] = None 
     prompt = ChatPromptTemplate.from_messages([
         (
@@ -77,9 +78,9 @@ def generate_features(input_df: pd.DataFrame, new_feature_name: str, feature_des
     ])
     chain = prompt | model
     response = chain.batch(list(df[label_colname]), config={"max_concurrency": 50})
-    for i, r in enumerate(response):
-        if not r:
-            response[i] = False
+    # for i, r in enumerate(response):
+    #     if not r:
+    #         response[i] = False
     feature_df = pd.DataFrame([json.loads(r.content) for r in response])
     df.update(feature_df)
     return df

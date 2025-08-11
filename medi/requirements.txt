@@ -11,3 +11,8 @@ tqdm
 openai
 langchain
 langchain_openai
+aiohttp
+requests
+openpyxl
+pypdf2
+pdfplumber

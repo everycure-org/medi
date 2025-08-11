@@ -19,25 +19,113 @@ orange-book-products:
     sep: '~'
 ob-with-marketing-tags:
   type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ob_with_marketing_tags.csv
+  filepath: data/drugs/02_intermediate/orangebook/ob_with_marketing_tags.csv
 ob-reformatted-dates:
   type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ob_with_approval_dates.csv
+  filepath: data/drugs/02_intermediate/orangebook/ob_with_approval_dates.csv
 ob-standardized:
   type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ob_standardized.csv
+  filepath: data/drugs/02_intermediate/orangebook/ob_standardized.csv
 ob-deduplicated:
   type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ob_deduplicated.csv
+  filepath: data/drugs/02_intermediate/orangebook/ob_deduplicated.csv
 ob-nameresolved:
   type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ob_with_ids.csv
+  filepath: data/drugs/02_intermediate/orangebook/ob_with_ids.csv
 ob-usa-approved-tags:
   type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ob_with_usa_tag.csv
+  filepath: data/drugs/02_intermediate/orangebook/ob_with_usa_tag.csv
 ob-with-combo-therapy-tags:
   type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ob_combo_therapy_tags.csv
+  filepath: data/drugs/02_intermediate/orangebook/ob_combo_therapy_tags.csv
 ob-component-ids:
   type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ob_combo_therapies_with_id.csv
+  filepath: data/drugs/02_intermediate/orangebook/ob_combo_therapies_with_id.csv
+
+# Purple Book list build
+purple-book-products:
+  type: pandas.CSVDataset
+  filepath: https://purplebooksearch.fda.gov/files/2025/purplebook-search-july-data-download.csv
+  load_args:
+    skiprows: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+pb-standardized:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_standardized.csv
+pb-marketing-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_marketing_status.csv
+pb-reformatted-dates:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_reformatted_dates.csv
+
+
+
+
+
+
+# EMA build
+ema-raw:
+  type: pandas.ExcelDataset
+  filepath: https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx
+  load_args:
+    skiprows: [0,1,2,3,4,5,6,7]
+ema-preprocessed:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_preprocessed.csv
+ema-standardized:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_standardized.csv
+ema-reformatted-dates:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_reformatted_dates.csv
+ema-deduplicated:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_deduplicated.csv
+ema-nameresolved:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_nameresolved.csv
+ema-approved-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_with_approval_tag.csv
+ema-combo-therapy-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_with_combo_therapy_tag.csv
+ema-component-ids:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_combo_therapies_with_id.csv
+
+
+# PMDA build
+
+pmda-products:
+  type: pandas.CSVDataset
+  filepath: data/drugs/01_raw/pmda_approvals.csv
+pmda-preprocessed:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_preprocessed.csv
+pmda-standardized:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_standardized.csv
+pmda-nameresolved:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_nameresolved.csv
+pmda-approved-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_with_approval_tags.csv
+pmda-combo-therapy-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_with_combo_therapy_tag.csv
+pmda-component-ids:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_combo_therapies_with_id.csv
+
+
+
+pmda-dates-reformatted:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_dates_reformatted.csv
+
+
+
+
+
