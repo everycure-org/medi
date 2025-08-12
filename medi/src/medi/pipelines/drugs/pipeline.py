@@ -7,6 +7,7 @@ import os
 from medi.utils import nameres
 from medi.utils import openai_tags
 from medi.utils import preprocess_lists
+from . import convert_dates_pb
 
 
 
@@ -117,13 +118,26 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = "get-marketing-tags-pb"
         ),
         node(
-            func=get_earliest_approval_date_ob.acquire_earliest_approval_dates,
+            func=get_earliest_approval_date_ob.convert_date_format,
             inputs = "pb-marketing-tags",
             outputs = "pb-reformatted-dates",
             name = "reformat-dates-pb"
         ),
-
-
+        node(
+            func=get_earliest_approval_date_ob.transform_dates_to_earliest,
+            inputs = "pb-reformatted-dates",
+            outputs = "pb-earliest-dates",
+            name = "get-earliest-dates-pb"
+        ),
+        node(
+            func=nodes.deduplicate_dataframe,
+            inputs = [
+                "pb-earliest-dates",
+                "params:deduplication_columns_usa",
+            ],
+            outputs = "pb-deduplicated",
+            name = "deduplicate-pb"
+        ),
 ##########################################################################################################
 ########### EMA ##########################################################################################
 ##########################################################################################################

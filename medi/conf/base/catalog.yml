@@ -57,6 +57,12 @@ pb-marketing-tags:
 pb-reformatted-dates:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/purplebook/pb_reformatted_dates.csv
+pb-earliest-dates:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_earliest_dates.csv
+pb-deduplicated:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_deduplicated.csv
 
 
 
