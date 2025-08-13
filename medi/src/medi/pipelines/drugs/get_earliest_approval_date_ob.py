@@ -34,16 +34,12 @@ def transform_dates_to_earliest(df:pd.DataFrame) -> pd.DataFrame:
     approval_dates = []
     for _, row in tqdm(df.iterrows(), total = len (df), desc = "transforming dates to earliest"):
         ingredient = row['source_ingredients']
-        print(ingredient)
         if ingredient in cache:
-            print(cache[ingredient])
             approval_dates.append(cache[ingredient])
         else:
             earliest_date = min(get_approval_dates(df, ingredient))
-            print(earliest_date)
             approval_dates.append(earliest_date)
             cache[ingredient]=earliest_date
-        
     df['approval_date']=approval_dates
     return df
 
@@ -96,8 +92,6 @@ def acquire_earliest_approval_dates(ob: pd.DataFrame) -> pd.DataFrame:
     cache = {}
     new_dates = []
     for idx, row in tqdm(ob.iterrows()):
-        print(type(row['approval_date']))
-        print(row('approval_date'))
         ingredient = row['source_ingredients']
         if ingredient in cache:
             new_dates.append(cache[ingredient])

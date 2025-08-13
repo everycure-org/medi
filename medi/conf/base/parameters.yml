@@ -20,6 +20,11 @@ name_resolver_params:
 
 orangebook_zip: https://www.fda.gov/media/76860/download?attachment
 
+
+standardization_mapping_general:
+  ingredients: source_ingredients
+  approval_date: approval_date
+
 standardization_mapping_ob:
   Ingredient: source_ingredients
   Approval_Date: approval_date
@@ -59,109 +64,109 @@ enrichment_tags:
     input_col: label
     output_col: is_steroid
     model_params: 
-      model: gpt-4o-mini
+      model: gpt-5-mini
       prompt: Is this drug a corticosteroid drug? Return TRUE or FALSE only.
-      temperature: 0.2
+      temperature: 1
   antibiotic:
     input_col: label
     output_col: is_antimicrobial
     model_params:
-      model: gpt-4o
+      model: gpt-5-mini
       prompt: "Are any of these drugs in any of the following drug classes: an antibiotic drug, an antiviral drug (usually end in '-vir' or '-udine'), an antiretroviral drug, an antiparasitic drug, or an antifungal drug? Return TRUE or FALSE only."
-      temperature: 0.2
+      temperature: 1
   chemotherapy:
     input_col: label
     output_col: is_chemotherapy
     model_params:
-      model: gpt-4o-mini
+      model: gpt-5-mini
       prompt: Is this drug a cytotoxic chemotherapy drug used to treat cancer? Return TRUE or FALSE only.
-      temperature: 0.2
+      temperature: 1
   glucose_regulator:
     input_col: label
     output_col: is_glucose_regulator
     model_params:
-      model: gpt-4o-mini
+      model: gpt-5-mini
       prompt: Is this drug a drug which is primarily used to regulate glucose levels? Return TRUE or FALSE only.
-      temperature: 0.2
+      temperature: 1
   vaccine_or_antigen:
     input_col: label
     output_col: is_vaccine_or_antigen
     model_params:
-      model: gpt-4o-mini
+      model: gpt-5-mini
       prompt: Is this drug a vaccine or antigen? Return TRUE or FALSE only.
-      temperature: 0.2
+      temperature: 1
   no_therapeutic_value:
     input_col: label
     output_col: is_no_therapeutic_value
     model_params:
-      model: gpt-4o
+      model: gpt-5-mini
       prompt: Could this drug be classified as having little potential therapeutic value? For example, sterile water, tryptan blue, copper, and soybean oil are considered low potential therapeutic value. Unusual drugs may still have therapeutic value - do not discount drugs just because they are not approve in the USA or Europe. Return TRUE or FALSE only.
-      temperature: 0.2
+      temperature: 1
   metallic_salt:
     input_col: label
     output_col: is_metallic_salt
     model_params:
-      model: gpt-4o
+      model: gpt-5-mini
       prompt: Is this drug a simple metallic salt? Return TRUE or FALSE only.
-      temperature: 0.2
+      temperature: 1
   allergen:
     input_col: label
     output_col: is_allergen
     model_params:
-      model: gpt-4o
+      model: gpt-5-mini
       prompt: Would this drug primarily used as an allergen for allergy testing? Return TRUE or FALSE only.
-      temperature: 0.2
+      temperature: 1
   diagnostic_or_radioisotope:
     input_col: label
     output_col: is_radioisotope_or_diagnostic_agent
     model_params:
-      model: gpt-4o
+      model: gpt-5-mini
       prompt: Is this drug primarily used as a radiolabel or diagnostic agent? Return TRUE or FALSE only.
-      temperature: 0.2
+      temperature: 1
   cancer_drug:
     input_col: label
     output_col: is_cancer_drug
     model_params:
-      model: gpt-4o
+      model: gpt-5-mini
       prompt: Is this drug used as a primary treatment for cancer or in conjunction with cancer therapy? Return TRUE or FALSE only.
-      temperature: 0.2
+      temperature: 1
 
 combo_therapy_tags:      
   combination_therapy_tag_drug:
     input_col: source_ingredients
     output_col: is_combination_therapy
     model_params:
-      model: gpt-4.1
+      model: gpt-5-mini
       prompt: "Is the following a representation of a coformulated drug or combination therapy? If it is two salts of the same active moiety, do not consider it to be a combination therapy. Return TRUE or FALSE only. DRUG:"
-      temperature: 0
+      temperature: 1
   combination_therapy_split_drug:
     input_col: source_ingredients
     output_col: combination_therapy_ingredients
     model_params:
-      model: gpt-4.1
-      prompt: "Please split the drug name into a structured list of drugs eg 'drug1|drug2|drug3|...|drugN'. and return ONLY the list. DRUG:"
-      temperature: 0
+      model: gpt-5-mini
+      prompt: "Please split the drug name into a structured list of drugs eg 'drug1|drug2|drug3|...|drugN'. and return ONLY the list. If only one ingredient, return an empty string \"\" DRUG:"
+      temperature: 1
   
 component_ids_colname: ingredient_ids
 
 id_correct_incorrect_tag_drug:
   model_params:
-    model: gpt-4o
+    model: gpt-5-mini
     prompt: "Are the following concepts similar enough that they could be considered the same drug? Return only TRUE or FALSE. Provide no explanation."
-    temperature: 0
+    temperature: 1
 
 llm_best_id_tag_drug:
   model_params:
-    model: gpt-4o
+    model: gpt-5-mini
     prompt: "Return ONLY the best ontological ID (e.g., 'PUBCHEM:00000001') from the following to represent the provided drug concept. Do not include the label or item number. If no matches, return NONE."
-    temperature: 0
+    temperature: 1
 
 
 date_reformatting_tag:      
   params:
     input_col: source_ingredients
-    output_col: reformatted_date_tag
+    output_col: date_reformat_tag
     model_params:
-      model: gpt-4.1
-      prompt: "Is the following a representation of a coformulated drug or combination therapy? If it is two salts of the same active moiety, do not consider it to be a combination therapy. Return TRUE or FALSE only. DRUG:"
-      temperature: 0
+      model: gpt-5-mini
+      prompt: "Please reformat the following drug approval date to YYYYMMDD format. Return only the reformatted date in YYYYMMDD format. Date: "
+      temperature: 1

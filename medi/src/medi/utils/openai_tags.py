@@ -77,7 +77,7 @@ def generate_features(input_df: pd.DataFrame, new_feature_name: str, feature_des
         )
     ])
     chain = prompt | model
-    response = chain.batch(list(df[label_colname]), config={"max_concurrency": 50})
+    response = chain.batch(list(df[label_colname]), config={"max_concurrency": 40})
     # for i, r in enumerate(response):
     #     if not r:
     #         response[i] = False

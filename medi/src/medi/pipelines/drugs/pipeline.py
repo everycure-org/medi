@@ -138,6 +138,19 @@ def create_pipeline(**kwargs) -> Pipeline:
             outputs = "pb-deduplicated",
             name = "deduplicate-pb"
         ),
+        node(
+            func = nameres.nameres_column,
+            inputs = [
+                "pb-deduplicated",
+                "params:standardization_mapping_ob.Ingredient",
+                "params:name_resolver_params"
+            ],
+            outputs = "pb-nameresolved",
+            name = "nameres-pb"
+        ),
+
+
+
 ##########################################################################################################
 ########### EMA ##########################################################################################
 ##########################################################################################################
@@ -200,6 +213,16 @@ def create_pipeline(**kwargs) -> Pipeline:
             ],
             outputs = "ema-combo-therapy-tags",
             name = 'tag-combo-therapies-ema'
+        ),
+        node(
+            func=nameres.nameres_column_combination_therapy_ingredients,
+            inputs = [
+                "ema-combo-therapy-tags",
+                "params:combo_therapy_tags.combination_therapy_split_drug.output_col",
+                "params:name_resolver_params"
+            ],
+            outputs = "ema-component-ids",
+            name = "id-ingredients-ema"
         ),
 
 

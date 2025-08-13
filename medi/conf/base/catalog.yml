@@ -9,7 +9,7 @@ error_log:
 
 
 
-# Orange book list build
+# Orange Book list build
 orange-book-products:
   type: pandas.CSVDataset
   filepath: data/drugs/01_raw/products.txt
@@ -63,11 +63,9 @@ pb-earliest-dates:
 pb-deduplicated:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/purplebook/pb_deduplicated.csv
-
-
-
-
-
+pb-nameresolved:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_nameresolved.csv
 
 # EMA build
 ema-raw:
