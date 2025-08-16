@@ -3,10 +3,11 @@ from io import StringIO
 import requests
 from tqdm import tqdm
 from functools import cache
+import re
 
 
 
-def identify(name: str, params: dict):
+def nameres(name:str, params:dict):
     """
     Args:
         name (str): string to be identified
@@ -17,12 +18,15 @@ def identify(name: str, params: dict):
         resolvedLabel (str): labels associated with respective resolvedName items.
 
     """
+    #name = name.replace("-", " ")
+   
+
 
     if not name or type(name) == float:
         print("No name provided or blank name provided")
         return ['Error'], ['Error']
     # need space following semicolon delimiter but eliminate double spaces
-    name = name.replace(";", "; ").replace("  ", " ")
+    name = re.sub('\W+',' ', name)
     itemRequest = (params['url']+
                    params['service']+
                    '?string='+
@@ -38,19 +42,32 @@ def identify(name: str, params: dict):
     
     while not success:
         try:
-            returned = (pd.read_json(StringIO(requests.get(itemRequest).text)))
+            returned = (pd.read_json(StringIO(requests.get(itemRequest, timeout=8).text)))
             resolvedName = returned.curie
             resolvedLabel = returned.label
             success = True
         except:
-            #print('name resolver error')
             failedCounts += 1
-        if failedCounts >= 5:
+        if failedCounts >= 3:
             print(f"could not resolve concept {name}")
+            print(f"request: {itemRequest}")
             return ["Error"], ["Error"]
    
-    return resolvedName[0], resolvedLabel[0]
+    return resolvedName, resolvedLabel
 
+def identify(name: str, params: dict):
+    """
+    Args:
+        name (str): string to be identified
+        params (tuple): name resolver parameters to feed into get request
+    
+    Returns:
+        resolvedName (str): IDs most closely matching string.
+        resolvedLabel (str): labels associated with respective resolvedName items.
+
+    """
+    id, label = nameres(name, params)
+    return id[0], label[0]
 
 def nameres_column (df: pd.DataFrame, colname: str, params: dict) -> pd.DataFrame:
     out_curie = []
@@ -90,9 +107,9 @@ def nameres_column_combination_therapy_ingredients(df: pd.DataFrame, colname: st
                 if item in cache:
                     curielist.append(cache[item])
                 else:
-                    curie = identify(item, params)
-                    cache[item]=curie
+                    curie,label = identify(item, params)
+                    cache[item]="~".join([str(curie),str(label)])
                     curielist.append(cache[item])
-            out_curies.append(curielist)
+            out_curies.append("|".join(curielist))
     df[f"{colname}_curies"]=out_curies
     return df

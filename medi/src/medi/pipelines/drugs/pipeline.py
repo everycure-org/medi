@@ -1,16 +1,11 @@
 
 from kedro.pipeline import node, Pipeline, pipeline
 from . import nodes, extract_ob, get_marketing, get_earliest_approval_date_ob
-
 import os
-#print(str(os.getcwd()))
-from medi.utils import nameres
+from medi.utils import nameres, normalize
 from medi.utils import openai_tags
 from medi.utils import preprocess_lists
 from . import convert_dates_pb
-
-
-
 
 def create_pipeline(**kwargs) -> Pipeline:
     return pipeline([
@@ -61,9 +56,31 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = "nameres-ob"
         ),
         node(
-            func=nodes.add_full_column_identical_strings,
+            func = nodes.qc_id_llm,
             inputs = [
                 "ob-nameresolved",
+                "params:id_correct_incorrect_tag",
+            ],
+            outputs = "ob-llm-id-qc",
+            name="qc-id-llm-ob"
+        ),
+        node(
+            func=nodes.improve_ids,
+            inputs = [
+                "ob-llm-id-qc",
+                "params:name_resolver_params_llm_improve",
+                "params:llm_best_id_tag_drug_prompt"
+            ],
+            outputs =[
+                "ob-corrected-ids",
+                "ob-nameres-errors"
+            ],
+            name = "select-best-ids-ob"
+        ),
+        node(
+            func=nodes.add_full_column_identical_strings,
+            inputs = [
+                "ob-corrected-ids",
                 "params:approval_tags.usa",
                 "params:true_bool",
             ],
@@ -79,28 +96,45 @@ def create_pipeline(**kwargs) -> Pipeline:
             outputs = "ob-combo-therapy-tags",
             name = 'tag-combo-therapies-ob'
         ),
-        # node(
-        #     func=nameres.identify_components,
-        #     inputs=[
-        #         "ob-combo-therapy-tags",
-        #         "params:combo_therapy_tags.combination_therapy_split_drug.output_col",
-        #         "params:component_ids_colname",
-        #         "params:name_resolver_params",
-        #     ],
-        #     outputs = "ob-component-ids",
-        #     name = "identify-ingredients-ob"
-        # )
+        node(
+            func=nodes.split_combination_therapies,
+            inputs=[
+                "ob-combo-therapy-tags",
+                "params:combination_therapy_split_drug"
+            ],
+            outputs = "ob-split-ingredients",
+            name = "split-ingredients-ob"
+        ),
+        node(
+            func=nameres.nameres_column_combination_therapy_ingredients,
+            inputs=[
+                "ob-split-ingredients",
+                "params:combination_therapy_split_drug.output_col",
+                "params:name_resolver_params",
+            ],
+            outputs = "ob-component-ids",
+            name = "identify-ingredients-ob"
+        ),
+        node(
+            func=nodes.add_unlisted_ingredients,
+            inputs = "ob-component-ids",
+            outputs = "ob-unlisted-single-ingredients",
+            name = "add-unlisted-ingredients-ob"
+        ),
+        node(
+            func=normalize.normalize_column,
+            inputs = [
+                "ob-unlisted-single-ingredients",
+                "params:best_id_column"
+            ],
+            outputs = "ob-norm",
+            name = "normalize-ob"
+        ),
 
 
 ##########################################################################################################
 ########### PB ###########################################################################################
 ##########################################################################################################
-        # node(
-        #     func=get_earliest_approval_date_ob.acquire_earliest_approval_dates,
-        #     inputs = "ob-with-marketing-tags",
-        #     outputs = "ob-reformatted-dates",
-        #     name = "reformat-dates-ob"
-        # ),
         node(
             func = nodes.standardize_dataframe,
             inputs = [
@@ -148,7 +182,81 @@ def create_pipeline(**kwargs) -> Pipeline:
             outputs = "pb-nameresolved",
             name = "nameres-pb"
         ),
-
+        node(
+            func = nodes.qc_id_llm,
+            inputs = [
+                "pb-nameresolved",
+                "params:id_correct_incorrect_tag",
+            ],
+            outputs = "pb-llm-id-qc",
+            name="qc-id-llm-pb"
+        ),
+        node(
+            func=nodes.improve_ids,
+            inputs = [
+                "pb-llm-id-qc",
+                "params:name_resolver_params_llm_improve",
+                "params:llm_best_id_tag_drug_prompt"
+            ],
+            outputs = [
+                "pb-corrected-ids",
+                "pb-nameres-errors"
+            ], 
+            name = "select-best-ids-pb"
+        ),
+        node(
+            func=nodes.add_full_column_identical_strings,
+            inputs = [
+                "pb-corrected-ids",
+                "params:approval_tags.usa",
+                "params:true_bool",
+            ],
+            outputs="pb-usa-approved-tags",
+            name = "add-approval-tags-pb"
+        ),
+        node(
+            func=openai_tags.add_tags,
+            inputs = [
+                "pb-usa-approved-tags",
+                "params:combo_therapy_tags",
+            ],
+            outputs = "pb-combo-therapy-tags",
+            name = 'tag-combo-therapies-pb'
+        ),
+        node(
+            func=nodes.split_combination_therapies,
+            inputs=[
+                "pb-combo-therapy-tags",
+                "params:combination_therapy_split_drug"
+            ],
+            outputs = "pb-split-ingredients",
+            name = "split-ingredients-pb"
+        ),
+        node(
+            func=nameres.nameres_column_combination_therapy_ingredients,
+            inputs=[
+                "pb-split-ingredients",
+                "params:combination_therapy_split_drug.output_col",
+                "params:name_resolver_params",
+            ],
+            outputs = "pb-component-ids",
+            name = "identify-ingredients-pb"
+        ),
+        node(
+            func=nodes.add_unlisted_ingredients,
+            inputs = "pb-component-ids",
+            outputs = "pb-unlisted-single-ingredients",
+            name = "add-unlisted-ingredients-pb"
+        ),
+        node(
+            func=normalize.normalize_column,
+            inputs = [
+                "pb-unlisted-single-ingredients",
+                "params:best_id_column"
+            ],
+            outputs = "pb-norm",
+            name = "normalize-pb"
+        ),
 
 
 ##########################################################################################################
@@ -196,9 +304,31 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = "nameres-ema"
         ),
         node(
-            func=nodes.add_full_column_identical_strings,
+            func = nodes.qc_id_llm,
             inputs = [
                 "ema-nameresolved",
+                "params:id_correct_incorrect_tag",
+            ],
+            outputs = "ema-llm-id-qc",
+            name="qc-id-llm-ema"
+        ),
+        node(
+            func=nodes.improve_ids,
+            inputs = [
+                "ema-llm-id-qc",
+                "params:name_resolver_params_llm_improve",
+                "params:llm_best_id_tag_drug_prompt"
+            ],
+            outputs = [
+                "ema-corrected-ids",
+                "ema-nameres-errors"
+            ],
+            name = "select-best-ids-ema"
+        ),
+        node(
+            func=nodes.add_full_column_identical_strings,
+            inputs = [
+                "ema-corrected-ids",
                 "params:approval_tags.eur",
                 "params:true_bool",
             ],
@@ -215,14 +345,38 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = 'tag-combo-therapies-ema'
         ),
         node(
+            func=nodes.split_combination_therapies,
+            inputs=[
+                "ema-combo-therapy-tags",
+                "params:combination_therapy_split_drug"
+            ],
+            outputs = "ema-split-ingredients",
+            name = "split-ingredients-ema"
+        ),
+        node(
             func=nameres.nameres_column_combination_therapy_ingredients,
             inputs = [
-                "ema-combo-therapy-tags",
-                "params:combo_therapy_tags.combination_therapy_split_drug.output_col",
+                "ema-split-ingredients",
+                "params:combination_therapy_split_drug.output_col",
                 "params:name_resolver_params"
             ],
             outputs = "ema-component-ids",
             name = "id-ingredients-ema"
+        ),
+        node(
+            func=nodes.add_unlisted_ingredients,
+            inputs = "ema-component-ids",
+            outputs = "ema-unlisted-single-ingredients",
+            name = "add-unlisted-ingredients-ema"
+        ),
+        node(
+            func=normalize.normalize_column,
+            inputs = [
+                "ema-unlisted-single-ingredients",
+                "params:best_id_column"
+            ],
+            outputs = "ema-norm",
+            name = "normalize-ema"
         ),
 
 
@@ -247,14 +401,125 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = "standardize-cols-pmda"
         ),
         node(
-            func = nameres.nameres_column,
+            func=nodes.deduplicate_dataframe,
             inputs = [
                 "pmda-standardized",
+                "params:deduplication_columns",
+            ],
+            outputs = "pmda-deduplicated",
+            name = "deduplicate-pmda"
+        ),
+        node(
+            func=openai_tags.add_tags,
+            inputs = [
+                "pmda-deduplicated",
+                "params:date_reformatting_tag",
+            ],
+            outputs = "pmda-reformatted-dates",
+            name = 'reformat-dates-pmda'
+        ),
+        node(
+            func = nameres.nameres_column,
+            inputs = [
+                "pmda-reformatted-dates",
                 "params:standardization_mapping_ob.Ingredient",
                 "params:name_resolver_params"
             ],
             outputs = "pmda-nameresolved",
             name = "nameres-pmda"
         ),
+        node(
+            func = nodes.qc_id_llm,
+            inputs = [
+                "pmda-nameresolved",
+                "params:id_correct_incorrect_tag",
+            ],
+            outputs = "pmda-llm-id-qc",
+            name="qc-id-llm-pmda"
+        ),
+        node(
+            func=nodes.improve_ids,
+            inputs = [
+                "pmda-llm-id-qc",
+                "params:name_resolver_params_llm_improve",
+                "params:llm_best_id_tag_drug_prompt"
+            ],
+            outputs = [
+                "pmda-corrected-ids",
+                "pmda-nameres-errors"
+            ],
+            name = "select-best-ids-pmda"
+        ),
+        node(
+            func=nodes.add_full_column_identical_strings,
+            inputs = [
+                "pmda-corrected-ids",
+                "params:approval_tags.jpn",
+                "params:true_bool",
+            ],
+            outputs="pmda-approved-tags",
+            name = "add-approval-tags-pmda"
+        ),
+        node(
+            func=openai_tags.add_tags,
+            inputs = [
+                "pmda-approved-tags",
+                "params:combo_therapy_tags",
+            ],
+            outputs = "pmda-combo-therapy-tags",
+            name = 'tag-combo-therapies-pmda'
+        ),
+        node(
+            func=nodes.split_combination_therapies,
+            inputs=[
+                "pmda-combo-therapy-tags",
+                "params:combination_therapy_split_drug"
+            ],
+            outputs = "pmda-split-ingredients",
+            name = "split-ingredients-pmda"
+        ),
+        node(
+            func=nameres.nameres_column_combination_therapy_ingredients,
+            inputs = [
+                "pmda-split-ingredients",
+                "params:combination_therapy_split_drug.output_col",
+                "params:name_resolver_params"
+            ],
+            outputs = "pmda-component-ids",
+            name = "id-ingredients-pmda"
+        ),
+        node(
+            func=nodes.add_unlisted_ingredients,
+            inputs = "pmda-component-ids",
+            outputs = "pmda-unlisted-single-ingredients",
+            name = "add-unlisted-ingredients-pmda"
+        ),
+        node(
+            func=normalize.normalize_column,
+            inputs = [
+                "pmda-unlisted-single-ingredients",
+                "params:best_id_column"
+            ],
+            outputs = "pmda-norm",
+            name = "normalize-pmda"
+        ),
+
+##########################################################################################################
+########### ALL LISTS ####################################################################################
+##########################################################################################################
+
+        node(
+            func=nodes.join_lists,
+            inputs = [
+                "ob-norm",
+                "pb-norm",
+                "ema-norm",
+                "pmda-norm"
+            ],
+            outputs = "joined-list",
+            name = "join-lists"
+        )
+
+
 
     ])

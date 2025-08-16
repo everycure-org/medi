@@ -32,15 +32,33 @@ ob-deduplicated:
 ob-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/orangebook/ob_with_ids.csv
+ob-corrected-ids:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/orangebook/ob_corrected_ids.csv
+ob-nameres-errors:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/orangebook/ob_nameres_errors.csv
 ob-usa-approved-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/orangebook/ob_with_usa_tag.csv
-ob-with-combo-therapy-tags:
+ob-combo-therapy-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/orangebook/ob_combo_therapy_tags.csv
+ob-split-ingredients:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/orangebook/ob_split_ingredients.csv
 ob-component-ids:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/orangebook/ob_combo_therapies_with_id.csv
+ob-unlisted-single-ingredients:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/orangebook/ob_unlisted-single-ingredients.csv
+ob-norm:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/orangebook/ob_norm.xlsx
+ob-norm-errors:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/orangebook/ob_norm_errors.xlsx
 
 # Purple Book list build
 purple-book-products:
@@ -66,6 +84,36 @@ pb-deduplicated:
 pb-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/purplebook/pb_nameresolved.csv
+pb-corrected-ids:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_corrected_ids.csv
+pb-nameres-errors:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_nameres_errors.csv
+pb-llm-id-qc:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_llm_id_qc.csv
+pb-usa-approved-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_with_usa_tag.csv
+pb-combo-therapy-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_combo_therapy_tags.csv
+pb-split-ingredients:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_split_ingredients.csv
+pb-component-ids:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_combo_therapies_with_id.csv
+pb-unlisted-single-ingredients:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_unlisted-single-ingredients.csv
+pb-norm:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_norm.xlsx
+pb-norm-errors:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_norm_errors.xlsx
 
 # EMA build
 ema-raw:
@@ -88,19 +136,39 @@ ema-deduplicated:
 ema-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ema/ema_nameresolved.csv
+ema-corrected-ids:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_corrected_ids.csv
+ema-nameres-errors:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_nameres_errors.csv
 ema-approved-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ema/ema_with_approval_tag.csv
 ema-combo-therapy-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ema/ema_with_combo_therapy_tag.csv
+ema-split-ingredients:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_split_ingredients.csv
 ema-component-ids:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ema/ema_combo_therapies_with_id.csv
+ema-unlisted-single-ingredients:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_unlisted-single-ingredients.csv
+ema-norm:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/ema/ema_norm.xlsx
+ema-norm-errors:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/ema/ema_norm_errors.xlsx
+
+
+
 
 
 # PMDA build
-
 pmda-products:
   type: pandas.CSVDataset
   filepath: data/drugs/01_raw/pmda_approvals.csv
@@ -110,26 +178,53 @@ pmda-preprocessed:
 pmda-standardized:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_standardized.csv
+pmda-deduplicated:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_deduplicated.csv
+pmda-reformatted-dates:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_reformatted_dates.csv
 pmda-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_nameresolved.csv
+pmda-corrected-ids:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_corrected_ids.csv
+pmda-nameres-errors:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_nameres_errors.csv
+pmda-llm-id-qc:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_llm_id_qc.csv
 pmda-approved-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_with_approval_tags.csv
 pmda-combo-therapy-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_with_combo_therapy_tag.csv
+pmda-split-ingredients:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_split_ingredients.csv
 pmda-component-ids:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_combo_therapies_with_id.csv
-
-
-
-pmda-dates-reformatted:
+pmda-unlisted-single-ingredients:
   type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/pmda/pmda_dates_reformatted.csv
+  filepath: data/drugs/02_intermediate/pmda/pmda_with_unlisted_ingredients.csv
+pmda-norm:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_norm.xlsx
+pmda-norm-errors:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_norm_errors.xlsx
 
 
 
 
 
+
+# JOINED LIST
+
+joined-list:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list.xlsx

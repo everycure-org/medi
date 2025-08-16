@@ -4,6 +4,7 @@ import os
 import json
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
+from langchain_core.messages import HumanMessage
 from tqdm import tqdm 
 
 
@@ -26,14 +27,36 @@ def add_tags(in_df: pd.DataFrame, tags: dict) -> pd.DataFrame:
     df = in_df.copy()
     input_cols, feature_names, feature_descriptions, model, temp= extract_outputs_and_prompts(tags)
     for label_col, feature_name, feature_description, model, temp in tqdm(zip(input_cols, feature_names, feature_descriptions, model, temp)):
-        if feature_name not in df.columns:
-            df = generate_features(input_df=df, new_feature_name=feature_name, feature_description=feature_description, label_colname=label_col, model_name=model, temp=temp)
-            print(f"{feature_name} generated")
-        else:
-            print(f"{feature_name} already exists")
+        df = generate_features(input_df=df, new_feature_name=feature_name, feature_description=feature_description, label_colname=label_col, model_name=model, temp=temp)
     print(feature_names)
     print(feature_descriptions)
     return df
+
+
+def single_openai_prompt(prompt, model="gpt-5-mini", temperature=0.1):
+    """
+    Run a single prompt using OpenAI with LangChain
+    
+    Args:
+        prompt (str): The prompt/question to send to the model
+        model (str): OpenAI model to use (default: gpt-3.5-turbo)
+        temperature (float): Temperature for response randomness (0-1)
+        api_key (str): OpenAI API key (if not set as environment variable)
+    
+    Returns:
+        str: The model's response
+    """
+    # Initialize the ChatOpenAI model
+    llm = ChatOpenAI(
+        model=model,
+        temperature=temperature
+    )
+    
+    # Create a message and invoke the model
+    message = HumanMessage(content=prompt)
+    response = llm.invoke([message])
+    
+    return response.content
 
 
 def generate_features(input_df: pd.DataFrame, new_feature_name: str, feature_description: str, label_colname: str, model_name: str, temp: float):
@@ -77,7 +100,7 @@ def generate_features(input_df: pd.DataFrame, new_feature_name: str, feature_des
         )
     ])
     chain = prompt | model
-    response = chain.batch(list(df[label_colname]), config={"max_concurrency": 40})
+    response = chain.batch(list(df[label_colname]), config={"max_concurrency": 80})
     # for i, r in enumerate(response):
     #     if not r:
     #         response[i] = False

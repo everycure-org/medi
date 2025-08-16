@@ -23,41 +23,31 @@ def normalize_column(df:pd.DataFrame, column_name:str) -> pd.DataFrame:
     cache = {}
     norm_id = []
     norm_label = []
+    alt_ids_col = []
     id = ""
     label = ""
     for _, row in tqdm(df.iterrows(), total=len(df), desc="normalizing"):
         name = row[column_name]
         if name in cache:
-            id, label = cache[name]
+            id, label, alt_ids = cache[name]
             norm_id.append(id)
             norm_label.append(label)
-        else:
-            if "," in name:
-                id_set = []
-                label_set = []
-                for item in name.split(","): 
-                    id, label = normalize(item)
-                    id_set.append(id)
-                    label_set.append(label)
-                cache[name] = id_set, label_set
-                norm_id.append(id_set)
-                norm_label.append(label_set)
-            else:    
-                id, label = normalize(name)
-                cache[name]=id, label
-                norm_id.append(id)
-                norm_label.append(label)
+            alt_ids_col.append(alt_ids)
+        else:  
+            id, label, alt_ids = normalize(name)
+            cache[name]=id, label, alt_ids
+            norm_id.append(id)
+            norm_label.append(label)
+            alt_ids_col.append(alt_ids)
     
     df[f"{column_name}_norm"]=norm_id
     df[f"{column_name}_norm_label"]=norm_label
+    df["alternate_ids"]=alt_ids_col
     return df
 
 
-def batch_normalize(items: list[str], norm_params:dict[str, bool])
-
-
 @cache
-def normalize(item: str, norm_params:dict):
+def normalize(item: str):
     item_request = f"https://nodenormalization-sri.renci.org/1.5/get_normalized_nodes?curie={item}&conflate=true&drug_chemical_conflate=true&description=false&individual_types=false"    
     success = False
     failedCounts = 0
@@ -68,7 +58,7 @@ def normalize(item: str, norm_params:dict):
             primary_key = list(output.keys())[0]
             label = output[primary_key]['id']['label']
             id = output[primary_key]['id']['identifier']
-            #alternate_ids = output[item]['equivalent_identifiers']
+            alternate_ids = output[item]['equivalent_identifiers']
             #returned_ids = list(item['identifier'] for item in alternate_ids)
             success = True
         except Exception as e:
@@ -77,5 +67,5 @@ def normalize(item: str, norm_params:dict):
             #print('name resolver error')
             failedCounts += 1
         if failedCounts >= 5:
-            return ["Error"], ["Error"]
-    return id, label
+            return ["Error"], ["Error"], ['Error']
+    return id, label, alternate_ids
