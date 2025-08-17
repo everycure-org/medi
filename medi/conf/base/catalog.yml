@@ -228,3 +228,6 @@ pmda-norm-errors:
 joined-list:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/combined/joined_list.xlsx
+list-with-tags:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list_tagged.xlsx

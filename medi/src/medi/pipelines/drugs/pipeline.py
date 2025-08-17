@@ -4,7 +4,7 @@ from . import nodes, extract_ob, get_marketing, get_earliest_approval_date_ob
 import os
 from medi.utils import nameres, normalize
 from medi.utils import openai_tags
-from medi.utils import preprocess_lists
+from medi.utils import preprocess_lists, get_atc
 from . import convert_dates_pb
 
 def create_pipeline(**kwargs) -> Pipeline:
@@ -92,6 +92,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             inputs = [
                 "ob-usa-approved-tags",
                 "params:combo_therapy_tags",
+                "params:standardization_mapping_ob.Ingredient"
             ],
             outputs = "ob-combo-therapy-tags",
             name = 'tag-combo-therapies-ob'
@@ -219,6 +220,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             inputs = [
                 "pb-usa-approved-tags",
                 "params:combo_therapy_tags",
+                "params:source_ingredients_column"
             ],
             outputs = "pb-combo-therapy-tags",
             name = 'tag-combo-therapies-pb'
@@ -340,6 +342,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             inputs = [
                 "ema-approved-tags",
                 "params:combo_therapy_tags",
+                "params:source_ingredients_column"
             ],
             outputs = "ema-combo-therapy-tags",
             name = 'tag-combo-therapies-ema'
@@ -414,6 +417,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             inputs = [
                 "pmda-deduplicated",
                 "params:date_reformatting_tag",
+                "params:source_ingredients_column"
             ],
             outputs = "pmda-reformatted-dates",
             name = 'reformat-dates-pmda'
@@ -465,6 +469,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             inputs = [
                 "pmda-approved-tags",
                 "params:combo_therapy_tags",
+                "params:source_ingredients_column"
             ],
             outputs = "pmda-combo-therapy-tags",
             name = 'tag-combo-therapies-pmda'
@@ -518,6 +523,19 @@ def create_pipeline(**kwargs) -> Pipeline:
             ],
             outputs = "joined-list",
             name = "join-lists"
+        ),
+        node(
+            func=openai_tags.add_tags,
+            inputs = [
+                "joined-list",
+                "params:enrichment_tags",
+                "params:label_column",
+            ],
+            outputs = "list-with-tags",
+            name = "add-drug-tags"
+        ),
+        node(
+            func=get_atc.get_atc_codes_for_dataframe()
         )
 
 

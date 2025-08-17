@@ -5,8 +5,6 @@ from tqdm import tqdm
 from functools import cache
 import re
 
-
-
 def nameres(name:str, params:dict):
     """
     Args:
@@ -17,10 +15,7 @@ def nameres(name:str, params:dict):
         resolvedName (str): IDs most closely matching string.
         resolvedLabel (str): labels associated with respective resolvedName items.
 
-    """
-    #name = name.replace("-", " ")
-   
-
+    """   
 
     if not name or type(name) == float:
         print("No name provided or blank name provided")
@@ -42,7 +37,7 @@ def nameres(name:str, params:dict):
     
     while not success:
         try:
-            returned = (pd.read_json(StringIO(requests.get(itemRequest, timeout=8).text)))
+            returned = (pd.read_json(StringIO(requests.get(itemRequest, timeout=10).text)))
             resolvedName = returned.curie
             resolvedLabel = returned.label
             success = True

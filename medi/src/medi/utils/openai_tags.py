@@ -16,18 +16,17 @@ def extract_outputs_and_prompts(data_dict):
     input_cols = []
     # Extract output_col and prompt for each tag
     for tag_name, tag_info in data_dict.items():
-        input_cols.append(tag_info['input_col'])
         output_cols.append(tag_info['output_col'])
         prompts.append(tag_info['model_params']['prompt'])
         model.append(tag_info['model_params']['model'])
         temp.append(tag_info['model_params']['temperature'])
-    return input_cols, output_cols, prompts, model, temp
+    return output_cols, prompts, model, temp
 
-def add_tags(in_df: pd.DataFrame, tags: dict) -> pd.DataFrame: 
+def add_tags(in_df: pd.DataFrame, tags: dict, labels_col: str) -> pd.DataFrame: 
     df = in_df.copy()
-    input_cols, feature_names, feature_descriptions, model, temp= extract_outputs_and_prompts(tags)
-    for label_col, feature_name, feature_description, model, temp in tqdm(zip(input_cols, feature_names, feature_descriptions, model, temp)):
-        df = generate_features(input_df=df, new_feature_name=feature_name, feature_description=feature_description, label_colname=label_col, model_name=model, temp=temp)
+    feature_names, feature_descriptions, model, temp= extract_outputs_and_prompts(tags)
+    for feature_name, feature_description, model, temp in tqdm(zip(feature_names, feature_descriptions, model, temp)):
+        df = generate_features(input_df=df, new_feature_name=feature_name, feature_description=feature_description, label_colname=labels_col, model_name=model, temp=temp)
     print(feature_names)
     print(feature_descriptions)
     return df

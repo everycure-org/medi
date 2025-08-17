@@ -50,7 +50,7 @@ def deduplicate_dataframe(df: pd.DataFrame, dedup_cols: list) -> pd.DataFrame:
     deduped_df = df.drop_duplicates(subset=dedup_cols).reset_index(drop=True)
     return deduped_df
 
-def create_single_unlisted_ingredient(row, curie, label)->pd.DataFrame:
+def create_single_unlisted_ingredient(row, curie, label, source)->pd.DataFrame:
     """
     Takes a single row of a dataframe with an unlisted ingredient and generates a df
     with a single row for that ingredient.
@@ -63,6 +63,7 @@ def create_single_unlisted_ingredient(row, curie, label)->pd.DataFrame:
         pd.DataFrame: 
     
     """
+    row['source_ingredients']=source
     row['source_ingredients_curie']=curie
     row['source_ingredients_curie_label']=label
     row['is_combination_therapy']="FALSE"
@@ -92,7 +93,7 @@ def add_unlisted_ingredients(df:pd.DataFrame)-> pd.DataFrame:
                 curie_label = ing.split("~")
                 if curie_label[0] not in druglist:
                     row = pd.DataFrame([df.iloc[idx]])
-                    df = pd.concat([df,create_single_unlisted_ingredient(row, curie_label[0], curie_label[1])], axis=0)    
+                    df = pd.concat([df,create_single_unlisted_ingredient(row, curie_label[0], curie_label[1], ing)], axis=0)    
     return df
 
 
