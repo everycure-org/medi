@@ -59,7 +59,7 @@ def normalize(item: str):
             label = output[primary_key]['id']['label']
             id = output[primary_key]['id']['identifier']
             alternate_ids = output[item]['equivalent_identifiers']
-            #returned_ids = list(item['identifier'] for item in alternate_ids)
+            alt_ids_list = list(item['identifier'] for item in alternate_ids)
             success = True
         except Exception as e:
             print(f"exception on {item}")
@@ -68,4 +68,4 @@ def normalize(item: str):
             failedCounts += 1
         if failedCounts >= 5:
             return ["Error"], ["Error"], ['Error']
-    return id, label, alternate_ids
+    return id, label, alt_ids_list

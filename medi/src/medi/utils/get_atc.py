@@ -2,6 +2,10 @@ import requests
 import xml.etree.ElementTree as ET
 from tqdm import tqdm
 import pandas as pd
+from concurrent.futures import ThreadPoolExecutor
+import ast
+import re
+from urllib.parse import quote
 
 
 def get_atc_from_rxnorm(rxnorm_id):
@@ -195,10 +199,11 @@ def get_chebi_drugcentral_xrefs(chebi_id):
 
 def get_atc_for_row(row, dict):
     """Process a single row to find ATC code"""
-    
+    colname = "corrected_curie_norm"
+
     # if curie is in the dict
-    if row['curie'] in dict:
-        return [dict[row['curie']]]
+    if row[colname] in dict:
+        return [dict[row[colname]]]
 
     # Convert string representation of list to actual list if needed
     if isinstance(row['alternate_ids'], str):
@@ -210,8 +215,8 @@ def get_atc_for_row(row, dict):
         alt_ids = row['alternate_ids']
 
     # Add the curie to the list of IDs if not already there
-    if row['curie'] not in alt_ids:
-        alt_ids.append(row['curie'])
+    if row[colname] not in alt_ids:
+        alt_ids.append(row[colname])
     
     # Try each source in order of reliability/accessibility
     for id_item in alt_ids:
@@ -333,7 +338,3 @@ def get_atc_codes_for_dataframe(df, atc_standard, max_workers=5):
     )
     
     return result_df
-
-########################################################################################
-##################### END ATC CODES ####################################################
-########################################################################################

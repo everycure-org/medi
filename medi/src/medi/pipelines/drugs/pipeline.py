@@ -535,7 +535,13 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = "add-drug-tags"
         ),
         node(
-            func=get_atc.get_atc_codes_for_dataframe()
+            func=get_atc.get_atc_codes_for_dataframe,
+            inputs = [
+                "joined-list",
+                "atc-codes",
+            ],
+            outputs="list-with-atc",
+            name = "get-atc"
         )
 
 

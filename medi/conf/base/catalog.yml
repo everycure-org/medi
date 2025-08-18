@@ -231,3 +231,17 @@ joined-list:
 list-with-tags:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/combined/joined_list_tagged.xlsx
+list-with-atc:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list_atc.xlsx
+
+
+
+
+
+
+# UTILS STUFF
+atc-codes:
+  type: pandas.CSVDataset
+  filepath: data/drugs/01_raw/atc_with_ids.csv
+
