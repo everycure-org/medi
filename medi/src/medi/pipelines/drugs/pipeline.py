@@ -4,7 +4,7 @@ from . import nodes, extract_ob, get_marketing, get_earliest_approval_date_ob
 import os
 from medi.utils import nameres, normalize
 from medi.utils import openai_tags
-from medi.utils import preprocess_lists, get_atc
+from medi.utils import preprocess_lists, get_atc, get_smiles
 from . import convert_dates_pb
 
 def create_pipeline(**kwargs) -> Pipeline:
@@ -502,7 +502,7 @@ def create_pipeline(**kwargs) -> Pipeline:
         node(
             func=normalize.normalize_column,
             inputs = [
-                "pmda-unlisted-single-ingredients",
+                "pmda-approved-tags",
                 "params:best_id_column"
             ],
             outputs = "pmda-norm",
@@ -537,13 +537,16 @@ def create_pipeline(**kwargs) -> Pipeline:
         node(
             func=get_atc.get_atc_codes_for_dataframe,
             inputs = [
-                "joined-list",
+                "list-with-tags",
                 "atc-codes",
             ],
             outputs="list-with-atc",
             name = "get-atc"
+        ),
+        node(
+            func=get_smiles.add_SMILES_strings,
+            inputs = "list-with-atc",
+            outputs = "list-with-smiles",
+            name = "get-smiles"
         )
-
-
-
     ])

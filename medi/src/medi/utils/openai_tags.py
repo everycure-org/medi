@@ -32,7 +32,7 @@ def add_tags(in_df: pd.DataFrame, tags: dict, labels_col: str) -> pd.DataFrame:
     return df
 
 
-def single_openai_prompt(prompt, model="gpt-5-mini", temperature=0.1):
+def single_openai_prompt(prompt, model="gpt-4o", temperature=0.1):
     """
     Run a single prompt using OpenAI with LangChain
     
@@ -45,17 +45,25 @@ def single_openai_prompt(prompt, model="gpt-5-mini", temperature=0.1):
     Returns:
         str: The model's response
     """
+    client = OpenAI()
     # Initialize the ChatOpenAI model
     llm = ChatOpenAI(
         model=model,
         temperature=temperature
     )
-    
+    #print(prompt)
     # Create a message and invoke the model
-    message = HumanMessage(content=prompt)
-    response = llm.invoke([message])
+    try:
+        response = client.responses.create(
+            model=model,
+            input=prompt
+        )
+    except Exception as e:
+        print(e)
+        return ['Error']
     
-    return response.content
+    print(f"response:{response.output_text}")
+    return response.output_text
 
 
 def generate_features(input_df: pd.DataFrame, new_feature_name: str, feature_description: str, label_colname: str, model_name: str, temp: float):

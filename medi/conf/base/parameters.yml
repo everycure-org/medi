@@ -16,6 +16,7 @@ name_resolver_params:
   autocomplete_setting: true
   id_limit: 10
   offset: 0
+  timeout: 5
 
 name_resolver_params_llm_improve:
   url: https://name-resolution-sri.renci.org/
@@ -23,6 +24,7 @@ name_resolver_params_llm_improve:
   autocomplete_setting: true
   id_limit: 30
   offset: 0
+  timeout: 30
 
 orangebook_zip: https://www.fda.gov/media/76860/download?attachment
 
@@ -142,7 +144,7 @@ combination_therapy_split_drug:
   output_col: combination_therapy_ingredients
   model_params:
     model: gpt-4o-mini
-    prompt: "Please split the drug name that follows this prompt into a structured list of drugs separated by vertical pipes \"|\", e.g., 'drug1|drug2|drug3|...|drugN'. Return ONLY the list. If only one ingredient, return an empty response. If a multi-component drug (e.g. \"Meningococcal groups A, B, C vaccine\", return each item with its full name so that it could be parsed independently, e.g. \"Meningococcal group A vaccine | Meningococcal group B vaccine | Meningococcal group C vaccine \". DRUG NAME:"
+    prompt: "Please split the drug name that follows this prompt into a structured list of drugs separated by vertical pipes \"|\", e.g., 'drug1|drug2|drug3|...|drugN'. Return ONLY the list. If only one ingredient, return an empty response. If a multi-component drug (e.g. \"Meningococcal groups A, B, C vaccine\", return each item with its full name so that it could be parsed independently, e.g. \"Meningococcal group A vaccine | Meningococcal group B vaccine | Meningococcal group C vaccine \". If the contents are proprietary or otherwise represent a violaiton of openai policies, please return the original drug name only. DRUG NAME:"
     temperature: 0
 
 id_correct_incorrect_tag:
@@ -151,11 +153,11 @@ id_correct_incorrect_tag:
     output_col: id_correct
     model_params:
       model: gpt-4o
-      prompt: "Are the following concepts similar enough that they could be considered the same drug? Return only TRUE or FALSE. Provide no explanation."
+      prompt: "Are the following concepts similar enough that they could be considered the same drug? Return only TRUE or FALSE. Provide no explanation. Drugs that contain the same set of active moieties can be considered to be the same drug, e.g., fentanyl and fentanyl citrate can be considered equivalent for this evaluation."
       temperature: 0
 
 
-llm_best_id_tag_drug_prompt: "Return ONLY the best ontological ID (e.g., 'PUBCHEM:00000001') from the following to represent the provided drug concept. Do not include the label or item number. If no matches, return NONE."
+llm_best_id_tag_drug_prompt: "Return ONLY the best ontological ID (e.g., 'PUBCHEM:00000001') from the following to represent the provided drug concept. Do not include the label or item number. If no matches, return NONE. If multiple matches, return the simplest one that contains all active moieties, e.g., if fentanyl citrate is provided and the options are [fentanyl citrate, fentanyl hydrochloride, fentanyl citrate injection, fentanyl], pick fentanyl"
 
 
 date_reformatting_tag:      

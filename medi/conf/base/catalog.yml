@@ -32,6 +32,9 @@ ob-deduplicated:
 ob-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/orangebook/ob_with_ids.csv
+ob-llm-id-qc:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/orangebook/ob_llm_id_qc.csv
 ob-corrected-ids:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/orangebook/ob_corrected_ids.csv
@@ -136,6 +139,9 @@ ema-deduplicated:
 ema-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ema/ema_nameresolved.csv
+ema-llm-id-qc:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/ema/ema_llm_id_qc.csv
 ema-corrected-ids:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ema/ema_corrected_ids.csv
@@ -187,15 +193,15 @@ pmda-reformatted-dates:
 pmda-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_nameresolved.csv
+pmda-llm-id-qc:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/pmda/pmda_llm_id_qc.csv
 pmda-corrected-ids:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_corrected_ids.csv
 pmda-nameres-errors:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_nameres_errors.csv
-pmda-llm-id-qc:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/pmda/pmda_llm_id_qc.csv
 pmda-approved-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_with_approval_tags.csv
@@ -234,7 +240,9 @@ list-with-tags:
 list-with-atc:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/combined/joined_list_atc.xlsx
-
+list-with-smiles:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list_smiles.xlsx
 
 
 

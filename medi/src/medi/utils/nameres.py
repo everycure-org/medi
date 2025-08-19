@@ -37,7 +37,7 @@ def nameres(name:str, params:dict):
     
     while not success:
         try:
-            returned = (pd.read_json(StringIO(requests.get(itemRequest, timeout=10).text)))
+            returned = (pd.read_json(StringIO(requests.get(itemRequest, timeout=params.get('timeout')).text)))
             resolvedName = returned.curie
             resolvedLabel = returned.label
             success = True

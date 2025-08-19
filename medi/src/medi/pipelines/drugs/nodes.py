@@ -10,6 +10,7 @@ import tempfile
 from tqdm import tqdm
 from medi.utils import openai_tags, nameres
 import numpy as np
+from openai import OpenAI
 
 
 
@@ -112,7 +113,7 @@ def split_combination_therapies(df:pd.DataFrame, params: dict)->pd.DataFrame:
 def qc_id_llm(df: pd.DataFrame, params: dict) -> pd.DataFrame:
     prompts_col = [f"Drug 1: {row['source_ingredients']}; Drug 2: {row['source_ingredients_curie_label']}" for idx, row in df.iterrows()]
     df['llm_qc_comparison_col'] = prompts_col
-    df = openai_tags.add_tags(df, params)
+    df = openai_tags.add_tags(df, params, 'llm_qc_comparison_col')
     return df
 
 def build_improve_ids_prompt(concept: str, ids: list[str], labels: list[str]):
@@ -123,6 +124,7 @@ def build_improve_ids_prompt(concept: str, ids: list[str], labels: list[str]):
     return f"Drug Concept: {concept}. \r\n\n Options: {ids_and_names}"
 
 def improve_ids(df: pd.DataFrame, nameres_params:dict, base_prompt: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+    client = OpenAI()
     corrected_id_column = []
     for _, row in tqdm(df.iterrows(), total = len(df), desc = "improving IDs"):
         if row['id_correct']==True:
@@ -131,7 +133,11 @@ def improve_ids(df: pd.DataFrame, nameres_params:dict, base_prompt: str) -> tupl
             ids, labels = nameres.nameres(row['source_ingredients'], nameres_params)
             prompt = f"{base_prompt} {build_improve_ids_prompt(row['source_ingredients'], list(ids), list(labels))}"
             try:
-                corrected_id_column.append(openai_tags.single_openai_prompt(prompt))
+                response = client.responses.create(
+                    model="gpt-4o-mini",
+                    input=prompt
+                )
+                corrected_id_column.append(response.output_text)
             except Exception as e:
                 corrected_id_column.append("Error")
     df['corrected_curie']=corrected_id_column
