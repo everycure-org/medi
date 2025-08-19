@@ -464,41 +464,41 @@ def create_pipeline(**kwargs) -> Pipeline:
             outputs="pmda-approved-tags",
             name = "add-approval-tags-pmda"
         ),
-        node(
-            func=openai_tags.add_tags,
-            inputs = [
-                "pmda-approved-tags",
-                "params:combo_therapy_tags",
-                "params:source_ingredients_column"
-            ],
-            outputs = "pmda-combo-therapy-tags",
-            name = 'tag-combo-therapies-pmda'
-        ),
-        node(
-            func=nodes.split_combination_therapies,
-            inputs=[
-                "pmda-combo-therapy-tags",
-                "params:combination_therapy_split_drug"
-            ],
-            outputs = "pmda-split-ingredients",
-            name = "split-ingredients-pmda"
-        ),
-        node(
-            func=nameres.nameres_column_combination_therapy_ingredients,
-            inputs = [
-                "pmda-split-ingredients",
-                "params:combination_therapy_split_drug.output_col",
-                "params:name_resolver_params"
-            ],
-            outputs = "pmda-component-ids",
-            name = "id-ingredients-pmda"
-        ),
-        node(
-            func=nodes.add_unlisted_ingredients,
-            inputs = "pmda-component-ids",
-            outputs = "pmda-unlisted-single-ingredients",
-            name = "add-unlisted-ingredients-pmda"
-        ),
+        # node(
+        #     func=openai_tags.add_tags,
+        #     inputs = [
+        #         "pmda-approved-tags",
+        #         "params:combo_therapy_tags",
+        #         "params:source_ingredients_column"
+        #     ],
+        #     outputs = "pmda-combo-therapy-tags",
+        #     name = 'tag-combo-therapies-pmda'
+        # ),
+        # node(
+        #     func=nodes.split_combination_therapies,
+        #     inputs=[
+        #         "pmda-combo-therapy-tags",
+        #         "params:combination_therapy_split_drug"
+        #     ],
+        #     outputs = "pmda-split-ingredients",
+        #     name = "split-ingredients-pmda"
+        # ),
+        # node(
+        #     func=nameres.nameres_column_combination_therapy_ingredients,
+        #     inputs = [
+        #         "pmda-split-ingredients",
+        #         "params:combination_therapy_split_drug.output_col",
+        #         "params:name_resolver_params"
+        #     ],
+        #     outputs = "pmda-component-ids",
+        #     name = "id-ingredients-pmda"
+        # ),
+        # node(
+        #     func=nodes.add_unlisted_ingredients,
+        #     inputs = "pmda-component-ids",
+        #     outputs = "pmda-unlisted-single-ingredients",
+        #     name = "add-unlisted-ingredients-pmda"
+        # ),
         node(
             func=normalize.normalize_column,
             inputs = [

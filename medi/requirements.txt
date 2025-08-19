@@ -16,3 +16,5 @@ requests
 openpyxl
 pypdf2
 pdfplumber
+matplotlib
+matplotlib_venn
