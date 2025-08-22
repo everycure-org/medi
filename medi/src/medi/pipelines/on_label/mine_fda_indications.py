@@ -12,7 +12,6 @@ def mine_indications(dir: str) -> pd.DataFrame:
     foundCounts = 0
     notFoundCounts = 0
     dirs = []
-    
     # TODO: automatically find, download, unzip all of the dailymed folders
     labelFolders = ["prescription_1/", "prescription_2/", "prescription_3/", "prescription_4/", "prescription_5/"]
     

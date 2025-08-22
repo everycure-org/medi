@@ -68,6 +68,6 @@ def preprocess_pmda(rawdata:pd.DataFrame) -> pd.DataFrame:
 
 
 def reformat_dates_ema(df: pd.DataFrame) -> pd.DataFrame:
-    df['approval_date']=pd.to_datetime(df['approval_date']).dt.strftime('%Y%m%d')
+    df['approval_date'] = pd.to_datetime(df['approval_date'], format='%d/%m/%Y').dt.strftime('%Y%m%d')
     return df
 

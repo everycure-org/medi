@@ -1,21 +1,115 @@
-"""
-This is a boilerplate pipeline 'on_label'
-generated using Kedro 0.19.14
-"""
-
 from matplotlib_venn import venn3
 import matplotlib.pyplot as plt
 import xml.etree.ElementTree as ET
 import re, os
 import zipfile
-import itertext
 from tqdm import tqdm 
+import pandas as pd
+from tqdm import tqdm
+from io import StringIO
+import requests
+import base64
+import os
+import xml.etree.ElementTree as ETke
+import json
+import zipfile
+import string
+import re
+from functools import cache
+from openai import OpenAI
+import networkx as nx
+from pyspark.sql import SparkSession
+from matplotlib_venn import venn3
+import matplotlib.pyplot as plt
+import vertexai
+from vertexai.generative_models import GenerativeModel, Part, SafetySetting, FinishReason
+import vertexai.preview.generative_models as generative_models
 
-
-
+#from ontobio import OntologyFactory
+#from ontobio.ontol_factory import OntologyFactory
+#import pronto
+testing = True
+limit = 100
 
 ################################
-### EXTRACTION #################
+### GLOBALS ####################
+################################
+safety_settings = [
+        SafetySetting(
+            category=SafetySetting.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+            threshold=SafetySetting.HarmBlockThreshold.BLOCK_ONLY_HIGH
+        ),
+        SafetySetting(
+            category=SafetySetting.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+            threshold=SafetySetting.HarmBlockThreshold.BLOCK_ONLY_HIGH
+        ),
+        SafetySetting(
+            category=SafetySetting.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+            threshold=SafetySetting.HarmBlockThreshold.BLOCK_ONLY_HIGH
+        ),
+        SafetySetting(
+            category=SafetySetting.HarmCategory.HARM_CATEGORY_HARASSMENT,
+            threshold=SafetySetting.HarmBlockThreshold.BLOCK_ONLY_HIGH
+        ),
+    ]
+generation_config = {
+    "max_output_tokens":8192,
+    "temperature":0,
+    "top_p":0.95
+}
+
+################################
+### INDICATIONS ################
+################################
+def clean_empty_rows(inList, column_name) -> pd.DataFrame:
+    indices_to_drop = []
+    for idx, row in inList.iterrows():
+        if type(row[column_name])==float:
+            indices_to_drop.append(idx)
+    
+    inList.drop(indices_to_drop, inplace=True)
+    return inList
+
+def extract_named_diseases(inList:pd.DataFrame, drug_names_column:str, passage_column:str, structured_list_column:str, structured_list_prompt: str) -> pd.DataFrame:
+    inList = clean_empty_rows(inList, passage_column)
+    # New Fields to Add
+    diseases_mentioned = []
+    # Fetch Columns
+    indications_data = list(inList[passage_column])
+    active_ingredients_data = list(inList[drug_names_column])
+    for index, item in tqdm(enumerate(indications_data), total=(limit if testing else len(indications_data))):
+        if  (index < limit) or not testing:
+            try:
+                prompt = structured_list_prompt + item
+                diseases_mentioned.append(generate(prompt))
+            except Exception as e:
+                print(e)
+                diseases_mentioned.append("LLM EXTRACTION ERROR")
+    if testing:
+        inList = inList.head(limit)
+    inList[structured_list_column]=diseases_mentioned
+    return inList
+
+@cache
+def generate(input_text):
+        vertexai.init(project="mtrx-wg2-modeling-dev-9yj", location="us-east1")
+        model = GenerativeModel(
+            "gemini-2.0-flash",
+        )
+        responses = model.generate_content(
+        [input_text],
+        generation_config=generation_config,
+        safety_settings=safety_settings,
+        stream=True,
+        )
+        resText = ""
+        for response in responses:
+            resText+=response.text
+            
+        return resText
+
+################################
+### CONTRAINDICATIONS ##########
 ################################
 def extract_contraindications(xml_file_path):
     """
@@ -32,12 +126,10 @@ def extract_contraindications(xml_file_path):
         'v3': 'urn:hl7-org:v3',
         'xsi': 'http://www.w3.org/2001/XMLSchema-instance'
     }
-    
     try:
         # Parse the XML file
         tree = ET.parse(xml_file_path)
         root = tree.getroot()
-        
         # Initialize results dictionary
         results = {
             'contraindications': None,
@@ -45,7 +137,6 @@ def extract_contraindications(xml_file_path):
             'section_id': None,
             'metadata': {}
         }
-        
         # Find the contraindications section
         # SPL uses code 34070-3 for contraindications
         for section in root.findall('.//v3:section', namespaces):
@@ -55,37 +146,30 @@ def extract_contraindications(xml_file_path):
                 if code == '34070-3':  # LOINC code for contraindications
                     # Extract section ID if present
                     results['section_id'] = section.get('ID', '')
-                    
                     # Extract section code details
                     results['section_code'] = {
                         'code': code,
                         'codeSystem': code_element.get('codeSystem', ''),
                         'displayName': code_element.get('displayName', '')
                     }
-                    
                     # Extract the text content
                     text_element = section.find('.//v3:text', namespaces)
                     if text_element is not None:
                         # Convert the text element to string, preserving internal markup
                         text_content = ET.tostring(text_element, encoding='unicode', method='xml')
-                        
                         # Clean up the text content
                         # Remove XML tags while preserving content
                         clean_text = re.sub(r'<[^>]+>', ' ', text_content)
                         # Remove extra whitespace
                         clean_text = ' '.join(clean_text.split())
-                        
                         results['contraindications'] = clean_text
-                    
                     # Extract any additional metadata
                     title_element = section.find('.//v3:title', namespaces)
                     if title_element is not None:
                         results['metadata']['title'] = title_element.text
-                    
                     break  # Stop after finding the contraindications section
         
         return results
-    
     except ET.ParseError as e:
         raise Exception(f"Error parsing XML file: {str(e)}")
     except Exception as e:

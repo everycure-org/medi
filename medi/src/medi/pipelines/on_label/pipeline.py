@@ -12,17 +12,29 @@ def create_pipeline(**kwargs) -> Pipeline:
         node(
             func = mine_fda_indications.mine_indications,
             inputs = "params:path_to_fda_labels",
-            outputs = "dailymed_raw",
+            outputs = "dailymed_indications_raw",
             name = "mine-indications-fda" 
         ),
         node(
-            func=nodes.mine_contraindications,
+            func=nodes.extract_named_diseases,
             inputs = [
-               "params:path_to_fda_labels",
+                "dailymed_indications_raw",
+                "params:column_names.indications_active_ingredients",
+                "params:column_names.indications_text_column",
+                "params:column_names.indications_structured_list_column",
+                "params:indications_structured_list_prompt",
             ],
-            outputs = "dailymed_contraindications_raw",
-            name = "mine-contraindications-fda",
+            outputs = "dailymed_indications_named_diseases",
+            name = "extract-indications-lists-fda",
         ),
+        # node(
+        #     func=nodes.mine_contraindications,
+        #     inputs = [
+        #        "params:path_to_fda_labels",
+        #     ],
+        #     outputs = "dailymed_contraindications_raw",
+        #     name = "mine-contraindications-fda",
+        # ),
 
 
     ])

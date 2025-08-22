@@ -41,10 +41,13 @@ standardization_mapping_ema:
   International non-proprietary name (INN) / common name: source_ingredients
   Marketing authorisation date: approval_date
   ATC code (human): atc_code
+  Therapeutic indication: indication
 
 standardization_mapping_pmda:
   "Active Ingredient (underlined: new active ingredient)": source_ingredients
   Approval Date: approval_date
+  Indications: indication
+
 
 standardization_mapping_purple_book:
   "Proper Name": source_ingredients
@@ -171,3 +174,88 @@ date_reformatting_tag:
 
 
 best_id_column: corrected_curie
+
+
+
+
+
+
+
+
+
+###########################################################################################
+################################################# ON LABEL ################################
+###########################################################################################
+###########################################################################################
+###########################################################################################
+
+path_to_fda_labels: /Volumes/MML/2025_06_30_dailymed/
+
+column_names:
+  source_file_column: "source file"
+  indications_active_ingredients: "active ingredient"
+  indications_text_column: "indications text"
+  indications_structured_list_column: "structured list"
+  disease_name_column: "disease name"
+  drug_name_column: "drug name"
+  drug_id_column: "drug id nameres"
+  drug_label_column: "drug label nameres"
+  disease_id_column: "disease id nameres"
+  disease_label_column: "disease label nameres"
+  llm_true_false_column_disease: "llm_nameres_correct"
+  nameres_options_id_column: "nameres id options disease"
+  nameres_options_label_column: "nameres label options disease"
+  llm_improved_id_column : "llm disease id"
+  llm_normalized_id_column_disease: "final normalized disease id"
+  llm_normalized_label_column_disease: "final normalized disease label"
+  llm_true_false_column_drug: "llm_nameres_correct_drug"
+  llm_improved_id_column_drug: "llm drug id"
+  llm_normalized_id_column_drug: "final normalized drug id"
+  llm_normalized_label_column_drug: "final normalized drug label"
+  deduplication_column: "drug|disease"
+  downfilled_true_false_column: "downfilled from mondo"
+  contraindications_structured_list_column: "diseases contraindicated"
+  contraindications_text_column: "contraindications"
+  contraindications_active_ingredients: "active ingredient"
+  new_contraindications_disease_name_column: "disease contraindicated"
+  is_allergen_column: "is_allergen"
+  is_diagnostic_column: "is_diagnostic_agent"
+
+
+pmda_mapping_columns:
+  origin_string: "Active Ingredient (underlined: new active ingredient)"
+  id: curie
+  label: curie_label
+  Indications: indications
+
+ema_mapping_columns:
+  origin_string: "Active substance"
+  id: curie
+  label: curie_label
+  Therapeutic indication: indication
+
+biolink_type_disease: "DiseaseOrPhenotypicFeature"
+biolink_type_drug: "ChemicalOrDrugOrTreatment"
+
+indications_structured_list_prompt: "Produce a list of diseases treated in the following therapeutic indications text. Please format the list as: 'item1|item2|...|itemN'. Do not include any other text in the response. If no diseases are treated, return 'None'. If the drug is only used for imaging, diagnostic, allergy testing, or procedural purposes (e.g., Technetium), return 'non-therapeutic'. Do not infer any diseases - only list diseases directly included in the passage. Be as specific as possible when naming diseases. If no text is provided, respond 'None'. START TEXT HERE:"
+contraindications_structured_list_prompt: "Produce a list of contraindicated diseases in the following contraindications text. Please format the list as: 'item1|item2|...|itemN'. Do not include any other text in the response. If no contraindications, return 'None'. Do not include drug hypersensitivity. Do not infer any diseases - only list diseases directly included in the passage. If no text is provided, respond 'None'. Do not include therapeutic indications if the input text contains indications. Do not include interaction contraindications, i.e., when a drug is used concurrently with another drug. Exclude conditions related to allergy, e.g. anaphylaxis, angioedema, urticaria.  START TEXT HERE:"
+
+is_allergen_prompt: "Is the following active ingredient commonly used as an allergen for allergy testing? Respond only TRUE or FALSE. Provide no explanation. ACTIVE INGREDIENT: "
+is_radiolabel_prompt: "Is the following active ingredient commonly used as a radiolabel or diagnostic agent? Respond only TRUE or FALSE. Provide no explanation. ACTIVE INGREDIENT: "
+
+gemini_safety_setting: SafetySetting.HarmBlockThreshold.BLOCK_ONLY_HIGH
+
+strings_to_clean_from_disease_list:
+  - "LLM EXTRACTION ERROR"
+  - "None "
+  - "None"
+  - ""
+  - "none"
+  - "ERROR"
+
+cleaning_regex_sub_pattern: "[^A-Za-z0-9 ]+"
+
+orchard_asset_field_names:
+  drug_field_name: drug_kg_node_id
+  disease_field_name: disease_kg_node_id
+  indication_field_name: indication

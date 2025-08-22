@@ -7,8 +7,6 @@ error_log:
   load_args:
     sep: "\t"
 
-
-
 # Orange Book list build
 orange-book-products:
   type: pandas.CSVDataset
@@ -170,10 +168,6 @@ ema-norm-errors:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/ema/ema_norm_errors.xlsx
 
-
-
-
-
 # PMDA build
 pmda-products:
   type: pandas.CSVDataset
@@ -224,13 +218,7 @@ pmda-norm-errors:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_norm_errors.xlsx
 
-
-
-
-
-
 # JOINED LIST
-
 joined-list:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/combined/joined_list.xlsx
@@ -244,34 +232,27 @@ list-with-smiles:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/combined/joined_list_smiles.xlsx
 
-
-
-
-
 # UTILS STUFF
 atc-codes:
   type: pandas.CSVDataset
   filepath: data/drugs/01_raw/atc_with_ids.csv
 
-
-
-
-
-
-
 #####################################################################################
 #####################################################################################
 #####################################################################################
 #####################################################################################
 #####################################################################################
-
-
-
 
 # USA-indications
 
-path_to_fda_labels: /Volumes/MML/2025_06_30_dailymed/
+# dailymed_contraindications_raw:
+#   type: pandas.ExcelDataset
+#   filepath: data/01_raw/dailymed_contraindications_sections.xlsx
 
-dailymed_contraindications_raw:
+dailymed_indications_raw:
   type: pandas.ExcelDataset
-  filepath: data/01_raw/dailymed_contraindications_sections.xlsx
+  filepath: data/on_label/01_raw/dailymed_indications.xlsx
+
+#dailymed_indications_named_diseases:
+  #type: pandas.CSVDataset
+  #filepath: data/on_label/02_intermediate/dailymed_indications_named_diseases.csv

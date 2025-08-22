@@ -37,7 +37,7 @@ def create_pipeline(**kwargs) -> Pipeline:
         ),
 
         node(
-            func=nodes.deduplicate_dataframe,
+            func=nodes.deduplicate_with_join,
             inputs = [
                 "ob-reformatted-dates",
                 "params:deduplication_columns_usa",
@@ -165,7 +165,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = "get-earliest-dates-pb"
         ),
         node(
-            func=nodes.deduplicate_dataframe,
+            func=nodes.deduplicate_with_join,
             inputs = [
                 "pb-earliest-dates",
                 "params:deduplication_columns_usa",
@@ -287,7 +287,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = "reformat-dates-ema"
         ),
         node(
-            func=nodes.deduplicate_dataframe,
+            func=nodes.deduplicate_with_join,
             inputs = [
                 "ema-reformatted-dates",
                 "params:deduplication_columns",
@@ -404,7 +404,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = "standardize-cols-pmda"
         ),
         node(
-            func=nodes.deduplicate_dataframe,
+            func=nodes.deduplicate_with_join,
             inputs = [
                 "pmda-standardized",
                 "params:deduplication_columns",
