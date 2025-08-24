@@ -48,11 +48,52 @@ standardization_mapping_pmda:
   Approval Date: approval_date
   Indications: indication
 
+standardization_mapping_india:
+  Drug Name: source_ingredients
+  Date of Approval: approval_date
+  Indication: indication
 
 standardization_mapping_purple_book:
   "Proper Name": source_ingredients
   Approval Date: approval_date
   Marketing Status: marketing_status_usa
+
+standardization_mapping_russia:
+  International non -parted or chemical name: source_ingredients
+  The date of registration: approval_date
+
+final_list_remap:
+  corrected_curie_norm: curie
+  corrected_curie_norm_label: label
+  source_ingredients: source_ingredients
+  approved_usa: approved_usa
+  marketing_status_usa: marketing_status_usa
+  approved_europe: approved_europe
+  approved_japan: approved_japan
+  approved_india: approved_india
+  approved_russia: approved_russia
+  is_combination_therapy: is_combination_therapy
+  combination_therapy_ingredients: combination_therapy_ingredients
+  combination_therapy_ingredients_curies: combination_therapy_ingredients_curies
+  is_steroid: is_steroid
+  is_antimicrobial: is_antimicrobial
+  is_chemotherapy: is_chemotherapy
+  is_glucose_regulator: is_glucose_regulator
+  is_vaccine_or_antigen: is_vaccine_or_antigen
+  is_no_therapeutic_value: is_no_therapeutic_value
+  is_metallic_salt: is_metallic_salt
+  is_allergen: is_allergen
+  is_radioisotope_or_diagnostic_agent: is_radioisotope_or_diagnostic_agent
+  is_cancer_drug: is_cancer_drug
+  alternate_ids: alternate_ids
+  atc_codes: atc_codes
+  atc_main: atc_main
+  atc_level1: atc_level1
+  atc_level2: atc_level2
+  atc_level3: atc_level3
+  atc_level4: atc_level4
+  atc_level5: atc_level5
+  smiles: smiles
 
 deduplication_columns_usa:
   - source_ingredients
@@ -61,12 +102,13 @@ deduplication_columns_usa:
 
 deduplication_columns:
   - source_ingredients
-  - approval_date
 
 approval_tags:
   usa: approved_usa
   eur: approved_europe
   jpn: approved_japan
+  rus: approved_russia
+  ind: approved_india
 
 source_ingredients_column: source_ingredients
 
@@ -112,7 +154,7 @@ enrichment_tags:
     output_col: is_metallic_salt
     model_params:
       model: gpt-4o
-      prompt: Is this drug a simple metallic salt? Return TRUE or FALSE only.
+      prompt: Is this drug a simple metallic salt? Return TRUE or FALSE only for the whole drug. If multiple simple metallic salts are provided, return TRUE. If anything other than a simple metallic salt is provided in the description, return FALSE.
       temperature: 0
   allergen:
     output_col: is_allergen
@@ -138,15 +180,15 @@ combo_therapy_tags:
     input_col: source_ingredients
     output_col: is_combination_therapy
     model_params:
-      model: gpt-5-mini
+      model: gpt-4o-mini
       prompt: "Is the following a representation of a coformulated drug or combination therapy? If it is two salts of the same active moiety, do not consider it to be a combination therapy. Return TRUE or FALSE only. DRUG:"
-      temperature: 1
+      temperature: 0
   
 combination_therapy_split_drug:
   input_col: source_ingredients
   output_col: combination_therapy_ingredients
   model_params:
-    model: gpt-4o-mini
+    model: gpt-4o
     prompt: "Please split the drug name that follows this prompt into a structured list of drugs separated by vertical pipes \"|\", e.g., 'drug1|drug2|drug3|...|drugN'. Return ONLY the list. If only one ingredient, return an empty response. If a multi-component drug (e.g. \"Meningococcal groups A, B, C vaccine\", return each item with its full name so that it could be parsed independently, e.g. \"Meningococcal group A vaccine | Meningococcal group B vaccine | Meningococcal group C vaccine \". If the contents are proprietary or otherwise represent a violaiton of openai policies, please return the original drug name only. DRUG NAME:"
     temperature: 0
 
@@ -169,7 +211,7 @@ date_reformatting_tag:
     output_col: approval_date
     model_params:
       model: gpt-4o-mini
-      prompt: "Please reformat the following drug approval date to YYYYMMDD format. Return only the reformatted date in YYYYMMDD format. Date: "
+      prompt: "Please reformat the following drug approval date to YYYYMMDD format. Return only the reformatted date in YYYYMMDD format. If just a year is provided, return January 1 of that year, e.g. 1976->19760101. If inadequate information is provided to determine the year, return all X, e.g., XXXXXXXX. DATE: "
       temperature: 0
 
 

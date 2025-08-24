@@ -42,18 +42,18 @@ ob-nameres-errors:
 ob-usa-approved-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/orangebook/ob_with_usa_tag.csv
-ob-combo-therapy-tags:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/orangebook/ob_combo_therapy_tags.csv
-ob-split-ingredients:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/orangebook/ob_split_ingredients.csv
-ob-component-ids:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/orangebook/ob_combo_therapies_with_id.csv
-ob-unlisted-single-ingredients:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/orangebook/ob_unlisted-single-ingredients.csv
+# ob-combo-therapy-tags:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/orangebook/ob_combo_therapy_tags.csv
+# ob-split-ingredients:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/orangebook/ob_split_ingredients.csv
+# ob-component-ids:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/orangebook/ob_combo_therapies_with_id.csv
+# ob-unlisted-single-ingredients:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/orangebook/ob_unlisted-single-ingredients.csv
 ob-norm:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/orangebook/ob_norm.xlsx
@@ -85,30 +85,31 @@ pb-deduplicated:
 pb-nameresolved:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/purplebook/pb_nameresolved.csv
+pb-llm-id-qc:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/purplebook/pb_llm_id_qc.csv
 pb-corrected-ids:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/purplebook/pb_corrected_ids.csv
 pb-nameres-errors:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/purplebook/pb_nameres_errors.csv
-pb-llm-id-qc:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/purplebook/pb_llm_id_qc.csv
+
 pb-usa-approved-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/purplebook/pb_with_usa_tag.csv
-pb-combo-therapy-tags:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/purplebook/pb_combo_therapy_tags.csv
-pb-split-ingredients:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/purplebook/pb_split_ingredients.csv
-pb-component-ids:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/purplebook/pb_combo_therapies_with_id.csv
-pb-unlisted-single-ingredients:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/purplebook/pb_unlisted-single-ingredients.csv
+# pb-combo-therapy-tags:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/purplebook/pb_combo_therapy_tags.csv
+# pb-split-ingredients:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/purplebook/pb_split_ingredients.csv
+# pb-component-ids:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/purplebook/pb_combo_therapies_with_id.csv
+# pb-unlisted-single-ingredients:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/purplebook/pb_unlisted-single-ingredients.csv
 pb-norm:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/purplebook/pb_norm.xlsx
@@ -149,18 +150,18 @@ ema-nameres-errors:
 ema-approved-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/ema/ema_with_approval_tag.csv
-ema-combo-therapy-tags:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ema/ema_with_combo_therapy_tag.csv
-ema-split-ingredients:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ema/ema_split_ingredients.csv
-ema-component-ids:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ema/ema_combo_therapies_with_id.csv
-ema-unlisted-single-ingredients:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/ema/ema_unlisted-single-ingredients.csv
+# ema-combo-therapy-tags:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/ema/ema_with_combo_therapy_tag.csv
+# ema-split-ingredients:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/ema/ema_split_ingredients.csv
+# ema-component-ids:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/ema/ema_combo_therapies_with_id.csv
+# ema-unlisted-single-ingredients:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/ema/ema_unlisted-single-ingredients.csv
 ema-norm:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/ema/ema_norm.xlsx
@@ -199,24 +200,71 @@ pmda-nameres-errors:
 pmda-approved-tags:
   type: pandas.CSVDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_with_approval_tags.csv
-pmda-combo-therapy-tags:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/pmda/pmda_with_combo_therapy_tag.csv
-pmda-split-ingredients:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/pmda/pmda_split_ingredients.csv
-pmda-component-ids:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/pmda/pmda_combo_therapies_with_id.csv
-pmda-unlisted-single-ingredients:
-  type: pandas.CSVDataset
-  filepath: data/drugs/02_intermediate/pmda/pmda_with_unlisted_ingredients.csv
+# pmda-combo-therapy-tags:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/pmda/pmda_with_combo_therapy_tag.csv
+# pmda-split-ingredients:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/pmda/pmda_split_ingredients.csv
+# pmda-component-ids:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/pmda/pmda_combo_therapies_with_id.csv
+# pmda-unlisted-single-ingredients:
+#   type: pandas.CSVDataset
+#   filepath: data/drugs/02_intermediate/pmda/pmda_with_unlisted_ingredients.csv
 pmda-norm:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_norm.xlsx
 pmda-norm-errors:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/pmda/pmda_norm_errors.xlsx
+
+
+# Russia
+russia-translated:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/russia/russia-list-translated.xlsx
+russia-standardized:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/russia/russia_standardized.csv
+russia-nameres-errors:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/russia/russia_nameres_errors.csv
+russia-approved-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/russia/russia_approved.csv
+russia-norm:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/russia/russia_norm.csv
+
+# India
+india-raw:
+  type: pandas.CSVDataset
+  filepath: data/drugs/01_raw/indian_drugs.csv
+india-standardized:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/india/india_standardized.csv
+india-deduplicated:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/india/india_deduplicated.csv
+india-nameresolved:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/india/india_deduplicated.csv
+india-nameres-errors:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/india/india_nameres_errors.csv
+india-llm-id-qc:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/india/india_llm_id_qc.csv
+india-corrected-ids:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/india/india_corrected_ids.csv
+india-approved-tags:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/india/india_approved_tags.csv
+india-norm:
+  type: pandas.CSVDataset
+  filepath: data/drugs/02_intermediate/india/india_norm.csv
 
 # JOINED LIST
 joined-list:
@@ -231,12 +279,48 @@ list-with-atc:
 list-with-smiles:
   type: pandas.ExcelDataset
   filepath: data/drugs/02_intermediate/combined/joined_list_smiles.xlsx
+list-with-combo-therapy-tags:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list_combo_tags.xlsx
+list-with-split-ingredients:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list_split_ingredients.xlsx
+joined-list-component-ids:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list_component_ids.xlsx
+joined-list-unlisted-single-ingredients:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list_with_unlisted_single_ingredients.xlsx
+joined-list-remap:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list_remapped.xlsx
+joined-list-filtered:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/02_intermediate/combined/joined_list_filtered.xlsx
+drug_list_stringent:
+  type: pandas.CSVDataset
+  filepath: data/drugs/03_primary/drug_list_stringent.csv
+drug_list_flexible:
+  type: pandas.CSVDataset
+  filepath: data/drugs/03_primary/drug_list_flexible.csv
+
+
+
 
 # UTILS STUFF
 atc-codes:
   type: pandas.CSVDataset
   filepath: data/drugs/01_raw/atc_with_ids.csv
 
+
+# REPORTING
+old-list:
+  type: pandas.ExcelDataset
+  filepath: data/drugs/08_reporting/version_comparison/2025_08_20.xlsx
+
+drug-list-v2v-log:
+  type: pandas.CSVDataset
+  filepath: data/drugs/08_reporting/v2v.csv
 #####################################################################################
 #####################################################################################
 #####################################################################################

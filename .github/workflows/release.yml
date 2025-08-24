@@ -36,6 +36,47 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: drug-list/data/03_primary/drugList.tsv # Replace with the path to your file
-          asset_name: drugList.tsv            # Replace with the name you want for the uploaded asset
+          asset_path: medi/drugs/02_intermediate/combined/joined_list_smiles.csv # Replace with the path to your file
+          asset_name: drugList.csv           # Replace with the name you want for the uploaded asset
+          asset_content_type: application/octet-stream
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: medi/drugs/02_intermediate/orangebook/ob_norm.xlsx # Replace with the path to your file
+          asset_name: orangebook.xlsx           # Replace with the name you want for the uploaded asset
+          asset_content_type: application/octet-stream
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: medi/drugs/02_intermediate/purplebook/pb_norm.xlsx # Replace with the path to your file
+          asset_name: purplebook.xlsx           # Replace with the name you want for the uploaded asset
+          asset_content_type: application/octet-stream
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: medi/drugs/02_intermediate/ema/ema_norm.xlsx # Replace with the path to your file
+          asset_name: ema.xlsx           # Replace with the name you want for the uploaded asset
+          asset_content_type: application/octet-stream
+
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: medi/drugs/02_intermediate/pmda/pmda_norm.xlsx # Replace with the path to your file
+          asset_name: pmda.xlsx           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream

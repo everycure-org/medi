@@ -8,7 +8,7 @@ from pathlib import Path
 
 import tempfile
 from tqdm import tqdm
-from medi.utils import openai_tags, nameres
+from medi.utils import openai_tags, nameres, normalize
 import numpy as np
 from openai import OpenAI
 
@@ -116,8 +116,8 @@ def create_single_unlisted_ingredient(row, curie, label, source)->pd.DataFrame:
     
     """
     row['source_ingredients']=source
-    row['source_ingredients_curie']=curie
-    row['source_ingredients_curie_label']=label
+    row['corrected_curie_norm']=curie
+    row['corrected_curie_norm_label']=label
     row['is_combination_therapy']="FALSE"
     row['combination_therapy_ingredients']=""
     row['combination_therapy_ingredients_curies']=""
@@ -145,8 +145,10 @@ def add_unlisted_ingredients(df:pd.DataFrame)-> pd.DataFrame:
                 curie_label = ing.split("~")
                 if curie_label[0] not in druglist:
                     row = pd.DataFrame([df.iloc[idx]])
-                    df = pd.concat([df,create_single_unlisted_ingredient(row, curie_label[0], curie_label[1], ing)], axis=0)    
-    return df
+                    df = pd.concat([df,create_single_unlisted_ingredient(row, curie_label[0], curie_label[1], ing)], axis=0)  
+    merged_df = df.groupby('corrected_curie_norm', as_index=False).agg(combine_rows)
+  
+    return merged_df
 
 
 def split_combination_therapies(df:pd.DataFrame, params: dict)->pd.DataFrame:
@@ -206,7 +208,7 @@ def improve_ids(df: pd.DataFrame, nameres_params:dict, base_prompt: str) -> tupl
     print(errors)
     return df, errors
 
-def join_lists(orangebook, purplebook, ema, pmda)->pd.DataFrame:
+def join_lists(orangebook, purplebook, ema, pmda, russia, india)->pd.DataFrame:
     """
     Merge multiple dataframes based on the 'curie' field, combining matching rows.
     
@@ -216,7 +218,7 @@ def join_lists(orangebook, purplebook, ema, pmda)->pd.DataFrame:
     Returns:
     pandas.DataFrame: Merged dataframe with combined rows
     """
-    df_list = list([pmda, ema, orangebook, purplebook])#, #russia, india])
+    df_list = list([pmda, ema, orangebook, purplebook, russia, india])
     if not df_list:
         raise ValueError("Empty list of dataframes provided")
         
@@ -226,7 +228,58 @@ def join_lists(orangebook, purplebook, ema, pmda)->pd.DataFrame:
     
     
     # Group by 'curie' and aggregate all other columns
-    merged_df = combined_df.groupby('corrected_curie', as_index=False).agg(combine_rows)
+    merged_df = combined_df.groupby('corrected_curie_norm', as_index=False).agg(combine_rows)
+    # Remove problematic characters for Excel/openpyxl
+    merged_df = merged_df.replace({
+        r'[^\x20-\x7E\t\n\r]': '',  # Remove non-printable chars (keep tabs, newlines, carriage returns)
+        r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]': '',  # Remove control characters except \t, \n, \r
+        r'[\uFEFF]': '',  # Remove BOM (Byte Order Mark)
+        r'[\u200B-\u200D\uFEFF]': '',  # Remove zero-width spaces and similar
+    }, regex=True)
     return merged_df
 
 
+def compare(previous_list: pd.DataFrame, current_list: pd.DataFrame) -> pd.DataFrame:
+    
+    #drugs_old = set(previous_list['improved_id'])
+    #drugs_new = set(current_list['improved_id'])
+
+    drugs_old = set(previous_list['corrected_curie_norm'])
+    drugs_new = set(current_list['corrected_curie_norm'])
+
+    drugs_removed = drugs_old.difference(drugs_new)
+    drugs_added = drugs_new.difference(drugs_old)
+    drugs_same = drugs_new.intersection(drugs_old)
+
+    print(f"{len(drugs_removed)} drugs removed from list : {drugs_removed}")
+    print(f"{len(drugs_added)} drugs added to list: {drugs_added}")
+    print(f"{len(drugs_same)} drugs remain the same between versions.")
+
+    #print(previous_list)
+    #print(current_list)
+
+    drugs_added_labels = (normalize.normalize(item)[1] for item in tqdm(drugs_added, desc="normalizing added drugs"))
+    drugs_removed_labels = (normalize.normalize(item)[1] for item in tqdm(drugs_removed, desc="normalizing removed drugs"))
+    drugs_same_labels = (normalize.normalize(item)[1] for item in tqdm(drugs_same, desc="normalizing unchanged drugs"))
+
+    return pd.DataFrame({
+        "drugs_added": pd.Series(list(drugs_added)),
+        "added_label": pd.Series(list(drugs_added_labels)),
+        "drugs_removed": pd.Series(list(drugs_removed)),
+        "removed_label": pd.Series(list(drugs_removed_labels)),
+        "drugs_same": pd.Series(list(drugs_same)),
+        "same_label":pd.Series(list(drugs_same_labels))
+    })
+
+def store_previous_version(in_list: pd.DataFrame) -> pd.DataFrame:
+    return in_list
+
+def filter_drugs(in_df:pd.DataFrame) -> pd.DataFrame:
+    indices_to_remove = []
+    for idx, row in tqdm(in_df.iterrows(), total=len(in_df), desc="clearing allergens, vaccines, radioisotopes, and drugs of low therapeutic value"):
+        #print(f"row['isallergen']: {row['is_allergen']}, {type(row['is_allergen'])}")
+        if row['is_allergen']==True or row['is_allergen']=='TRUE' or row['is_radioisotope_or_diagnostic_agent']==True or row['is_no_therapeutic_value']==True or row['is_vaccine_or_antigen']==True:
+            indices_to_remove.append(idx)
+    in_df.drop(indices_to_remove, axis=0, inplace=True)
+    in_df = in_df.rename(columns={'improved_id': 'curie', 'label': 'curie_label'})
+    return in_df

@@ -19,3 +19,4 @@ pdfplumber
 matplotlib
 matplotlib_venn
 vertexai
+googletrans
