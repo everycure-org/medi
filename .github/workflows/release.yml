@@ -36,7 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/drugs/03_primary/drug_list_flexible.csv # Replace with the path to your file
+          asset_path: medi/data/drugs/03_primary/drug_list_flexible.csv # Replace with the path to your file
           asset_name: drug_list_flexible.csv           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
       
@@ -46,7 +46,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/drugs/03_primary/drug_list_stringent.csv # Replace with the path to your file
+          asset_path: medi/data/drugs/03_primary/drug_list_stringent.csv # Replace with the path to your file
           asset_name: drug_list_stringent.csv           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
 
@@ -56,7 +56,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/drugs/02_intermediate/orangebook/ob_norm.xlsx # Replace with the path to your file
+          asset_path: medi/data/drugs/02_intermediate/orangebook/ob_norm.xlsx # Replace with the path to your file
           asset_name: orangebook.xlsx           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
 
@@ -66,7 +66,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/drugs/02_intermediate/purplebook/pb_norm.xlsx # Replace with the path to your file
+          asset_path: medi/data/drugs/02_intermediate/purplebook/pb_norm.xlsx # Replace with the path to your file
           asset_name: purplebook.xlsx           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
 
@@ -76,7 +76,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/drugs/02_intermediate/ema/ema_norm.xlsx # Replace with the path to your file
+          asset_path: medi/data/drugs/02_intermediate/ema/ema_norm.xlsx # Replace with the path to your file
           asset_name: ema.xlsx           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
 
@@ -87,7 +87,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/drugs/02_intermediate/pmda/pmda_norm.xlsx # Replace with the path to your file
+          asset_path: medi/data/drugs/02_intermediate/pmda/pmda_norm.xlsx # Replace with the path to your file
           asset_name: pmda.xlsx           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
 
@@ -97,7 +97,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/drugs/02_intermediate/russia/russia_norm.csv # Replace with the path to your file
+          asset_path: medi/data/drugs/02_intermediate/russia/russia_norm.csv # Replace with the path to your file
           asset_name: russia.csv          # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
 
@@ -108,7 +108,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/drugs/02_intermediate/india/india_norm.csv # Replace with the path to your file
+          asset_path: medi/data/drugs/02_intermediate/india/india_norm.csv # Replace with the path to your file
           asset_name: india.csv           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
 
