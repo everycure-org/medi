@@ -321,6 +321,25 @@ old-list:
 drug-list-v2v-log:
   type: pandas.CSVDataset
   filepath: data/drugs/08_reporting/v2v.csv
+
+
+drugcentral_usa_approved: 
+  type: pandas.CSVDataset
+  filepath: data/drugs/08_reporting/drugcentral/FDA_Approved.csv
+
+drugcentral_europe_approved: 
+  type: pandas.CSVDataset
+  filepath: data/drugs/08_reporting/drugcentral/EMA_Approved.csv
+
+drugcentral_japan_approved: 
+  type: pandas.CSVDataset
+  filepath: data/drugs/08_reporting/drugcentral/PMDA_Approved.csv
+
+drugcentral_merged: 
+  type: pandas.CSVDataset
+  filepath: data/drugs/08_reporting/drugcentral/drugcentral_merged.csv
+
+
 #####################################################################################
 #####################################################################################
 #####################################################################################
@@ -340,3 +359,6 @@ dailymed_indications_raw:
 #dailymed_indications_named_diseases:
   #type: pandas.CSVDataset
   #filepath: data/on_label/02_intermediate/dailymed_indications_named_diseases.csv
+
+
+

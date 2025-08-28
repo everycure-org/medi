@@ -110,6 +110,11 @@ approval_tags:
   rus: approved_russia
   ind: approved_india
 
+stringent_tags:
+  - approved_usa
+  - approved_europe
+  - approved_japan
+
 source_ingredients_column: source_ingredients
 
 label_column: corrected_curie_norm_label

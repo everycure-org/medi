@@ -774,6 +774,20 @@ def create_pipeline(**kwargs) -> Pipeline:
             name = "filter-drug-list"
         ),
         node(
+            func = nodes.include_stringent_only,
+            inputs=[
+                "drug_list_flexible",
+                "params:stringent_tags"
+            ],
+            outputs = "drug_list_stringent",
+            name = "filter-for-stringent-only"
+        ),
+
+##########################################################################################################
+########### REPORTING ####################################################################################
+##########################################################################################################
+
+        node(
             func=nodes.compare,
             inputs=[
                 "old-list",
@@ -782,4 +796,21 @@ def create_pipeline(**kwargs) -> Pipeline:
             outputs="drug-list-v2v-log",
             name = "compare-drug-list-versions"
         ),
+
+        node(
+            func = nodes.compare_drugcentral_drugbank,
+            inputs = [
+                "drug_list_stringent",
+                "drug_list_flexible",
+                "drugcentral_usa_approved",
+                "drugcentral_europe_approved",
+                "drugcentral_japan_approved"
+            ],
+            outputs = "drugcentral_merged",
+            name = "compare-drugcentral-drugbank"
+        )
+
+
+
+
     ])

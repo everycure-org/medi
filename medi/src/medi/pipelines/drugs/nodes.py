@@ -11,6 +11,9 @@ from tqdm import tqdm
 from medi.utils import openai_tags, nameres, normalize
 import numpy as np
 from openai import OpenAI
+from . import grouped_bar
+from matplotlib_venn import venn2
+import matplotlib.pyplot as plt
 
 def combine_rows(series):
         unique_values = series.dropna().unique()
@@ -283,3 +286,89 @@ def filter_drugs(in_df:pd.DataFrame) -> pd.DataFrame:
     in_df.drop(indices_to_remove, axis=0, inplace=True)
     in_df = in_df.rename(columns={'improved_id': 'curie', 'label': 'curie_label'})
     return in_df
+
+def include_stringent_only(df:pd.DataFrame, tags: list[str]) -> pd.DataFrame:
+    mask = df[tags].any(axis=1)
+    new_df = df[mask]
+    df_final = new_df.drop(['approved_india', 'approved_russia'], axis=1)
+    return df_final
+
+def compare_drugcentral_drugbank(druglist_stringent: pd.DataFrame, druglist_flexible: pd.DataFrame, usa: pd.DataFrame, eur: pd.DataFrame, jpn: pd.DataFrame) -> pd.DataFrame:
+    cols = ['drug_id', 'drug_name']
+    usa.columns = cols
+    eur.columns = cols
+    jpn.columns = cols
+    usa['approved_usa']=[True for idx, row in usa.iterrows()]
+    eur['approved_europe']=[True for idx, row in eur.iterrows()]
+    jpn['approved_japan']=[True for idx, row in jpn.iterrows()]
+
+    df_list = list([usa, eur, jpn])
+    combined_df = pd.concat(df_list, ignore_index=True)
+    drugcentral_merged = combined_df.groupby('drug_name', as_index=False).agg(combine_rows)
+    drugcentral_merged['drug_id_ont']=[f"DRUGCENTRAL:{row['drug_id']}" for idx, row in drugcentral_merged.iterrows()]
+    drugcentral_norm = drugcentral_merged
+    drugcentral_norm = normalize.normalize_column(drugcentral_merged, "drug_id_ont")
+
+    n_drugs_medi_stringent = len(druglist_stringent)
+    n_drugs_medi_flexible = len(druglist_flexible)
+    n_drugs_drugcentral = len(drugcentral_norm)
+
+    n_drugs_medi_usa = len(druglist_flexible[druglist_flexible['approved_usa']==True])
+    n_drugs_medi_europe = len(druglist_flexible[druglist_flexible['approved_europe']==True])
+    n_drugs_medi_japan = len(druglist_flexible[druglist_flexible['approved_japan']==True])
+
+    n_drugs_drugcentral_usa = len(usa)
+    n_drugs_drugcentral_ema = len(eur)
+    n_drugs_drugcentral_pmda = len(jpn)
+
+
+    print(n_drugs_medi_stringent)
+    print(n_drugs_medi_flexible)
+    print(n_drugs_drugcentral)
+    print(n_drugs_medi_usa)
+    print(n_drugs_medi_europe)
+    print(n_drugs_medi_japan)
+    print(n_drugs_drugcentral_usa)
+    print(n_drugs_drugcentral_ema)
+    print(n_drugs_drugcentral_pmda)
+
+    # EXTRACTED FROM DRUGBANK 2025-08-24
+    drugbank_n_smallmolecule_usa = 2040 # Small Molecule drugs Approved or Withdrawn US market availability
+    drugbank_n_biologic_usa = 364 # Biotech drugs approved or withdrawn (protein or nucleic acid) US Availability
+    drugbank_n_smallmolecule_eur = 564 # Small Molecule Drugs approved or withdrawn EU availability
+    drugbank_n_biologic_eur = 245 # Biotech drugs approved or withdrawn (protein or nucleic acid) EU availability
+    drugbank_n_total_small_molecule = 3005 #small molecule drugs approved or withdrawn
+    drugbank_n_total_biologic = 455 #small molecule drugs approved or withdrawn (protein or nucleic acid) any market availability
+
+
+    # Basic usage with sample data
+    #fig, ax = grouped_bar.create_grouped_bar_chart()
+
+    # With custom data
+    my_data = pd.DataFrame({
+        'MeDI': [n_drugs_medi_usa, n_drugs_medi_europe, n_drugs_medi_japan, n_drugs_medi_flexible],
+        'Drug Central': [n_drugs_drugcentral_usa, n_drugs_drugcentral_ema, n_drugs_drugcentral_pmda, n_drugs_drugcentral], 
+        'DrugBank': [(drugbank_n_smallmolecule_usa+drugbank_n_biologic_usa), (drugbank_n_smallmolecule_eur+drugbank_n_biologic_eur),0, (drugbank_n_total_small_molecule+drugbank_n_total_biologic)],
+
+    }, index=['USA', 'Europe', 'Japan', 'Overall Approved'])
+
+    # Create chart with custom parameters
+    fig, ax = grouped_bar.create_grouped_bar_chart(
+        data=my_data,
+        title="Comparison of Drug Count",
+        xlabel="Region of Approval",
+        ylabel="Number of Drugs",
+        save_path="drug_count_comparison_medi.png"
+    )
+    
+    drugcentral_drugs = set(list(drugcentral_norm['drug_id_ont_norm']))
+    medi_drugs = set(list(druglist_flexible['curie']))
+    out = venn2([drugcentral_drugs, medi_drugs],("Drug Central", "MeDI"))
+    
+    for text in out.set_labels:
+        text.set_fontsize(22)
+    for text in out.subset_labels:
+        text.set_fontsize(22)
+    plt.show()
+
+    return drugcentral_norm
