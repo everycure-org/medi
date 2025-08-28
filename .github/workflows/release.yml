@@ -36,8 +36,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/drugs/02_intermediate/combined/joined_list_smiles.csv # Replace with the path to your file
-          asset_name: drugList.csv           # Replace with the name you want for the uploaded asset
+          asset_path: medi/drugs/03_primary/drug_list_flexible.csv # Replace with the path to your file
+          asset_name: drug_list_flexible.csv           # Replace with the name you want for the uploaded asset
+          asset_content_type: application/octet-stream
+      
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: medi/drugs/03_primary/drug_list_stringent.csv # Replace with the path to your file
+          asset_name: drug_list_stringent.csv           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
 
       - name: Upload Release Asset
@@ -80,3 +90,26 @@ jobs:
           asset_path: medi/drugs/02_intermediate/pmda/pmda_norm.xlsx # Replace with the path to your file
           asset_name: pmda.xlsx           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: medi/drugs/02_intermediate/russia/russia_norm.csv # Replace with the path to your file
+          asset_name: russia.csv          # Replace with the name you want for the uploaded asset
+          asset_content_type: application/octet-stream
+
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: medi/drugs/02_intermediate/india/india_norm.csv # Replace with the path to your file
+          asset_name: india.csv           # Replace with the name you want for the uploaded asset
+          asset_content_type: application/octet-stream
+
+      
