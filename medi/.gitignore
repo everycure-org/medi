@@ -17,10 +17,14 @@ data/**
 # also keep all .gitkeep files
 !.gitkeep
 
-# also keep the example dataset
-!data/01_raw/companies.csv
-!data/01_raw/reviews.csv
-!data/01_raw/shuttles.xlsx
+!data/drugs/03_primary/*
+!data/drugs/02_intermediate/ema/ema_norm.xlsx
+!data/drugs/02_intermediate/orangebook/ob_norm.xlsx
+!data/drugs/02_intermediate/purplebook/pb_norm.xlsx
+!data/drugs/02_intermediate/pmda/pmda_norm.xlsx
+!data/drugs/02_intermediate/russia/russia_norm.csv
+!data/drugs/02_intermediate/india/india_norm.csv
+
 
 # ignore kedro-viz metadata
 .viz
