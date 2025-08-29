@@ -24,7 +24,7 @@ data/**
 !data/drugs/02_intermediate/pmda/pmda_norm.xlsx
 !data/drugs/02_intermediate/russia/russia_norm.csv
 !data/drugs/02_intermediate/india/india_norm.csv
-
+!data/drugs/08_reporting/nameres_evaluation_set_annotated.csv
 
 # ignore kedro-viz metadata
 .viz

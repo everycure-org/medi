@@ -808,9 +808,19 @@ def create_pipeline(**kwargs) -> Pipeline:
             ],
             outputs = "drugcentral_merged",
             name = "compare-drugcentral-drugbank"
+        ),
+        node(
+            func=nodes.generate_evaluation_set,
+            inputs = [
+                "ob-norm",
+                "pb-norm",
+                "ema-norm",
+                "pmda-norm",
+            ],
+            outputs = "nameres-evaluation-set",
+            name = "generate-nameres-eval-set"
+
         )
-
-
 
 
     ])

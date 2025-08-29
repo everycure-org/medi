@@ -5,7 +5,7 @@ generated using Kedro 0.19.14
 import pandas as pd 
 import zipfile
 from pathlib import Path
-
+import random
 import tempfile
 from tqdm import tqdm
 from medi.utils import openai_tags, nameres, normalize
@@ -372,3 +372,47 @@ def compare_drugcentral_drugbank(druglist_stringent: pd.DataFrame, druglist_flex
     plt.show()
 
     return drugcentral_norm
+
+
+def random_selections(items, n, replace=False):
+    """
+    Generate N random selections from a set of M items.
+    
+    Args:
+        items: List, tuple, or set of items to select from
+        n: Number of selections to make
+        replace: If True, allow selecting the same item multiple times
+                If False, each item can only be selected once
+    
+    Returns:
+        List of randomly selected items
+    """
+    items_list = list(items)  # Convert to list if it's a set
+    
+    if replace:
+        # With replacement - can select same item multiple times
+        return random.choices(items_list, k=n)
+    else:
+        # Without replacement - each item selected at most once
+        if n > len(items_list):
+            raise ValueError(f"Cannot select {n} items without replacement from {len(items_list)} items")
+        return random.sample(items_list, n)
+    
+
+
+def generate_evaluation_set(orangebook:pd.DataFrame, purplebook: pd.DataFrame, eur:pd.DataFrame, jpn:pd.DataFrame) -> pd.DataFrame:
+    """
+    Select 100 random items with corrected IDs from WHO listed regulatory agencies to evaluate entity linking quality
+    
+    Args:
+        usa, eur, jpn: respective lists post-LLM QC
+    
+    Returns:
+        List of randomly selected items
+    """
+    test_ob = orangebook.iloc[random_selections(range(len(orangebook)), 100)]
+    test_pb = purplebook.iloc[random_selections(range(len(purplebook)), 100)]
+    test_eur = eur.iloc[random_selections(range(len(eur)), 100)]
+    test_jpn = jpn.iloc[random_selections(range(len(jpn)), 100)]
+
+    return pd.concat([test_ob, test_pb, test_eur, test_jpn], ignore_index=True)

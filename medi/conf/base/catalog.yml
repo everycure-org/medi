@@ -339,6 +339,10 @@ drugcentral_merged:
   type: pandas.CSVDataset
   filepath: data/drugs/08_reporting/drugcentral/drugcentral_merged.csv
 
+nameres-evaluation-set:
+  type: pandas.CSVDataset
+  filepath: data/drugs/08_reporting/nameres_evaluation_set.csv
+  
 
 #####################################################################################
 #####################################################################################
