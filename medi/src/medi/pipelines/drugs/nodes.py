@@ -416,3 +416,6 @@ def generate_evaluation_set(orangebook:pd.DataFrame, purplebook: pd.DataFrame, e
     test_jpn = jpn.iloc[random_selections(range(len(jpn)), 100)]
 
     return pd.concat([test_ob, test_pb, test_eur, test_jpn], ignore_index=True)
+
+
+

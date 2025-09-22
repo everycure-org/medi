@@ -1,0 +1,137 @@
+
+rebuild_cache: False
+
+categorization_prompt: "Identify and return ONLY (provide no additional text) the best-fitting categories in the following list of categories for the following disease:"
+
+disease_categories_txgnn_modified:
+  name: txgnn
+  categories:
+    - adrenal_gland_disease
+    - neurodegenerative_disease
+    - metabolic_disorder
+    - cardiovascular_disorder
+    - autoimmune_diseases
+    - mental_health_disorder
+    - anemia
+    - cancer
+    - inflammatory_disease
+    - allergy
+    - other
+
+disease_categories_anatomical:
+  name: anatomical
+  categories:
+    - biliary_disorder
+    - blood_bone_marrow_disorder
+    - bone_disorder
+    - brain_disorder
+    - ear_disorder
+    - endocrine_disorder
+    - eye_disorder
+    - heart_disorder
+    - immune_disorder
+    - joint_disorder
+    - kidney_disorder
+    - liver_disorder
+    - lower_gastrointestinal_disorder
+    - lung_disorder
+    - lymphatic_disorder
+    - muscle_disorder
+    - nose_disorder
+    - reproductive_system_disorder
+    - skin_disorder
+    - spinal_disorder 
+    - teeth_disorder
+    - throat_disorder
+    - upper_gastrointestinal_disorder
+    - urinary_tract_disorder
+    - vascular_disorder
+    - other
+
+disease_categories_medical_specialization:
+  name: medical_specialization
+  categories:
+    - allergy_and_immunology
+    - cardiology
+    - cardiothoracic
+    - dermatology
+    - endocrinology
+    - gastroenterology
+    - genetics_and_genomics
+    - hematology
+    - hepatology
+    - neurology
+    - obstetrics_and_gynecology
+    - oncology
+    - ophthalmology
+    - orthopaedic
+    - otolaryngology
+    - pediatric
+    - psychiatry
+    - pulmonology
+    - renal medicine
+    - rheumatology
+    - urology
+    - other
+
+
+
+
+preprocessing.enrichment_tags:
+  single_input:
+    pathogen:
+      input_params:
+        input_col: label
+        output_col: is_pathogen_caused
+        prompt: Is this disease usually caused by a pathogen such as bacteria, viruses, parasites, or fungi? Return TRUE or FALSE only
+      model_params: 
+        _object: &openai_chat_model langchain_openai.chat_models.base.ChatOpenAI
+        model: &model_name gpt-4o-mini
+        temperature: &temperature 0.8
+      single_input: True
+    cancer:
+      input_params:
+        input_col: label
+        output_col: is_cancer
+        prompt: "Is this disease a cancer? Return TRUE or FALSE only"
+      model_params: 
+        _object: *openai_chat_model
+        model: *model_name
+        temperature: *temperature
+      single_input: True
+    glucose_dysfunction:
+      input_params:
+        input_col: label
+        output_col: is_glucose_dysfunction
+        prompt: Is this disease a disease which is primarily a disease of glucose dysregulation such as diabetes mellitus? Return TRUE or FALSE only
+      model_params:
+        _object: *openai_chat_model
+        model: *model_name
+        temperature: *temperature
+      single_input: True
+    existing_treatment:
+      input_params:
+        input_col: label
+        output_col: tag_existing_treatment
+        prompt: Are there existing efficacious treatments that cure, prevent, or treat this disease? Return TRUE if efficacious treatments exist, otherwise return FALSE
+      model_params:
+        _object: *openai_chat_model
+        model: *model_name
+        temperature: *temperature
+      single_input: True
+  multiple_input:
+    quality_life_years_lost:
+      input_params:
+        input_col: label
+        output_col: tag_QALY_lost
+        definition: definition
+        synonyms: synonyms
+        prompt: "Output only 'VERY HIGH', 'HIGH', 'MEDIUM', 'LOW', or 'NONE'. Categorize the Quality-Adjusted Life Years (QALYs) lost for {disease} into the categories above, based on morbidity, mortality, and quality adjusted life years lost. To help, the following list - {synonym} - contains synonyms of the disease and the following list - {definition} -provides a definition of the disease. If you are unable to determine QALYs lost for a given disease, used similar diseases to make an estimation"
+      model_params:
+        _object: *openai_chat_model
+        model: *model_name
+        temperature: *temperature
+      single_input: False
+
+
+

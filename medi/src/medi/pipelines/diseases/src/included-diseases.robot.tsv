@@ -1,0 +1,621 @@
+ID	LABEL	SUBSET	CONTRIBUTOR	COMMENT
+ID		AI oboInOwl:inSubset	AI dc:contributor SPLIT=|	
+MONDO:0010663	intellectual disability-hypotonic facies syndrome, X-linked, 1	obo:mondo#matrix_included	https://orcid.org/0000-0002-7356-1779	Lots of associations in KG.
+MONDO:0024617	xanthogranuloma	obo:mondo#matrix_included	https://orcid.org/0000-0002-7356-1779	Lots of associations in KG.
+MONDO:0020754	visceral myopathy 1	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0008648	ventricular tachycardia, familial	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100064	tyrosine hydroxylase deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100153	tubulinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0011182	trimethylaminuria	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0008537	telecanthus	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100009	structural congenital heart disease, multiple types - GATA4	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0016763	spondylometaphyseal dysplasia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0000030	sleep-related hypermotor epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0017734	sialidosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0015924	pulmonary arterial hypertension	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0020074	progressive myoclonus epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0021003	polydactyly	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0020642	polycystic kidney disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100258	phytanoyl-CoA hydroxylase deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0019234	peroxisome biogenesis disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100283	overgrowth syndrome and/or cerebral malformations due to abnormalities in MTOR pathway genes	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0011366	ovarian germ cell tumor	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0010795	oncocytic neoplasm	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0007712	oculoauriculovertebral spectrum with radial defects	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0019497	nonsyndromic genetic hearing loss	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005233	non-small cell lung carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0015362	neuronopathy, distal hereditary motor, autosomal dominant	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0019056	neuromuscular disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0018162	neurometabolic disorder due to serine deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0018958	nemaline myopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700071	myopathy caused by variation in POMT2	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700070	myopathy caused by variation in POMT1	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700069	myopathy caused by variation in POMGNT2	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700068	myopathy caused by variation in POMGNT1	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700084	myopathy caused by variation in GMPPB	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700067	myopathy caused by variation in FKTN	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700066	myopathy caused by variation in FKRP	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0018943	myofibrillar myopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0015151	muscular dystrophy, limb-girdle, autosomal dominant	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100346	microcephaly with or without short stature	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100200	microcephaly with intellectual disability	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0001149	microcephaly	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0031447	macrothrombocytopenia, isolated	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0002561	lysosomal storage disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0018838	lissencephaly spectrum disorders	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0007834	islet cell adenomatosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0000591	intrinsic cardiomyopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0021533	intestinal neuroendocrine tumor G1	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100207	infantile-onset epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0019220	inborn disorder of cobalamin metabolism and transport	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0015364	hereditary sensory and autonomic neuropathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0020127	hereditary peripheral neuropathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0018630	hereditary nonpolyposis colon cancer	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100273	glyceronephosphate O-acyltransferase deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0600001	glutaminase deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0018116	galactosemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0030923	frontotemporal dementia and/or amyotrophic lateral sclerosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005384	focal epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0016248	familial ovarian cancer	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0019171	familial long QT syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0000700	familial hemiplegic migraine	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0014452	familial dysfibrinogenemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005144	familial amyotrophic lateral sclerosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0002244	factor VII deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0017851	erythrokeratodermia variabilis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0011962	endometrial cancer	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0007500	ear malformation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0018894	distal hereditary motor neuropathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100317	deficiency of adenosine deaminase 2	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0019952	congenital myopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005453	congenital heart disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005501	congenital disorder of glycosylation type II	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0019719	congenital anomaly of kidney and urinary tract	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0014980	cone-rod dystrophy and hearing loss	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100516	complex neurodevelopmental disorder with motor features	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0000904	complex cortical dysplasia with other brain malformations	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005575	colorectal cancer	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100225	collagen 6-related myopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0021057	classic or attenuated familial adenomatous polyposis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005308	ciliopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0020072	childhood-onset epilepsy syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0000437	cerebellar ataxia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0018947	centronuclear myopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0016146	caveolinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0015152	autosomal recessive limb-girdle muscular dystrophy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005258	autism spectrum disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0021944	auditory neuropathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0015225	arthrogryposis syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0015168	arthrogryposis multiplex congenita	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0016587	arrhythmogenic right ventricular cardiomyopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0019172	aniridia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100274	alkylglycerone-phosphate synthase deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100278	alanine glyoxylate aminotransferase deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0015977	agammaglobulinemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100464	acid sphingomyelinase deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0020119	X-linked syndromic intellectual disability	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100284	X-linked intellectual disability	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100148	X-linked complex neurodevelopmental disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0023880	WHIM syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100498	UROD-related inherited porphyria	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100175	TTN-related myopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100484	TSPAN12-related vitreoretinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0018240	TRPV4-related bone disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800402	TRPM1-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800182	TEK-related primary glaucoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800098	SNRNP200-related dominant retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700117	SLC6A3-related dopamine transporter deficiency syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100100	SELENON-related myopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100337	SEC61A1 deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100437	RPGR-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100368	RPE65-related recessive retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100452	RPE65-related dominant retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100442	RP2-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100444	RLBP1-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100443	RDH5-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800099	RDH12-related recessive retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0021060	RASopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100448	RAB28-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005180	Parkinson disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0017623	PTEN hamartoma tumor syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800395	PRPF31-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800404	PCARE-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800183	PAX6-related ocular dysgenesis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100126	P5CS deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800181	OPA1-related optic atrophy with or without extraocular features	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800407	NYX-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800101	NMNAT1-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800394	MERTK-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100458	MECOM-associated syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100445	LCA5-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100228	LAMA2-related muscular dystrophy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100485	KCNH1 associated disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100509	IFT140-related recessive ciliopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800393	IDH3B-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100453	GUCY2D-related recessive retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100441	GUCY2D-related dominant retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100184	GTP cyclohydrolase I deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0011842	GRN-related frontotemporal lobar degeneration with Tdp43 inclusions	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800397	GRM6-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800396	GPR179-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100122	GNPTAB-mucolipidosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800392	GNAT2-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0000188	GLUT1 deficiency syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100089	GATA1-Related X-Linked Cytopenia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0005775	G6PD deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100040	FOXG1 disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800391	EYS-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700080	EPHB4-associated vascular malformation spectrum	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100152	DKC1-related disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0015626	Charcot-Marie-Tooth disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800180	CPOX-related hereditary coproporphyria	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100446	CNGB3-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800403	CNGB1-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800102	CNGA3-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800405	CNGA1-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800401	CERKL-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100451	CEP290-related ciliopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100039	CDKL5 disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0013343	C1Q deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0700002	ATP1A3-associated neurological disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100447	ATF6-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100227	ALS2-related motor neuron disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0100438	AIPL1-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800398	ADAM9-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:0800406	ABCA4-related retinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-4142-7153	
+MONDO:1040011	vertebral artery dissection	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971043	neurodevelopmental disorder with hypotonia, feeding difficulties, facial dysmorphism, and brain abnormalities	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0000169	microphthalmia, isolated, with cataract	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040020	methicillin-susceptible staphylococcus aureus infectious disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040026	metastatic malignant neoplasm in the brain	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0021169	epithelioid hemangioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040031	dyneinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040021	congenital myasthenic syndrome 4	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040033	congenital muscular dystrophy without intellectual disability	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040029	Sharpin-related autoinflammatory syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040012	PI4KA-related disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1030004	Mollaret's meningitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0100572	MTOR-related overgrowth spectrum	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971044	Ehlers-Danlos syndrome, classic-like, 3	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971140	well-differentiated papillary mesothelial tumour of the pleura	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971058	verruga peruana	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971125	torpedo maculopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971036	thyroid gland mucinous carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971035	thyroid gland mixed medullary and follicular cell-derived carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971034	thyroid gland cribriform morular carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1050000	sycosis barbae	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971129	stellate multiform amelanotic choroidopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975747	spermatogenic failure 95	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0700279	spastic triplegia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975746	spastic paraplegia 92, autosomal recessive	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971149	spastic paraplegia 30b, autosomal recessive	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971092	soft and hard cleft palate	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971049	single isolated optic neuritis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971137	severe congenital myelofibrosis-pancytopenia-intellectual disability-neurologic and ophthalmic abnormalities syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971050	relapsing isolated optic neuritis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975756	reactive angioendotheliomatosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975754	pseudomyogenic hemangioendothelioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971119	proteoglycan-related bone disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971170	prostate cancer, hereditary, X-linked 3	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0700275	prostate cancer, hereditary	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971138	progressive hypotonia-intellectual disability-facial dysmorphism syndrome due to FYVE-defective RBSN	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1030010	precerebral artery stenosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0700280	post-treatment Lyme disease syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971178	polycystic kidney disease 8	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971143	pleural mesothelioma in situ	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971118	pilocytic astrocytoma with histological features of anaplasia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1030009	persistent atrial fibrillation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971145	peritoneal mesothelioma in situ	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971124	perifoveal exudative vascular anomalous complex	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1030011	paroxysmal atrial fibrillation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975753	papillary hemangioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971176	ovarian dysgenesis 11	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975705	otofacial neurodevelopmental syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971064	orofacial clefting-cardiac anomalies-facial dysmorphism syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971056	ocular surface squamous neoplasia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971150	neuronopathy, distal hereditary motor, autosomal recessive 11, with spasticity	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971172	neurodevelopmental disorder with hypotonia, brain anomalies, distinctive facies, and absent language	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975745	neurodevelopmental disorder with characteristic facial and ectodermal features and tetraparesis 1	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971105	neonatal renal venous thrombosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971171	muscular dystrophy, limb-girdle, autosomal recessive 29	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971174	multiple mitochondrial dysfunctions syndrome 9b	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971128	multiple evanescent white dot syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975758	microvenular haemangioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971066	megaloblastic anemia-immunodeficiency due to folate transporter 1 deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971141	localized pleural mesothelioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975752	littoral cell hemangioma of the spleen	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971133	isolated segmental infantile hemangioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971123	isolated retinal racemose hemangioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971033	intrathyroid thymic carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971111	intraoral basal cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975761	immunodeficiency 126, susceptibility to	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975749	immunodeficiency 125	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971177	immunodeficiency 123 with HPV-related verrucosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971151	immunodeficiency 122	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1010089	hypomyopathic dermatomyositis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040027	hypermobility spectrum disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971154	hepatic cutaneous porphyria	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971152	hearing loss, autosomal recessive 125	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971077	episodic memory defect leukoencephalopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975755	eccrine angiomatous hamartoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971142	diffused pleural mesothelioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971127	diffuse unilateral subacute neuroretinitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971062	developmental delay-language impairment-dopa responsive dystonia-parkinsonism syndrome due to a NR4A2 point mutation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971108	common arterial trunk with pulmonary dominance and interrupted aortic arch	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971107	common arterial trunk with aortic dominance	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971130	choroidal osteoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971175	cardiomyopathy, dilated, 2K	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971094	cardiac anomalies-short stature-joint hypermobility-facial dysmorphism syndrome due to TAB2 mutation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975751	brain abnormalities-severe developmental delay-facial dysmorphism-intellectual disability syndrome due to MEF2C mutation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971032	bladder fermentation syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971131	bilateral diffuse uveal melanocytic proliferation disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971063	autosomal dominant dopa-responsive dystonia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971173	autoinflammation with arthritis and vasculitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971031	auto-brewery syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0004980	atopic eczema	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0700283	ataxic diplegic cerebral palsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971179	arterial tortuosity-bone fragility syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1010087	anti-TIF1 dermatomyositis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1010088	anti-SAE dermatomyositis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1010084	anti-NXP2 dermatomyositis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1010065	anti-Mi2 dermatomyositis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1010064	anti-MDA5 dermatomyositis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975757	anastomosing haemangioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971091	acute megakaryoblastic leukemia in adult	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0975759	acquired elastotic haemangioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971069	Phelan-McDermid syndrome due to SHANK3 mutation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971068	Phelan-McDermid syndrome due to 22q13.3 deletion	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971047	PRC-2 complex-related overgrowth spectrum	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0700282	POLR3-related leukodystrophy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971103	Nicolau syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0700281	MYH10-related neurodevelopmental disorder with congenital anomalies	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971093	MGP-related spondyloepiphyseal dysplasia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1030006	Happle-Tinschert syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971080	Grisel syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040041	FZD4-related exudative vitreoretinopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040032	EN1-related dorsoventral syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0971095	6q25.1 microdeletion syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0020627	epileptic encephalopathy, infantile or early childhood	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0100029	antibody mediated epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0100574	generalized epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0100573	combined generalized and focal epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0004658	breast carcinoma in situ https://orcid.org/0000-0003-2955-4640	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-3049-6145|https://orcid.org/0000-0002-1726-0875|https://orcid.org/0000-0001-9449-5195|https://orcid.org/0000-0003-3057-5393	
+MONDO:0004989	breast carcinoma https://orcid.org/0000-0003-2955-4640	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-3049-6145|https://orcid.org/0000-0002-1726-0875|https://orcid.org/0000-0001-9449-5195|https://orcid.org/0000-0003-3057-5393	
+MONDO:1040007	hemihydranencephaly	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040005	PRPF19-related neurodevelopmental disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040014	PPFIA3-related neurodevelopmental disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040003	KCND2-related neurodevelopmental disorder with or without seizures	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040006	CTR9-related neurodevelopmental disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1040008	CAMK2D-related neurodevelopmental disorder and dilated cardiomyopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:1030016	22q-related schwannomatosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0008753	alkaptonuria	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0020654	renal pelvis/ureter urothelial carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0044740	salivary gland squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0800487	variable-age onset idiopathic generalized epilepsy syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0800489	genetic epilepsy with febrile seizures plus spectrum	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0800493	familial mesial temporal lobe epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0700335	familial isolated dilated cardiomyopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0800491	early-infantile DEE	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0800501	developmental and/or epileptic encephalopathy with spike-wave activation in sleep	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0000415	adolescence-adult electroclinical syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0800503	TMEM63B-related developmental and epileptic encephalopathy with anemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	
+MONDO:0016707	astroblastoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640	https://github.com/everycure-org/matrix-disease-list/pull/55
+MONDO:0008661	vitiligo	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0006007	vesicoureteral reflux	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0000190	ventricular fibrillation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0004648	vascular dementia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005608	varicella zoster infection	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0018076	tuberculosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005264	transient ischemic attack	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0010138	thyrotoxicosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0001328	thyroid hormone resistance syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005976	syphilis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0006951	retinal vein occlusion	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0006948	retinal artery occlusion	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0001105	renal hypertension	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0002771	pulmonary fibrosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005279	pulmonary embolism	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0011849	psoriatic arthritis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005083	psoriasis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0002304	protein S deficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0015128	primary adrenal insufficiency	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005386	peripheral arterial disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005904	pericarditis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0004247	peptic ulcer disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0004982	pancreatitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005178	osteoarthritis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0018908	non-Hodgkin lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005301	multiple sclerosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005475	migraine with aura	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0001117	methemoglobinemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005191	metastatic melanoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005065	mesothelioma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005105	melanoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0002648	mammary Paget disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0003947	hyper-IgM syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0018037	hyper-IgE syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0019623	hereditary angioedema	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0017276	frontotemporal dementia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005439	familial hypercholesterolemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0001134	essential hypertension	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005133	endometriosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0002050	depressive disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005356	coronary vasospasm	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005480	contact dermatitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005003	chronic pancreatitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0002465	bronchiolitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0004822	bronchiectasis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005310	atrial flutter	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0004981	atrial fibrillation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0004979	asthma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005618	anxiety disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005306	ankylosing spondylitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0100053	anaphylaxis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0004907	alopecia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0011786	allergic rhinitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0006515	acute pancreatitis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0850093	absence epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0004952	Hodgkins lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005109	HIV infectious disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0005364	Graves disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0015759	B-cell non-Hodgkin lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0004975	Alzheimer disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/57
+MONDO:0056816	vulvar neuroendocrine carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003861	vulvar eccrine adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006006	verrucous carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0020653	vaginal adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005213	uterine carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0040679	urothelial carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004986	urinary bladder carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002836	urethra transitional cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002764	urethra squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003200	urethra adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004030	ureter transitional cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006481	ureter carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006478	undifferentiated pancreatic carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006474	transitional cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0001419	trachea squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003184	trachea carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0021337	tonsil carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0000500	tongue squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005075	thyroid gland papillary carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005034	thyroid gland follicular carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0024622	thyroid gland adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003493	thymus squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003209	thymus gland adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006446	testicular embryonal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005097	squamous cell lung carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005096	squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006056	squamous cell breast carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003500	squamous cell bile duct carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005522	small intestine carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0000402	small cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0020760	skin squamous cell carcinoma in situ	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002529	skin squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005341	skin basal cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006973	skin appendage carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002951	skin adenoid basal cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005092	signet ring cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0001651	scrotum squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002650	scrotal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002837	sarcomatoid transitional cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0021663	sarcomatoid squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0021009	salivary gland mucoepidermoid carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006403	salivary gland carcinoma ex pleomorphic adenoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0000521	salivary gland carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003175	salivary gland adenoid cystic carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0001502	retroperitoneum carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0020654	renal pelvis/ureter urothelial carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005221	renal pelvis urothelial carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005086	renal cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005549	renal cell adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005206	renal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002748	rectum mucinous adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002169	rectum adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0044937	rectal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005616	pulmonary mucoepidermoid carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003960	pulmonary large cell neuroendocrine carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002493	prostatic acinar adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0000993	prostate squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005159	prostate carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005082	prostate adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002834	primary prostate urothelial carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006386	primary peritoneal serous adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003573	pleomorphic carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0000372	pharynx carcinoma in situ	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0000536	pharyngeal squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003195	peritoneal serous adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002113	peritoneal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003698	penis verrucous carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006360	penile carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0000380	paranasal sinus carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006352	paranasal sinus adenoid cystic carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006350	papillary transitional cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002979	papillary squamous carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003531	papillary eccrine carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005074	papillary cystadenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004433	papillary carcinoma of the penis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0006509	papillary carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002512	papillary adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004156	pancreatic mucinous cystadenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005184	pancreatic ductal adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002867	pancreatic cystadenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006047	pancreatic adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005211	ovarian serous adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003581	ovarian embryonal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002702	ovarian cystadenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005140	ovarian carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0044926	oropharyngeal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006327	ocular sebaceous carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0056806	non-small cell squamous lung carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004322	non-gestational ovarian choriocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003950	nipple carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002120	neuroendocrine carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0020596	mucin-producing carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004991	minimally invasive lung adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005613	mesonephric adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0001748	maxillary sinus carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006279	lung sarcomatoid carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003050	lung large cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0027772	lung colloid adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005061	lung adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0056815	liver adenosquamous carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002358	laryngeal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005057	large cell neuroendocrine carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002463	lacrimal gland carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002475	lacrimal gland adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005056	keratinizing squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003210	intrahepatic cholangiocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006254	intestinal type adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0040678	infiltrating urothelial carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004010	infiltrating renal pelvis/ureter urothelial carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003890	infiltrating bladder urothelial carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005216	hypopharyngeal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0020657	human papillomavirus-related squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0020656	human papillomavirus-related penile squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006245	hidradenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003008	hereditary renal cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006243	hepatoid adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004950	gastric carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005036	gastric adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006220	gallbladder squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006215	gallbladder adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002746	fallopian tube adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002739	extrahepatic bile duct mucinous adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004081	extrahepatic bile duct clear cell adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002665	extrahepatic bile duct adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005461	endometrium adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005026	endometrioid adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006192	endometrial endometrioid adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002447	endometrial carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004259	endocervical carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006186	duodenal adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005023	ductal breast carcinoma in situ	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0021652	diffuse type adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005017	diffuse gastric adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006165	colorectal squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0044336	colorectal signet ring cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0020794	colorectal medullary carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0024331	colorectal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006157	colorectal adenosquamous carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005008	colorectal adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005007	colon mucinous adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002271	colon adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005004	clear cell adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003508	choriocarcinoma of testis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003507	choriocarcinoma of ovary	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005207	choriocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003631	cervical serous adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002742	cervical mucinous adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003665	cervical endometrioid adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006135	cervical clear cell adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005131	cervical carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006134	cervical adenosquamous carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006028	cecum adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005590	breast ductal adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004988	breast adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0000514	bone squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003715	bladder urachal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005611	bladder transitional cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002760	bladder squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003386	bladder clear cell adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002751	bladder adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005496	bile duct carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003193	bile duct adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003982	bilateral breast carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0020804	basal cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004053	bartholin gland squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006087	appendix adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003214	apocrine adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002652	anus adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006082	anal squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004202	adrenal medulla carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002814	adrenal carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003549	adenosquamous bile duct carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004971	adenoid cystic carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004965	acinar cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0100534	SMARCB1-deficient kidney medullary carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003975	Littre gland carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006244	HER2 positive breast carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0017344	Epstein-Barr virus-associated carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003853	Bartholin gland adenocarcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0002837	sarcomatoid transitional cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0021663	sarcomatoid squamous cell carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0009807	osteosarcoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006282	lymphangiosarcoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0006279	lung sarcomatoid carcinoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0000515	bone chondrosarcoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005191	metastatic melanoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0005105	melanoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003864	chronic lymphocytic leukemia/small lymphocytic lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004967	acute lymphoblastic leukemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004963	T-cell acute lymphoblastic leukemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004947	B-cell acute lymphoblastic leukemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0018908	non-Hodgkin lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0017604	marginal zone lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0018905	diffuse large B-cell lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0003864	chronic lymphocytic leukemia/small lymphocytic lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0044887	central nervous system non-hodgkin lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0015760	T-cell non-Hodgkin lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0004952	Hodgkins lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:0015759	B-cell non-Hodgkin lymphoma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/60
+MONDO:1010122	trichrome vitiligo	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975957	telangiectasia, impaired intellectual development, microcephaly, metaphyseal dysplasia, eye abnormalities, and short stature	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975800	spinocerebellar ataxia 51	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975958	spermatogenic failure 97	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975842	spermatogenic failure 96	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975796	spastic paraplegia 93, autosomal recessive	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975840	retinitis pigmentosa 98	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0700337	renal tubular dysgenesis - ACE	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975843	premature ovarian failure 25	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975839	pancreatic agenesis 3	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975827	orofaciodigital syndrome 21	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975877	neurodevelopmental disorder with variable familial hypercholanemia	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975874	neurodevelopmental disorder with dysmorphic facies, absent speech and ambulation, and brain abnormalities	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975837	neurodegeneration, infantile-onset, with optic atrophy and brain abnormalities	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:1010108	myxedema heart disease	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:1010100	myxedema coma	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975830	myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 2	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975797	myelofibrosis, congenital, with anemia, neutropenia, developmental delay, and ocular abnormalities	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975806	multiple mitochondrial dysfunctions syndrome 10	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975809	microphthalmia/coloboma 13	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975798	methylmalonic aciduria and homocystinuria, cb1L type	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:1010111	loin pain hematuria syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975833	leukodystrophy, hypomyelinating, 28	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:1010112	isolated short stature	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975838	intellectual developmental disorder, autosomal dominant 75	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975828	intellectual developmental disorder, X-linked 114	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975834	immunodeficiency 128	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975832	immunodeficiency 127	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:1010125	generalized vitiligo	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100595	furunculosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975805	foveal hypoplasia 3	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975841	fibromatosis, gingival, 6	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100580	epilepsy, onset unknown	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975801	encephalopathy, acute transient	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:1010131	encapsulating peritoneal sclerosis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975808	congenital myopathy 25	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975846	congenital disorder of glycosylation, type 1DD	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975807	cholestasis, progressive familial intrahepatic, 13	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975952	cerebral cavernous malformations 5	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975835	bronchiectasis and nasal polyposis	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975799	brain malformation renal syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975875	basal ganglia calcification, idiopathic, 10, autosomal recessive	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0700338	autoinflammation, panniculitis, and dermatosis syndrome, autosomal dominant	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975826	arthrogryposis multiplex congenita 7, X-linked	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975829	anemia, congenital dyserythropoietic, type IVb	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:1040018	X-linked syndromic complex neurodevelopmental disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100582	TOR1AIP1-related myopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975953	Pan-Chung-Bellen syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975848	Morimoto-Ryu-Malicdan neuromuscular syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975795	Kariminejad neurodevelopmental syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0975836	Karayol-Borroto-Haghshenas neurodevelopmental syndrome	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100583	Jeune syndrome - GRK2-related	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100579	GRHL3-related orofacial clefting	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100578	FANCM Fanconi-like genomic instability disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100588	FAM20B-congenital disorder of glycosylation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0700339	DNM1-encephalopathy and neurodevelopmental disorder	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100589	ALG10-congenital disorder of glycosylation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:1010132	AARS1-related leukoencephalopathy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100587	A4GALT-congenital disorder of glycosylation	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
+MONDO:0100577	myoclonic epilepsy	obo:mondo#matrix_included	https://orcid.org/0000-0003-2955-4640|https://orcid.org/0000-0002-1149-7767	https://github.com/everycure-org/matrix-disease-list/issues/81
