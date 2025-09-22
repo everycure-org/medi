@@ -266,7 +266,8 @@ def mine_contraindications(dir: str) -> pd.DataFrame:
                 counts +=1
         
     print("finished ingesting indications")
-    data = pd.DataFrame({'active ingredient':ingredients_list, 'contraindications':contraindications_list})
+    data = pd.DataFrame({'drug name':ingredients_list, 'contraindications':contraindications_list})
     return data
+
 
 

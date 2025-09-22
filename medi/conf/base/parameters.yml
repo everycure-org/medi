@@ -240,7 +240,7 @@ path_to_fda_labels: /Volumes/MML/2025_06_30_dailymed/
 
 column_names:
   source_file_column: "source file"
-  indications_active_ingredients: "active ingredient"
+  indications_active_ingredients: "drug name"
   indications_text_column: "indications text"
   indications_structured_list_column: "structured list"
   disease_name_column: "disease name"
