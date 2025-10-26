@@ -24,12 +24,10 @@ import matplotlib.pyplot as plt
 import vertexai
 from vertexai.generative_models import GenerativeModel, Part, SafetySetting, FinishReason
 import vertexai.preview.generative_models as generative_models
+import google.generativeai as genai
 
-#from ontobio import OntologyFactory
-#from ontobio.ontol_factory import OntologyFactory
-#import pronto
 testing = True
-limit = 100
+limit = 1000
 
 ################################
 ### GLOBALS ####################
@@ -77,11 +75,16 @@ def extract_named_diseases(inList:pd.DataFrame, drug_names_column:str, passage_c
     # Fetch Columns
     indications_data = list(inList[passage_column])
     active_ingredients_data = list(inList[drug_names_column])
+    genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
+    model = genai.GenerativeModel(
+        "gemini-2.0-flash",
+    )
+    
     for index, item in tqdm(enumerate(indications_data), total=(limit if testing else len(indications_data))):
         if  (index < limit) or not testing:
             try:
                 prompt = structured_list_prompt + item
-                diseases_mentioned.append(generate(prompt))
+                diseases_mentioned.append(generate(model, prompt))
             except Exception as e:
                 print(e)
                 diseases_mentioned.append("LLM EXTRACTION ERROR")
@@ -91,21 +94,15 @@ def extract_named_diseases(inList:pd.DataFrame, drug_names_column:str, passage_c
     return inList
 
 @cache
-def generate(input_text):
-        vertexai.init(project="mtrx-wg2-modeling-dev-9yj", location="us-east1")
-        model = GenerativeModel(
-            "gemini-2.0-flash",
-        )
+def generate(model, input_text):
         responses = model.generate_content(
         [input_text],
         generation_config=generation_config,
-        safety_settings=safety_settings,
         stream=True,
         )
         resText = ""
         for response in responses:
             resText+=response.text
-            
         return resText
 
 ################################

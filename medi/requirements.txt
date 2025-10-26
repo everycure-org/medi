@@ -21,3 +21,5 @@ matplotlib_venn
 vertexai
 googletrans
 seaborn
+google.generativeai
+google-genai

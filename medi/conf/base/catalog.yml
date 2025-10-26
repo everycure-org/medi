@@ -358,7 +358,15 @@ nameres-evaluation-set:
 
 dailymed_indications_raw:
   type: pandas.ExcelDataset
-  filepath: data/on_label/01_raw/dailymed_indications.xlsx
+  filepath: data/on_label/01_raw/dailymed_indications_sample.xlsx
+
+dailymed_indications_named_diseases:
+  type: pandas.ExcelDataset
+  filepath: data/on_label/02_intermediate/dailymed/dailymed_indications_structured.xlsx
+
+dailymed_indications_hyperrelations:
+  type: pandas.ExcelDataset
+  filepath: data/on_label/02_intermediate/dailymed/dailymed_hyperrelations.xlsx
 
 #dailymed_indications_named_diseases:
   #type: pandas.CSVDataset
