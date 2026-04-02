@@ -51,7 +51,7 @@ def monitor_job(client, job):
         return False
 
 def retrieve(job):
-
+    
     for i, inline_response in enumerate(job.dest.inlined_responses, start=1):
         print(f"\n--- Response {i} ---")
 

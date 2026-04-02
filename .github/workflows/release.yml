@@ -112,4 +112,16 @@ jobs:
           asset_name: india.csv           # Replace with the name you want for the uploaded asset
           asset_content_type: application/octet-stream
 
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: medi/indications/data/03_primary/matrix_indication_list_hyperrelational.xlsx # Replace with the path to your file
+          asset_name: matrix_indication_list.xlsx           # Replace with the name you want for the uploaded asset
+          asset_content_type: application/octet-stream
+
+      
+
       
