@@ -1,0 +1,598 @@
+"""Statement typing + a lightweight, source-uniform reliability score.
+
+The soft-launch enabler (see specs/2026-07-26-soft-launch-reliability-design.md): give a
+downstream consumer a one-line way to import just the part of MeDIC that is already
+fairly trustworthy. Two orthogonal knobs:
+
+* :class:`StatementType` — *what kind* of claim a record makes. ``CORE_TYPES`` (drug
+  approval + indication + contraindication) are the regulatory backbone; adverse events
+  and research associations are non-core.
+* :class:`ReliabilityTier` — *how trustworthy* the record is, scored the **same way for
+  every source** from normalized per-record signals (never by source name), so the
+  idiosyncrasies of DailyMed vs GRLS vs CDE don't leak into the score. The score is the
+  worst (most conservative) of a few independent gates, each mapping one failure-mode
+  family (FAILURE_MODES.md) to a tier:
+
+  1. **grounding** — is the entity resolution solid? (FM §grounding)
+  2. **recognition** — was the entity itself correctly recognised in the source text?
+     (the Mention's ExtractionStep flags: hallucination / truncated / coreference; FM §5)
+  2b. **assertion** — does the source actually claim this *relation*, and not negate it?
+     (the association's Assertion: confidence + negated_inversion / over_extraction /
+     wrong_section / wrong_pairing; FM §4-5, via medic.validation.extraction_fidelity).
+     Kept separate from recognition on purpose: an entity can be recognised perfectly while
+     the asserted relation is wrong (the VITAMIN A -> hyperthyroidism case).
+
+  **Not every flag these gates read has a machine emitter, and the difference matters when
+  reading a tier.** Emitted today: `truncated_snippet` (recognition), and
+  `negated_inversion` / `over_extraction` / `wrong_section` (assertion). Curator-supplied
+  only: `hallucination`, `coreference_ambiguity`, `scope_narrowed`, `wrong_pairing` — no
+  deterministic detector exists for them, and inferring them from lexical entailment would
+  mislabel synonymy as fabrication. So a HIGH tier means "nothing we can detect is wrong",
+  not "a human checked it"; that stronger claim is what `review_status: CONFIRMED` in
+  `mappings/statement_review.tsv` is for. Every one of these read zero across all 12,694
+  assertions until the detectors above were wired in, which made two of the five gates
+  decorative — see `_recognition_gate`.
+  3. **translation** — did the name survive machine translation unreviewed? (FM §7)
+  4. **provenance** — does the claim have *any* verifiable provenance (snippet, resolvable
+     reference/URL, or registry application id)? Only *absence* is penalised — a direct
+     document deep link is a source publishing convention, NOT a reliability signal, so
+     sources that don't publish one (Orange Book, GRLS, CDE) are never structurally capped.
+
+A gate returns ``None`` when it does not apply (a structured approval has no extraction
+gate); the provenance gate always applies, so nothing reaches HIGH by absence of signal.
+
+**Two invariants (see the design spec §7):**
+
+* *Every statement can reach HIGH on its own merits* — no gate caps a whole source below
+  HIGH for a reason a good record can't overcome.
+* *Human review mitigates all concerns* — a curator marking a statement ``review_status:
+  CONFIRMED`` forces HIGH, overriding every automated gate (the statement-level twin of the
+  per-decision hatches already honoured: grounding ``curated`` and translation ``OFFICIAL``).
+
+The "mostly reliable" subset a consumer imports = ``statement_type in CORE_TYPES`` and
+``reliability in {HIGH, MEDIUM}``. Curation (REVIEW.md) moves records upward automatically
+on rebuild.
+"""
+
+from __future__ import annotations
+
+import csv
+import glob
+import os
+from collections import Counter
+from enum import Enum
+
+import typer
+import yaml
+
+from medic import product_view as pv
+from medic.validation.extraction_fidelity import assertion_negated, entailment_score
+
+app = typer.Typer(add_completion=False)
+
+
+class StatementType(str, Enum):
+    DRUG_APPROVAL = "DRUG_APPROVAL"
+    INDICATION = "INDICATION"
+    CONTRAINDICATION = "CONTRAINDICATION"
+    ADVERSE_EVENT = "ADVERSE_EVENT"
+    RESEARCH_ASSOCIATION = "RESEARCH_ASSOCIATION"
+
+
+#: The regulatory backbone a soft-launch consumer imports by default.
+CORE_TYPES = frozenset({
+    StatementType.DRUG_APPROVAL,
+    StatementType.INDICATION,
+    StatementType.CONTRAINDICATION,
+})
+
+
+class ReliabilityTier(str, Enum):
+    HIGH = "HIGH"
+    MEDIUM = "MEDIUM"
+    LOW = "LOW"
+    EXCLUDED = "EXCLUDED"  # do not import (unresolved / hallucinated / inverted)
+
+
+_TIER_ORDER = {
+    ReliabilityTier.EXCLUDED: 0,
+    ReliabilityTier.LOW: 1,
+    ReliabilityTier.MEDIUM: 2,
+    ReliabilityTier.HIGH: 3,
+}
+RELIABLE_TIERS = frozenset({ReliabilityTier.HIGH, ReliabilityTier.MEDIUM})
+
+
+def _worst(tiers: list[ReliabilityTier | None]) -> ReliabilityTier:
+    applicable = [t for t in tiers if t is not None]
+    if not applicable:
+        return ReliabilityTier.HIGH
+    return min(applicable, key=lambda t: _TIER_ORDER[t])
+
+
+# ---------------------------------------------------------------------------
+# Statement typing
+# ---------------------------------------------------------------------------
+def classify_statement(record: dict) -> StatementType:
+    """Classify a MeDIC product/kb record into a :class:`StatementType`."""
+    rel = (record.get("relationship_type") or "").upper()
+    if rel == "CONTRAINDICATION":
+        return StatementType.CONTRAINDICATION
+    if rel == "INDICATION":
+        return StatementType.INDICATION
+    if record.get("meddra_id") or record.get("adverse_event") or record.get("reaction"):
+        return StatementType.ADVERSE_EVENT
+    # Research associations carry a curation lifecycle / literature provenance.
+    if record.get("deep_research_used") or record.get("curation_status") or record.get("pmid"):
+        return StatementType.RESEARCH_ASSOCIATION
+    # A Drug record carries an `identity` Mention (+ `approvals`); an approved one is a
+    # DRUG_APPROVAL, an identity-only one (e.g. EveryCure) is still a drug statement.
+    if record.get("approvals"):
+        return StatementType.DRUG_APPROVAL
+    if record.get("drug_id") and record.get("disease_id"):
+        return StatementType.RESEARCH_ASSOCIATION
+    if record.get("identity") is not None:
+        return StatementType.DRUG_APPROVAL
+    return StatementType.RESEARCH_ASSOCIATION
+
+
+# ---------------------------------------------------------------------------
+# Reliability gates (each returns a tier, or None when not applicable)
+# ---------------------------------------------------------------------------
+# Grounding qualities that are exact (or curator-asserted) — trustworthy regardless of
+# the numeric confidence the rule weight happens to carry.
+_EXACT_QUALITIES = frozenset({
+    "curated", "lexical_exact", "lexical_exact_normalized", "asserted_exact",
+    "deprecated_replacement",
+})
+
+
+def _steps_of(record: dict, category: str) -> list[dict]:
+    """Collect transformation steps of a category from a record's mention(s).
+
+    A Drug carries its identity trail on ``mention``; an IndicationAssociation carries the
+    inlined disease trail on ``disease`` (the drug side is a light DrugRef with no trail).
+    """
+    out: list[dict] = []
+    # A Drug carries `identity`; an on-label pair carries BOTH entities as inlined Mentions on
+    # each of its source assertions, so a pair's resolution quality reflects every source that
+    # attests it. `assoc_mentions` hides which shape the record has.
+    for m in pv.assoc_mentions(record):
+        resolution = m.get("resolution")
+        pipeline = resolution.get("pipeline", []) if isinstance(resolution, dict) else []
+        for s in pipeline or []:
+            if isinstance(s, dict) and s.get("category") == category:
+                out.append(s)
+    return out
+
+
+def _grounding_tier_from_step(step: dict) -> ReliabilityTier | None:
+    """Reliability tier from a GroundingStep (the transformation-provenance model)."""
+    quality = (step.get("quality") or "").lower()
+    grounded_id = step.get("output_value")
+    if quality == "unresolved" or not grounded_id:
+        return ReliabilityTier.EXCLUDED
+    # The source handed us the id and MeDIC made no decision — there is no matching evidence
+    # to audit, so it cannot claim HIGH however confident the source seemed.
+    if quality == "source_asserted":
+        return ReliabilityTier.MEDIUM
+    if quality in _EXACT_QUALITIES:
+        return ReliabilityTier.HIGH
+    conf = step.get("confidence")
+    try:
+        conf = float(conf) if conf is not None else 1.0
+    except (TypeError, ValueError):
+        conf = 1.0
+    if conf >= 0.9:
+        return ReliabilityTier.HIGH
+    if conf >= 0.7:
+        return ReliabilityTier.MEDIUM
+    return ReliabilityTier.LOW
+
+
+# Regulatory authorities whose source strings are native English/Latin (no machine
+# translation): a drug approved via any of these has its identity anchored without MT.
+_NATIVE_AUTHORITIES = frozenset({"FDA", "EMA", "PMDA", "CDSCO"})
+
+
+def _has_native_approval(record: dict) -> bool:
+    """Is the claim anchored by a non-translated (native-script) authority?
+
+    Reads a Drug's ``approvals`` **and** an association's authorities: an FDA-backed
+    indication must not be capped merely because the drug's inlined identity trail happens
+    to come from a machine-translated zh/ru source.
+
+    The association side goes through :func:`product_view.assoc_authorities`. It used to read
+    ``record["regulatory_status"]`` directly, a pair-level slot the provenance re-model
+    removed — regulatory status now lives on ``assertions[].regulatory_status``, singular. So
+    this returned False for every pair in the products and the escape hatch never opened. It
+    did not bite only because the two translated sources (China, Russia) are drug-list-only,
+    which is also why no test caught it. ``product_view`` exists precisely so a read like this
+    cannot go stale again.
+    """
+    if any(isinstance(a, dict) and (a.get("authority") or "") in _NATIVE_AUTHORITIES
+           for a in pv.approvals(record)):
+        return True
+    return bool(pv.assoc_authorities(record) & _NATIVE_AUTHORITIES)
+
+
+def _grounding_tier(grounding: dict | None) -> ReliabilityTier | None:
+    if not grounding:
+        return None
+    quality = (grounding.get("grounding_quality") or "").lower()
+    grounded_id = grounding.get("grounded_id") or grounding.get("normalized_id")
+    if quality == "unresolved" or not grounded_id:
+        return ReliabilityTier.EXCLUDED
+    if quality in _EXACT_QUALITIES:
+        return ReliabilityTier.HIGH
+    # Inexact (surgery / salt / formulation / transliteration / fuzzy): let the rule
+    # weight decide — fuzzy edit-1 (~0.6) is LOW, salt/formulation (~0.8-0.9) is MEDIUM.
+    conf = grounding.get("confidence")
+    try:
+        conf = float(conf) if conf is not None else 1.0
+    except (TypeError, ValueError):
+        conf = 1.0
+    if conf >= 0.9:
+        return ReliabilityTier.HIGH
+    if conf >= 0.7:
+        return ReliabilityTier.MEDIUM
+    return ReliabilityTier.LOW
+
+
+def _grounding_gate(record: dict) -> ReliabilityTier | None:
+    # Prefer the transformation-provenance trail (mention/disease steps); fall back to the
+    # flat grounding objects during the additive migration. Worst grounding step wins.
+    gsteps = _steps_of(record, "GROUNDING")
+    if gsteps:
+        return _worst([_grounding_tier_from_step(s) for s in gsteps])
+    tiers = [_grounding_tier(record.get(k)) for k in ("grounding", "disease_grounding")]
+    return _worst(tiers) if any(t is not None for t in tiers) else None
+
+
+def _first_evidence(record: dict) -> dict:
+    """The first evidence row backing a record.
+
+    Reads through ``product_view`` so this survived the flat-``evidence`` -> per-assertion
+    move: evidence now lives on ``assertions[].evidence``, one row per source document.
+    """
+    ev = pv.assoc_evidence(record)
+    return ev[0] if ev else {}
+
+
+def _assertion_gate(record: dict, statement_type: StatementType) -> ReliabilityTier | None:
+    """Is the *claim* supported by the source? (reads the association's Assertion)
+
+    The claim-level counterpart to the grounding gate: negation inverts the claim, and a
+    weakly-supported claim caps the tier. Entity *recognition* quality is not judged here —
+    that is the Mention's ExtractionStep (see :func:`_recognition_gate`).
+    """
+    if statement_type not in (StatementType.INDICATION, StatementType.CONTRAINDICATION):
+        return None
+    # A pair carries one Assertion per source document. The pair is only as good as its worst
+    # attestation: one source that inverted the claim taints the pair regardless of the others.
+    claims = pv.assoc_claims(record)
+    tiers: list[ReliabilityTier | None] = []
+    for assertion in claims:
+        flags = assertion.get("flags") or []
+        # A negated INDICATION recorded positively is an inversion -> exclude.
+        if statement_type == StatementType.INDICATION and "negated_inversion" in flags:
+            return ReliabilityTier.EXCLUDED
+        # Relation-level mis-extractions the source does not support.
+        if {"over_extraction", "wrong_section", "wrong_pairing"} & set(flags):
+            tiers.append(ReliabilityTier.LOW)
+            continue
+        score = assertion.get("confidence")
+        if isinstance(score, dict):
+            score = score.get("overall")
+        if score is None:
+            tiers.append(None)
+            continue
+        try:
+            score = float(score)
+        except (TypeError, ValueError):
+            tiers.append(None)
+            continue
+        if score >= 0.5:
+            tiers.append(ReliabilityTier.HIGH)
+        elif score > 0.0:
+            tiers.append(ReliabilityTier.MEDIUM)
+        else:
+            tiers.append(ReliabilityTier.LOW)
+    if claims:
+        return _worst(tiers) if any(x is not None for x in tiers) else None
+    # Flat fallback: recompute from the raw label + section text.
+    ev = _first_evidence(record)
+    disease_label = (ev.get("original_disease_label") or "").strip()
+    snippet = ev.get("snippet") or ""
+    section = " ".join([
+        snippet,
+        str(record.get("indications_text") or ""),
+        str(record.get("contraindications_text") or ""),
+    ]).strip()
+    if not disease_label or not section:
+        return None  # structured / no verbatim text to check against
+    # Polarity: a negated INDICATION is an inversion -> exclude (defense in depth).
+    if statement_type == StatementType.INDICATION:
+        neg, total, _ = assertion_negated(disease_label, section, head_fallback=False)
+        if total and neg == total:
+            return ReliabilityTier.EXCLUDED
+    score = entailment_score(disease_label, section)
+    if score >= 0.5:
+        return ReliabilityTier.HIGH
+    if score > 0.0:
+        return ReliabilityTier.MEDIUM
+    return ReliabilityTier.LOW
+
+
+def _recognition_gate(record: dict) -> ReliabilityTier | None:
+    """Was the entity itself correctly recognised in the source? (the Mention's ExtractionStep)
+
+    Purely about the mention: a hallucinated string is unusable (EXCLUDED); a truncated or
+    coreference-ambiguous span is usable but weaker.
+    """
+    tiers: list[ReliabilityTier | None] = []
+    for step in _steps_of(record, "EXTRACTION"):
+        flags = set(step.get("flags") or [])
+        if "hallucination" in flags:
+            tiers.append(ReliabilityTier.EXCLUDED)
+        elif flags & {"truncated_snippet", "coreference_ambiguity"}:
+            tiers.append(ReliabilityTier.MEDIUM)
+    return _worst(tiers) if tiers else None
+
+
+def _translation_gate(record: dict) -> ReliabilityTier | None:
+    # Prefer the mention's TranslationStep; fall back to the flat translation object.
+    tsteps = _steps_of(record, "TRANSLATION")
+    if tsteps:
+        # Anchored by a native-script approval -> the MT does not cap identity.
+        if _has_native_approval(record):
+            return None
+        step = tsteps[0]
+        status = (step.get("status") or "").upper()
+        if status == "CONFIRMED":
+            return ReliabilityTier.HIGH
+        if not step.get("output_value"):
+            return ReliabilityTier.LOW
+        return ReliabilityTier.MEDIUM
+    trans = record.get("translation")
+    if not isinstance(trans, dict):
+        return None  # English source
+    # A merged drug carries ONE representative translation. If the drug is also approved via
+    # a non-translated (native-script) source, its identity does not rest on the machine
+    # translation, so that translation must not cap it — otherwise a US drug that happens to
+    # also be registered in China/Russia would be wrongly dragged to MEDIUM.
+    #
+    # Same test as the step-trail branch above. It used to check the flat `approved_usa` /
+    # `approved_europe` / … booleans, which SPEC §9 records as removed.
+    if _has_native_approval(record):
+        return None
+    status = (trans.get("translation_status") or "").upper()
+    if status == "OFFICIAL":
+        return ReliabilityTier.HIGH
+    if not trans.get("translation_value"):
+        return ReliabilityTier.LOW  # registered but never translated -> won't ground
+    return ReliabilityTier.MEDIUM  # machine translation, curator-unreviewed
+
+
+def _provenance_gate(record: dict) -> ReliabilityTier:
+    """Is the claim's provenance verifiable *at all*? (never caps on link format)
+
+    A statement is provenance-HIGH if it carries any checkable provenance — a supporting
+    snippet, a resolvable reference/URL, or a registry application id. Only the *absence*
+    of provenance is penalised (LOW). Crucially this does NOT require a direct document
+    URL: whether a source publishes per-record deep links is a publishing convention, not
+    a reliability signal, so Orange Book / GRLS / CDE are not structurally capped. Always
+    applies (returns a tier, never ``None``) so a record with no provenance can never
+    default to HIGH.
+
+    Judged across **every** evidence row, worst-first, like the other gates. It used to read
+    only ``assoc_evidence(record)[0]``, so a pair attested by five documents was scored on
+    whichever one happened to sort first: an unverifiable DailyMed row could hide behind a
+    well-referenced EMA one, or drag it down, depending purely on alphabetical order.
+    """
+    rows = pv.assoc_evidence(record) or [{}]
+    application_numbers = pv.application_numbers(record)
+    tiers = []
+    for ev in rows:
+        verifiable = bool(
+            ev.get("snippet") or ev.get("source_document_url") or ev.get("reference")
+            or application_numbers or ev.get("original_drug_id")
+        )
+        tiers.append(ReliabilityTier.HIGH if verifiable else ReliabilityTier.LOW)
+    return _worst(tiers)
+
+
+def _approval_gate(record: dict) -> ReliabilityTier | None:
+    """A DRUG_APPROVAL must actually assert an approval, else it is not that statement."""
+    approved_somewhere = pv.is_approved_anywhere(record)
+    ev = _first_evidence(record)
+    approved_ev = (ev.get("approval_status") or "").upper() == "APPROVED"
+    return None if (approved_somewhere or approved_ev) else ReliabilityTier.EXCLUDED
+
+
+# Statement-level human review — the escape hatch that makes "human review mitigates all
+# concerns" literal. A curator's verdict overrides every automated gate, both ways:
+# CONFIRM forces HIGH, REJECT forces EXCLUDED. Verdicts live in a hand-editable store
+# (``mappings/statement_review.tsv``, keyed by statement id) — the same curation pattern
+# as the SSSOM grounding/normalization and Babelon translation stores. Mirrors the
+# per-decision hatches the gates already honour (grounding ``curated``, translation
+# ``OFFICIAL``).
+_CONFIRM_STATUSES = frozenset({"CONFIRMED", "OFFICIAL", "REVIEWED", "CURATED"})
+_REJECT_STATUSES = frozenset({"REJECTED", "EXCLUDED", "WRONG"})
+
+
+def statement_key(record: dict) -> str:
+    """Stable id for a statement, used to key the review store.
+
+    ``<drug_id>|<disease_id>|<TYPE>`` for disease-linked statements; ``<drug_id>|<TYPE>``
+    for approvals. Uses the canonical (final normalized) ids.
+    """
+    st = classify_statement(record)
+    drug = (pv.assoc_drug_id(record) or pv.drug_id(record)
+            or record.get("drug_id") or "")
+    disease = pv.assoc_disease_id(record) or record.get("disease_id") or ""
+    if st == StatementType.DRUG_APPROVAL:
+        return f"{drug}|{st.value}"
+    return f"{drug}|{disease}|{st.value}"
+
+
+def _review_verdict(record: dict, review_status: str = "") -> str:
+    """Return 'confirm' / 'reject' / '' from an explicit status or the record's own field."""
+    for raw in (review_status, record.get("review_status"),
+                _first_evidence(record).get("review_status")):
+        status = (raw or "").upper()
+        if status in _REJECT_STATUSES:
+            return "reject"
+        if status in _CONFIRM_STATUSES:
+            return "confirm"
+    return ""
+
+
+def score_reliability(
+    record: dict,
+    statement_type: StatementType | None = None,
+    *,
+    review_status: str = "",
+) -> ReliabilityTier:
+    """Reliability tier for a record.
+
+    A human verdict wins first (CONFIRM → HIGH, REJECT → EXCLUDED); otherwise the tier is
+    the worst of the applicable automated gates. Every statement runs the provenance gate,
+    so nothing reaches HIGH by absence of signal. ``review_status`` is normally supplied by
+    the caller from the review store (see :class:`StatementReviewStore`).
+    """
+    verdict = _review_verdict(record, review_status)
+    if verdict == "reject":
+        return ReliabilityTier.EXCLUDED
+    if verdict == "confirm":
+        return ReliabilityTier.HIGH
+    st = statement_type or classify_statement(record)
+    gates = [
+        _grounding_gate(record),
+        _recognition_gate(record),
+        _assertion_gate(record, st),
+        _translation_gate(record),
+        _provenance_gate(record),
+    ]
+    if st == StatementType.DRUG_APPROVAL:
+        gates.append(_approval_gate(record))
+    return _worst(gates)
+
+
+def is_reliable(record: dict, *, core_only: bool = True, review_status: str = "") -> bool:
+    """Would a default soft-launch consumer import this record?"""
+    st = classify_statement(record)
+    if core_only and st not in CORE_TYPES:
+        return False
+    return score_reliability(record, st, review_status=review_status) in RELIABLE_TIERS
+
+
+# ---------------------------------------------------------------------------
+# Curated statement-review store (mappings/statement_review.tsv)
+# ---------------------------------------------------------------------------
+REVIEW_STORE_PATH = "mappings/statement_review.tsv"
+REVIEW_COLUMNS = [
+    "statement_key", "statement_type", "drug_id", "disease_id",
+    "review_status", "reviewer", "comment",
+]
+
+
+class StatementReviewStore:
+    """Hand-editable curator verdicts, keyed by :func:`statement_key`.
+
+    A plain header-row TSV under ``mappings/`` (same curation pattern as the SSSOM/Babelon
+    stores). ``review_status`` is ``CONFIRMED`` (→ HIGH) or ``REJECTED`` (→ EXCLUDED); rows
+    survive rebuilds and win over the automated gates.
+    """
+
+    def __init__(self, path: str = REVIEW_STORE_PATH):
+        self.path = path
+        self._rows: dict[str, str] = {}
+
+    def load(self) -> StatementReviewStore:
+        self._rows.clear()
+        if os.path.exists(self.path):
+            with open(self.path, newline="") as fh:
+                reader = csv.DictReader(
+                    (ln for ln in fh if not ln.startswith("#")), delimiter="\t"
+                )
+                for r in reader:
+                    key = (r.get("statement_key") or "").strip()
+                    if key:
+                        self._rows[key] = (r.get("review_status") or "").strip()
+        return self
+
+    def status(self, record: dict) -> str:
+        return self._rows.get(statement_key(record), "")
+
+
+# ---------------------------------------------------------------------------
+# Report
+# ---------------------------------------------------------------------------
+DEFAULT_GLOBS = [
+    "products/drug_list.yaml",
+    "products/indication_list.yaml",
+    "products/contraindication_list.yaml",
+    "products/research_list.yaml",
+    "products/adverse_event_list.yaml",
+]
+
+
+def _load(path: str) -> list[dict]:
+    """Load records from a bare-list kb file or a wrapped product file.
+
+    Product files wrap their records under a single list-valued key
+    (``drugs:`` / ``associations:``); kb/indications files are bare lists.
+    """
+    with open(path) as fh:
+        data = yaml.safe_load(fh) or []
+    if isinstance(data, dict):
+        lists = [v for v in data.values() if isinstance(v, list)]
+        data = lists[0] if lists else [data]
+    return [r for r in data if isinstance(r, dict)]
+
+
+@app.command()
+def main(
+    files: list[str] = typer.Argument(None, help="YAML files (default: products + kb/indications)."),
+    core_only: bool = typer.Option(True, help="Restrict the reliable subset to core statement types."),
+) -> None:
+    """Tally MeDIC statements by (statement type × reliability tier)."""
+    paths = list(files or [])
+    if not paths:
+        for pattern in DEFAULT_GLOBS:
+            paths.extend(sorted(glob.glob(pattern)))
+
+    review = StatementReviewStore().load()
+    grid: Counter = Counter()
+    for path in paths:
+        for rec in _load(path):
+            st = classify_statement(rec)
+            grid[(st, score_reliability(rec, st, review_status=review.status(rec)))] += 1
+
+    tiers = [ReliabilityTier.HIGH, ReliabilityTier.MEDIUM, ReliabilityTier.LOW, ReliabilityTier.EXCLUDED]
+    header = f"{'statement_type':22}" + "".join(f"{t.value:>10}" for t in tiers) + f"{'total':>10}"
+    typer.echo(header)
+    typer.echo("-" * len(header))
+    reliable = total = 0
+    for st in StatementType:
+        row = [grid[(st, t)] for t in tiers]
+        if not any(row):
+            continue
+        rt = sum(row)
+        total += rt
+        core = (st in CORE_TYPES) or (not core_only)
+        if core:
+            reliable += grid[(st, ReliabilityTier.HIGH)] + grid[(st, ReliabilityTier.MEDIUM)]
+        tag = "" if core else "  (non-core)"
+        typer.echo(f"{st.value:22}" + "".join(f"{n:>10}" for n in row) + f"{rt:>10}{tag}")
+    typer.echo("-" * len(header))
+    typer.echo(
+        f"\nTotal statements: {total}\n"
+        f"Reliable subset ({'core, ' if core_only else ''}HIGH+MEDIUM): {reliable} "
+        f"({(100*reliable/total if total else 0):.1f}%) — this is what a soft-launch consumer imports."
+    )
+
+
+if __name__ == "__main__":
+    app()
