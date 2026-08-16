@@ -1,0 +1,26 @@
+associations:
+- curation_date: '2026-04-12T09:13:12.172096'
+  curation_status: DRAFT
+  curator: medic-research-skill
+  deep_research_used: true
+  disease_id: MONDO:0007947
+  disease_label: Marfan syndrome
+  drug_id: CHEBI:6541
+  drug_label: losartan
+  evidence:
+  - confidence: MEDIUM
+    curator:
+      curator_id: https://github.com/monarch-initiative/medic/blob/f60076dc17a9c62e51e4acfaf83f6566b7b0b1cb/.claude/skills/medic-research-curation/SKILL.md
+      curator_type: AI_AGENT
+      name: MEDIC research skill extracting evidence from Perplexity and Falcon deep research
+    evidence_source: HUMAN_CLINICAL
+    explanation: Phase 3 trials comparing losartan to atenolol for aortic root dilation
+    max_research_phase: PHASE_III
+    original_disease_label: Marfan syndrome
+    original_drug_label: losartan
+    reference: PMID:25405392
+    reference_title: Atenolol versus losartan in children and young adults with Marfan's syndrome.
+    snippet: We conducted a randomized trial comparing losartan with atenolol in children and young adults
+      with Marfan's syndrome.
+    source_type: LITERATURE
+  notes: ARB for Marfan aortopathy; extensively studied vs atenolol

@@ -1,0 +1,26 @@
+associations:
+- curation_date: '2026-04-12T09:13:49.940033'
+  curation_status: DRAFT
+  curator: medic-research-skill
+  deep_research_used: true
+  disease_id: MONDO:0018975
+  disease_label: neurofibromatosis type 1
+  drug_id: CHEBI:90227
+  drug_label: selumetinib
+  evidence:
+  - confidence: MEDIUM
+    curator:
+      curator_id: https://github.com/monarch-initiative/medic/blob/f60076dc17a9c62e51e4acfaf83f6566b7b0b1cb/.claude/skills/medic-research-curation/SKILL.md
+      curator_type: AI_AGENT
+      name: MEDIC research skill extracting evidence from Perplexity deep research
+    evidence_source: HUMAN_CLINICAL
+    explanation: Phase 2 SPRINT trial showed 68% response rate in NF1 plexiform neurofibromas
+    max_research_phase: PHASE_II
+    original_disease_label: neurofibromatosis type 1
+    original_drug_label: selumetinib
+    reference: PMID:32187457
+    reference_title: Selumetinib in Children with Inoperable Plexiform Neurofibromas.
+    snippet: We conducted an open-label, phase 2 trial of selumetinib to determine the objective response
+      rate among patients with plexiform neurofibromas and to assess clinical benefit.
+    source_type: LITERATURE
+  notes: FDA approved MEK inhibitor for NF1 plexiform neurofibromas

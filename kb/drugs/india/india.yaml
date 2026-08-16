@@ -1,0 +1,3831 @@
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: 2-Thymyl-oxy-methyl glyoxalidine Hydrochloride 0.05 + Buffered
+      Aqueous Vehicle- q.s (Nasal Spray)
+    subject_id: MEDICNE:6b9526b5-002d-530a-9b16-9e9968e17287
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: ''
+  mention_id: MEDICNE:6b9526b5-002d-530a-9b16-9e9968e17287
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: 2-Thymyl-oxy-methyl glyoxalidine Hydrochloride 0.05 + Buffered
+    Aqueous Vehicle- q.s (Nasal Spray)
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: 2-Thymyl-oxy-methyl glyoxalidine Hydrochloride 0.05 + Buffered Aqueous
+    Vehicle- q.s (Nasal Spray)
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.0921
+    grounded_id: CHEBI:17754
+    grounded_label: glycerol
+    grounding_quality: rxnorm_proposed
+    original_string: Hamycin Glycerine (300,000 Units/ml) Suspension
+    subject_id: MEDICNE:3495cb52-62b2-5e77-8f84-441c154b1a3d
+  grounding_confidence: 0.0921
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: ''
+  mention_id: MEDICNE:3495cb52-62b2-5e77-8f84-441c154b1a3d
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:17754
+    normalized_label: glycerol
+    original_id: CHEBI:17754
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:17754
+  normalized_label: glycerol
+  original_literal: Hamycin Glycerine (300,000 Units/ml) Suspension
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: Hamycin Glycerine (300,000 Units/ml) Suspension
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:749323
+    grounded_label: ferrous sulfate
+    grounding_quality: lexical_exact_surgery
+    original_string: Ferrous Sulphate 150mg Sustained Release
+    subject_id: MEDICNE:0d803ae7-515f-5a93-a8c3-967634b7144e
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: ''
+  mention_id: MEDICNE:0d803ae7-515f-5a93-a8c3-967634b7144e
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:749323
+    normalized_label: ferrous sulfate
+    original_id: CHEBI:749323
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:749323
+  normalized_label: ferrous sulfate
+  original_literal: Ferrous Sulphate 150mg Sustained Release
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: Ferrous Sulphate 150mg Sustained Release
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:44423
+    grounded_label: hydroxyurea
+    grounding_quality: lexical_exact_surgery
+    original_string: Hydroxyurea USP 500mg Capsule
+    subject_id: MEDICNE:75af6f1f-7ad1-512e-b1d3-edd63d2aacd7
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Anti neoplastic agent.
+  mention_id: MEDICNE:75af6f1f-7ad1-512e-b1d3-edd63d2aacd7
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:44423
+    normalized_label: hydroxyurea
+    original_id: CHEBI:44423
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:44423
+  normalized_label: hydroxyurea
+  original_literal: Hydroxyurea USP 500mg Capsule
+  snippet: Anti neoplastic agent.
+  snippets:
+  - Anti neoplastic agent.
+  source: INDIA
+  source_name: Hydroxyurea USP 500mg Capsule
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.6
+    grounded_id: CHEBI:135871
+    grounded_label: prednisolone steaglate
+    grounding_quality: lexical_exact_surgery
+    original_string: Prednisolone Stearoylglucolate (6.65mg) Tablet, (1.9g) Ophthalmic
+      Ointment, (1.9g) Cream & Ointment
+    subject_id: MEDICNE:a227738c-cdd3-5908-81dc-064294536cfa
+  grounding_confidence: 0.6
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: ''
+  mention_id: MEDICNE:a227738c-cdd3-5908-81dc-064294536cfa
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:135871
+    normalized_label: prednisolone steaglate
+    original_id: CHEBI:135871
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:135871
+  normalized_label: prednisolone steaglate
+  original_literal: Prednisolone Stearoylglucolate (6.65mg) Tablet, (1.9g) Ophthalmic
+    Ointment, (1.9g) Cream & Ointment
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: Prednisolone Stearoylglucolate (6.65mg) Tablet, (1.9g) Ophthalmic Ointment,
+    (1.9g) Cream & Ointment
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:5784
+    grounded_label: hydroflumethiazide
+    grounding_quality: lexical_exact_surgery
+    original_string: Hydroflumethiazide 25mg Tablet
+    subject_id: MEDICNE:b9b5d165-f044-514a-97dd-91c3e1443795
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: ''
+  mention_id: MEDICNE:b9b5d165-f044-514a-97dd-91c3e1443795
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:5784
+    normalized_label: hydroflumethiazide
+    original_id: CHEBI:5784
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:5784
+  normalized_label: hydroflumethiazide
+  original_literal: Hydroflumethiazide 25mg Tablet
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: Hydroflumethiazide 25mg Tablet
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:751729
+    grounded_label: chlorphenoxamine hydrochloride
+    grounding_quality: lexical_exact_surgery
+    original_string: Chlorphenoxamine Hcl 12mg Tablet
+    subject_id: MEDICNE:c3b6e389-0650-5fdf-8bba-4daeed5bfcf0
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: ''
+  mention_id: MEDICNE:c3b6e389-0650-5fdf-8bba-4daeed5bfcf0
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:751729
+    normalized_label: chlorphenoxamine hydrochloride
+    original_id: CHEBI:751729
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:751729
+  normalized_label: chlorphenoxamine hydrochloride
+  original_literal: Chlorphenoxamine Hcl 12mg Tablet
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: Chlorphenoxamine Hcl 12mg Tablet
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Epsilon Caproic Acid 250mg/ml Injection
+    subject_id: MEDICNE:4422d4a3-31db-51c6-a58d-0a02255dfe8e
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: ''
+  mention_id: MEDICNE:4422d4a3-31db-51c6-a58d-0a02255dfe8e
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Epsilon Caproic Acid 250mg/ml Injection
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: Epsilon Caproic Acid 250mg/ml Injection
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:5855
+    grounded_label: ibuprofen
+    grounding_quality: lexical_exact_surgery
+    original_string: Ibuprofen 200mg Tablet
+    subject_id: MEDICNE:f7add7e7-9c9a-5c05-b6de-e760617a0f13
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Anti rheumatic.
+  mention_id: MEDICNE:f7add7e7-9c9a-5c05-b6de-e760617a0f13
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:5855
+    normalized_label: ibuprofen
+    original_id: CHEBI:5855
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:5855
+  normalized_label: ibuprofen
+  original_literal: Ibuprofen 200mg Tablet
+  snippet: Anti rheumatic.
+  snippets:
+  - Anti rheumatic.
+  source: INDIA
+  source_name: Ibuprofen 200mg Tablet
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:91514
+    grounded_label: 3,4-dimethoxybenzoic acid 4-[ethyl-[1-(4-methoxyphenyl)propan-2-yl]amino]butyl
+      ester
+    grounding_quality: lexical_exact_surgery
+    original_string: Mebeverine Hcl 50mg Tablet
+    subject_id: MEDICNE:50091ee2-1867-52ee-9054-ee60049a7c40
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Musculo tropic spasmolytic.
+  mention_id: MEDICNE:50091ee2-1867-52ee-9054-ee60049a7c40
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:91514
+    normalized_label: 3,4-dimethoxybenzoic acid 4-[ethyl-[1-(4-methoxyphenyl)propan-2-yl]amino]butyl
+      ester
+    original_id: CHEBI:91514
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:91514
+  normalized_label: 3,4-dimethoxybenzoic acid 4-[ethyl-[1-(4-methoxyphenyl)propan-2-yl]amino]butyl
+    ester
+  original_literal: Mebeverine Hcl 50mg Tablet
+  snippet: Musculo tropic spasmolytic.
+  snippets:
+  - Musculo tropic spasmolytic.
+  source: INDIA
+  source_name: Mebeverine Hcl 50mg Tablet
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.6
+    grounded_id: CHEBI:7908
+    grounded_label: pancuronium bromide
+    grounding_quality: lexical_exact_surgery
+    original_string: Panchronium Bromide 4mg/ml Injection (i.v)
+    subject_id: MEDICNE:c6c4835d-a6c0-5510-a46c-3ebdd5c8d1bd
+  grounding_confidence: 0.6
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Muscular relaxanting agent.
+  mention_id: MEDICNE:c6c4835d-a6c0-5510-a46c-3ebdd5c8d1bd
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:7908
+    normalized_label: pancuronium bromide
+    original_id: CHEBI:7908
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:7908
+  normalized_label: pancuronium bromide
+  original_literal: Panchronium Bromide 4mg/ml Injection (i.v)
+  snippet: Muscular relaxanting agent.
+  snippets:
+  - Muscular relaxanting agent.
+  source: INDIA
+  source_name: Panchronium Bromide 4mg/ml Injection (i.v)
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.104
+    grounded_id: CHEBI:15407
+    grounded_label: (-)-ephedrine
+    grounding_quality: rxnorm_proposed
+    original_string: Ephedrine Sulphide 75mg Sustained Release Capsule.
+    subject_id: MEDICNE:bf75aa84-4e74-51a3-97bc-720f133aa895
+  grounding_confidence: 0.104
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: ''
+  mention_id: MEDICNE:bf75aa84-4e74-51a3-97bc-720f133aa895
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:15407
+    normalized_label: (-)-ephedrine
+    original_id: CHEBI:15407
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:15407
+  normalized_label: (-)-ephedrine
+  original_literal: Ephedrine Sulphide 75mg Sustained Release Capsule.
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: Ephedrine Sulphide 75mg Sustained Release Capsule.
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19710101'
+  grounding:
+    confidence: 0.6
+    grounded_id: CHEBI:49168
+    grounded_label: dopa
+    grounding_quality: lexical_exact_surgery
+    original_string: L-Dihydroxyphenylalanine 500mg Capsule/Tablet
+    subject_id: MEDICNE:921ffe0c-9f0a-59a6-89ff-0c49d88a06b2
+  grounding_confidence: 0.6
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: ''
+  mention_id: MEDICNE:921ffe0c-9f0a-59a6-89ff-0c49d88a06b2
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:49168
+    normalized_label: dopa
+    original_id: CHEBI:49168
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:49168
+  normalized_label: dopa
+  original_literal: L-Dihydroxyphenylalanine 500mg Capsule/Tablet
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: L-Dihydroxyphenylalanine 500mg Capsule/Tablet
+  source_years:
+  - 1971
+- alternate_ids: []
+  approval_date: '19910101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:100241
+    grounded_label: ciprofloxacin
+    grounding_quality: lexical_exact_surgery
+    original_string: Ciprofloxacin 0.3% w/v Eye Drops/Eye Ointment/Ear Drop
+    subject_id: MEDICNE:54820001-8110-5ed5-94e5-4524e2ed9c70
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated in the treatment of external ocular infection of the eye.
+  mention_id: MEDICNE:54820001-8110-5ed5-94e5-4524e2ed9c70
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:100241
+    normalized_label: ciprofloxacin
+    original_id: CHEBI:100241
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:100241
+  normalized_label: ciprofloxacin
+  original_literal: Ciprofloxacin 0.3% w/v Eye Drops/Eye Ointment/Ear Drop
+  snippet: Indicated in the treatment of external ocular infection of the eye.
+  snippets:
+  - Indicated in the treatment of external ocular infection of the eye.
+  source: INDIA
+  source_name: Ciprofloxacin 0.3% w/v Eye Drops/Eye Ointment/Ear Drop
+  source_years:
+  - 1991
+- alternate_ids: []
+  approval_date: '19910101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:4509
+    grounded_label: diclofenac sodium
+    grounding_quality: lexical_exact_surgery
+    original_string: Diclofenac Sodium 1gm Gel
+    subject_id: MEDICNE:4f5d94e5-67f4-5595-9845-7322f4b3e87a
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: ''
+  mention_id: MEDICNE:4f5d94e5-67f4-5595-9845-7322f4b3e87a
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:4509
+    normalized_label: diclofenac sodium
+    original_id: CHEBI:4509
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:4509
+  normalized_label: diclofenac sodium
+  original_literal: Diclofenac Sodium 1gm Gel
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: Diclofenac Sodium 1gm Gel
+  source_years:
+  - 1991
+- alternate_ids: []
+  approval_date: '19910101'
+  grounding:
+    confidence: 0.4367
+    grounded_id: CHEBI:3478
+    grounded_label: cefaclor
+    grounding_quality: rxnorm_proposed
+    original_string: i)Cefaclor Monohydrate 250mg/500mg Capsule. ii)Cefaclor Monohydrate
+      125mg/5ml & 250mg/5ml Suspension. iii)Cefaclor Monohydrate 100mg/ml Drops. iv)Cefaclor
+      187mg/5ml Suspension (For paediatric use).
+    subject_id: MEDICNE:8f17c525-8261-51e2-ba32-8cc7e10a2690
+  grounding_confidence: 0.4367
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Antibiotic- In respiratory infections, ENT infection, UT infections,
+    Skin and skin structure infections.
+  mention_id: MEDICNE:8f17c525-8261-51e2-ba32-8cc7e10a2690
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:3478
+    normalized_label: cefaclor
+    original_id: CHEBI:3478
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:3478
+  normalized_label: cefaclor
+  original_literal: i)Cefaclor Monohydrate 250mg/500mg Capsule. ii)Cefaclor Monohydrate
+    125mg/5ml & 250mg/5ml Suspension. iii)Cefaclor Monohydrate 100mg/ml Drops. iv)Cefaclor
+    187mg/5ml Suspension (For paediatric use).
+  snippet: Antibiotic- In respiratory infections, ENT infection, UT infections, Skin
+    and skin structure infections.
+  snippets:
+  - Antibiotic- In respiratory infections, ENT infection, UT infections, Skin and
+    skin structure infections.
+  source: INDIA
+  source_name: i)Cefaclor Monohydrate 250mg/500mg Capsule. ii)Cefaclor Monohydrate
+    125mg/5ml & 250mg/5ml Suspension. iii)Cefaclor Monohydrate 100mg/ml Drops. iv)Cefaclor
+    187mg/5ml Suspension (For paediatric use).
+  source_years:
+  - 1991
+- alternate_ids: []
+  approval_date: '19910101'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Sheep Pox Vaccine (For Veterinary)
+    subject_id: MEDICNE:45578213-a7af-5513-a700-8691e23f66c0
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: ''
+  mention_id: MEDICNE:45578213-a7af-5513-a700-8691e23f66c0
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Sheep Pox Vaccine (For Veterinary)
+  snippet: ''
+  snippets: []
+  source: INDIA
+  source_name: Sheep Pox Vaccine (For Veterinary)
+  source_years:
+  - 1991
+- alternate_ids: []
+  approval_date: '19910101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:7772
+    grounded_label: omeprazole
+    grounding_quality: lexical_exact_surgery
+    original_string: Omeprazole 10mg/20mg Enteric Coated Granules Capsule
+    subject_id: MEDICNE:65bb8960-b5a9-55f2-b68c-9ed7746b1543
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Short term treatment of duodenal ulcer, gastric ulcer, reflux oesophagitis,
+    management of Zollinger- Ellison syndrome.
+  mention_id: MEDICNE:65bb8960-b5a9-55f2-b68c-9ed7746b1543
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:7772
+    normalized_label: omeprazole
+    original_id: CHEBI:7772
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:7772
+  normalized_label: omeprazole
+  original_literal: Omeprazole 10mg/20mg Enteric Coated Granules Capsule
+  snippet: Short term treatment of duodenal ulcer, gastric ulcer, reflux oesophagitis,
+    management of Zollinger- Ellison syndrome.
+  snippets:
+  - Short term treatment of duodenal ulcer, gastric ulcer, reflux oesophagitis, management
+    of Zollinger- Ellison syndrome.
+  source: INDIA
+  source_name: Omeprazole 10mg/20mg Enteric Coated Granules Capsule
+  source_years:
+  - 1991
+- alternate_ids: []
+  approval_date: '19910101'
+  grounding:
+    confidence: 0.2118
+    grounded_id: CHEBI:88316
+    grounded_label: nefopam
+    grounding_quality: rxnorm_proposed
+    original_string: i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride
+      20mg/ml Injection.
+    subject_id: MEDICNE:80935d2a-cb0f-5538-85d2-8d9a0143258e
+  grounding_confidence: 0.2118
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Non narcotic analgesic- Acute and chronic pain, including post-operative
+    pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+  mention_id: MEDICNE:80935d2a-cb0f-5538-85d2-8d9a0143258e
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:88316
+    normalized_label: nefopam
+    original_id: CHEBI:88316
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:88316
+  normalized_label: nefopam
+  original_literal: i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride
+    20mg/ml Injection.
+  snippet: Non narcotic analgesic- Acute and chronic pain, including post-operative
+    pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+  snippets:
+  - Non narcotic analgesic- Acute and chronic pain, including post-operative pain,
+    dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+  source: INDIA
+  source_name: i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride 20mg/ml
+    Injection.
+  source_years:
+  - 1991
+- alternate_ids: []
+  approval_date: '19910101'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Buparvaquone 5% w/v Solution for Injection (For
+    subject_id: MEDICNE:8cafd236-4f9e-5ff8-b459-5413e345ece1
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: Indicated in the treatment of bovine theileriosis.
+  mention_id: MEDICNE:8cafd236-4f9e-5ff8-b459-5413e345ece1
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Buparvaquone 5% w/v Solution for Injection (For
+  snippet: Indicated in the treatment of bovine theileriosis.
+  snippets:
+  - Indicated in the treatment of bovine theileriosis.
+  source: INDIA
+  source_name: Buparvaquone 5% w/v Solution for Injection (For
+  source_years:
+  - 1991
+- alternate_ids: []
+  approval_date: '20010909'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:749017
+    grounded_label: hydroxychloroquine sulfate
+    grounding_quality: lexical_exact_surgery
+    original_string: Hydroxychloroquine Sulphate Tablets
+    subject_id: MEDICNE:fff2de5a-0c3f-5da9-9027-ac9c17dcb50f
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Acute or Chronic rheumatoid arthritis in adults patients
+  mention_id: MEDICNE:fff2de5a-0c3f-5da9-9027-ac9c17dcb50f
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:749017
+    normalized_label: hydroxychloroquine sulfate
+    original_id: CHEBI:749017
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:749017
+  normalized_label: hydroxychloroquine sulfate
+  original_literal: Hydroxychloroquine Sulphate Tablets
+  snippet: Acute or Chronic rheumatoid arthritis in adults patients
+  snippets:
+  - Acute or Chronic rheumatoid arthritis in adults patients
+  source: INDIA
+  source_name: Hydroxychloroquine Sulphate Tablets
+  source_years:
+  - 2000
+- alternate_ids: []
+  approval_date: '20061013'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:749017
+    grounded_label: hydroxychloroquine sulfate
+    grounding_quality: lexical_exact_surgery
+    original_string: Hydroxychloroquine Sulphate Tablets (addl. Indication)
+    subject_id: MEDICNE:a0c24099-f7d6-5b0b-8d27-70214d68d694
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Polymorphic light eruption
+  mention_id: MEDICNE:a0c24099-f7d6-5b0b-8d27-70214d68d694
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:749017
+    normalized_label: hydroxychloroquine sulfate
+    original_id: CHEBI:749017
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:749017
+  normalized_label: hydroxychloroquine sulfate
+  original_literal: Hydroxychloroquine Sulphate Tablets (addl. Indication)
+  snippet: Polymorphic light eruption
+  snippets:
+  - Polymorphic light eruption
+  source: INDIA
+  source_name: Hydroxychloroquine Sulphate Tablets (addl. Indication)
+  source_years:
+  - 2000
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: DRON:00019004
+    grounded_label: levocetirizine
+    grounding_quality: lexical_exact_surgery
+    original_string: Levocetirizine ODS 2.5mg /5mg (Additional dosage form)
+    subject_id: MEDICNE:219c7ae9-c230-5610-a734-4d7590f78dd7
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For allergic rhinitis and chronic urticaria.
+  mention_id: MEDICNE:219c7ae9-c230-5610-a734-4d7590f78dd7
+  normalization:
+    normalization_quality: identity
+    normalized_id: DRON:00019004
+    normalized_label: levocetirizine
+    original_id: DRON:00019004
+    tool: medic-normalizer/1
+  normalized_id: DRON:00019004
+  normalized_label: levocetirizine
+  original_literal: Levocetirizine ODS 2.5mg /5mg (Additional dosage form)
+  snippet: For allergic rhinitis and chronic urticaria.
+  snippets:
+  - For allergic rhinitis and chronic urticaria.
+  source: INDIA
+  source_name: Levocetirizine ODS 2.5mg /5mg (Additional dosage form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:749378
+    grounded_label: decitabine
+    grounding_quality: lexical_exact_surgery
+    original_string: Decitabine Injection 30mg/vial (Additional pack size)
+    subject_id: MEDICNE:f4f3b68f-e6a5-5f26-90be-8451db92d483
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: 1. For treatment of patients with myelodysplastic syndromes (MDS) including
+    previously treated and untreated, de novo and secondary MDS of all French- American-British
+    subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory
+    anemia with excess blasts, refractory anemia with excess blasts in transformation,
+    and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk
+    international Prognostic Scoring System groups. 2. For the treatment of adult
+    patients aged 65 yrs and above with newly diagnosed de novo or secondary acute
+    myeloid leukemia, according to WHO classification, who are not candidates for
+    standard induction chemotherapy.
+  mention_id: MEDICNE:f4f3b68f-e6a5-5f26-90be-8451db92d483
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:749378
+    normalized_label: decitabine
+    original_id: CHEBI:749378
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:749378
+  normalized_label: decitabine
+  original_literal: Decitabine Injection 30mg/vial (Additional pack size)
+  snippet: 1. For treatment of patients with myelodysplastic syndromes (MDS) including
+    previously treated and untreated, de novo and secondary MDS of all French- American-British
+    subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory
+    anemia with excess blasts, refractory anemia with excess blasts in transformation,
+    and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk
+    international Prognostic Scoring System groups. 2. For the treatment of adult
+    patients aged 65 yrs and above with newly diagnosed de novo or secondary acute
+    myeloid leukemia, according to WHO classification, who are not candidates for
+    standard induction chemotherapy.
+  snippets:
+  - 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously
+    treated and untreated, de novo and secondary MDS of all French- American-British
+    subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory
+    anemia with excess blasts, refractory anemia with excess blasts in transformation,
+    and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk
+    international Prognostic Scoring System groups. 2. For the treatment of adult
+    patients aged 65 yrs and above with newly diagnosed de novo or secondary acute
+    myeloid leukemia, according to WHO classification, who are not candidates for
+    standard induction chemotherapy.
+  source: INDIA
+  source_name: Decitabine Injection 30mg/vial (Additional pack size)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:6741
+    grounded_label: meloxicam
+    grounding_quality: lexical_exact_surgery
+    original_string: Meloxicam ODT 7.5mg /15 mg(Additional dosage form)
+    subject_id: MEDICNE:0fd44f6f-3be7-5c74-93a6-55632851e82b
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Non-steroidal anti-inflammatory.
+  mention_id: MEDICNE:0fd44f6f-3be7-5c74-93a6-55632851e82b
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:6741
+    normalized_label: meloxicam
+    original_id: CHEBI:6741
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:6741
+  normalized_label: meloxicam
+  original_literal: Meloxicam ODT 7.5mg /15 mg(Additional dosage form)
+  snippet: Non-steroidal anti-inflammatory.
+  snippets:
+  - Non-steroidal anti-inflammatory.
+  source: INDIA
+  source_name: Meloxicam ODT 7.5mg /15 mg(Additional dosage form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:66919
+    grounded_label: ruxolitinib
+    grounding_quality: lexical_exact_surgery
+    original_string: Ruxolitinib Tablet 5mg/15mg/20mg (Additional indication)
+    subject_id: MEDICNE:108df377-e8c3-5c86-b8cc-576596032385
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Treatment of patients with polycythemia vera who are resistant to or
+    intolerant of hydroxyurea.
+  mention_id: MEDICNE:108df377-e8c3-5c86-b8cc-576596032385
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:66919
+    normalized_label: ruxolitinib
+    original_id: CHEBI:66919
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:66919
+  normalized_label: ruxolitinib
+  original_literal: Ruxolitinib Tablet 5mg/15mg/20mg (Additional indication)
+  snippet: Treatment of patients with polycythemia vera who are resistant to or intolerant
+    of hydroxyurea.
+  snippets:
+  - Treatment of patients with polycythemia vera who are resistant to or intolerant
+    of hydroxyurea.
+  source: INDIA
+  source_name: Ruxolitinib Tablet 5mg/15mg/20mg (Additional indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:31797
+    grounded_label: gadopentetate dimeglumine
+    grounding_quality: lexical_exact_surgery
+    original_string: Gadopentetic acid dimeglumine salt injection 469mg/1ml (0.5mmol)
+      (Additional indication)
+    subject_id: MEDICNE:fa3a5d2f-7393-538a-9b6e-39a56039f6dd
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For use in MRI in adult patients to facilitate visualization of lesions
+    with abnormal vascularity in the body (excluding heart).
+  mention_id: MEDICNE:fa3a5d2f-7393-538a-9b6e-39a56039f6dd
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:31797
+    normalized_label: gadopentetate dimeglumine
+    original_id: CHEBI:31797
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:31797
+  normalized_label: gadopentetate dimeglumine
+  original_literal: Gadopentetic acid dimeglumine salt injection 469mg/1ml (0.5mmol)
+    (Additional indication)
+  snippet: For use in MRI in adult patients to facilitate visualization of lesions
+    with abnormal vascularity in the body (excluding heart).
+  snippets:
+  - For use in MRI in adult patients to facilitate visualization of lesions with abnormal
+    vascularity in the body (excluding heart).
+  source: INDIA
+  source_name: Gadopentetic acid dimeglumine salt injection 469mg/1ml (0.5mmol) (Additional
+    indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:71219
+    grounded_label: pazopanib
+    grounding_quality: lexical_exact_surgery
+    original_string: Pazopanib Tablet 200mg/400mg (additional indication)
+    subject_id: MEDICNE:7ae721d5-a53a-5ab3-b1c5-d308c4fa3bf8
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of patients with advanced Soft Tissue Sarcoma (STS)
+    who have received prior chemotherapy.
+  mention_id: MEDICNE:7ae721d5-a53a-5ab3-b1c5-d308c4fa3bf8
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:71219
+    normalized_label: pazopanib
+    original_id: CHEBI:71219
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:71219
+  normalized_label: pazopanib
+  original_literal: Pazopanib Tablet 200mg/400mg (additional indication)
+  snippet: For the treatment of patients with advanced Soft Tissue Sarcoma (STS) who
+    have received prior chemotherapy.
+  snippets:
+  - For the treatment of patients with advanced Soft Tissue Sarcoma (STS) who have
+    received prior chemotherapy.
+  source: INDIA
+  source_name: Pazopanib Tablet 200mg/400mg (additional indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:70710
+    grounded_label: eribulin mesylate
+    grounding_quality: lexical_exact_surgery
+    original_string: Eribulin mesylate solution for injection 0.88mg in 2ml vial (Add.
+      Indication)
+    subject_id: MEDICNE:14289aef-1ece-5325-9f7b-d72ca66cac98
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of patients with locally advanced or metastatic breast
+    cancer who have progressed after at least one chemotherapeutic regimens for advanced
+    disease. Prior therapy should have included an anthracycline and a taxane in either
+    the adjuvant or metastatic setting unless patients were not suitable for these
+    treatments.
+  mention_id: MEDICNE:14289aef-1ece-5325-9f7b-d72ca66cac98
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:70710
+    normalized_label: eribulin mesylate
+    original_id: CHEBI:70710
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:70710
+  normalized_label: eribulin mesylate
+  original_literal: Eribulin mesylate solution for injection 0.88mg in 2ml vial (Add.
+    Indication)
+  snippet: For the treatment of patients with locally advanced or metastatic breast
+    cancer who have progressed after at least one chemotherapeutic regimens for advanced
+    disease. Prior therapy should have included an anthracycline and a taxane in either
+    the adjuvant or metastatic setting unless patients were not suitable for these
+    treatments.
+  snippets:
+  - For the treatment of patients with locally advanced or metastatic breast cancer
+    who have progressed after at least one chemotherapeutic regimens for advanced
+    disease. Prior therapy should have included an anthracycline and a taxane in either
+    the adjuvant or metastatic setting unless patients were not suitable for these
+    treatments.
+  source: INDIA
+  source_name: Eribulin mesylate solution for injection 0.88mg in 2ml vial (Add. Indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:68639
+    grounded_label: abiraterone acetate
+    grounding_quality: lexical_exact_surgery
+    original_string: Abiraterone acetate Tablet 250 mg (Additional Indication)
+    subject_id: MEDICNE:fe110d02-7309-5b62-abe9-e42007b2a848
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of metastatic castration resistant prostate cancer
+    in adult men who are asymptomatic or mildly symptomatic after failure of androgen
+    deprivation therapy in whom chemotherapy is not yet clinically indicated, with
+    prednisone or prednisolone.
+  mention_id: MEDICNE:fe110d02-7309-5b62-abe9-e42007b2a848
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:68639
+    normalized_label: abiraterone acetate
+    original_id: CHEBI:68639
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:68639
+  normalized_label: abiraterone acetate
+  original_literal: Abiraterone acetate Tablet 250 mg (Additional Indication)
+  snippet: For the treatment of metastatic castration resistant prostate cancer in
+    adult men who are asymptomatic or mildly symptomatic after failure of androgen
+    deprivation therapy in whom chemotherapy is not yet clinically indicated, with
+    prednisone or prednisolone.
+  snippets:
+  - For the treatment of metastatic castration resistant prostate cancer in adult
+    men who are asymptomatic or mildly symptomatic after failure of androgen deprivation
+    therapy in whom chemotherapy is not yet clinically indicated, with prednisone
+    or prednisolone.
+  source: INDIA
+  source_name: Abiraterone acetate Tablet 250 mg (Additional Indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:49662
+    grounded_label: indometacin
+    grounding_quality: lexical_exact_surgery
+    original_string: Indomethacin Injection 1mg/vial (additional Dosage form)
+    subject_id: MEDICNE:b570f3ec-5a7c-5e2a-be1b-6c618783c30e
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: To close a hemodynamically significant patent ductus arteriosus (PDA)
+    in premature infants weighing between 500g and 1750g when after 48 hrs. usual
+    medical management (e.g. fluid restriction, diuretics, digitalis, respiratory
+    support, etc.) is ineffective. Clear-cut clinical evidence of hemodynamically
+    significant patent ductus arteriosus should be present, such as respratory distress,
+    a continous murmur, a hyperactive precordium, cardiomegaly and pulmonary plethora
+    on chest X-ray.
+  mention_id: MEDICNE:b570f3ec-5a7c-5e2a-be1b-6c618783c30e
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:49662
+    normalized_label: indometacin
+    original_id: CHEBI:49662
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:49662
+  normalized_label: indometacin
+  original_literal: Indomethacin Injection 1mg/vial (additional Dosage form)
+  snippet: To close a hemodynamically significant patent ductus arteriosus (PDA) in
+    premature infants weighing between 500g and 1750g when after 48 hrs. usual medical
+    management (e.g. fluid restriction, diuretics, digitalis, respiratory support,
+    etc.) is ineffective. Clear-cut clinical evidence of hemodynamically significant
+    patent ductus arteriosus should be present, such as respratory distress, a continous
+    murmur, a hyperactive precordium, cardiomegaly and pulmonary plethora on chest
+    X-ray.
+  snippets:
+  - To close a hemodynamically significant patent ductus arteriosus (PDA) in premature
+    infants weighing between 500g and 1750g when after 48 hrs. usual medical management
+    (e.g. fluid restriction, diuretics, digitalis, respiratory support, etc.) is ineffective.
+    Clear-cut clinical evidence of hemodynamically significant patent ductus arteriosus
+    should be present, such as respratory distress, a continous murmur, a hyperactive
+    precordium, cardiomegaly and pulmonary plethora on chest X-ray.
+  source: INDIA
+  source_name: Indomethacin Injection 1mg/vial (additional Dosage form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:6129
+    grounded_label: ketorolac
+    grounding_quality: lexical_exact_surgery
+    original_string: Ketorolac ODS 10mg (Additional Dosage form)
+    subject_id: MEDICNE:288d0bd9-cba3-5b30-b259-97d0f531436f
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of short-term management of post-operative pain and
+    musco-skeletal pain.
+  mention_id: MEDICNE:288d0bd9-cba3-5b30-b259-97d0f531436f
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:6129
+    normalized_label: ketorolac
+    original_id: CHEBI:6129
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:6129
+  normalized_label: ketorolac
+  original_literal: Ketorolac ODS 10mg (Additional Dosage form)
+  snippet: For the treatment of short-term management of post-operative pain and musco-skeletal
+    pain.
+  snippets:
+  - For the treatment of short-term management of post-operative pain and musco-skeletal
+    pain.
+  source: INDIA
+  source_name: Ketorolac ODS 10mg (Additional Dosage form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.1553
+    grounded_id: CHEBI:181016
+    grounded_label: Tiamulin fumarate
+    grounding_quality: rxnorm_proposed
+    original_string: Tiamulin hydrogen fumarate solution for injection 162 mg/ml (additional
+      Dosage form)
+    subject_id: MEDICNE:c6fe9e0e-a5d0-5ca1-a663-29d5808a8fe0
+  grounding_confidence: 0.1553
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For treatment and prevention of swine dysentery caused by Branchyspira
+    hydodysenteriae. The product is not appropriate for use for the prevention of
+    disease at the level of herd treatment but should only be used for prevention
+    of swine dysentery in individual animals with a known history of exposure to diseased
+    animals.
+  mention_id: MEDICNE:c6fe9e0e-a5d0-5ca1-a663-29d5808a8fe0
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:181016
+    normalized_label: Tiamulin fumarate
+    original_id: CHEBI:181016
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:181016
+  normalized_label: Tiamulin fumarate
+  original_literal: Tiamulin hydrogen fumarate solution for injection 162 mg/ml (additional
+    Dosage form)
+  snippet: For treatment and prevention of swine dysentery caused by Branchyspira
+    hydodysenteriae. The product is not appropriate for use for the prevention of
+    disease at the level of herd treatment but should only be used for prevention
+    of swine dysentery in individual animals with a known history of exposure to diseased
+    animals.
+  snippets:
+  - For treatment and prevention of swine dysentery caused by Branchyspira hydodysenteriae.
+    The product is not appropriate for use for the prevention of disease at the level
+    of herd treatment but should only be used for prevention of swine dysentery in
+    individual animals with a known history of exposure to diseased animals.
+  source: INDIA
+  source_name: Tiamulin hydrogen fumarate solution for injection 162 mg/ml (additional
+    Dosage form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:50730
+    grounded_label: montelukast
+    grounding_quality: lexical_exact_surgery
+    original_string: Montelukast Orally Disintegrating Strips 4mg/5mg/10mg (additional
+      Dosage form)
+    subject_id: MEDICNE:8e59bab3-51fe-55f4-94ce-4f9318db9532
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the Relief of perennial allergic rhinitis in adults & pediatric
+    patients 6 months of age and older.
+  mention_id: MEDICNE:8e59bab3-51fe-55f4-94ce-4f9318db9532
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:50730
+    normalized_label: montelukast
+    original_id: CHEBI:50730
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:50730
+  normalized_label: montelukast
+  original_literal: Montelukast Orally Disintegrating Strips 4mg/5mg/10mg (additional
+    Dosage form)
+  snippet: For the Relief of perennial allergic rhinitis in adults & pediatric patients
+    6 months of age and older.
+  snippets:
+  - For the Relief of perennial allergic rhinitis in adults & pediatric patients 6
+    months of age and older.
+  source: INDIA
+  source_name: Montelukast Orally Disintegrating Strips 4mg/5mg/10mg (additional Dosage
+    form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:72296
+    grounded_label: apixaban
+    grounding_quality: lexical_exact_surgery
+    original_string: Apixaban Tablets 2.5/5mg (additional Indication)
+    subject_id: MEDICNE:48ff3ad1-e2fa-5557-b870-6f50345dc29f
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE),
+    and prevention of Recurrent DVT and PE in adult patients.
+  mention_id: MEDICNE:48ff3ad1-e2fa-5557-b870-6f50345dc29f
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:72296
+    normalized_label: apixaban
+    original_id: CHEBI:72296
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:72296
+  normalized_label: apixaban
+  original_literal: Apixaban Tablets 2.5/5mg (additional Indication)
+  snippet: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and
+    prevention of Recurrent DVT and PE in adult patients.
+  snippets:
+  - Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and prevention
+    of Recurrent DVT and PE in adult patients.
+  source: INDIA
+  source_name: Apixaban Tablets 2.5/5mg (additional Indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:66919
+    grounded_label: ruxolitinib
+    grounding_quality: lexical_exact_surgery
+    original_string: Ruxolitinib 10mg tablet (additional Strength)
+    subject_id: MEDICNE:4aaaf7e4-3b39-5490-86d9-adb48b856b2b
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: 1. For the treatment of patients with myelofibrosis including primary
+    myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia
+    myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant
+    to or intolerant of hydroxyurea.
+  mention_id: MEDICNE:4aaaf7e4-3b39-5490-86d9-adb48b856b2b
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:66919
+    normalized_label: ruxolitinib
+    original_id: CHEBI:66919
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:66919
+  normalized_label: ruxolitinib
+  original_literal: Ruxolitinib 10mg tablet (additional Strength)
+  snippet: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis,
+    post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis
+    2. Treatment of patients with polycythemia vera who are resistant to or intolerant
+    of hydroxyurea.
+  snippets:
+  - 1. For the treatment of patients with myelofibrosis including primary myelofibrosis,
+    post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis
+    2. Treatment of patients with polycythemia vera who are resistant to or intolerant
+    of hydroxyurea.
+  source: INDIA
+  source_name: Ruxolitinib 10mg tablet (additional Strength)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:6539
+    grounded_label: Lorazepam
+    grounding_quality: lexical_exact_surgery
+    original_string: Lorazepam Orodispersible Tablet 1mg/2mg (additional Dosage form)
+    subject_id: MEDICNE:b3c5b3e6-9184-540d-96f8-d477d1fe6ee1
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the management of anxiety disorders or for the short term relief
+    of symptoms of anxiety or anxiety associated with depressive symptoms.
+  mention_id: MEDICNE:b3c5b3e6-9184-540d-96f8-d477d1fe6ee1
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:6539
+    normalized_label: Lorazepam
+    original_id: CHEBI:6539
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:6539
+  normalized_label: Lorazepam
+  original_literal: Lorazepam Orodispersible Tablet 1mg/2mg (additional Dosage form)
+  snippet: For the management of anxiety disorders or for the short term relief of
+    symptoms of anxiety or anxiety associated with depressive symptoms.
+  snippets:
+  - For the management of anxiety disorders or for the short term relief of symptoms
+    of anxiety or anxiety associated with depressive symptoms.
+  source: INDIA
+  source_name: Lorazepam Orodispersible Tablet 1mg/2mg (additional Dosage form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:3175
+    grounded_label: brimonidine
+    grounding_quality: lexical_exact_surgery
+    original_string: Brimonidine topical gel 0.33% (Add. Dosage form/indication)
+    subject_id: MEDICNE:d08f23c1-765c-56c5-b82c-3ce2fa2c3010
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the topical treatment of persistent (non- transient) facial erythema
+    of rosacea in adults 18 years of age or older.
+  mention_id: MEDICNE:d08f23c1-765c-56c5-b82c-3ce2fa2c3010
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:3175
+    normalized_label: brimonidine
+    original_id: CHEBI:3175
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:3175
+  normalized_label: brimonidine
+  original_literal: Brimonidine topical gel 0.33% (Add. Dosage form/indication)
+  snippet: For the topical treatment of persistent (non- transient) facial erythema
+    of rosacea in adults 18 years of age or older.
+  snippets:
+  - For the topical treatment of persistent (non- transient) facial erythema of rosacea
+    in adults 18 years of age or older.
+  source: INDIA
+  source_name: Brimonidine topical gel 0.33% (Add. Dosage form/indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:68579
+    grounded_label: rivaroxaban
+    grounding_quality: lexical_exact_surgery
+    original_string: Rivaroxaban tablet 2.5mg (add. strength)
+    subject_id: MEDICNE:1286275d-658f-56b7-b7e7-1a98a5eca97c
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Rivaroxaban 2.5mg tablet, co-administered with Acetylsalicylic acid
+    (ASA) alone or with ASA plus Clopidogrel or Ticlopidine, is indicated for the
+    prevention of atherothrombotic events in adult patients after an acute coronary
+    syndrome (ACS) with elevated cardiac biomarkers.
+  mention_id: MEDICNE:1286275d-658f-56b7-b7e7-1a98a5eca97c
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:68579
+    normalized_label: rivaroxaban
+    original_id: CHEBI:68579
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:68579
+  normalized_label: rivaroxaban
+  original_literal: Rivaroxaban tablet 2.5mg (add. strength)
+  snippet: Rivaroxaban 2.5mg tablet, co-administered with Acetylsalicylic acid (ASA)
+    alone or with ASA plus Clopidogrel or Ticlopidine, is indicated for the prevention
+    of atherothrombotic events in adult patients after an acute coronary syndrome
+    (ACS) with elevated cardiac biomarkers.
+  snippets:
+  - Rivaroxaban 2.5mg tablet, co-administered with Acetylsalicylic acid (ASA) alone
+    or with ASA plus Clopidogrel or Ticlopidine, is indicated for the prevention of
+    atherothrombotic events in adult patients after an acute coronary syndrome (ACS)
+    with elevated cardiac biomarkers.
+  source: INDIA
+  source_name: Rivaroxaban tablet 2.5mg (add. strength)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:6367
+    grounded_label: lamotrigine
+    grounding_quality: lexical_exact_surgery
+    original_string: Lamotrigine ER Tablet 25mg/50mg/100mg/200 mg
+    subject_id: MEDICNE:20702822-69f3-5a45-90ac-32d666ccc2dd
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Add-on therapy for partial and secondary generalised tonic-clonic seizures.
+  mention_id: MEDICNE:20702822-69f3-5a45-90ac-32d666ccc2dd
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:6367
+    normalized_label: lamotrigine
+    original_id: CHEBI:6367
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:6367
+  normalized_label: lamotrigine
+  original_literal: Lamotrigine ER Tablet 25mg/50mg/100mg/200 mg
+  snippet: Add-on therapy for partial and secondary generalised tonic-clonic seizures.
+  snippets:
+  - Add-on therapy for partial and secondary generalised tonic-clonic seizures.
+  source: INDIA
+  source_name: Lamotrigine ER Tablet 25mg/50mg/100mg/200 mg
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20020213'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Feracrylum 3% solution
+    subject_id: MEDICNE:b07032a8-c1b3-57c1-ad95-8b9c77557810
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: For the management of post-operative wounds cuts, Abrasions as a Haemostatic
+    Agent cum anti-septic.
+  mention_id: MEDICNE:b07032a8-c1b3-57c1-ad95-8b9c77557810
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Feracrylum 3% solution
+  snippet: For the management of post-operative wounds cuts, Abrasions as a Haemostatic
+    Agent cum anti-septic.
+  snippets:
+  - For the management of post-operative wounds cuts, Abrasions as a Haemostatic Agent
+    cum anti-septic.
+  source: INDIA
+  source_name: Feracrylum 3% solution
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20020213'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Feracrylum 3% gel
+    subject_id: MEDICNE:499b343d-202e-594d-8d8a-630c2e241ff9
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: For the management of post-operative wounds cuts, Abrasions as an Haemostatic
+    Agent cum anti-septic.
+  mention_id: MEDICNE:499b343d-202e-594d-8d8a-630c2e241ff9
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Feracrylum 3% gel
+  snippet: For the management of post-operative wounds cuts, Abrasions as an Haemostatic
+    Agent cum anti-septic.
+  snippets:
+  - For the management of post-operative wounds cuts, Abrasions as an Haemostatic
+    Agent cum anti-septic.
+  source: INDIA
+  source_name: Feracrylum 3% gel
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20101203'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:135335
+    grounded_label: artemotil
+    grounding_quality: lexical_exact_surgery
+    original_string: Arteether injection 150mg/mL
+    subject_id: MEDICNE:03419105-b12b-59d8-b7b2-2fc87452a2a6
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for the treatment of severe malaria including cerebral malaria
+    and as a second line in chloroquine resistant malaria cases only.
+  mention_id: MEDICNE:03419105-b12b-59d8-b7b2-2fc87452a2a6
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:135335
+    normalized_label: artemotil
+    original_id: CHEBI:135335
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:135335
+  normalized_label: artemotil
+  original_literal: Arteether injection 150mg/mL
+  snippet: Indicated for the treatment of severe malaria including cerebral malaria
+    and as a second line in chloroquine resistant malaria cases only.
+  snippets:
+  - Indicated for the treatment of severe malaria including cerebral malaria and as
+    a second line in chloroquine resistant malaria cases only.
+  source: INDIA
+  source_name: Arteether injection 150mg/mL
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:68478
+    grounded_label: everolimus
+    grounding_quality: lexical_exact_surgery
+    original_string: Everolimus dispersible Tablet 0.1mg/0.25mg (additional Indication)
+    subject_id: MEDICNE:c2b77dfb-1a21-534c-b832-2084570ebccb
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the prophylaxis of organ rejection in patients receiving a hepatic
+    transplant. In liver transplantation, Everolimus should be used in combination
+    with tacrolimus and corticosteriods.
+  mention_id: MEDICNE:c2b77dfb-1a21-534c-b832-2084570ebccb
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:68478
+    normalized_label: everolimus
+    original_id: CHEBI:68478
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:68478
+  normalized_label: everolimus
+  original_literal: Everolimus dispersible Tablet 0.1mg/0.25mg (additional Indication)
+  snippet: For the prophylaxis of organ rejection in patients receiving a hepatic
+    transplant. In liver transplantation, Everolimus should be used in combination
+    with tacrolimus and corticosteriods.
+  snippets:
+  - For the prophylaxis of organ rejection in patients receiving a hepatic transplant.
+    In liver transplantation, Everolimus should be used in combination with tacrolimus
+    and corticosteriods.
+  source: INDIA
+  source_name: Everolimus dispersible Tablet 0.1mg/0.25mg (additional Indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:68478
+    grounded_label: everolimus
+    grounding_quality: lexical_exact_surgery
+    original_string: Everolimus Tablet 0.25 mg/0.5 mg/0.75 mg/1.0 mg (additional Indication)
+    subject_id: MEDICNE:cbae6727-3159-5939-b280-41d04769b8c0
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the prophylaxis of organ rejection in patients receiving a hepatic
+    transplant. In liver transplantation, Everolimus should be used in combination
+    with tacrolimus and corticosteriods.
+  mention_id: MEDICNE:cbae6727-3159-5939-b280-41d04769b8c0
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:68478
+    normalized_label: everolimus
+    original_id: CHEBI:68478
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:68478
+  normalized_label: everolimus
+  original_literal: Everolimus Tablet 0.25 mg/0.5 mg/0.75 mg/1.0 mg (additional Indication)
+  snippet: For the prophylaxis of organ rejection in patients receiving a hepatic
+    transplant. In liver transplantation, Everolimus should be used in combination
+    with tacrolimus and corticosteriods.
+  snippets:
+  - For the prophylaxis of organ rejection in patients receiving a hepatic transplant.
+    In liver transplantation, Everolimus should be used in combination with tacrolimus
+    and corticosteriods.
+  source: INDIA
+  source_name: Everolimus Tablet 0.25 mg/0.5 mg/0.75 mg/1.0 mg (additional Indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:31387
+    grounded_label: cetrorelix acetate
+    grounding_quality: lexical_exact_surgery
+    original_string: Cetrorelix Acetate injection 0.25mg/0.5ml in 0.5 ml prefilled
+      syringe. (Additional pack size)
+    subject_id: MEDICNE:7a61821c-ac2a-5187-b63d-abea3dd25ffb
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Prevention of premature ovulation in patients undergoing a controlled
+    ovarian stimulation, followed by oocyte pick-up and assisted reproductive techniques.
+  mention_id: MEDICNE:7a61821c-ac2a-5187-b63d-abea3dd25ffb
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:31387
+    normalized_label: cetrorelix acetate
+    original_id: CHEBI:31387
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:31387
+  normalized_label: cetrorelix acetate
+  original_literal: Cetrorelix Acetate injection 0.25mg/0.5ml in 0.5 ml prefilled
+    syringe. (Additional pack size)
+  snippet: Prevention of premature ovulation in patients undergoing a controlled ovarian
+    stimulation, followed by oocyte pick-up and assisted reproductive techniques.
+  snippets:
+  - Prevention of premature ovulation in patients undergoing a controlled ovarian
+    stimulation, followed by oocyte pick-up and assisted reproductive techniques.
+  source: INDIA
+  source_name: Cetrorelix Acetate injection 0.25mg/0.5ml in 0.5 ml prefilled syringe.
+    (Additional pack size)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:748790
+    grounded_label: exenatide
+    grounding_quality: lexical_exact_surgery
+    original_string: Exenatide 2 mg powder and solvent for prolonged release suspension
+      for injection in a prefilled pen (s.c. Injection) (Additional strength)
+    subject_id: MEDICNE:0aa2cf0c-954e-5513-b6f3-2fcc30b73888
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For treatment of type 2 diabetes mellitus in combination with Metformin
+    Sulphonylurea Thiazolidinedione Metformin and Sulphonylurea Metformin and Thiazolidinedione
+    In Adults who have not achieved adequate glycemic control on maximally tolerated
+    doses of these oral therapies.
+  mention_id: MEDICNE:0aa2cf0c-954e-5513-b6f3-2fcc30b73888
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:748790
+    normalized_label: exenatide
+    original_id: CHEBI:748790
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:748790
+  normalized_label: exenatide
+  original_literal: Exenatide 2 mg powder and solvent for prolonged release suspension
+    for injection in a prefilled pen (s.c. Injection) (Additional strength)
+  snippet: For treatment of type 2 diabetes mellitus in combination with Metformin
+    Sulphonylurea Thiazolidinedione Metformin and Sulphonylurea Metformin and Thiazolidinedione
+    In Adults who have not achieved adequate glycemic control on maximally tolerated
+    doses of these oral therapies.
+  snippets:
+  - For treatment of type 2 diabetes mellitus in combination with Metformin Sulphonylurea
+    Thiazolidinedione Metformin and Sulphonylurea Metformin and Thiazolidinedione
+    In Adults who have not achieved adequate glycemic control on maximally tolerated
+    doses of these oral therapies.
+  source: INDIA
+  source_name: Exenatide 2 mg powder and solvent for prolonged release suspension
+    for injection in a prefilled pen (s.c. Injection) (Additional strength)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:28940
+    grounded_label: calciol
+    grounding_quality: lexical_exact_surgery
+    original_string: Vitamin D3 (Cholecalciferol) Orally disintegrating strips 2000
+      IU (additional Dosage form)
+    subject_id: MEDICNE:6cf61881-3b56-5fec-9319-5f8e82b09730
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of Vitamin D3 deficiency.
+  mention_id: MEDICNE:6cf61881-3b56-5fec-9319-5f8e82b09730
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:28940
+    normalized_label: calciol
+    original_id: CHEBI:28940
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:28940
+  normalized_label: calciol
+  original_literal: Vitamin D3 (Cholecalciferol) Orally disintegrating strips 2000
+    IU (additional Dosage form)
+  snippet: For the treatment of Vitamin D3 deficiency.
+  snippets:
+  - For the treatment of Vitamin D3 deficiency.
+  source: INDIA
+  source_name: Vitamin D3 (Cholecalciferol) Orally disintegrating strips 2000 IU (additional
+    Dosage form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:41879
+    grounded_label: dexamethasone
+    grounding_quality: lexical_exact_surgery
+    original_string: Dexamethasone Intravitreal implant 0.7mg (Additional Indication)
+    subject_id: MEDICNE:584bd73d-b7ae-55c4-800d-084f2c70bcf0
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of visual impairment due to Diabetic Macular Edema
+    (DME) who are pseudophakic or who are considered insufficiently responsive to,
+    or unsuitable for non-corticosteroid therapy.
+  mention_id: MEDICNE:584bd73d-b7ae-55c4-800d-084f2c70bcf0
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:41879
+    normalized_label: dexamethasone
+    original_id: CHEBI:41879
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:41879
+  normalized_label: dexamethasone
+  original_literal: Dexamethasone Intravitreal implant 0.7mg (Additional Indication)
+  snippet: For the treatment of visual impairment due to Diabetic Macular Edema (DME)
+    who are pseudophakic or who are considered insufficiently responsive to, or unsuitable
+    for non-corticosteroid therapy.
+  snippets:
+  - For the treatment of visual impairment due to Diabetic Macular Edema (DME) who
+    are pseudophakic or who are considered insufficiently responsive to, or unsuitable
+    for non-corticosteroid therapy.
+  source: INDIA
+  source_name: Dexamethasone Intravitreal implant 0.7mg (Additional Indication)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.6
+    grounded_id: CHEBI:10126
+    grounded_label: zolpidem tartrate
+    grounding_quality: lexical_exact_surgery
+    original_string: Zolpidem Tartarate Orally disintegrating Tablet 5mg/10mg (Additional
+      dosage form)
+    subject_id: MEDICNE:cdf26934-11d5-5fb3-b227-adc5cd0a62db
+  grounding_confidence: 0.6
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For insomnia.
+  mention_id: MEDICNE:cdf26934-11d5-5fb3-b227-adc5cd0a62db
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:10126
+    normalized_label: zolpidem tartrate
+    original_id: CHEBI:10126
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:10126
+  normalized_label: zolpidem tartrate
+  original_literal: Zolpidem Tartarate Orally disintegrating Tablet 5mg/10mg (Additional
+    dosage form)
+  snippet: For insomnia.
+  snippets:
+  - For insomnia.
+  source: INDIA
+  source_name: Zolpidem Tartarate Orally disintegrating Tablet 5mg/10mg (Additional
+    dosage form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20150101'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Etodolac i.m injection 400mg/2ml (Additional dosage form)
+    subject_id: MEDICNE:d8fd9ba4-fe73-59ed-aadc-10429310b9c3
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: For the treatment of post operative orthopaedic pain.
+  mention_id: MEDICNE:d8fd9ba4-fe73-59ed-aadc-10429310b9c3
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Etodolac i.m injection 400mg/2ml (Additional dosage form)
+  snippet: For the treatment of post operative orthopaedic pain.
+  snippets:
+  - For the treatment of post operative orthopaedic pain.
+  source: INDIA
+  source_name: Etodolac i.m injection 400mg/2ml (Additional dosage form)
+  source_years:
+  - 2015
+- alternate_ids: []
+  approval_date: '20180110'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Tenofovir Alafenamide Hemifumarate Bulk Emtricitabine 200mg/200mg
+      +Tenofovir Alafenamide 10/25 mg Tablets
+    subject_id: MEDICNE:e699524b-94fa-5816-8316-839b92432891
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: In combination with other antiretroviral a g e n t s f o r t r e a t
+    m e n t o f H u m a n Immunodeficiency Virus type-1 (HIV-1) infection in adults
+    and adolescents with aged 12 years and older
+  mention_id: MEDICNE:e699524b-94fa-5816-8316-839b92432891
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Tenofovir Alafenamide Hemifumarate Bulk Emtricitabine 200mg/200mg
+    +Tenofovir Alafenamide 10/25 mg Tablets
+  snippet: In combination with other antiretroviral a g e n t s f o r t r e a t m
+    e n t o f H u m a n Immunodeficiency Virus type-1 (HIV-1) infection in adults
+    and adolescents with aged 12 years and older
+  snippets:
+  - In combination with other antiretroviral a g e n t s f o r t r e a t m e n t o
+    f H u m a n Immunodeficiency Virus type-1 (HIV-1) infection in adults and adolescents
+    with aged 12 years and older
+  source: INDIA
+  source_name: Tenofovir Alafenamide Hemifumarate Bulk Emtricitabine 200mg/200mg +Tenofovir
+    Alafenamide 10/25 mg Tablets
+  source_years:
+  - 2018
+- alternate_ids: []
+  approval_date: '20180116'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:681569
+    grounded_label: clofarabine
+    grounding_quality: lexical_exact_surgery
+    original_string: Clofarabine Bulk & Injection 20 mg/20ml vial
+    subject_id: MEDICNE:21107808-8652-5edb-8272-8661b3ad8de1
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of patients 1 to 21 years old with relapsed or refractory
+    acute lymphoblastic leukemia after at least two prior regimens. This indication
+    is based upon response rate
+  mention_id: MEDICNE:21107808-8652-5edb-8272-8661b3ad8de1
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:681569
+    normalized_label: clofarabine
+    original_id: CHEBI:681569
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:681569
+  normalized_label: clofarabine
+  original_literal: Clofarabine Bulk & Injection 20 mg/20ml vial
+  snippet: For the treatment of patients 1 to 21 years old with relapsed or refractory
+    acute lymphoblastic leukemia after at least two prior regimens. This indication
+    is based upon response rate
+  snippets:
+  - For the treatment of patients 1 to 21 years old with relapsed or refractory acute
+    lymphoblastic leukemia after at least two prior regimens. This indication is based
+    upon response rate
+  source: INDIA
+  source_name: Clofarabine Bulk & Injection 20 mg/20ml vial
+  source_years:
+  - 2018
+- alternate_ids: []
+  approval_date: '20180116'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:135601
+    grounded_label: denaverine
+    grounding_quality: lexical_exact_surgery
+    original_string: Denaverine Hydrochloride Injection (Vet.)
+    subject_id: MEDICNE:29940bfc-d5e2-5053-b7ae-0487696e3178
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: 'cattle : Facilitation of parturition in heifers; activation of interrupted
+    parturitions; insufficient opening of the soft birth canal; narrowness of the
+    cervix of first and second degree after corrrection of uterine torsions; improvement
+    of the conditions for foetotomy; regulation of labour contractions of the utreus
+    Dogs: Activation of Interrupted parturition'
+  mention_id: MEDICNE:29940bfc-d5e2-5053-b7ae-0487696e3178
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:135601
+    normalized_label: denaverine
+    original_id: CHEBI:135601
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:135601
+  normalized_label: denaverine
+  original_literal: Denaverine Hydrochloride Injection (Vet.)
+  snippet: 'cattle : Facilitation of parturition in heifers; activation of interrupted
+    parturitions; insufficient opening of the soft birth canal; narrowness of the
+    cervix of first and second degree after corrrection of uterine torsions; improvement
+    of the conditions for foetotomy; regulation of labour contractions of the utreus
+    Dogs: Activation of Interrupted parturition'
+  snippets:
+  - 'cattle : Facilitation of parturition in heifers; activation of interrupted parturitions;
+    insufficient opening of the soft birth canal; narrowness of the cervix of first
+    and second degree after corrrection of uterine torsions; improvement of the conditions
+    for foetotomy; regulation of labour contractions of the utreus Dogs: Activation
+    of Interrupted parturition'
+  source: INDIA
+  source_name: Denaverine Hydrochloride Injection (Vet.)
+  source_years:
+  - 2018
+- alternate_ids: []
+  approval_date: '20180220'
+  grounding:
+    components:
+    - CHEBI:85155
+    - CHEBI:85161
+    confidence: 0.8
+    grounded_id: CHEBI:85155
+    grounded_label: netupitant
+    grounding_quality: lexical_exact_surgery
+    original_string: Netupitant 300 mg + Palonosetron 0.5 mg Capsule
+    subject_id: MEDICNE:574a7e5e-30a2-5cd1-a072-4e6dde26e7b5
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the prevention of acute and delayed nausea and vomiting associated
+    with highly emetogenic Cisplatin-based cancer chemotherapy - For the prevention
+    of acute and delayed nausea and vomiting associated with moderate emetogenic cancer
+    chemotherapy in adult
+  mention_id: MEDICNE:574a7e5e-30a2-5cd1-a072-4e6dde26e7b5
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:85155
+    normalized_label: netupitant
+    original_id: CHEBI:85155
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:85155
+  normalized_label: netupitant
+  original_literal: Netupitant 300 mg + Palonosetron 0.5 mg Capsule
+  snippet: For the prevention of acute and delayed nausea and vomiting associated
+    with highly emetogenic Cisplatin-based cancer chemotherapy - For the prevention
+    of acute and delayed nausea and vomiting associated with moderate emetogenic cancer
+    chemotherapy in adult
+  snippets:
+  - For the prevention of acute and delayed nausea and vomiting associated with highly
+    emetogenic Cisplatin-based cancer chemotherapy - For the prevention of acute and
+    delayed nausea and vomiting associated with moderate emetogenic cancer chemotherapy
+    in adult
+  source: INDIA
+  source_name: Netupitant 300 mg + Palonosetron 0.5 mg Capsule
+  source_years:
+  - 2018
+- alternate_ids: []
+  approval_date: '20180220'
+  grounding:
+    components:
+    - CHEBI:5063
+    - CHEBI:34911
+    confidence: 1.0
+    grounded_id: CHEBI:5063
+    grounded_label: fipronil
+    grounding_quality: lexical_exact_surgery
+    original_string: Fipronil 6.1 % m/v + Permethrin 54.5% m/V spot on solution for
+      Dog (Vet.)
+    subject_id: MEDICNE:7cdc360d-bcaf-57e9-b77c-15f1bd6a4450
+  grounding_confidence: 1.0
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: In dogs, to be used against infestations with fleas and/or ticks when
+    repellant (anti feeding) activity is necessary against sand- flies and/or mosquitoes
+  mention_id: MEDICNE:7cdc360d-bcaf-57e9-b77c-15f1bd6a4450
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:5063
+    normalized_label: fipronil
+    original_id: CHEBI:5063
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:5063
+  normalized_label: fipronil
+  original_literal: Fipronil 6.1 % m/v + Permethrin 54.5% m/V spot on solution for
+    Dog (Vet.)
+  snippet: In dogs, to be used against infestations with fleas and/or ticks when repellant
+    (anti feeding) activity is necessary against sand- flies and/or mosquitoes
+  snippets:
+  - In dogs, to be used against infestations with fleas and/or ticks when repellant
+    (anti feeding) activity is necessary against sand- flies and/or mosquitoes
+  source: INDIA
+  source_name: Fipronil 6.1 % m/v + Permethrin 54.5% m/V spot on solution for Dog
+    (Vet.)
+  source_years:
+  - 2018
+- alternate_ids: []
+  approval_date: '20180220'
+  grounding:
+    components:
+    - CHEBI:45267
+    - CHEBI:39214
+    confidence: 0.8
+    grounded_id: CHEBI:39214
+    grounded_label: abamectin
+    grounding_quality: lexical_exact_surgery
+    original_string: Paziquantel 0.0065 g + Abamectin 0.00025 g tablets for cat (Vet)
+    subject_id: MEDICNE:b4b7d377-4146-5f8f-babb-b80f3c224114
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: In infestation of cats with endoparasites tapewoms (teniae), flukes,
+    roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric
+    mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange,
+    and particularly in cases of complex endo and
+  mention_id: MEDICNE:b4b7d377-4146-5f8f-babb-b80f3c224114
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:39214
+    normalized_label: abamectin
+    original_id: CHEBI:39214
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:39214
+  normalized_label: abamectin
+  original_literal: Paziquantel 0.0065 g + Abamectin 0.00025 g tablets for cat (Vet)
+  snippet: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms
+    (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline
+    scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly
+    in cases of complex endo and
+  snippets:
+  - In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms
+    (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline
+    scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly
+    in cases of complex endo and
+  source: INDIA
+  source_name: Paziquantel 0.0065 g + Abamectin 0.00025 g tablets for cat (Vet)
+  source_years:
+  - 2018
+- alternate_ids: []
+  approval_date: '20190204'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:749728
+    grounded_label: fenspiride hydrochloride
+    grounding_quality: lexical_exact_surgery
+    original_string: Fenspiride hydrochloride film coated extended release tablet
+      80 mg and Fenspiride hydrochloride bulk
+    subject_id: MEDICNE:cf52004b-906e-5854-b149-4375b664d6f9
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: 1. Acute Rhinosinusitis 2. Moderate persistent asthma as an add- on
+    therapy
+  mention_id: MEDICNE:cf52004b-906e-5854-b149-4375b664d6f9
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:749728
+    normalized_label: fenspiride hydrochloride
+    original_id: CHEBI:749728
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:749728
+  normalized_label: fenspiride hydrochloride
+  original_literal: Fenspiride hydrochloride film coated extended release tablet 80
+    mg and Fenspiride hydrochloride bulk
+  snippet: 1. Acute Rhinosinusitis 2. Moderate persistent asthma as an add- on therapy
+  snippets:
+  - 1. Acute Rhinosinusitis 2. Moderate persistent asthma as an add- on therapy
+  source: INDIA
+  source_name: Fenspiride hydrochloride film coated extended release tablet 80 mg
+    and Fenspiride hydrochloride bulk
+  source_years:
+  - 2019
+- alternate_ids: []
+  approval_date: '20190206'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:135954
+    grounded_label: bilastine
+    grounding_quality: lexical_exact_surgery
+    original_string: Bilastine tablets 20 mg and Bilastine Bulk
+    subject_id: MEDICNE:319a74bc-fba4-56b2-bc07-1109eaa79115
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For symptomatic treatment of allergic rhino-conjuctivitis (seasonal
+    and perennial) and utricaria in adults
+  mention_id: MEDICNE:319a74bc-fba4-56b2-bc07-1109eaa79115
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:135954
+    normalized_label: bilastine
+    original_id: CHEBI:135954
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:135954
+  normalized_label: bilastine
+  original_literal: Bilastine tablets 20 mg and Bilastine Bulk
+  snippet: For symptomatic treatment of allergic rhino-conjuctivitis (seasonal and
+    perennial) and utricaria in adults
+  snippets:
+  - For symptomatic treatment of allergic rhino-conjuctivitis (seasonal and perennial)
+    and utricaria in adults
+  source: INDIA
+  source_name: Bilastine tablets 20 mg and Bilastine Bulk
+  source_years:
+  - 2019
+- alternate_ids: []
+  approval_date: '20190218'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:31689
+    grounded_label: Iguratimod
+    grounding_quality: lexical_exact_surgery
+    original_string: Iguratimod film coated tablets 25mg and Iguratimod Bulk
+    subject_id: MEDICNE:7c826f13-72df-5307-a808-89d8cd585b65
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of active rheumatoid arthritis symptoms
+  mention_id: MEDICNE:7c826f13-72df-5307-a808-89d8cd585b65
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:31689
+    normalized_label: Iguratimod
+    original_id: CHEBI:31689
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:31689
+  normalized_label: Iguratimod
+  original_literal: Iguratimod film coated tablets 25mg and Iguratimod Bulk
+  snippet: For the treatment of active rheumatoid arthritis symptoms
+  snippets:
+  - For the treatment of active rheumatoid arthritis symptoms
+  source: INDIA
+  source_name: Iguratimod film coated tablets 25mg and Iguratimod Bulk
+  source_years:
+  - 2019
+- alternate_ids: []
+  approval_date: '20190325'
+  grounding:
+    confidence: 0.1886
+    grounded_id: CHEBI:63115
+    grounded_label: fingolimod
+    grounding_quality: rxnorm_proposed
+    original_string: Fingolimod Capsules 0.5mg and Fingolimod hydrochloridebulk
+    subject_id: MEDICNE:8573e479-0179-5f00-b2d4-c86abd454061
+  grounding_confidence: 0.1886
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of patients with relapsing forms of multiple sclerosis
+    (MS) to reduce the frequency of clinical exacerbations and to delay the accumulation
+    of physical disability.
+  mention_id: MEDICNE:8573e479-0179-5f00-b2d4-c86abd454061
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:63115
+    normalized_label: fingolimod
+    original_id: CHEBI:63115
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:63115
+  normalized_label: fingolimod
+  original_literal: Fingolimod Capsules 0.5mg and Fingolimod hydrochloridebulk
+  snippet: For the treatment of patients with relapsing forms of multiple sclerosis
+    (MS) to reduce the frequency of clinical exacerbations and to delay the accumulation
+    of physical disability.
+  snippets:
+  - For the treatment of patients with relapsing forms of multiple sclerosis (MS)
+    to reduce the frequency of clinical exacerbations and to delay the accumulation
+    of physical disability.
+  source: INDIA
+  source_name: Fingolimod Capsules 0.5mg and Fingolimod hydrochloridebulk
+  source_years:
+  - 2019
+- alternate_ids: []
+  approval_date: '20190426'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:177541
+    grounded_label: remogliflozin etabonate
+    grounding_quality: lexical_exact_surgery
+    original_string: Remogliflozin etabonate bulk and Remogliflozin etabonate film
+      coated tablets 100 mg
+    subject_id: MEDICNE:35269948-7074-54d0-92d5-cbd16f82a078
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated in adults aged 18 years and older with type2 diabetes mellitus
+    to improve glycemic control as:-  Monotherapy when diet and exercise alone do
+    not provide adequate glyceamic control.  Add on therapy with metformin, together
+    with diet and exercise, when these do not provide adequate glyceamic control.
+  mention_id: MEDICNE:35269948-7074-54d0-92d5-cbd16f82a078
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:177541
+    normalized_label: remogliflozin etabonate
+    original_id: CHEBI:177541
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:177541
+  normalized_label: remogliflozin etabonate
+  original_literal: Remogliflozin etabonate bulk and Remogliflozin etabonate film
+    coated tablets 100 mg
+  snippet: Indicated in adults aged 18 years and older with type2 diabetes mellitus
+    to improve glycemic control as:-  Monotherapy when diet and exercise alone do
+    not provide adequate glyceamic control.  Add on therapy with metformin, together
+    with diet and exercise, when these do not provide adequate glyceamic control.
+  snippets:
+  - Indicated in adults aged 18 years and older with type2 diabetes mellitus to improve
+    glycemic control as:-  Monotherapy when diet and exercise alone do not provide
+    adequate glyceamic control.  Add on therapy with metformin, together with diet
+    and exercise, when these do not provide adequate glyceamic control.
+  source: INDIA
+  source_name: Remogliflozin etabonate bulk and Remogliflozin etabonate film coated
+    tablets 100 mg
+  source_years:
+  - 2019
+- alternate_ids: []
+  approval_date: '20190517'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Concentrate of Proteolytic enzyme enriched in Bromelain topical
+      gel
+    subject_id: MEDICNE:f563d1c1-f204-5aaf-990b-63e7f31b0d9f
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: Indicated for removal of eschar in adults with deep partial-and full-thickness
+    thermal burns
+  mention_id: MEDICNE:f563d1c1-f204-5aaf-990b-63e7f31b0d9f
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Concentrate of Proteolytic enzyme enriched in Bromelain topical
+    gel
+  snippet: Indicated for removal of eschar in adults with deep partial-and full-thickness
+    thermal burns
+  snippets:
+  - Indicated for removal of eschar in adults with deep partial-and full-thickness
+    thermal burns
+  source: INDIA
+  source_name: Concentrate of Proteolytic enzyme enriched in Bromelain topical gel
+  source_years:
+  - 2019
+- alternate_ids: []
+  approval_date: '20190617'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:753399
+    grounded_label: menotropins
+    grounding_quality: lexical_exact_surgery
+    original_string: Menotrophin injection 600 IU/ml, 1 ml & 2 ml multi dose vial
+      (Highly purified)
+    subject_id: MEDICNE:8347903b-6a1b-53f1-aa6e-2815563bc1ec
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: 'Menotropin is indicated for the treatment of female and male infertility
+    in the following conditions: Anovulation , including Polycystic Ovarian Disease
+    (PCOD), in women who have been unresponsive to the treatment with'
+  mention_id: MEDICNE:8347903b-6a1b-53f1-aa6e-2815563bc1ec
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:753399
+    normalized_label: menotropins
+    original_id: CHEBI:753399
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:753399
+  normalized_label: menotropins
+  original_literal: Menotrophin injection 600 IU/ml, 1 ml & 2 ml multi dose vial (Highly
+    purified)
+  snippet: 'Menotropin is indicated for the treatment of female and male infertility
+    in the following conditions: Anovulation , including Polycystic Ovarian Disease
+    (PCOD), in women who have been unresponsive to the treatment with'
+  snippets:
+  - 'Menotropin is indicated for the treatment of female and male infertility in the
+    following conditions: Anovulation , including Polycystic Ovarian Disease (PCOD),
+    in women who have been unresponsive to the treatment with'
+  source: INDIA
+  source_name: Menotrophin injection 600 IU/ml, 1 ml & 2 ml multi dose vial (Highly
+    purified)
+  source_years:
+  - 2019
+- alternate_ids: []
+  approval_date: '20200103'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Cidofovir dihydrate bulk drug and Cidofovir injection 75 mg/
+      ml (5 ml single use vial)
+    subject_id: MEDICNE:efb7b193-6ac2-511c-8888-56da01183379
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: Cidofovir is indicated for the treatment of CMV retinitis in adults
+    with acquired immune defeciency syndrome (AIDS) and without renal dysfunction.
+    It should be used only when other medicinal products are considered as unsuitable.
+  mention_id: MEDICNE:efb7b193-6ac2-511c-8888-56da01183379
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Cidofovir dihydrate bulk drug and Cidofovir injection 75 mg/ ml
+    (5 ml single use vial)
+  snippet: Cidofovir is indicated for the treatment of CMV retinitis in adults with
+    acquired immune defeciency syndrome (AIDS) and without renal dysfunction. It should
+    be used only when other medicinal products are considered as unsuitable.
+  snippets:
+  - Cidofovir is indicated for the treatment of CMV retinitis in adults with acquired
+    immune defeciency syndrome (AIDS) and without renal dysfunction. It should be
+    used only when other medicinal products are considered as unsuitable.
+  source: INDIA
+  source_name: Cidofovir dihydrate bulk drug and Cidofovir injection 75 mg/ ml (5
+    ml single use vial)
+  source_years:
+  - 2020
+- alternate_ids: []
+  approval_date: '20200103'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:132268
+    grounded_label: dacomitinib
+    grounding_quality: lexical_exact_surgery
+    original_string: Dacomitinib tablet 15mg, 30mg and 45mg
+    subject_id: MEDICNE:03692776-7abd-503f-b833-d73055278aa0
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the first line treatmrnt of patients with metastatic non-small cell
+    lung cancer (NSCLC) with epidermal growth factor receptor (EGFR) exon 19 deletion
+    or exon 21 L858R substitution mutations
+  mention_id: MEDICNE:03692776-7abd-503f-b833-d73055278aa0
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:132268
+    normalized_label: dacomitinib
+    original_id: CHEBI:132268
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:132268
+  normalized_label: dacomitinib
+  original_literal: Dacomitinib tablet 15mg, 30mg and 45mg
+  snippet: For the first line treatmrnt of patients with metastatic non-small cell
+    lung cancer (NSCLC) with epidermal growth factor receptor (EGFR) exon 19 deletion
+    or exon 21 L858R substitution mutations
+  snippets:
+  - For the first line treatmrnt of patients with metastatic non-small cell lung cancer
+    (NSCLC) with epidermal growth factor receptor (EGFR) exon 19 deletion or exon
+    21 L858R substitution mutations
+  source: INDIA
+  source_name: Dacomitinib tablet 15mg, 30mg and 45mg
+  source_years:
+  - 2020
+- alternate_ids: []
+  approval_date: '20200103'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:231324
+    grounded_label: alpelisib
+    grounding_quality: lexical_exact_surgery
+    original_string: Alpelisib film coated tablets 50mg, 150mg, 200mg
+    subject_id: MEDICNE:e65d8d3a-0ebd-5034-a9fa-c0a2cf882937
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Alpelisib is a kinase inhibitor indicated in combination with Fulvestrant
+    for the treatment of postmenopausal women, and men, with Hormone receptor (HR)-positive,
+    human epidermal growth factor receptor 2 (HER2)-negative, PIK3CA-mutated, advanced
+    or metastatic breast cancer following progression on or after an endocrine-based
+    regimen.
+  mention_id: MEDICNE:e65d8d3a-0ebd-5034-a9fa-c0a2cf882937
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:231324
+    normalized_label: alpelisib
+    original_id: CHEBI:231324
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:231324
+  normalized_label: alpelisib
+  original_literal: Alpelisib film coated tablets 50mg, 150mg, 200mg
+  snippet: Alpelisib is a kinase inhibitor indicated in combination with Fulvestrant
+    for the treatment of postmenopausal women, and men, with Hormone receptor (HR)-positive,
+    human epidermal growth factor receptor 2 (HER2)-negative, PIK3CA-mutated, advanced
+    or metastatic breast cancer following progression on or after an endocrine-based
+    regimen.
+  snippets:
+  - Alpelisib is a kinase inhibitor indicated in combination with Fulvestrant for
+    the treatment of postmenopausal women, and men, with Hormone receptor (HR)-positive,
+    human epidermal growth factor receptor 2 (HER2)-negative, PIK3CA-mutated, advanced
+    or metastatic breast cancer following progression on or after an endocrine-based
+    regimen.
+  source: INDIA
+  source_name: Alpelisib film coated tablets 50mg, 150mg, 200mg
+  source_years:
+  - 2020
+- alternate_ids: []
+  approval_date: '20200214'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Isavuconazolesulfate 100mg capsules
+    subject_id: MEDICNE:62409bc9-dde7-528e-8d26-e2ae7d150500
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: Indicated for patients 18 years of age and older for the treatment of
+    Invasive Aspergillosis and Invasive Mucormycosis
+  mention_id: MEDICNE:62409bc9-dde7-528e-8d26-e2ae7d150500
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Isavuconazolesulfate 100mg capsules
+  snippet: Indicated for patients 18 years of age and older for the treatment of Invasive
+    Aspergillosis and Invasive Mucormycosis
+  snippets:
+  - Indicated for patients 18 years of age and older for the treatment of Invasive
+    Aspergillosis and Invasive Mucormycosis
+  source: INDIA
+  source_name: Isavuconazolesulfate 100mg capsules
+  source_years:
+  - 2020
+- alternate_ids: []
+  approval_date: '20200304'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:31247
+    grounded_label: Azelnidipine
+    grounding_quality: lexical_exact_surgery
+    original_string: Azelnidipine tablets IP 8 mg
+    subject_id: MEDICNE:7cb96ffc-0276-556b-9b01-d609bd5f4724
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of Stage I Hypertension
+  mention_id: MEDICNE:7cb96ffc-0276-556b-9b01-d609bd5f4724
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:31247
+    normalized_label: Azelnidipine
+    original_id: CHEBI:31247
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:31247
+  normalized_label: Azelnidipine
+  original_literal: Azelnidipine tablets IP 8 mg
+  snippet: For the treatment of Stage I Hypertension
+  snippets:
+  - For the treatment of Stage I Hypertension
+  source: INDIA
+  source_name: Azelnidipine tablets IP 8 mg
+  source_years:
+  - 2020
+- alternate_ids: []
+  approval_date: '20200311'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:17015
+    grounded_label: riboflavin
+    grounding_quality: lexical_exact_surgery
+    original_string: Riboflavin Ophthalmic Solution 0.1%
+    subject_id: MEDICNE:5620fdc9-d1e7-5880-a22d-c728781d6997
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: It is intended to treat keratoconus and corneal ecstasia following refractive
+    surgery
+  mention_id: MEDICNE:5620fdc9-d1e7-5880-a22d-c728781d6997
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:17015
+    normalized_label: riboflavin
+    original_id: CHEBI:17015
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:17015
+  normalized_label: riboflavin
+  original_literal: Riboflavin Ophthalmic Solution 0.1%
+  snippet: It is intended to treat keratoconus and corneal ecstasia following refractive
+    surgery
+  snippets:
+  - It is intended to treat keratoconus and corneal ecstasia following refractive
+    surgery
+  source: INDIA
+  source_name: Riboflavin Ophthalmic Solution 0.1%
+  source_years:
+  - 2020
+- alternate_ids: []
+  approval_date: '20200311'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:135945
+    grounded_label: pixantrone
+    grounding_quality: lexical_exact_surgery
+    original_string: Pixantrone 29mg powder for concentrate for solution for infusion
+    subject_id: MEDICNE:d4b21dda-fe61-505c-80e6-491dfa179ed9
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated as 3rd line and 4th line therapy for the treatment of adult
+    patients with multiply relapsed or refractory aggresive Non-Hodgkins B- Cell Lymphomas
+    (NHL)
+  mention_id: MEDICNE:d4b21dda-fe61-505c-80e6-491dfa179ed9
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:135945
+    normalized_label: pixantrone
+    original_id: CHEBI:135945
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:135945
+  normalized_label: pixantrone
+  original_literal: Pixantrone 29mg powder for concentrate for solution for infusion
+  snippet: Indicated as 3rd line and 4th line therapy for the treatment of adult patients
+    with multiply relapsed or refractory aggresive Non-Hodgkins B- Cell Lymphomas
+    (NHL)
+  snippets:
+  - Indicated as 3rd line and 4th line therapy for the treatment of adult patients
+    with multiply relapsed or refractory aggresive Non-Hodgkins B- Cell Lymphomas
+    (NHL)
+  source: INDIA
+  source_name: Pixantrone 29mg powder for concentrate for solution for infusion
+  source_years:
+  - 2020
+- alternate_ids: []
+  approval_date: '20200311'
+  grounding:
+    components:
+    - CHEBI:135954
+    - CHEBI:50730
+    confidence: 0.8
+    grounded_id: CHEBI:135954
+    grounded_label: bilastine
+    grounding_quality: lexical_exact_surgery
+    original_string: FDC of Bilastine 20mg and Montelukast 10mg tablets
+    subject_id: MEDICNE:f02c9829-eddd-5cc8-a2ba-156c413db5d0
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for the treatment of allergic rhinitis in adults.
+  mention_id: MEDICNE:f02c9829-eddd-5cc8-a2ba-156c413db5d0
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:135954
+    normalized_label: bilastine
+    original_id: CHEBI:135954
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:135954
+  normalized_label: bilastine
+  original_literal: FDC of Bilastine 20mg and Montelukast 10mg tablets
+  snippet: Indicated for the treatment of allergic rhinitis in adults.
+  snippets:
+  - Indicated for the treatment of allergic rhinitis in adults.
+  source: INDIA
+  source_name: FDC of Bilastine 20mg and Montelukast 10mg tablets
+  source_years:
+  - 2020
+- alternate_ids: []
+  approval_date: '20200311'
+  grounding:
+    confidence: 1.0
+    grounded_id: CHEBI:43602
+    grounded_label: obeticholic acid
+    grounding_quality: lexical_exact_surgery
+    original_string: Obeticholic acid bulk drug and Obeticholic acid 5mg/10mg tablets
+    subject_id: MEDICNE:755cda3c-bc65-552c-b653-9e102caa9a9d
+  grounding_confidence: 1.0
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of primary biliary cholangitis (also known as primary
+    biliary cirrhosis) in combination with
+  mention_id: MEDICNE:755cda3c-bc65-552c-b653-9e102caa9a9d
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:43602
+    normalized_label: obeticholic acid
+    original_id: CHEBI:43602
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:43602
+  normalized_label: obeticholic acid
+  original_literal: Obeticholic acid bulk drug and Obeticholic acid 5mg/10mg tablets
+  snippet: For the treatment of primary biliary cholangitis (also known as primary
+    biliary cirrhosis) in combination with
+  snippets:
+  - For the treatment of primary biliary cholangitis (also known as primary biliary
+    cirrhosis) in combination with
+  source: INDIA
+  source_name: Obeticholic acid bulk drug and Obeticholic acid 5mg/10mg tablets
+  source_years:
+  - 2020
+- alternate_ids: []
+  approval_date: '20210226'
+  grounding:
+    confidence: 1.0
+    grounded_id: CHEBI:66876
+    grounded_label: avanafil
+    grounding_quality: lexical_exact_surgery
+    original_string: Avanafil bulk and Avanafil tablets 50mg/100mg/200mg
+    subject_id: MEDICNE:1ed6ec1a-c7a8-5378-86db-c5ad2a2ee3a7
+  grounding_confidence: 1.0
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of erectile dysfunction
+  mention_id: MEDICNE:1ed6ec1a-c7a8-5378-86db-c5ad2a2ee3a7
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:66876
+    normalized_label: avanafil
+    original_id: CHEBI:66876
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:66876
+  normalized_label: avanafil
+  original_literal: Avanafil bulk and Avanafil tablets 50mg/100mg/200mg
+  snippet: For the treatment of erectile dysfunction
+  snippets:
+  - For the treatment of erectile dysfunction
+  source: INDIA
+  source_name: Avanafil bulk and Avanafil tablets 50mg/100mg/200mg
+  source_years:
+  - 2021
+- alternate_ids: []
+  approval_date: '20210312'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:757127
+    grounded_label: omidenepag isopropyl
+    grounding_quality: lexical_exact_surgery
+    original_string: Omidenepag isopropyl ophthalmic solution 0.002% w/v
+    subject_id: MEDICNE:8d131257-910e-51c9-afba-68ba374b27f4
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For the treatment of glaucoma and ocular hypertension
+  mention_id: MEDICNE:8d131257-910e-51c9-afba-68ba374b27f4
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:757127
+    normalized_label: omidenepag isopropyl
+    original_id: CHEBI:757127
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:757127
+  normalized_label: omidenepag isopropyl
+  original_literal: Omidenepag isopropyl ophthalmic solution 0.002% w/v
+  snippet: For the treatment of glaucoma and ocular hypertension
+  snippets:
+  - For the treatment of glaucoma and ocular hypertension
+  source: INDIA
+  source_name: Omidenepag isopropyl ophthalmic solution 0.002% w/v
+  source_years:
+  - 2021
+- alternate_ids: []
+  approval_date: '20210415'
+  grounding:
+    confidence: 1.0
+    grounded_id: CHEBI:136050
+    grounded_label: ozenoxacin
+    grounding_quality: lexical_exact_surgery
+    original_string: Ozenoxacin bulk and Ozenoxacin cream 1% w/w
+    subject_id: MEDICNE:748bf410-8f06-57f5-a8d7-a4bd91e77b34
+  grounding_confidence: 1.0
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for the topical treatment of impetigo due to staphylococcus
+    aureus or streptococcus pyogenes in adult and pediatric patients 2 months of age
+    and older
+  mention_id: MEDICNE:748bf410-8f06-57f5-a8d7-a4bd91e77b34
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:136050
+    normalized_label: ozenoxacin
+    original_id: CHEBI:136050
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:136050
+  normalized_label: ozenoxacin
+  original_literal: Ozenoxacin bulk and Ozenoxacin cream 1% w/w
+  snippet: Indicated for the topical treatment of impetigo due to staphylococcus aureus
+    or streptococcus pyogenes in adult and pediatric patients 2 months of age and
+    older
+  snippets:
+  - Indicated for the topical treatment of impetigo due to staphylococcus aureus or
+    streptococcus pyogenes in adult and pediatric patients 2 months of age and older
+  source: INDIA
+  source_name: Ozenoxacin bulk and Ozenoxacin cream 1% w/w
+  source_years:
+  - 2021
+- alternate_ids: []
+  approval_date: '20210501'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:15866
+    grounded_label: 2-deoxy-D-glucose
+    grounding_quality: lexical_exact_surgery
+    original_string: 2-Deoxy-D-Glucose bulk and 2-Deoxy-D-Glucose 2.34g & 5.85g sachet
+    subject_id: MEDICNE:1c75f78e-0bfe-5a34-9857-3e09c239d755
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: As an adjunct therapy only in moderate to severe Covid-19 patients
+  mention_id: MEDICNE:1c75f78e-0bfe-5a34-9857-3e09c239d755
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:15866
+    normalized_label: 2-deoxy-D-glucose
+    original_id: CHEBI:15866
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:15866
+  normalized_label: 2-deoxy-D-glucose
+  original_literal: 2-Deoxy-D-Glucose bulk and 2-Deoxy-D-Glucose 2.34g & 5.85g sachet
+  snippet: As an adjunct therapy only in moderate to severe Covid-19 patients
+  snippets:
+  - As an adjunct therapy only in moderate to severe Covid-19 patients
+  source: INDIA
+  source_name: 2-Deoxy-D-Glucose bulk and 2-Deoxy-D-Glucose 2.34g & 5.85g sachet
+  source_years:
+  - 2021
+- alternate_ids: []
+  approval_date: '20210512'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:231693
+    grounded_label: capmatinib
+    grounding_quality: lexical_exact_surgery
+    original_string: Capmatinib 150mg and 200mg film coated tablets
+    subject_id: MEDICNE:8bce6e75-17f8-5ff5-a8a9-b1ea5473248f
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Capmatinib is a kinase inhibitor indicated for the treatment of adult
+    patient with metastatic non-small cell lung cancer (NSCLC) whose tumors have a
+    mutation that leads to mesenchymal epithelial transition (MET) exon 14 skipping.
+  mention_id: MEDICNE:8bce6e75-17f8-5ff5-a8a9-b1ea5473248f
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:231693
+    normalized_label: capmatinib
+    original_id: CHEBI:231693
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:231693
+  normalized_label: capmatinib
+  original_literal: Capmatinib 150mg and 200mg film coated tablets
+  snippet: Capmatinib is a kinase inhibitor indicated for the treatment of adult patient
+    with metastatic non-small cell lung cancer (NSCLC) whose tumors have a mutation
+    that leads to mesenchymal epithelial transition (MET) exon 14 skipping.
+  snippets:
+  - Capmatinib is a kinase inhibitor indicated for the treatment of adult patient
+    with metastatic non-small cell lung cancer (NSCLC) whose tumors have a mutation
+    that leads to mesenchymal epithelial transition (MET) exon 14 skipping.
+  source: INDIA
+  source_name: Capmatinib 150mg and 200mg film coated tablets
+  source_years:
+  - 2021
+- alternate_ids: []
+  approval_date: '20210512'
+  grounding:
+    components:
+    - CHEBI:134692
+    - CHEBI:134689
+    confidence: 1.0
+    grounded_id: CHEBI:134692
+    grounded_label: rucaparib camsylate
+    grounding_quality: lexical_exact_surgery
+    original_string: Rucaparib camsylate bulk and Rucaparib tablets 200mg/300mg
+    subject_id: MEDICNE:8886c895-eb70-57cb-af81-cd50e245be69
+  grounding_confidence: 1.0
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Ovarian cancer • For the maintenance treatment of adult patients with
+    recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who
+    are in a complete or partial response to platinum-based chemotherapy. • For the
+    treatment of adult patients with a deleterious BRCA mutation (germline and/or
+    somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal
+    cancer who have been treated with two or more chemotherapies. Select patients
+    for therapy based on an FDA- approved companion diagnostic for RUBRACA. Prostate
+    cancer • For the treatment of adult patients with a deleterious BRCA mutation
+    (germline and/or somatic) associated metastatic castration-resistant prostate
+    cancer (mCRPC) who have been treated with androgen receptor-directed therapy and
+    a
+  mention_id: MEDICNE:8886c895-eb70-57cb-af81-cd50e245be69
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:134692
+    normalized_label: rucaparib camsylate
+    original_id: CHEBI:134692
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:134692
+  normalized_label: rucaparib camsylate
+  original_literal: Rucaparib camsylate bulk and Rucaparib tablets 200mg/300mg
+  snippet: Ovarian cancer • For the maintenance treatment of adult patients with recurrent
+    epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a
+    complete or partial response to platinum-based chemotherapy. • For the treatment
+    of adult patients with a deleterious BRCA mutation (germline and/or somatic)-
+    associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who
+    have been treated with two or more chemotherapies. Select patients for therapy
+    based on an FDA- approved companion diagnostic for RUBRACA. Prostate cancer •
+    For the treatment of adult patients with a deleterious BRCA mutation (germline
+    and/or somatic) associated metastatic castration-resistant prostate cancer (mCRPC)
+    who have been treated with androgen receptor-directed therapy and a
+  snippets:
+  - Ovarian cancer • For the maintenance treatment of adult patients with recurrent
+    epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a
+    complete or partial response to platinum-based chemotherapy. • For the treatment
+    of adult patients with a deleterious BRCA mutation (germline and/or somatic)-
+    associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who
+    have been treated with two or more chemotherapies. Select patients for therapy
+    based on an FDA- approved companion diagnostic for RUBRACA. Prostate cancer •
+    For the treatment of adult patients with a deleterious BRCA mutation (germline
+    and/or somatic) associated metastatic castration-resistant prostate cancer (mCRPC)
+    who have been treated with androgen receptor-directed therapy and a
+  source: INDIA
+  source_name: Rucaparib camsylate bulk and Rucaparib tablets 200mg/300mg
+  source_years:
+  - 2021
+- alternate_ids: []
+  approval_date: '20220120'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:9670
+    grounded_label: Triamcinolone hexacetonide
+    grounding_quality: lexical_exact_surgery
+    original_string: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+    subject_id: MEDICNE:971037d2-5be3-59a9-98f4-2fd172140fe3
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For intraarticular, intra-synovial or periarticular use in adults and
+    adolescents for the symptomatic treatment of subacute and chronic inflammatory
+    joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis
+    (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis
+    and epicondylitis.
+  mention_id: MEDICNE:971037d2-5be3-59a9-98f4-2fd172140fe3
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:9670
+    normalized_label: Triamcinolone hexacetonide
+    original_id: CHEBI:9670
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:9670
+  normalized_label: Triamcinolone hexacetonide
+  original_literal: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+  snippet: For intraarticular, intra-synovial or periarticular use in adults and adolescents
+    for the symptomatic treatment of subacute and chronic inflammatory joint diseases
+    including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis
+    and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+  snippets:
+  - For intraarticular, intra-synovial or periarticular use in adults and adolescents
+    for the symptomatic treatment of subacute and chronic inflammatory joint diseases
+    including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis
+    and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+  source: INDIA
+  source_name: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+  source_years:
+  - 2022
+- alternate_ids: []
+  approval_date: '20220201'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Gimeracil bulk & Oteracil potassium bulk and Tegafur 15mg/20mg,
+      Gimeracil 4.35mg/5.8mg and Oteracil 11.8mg/15.8mg capsules
+    subject_id: MEDICNE:36522b7b-c787-5ce5-9c74-34f194879421
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: indicated in adults for the treatment of advanced gastric cancer when
+    given in combination with cisplatin.
+  mention_id: MEDICNE:36522b7b-c787-5ce5-9c74-34f194879421
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Gimeracil bulk & Oteracil potassium bulk and Tegafur 15mg/20mg,
+    Gimeracil 4.35mg/5.8mg and Oteracil 11.8mg/15.8mg capsules
+  snippet: indicated in adults for the treatment of advanced gastric cancer when given
+    in combination with cisplatin.
+  snippets:
+  - indicated in adults for the treatment of advanced gastric cancer when given in
+    combination with cisplatin.
+  source: INDIA
+  source_name: Gimeracil bulk & Oteracil potassium bulk and Tegafur 15mg/20mg, Gimeracil
+    4.35mg/5.8mg and Oteracil 11.8mg/15.8mg capsules
+  source_years:
+  - 2022
+- alternate_ids: []
+  approval_date: '20220204'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Topiroxostat tablets 20mg, 40mg and 60mg and bulk
+    subject_id: MEDICNE:07290ffd-41a0-59dc-8443-638f16cfbe0c
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: Gout, hyperuricemia.
+  mention_id: MEDICNE:07290ffd-41a0-59dc-8443-638f16cfbe0c
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Topiroxostat tablets 20mg, 40mg and 60mg and bulk
+  snippet: Gout, hyperuricemia.
+  snippets:
+  - Gout, hyperuricemia.
+  source: INDIA
+  source_name: Topiroxostat tablets 20mg, 40mg and 60mg and bulk
+  source_years:
+  - 2022
+- alternate_ids: []
+  approval_date: '20220208'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:16480
+    grounded_label: nitric oxide
+    grounding_quality: lexical_exact_surgery
+    original_string: Nitric oxide nasal spray
+    subject_id: MEDICNE:0f881c53-51b9-50ee-a61c-416c63dc94f2
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For treatment of adult high risk patients with mild Covid-19 having
+    risk of progression of the disease.
+  mention_id: MEDICNE:0f881c53-51b9-50ee-a61c-416c63dc94f2
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:16480
+    normalized_label: nitric oxide
+    original_id: CHEBI:16480
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:16480
+  normalized_label: nitric oxide
+  original_literal: Nitric oxide nasal spray
+  snippet: For treatment of adult high risk patients with mild Covid-19 having risk
+    of progression of the disease.
+  snippets:
+  - For treatment of adult high risk patients with mild Covid-19 having risk of progression
+    of the disease.
+  source: INDIA
+  source_name: Nitric oxide nasal spray
+  source_years:
+  - 2022
+- alternate_ids: []
+  approval_date: '20220225'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:142432
+    grounded_label: vericiguat
+    grounding_quality: lexical_exact_surgery
+    original_string: Vericiguat tablets 2.5mg/ 5mg/ 10mg
+    subject_id: MEDICNE:f5f496ba-7e18-50eb-b275-ba997b22c3fe
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated to reduce the risk of cardiovascular death and heart failure
+    (HF) hospitalization following a hospitalization for heart failure or need for
+    outpatient IV diuretics, in adults with symptomatic chronic HF and ejection fraction
+    less than 45%
+  mention_id: MEDICNE:f5f496ba-7e18-50eb-b275-ba997b22c3fe
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:142432
+    normalized_label: vericiguat
+    original_id: CHEBI:142432
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:142432
+  normalized_label: vericiguat
+  original_literal: Vericiguat tablets 2.5mg/ 5mg/ 10mg
+  snippet: Indicated to reduce the risk of cardiovascular death and heart failure
+    (HF) hospitalization following a hospitalization for heart failure or need for
+    outpatient IV diuretics, in adults with symptomatic chronic HF and ejection fraction
+    less than 45%
+  snippets:
+  - Indicated to reduce the risk of cardiovascular death and heart failure (HF) hospitalization
+    following a hospitalization for heart failure or need for outpatient IV diuretics,
+    in adults with symptomatic chronic HF and ejection fraction less than 45%
+  source: INDIA
+  source_name: Vericiguat tablets 2.5mg/ 5mg/ 10mg
+  source_years:
+  - 2022
+- alternate_ids: []
+  approval_date: '20220302'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:755923
+    grounded_label: inosine pranobex
+    grounding_quality: lexical_exact_surgery
+    original_string: Inosine pranobex bulk and Inosine pranobex 500mg tablet
+    subject_id: MEDICNE:aa63e62a-ee96-528c-9944-2c9fb00f91e5
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: As add on therapy for treatment of mild Covid-19 patients with co-morbidities
+    and moderate Covid-19 patients, in light of Covid 19 outbreak for restricted emergency
+    use in the country
+  mention_id: MEDICNE:aa63e62a-ee96-528c-9944-2c9fb00f91e5
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:755923
+    normalized_label: inosine pranobex
+    original_id: CHEBI:755923
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:755923
+  normalized_label: inosine pranobex
+  original_literal: Inosine pranobex bulk and Inosine pranobex 500mg tablet
+  snippet: As add on therapy for treatment of mild Covid-19 patients with co-morbidities
+    and moderate Covid-19 patients, in light of Covid 19 outbreak for restricted emergency
+    use in the country
+  snippets:
+  - As add on therapy for treatment of mild Covid-19 patients with co-morbidities
+    and moderate Covid-19 patients, in light of Covid 19 outbreak for restricted emergency
+    use in the country
+  source: INDIA
+  source_name: Inosine pranobex bulk and Inosine pranobex 500mg tablet
+  source_years:
+  - 2022
+- alternate_ids: []
+  approval_date: '20220303'
+  grounding:
+    confidence: 0.85
+    grounded_id: CHEBI:230352
+    grounded_label: Desidustat
+    grounding_quality: lexical_exact_surgery
+    original_string: Desidustat bulk and Desidustat tablets 25mg and 50mg
+    subject_id: MEDICNE:b75d9173-31df-5bb6-89bd-6433d4dc00ef
+  grounding_confidence: 0.85
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For treatment of Anemia in adult patients with chronic kidney disease
+    (CKD) not on Dialysis and on Dialysis
+  mention_id: MEDICNE:b75d9173-31df-5bb6-89bd-6433d4dc00ef
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:230352
+    normalized_label: Desidustat
+    original_id: CHEBI:230352
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:230352
+  normalized_label: Desidustat
+  original_literal: Desidustat bulk and Desidustat tablets 25mg and 50mg
+  snippet: For treatment of Anemia in adult patients with chronic kidney disease (CKD)
+    not on Dialysis and on Dialysis
+  snippets:
+  - For treatment of Anemia in adult patients with chronic kidney disease (CKD) not
+    on Dialysis and on Dialysis
+  source: INDIA
+  source_name: Desidustat bulk and Desidustat tablets 25mg and 50mg
+  source_years:
+  - 2022
+- alternate_ids: []
+  approval_date: '20220311'
+  grounding:
+    components:
+    - CHEBI:66901
+    - CHEBI:90951
+    confidence: 0.3111
+    grounded_id: CHEBI:66901
+    grounded_label: ivacaftor
+    grounding_quality: rxnorm_proposed
+    original_string: Lumacaftor bulk, Ivacaftor bulk & Lumacaftor and Ivacaftor tablets
+      100mg/125mg and 200mg/125mg
+    subject_id: MEDICNE:65d19753-9d60-5467-b4ea-4c58884f252a
+  grounding_confidence: 0.3111
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for the treatment of cystic fibrosis (CF) in patient age 2
+    years and older who are homozygous for the F508del mutation in the CFTR gene.
+  mention_id: MEDICNE:65d19753-9d60-5467-b4ea-4c58884f252a
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:66901
+    normalized_label: ivacaftor
+    original_id: CHEBI:66901
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:66901
+  normalized_label: ivacaftor
+  original_literal: Lumacaftor bulk, Ivacaftor bulk & Lumacaftor and Ivacaftor tablets
+    100mg/125mg and 200mg/125mg
+  snippet: Indicated for the treatment of cystic fibrosis (CF) in patient age 2 years
+    and older who are homozygous for the F508del mutation in the CFTR gene.
+  snippets:
+  - Indicated for the treatment of cystic fibrosis (CF) in patient age 2 years and
+    older who are homozygous for the F508del mutation in the CFTR gene.
+  source: INDIA
+  source_name: Lumacaftor bulk, Ivacaftor bulk & Lumacaftor and Ivacaftor tablets
+    100mg/125mg and 200mg/125mg
+  source_years:
+  - 2022
+- alternate_ids: []
+  approval_date: '20220404'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:6484
+    grounded_label: liothyronine sodium
+    grounding_quality: lexical_exact_surgery
+    original_string: Liothyronine sodium bulk and Liothyronine sodium tablets 5mcg
+      & 20 mcg
+    subject_id: MEDICNE:2c7b9122-b660-537e-8649-d7183d5baa32
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: To treat some of the more severe conditions in which the thyroid does
+    not produce enough thyroxine and balance the effect of medicines used to treat
+    an
+  mention_id: MEDICNE:2c7b9122-b660-537e-8649-d7183d5baa32
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:6484
+    normalized_label: liothyronine sodium
+    original_id: CHEBI:6484
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:6484
+  normalized_label: liothyronine sodium
+  original_literal: Liothyronine sodium bulk and Liothyronine sodium tablets 5mcg
+    & 20 mcg
+  snippet: To treat some of the more severe conditions in which the thyroid does not
+    produce enough thyroxine and balance the effect of medicines used to treat an
+  snippets:
+  - To treat some of the more severe conditions in which the thyroid does not produce
+    enough thyroxine and balance the effect of medicines used to treat an
+  source: INDIA
+  source_name: Liothyronine sodium bulk and Liothyronine sodium tablets 5mcg & 20
+    mcg
+  source_years:
+  - 2022
+- alternate_ids: []
+  approval_date: '20230106'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Fesoteroterodine Fumarate Extended Release Tablets 4mg and 8mg
+      and Fesoteroterodine Fumarate Bulk
+    subject_id: MEDICNE:54a08902-efa4-5edd-8b37-740e3aa4ba21
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: Indicated for the treatment of overactive bladder with symptoms of urge
+    urinary incontinence, urgency and frequency.
+  mention_id: MEDICNE:54a08902-efa4-5edd-8b37-740e3aa4ba21
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Fesoteroterodine Fumarate Extended Release Tablets 4mg and 8mg
+    and Fesoteroterodine Fumarate Bulk
+  snippet: Indicated for the treatment of overactive bladder with symptoms of urge
+    urinary incontinence, urgency and frequency.
+  snippets:
+  - Indicated for the treatment of overactive bladder with symptoms of urge urinary
+    incontinence, urgency and frequency.
+  source: INDIA
+  source_name: Fesoteroterodine Fumarate Extended Release Tablets 4mg and 8mg and
+    Fesoteroterodine Fumarate Bulk
+  source_years:
+  - 2023
+- alternate_ids: []
+  approval_date: '20230113'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:755791
+    grounded_label: trifarotene
+    grounding_quality: lexical_exact_surgery
+    original_string: Trifarotene 50 microgram/g (0.005% w/w) Cream
+    subject_id: MEDICNE:0714f935-67d8-5cab-b60f-8dee6840081e
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for the cutaneous treatment of Acne Vulgaris of the face and
+    /or trunk in patients 12 years of age and older.
+  mention_id: MEDICNE:0714f935-67d8-5cab-b60f-8dee6840081e
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:755791
+    normalized_label: trifarotene
+    original_id: CHEBI:755791
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:755791
+  normalized_label: trifarotene
+  original_literal: Trifarotene 50 microgram/g (0.005% w/w) Cream
+  snippet: Indicated for the cutaneous treatment of Acne Vulgaris of the face and
+    /or trunk in patients 12 years of age and older.
+  snippets:
+  - Indicated for the cutaneous treatment of Acne Vulgaris of the face and /or trunk
+    in patients 12 years of age and older.
+  source: INDIA
+  source_name: Trifarotene 50 microgram/g (0.005% w/w) Cream
+  source_years:
+  - 2023
+- alternate_ids: []
+  approval_date: '20230120'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:134677
+    grounded_label: crisaborole
+    grounding_quality: lexical_exact_surgery
+    original_string: Crisaborole Ointment 2%
+    subject_id: MEDICNE:e9705504-ab0c-5807-a140-44bde70ef680
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for topical treatment of mild to moderate atopic dermatitis
+    in adult and paediatric patients 2 years of age and older
+  mention_id: MEDICNE:e9705504-ab0c-5807-a140-44bde70ef680
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:134677
+    normalized_label: crisaborole
+    original_id: CHEBI:134677
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:134677
+  normalized_label: crisaborole
+  original_literal: Crisaborole Ointment 2%
+  snippet: Indicated for topical treatment of mild to moderate atopic dermatitis in
+    adult and paediatric patients 2 years of age and older
+  snippets:
+  - Indicated for topical treatment of mild to moderate atopic dermatitis in adult
+    and paediatric patients 2 years of age and older
+  source: INDIA
+  source_name: Crisaborole Ointment 2%
+  source_years:
+  - 2023
+- alternate_ids: []
+  approval_date: '20230120'
+  grounding:
+    components:
+    - CHEBI:750441
+    - CHEBI:35149
+    confidence: 0.8
+    grounded_id: CHEBI:750441
+    grounded_label: prussian blue insoluble
+    grounding_quality: lexical_exact_surgery
+    original_string: Prussian Blue Insoluble 340 mg and Magnesium Hydroxide 500 mg
+      Capsule
+    subject_id: MEDICNE:f141c4eb-1715-50b3-a1cd-200a61c89767
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: As decorporation agent indicated for treatment of patients with known
+    or suspected internal contamination with radioactive cesium and/or radioactive
+    or non radioactive thallium to increase their rates of elimination.
+  mention_id: MEDICNE:f141c4eb-1715-50b3-a1cd-200a61c89767
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:750441
+    normalized_label: prussian blue insoluble
+    original_id: CHEBI:750441
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:750441
+  normalized_label: prussian blue insoluble
+  original_literal: Prussian Blue Insoluble 340 mg and Magnesium Hydroxide 500 mg
+    Capsule
+  snippet: As decorporation agent indicated for treatment of patients with known or
+    suspected internal contamination with radioactive cesium and/or radioactive or
+    non radioactive thallium to increase their rates of elimination.
+  snippets:
+  - As decorporation agent indicated for treatment of patients with known or suspected
+    internal contamination with radioactive cesium and/or radioactive or non radioactive
+    thallium to increase their rates of elimination.
+  source: INDIA
+  source_name: Prussian Blue Insoluble 340 mg and Magnesium Hydroxide 500 mg Capsule
+  source_years:
+  - 2023
+- alternate_ids: []
+  approval_date: '20230127'
+  grounding:
+    confidence: 0.6
+    grounded_id: CHEBI:750441
+    grounded_label: prussian blue insoluble
+    grounding_quality: lexical_exact_surgery
+    original_string: Prussian Blue Insolube 340 mg Capsule and Prussian Blue Insolube
+      Bulk Drug
+    subject_id: MEDICNE:c3e6a82b-7da3-5c68-94b9-ac963310ffb6
+  grounding_confidence: 0.6
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: As decorporation agent indicated for treatment of patients with known
+    or suspected internal contamination with radioactive cesium and/or radioactive
+    or non radioactive thallium to increase their rates of elimination.
+  mention_id: MEDICNE:c3e6a82b-7da3-5c68-94b9-ac963310ffb6
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:750441
+    normalized_label: prussian blue insoluble
+    original_id: CHEBI:750441
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:750441
+  normalized_label: prussian blue insoluble
+  original_literal: Prussian Blue Insolube 340 mg Capsule and Prussian Blue Insolube
+    Bulk Drug
+  snippet: As decorporation agent indicated for treatment of patients with known or
+    suspected internal contamination with radioactive cesium and/or radioactive or
+    non radioactive thallium to increase their rates of elimination.
+  snippets:
+  - As decorporation agent indicated for treatment of patients with known or suspected
+    internal contamination with radioactive cesium and/or radioactive or non radioactive
+    thallium to increase their rates of elimination.
+  source: INDIA
+  source_name: Prussian Blue Insolube 340 mg Capsule and Prussian Blue Insolube Bulk
+    Drug
+  source_years:
+  - 2023
+- alternate_ids: []
+  approval_date: '20230106'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:756996
+    grounded_label: imeglimin
+    grounding_quality: lexical_exact_surgery
+    original_string: Imeglimin Hydrochloride Tablet 500mg/1000mg
+    subject_id: MEDICNE:a5d5833a-1569-5d0e-9820-0ac02a85e4e9
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Type 2 diabetes Mellitus
+  mention_id: MEDICNE:a5d5833a-1569-5d0e-9820-0ac02a85e4e9
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:756996
+    normalized_label: imeglimin
+    original_id: CHEBI:756996
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:756996
+  normalized_label: imeglimin
+  original_literal: Imeglimin Hydrochloride Tablet 500mg/1000mg
+  snippet: Type 2 diabetes Mellitus
+  snippets:
+  - Type 2 diabetes Mellitus
+  source: INDIA
+  source_name: Imeglimin Hydrochloride Tablet 500mg/1000mg
+  source_years:
+  - 2023
+- alternate_ids: []
+  approval_date: '20230210'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:134677
+    grounded_label: crisaborole
+    grounding_quality: lexical_exact_surgery
+    original_string: Crisaborole Bulk Drug
+    subject_id: MEDICNE:6002c241-6a0b-517c-98df-3b4bcf767c17
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for topical treament of mild to moderate atopic dermatitis
+    in adult and pediatric patients 2 years of age and older
+  mention_id: MEDICNE:6002c241-6a0b-517c-98df-3b4bcf767c17
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:134677
+    normalized_label: crisaborole
+    original_id: CHEBI:134677
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:134677
+  normalized_label: crisaborole
+  original_literal: Crisaborole Bulk Drug
+  snippet: Indicated for topical treament of mild to moderate atopic dermatitis in
+    adult and pediatric patients 2 years of age and older
+  snippets:
+  - Indicated for topical treament of mild to moderate atopic dermatitis in adult
+    and pediatric patients 2 years of age and older
+  source: INDIA
+  source_name: Crisaborole Bulk Drug
+  source_years:
+  - 2023
+- alternate_ids: []
+  approval_date: '20230215'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:32091
+    grounded_label: remifentanil hydrochloride
+    grounding_quality: lexical_exact_surgery
+    original_string: Remifentanil Hydrochloride 1mg/2mg for Injection
+    subject_id: MEDICNE:f7c31138-5358-550b-a845-e17128d3f878
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: As an analgesic agent for use during the induction and maintenance of
+    general anesthesia for inpatient and outpatient procedures. For continuation as
+    an analgesic into the immediate postoperative period in adult patients under the
+    direct supervision of an anestesia practitioner in a postoperativeanesthesia care
+    unit or intensive care setting. As an analgesic component of monitored anesthesia
+    care in adult patients.
+  mention_id: MEDICNE:f7c31138-5358-550b-a845-e17128d3f878
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:32091
+    normalized_label: remifentanil hydrochloride
+    original_id: CHEBI:32091
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:32091
+  normalized_label: remifentanil hydrochloride
+  original_literal: Remifentanil Hydrochloride 1mg/2mg for Injection
+  snippet: As an analgesic agent for use during the induction and maintenance of general
+    anesthesia for inpatient and outpatient procedures. For continuation as an analgesic
+    into the immediate postoperative period in adult patients under the direct supervision
+    of an anestesia practitioner in a postoperativeanesthesia care unit or intensive
+    care setting. As an analgesic component of monitored anesthesia care in adult
+    patients.
+  snippets:
+  - As an analgesic agent for use during the induction and maintenance of general
+    anesthesia for inpatient and outpatient procedures. For continuation as an analgesic
+    into the immediate postoperative period in adult patients under the direct supervision
+    of an anestesia practitioner in a postoperativeanesthesia care unit or intensive
+    care setting. As an analgesic component of monitored anesthesia care in adult
+    patients.
+  source: INDIA
+  source_name: Remifentanil Hydrochloride 1mg/2mg for Injection
+  source_years:
+  - 2023
+- alternate_ids: []
+  approval_date: '20230406'
+  grounding:
+    confidence: 0.0
+    grounded_id: null
+    grounded_label: null
+    grounding_quality: unresolved
+    original_string: Cannabidiol Bulk Drug, Cannabidiol Oral
+    subject_id: MEDICNE:4f6dbfba-d8dd-51b0-8024-8f2475aa5580
+  grounding_confidence: 0.0
+  grounding_service: lexical
+  grounding_status: unresolved
+  indication: Indicated for the treatment of seizures associated with Lennox-
+  mention_id: MEDICNE:4f6dbfba-d8dd-51b0-8024-8f2475aa5580
+  normalized_id: ''
+  normalized_label: ''
+  original_literal: Cannabidiol Bulk Drug, Cannabidiol Oral
+  snippet: Indicated for the treatment of seizures associated with Lennox-
+  snippets:
+  - Indicated for the treatment of seizures associated with Lennox-
+  source: INDIA
+  source_name: Cannabidiol Bulk Drug, Cannabidiol Oral
+  source_years:
+  - 2023
+- alternate_ids: []
+  approval_date: '20240101'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:194186
+    grounded_label: tirzepatide
+    grounding_quality: lexical_exact_surgery
+    original_string: Tirzepatide 2.5mg /0.5ml, 5mg/0.5ml, 7.5mg/0.5 ml,10mg/0.5 ml,12.5mg/0.5
+      ml,15mg/0.5 ml solution for injection in a prefilled pen
+    subject_id: MEDICNE:20dc7e94-b98e-5b7b-b1af-99186aaad019
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated as an adjunct to diet and exercise to improve glycemic control
+    in adults with type 2 diabetes mellitus
+  mention_id: MEDICNE:20dc7e94-b98e-5b7b-b1af-99186aaad019
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:194186
+    normalized_label: tirzepatide
+    original_id: CHEBI:194186
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:194186
+  normalized_label: tirzepatide
+  original_literal: Tirzepatide 2.5mg /0.5ml, 5mg/0.5ml, 7.5mg/0.5 ml,10mg/0.5 ml,12.5mg/0.5
+    ml,15mg/0.5 ml solution for injection in a prefilled pen
+  snippet: Indicated as an adjunct to diet and exercise to improve glycemic control
+    in adults with type 2 diabetes mellitus
+  snippets:
+  - Indicated as an adjunct to diet and exercise to improve glycemic control in adults
+    with type 2 diabetes mellitus
+  source: INDIA
+  source_name: Tirzepatide 2.5mg /0.5ml, 5mg/0.5ml, 7.5mg/0.5 ml,10mg/0.5 ml,12.5mg/0.5
+    ml,15mg/0.5 ml solution for injection in a prefilled pen
+  source_years:
+  - 2024
+- alternate_ids: []
+  approval_date: '20240202'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:749946
+    grounded_label: plazomicin
+    grounding_quality: lexical_exact_surgery
+    original_string: Plazomicin injection 500mg/10ml (50mg/ml)
+    subject_id: MEDICNE:1ab3d424-f96d-5d5f-9ab7-00771a747f8f
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated in patients 18 years of age or older for the treatment of
+    complicated urinary tract infections (cUTI), including pyelonephritis caused by
+    the following susceptible microorganism(s)  Escherichia coli,  Klebsiella pneumoniae,
+     Proteus mirabilis, and  Enterobacter cloacae
+  mention_id: MEDICNE:1ab3d424-f96d-5d5f-9ab7-00771a747f8f
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:749946
+    normalized_label: plazomicin
+    original_id: CHEBI:749946
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:749946
+  normalized_label: plazomicin
+  original_literal: Plazomicin injection 500mg/10ml (50mg/ml)
+  snippet: Indicated in patients 18 years of age or older for the treatment of complicated
+    urinary tract infections (cUTI), including pyelonephritis caused by the following
+    susceptible microorganism(s)  Escherichia coli,  Klebsiella pneumoniae,  Proteus
+    mirabilis, and  Enterobacter cloacae
+  snippets:
+  - Indicated in patients 18 years of age or older for the treatment of complicated
+    urinary tract infections (cUTI), including pyelonephritis caused by the following
+    susceptible microorganism(s)  Escherichia coli,  Klebsiella pneumoniae,  Proteus
+    mirabilis, and  Enterobacter cloacae
+  source: INDIA
+  source_name: Plazomicin injection 500mg/10ml (50mg/ml)
+  source_years:
+  - 2024
+- alternate_ids: []
+  approval_date: '20240321'
+  grounding:
+    confidence: 0.2315
+    grounded_id: CHEBI:135272
+    grounded_label: etifoxine
+    grounding_quality: rxnorm_proposed
+    original_string: Etifoxine Hydrochloride Bulk drug & Etifoxine Hydrochloride capsules
+      50 mg
+    subject_id: MEDICNE:dc4bfd42-1867-51f0-bd1d-a111a7dde256
+  grounding_confidence: 0.2315
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for psychosomatic manifestations of anxiety
+  mention_id: MEDICNE:dc4bfd42-1867-51f0-bd1d-a111a7dde256
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:135272
+    normalized_label: etifoxine
+    original_id: CHEBI:135272
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:135272
+  normalized_label: etifoxine
+  original_literal: Etifoxine Hydrochloride Bulk drug & Etifoxine Hydrochloride capsules
+    50 mg
+  snippet: Indicated for psychosomatic manifestations of anxiety
+  snippets:
+  - Indicated for psychosomatic manifestations of anxiety
+  source: INDIA
+  source_name: Etifoxine Hydrochloride Bulk drug & Etifoxine Hydrochloride capsules
+    50 mg
+  source_years:
+  - 2024
+- alternate_ids: []
+  approval_date: '20240508'
+  grounding:
+    confidence: 0.2069
+    grounded_id: CHEBI:136048
+    grounded_label: vonoprazan
+    grounding_quality: rxnorm_proposed
+    original_string: Vonoprazan fumarate Bulk drug& Vonoprazan tablets 10mg/20 mg
+    subject_id: MEDICNE:fc884671-9e40-58be-a5a1-cbaf308e286e
+  grounding_confidence: 0.2069
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer
+    (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer
+    or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence
+    of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to
+    Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer,
+    gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after
+    endoscopic resection of early-stage cancer, or Helicobacter pylori gastritis.'
+  mention_id: MEDICNE:fc884671-9e40-58be-a5a1-cbaf308e286e
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:136048
+    normalized_label: vonoprazan
+    original_id: CHEBI:136048
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:136048
+  normalized_label: vonoprazan
+  original_literal: Vonoprazan fumarate Bulk drug& Vonoprazan tablets 10mg/20 mg
+  snippet: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)
+     Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer
+    or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence
+    of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to
+    Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer,
+    gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after
+    endoscopic resection of early-stage cancer, or Helicobacter pylori gastritis.'
+  snippets:
+  - ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment
+    of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal
+    ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric
+    ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter
+    pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT
+    lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection
+    of early-stage cancer, or Helicobacter pylori gastritis.'
+  source: INDIA
+  source_name: Vonoprazan fumarate Bulk drug& Vonoprazan tablets 10mg/20 mg
+  source_years:
+  - 2024
+- alternate_ids: []
+  approval_date: '20250116'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:78538
+    grounded_label: tafamidis
+    grounding_quality: lexical_exact_surgery
+    original_string: Tafamidis Bulk Drug
+    subject_id: MEDICNE:dfd81a9f-0a15-502d-9b72-67d50bef3fc0
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Not applicable as it is a bulk drug
+  mention_id: MEDICNE:dfd81a9f-0a15-502d-9b72-67d50bef3fc0
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:78538
+    normalized_label: tafamidis
+    original_id: CHEBI:78538
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:78538
+  normalized_label: tafamidis
+  original_literal: Tafamidis Bulk Drug
+  snippet: Not applicable as it is a bulk drug
+  snippets:
+  - Not applicable as it is a bulk drug
+  source: INDIA
+  source_name: Tafamidis Bulk Drug
+  source_years:
+  - 2025
+- alternate_ids: []
+  approval_date: '20250117'
+  grounding:
+    confidence: 0.2153
+    grounded_id: CHEBI:749693
+    grounded_label: letermovir
+    grounding_quality: rxnorm_proposed
+    original_string: Letermovir Bulk Drug &Letermovir Tablets 240mg and 480 mg
+    subject_id: MEDICNE:c6a107c2-b84f-5361-97ff-866e7b78a9a6
+  grounding_confidence: 0.2153
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Letermovir is indicated for prophylaxis of cytomegalovirus (CMV) infection
+    and disease in adult CMV- seropositive recipients [R+] of an allogeneic hematopoietic
+    stem cell transplant (HSCT). It is also indicated for prophylaxis of CMV disease
+    in adult kidney transplant recipients at high risk (Donor CMV seropositive/Recipient
+    CMV seronegative[D+/R-])
+  mention_id: MEDICNE:c6a107c2-b84f-5361-97ff-866e7b78a9a6
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:749693
+    normalized_label: letermovir
+    original_id: CHEBI:749693
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:749693
+  normalized_label: letermovir
+  original_literal: Letermovir Bulk Drug &Letermovir Tablets 240mg and 480 mg
+  snippet: Letermovir is indicated for prophylaxis of cytomegalovirus (CMV) infection
+    and disease in adult CMV- seropositive recipients [R+] of an allogeneic hematopoietic
+    stem cell transplant (HSCT). It is also indicated for prophylaxis of CMV disease
+    in adult kidney transplant recipients at high risk (Donor CMV seropositive/Recipient
+    CMV seronegative[D+/R-])
+  snippets:
+  - Letermovir is indicated for prophylaxis of cytomegalovirus (CMV) infection and
+    disease in adult CMV- seropositive recipients [R+] of an allogeneic hematopoietic
+    stem cell transplant (HSCT). It is also indicated for prophylaxis of CMV disease
+    in adult kidney transplant recipients at high risk (Donor CMV seropositive/Recipient
+    CMV seronegative[D+/R-])
+  source: INDIA
+  source_name: Letermovir Bulk Drug &Letermovir Tablets 240mg and 480 mg
+  source_years:
+  - 2025
+- alternate_ids: []
+  approval_date: '20250210'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:760420
+    grounded_label: fexuprazan hydrochloride
+    grounding_quality: lexical_exact_surgery
+    original_string: Fexuprazan hydrochloride Bulk Drug and Fexuprazan hydrochloride
+      Tablets 40mg
+    subject_id: MEDICNE:8b32f511-e22f-52ba-82a7-81af9c9bd0b6
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for the treatment of erosive esophagitis(EE).
+  mention_id: MEDICNE:8b32f511-e22f-52ba-82a7-81af9c9bd0b6
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:760420
+    normalized_label: fexuprazan hydrochloride
+    original_id: CHEBI:760420
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:760420
+  normalized_label: fexuprazan hydrochloride
+  original_literal: Fexuprazan hydrochloride Bulk Drug and Fexuprazan hydrochloride
+    Tablets 40mg
+  snippet: Indicated for the treatment of erosive esophagitis(EE).
+  snippets:
+  - Indicated for the treatment of erosive esophagitis(EE).
+  source: INDIA
+  source_name: Fexuprazan hydrochloride Bulk Drug and Fexuprazan hydrochloride Tablets
+    40mg
+  source_years:
+  - 2025
+- alternate_ids: []
+  approval_date: '20250211'
+  grounding:
+    confidence: 0.765
+    grounded_id: CHEBI:85974
+    grounded_label: edoxaban tosylate hydrate
+    grounding_quality: lexical_exact_surgery
+    original_string: Edoxaban Tosylate Monohydrate Bulk Drug
+    subject_id: MEDICNE:7bc7067b-c1e1-5f66-856a-0b4eecb84cb1
+  grounding_confidence: 0.765
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Not applicable as it is a bulk drug
+  mention_id: MEDICNE:7bc7067b-c1e1-5f66-856a-0b4eecb84cb1
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:85974
+    normalized_label: edoxaban tosylate hydrate
+    original_id: CHEBI:85974
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:85974
+  normalized_label: edoxaban tosylate hydrate
+  original_literal: Edoxaban Tosylate Monohydrate Bulk Drug
+  snippet: Not applicable as it is a bulk drug
+  snippets:
+  - Not applicable as it is a bulk drug
+  source: INDIA
+  source_name: Edoxaban Tosylate Monohydrate Bulk Drug
+  source_years:
+  - 2025
+- alternate_ids: []
+  approval_date: '20250220'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:85973
+    grounded_label: edoxaban
+    grounding_quality: lexical_exact_surgery
+    original_string: Edoxaban Tablets 15mg, 30mg and 60mg
+    subject_id: MEDICNE:95c8a1ed-3f10-56e6-8047-f3b01438fcd8
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: In prevention of stroke and systemic embolism in adult patients with
+    non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as
+    congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior
+    stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis
+    (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and
+    PE in adults.
+  mention_id: MEDICNE:95c8a1ed-3f10-56e6-8047-f3b01438fcd8
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:85973
+    normalized_label: edoxaban
+    original_id: CHEBI:85973
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:85973
+  normalized_label: edoxaban
+  original_literal: Edoxaban Tablets 15mg, 30mg and 60mg
+  snippet: In prevention of stroke and systemic embolism in adult patients with non-
+    valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive
+    heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or
+    transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT)
+    and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in
+    adults.
+  snippets:
+  - In prevention of stroke and systemic embolism in adult patients with non- valvular
+    atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart
+    failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient
+    ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary
+    embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+  source: INDIA
+  source_name: Edoxaban Tablets 15mg, 30mg and 60mg
+  source_years:
+  - 2025
+- alternate_ids: []
+  approval_date: '20250305'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:755275
+    grounded_label: sodium zirconium cyclosilicate
+    grounding_quality: lexical_exact_surgery
+    original_string: Sodium Zirconium Cyclosilicate powder for Oral Suspension (LOKELMA)
+      5g/10g
+    subject_id: MEDICNE:695c4e53-a0cf-50fc-b403-6a4d4696e8d4
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated for the treatment of Hyperkalaemia in adult patients.
+  mention_id: MEDICNE:695c4e53-a0cf-50fc-b403-6a4d4696e8d4
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:755275
+    normalized_label: sodium zirconium cyclosilicate
+    original_id: CHEBI:755275
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:755275
+  normalized_label: sodium zirconium cyclosilicate
+  original_literal: Sodium Zirconium Cyclosilicate powder for Oral Suspension (LOKELMA)
+    5g/10g
+  snippet: Indicated for the treatment of Hyperkalaemia in adult patients.
+  snippets:
+  - Indicated for the treatment of Hyperkalaemia in adult patients.
+  source: INDIA
+  source_name: Sodium Zirconium Cyclosilicate powder for Oral Suspension (LOKELMA)
+    5g/10g
+  source_years:
+  - 2025
+- alternate_ids: []
+  approval_date: '20250327'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:754827
+    grounded_label: rimegepant
+    grounding_quality: lexical_exact_surgery
+    original_string: Rimegepant Oral disintegrating tablets (ODT) 75 mg
+    subject_id: MEDICNE:c63053ae-3968-5197-afd8-acbc5b0dab2d
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: For Acute treatment of migraine with or without aura in adults with
+    a previous insufficient response to triptans.
+  mention_id: MEDICNE:c63053ae-3968-5197-afd8-acbc5b0dab2d
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:754827
+    normalized_label: rimegepant
+    original_id: CHEBI:754827
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:754827
+  normalized_label: rimegepant
+  original_literal: Rimegepant Oral disintegrating tablets (ODT) 75 mg
+  snippet: For Acute treatment of migraine with or without aura in adults with a previous
+    insufficient response to triptans.
+  snippets:
+  - For Acute treatment of migraine with or without aura in adults with a previous
+    insufficient response to triptans.
+  source: INDIA
+  source_name: Rimegepant Oral disintegrating tablets (ODT) 75 mg
+  source_years:
+  - 2025
+- alternate_ids: []
+  approval_date: ''
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:754975
+    grounded_label: doravirine
+    grounding_quality: lexical_exact_surgery
+    original_string: Doravirine Bulk Drug and Doravirine Tablets 100mg
+    subject_id: MEDICNE:7d79f2ba-60b4-52eb-9abe-42fdc67f64ab
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Indicated in combination with other antiretroviral agents for the treatment
+    of HIV-1 infection in adults
+  mention_id: MEDICNE:7d79f2ba-60b4-52eb-9abe-42fdc67f64ab
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:754975
+    normalized_label: doravirine
+    original_id: CHEBI:754975
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:754975
+  normalized_label: doravirine
+  original_literal: Doravirine Bulk Drug and Doravirine Tablets 100mg
+  snippet: Indicated in combination with other antiretroviral agents for the treatment
+    of HIV-1 infection in adults
+  snippets:
+  - Indicated in combination with other antiretroviral agents for the treatment of
+    HIV-1 infection in adults
+  source: INDIA
+  source_name: Doravirine Bulk Drug and Doravirine Tablets 100mg
+  source_years:
+  - 2025
+- alternate_ids: []
+  approval_date: '20260216'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:134716
+    grounded_label: brexpiprazole
+    grounding_quality: lexical_exact_surgery
+    original_string: Brexpiprazole Tablets 0.25/0.5/1/2/3/4 mg
+    subject_id: MEDICNE:f1b5af2e-c534-5695-b04a-08f1e5c31227
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Brexpiprazole is indicated for treatment of schizophrenia.
+  mention_id: MEDICNE:f1b5af2e-c534-5695-b04a-08f1e5c31227
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:134716
+    normalized_label: brexpiprazole
+    original_id: CHEBI:134716
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:134716
+  normalized_label: brexpiprazole
+  original_literal: Brexpiprazole Tablets 0.25/0.5/1/2/3/4 mg
+  snippet: Brexpiprazole is indicated for treatment of schizophrenia.
+  snippets:
+  - Brexpiprazole is indicated for treatment of schizophrenia.
+  source: INDIA
+  source_name: Brexpiprazole Tablets 0.25/0.5/1/2/3/4 mg
+  source_years:
+  - 2026
+- alternate_ids: []
+  approval_date: '20260224'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:134716
+    grounded_label: brexpiprazole
+    grounding_quality: lexical_exact_surgery
+    original_string: Brexpiprazole Bulk Drug
+    subject_id: MEDICNE:6b39b23a-321b-5fd1-a97c-8f9c86e85b77
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Not applicable as it is a bulk drug
+  mention_id: MEDICNE:6b39b23a-321b-5fd1-a97c-8f9c86e85b77
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:134716
+    normalized_label: brexpiprazole
+    original_id: CHEBI:134716
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:134716
+  normalized_label: brexpiprazole
+  original_literal: Brexpiprazole Bulk Drug
+  snippet: Not applicable as it is a bulk drug
+  snippets:
+  - Not applicable as it is a bulk drug
+  source: INDIA
+  source_name: Brexpiprazole Bulk Drug
+  source_years:
+  - 2026
+- alternate_ids: []
+  approval_date: '20260310'
+  grounding:
+    confidence: 0.8
+    grounded_id: CHEBI:178199
+    grounded_label: sotorasib
+    grounding_quality: lexical_exact_surgery
+    original_string: Sotorasib 240mg Film Coated Tablets.
+    subject_id: MEDICNE:f74f3946-eb2b-569b-8c04-ab30724afcf6
+  grounding_confidence: 0.8
+  grounding_service: lexical
+  grounding_status: accepted
+  indication: Treatment of adult patients with KRAS G12C-mutated locally advanced
+    or metastatic non-small cell lung cancer (NSCLC), who have received at least one
+    prior systemic therapy
+  mention_id: MEDICNE:f74f3946-eb2b-569b-8c04-ab30724afcf6
+  normalization:
+    normalization_quality: identity
+    normalized_id: CHEBI:178199
+    normalized_label: sotorasib
+    original_id: CHEBI:178199
+    tool: medic-normalizer/1
+  normalized_id: CHEBI:178199
+  normalized_label: sotorasib
+  original_literal: Sotorasib 240mg Film Coated Tablets.
+  snippet: Treatment of adult patients with KRAS G12C-mutated locally advanced or
+    metastatic non-small cell lung cancer (NSCLC), who have received at least one
+    prior systemic therapy
+  snippets:
+  - Treatment of adult patients with KRAS G12C-mutated locally advanced or metastatic
+    non-small cell lung cancer (NSCLC), who have received at least one prior systemic
+    therapy
+  source: INDIA
+  source_name: Sotorasib 240mg Film Coated Tablets.
+  source_years:
+  - 2026

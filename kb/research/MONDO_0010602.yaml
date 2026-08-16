@@ -1,0 +1,48 @@
+associations:
+- curation_date: '2026-04-12T09:13:34.104457'
+  curation_status: DRAFT
+  curator: medic-research-skill
+  deep_research_used: true
+  disease_id: MONDO:0010602
+  disease_label: hemophilia A
+  drug_id: UNII:7NL2E3F6K3
+  drug_label: Emicizumab
+  evidence:
+  - confidence: MEDIUM
+    curator: &id001
+      curator_id: https://github.com/monarch-initiative/medic/blob/f60076dc17a9c62e51e4acfaf83f6566b7b0b1cb/.claude/skills/medic-research-curation/SKILL.md
+      curator_type: AI_AGENT
+      name: MEDIC research skill extracting evidence from Perplexity and Falcon deep research
+    evidence_source: HUMAN_CLINICAL
+    explanation: HAVEN 3 Phase 3 trial showed efficacy in hemophilia A without inhibitors
+    max_research_phase: PHASE_III
+    original_disease_label: hemophilia A
+    original_drug_label: Emicizumab
+    reference: PMID:30157389
+    reference_title: Emicizumab Prophylaxis in Patients Who Have Hemophilia A without Inhibitors.
+    snippet: In a phase 3, multicenter trial, we investigated its use as prophylaxis in persons who have
+      hemophilia A without factor VIII inhibitors.
+    source_type: LITERATURE
+  notes: Bispecific antibody mimicking FVIII; subcutaneous prophylaxis
+- curation_date: '2026-04-12T09:13:34.104465'
+  curation_status: DRAFT
+  curator: medic-research-skill
+  deep_research_used: true
+  disease_id: MONDO:0010602
+  disease_label: hemophilia A
+  drug_id: CHEBI:4450
+  drug_label: desmopressin
+  evidence:
+  - confidence: MEDIUM
+    curator: *id001
+    evidence_source: HUMAN_CLINICAL
+    explanation: Standard treatment for mild hemophilia A
+    original_disease_label: hemophilia A
+    original_drug_label: desmopressin
+    reference: PMID:12640572
+    reference_title: 'Desmopressin in mild hemophilia A: indications, limitations, efficacy, and safety.'
+    snippet: The synthetic vasopressin analogue desmopressin acetate (1-deamino-[8-D-arginine]-vasopressin,
+      DDAVP) increases plasma concentrations of coagulation FVIII and von Willebrand factor (vWF) two
+      fold to six fold through endogenous release.
+    source_type: LITERATURE
+  notes: Releases endogenous FVIII; for mild hemophilia A

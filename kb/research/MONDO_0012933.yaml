@@ -1,0 +1,26 @@
+associations:
+- curation_date: '2026-04-12T09:13:42.387159'
+  curation_status: DRAFT
+  curator: medic-research-skill
+  deep_research_used: true
+  disease_id: MONDO:0012933
+  disease_label: breast-ovarian cancer, familial, susceptibility to, 2
+  drug_id: CHEBI:83766
+  drug_label: olaparib
+  evidence:
+  - confidence: MEDIUM
+    curator:
+      curator_id: https://github.com/monarch-initiative/medic/blob/f60076dc17a9c62e51e4acfaf83f6566b7b0b1cb/.claude/skills/medic-research-curation/SKILL.md
+      curator_type: AI_AGENT
+      name: MEDIC research skill extracting evidence from Perplexity deep research
+    evidence_source: HUMAN_CLINICAL
+    explanation: Approved for BRCA2-mutated breast and ovarian cancer
+    max_research_phase: PHASE_II
+    original_disease_label: breast-ovarian cancer, familial, susceptibility to, 2
+    original_drug_label: olaparib
+    reference: PMID:25366685
+    reference_title: Olaparib monotherapy in patients with advanced cancer and a germline BRCA1/2 mutation.
+    snippet: Olaparib is an oral poly (ADP-ribose) polymerase inhibitor with activity in germline BRCA1
+      and BRCA2 (BRCA1/2) -associated breast and ovarian cancers.
+    source_type: LITERATURE
+  notes: PARP inhibitor approved for BRCA2-mutated cancers

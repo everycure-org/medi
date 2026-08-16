@@ -1,0 +1,27 @@
+associations:
+- curation_date: '2026-04-12T09:13:37.243326'
+  curation_status: DRAFT
+  curator: medic-research-skill
+  deep_research_used: true
+  disease_id: MONDO:0011382
+  disease_label: sickle cell disease
+  drug_id: CHEBI:44423
+  drug_label: hydroxyurea
+  evidence:
+  - confidence: MEDIUM
+    curator:
+      curator_id: https://github.com/monarch-initiative/medic/blob/f60076dc17a9c62e51e4acfaf83f6566b7b0b1cb/.claude/skills/medic-research-curation/SKILL.md
+      curator_type: AI_AGENT
+      name: MEDIC research skill extracting evidence from Perplexity and Falcon deep research
+    evidence_source: HUMAN_CLINICAL
+    explanation: MSH trial showed 44% reduction in painful crises
+    max_research_phase: PHASE_III
+    original_disease_label: sickle cell disease
+    original_drug_label: hydroxyurea
+    reference: PMID:7715639
+    reference_title: Effect of hydroxyurea on the frequency of painful crises in sickle cell anemia. Investigators
+      of the Multicenter Study of Hydroxyurea in Sickle Cell Anemia.
+    snippet: In a double-blind, randomized clinical trial, we tested the efficacy of hydroxyurea in reducing
+      the frequency of painful crises in adults with a history of three or more such crises per year.
+    source_type: LITERATURE
+  notes: First-line disease-modifying therapy for SCD
