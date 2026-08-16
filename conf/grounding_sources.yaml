@@ -1,0 +1,12 @@
+# Sources for building the offline lexical index.
+# OBO vocabs are downloaded from their PURLs into cache/ontologies/.
+# Licensed/non-OBO vocabs use local files (see background/ and the report).
+diseases:
+  - {prefix: MONDO, loader: obo_json, path: cache/ontologies/mondo.json}
+  - {prefix: HP, loader: obo_json, path: cache/ontologies/hp.json}
+  - {prefix: UMLS, loader: umls, path: background/umls-2021AA-mrconso.zip, member: MRCONSO.RRF}
+  # ICD10CM dropped: redundant with UMLS (which carries ICD10CM as a source SAB); +64 groundings only.
+drugs:
+  - {prefix: CHEBI, loader: obo_json, path: cache/ontologies/chebi.json}
+  - {prefix: DRON, loader: obo_json, path: cache/ontologies/dron.json}
+  # PR dropped: +15 groundings only (drug names are chemicals, not proteins).

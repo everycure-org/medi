@@ -1,0 +1,8 @@
+# Curated translation dictionary (family: translation, rule translation_dictionary).
+# Whole-string 'foreign / mistranslated source name' -> canonical English INN.
+# Deterministic and hand-editable; seed a few, extend as the unresolved tail is triaged.
+# LLM translation (translation_llm) is a separate, deferred, review-only proposer.
+terms:
+  # Russian GRLS mistranslations / non-English forms observed in the unresolved tail:
+  "horse seed chestnut extract": "horse chestnut extract"
+  "benzoid peroxide": "benzoyl peroxide"

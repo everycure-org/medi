@@ -1,0 +1,125 @@
+# Closed vocabulary for the formulation_strip rule (family: formulation, rule formulation_strip).
+# Source product strings (esp. India CDSCO) carry dose + dosage-form + release + pharmacopoeia
+# noise around the active ingredient. These closed lists drive a deterministic stripper that
+# removes that noise; the cleaned residue re-enters the full match ladder (salt/fuzzy/combination).
+# Deterministic and hand-editable; extend as the unresolved formulation tail is triaged.
+#
+# Guards live in code (src/medic/grounding/lexical/preprocess.py):
+#   - strength/unit removal is numeric-anchored, so meaningful token-internal digits
+#     (B12, omega-3, vitamin d3, 2-deoxy-d-glucose) are preserved;
+#   - form/release/pharmacopoeia words are matched only on whole-word boundaries;
+#   - the rule never returns an empty or sub-3-char residue (would be a false strip).
+
+# Dosage forms and delivery formats (longest-first matching is applied in code).
+dosage_forms:
+  - orally disintegrating tablet
+  - orally disintegrating strips
+  - orally disintegrating strip
+  - orally disintegrating
+  - orodispersible tablet
+  - oral disintegrating tablet
+  - dispersible tablet
+  - disintegrating tablet
+  - disintegrating strips
+  - disintegrating strip
+  - disintegrating
+  - film coated tablet
+  - film-coated tablet
+  - film coated
+  - film-coated
+  - enteric coated
+  - enteric-coated
+  - intravitreal implant
+  - prefilled syringe
+  - prefilled pen
+  - spot on solution
+  - spot on
+  - solution for injection
+  - solution for infusion
+  - powder for concentrate for solution
+  - powder for concentrate
+  - concentrate for solution
+  - solution for
+  - solvent for
+  - suspension for injection
+  - oral suspension
+  - for injection
+  - for infusion
+  - eye drops
+  - eye ointment
+  - ear drop
+  - nasal spray
+  - tablet
+  - tablets
+  - capsule
+  - capsules
+  - injection
+  - injectable
+  - solution
+  - suspension
+  - cream
+  - ointment
+  - gel
+  - drops
+  - drop
+  - powder
+  - granules
+  - granule
+  - patch
+  - suppository
+  - sachet
+  - strips
+  - strip
+  - implant
+  - spray
+  - vehicle
+  - lotion
+  - syrup
+  - vial
+  - pen
+  - pellet
+  - emulsion
+  - ophthalmic
+  - oral
+  - topical
+  - intravenous
+  - subcutaneous
+  - intramuscular
+  - veterinary
+  - vet
+  - bulk drug
+  - bulk
+
+# Release / modification qualifiers, including common abbreviations.
+release_qualifiers:
+  - sustained release
+  - extended release tablet
+  - extended release
+  - modified release
+  - prolonged release
+  - controlled release
+  - immediate release
+  - delayed release
+  - sustained-release
+  - extended-release
+  - prolonged-release
+  - modified-release
+  - sr
+  - er
+  - xr
+  - cr
+  - mr
+  - odt
+  - ods
+  - sc
+  - iv
+  - im
+
+# Pharmacopoeia / standard tags.
+pharmacopoeia:
+  - usp
+  - ip
+  - bp
+  - ep
+  - jp
+  - nf
