@@ -1,0 +1,95 @@
+id: https://w3id.org/monarch-initiative/medic/grounding
+name: medic-grounding
+description: >-
+  Two-stage entity-resolution provenance for MeDIC: Stage-1 grounding (source string
+  -> initial ID) and Stage-2 normalization (initial ID -> canonical target ID). Full
+  decision metadata lives in the SSSOM stores under mappings/; these classes carry the
+  per-record summary.
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+  skos: http://www.w3.org/2004/02/skos/core#
+default_range: string
+default_prefix: medic
+imports:
+  - linkml:types
+  - provenance
+
+# NOTE: GroundingQualityEnum, PreprocessingRuleEnum, NormalizationQualityEnum, and
+# TranslatorExpertiseEnum were MOVED to provenance.yaml (imported above) so the
+# transformation-provenance vocabulary is standalone/reusable. The legacy Grounding /
+# Translation / Normalization classes below still reference them via that import. Only
+# TranslationStatusEnum remains here (used solely by the legacy Translation class).
+enums:
+  TranslationStatusEnum:
+    description: Babelon translation status (review lifecycle of a translation).
+    permissible_values:
+      NOT_TRANSLATED:
+        description: Registered mention with no translation yet (e.g. offline run).
+      CANDIDATE:
+        description: Machine-produced translation, not yet human-reviewed.
+      UNDER_REVIEW:
+        description: A curator is reviewing the translation.
+      OFFICIAL:
+        description: Human-approved translation.
+  # TranslatorExpertiseEnum: moved to provenance.yaml (imported above).
+
+classes:
+  Translation:
+    description: >-
+      Stage-0 decision translating a non-English source mention to English before
+      grounding. A minimal Babelon translation row, keyed by the mention's MEDICNE
+      id (subject_id). The full set of translations lives in the Babelon store
+      (``mappings/*_translation.babelon.tsv``); this class carries the per-record
+      summary funneled onto the product.
+    slots: [subject_id, predicate_id, source_language, source_value,
+            translation_language, translation_value, translator,
+            translator_expertise, translation_status]
+  Grounding:
+    description: Stage-1 decision resolving a source string to an initial ID.
+    slots: [subject_id, original_string, grounded_id, grounded_label, grounding_quality, confidence, components]
+  Normalization:
+    description: Stage-2 decision mapping an initial ID to a canonical target ID.
+    slots: [original_id, normalized_id, normalized_label, normalization_quality, tool]
+
+slots:
+  # --- Stage-0 translation (Babelon) ---
+  subject_id:
+    range: uriorcurie
+    description: >-
+      MEDICNE id minted for the source mention at extraction (I-9) — the single
+      identifier of the original source literal, shared by the Translation,
+      Grounding and (SSSOM/Babelon) store rows for this mention.
+  # predicate_id, source_language, translator_expertise: moved to provenance.yaml (imported).
+  source_value:
+    description: Verbatim foreign-language source string (I-7 faithful; never mutated).
+  translation_language:
+    description: ISO code of the translation (e.g. en).
+  translation_value:
+    description: English translation handed to the grounder; empty if not translated.
+  translator:
+    description: Identifier of the translator (DeepL = wikidata:Q116709136).
+  translation_status:
+    range: TranslationStatusEnum
+    description: Review lifecycle state of the translation.
+  # --- Stage-1 grounding ---
+  original_string:
+    description: Verbatim source string. Never mutated by any resolution stage (I-7).
+    required: true
+  grounded_id:
+    range: uriorcurie
+    description: Initial ID in any supported vocab; empty if unresolved.
+  # grounded_label, confidence, components: moved to provenance.yaml (imported).
+  grounding_quality:
+    range: GroundingQualityEnum
+    required: true
+  original_id:
+    range: uriorcurie
+    description: The grounded_id fed into normalization.
+  normalized_id:
+    range: uriorcurie
+    description: Canonical target ID; equals original_id when quality is none.
+  # normalized_label, tool: moved to provenance.yaml (imported).
+  normalization_quality:
+    range: NormalizationQualityEnum
+    required: true

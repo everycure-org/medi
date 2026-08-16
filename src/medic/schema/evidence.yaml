@@ -1,0 +1,423 @@
+id: https://w3id.org/monarch-initiative/medic/evidence
+name: evidence
+title: MeDIC Evidence Model
+description: >-
+  Shared evidence model for MeDIC, inspired by dismech.
+  Every drug-disease association carries structured evidence items.
+
+imports:
+  - linkml:types
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+  PMID: http://www.ncbi.nlm.nih.gov/pubmed/
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+default_prefix: medic
+
+types:
+  PMID:
+    base: str
+    uri: xsd:string
+
+enums:
+  SourceTypeEnum:
+    description: The type of source providing the evidence
+    permissible_values:
+      REGULATORY:
+        description: Evidence from a regulatory agency label or approval document
+      LITERATURE:
+        description: Evidence from published scientific literature
+      GUIDELINE:
+        description: Evidence from clinical practice guidelines
+      DATABASE:
+        description: Evidence from a curated database
+      POST_MARKET:
+        description: Evidence from post-market surveillance or adverse event reporting
+
+  JurisdictionEnum:
+    description: Regulatory jurisdiction
+    permissible_values:
+      USA:
+        description: United States (FDA)
+      EU:
+        description: European Union (EMA)
+      JAPAN:
+        description: Japan (PMDA)
+      INDIA:
+        description: India (CDSCO)
+      RUSSIA:
+        description: Russia (MOH)
+      CHINA:
+        description: China (CDE/NMPA)
+      INTERNATIONAL:
+        description: International or multi-jurisdiction
+
+  EvidenceSupportEnum:
+    description: The level of support provided by the evidence
+    permissible_values:
+      SUPPORT:
+        description: The evidence directly supports the association
+      REFUTE:
+        description: The evidence directly contradicts the association
+      PARTIAL:
+        description: The evidence partially or indirectly supports the association
+      NO_EVIDENCE:
+        description: The cited reference does not contain evidence relevant to the claim
+
+  ConfidenceEnum:
+    description: Confidence level (HIGH/MEDIUM/LOW)
+    permissible_values:
+      HIGH:
+        description: High confidence - strong, direct evidence
+      MEDIUM:
+        description: Medium confidence - moderate or indirect evidence
+      LOW:
+        description: Low confidence - weak or preliminary evidence
+      UNKNOWN:
+        description: Confidence has not been assessed
+
+  ApprovalStatusEnum:
+    description: Clinical approval status of the drug for the indication
+    permissible_values:
+      APPROVED:
+        description: Approved by a regulatory agency
+      INVESTIGATIONAL:
+        description: Under clinical investigation
+      WITHDRAWN:
+        description: Previously approved but withdrawn
+      DISCONTINUED:
+        description: Previously approved but discontinued
+      OFF_LABEL:
+        description: Used off-label (not officially approved for this indication)
+
+  ResearchPhaseEnum:
+    description: Maximum research phase reached
+    permissible_values:
+      PRE_CLINICAL:
+        description: Pre-clinical studies only
+      PHASE_I:
+        description: Phase I clinical trial
+      PHASE_II:
+        description: Phase II clinical trial
+      PHASE_III:
+        description: Phase III clinical trial
+      PHASE_IV:
+        description: Phase IV (post-marketing) study
+      CASE_REPORT:
+        description: Published case report(s)
+      IN_VITRO:
+        description: In vitro studies only
+      COMPUTATIONAL:
+        description: Computational/in silico prediction only
+
+  StudyStatusEnum:
+    description: Status of a clinical trial or study
+    permissible_values:
+      COMPLETED:
+        description: Study has completed
+      ACTIVE_NOT_RECRUITING:
+        description: Study is active but no longer recruiting
+      RECRUITING:
+        description: Study is currently recruiting participants
+      NOT_YET_RECRUITING:
+        description: Study has not yet started recruiting
+      TERMINATED:
+        description: Study was terminated before completion
+      WITHDRAWN:
+        description: Study was withdrawn before enrollment
+      SUSPENDED:
+        description: Study has been suspended
+      UNKNOWN:
+        description: Study status is unknown
+
+  CuratorTypeEnum:
+    description: Type of agent that produced or curated the evidence
+    permissible_values:
+      AI_AGENT:
+        description: AI deep research agent (e.g., Perplexity, Falcon)
+      HUMAN:
+        description: Human curator
+      PIPELINE:
+        description: Automated pipeline (e.g., PubMed search, regulatory ingest)
+
+  EvidenceSourceTypeEnum:
+    description: The provenance/source of the evidence
+    permissible_values:
+      HUMAN_CLINICAL:
+        description: Human clinical observations (patients, cohorts, case reports, clinical trials)
+      MODEL_ORGANISM:
+        description: In vivo animal evidence (mouse, zebrafish, etc.)
+      IN_VITRO:
+        description: In vitro or ex vivo assays (cell culture, organoids, biochemical assays)
+      COMPUTATIONAL:
+        description: In silico/modeling studies (simulation, docking, ML predictions)
+      OTHER:
+        description: Evidence not fitting the above categories
+
+  ReliabilityTierEnum:
+    description: >-
+      Source-uniform trustworthiness tier for a statement, computed from per-record
+      signals (grounding/extraction/translation/provenance gates over the mention steps),
+      never from the source name. See src/medic/reliability.py and
+      specs/2026-07-26-soft-launch-reliability-design.md.
+    permissible_values:
+      HIGH:
+        description: All applicable gates pass; safe for a default soft-launch import.
+      MEDIUM:
+        description: Some inexact/unreviewed signal (e.g. machine translation, minor grounding surgery).
+      LOW:
+        description: A weak signal (fuzzy grounding, un-entailed extraction, untranslated name).
+      EXCLUDED:
+        description: Do not import — unresolved grounding, hallucinated/inverted extraction, or rejected on review.
+
+  StatementTypeEnum:
+    description: The kind of claim a MeDIC record makes (orthogonal to reliability).
+    permissible_values:
+      DRUG_APPROVAL:
+        description: A drug is approved by some regulatory authority.
+      INDICATION:
+        description: A drug is indicated for a disease.
+      CONTRAINDICATION:
+        description: A drug is contraindicated for a disease.
+      ADVERSE_EVENT:
+        description: A drug is associated with an adverse event.
+      RESEARCH_ASSOCIATION:
+        description: A literature/research-derived drug-disease association.
+
+classes:
+  Source:
+    description: >-
+      A data source from which evidence was extracted. Captures the full
+      provenance chain: what source, what file, how to verify it, and
+      what pipeline processed it.
+    attributes:
+      name:
+        range: string
+        required: true
+        description: >-
+          Short canonical name of the source. Must be recognizable and
+          consistent across all evidence items from the same source.
+          Examples: "FDA DailyMed", "EMA EPAR", "PMDA", "PubMed",
+          "ClinicalTrials.gov", "Perplexity deep research", "CURE-ID"
+      description:
+        range: string
+        description: >-
+          Longer human-readable description of the source and how it was
+          processed. Should explain what the source is and how the evidence
+          was extracted from it.
+      type:
+        range: SourceTypeEnum
+        description: The type of source (regulatory, literature, guideline, etc.)
+      jurisdiction:
+        range: JurisdictionEnum
+        description: Regulatory jurisdiction, if applicable
+      file:
+        range: string
+        description: >-
+          Path to the exact data file from which this evidence was extracted,
+          relative to the project root. Examples:
+          "kb/indications/dailymed/indications.yaml",
+          "research/hemophilia_A-deep-research-perplexity.md"
+      url:
+        range: string
+        description: >-
+          URL where the source can be verified by a human. For DailyMed:
+          a DailyMed search URL; for PubMed: the article URL; for clinical
+          trials: the ClinicalTrials.gov study page.
+
+  Agent:
+    description: >-
+      An agent that discovered or curated a piece of evidence.
+      Tracks provenance of how each evidence item was produced.
+    attributes:
+      curator_id:
+        range: string
+        description: >-
+          Persistent identifier for the agent configuration that produced this
+          evidence. Typically a GitHub commit-hash URL pointing to the script
+          or skill file that directly generated the evidence item.
+      curator_type:
+        range: CuratorTypeEnum
+        description: Classification of the curator
+      name:
+        range: string
+        description: >-
+          Human-readable description of the curation provenance,
+          e.g. "MeDIC research skill extracting evidence from Perplexity deep research"
+
+  EvidenceItem:
+    description: >-
+      A single piece of evidence supporting or refuting a drug-disease association.
+    attributes:
+      source:
+        range: Source
+        inlined: true
+        description: >-
+          The data source this evidence was extracted from. Optional because
+          regulatory evidence uses flat source_type/jurisdiction fields instead
+          of the structured Source object.
+      reference:
+        range: PMID
+        description: >-
+          Reference identifier for the cited document. Format depends on
+          source type: PMID:12345 for literature, NCT:xxx for clinical
+          trials, DailyMed:xxx for FDA labels.
+        implements:
+          - linkml:authoritative_reference
+      reference_title:
+        range: string
+        description: Title of the referenced document (paper title, trial title, page title)
+      document_id:
+        range: string
+        description: >-
+          Stable identifier of the exact source document this evidence was read from, when
+          the ingester can name one (`PMDA:<review-report>`, `DailyMed:<setid>`).
+
+          Load-bearing rather than descriptive: it is half the key of a SourceAssertion
+          (`on_label_merge._document_for`), which is what keeps the several approvals of one
+          PMDA ingredient from collapsing into a single assertion. Distinct from `reference`,
+          which is a URL a reader can follow and is not always per-document — PMDA falls back
+          to a search landing page, and two approvals then share one reference.
+
+          It is emitted by the PMDA ingester and read back by the merge, but was declared
+          nowhere, so `products/indication_list.yaml` failed schema validation with 2,620
+          "additional properties are not allowed" errors while the pipeline depended on it.
+      snippet:
+        range: string
+        description: >-
+          The exact text from the source that supports the claim. For
+          regulatory labels: the indication/contraindication text. For
+          literature: an exact quote from the abstract or full text. For
+          tables: the reconstructed row data.
+        implements:
+          - linkml:excerpt
+      support:
+        range: EvidenceSupportEnum
+        description: Whether this evidence supports or refutes the association
+      confidence_drug:
+        range: ConfidenceEnum
+        description: >-
+          Confidence that this evidence item refers to the drug described
+          by the parent association's drug_id/drug_label. HIGH when the
+          source explicitly names the drug; LOW when inferred from context.
+      confidence_disease:
+        range: ConfidenceEnum
+        description: >-
+          Confidence that this evidence item refers to the exact disease
+          described by the parent association's disease_id/disease_label.
+          HIGH when the source names the exact disease; LOW when mapped
+          from a broader or narrower term.
+      confidence_association:
+        range: ConfidenceEnum
+        description: >-
+          Confidence that the evidence supports the claimed relationship
+          type (indication, contraindication, adverse event). HIGH for
+          regulatory approval statements; MEDIUM for clinical trial evidence;
+          LOW for indirect or inferred associations.
+      evidence_source:
+        range: EvidenceSourceTypeEnum
+        description: The provenance of the evidence (human clinical, model organism, etc.)
+      approval_status:
+        range: ApprovalStatusEnum
+        description: Clinical approval status, if applicable
+      max_research_phase:
+        range: ResearchPhaseEnum
+        description: Maximum research phase reached, if applicable
+      study_status:
+        range: StudyStatusEnum
+        description: Status of the clinical trial, if this evidence is from a trial
+      curator:
+        range: Agent
+        inlined: true
+        description: The agent that discovered or curated this evidence item
+      source_role:
+        range: DataSourceRoleEnum
+        description: >-
+          Role of the data source relative to a regulatory authority: PRIMARY (the authority
+          itself), INTERMEDIARY (a third-party republisher such as DailyMed), NON_REGULATORY
+          (literature, curated lists).
+
+          Was `range: string` "for forward compatibility", which in practice meant
+          `source_role: HEARSAY` validated clean through `linkml-validate` and all eight QC
+          checks. Every value the pipeline emits (PRIMARY, INTERMEDIARY) is a member, so the
+          looseness bought nothing and cost the check.
+      approval_date:
+        range: string
+        description: Date of regulatory approval (YYYYMMDD), if available from the source
+      jurisdiction:
+        range: JurisdictionEnum
+        description: >-
+          Jurisdiction this evidence speaks for. Half of invariant I-1: an evidence row whose
+          jurisdiction disagrees with the source that emitted it is a source-isolation breach.
+
+          Was `range: string` "so existing data continues to validate" — but the emitted values
+          (USA, EU, JAPAN, INDIA) are all members, so nothing needed the escape hatch. Note the
+          enum alone cannot catch the I-1 case: a DailyMed row relabelled `EU` is a *legal*
+          value and still wrong, which is why the source-vs-jurisdiction cross-check is tracked
+          separately.
+      confidence:
+        range: ConfidenceEnum
+        description: >-
+          Overall confidence. Used in regulatory evidence to indicate whether the source
+          provides a direct document reference (HIGH) or only a search URL (MEDIUM).
+          Was `range: string`, which admitted `VERY_SURE`.
+      explanation:
+        range: string
+        description: Free-text explanation of the evidence and its support for the association
+      source_type:
+        range: SourceTypeEnum
+        description: >-
+          Type of source. `SourceTypeEnum` already carried exactly the five values this slot's
+          description listed in prose; it was simply never referenced, so `source_type:
+          SUPERMARKET` validated clean. Not to be confused with `EvidenceSourceTypeEnum`,
+          which is a different axis (study type: HUMAN_CLINICAL, IN_VITRO, ...).
+      product_id:
+        range: string
+        description: >-
+          Per-product identifier on the source registry (e.g. PMDA review-report
+          identifier "P20190905002"). Carried through to the corresponding
+          RegulatoryStatus row when a deep link is built.
+      setid:
+        range: string
+        description: DailyMed SPL set_id, when this evidence is from an SPL document
+      application_number:
+        range: string
+        description: NDA/ANDA application number, when this evidence is from Drugs@FDA
+      bla_number:
+        range: string
+        description: BLA number, when this evidence is from the Purple Book
+      source_document_url:
+        range: string
+        description: >-
+          Direct URL to the underlying approval document PDF when available
+          (SPL label PDF, EPAR assessment report PDF, etc.) — distinct from
+          the `reference` URL which may be a landing page.
+      original_drug_label:
+        range: string
+        description: >-
+          Raw drug-name string as the source actually wrote it, before grounding.
+          Lets reviewers see what the source said vs. what we mapped it to.
+      original_drug_id:
+        range: string
+        description: >-
+          Source-side drug identifier when the source carries one (e.g. SPL
+          drug name, EMA active-substance code, PMDA YJ code). Optional.
+      original_disease_label:
+        range: string
+        description: >-
+          Raw disease/indication string as the source actually wrote it, before
+          grounding. Critical for QA — when a row asserts a MONDO term, this
+          shows what text the LLM extractor or grounding pipeline mapped from.
+      original_disease_id:
+        range: string
+        description: >-
+          Source-side disease identifier when the source carries one. Optional.
+      page_or_section:
+        range: string
+        description: >-
+          Page number, section header, table/figure/box reference, or other
+          locator within the cited document (e.g. "pages 6-10", "Section 3.2",
+          "Table 2"). Used by research curation evidence to make citations
+          verifiable. Optional.

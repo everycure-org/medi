@@ -1,0 +1,199 @@
+id: https://w3id.org/monarch-initiative/medic/indication
+name: indication
+title: MeDIC Indication Association Schema
+description: >-
+  Schema for drug-disease indication and contraindication associations.
+  Covers approved (on-label), investigational (clinical trial), and
+  off-label associations with evidence from regulatory, clinical trial,
+  and literature sources. Includes hyperrelations for symptom-level specificity.
+
+imports:
+  - linkml:types
+  - evidence
+  - authority
+  - grounding
+  - provenance
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+  MONDO: http://purl.obolibrary.org/obo/MONDO_
+  HP: http://purl.obolibrary.org/obo/HP_
+
+default_prefix: medic
+
+enums:
+  RelationshipTypeEnum:
+    description: Type of drug-disease relationship
+    permissible_values:
+      INDICATION:
+        description: The drug is indicated for this disease
+      CONTRAINDICATION:
+        description: The drug is contraindicated for this disease
+
+  HyperrelationshipTypeEnum:
+    description: Type of symptom-level relationship within an indication
+    permissible_values:
+      REDUCES:
+        description: The drug reduces the symptom
+      PREVENTS:
+        description: The drug prevents the symptom
+      TREATS:
+        description: The drug treats the symptom
+      CONTRAINDICATES_IN:
+        description: The drug is contraindicated when this symptom is present
+      WORSENS:
+        description: The drug may worsen this symptom
+
+classes:
+  Hyperrelation:
+    description: >-
+      A symptom-level specificity record within an indication association.
+      Core part of the schema, not optional. Models relationships like
+      "reduces tremor in Parkinson's" rather than just "treats Parkinson's".
+    attributes:
+      target_symptom:
+        range: string
+        description: >-
+          The target symptom, preferably an HPO term ID.
+          Free text if no suitable HPO term exists.
+      target_symptom_label:
+        range: string
+        description: Human-readable label for the target symptom
+      relationship:
+        range: HyperrelationshipTypeEnum
+        description: The type of relationship to the symptom
+      specificity_text:
+        range: string
+        description: Raw label text supporting this hyperrelation
+
+  SourceAssertion:
+    description: >-
+      What ONE source document asserts about a drug-disease pair, with the provenance behind it.
+
+      Internally single-source by construction (invariant I-10): the drug mention, the disease
+      mention and every span come from this document, and `drug.mention_source ==
+      disease.mention_source == source`. The model this replaces had three different scopes in
+      one record — a merge-elected drug trail, a first-source-wins disease trail, and an
+      all-sources evidence list — which is how a Russian drug string ended up on an Indian
+      indication.
+    attributes:
+      source:
+        range: string
+        required: true
+        description: The ingester that produced this assertion (DAILYMED, EMA, PMDA, CDSCO, ...).
+      jurisdiction:
+        range: JurisdictionEnum
+        description: The jurisdiction this document speaks for.
+      document:
+        range: string
+        required: true
+        description: >-
+          Identifier of the source document (DailyMed:<setid>, EMA:<epar>, ...). Required
+          because it is half the record key — an absent one would silently re-collapse two
+          documents into one assertion, the defect this model removes.
+      spans:
+        range: TextSpan
+        multivalued: true
+        inlined_as_list: true
+        description: >-
+          The typed chunks of this document's text the claim was read from — header, body,
+          and any scope-limiting sentence, each with its TextSpanRoleEnum role.
+      drug:
+        range: Mention
+        inlined: true
+        description: >-
+          The drug as an inlined Mention whose verbatim literal is THIS document's drug string,
+          with the transformation trail that resolved it. Not a merge-elected identity.
+      disease:
+        range: Mention
+        inlined: true
+        description: >-
+          The disease as an inlined Mention extracted from THIS document's text, with its own
+          transformation trail.
+      assertion:
+        range: Assertion
+        inlined: true
+        description: >-
+          How the *claim* was derived from this document: the span it was read from, the
+          trigger cue, the four-part confidence, and relation-level failure-mode flags. Kept
+          distinct from the Mentions, which only record recognising the entities — an entity
+          can be recognised perfectly while the asserted relation is wrong.
+      evidence:
+        range: EvidenceItem
+        inlined: true
+        description: >-
+          The evidence this one document provides. Singular: one document attests one thing.
+          The pair-level list is a derived view (`product_view.assoc_evidence`).
+      regulatory_status:
+        range: RegulatoryStatus
+        inlined: true
+        description: >-
+          The regulatory approval this one document records. Singular, for the same reason as
+          `evidence`.
+      hyperrelations:
+        range: Hyperrelation
+        multivalued: true
+        inlined_as_list: true
+        description: Symptom-level specificity records read from this document's text.
+
+  IndicationAssociation:
+    description: >-
+      A canonical drug-disease-relationship pair and every source that attests it.
+
+      The pair level carries only identity and cross-source judgements (reliability, the
+      noisy-OR confidence). All provenance lives on the assertions, one per source document.
+    attributes:
+      drug_id:
+        range: string
+        required: true
+        description: Resolved canonical drug id (CHEBI CURIE).
+      drug_label:
+        range: string
+        description: Resolved canonical drug label.
+      disease_id:
+        range: string
+        required: true
+        description: Resolved canonical disease id (MONDO CURIE).
+      disease_label:
+        range: string
+        description: Resolved canonical disease label.
+      relationship_type:
+        range: RelationshipTypeEnum
+        required: true
+        description: Whether this is an indication or contraindication.
+      is_allergen:
+        range: boolean
+        description: Whether contraindication is due to allergen status.
+      is_diagnostic_agent:
+        range: boolean
+        description: Whether contraindication is due to diagnostic agent status.
+      reliability:
+        range: ReliabilityTierEnum
+        description: >-
+          THE single quality metric for the pair, computed across its assertions from the
+          resolution steps, the assertions and the evidence provenance
+          (src/medic/reliability.py).
+      confidence:
+        range: PairConfidence
+        inlined: true
+        description: >-
+          Aggregate confidence across the pair's assertions, by noisy-OR. Corroboration raises
+          it — the opposite direction from a resolution chain, where each step is another
+          chance to have linked the wrong entity.
+      assertions:
+        range: SourceAssertion
+        multivalued: true
+        inlined_as_list: true
+        description: >-
+          One per source document, ordered by (source, document) so reruns are byte-identical.
+
+  IndicationList:
+    description: A collection of IndicationAssociation entities
+    attributes:
+      associations:
+        range: IndicationAssociation
+        multivalued: true
+        inlined_as_list: true
+        description: The list of indication associations

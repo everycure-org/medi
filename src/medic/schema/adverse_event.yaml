@@ -1,0 +1,103 @@
+id: https://w3id.org/monarch-initiative/medic/adverse_event
+name: adverse_event
+title: MeDIC Adverse Event Association Schema
+description: >-
+  Schema for adverse event associations between drugs and adverse events.
+  Sources include PVLens (label-mined) and FAERS (post-market reports).
+
+imports:
+  - linkml:types
+  - evidence
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+  HP: http://purl.obolibrary.org/obo/HP_
+  MedDRA: http://purl.bioontology.org/ontology/MEDDRA/
+
+default_prefix: medic
+
+enums:
+  LabelSectionEnum:
+    description: Section of the drug label where the adverse event was found
+    permissible_values:
+      ADVERSE_REACTIONS:
+        description: Adverse reactions section of the label
+      BLACK_BOX_WARNING:
+        description: Black box warning section
+      WARNINGS_AND_PRECAUTIONS:
+        description: Warnings and precautions section
+      POST_MARKET:
+        description: Post-marketing experience section
+      CONTRAINDICATIONS:
+        description: Contraindications section
+
+  SeverityEnum:
+    description: Severity of the adverse event
+    permissible_values:
+      MILD:
+        description: Mild adverse event
+      MODERATE:
+        description: Moderate adverse event
+      SEVERE:
+        description: Severe adverse event
+      LIFE_THREATENING:
+        description: Life-threatening adverse event
+      FATAL:
+        description: Fatal adverse event
+
+classes:
+  AdverseEventAssociation:
+    description: >-
+      An association between a drug and an adverse event, extracted from
+      drug labels (PVLens) or post-market reports (FAERS).
+    attributes:
+      drug_id:
+        range: string
+        required: true
+        description: Normalized drug identifier (CHEBI CURIE preferred)
+      drug_label:
+        range: string
+        description: Drug name
+      adverse_event_id:
+        range: string
+        description: >-
+          Adverse event term identifier. MedDRA term preferred,
+          with optional HPO mapping.
+      adverse_event_label:
+        range: string
+        description: Adverse event term label
+      adverse_event_hpo_id:
+        range: string
+        description: HPO mapping of the adverse event, if available
+      adverse_event_hpo_label:
+        range: string
+        description: HPO term label for the mapped adverse event
+      label_section:
+        range: LabelSectionEnum
+        description: Section of the drug label where the AE was found
+      frequency:
+        range: string
+        description: Reported frequency of the adverse event (e.g., "5-10%", "common")
+      severity:
+        range: SeverityEnum
+        description: Severity classification if available
+      sources:
+        range: string
+        multivalued: true
+        description: Source identifiers (e.g., PVLens, FAERS)
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        description: Evidence items for this adverse event association
+
+  AdverseEventList:
+    description: A collection of AdverseEventAssociation entities
+    attributes:
+      associations:
+        range: AdverseEventAssociation
+        multivalued: true
+        inlined_as_list: true
+        description: The list of adverse event associations

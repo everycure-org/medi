@@ -1,0 +1,131 @@
+id: https://w3id.org/monarch-initiative/medic/drug_source
+name: drug_source
+title: MeDIC Drug Source Schema
+description: >-
+  Per-source drug records produced by each ETL module before merging.
+  Each ingest produces DrugSource instances that are later merged
+  into the unified Drug entities.
+
+imports:
+  - linkml:types
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+
+default_prefix: medic
+
+enums:
+  DrugSourceNameEnum:
+    description: The source from which the drug record was extracted
+    permissible_values:
+      ORANGEBOOK:
+        description: FDA Orange Book (small molecule approvals)
+        see_also:
+          - docs/sources/orangebook.md
+      PURPLEBOOK:
+        description: FDA Purple Book (biologic approvals)
+        see_also:
+          - docs/sources/purplebook.md
+      EMA:
+        description: European Medicines Agency (EPAR)
+        see_also:
+          - docs/sources/ema.md
+      PMDA:
+        description: Japan Pharmaceuticals and Medical Devices Agency
+        see_also:
+          - docs/sources/pmda.md
+      RUSSIA:
+        description: Russian Ministry of Health drug registry
+        see_also:
+          - docs/sources/russia.md
+      INDIA:
+        description: Indian CDSCO drug registry
+        see_also:
+          - docs/sources/india.md
+      CHINA:
+        description: Chinese CDE (Center for Drug Evaluation) drug registry
+        see_also:
+          - docs/sources/china.md
+      EVERYCURE:
+        description: EveryCure curated drug list
+        see_also:
+          - docs/sources/everycure.md
+
+  GroundingStatusEnum:
+    description: Status of entity grounding for a drug record
+    permissible_values:
+      accepted:
+        description: High confidence grounding, auto-accepted
+      review_recommended:
+        description: Good match but periodic review recommended
+      unresolved:
+        description: Low confidence, flagged for manual review
+
+classes:
+  DrugSource:
+    description: >-
+      A drug record from a single source, before merging.
+      Contains source-specific metadata alongside normalized identifiers.
+    attributes:
+      source:
+        range: DrugSourceNameEnum
+        required: true
+        description: Which source this record came from
+      source_id:
+        range: string
+        description: Source-specific identifier (e.g., NDA number, BLA number)
+      source_name:
+        range: string
+        required: true
+        description: Drug name as it appears in the source
+      source_ingredients:
+        range: string
+        multivalued: true
+        description: Active ingredient(s) as listed in the source
+      normalized_id:
+        range: string
+        description: Normalized drug CURIE after grounding
+      normalized_label:
+        range: string
+        description: Normalized drug label after grounding
+      grounding_confidence:
+        range: float
+        description: Confidence score from the grounding service
+      grounding_service:
+        range: string
+        description: Which grounding backend was used (nameres, oak, ols)
+      grounding_status:
+        range: GroundingStatusEnum
+        description: Confidence tier classification of the grounding result
+      alternate_ids:
+        range: string
+        multivalued: true
+        description: All known alternative identifiers from normalization
+      approval_date:
+        range: string
+        description: Approval or authorization date from the source
+      marketing_status:
+        range: string
+        description: Marketing status from the source
+      application_number:
+        range: string
+        description: Regulatory application number (NDA, BLA, etc.)
+      active_substance:
+        range: string
+        description: Active substance name (EMA terminology)
+      atc_code:
+        range: string
+        description: ATC code if provided by the source
+      therapeutic_area:
+        range: string
+        description: Therapeutic area if provided by the source
+      registration_number:
+        range: string
+        description: Registration number (for Russia, India)
+      is_combination:
+        range: boolean
+        description: Whether this is a combination product
+      raw_data:
+        range: string
+        description: JSON string of the full raw source record for provenance

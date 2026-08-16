@@ -1,0 +1,83 @@
+id: https://w3id.org/monarch-initiative/medic/research_source
+name: research_source
+title: MeDIC Research Source Schema
+description: >-
+  Schema for literature-derived drug-disease pairs from the research pipeline.
+  Each record represents an AI-curated association with evidence from PubMed.
+
+imports:
+  - linkml:types
+  - evidence
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+  PMID: http://www.ncbi.nlm.nih.gov/pubmed/
+
+default_prefix: medic
+
+enums:
+  CurationStatusEnum:
+    description: Status of the curation for this research association
+    permissible_values:
+      DRAFT:
+        description: LLM-drafted, not yet reviewed
+      REVIEWED:
+        description: Reviewed by a human curator
+      VALIDATED:
+        description: Validated with snippet checking
+      REJECTED:
+        description: Rejected during curation
+
+classes:
+  ResearchAssociation:
+    description: >-
+      A drug-disease association derived from literature research.
+      Produced by the AI-assisted curation pipeline.
+    attributes:
+      drug_id:
+        range: string
+        required: true
+        description: Normalized drug identifier
+      drug_label:
+        range: string
+        description: Drug name
+      disease_id:
+        range: string
+        required: true
+        description: Normalized disease identifier (Mondo CURIE)
+      disease_label:
+        range: string
+        description: Disease name
+      curation_status:
+        range: CurationStatusEnum
+        description: Current curation status
+      curation_date:
+        range: string
+        description: Date of last curation action (ISO 8601)
+      curator:
+        range: string
+        description: Identity of the curator (human or AI)
+      search_query:
+        range: string
+        description: PubMed search query that found relevant literature
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        description: Evidence items from literature
+      deep_research_used:
+        range: boolean
+        description: Whether deep research was used for this pair
+      notes:
+        range: string
+        description: Curator notes
+
+  ResearchAssociationList:
+    description: A collection of research associations
+    attributes:
+      associations:
+        range: ResearchAssociation
+        multivalued: true
+        inlined_as_list: true
+        description: The list of research associations

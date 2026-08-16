@@ -1,0 +1,52 @@
+id: https://w3id.org/monarch-initiative/medic
+name: medic
+title: MeDIC - Medicines, Diseases, Indications, and Contraindications Schema
+description: >-
+  LinkML schema for the MeDIC knowledge base of drug-disease associations
+  from regulatory sources worldwide, with AI-assisted evidence curation.
+license: BSD-3-Clause
+see_also:
+  - https://github.com/monarch-initiative/medic
+
+imports:
+  - linkml:types
+  - authority
+  - evidence
+  - drug
+  - disease
+  - indication
+  - adverse_event
+  - grounding
+  - provenance
+  - drug_source
+  - on_label_source
+  - adverse_event_source
+  - research_source
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+  MONDO: http://purl.obolibrary.org/obo/MONDO_
+  HP: http://purl.obolibrary.org/obo/HP_
+  MAXO: http://purl.obolibrary.org/obo/MAXO_
+  UBERON: http://purl.obolibrary.org/obo/UBERON_
+  NCIT: http://purl.obolibrary.org/obo/NCIT_
+  UNII: http://fdasis.nlm.nih.gov/srs/unii/
+  DRUGBANK: https://www.drugbank.ca/drugs/
+  RXNORM: http://purl.bioontology.org/ontology/RXNORM/
+  PUBCHEM.COMPOUND: http://pubchem.ncbi.nlm.nih.gov/compound/
+  CHEMBL.COMPOUND: https://www.ebi.ac.uk/chembl/compound_report_card/
+  MESH: http://id.nlm.nih.gov/mesh/
+  DRON: http://purl.obolibrary.org/obo/DRON_
+  ATC: http://www.whocc.no/atc_ddd_index/?code=
+  MedDRA: http://purl.bioontology.org/ontology/MEDDRA/
+  PMID: http://www.ncbi.nlm.nih.gov/pubmed/
+  DailyMed: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=
+  NCT: https://clinicaltrials.gov/study/
+  FAERS: https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  biolink: https://w3id.org/biolink/vocab/
+
+default_prefix: medic

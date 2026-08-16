@@ -1,0 +1,93 @@
+id: https://w3id.org/monarch-initiative/medic/on_label_source
+name: on_label_source
+title: MeDIC Indication Source Schema
+description: >-
+  Per-source indication/contraindication records produced by
+  each ETL module before merging.
+
+imports:
+  - linkml:types
+  - evidence
+  - indication
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+
+default_prefix: medic
+
+enums:
+  IndicationSourceNameEnum:
+    description: The source from which the indication record was extracted
+    permissible_values:
+      DAILYMED:
+        description: FDA DailyMed SPL labels
+      EMA:
+        description: European Medicines Agency EPAR
+      PMDA:
+        description: Japan PMDA drug labels
+      GUIDELINE:
+        description: Clinical practice guideline
+      CLINICAL_TRIAL:
+        description: ClinicalTrials.gov or other trial registry
+      CUREID:
+        description: NCATS CURE-ID drug repurposing platform
+
+classes:
+  IndicationSource:
+    description: >-
+      An indication record from a single source, before merging.
+    attributes:
+      source:
+        range: IndicationSourceNameEnum
+        required: true
+        description: Which source this record came from
+      source_drug_name:
+        range: string
+        required: true
+        description: Drug name as it appears in the source
+      source_disease_name:
+        range: string
+        required: true
+        description: Disease/indication name as it appears in the source
+      normalized_drug_id:
+        range: string
+        description: Normalized drug CURIE after grounding
+      normalized_drug_label:
+        range: string
+        description: Normalized drug label
+      normalized_disease_id:
+        range: string
+        description: Normalized disease CURIE (Mondo) after grounding
+      normalized_disease_label:
+        range: string
+        description: Normalized disease label
+      relationship_type:
+        range: RelationshipTypeEnum
+        required: true
+        description: Whether this is an indication or contraindication
+      raw_indication_text:
+        range: string
+        description: Raw text from the label describing the indication
+      llm_interpreted_text:
+        range: string
+        description: LLM interpretation of the indication text
+      hyperrelations:
+        range: Hyperrelation
+        multivalued: true
+        inlined_as_list: true
+        description: Extracted symptom-level hyperrelations
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        description: Evidence items for this source record
+      grounding_backend:
+        range: string
+        description: Which grounding backend was used
+      llm_qc_applied:
+        range: boolean
+        description: Whether LLM QC was applied to grounding results
+      set_id:
+        range: string
+        description: DailyMed set ID or equivalent source document ID

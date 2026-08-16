@@ -1,0 +1,77 @@
+id: https://w3id.org/monarch-initiative/medic/adverse_event_source
+name: adverse_event_source
+title: MeDIC Adverse Event Source Schema
+description: >-
+  Per-source adverse event records produced by each ETL module before merging.
+
+imports:
+  - linkml:types
+  - evidence
+  - adverse_event
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+
+default_prefix: medic
+
+enums:
+  AdverseEventSourceNameEnum:
+    description: The source from which the adverse event record was extracted
+    permissible_values:
+      PVLENS:
+        description: PVLens adverse event extraction from FDA SPL labels
+      FAERS:
+        description: FDA Adverse Event Reporting System
+      ONSIDES:
+        description: OnSIDES ML-based adverse event extraction
+
+classes:
+  AdverseEventSource:
+    description: >-
+      An adverse event record from a single source, before merging.
+    attributes:
+      source:
+        range: AdverseEventSourceNameEnum
+        required: true
+        description: Which source this record came from
+      source_drug_name:
+        range: string
+        required: true
+        description: Drug name as it appears in the source
+      normalized_drug_id:
+        range: string
+        description: Normalized drug CURIE after grounding
+      normalized_drug_label:
+        range: string
+        description: Normalized drug label
+      adverse_event_term:
+        range: string
+        required: true
+        description: Adverse event term (MedDRA preferred term)
+      adverse_event_meddra_id:
+        range: string
+        description: MedDRA concept ID
+      adverse_event_hpo_id:
+        range: string
+        description: Mapped HPO term, if available
+      adverse_event_hpo_label:
+        range: string
+        description: HPO term label
+      label_section:
+        range: LabelSectionEnum
+        description: Label section where the AE was found (PVLens)
+      report_count:
+        range: integer
+        description: Number of reports (FAERS)
+      prr:
+        range: float
+        description: Proportional Reporting Ratio (FAERS disproportionality metric)
+      frequency:
+        range: string
+        description: Frequency if reported
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        description: Evidence items
