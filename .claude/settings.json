@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(just validate:*)",
+      "Bash(just validate-schema:*)",
+      "Bash(just validate-terms:*)",
+      "Bash(just validate-references:*)",
+      "Bash(just validate-all:*)",
+      "Bash(just gen-doc:*)",
+      "Bash(just gen-python:*)",
+      "Bash(just lint:*)",
+      "Bash(just test:*)",
+      "Bash(just count-entities:*)",
+      "Bash(just list-drugs:*)",
+      "Bash(just research-disease:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git add:*)",
+      "Bash(uv run python -m pytest:*)",
+      "Bash(uv run python -c:*)",
+      "Bash(uv run python -m medic:*)",
+      "Bash(uv run python scripts/:*)",
+      "Bash(uv run ruff:*)",
+      "Bash(uv run linkml-validate:*)",
+      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:biolink.github.io)",
+      "WebFetch(domain:name-resolution-sri.renci.org)",
+      "WebFetch(domain:nodenormalization-sri.renci.org)",
+      "mcp__ols4__search"
+    ]
+  }
+}
