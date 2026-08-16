@@ -1,0 +1,102 @@
+checks:
+  approval_date_authority:
+    checked: 9594
+    status: PASS
+    violations: 0
+  counts:
+    observed:
+      contraindication_list.assertions: 3031
+      contraindication_list.by_source.DAILYMED: 3031
+      contraindication_list.pairs: 2448
+      drug_list.drugs: 4323
+      indication_list.assertions: 9716
+      indication_list.by_source.DAILYMED: 3910
+      indication_list.by_source.EMA: 3054
+      indication_list.by_source.INDIA: 132
+      indication_list.by_source.PMDA: 2620
+      indication_list.pairs: 6504
+    status: PASS
+  distributions:
+    contraindication_list:
+      confidence_basis:
+        DETERMINISTIC: 9243
+        MEASURED: 9093
+      reliability:
+        HIGH: 1810
+        LOW: 326
+        MEDIUM: 312
+      span_roles:
+        LIMITATION_STATEMENT: 150
+        SECTION_HEADER: 19
+        SECTION_TEXT: 3031
+        SUBSECTION_HEADER: 150
+    indication_list:
+      confidence_basis:
+        DETERMINISTIC: 29400
+        MEASURED: 29037
+        PRIOR: 111
+      reliability:
+        HIGH: 5473
+        LOW: 346
+        MEDIUM: 685
+      span_roles:
+        LIMITATION_STATEMENT: 234
+        SECTION_HEADER: 24
+        SECTION_TEXT: 6530
+        STRUCTURED_FIELD: 3054
+        SUBSECTION_HEADER: 234
+        TABLE_CELL: 132
+    status: PASS
+  enums:
+    invalid_values: {}
+    status: PASS
+  fidelity:
+    canonical_label_writebacks: 0
+    status: PASS
+  invariants:
+    status: PASS
+    violations: 0
+  priors:
+    auto_generated: []
+    status: PASS
+    total: 5
+    uncalibrated: 5
+  reconciliation:
+    assertions_total: 12747
+    kept_total: 12754
+    sources:
+      DAILYMED/contraindications:
+        dropped_duplicate_document: 10
+        kept: 3031
+        rows_in: 3041
+      DAILYMED/indications:
+        dropped_duplicate_document: 114
+        kept: 3910
+        rows_in: 4024
+      EMA/indications:
+        dropped_duplicate_document: 140
+        kept: 3055
+        rows_in: 3195
+      INDIA/indications:
+        dropped_duplicate_document: 4
+        kept: 133
+        rows_in: 137
+      PMDA/indications:
+        dropped_duplicate_document: 52
+        kept: 2625
+        rows_in: 2677
+    status: PASS
+  source_isolation:
+    checked: 25494
+    status: PASS
+    violations: 0
+  stores:
+    mappings/disease_grounding.sssom.tsv:
+      blank_subject_id: 0
+      rows: 7574
+    mappings/drug_grounding.sssom.tsv:
+      blank_subject_id: 0
+      rows: 21186
+    status: PASS
+summary:
+  PASS: 10

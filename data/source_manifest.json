@@ -1,0 +1,16 @@
+{
+  "china": {
+    "bytes": 340591,
+    "file": "cder_drugs_final_all.csv",
+    "modified": "2026-07-25",
+    "row_count": 1521,
+    "sha256": "980262a8a7adc7ec"
+  },
+  "russia": {
+    "bytes": 18642697,
+    "file": "grls.zip",
+    "modified": "2026-07-24",
+    "row_count": 5885,
+    "sha256": "a34040a4b6c433d0"
+  }
+}
