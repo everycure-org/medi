@@ -1,0 +1,134 @@
+name: CI
+
+on:
+  push:
+    branches: [main, redesign]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'scripts/**'
+      # The decision stores and config are load-bearing: a grounding row or a confidence prior
+      # changes the products just as surely as code does, so they have to trigger CI too.
+      - 'conf/**'
+      - 'mappings/**'
+      - 'sources/**'
+      - 'data/source_manifest.json'
+      - 'kb/**/*.yaml'
+      - 'justfile'
+      - 'project.justfile'
+      - 'pyproject.toml'
+      - 'uv.lock'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    # Was `main` only, so a PR into the long-running redesign branch never ran.
+    branches: [main, redesign]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      # `export` as well as `dev`: the KGX conformance gate validates every category,
+      # predicate and slot against the installed `biolink-model`, so without that group
+      # tests/test_kgx_export.py cannot import it and 22 tests fail. The gate is the whole
+      # point of pinning the model — skipping it in CI would make it decorative.
+      - name: Install dependencies
+        run: uv sync --group dev --group export
+
+      - name: Run ruff linting
+        run: uv run ruff check src/ tests/ scripts/
+
+      - name: Run tests
+        run: uv run python -m pytest
+
+  qc:
+    # The released products are gitignored build outputs, so CI cannot inspect a real build.
+    # It can do better than the config-only checks it used to: `kb/indications/`, `kb/drugs/`
+    # and `mappings/` are all committed, so CI rebuilds the on-label products from them and
+    # runs the invariant gate over 12,701 real assertions.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --group dev
+
+      - name: Check the manual-source archive against its fingerprints
+        run: uv run python scripts/check_manual_sources.py
+
+      - name: Store and prior QC
+        run: uv run python scripts/build_qc.py --no-products --out /tmp/build_qc_config.yaml
+
+      # This is the invariant gate. `merge_on_label` raises on any I-8/I-10/I-11/I-12/I-13
+      # violation, any record it failed to merge, and any pair left with no assertions — so
+      # the step failing IS the report, and a PR that breaks an invariant cannot go green.
+      #
+      # The rebuild is deliberately partial: `products/drug_list.yaml` and
+      # `products/disease_list.yaml` are gitignored, so approval dates are absent and disease
+      # ids are not xref-normalised to MONDO. Counts therefore differ from a real build
+      # (~8,951 pairs here vs ~8,903 locally) and are NOT asserted. The structural invariants
+      # do not depend on either input, which is what makes this worth running.
+      - name: Rebuild the on-label products and enforce the provenance invariants
+        run: uv run python -m medic.merge.on_label_merge
+
+      - name: Upload QC report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-qc-config
+          path: /tmp/build_qc_config.yaml
+          if-no-files-found: ignore
+
+  validate-schemas:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      # This job shells out to `just validate-schema` but never installed just, so it would
+      # have failed the moment it ran. It only fires on PRs into main, which is why nobody
+      # noticed.
+      - name: Install just
+        uses: extractions/setup-just@v2
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --group dev
+
+      - name: Get changed KB files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          # Only the kb/ trees with a settled schema contract. `kb/**/*.yaml` also swept in
+          # per-source intermediates (kb/drugs/*, kb/indications/*/*) whose classes do not yet
+          # cover what the ingesters emit, and QC reports (*_report.yaml) that have no LinkML
+          # class at all — so this job could never have passed. See SPEC.md task 16.
+          files: |
+            kb/research/**/*.yaml
+            kb/diseases/*.yaml
+
+      - name: Validate changed KB files
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "Validating: $file"
+            just validate-schema "$file"
+          done

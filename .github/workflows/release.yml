@@ -8,120 +8,72 @@ on:
 permissions:
   contents: write
 
+# The data assets are NOT uploaded here, and cannot be.
+#
+# This workflow used to upload nine files from `medi/data/...`, the Kedro tree deleted in
+# 96f520d. Every one of those steps would fail on a missing path, so tagging produced a
+# broken job rather than a release (issue #37).
+#
+# They are not simply repointed at `products/` and `exports/` because those are gitignored
+# build outputs: a fresh checkout does not contain them, and CI cannot regenerate them —
+# `just build-all` needs the manually-provided sources (`background/grls.zip`,
+# `background/cder_drugs_final_all.csv`) and paid API keys that are not available to a
+# runner.
+#
+# So the tag job does the part it *can* do reproducibly — create the draft release, carry
+# the licensing terms — and the data is attached from a local build:
+#
+#     just build-all
+#     just gh-release vX.Y.Z
+#
+# That recipe finds this draft, uploads `products/*.yaml` + `exports/*` into it (skipping
+# empty stubs), and leaves it for review. Which assets may lawfully ship is still open —
+# see issue #37 on the MedDRA, Russia and China redistribution terms.
+
 jobs:
   create-release:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v3
-
-      # Step 2: Create a release
-      - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/checkout@v4
         with:
-          tag_name: ${{ github.ref_name }}
-          release_name: Release ${{ github.ref_name }}
-          draft: false
-          prerelease: false
+          fetch-depth: 0 # release notes are generated from the commit range
 
-      # Step 3: Upload a file as a release asset
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
+      # Created as a DRAFT, matching `just gh-release`'s default: a release is reviewed
+      # before it is published, and the data assets are not attached yet at this point.
+      #
+      # Uses the gh CLI rather than actions/create-release + actions/upload-release-asset,
+      # both of which GitHub archived in 2021.
+      - name: Create draft release with licensing terms
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/data/drugs/03_primary/drug_list_flexible.csv # Replace with the path to your file
-          asset_name: drug_list_flexible.csv           # Replace with the name you want for the uploaded asset
-          asset_content_type: application/octet-stream
-      
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/data/drugs/03_primary/drug_list_stringent.csv # Replace with the path to your file
-          asset_name: drug_list_stringent.csv           # Replace with the name you want for the uploaded asset
-          asset_content_type: application/octet-stream
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
 
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/data/drugs/02_intermediate/orangebook/ob_norm.xlsx # Replace with the path to your file
-          asset_name: orangebook.xlsx           # Replace with the name you want for the uploaded asset
-          asset_content_type: application/octet-stream
+          # EMA and PMDA both require attribution and both feed the merged on-label
+          # product, so the notice travels with the release, not just the repository.
+          # `--notes` (not `--notes-file`) is the flag gh documents as composing with
+          # `--generate-notes`: this text is prepended to the generated changelog.
+          notes=$(cat <<EOF
+          Data assets (\`products/*.yaml\`, \`exports/*\`) are attached from a local build
+          with \`just gh-release ${TAG}\` — they cannot be built on a runner.
 
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/data/drugs/02_intermediate/purplebook/pb_norm.xlsx # Replace with the path to your file
-          asset_name: purplebook.xlsx           # Replace with the name you want for the uploaded asset
-          asset_content_type: application/octet-stream
+          Sources carry differing upstream terms, several requiring attribution.
+          See \`LICENSING.md\`, attached to this release.
+          EOF
+          )
 
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/data/drugs/02_intermediate/ema/ema_norm.xlsx # Replace with the path to your file
-          asset_name: ema.xlsx           # Replace with the name you want for the uploaded asset
-          asset_content_type: application/octet-stream
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG already exists — uploading licensing terms only."
+            gh release upload "$TAG" LICENSING.md --clobber
+          else
+            gh release create "$TAG" LICENSING.md \
+              --draft \
+              --title "MeDIC ${TAG}" \
+              --notes "$notes" \
+              --generate-notes
+          fi
 
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/data/drugs/02_intermediate/pmda/pmda_norm.xlsx # Replace with the path to your file
-          asset_name: pmda.xlsx           # Replace with the name you want for the uploaded asset
-          asset_content_type: application/octet-stream
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/data/drugs/02_intermediate/russia/russia_norm.csv # Replace with the path to your file
-          asset_name: russia.csv          # Replace with the name you want for the uploaded asset
-          asset_content_type: application/octet-stream
-
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/data/drugs/02_intermediate/india/india_norm.csv # Replace with the path to your file
-          asset_name: india.csv           # Replace with the name you want for the uploaded asset
-          asset_content_type: application/octet-stream
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: medi/indications/data/03_primary/matrix_indication_list_hyperrelational.xlsx # Replace with the path to your file
-          asset_name: matrix_indication_list.xlsx           # Replace with the name you want for the uploaded asset
-          asset_content_type: application/octet-stream
-
-      
-
-      
+          gh release view "$TAG" --json url --jq .url

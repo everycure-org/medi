@@ -1,0 +1,16 @@
+validation:
+  cache_dir: references_cache
+  unknown_prefix_severity: INFO
+  skip_prefixes:
+    - DailyMed
+    - FAERS
+    - EMA
+    - PMDA
+    - OrangeBook
+    - PurpleBook
+    - MONDO
+    - DOI
+    - CHEBI
+    - DRUGBANK
+    - RXNORM
+    - MedDRA

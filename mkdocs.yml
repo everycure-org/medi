@@ -1,0 +1,74 @@
+---
+site_name: "MeDIC Schema Docs"
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+  features:
+    - content.tabs.link
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+  font: false
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-]+'
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+watch:
+  - src/medic/schema
+
+validation:
+  nav:
+    omitted_files: ignore
+
+nav:
+  - Home: index.md
+  - Schema Reference: schema/schemas/medic.md
+  - Sources:
+    - Overview: sources/index.md
+    - Drug Sources:
+      - FDA Orange Book: sources/orangebook.md
+      - FDA Purple Book: sources/purplebook.md
+      - EMA: sources/ema.md
+      - PMDA (Japan): sources/pmda.md
+      - Russia: sources/russia.md
+      - India: sources/india.md
+    - On-Label Sources:
+      - FDA DailyMed: sources/dailymed.md
+    - Adverse Event Sources:
+      - PVLens: sources/pvlens.md
+      - FAERS: sources/faers.md
+  - Products:
+    - Overview: products/index.md
+    - Drug List: products/drug-list.md
+    - Disease List: products/disease-list.md
+    - On-Label List: products/on-label-list.md
+    - Adverse Events: products/adverse-events.md
+    - Drug Mappings (SSSOM): products/mappings.md
+    - Research Pipeline: products/research-pipeline.md
+  - Explainers:
+    - The shape of a record: explainers/data-model.md
+    - How a record is built: explainers/record-lifecycle.md
+  - Related Efforts:
+    - Overview: related-efforts/index.md
+    - Open Targets: related-efforts/open-targets.md
+
+exclude_docs: |
+  /templates-linkml/
+  /about.md
+  /elements/
+
+site_url: https://monarch-initiative.github.io/medic/
+repo_url: https://github.com/monarch-initiative/medic

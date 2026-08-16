@@ -205,3 +205,47 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+.DS_Store
+
+# MeDIC generated outputs
+products/*.yaml
+products/*.csv
+products/*.xlsx
+exports/
+cache/*
+!cache/grounding/
+cache/grounding/*
+!cache/grounding/*.json
+!cache/enrichment/
+cache/enrichment/*
+!cache/enrichment/*.json
+references_cache/
+project/
+tmp/
+
+# MeDIC generated data models (can be regenerated)
+src/medic/datamodel/medic.py
+src/medic/datamodel/medic_pydantic.py
+
+# OAK SQLite databases (downloaded on demand)
+*.db
+
+# Generated docs
+docs/schema/*.md
+docs/schema/classes/
+docs/schema/slots/
+docs/schema/enums/
+docs/schema/types/
+elements/
+
+data/raw/
+.DS_Store
+/analysis/changes_refactor
+.claude/scheduled_tasks.lock
+/issues
+/docs/superpowers
+/background
+
+# Manual sources (China CDE + Russia GRLS) are not redistributable — see LICENSING.md.
+# The archive is hosted out-of-band and downloaded into background/; it must never be committed.
+sources/manual-sources.zip

@@ -1,0 +1,90 @@
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[project]
+name = "medic"
+description = "MeDIC: Medicines, Diseases, Indications, and Contraindications - A LinkML-driven knowledge base of drug-disease associations from regulatory sources worldwide."
+authors = [
+  {name = "Marcello De Luca"},
+  {name = "Nicolas Matentzoglu"},
+]
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dynamic = ["version"]
+
+dependencies = [
+  "httpx>=0.28.1",
+  "linkml-runtime>=1.9.4",
+  "linkml-term-validator>=0.4.0rc1",
+  "linkml-reference-validator>=0.1.7",
+  "typer>=0.9.0",
+  "pydantic>=2.0",
+  "oaklib>=0.6.0",
+  "openpyxl>=3.1.0",
+  "requests>=2.31.0",
+  "aiohttp>=3.9.0",
+  "tqdm>=4.66.0",
+  "pandas>=2.0.0",
+  "gilda>=1.1.0",
+  "jellyfish>=1.0.0",
+  "openai>=1.0.0",
+  "anthropic>=0.40.0",
+  "curies>=0.9.0",
+  "datasets>=4.8.4",
+  "pdfplumber>=0.11.9",
+  "litellm>=1.82.6",
+  "babelon>=0.3.6",
+  "deepl>=1.30.0",
+]
+
+[dependency-groups]
+dev = [
+  "linkml>=1.9.3",
+  "mkdocs-material>=8.2.8",
+  "pytest>=7.0",
+  "ruff>=0.4.0",
+]
+research = [
+  "deep-research-client[cyberian]>=0.2.0",
+]
+export = [
+  # Pinned: the KGX export validates every category, predicate and slot it emits against
+  # this exact model (src/medic/export/kgx/biolink.py). A silent model upgrade can change
+  # which predicates exist, so bump it deliberately and re-run tests/test_kgx_export.py.
+  "biolink-model==4.3.7",
+]
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[tool.uv-dynamic-versioning]
+vcs = "git"
+style = "pep440"
+fallback-version = "0.0.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.codespell]
+skip = [
+  "LICENSE",
+  "pyproject.toml",
+  "uv.lock",
+  "project/*",
+  "cache/*",
+  "references_cache/*",
+  "src/medic/datamodel/*.py",
+  "medi/",
+]
+
+[tool.ruff]
+exclude = [
+  "src/medic/datamodel/medic.py",
+  "src/medic/datamodel/medic_pydantic.py",
+  "src/medic/datamodel/__init__.py",
+  "medi/",
+]
