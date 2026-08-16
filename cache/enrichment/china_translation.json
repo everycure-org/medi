@@ -1,0 +1,122 @@
+{
+  "乌美溴铵维兰特罗吸入粉雾剂": {
+    "inn": "umeclidinium and vilanterol",
+    "stripped": "乌美溴铵维兰特罗吸入粉雾剂"
+  },
+  "利伐沙班片": {
+    "inn": "rivaroxaban",
+    "stripped": "利伐沙班"
+  },
+  "卡格列净片": {
+    "inn": "canagliflozin",
+    "stripped": "卡格列净"
+  },
+  "坎地沙坦酯片": {
+    "inn": "candesartan cilexetil",
+    "stripped": "坎地沙坦酯"
+  },
+  "多替阿巴拉米片": {
+    "inn": "dolutegravir and abacavir and lamivudine",
+    "stripped": "多替阿巴拉米"
+  },
+  "头孢呋辛酯片": {
+    "inn": "cefuroxime axetil",
+    "stripped": "头孢呋辛酯"
+  },
+  "头孢氨苄胶囊": {
+    "inn": "cefalexin",
+    "stripped": "头孢氨苄"
+  },
+  "富马酸替诺福韦二吡呋酯片": {
+    "inn": "tenofovir disoproxil",
+    "stripped": "富马酸替诺福韦二吡呋酯"
+  },
+  "左乙拉西坦片": {
+    "inn": "levetiracetam",
+    "stripped": "左乙拉西坦"
+  },
+  "布洛芬颗粒": {
+    "inn": "ibuprofen",
+    "stripped": "布洛芬"
+  },
+  "来曲唑片": {
+    "inn": "letrozole",
+    "stripped": "来曲唑"
+  },
+  "来那度胺胶囊": {
+    "inn": "lenalidomide",
+    "stripped": "来那度胺"
+  },
+  "氟比洛芬酯注射液": {
+    "inn": "flurbiprofen",
+    "stripped": "氟比洛芬酯"
+  },
+  "氢溴酸伏硫西汀片": {
+    "inn": "vortioxetine",
+    "stripped": "氢溴酸伏硫西汀"
+  },
+  "氯氮平片": {
+    "inn": "clozapine",
+    "stripped": "氯氮平"
+  },
+  "瑞舒伐他汀钙片": {
+    "inn": "rosuvastatin",
+    "stripped": "瑞舒伐他汀钙"
+  },
+  "盐酸乙胺丁醇片": {
+    "inn": "ethambutol",
+    "stripped": "盐酸乙胺丁醇"
+  },
+  "盐酸二甲双胍片": {
+    "inn": "metformin",
+    "stripped": "盐酸二甲双胍"
+  },
+  "盐酸二甲双胍缓释片": {
+    "inn": "metformin",
+    "stripped": "盐酸二甲双胍"
+  },
+  "盐酸克林霉素胶囊": {
+    "inn": "clindamycin",
+    "stripped": "盐酸克林霉素"
+  },
+  "盐酸文拉法辛缓释片": {
+    "inn": "venlafaxine",
+    "stripped": "盐酸文拉法辛"
+  },
+  "盐酸环丙沙星片": {
+    "inn": "ciprofloxacin",
+    "stripped": "盐酸环丙沙星"
+  },
+  "苯磺酸氨氯地平片": {
+    "inn": "amlodipine",
+    "stripped": "苯磺酸氨氯地平"
+  },
+  "茚达特罗格隆溴铵 吸入粉雾剂用胶囊": {
+    "inn": "indacaterol and glycopyrronium",
+    "stripped": "茚达特罗格隆溴铵 吸入粉雾剂用"
+  },
+  "草酸艾司西酞普兰片": {
+    "inn": "escitalopram",
+    "stripped": "草酸艾司西酞普兰"
+  },
+  "蒙脱石散": {
+    "inn": "diosmectite",
+    "stripped": "蒙脱石"
+  },
+  "阿那曲唑片": {
+    "inn": "anastrozole",
+    "stripped": "阿那曲唑"
+  },
+  "非那雄胺片": {
+    "inn": "finasteride",
+    "stripped": "非那雄胺"
+  },
+  "马昔腾坦片": {
+    "inn": "macitentan",
+    "stripped": "马昔腾坦"
+  },
+  "马来酸依那普利片": {
+    "inn": "enalapril",
+    "stripped": "马来酸依那普利"
+  }
+}

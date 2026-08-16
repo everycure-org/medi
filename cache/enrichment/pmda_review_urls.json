@@ -1,0 +1,4762 @@
+{
+  "__INDEX__": {
+    "map": {
+      "-": {
+        "product_id": "P201500004",
+        "url": "https://www.pmda.go.jp/files/000213143.pdf",
+        "year": 2015
+      },
+      "abaloparatide": {
+        "product_id": "P20210322006",
+        "url": "https://www.pmda.go.jp/files/000251036.pdf",
+        "year": 2021
+      },
+      "abatacept": {
+        "product_id": "P201000041",
+        "url": "https://www.pmda.go.jp/files/000153322.pdf",
+        "year": 2010
+      },
+      "abraxane": {
+        "product_id": "P20190905002",
+        "url": "https://www.pmda.go.jp/files/000234773.pdf",
+        "year": 2019
+      },
+      "abraxane partial change approval": {
+        "product_id": "P20190905002",
+        "url": "https://www.pmda.go.jp/files/000234773.pdf",
+        "year": 2019
+      },
+      "abrocitinib": {
+        "product_id": "P20211011001",
+        "url": "https://www.pmda.go.jp/files/000251034.pdf",
+        "year": 2021
+      },
+      "aceneuramic acid": {
+        "product_id": "P20240527004",
+        "url": "https://www.pmda.go.jp/files/000273006.pdf",
+        "year": 2024
+      },
+      "acenobel": {
+        "product_id": "P20240527004",
+        "url": "https://www.pmda.go.jp/files/000273006.pdf",
+        "year": 2024
+      },
+      "acoalan": {
+        "product_id": "P20150701001",
+        "url": "https://www.pmda.go.jp/files/000216795.pdf",
+        "year": 2015
+      },
+      "acofide": {
+        "product_id": "P201300021",
+        "url": "https://www.pmda.go.jp/files/000153467.pdf",
+        "year": 2013
+      },
+      "acoramidis": {
+        "product_id": "P20250401001",
+        "url": "https://www.pmda.go.jp/files/000278404.pdf",
+        "year": 2025
+      },
+      "acotiamide": {
+        "product_id": "P201300021",
+        "url": "https://www.pmda.go.jp/files/000153467.pdf",
+        "year": 2013
+      },
+      "actair": {
+        "product_id": "P201500004",
+        "url": "https://www.pmda.go.jp/files/000213143.pdf",
+        "year": 2015
+      },
+      "actemra": {
+        "product_id": "P20220114001",
+        "url": "https://www.pmda.go.jp/files/000246328.pdf",
+        "year": 2022
+      },
+      "actemra initial": {
+        "product_id": "P200800016",
+        "url": "https://www.pmda.go.jp/files/000153709.pdf",
+        "year": 2008
+      },
+      "actemra initial approval": {
+        "product_id": "P200800016",
+        "url": "https://www.pmda.go.jp/files/000153709.pdf",
+        "year": 2008
+      },
+      "actemra partial change approval": {
+        "product_id": "P20220114001",
+        "url": "https://www.pmda.go.jp/files/000246328.pdf",
+        "year": 2022
+      },
+      "adalimumab": {
+        "product_id": "P20161018002",
+        "url": "https://www.pmda.go.jp/files/000224547.pdf",
+        "year": 2016
+      },
+      "adcetris": {
+        "product_id": "P20191210001",
+        "url": "https://www.pmda.go.jp/files/000243154.pdf",
+        "year": 2019
+      },
+      "adcetris initial": {
+        "product_id": "P201400006",
+        "url": "https://www.pmda.go.jp/files/000229787.pdf",
+        "year": 2014
+      },
+      "adcetris initial approval": {
+        "product_id": "P201400006",
+        "url": "https://www.pmda.go.jp/files/000229787.pdf",
+        "year": 2014
+      },
+      "adcetris partial change approval": {
+        "product_id": "P20191210001",
+        "url": "https://www.pmda.go.jp/files/000243154.pdf",
+        "year": 2019
+      },
+      "adempas": {
+        "product_id": "P201300173",
+        "url": "https://www.pmda.go.jp/files/000207309.pdf",
+        "year": 2013
+      },
+      "adlumiz": {
+        "product_id": "P20210113006",
+        "url": "https://www.pmda.go.jp/files/000242929.pdf",
+        "year": 2021
+      },
+      "adsorbed cell culture-derived influenza vaccine (h5n1)": {
+        "product_id": "P20160315003",
+        "url": "https://www.pmda.go.jp/files/000216875.pdf",
+        "year": 2016
+      },
+      "adsorbed cell culture-derived influenza vaccine h5n1 \"kitasato daiichi sankyo\"": {
+        "product_id": "P20160315003",
+        "url": "https://www.pmda.go.jp/files/000216875.pdf",
+        "year": 2016
+      },
+      "adsorbed diphtheria-purified pertussis-tetanus-inactivated polio (sabin strain) combined vaccine": {
+        "product_id": "P201200103",
+        "url": "https://www.pmda.go.jp/files/000153291.pdf",
+        "year": 2012
+      },
+      "adsorbed diphtheria-purified pertussis-tetanus-inactivated polio (salk vaccine) combined vaccine": {
+        "product_id": "P201400110",
+        "url": "https://www.pmda.go.jp/files/000210040.pdf",
+        "year": 2014
+      },
+      "adsorbed influenza vaccine (h5n1)": {
+        "product_id": "P200700057",
+        "url": "https://www.pmda.go.jp/files/000153773.pdf",
+        "year": 2007
+      },
+      "adsorbed influenza vaccine (h5n1) \"biken\"": {
+        "product_id": "P200700058",
+        "url": "https://www.pmda.go.jp/files/000153640.pdf",
+        "year": 2007
+      },
+      "adsorbed influenza vaccine (h5n1) \"hokken\"": {
+        "product_id": "P200700057",
+        "url": "https://www.pmda.go.jp/files/000153773.pdf",
+        "year": 2007
+      },
+      "adynovate": {
+        "product_id": "P20160322005",
+        "url": "https://www.pmda.go.jp/files/000219621.pdf",
+        "year": 2016
+      },
+      "adzynma": {
+        "product_id": "P20240319001",
+        "url": "https://www.pmda.go.jp/files/000272019.pdf",
+        "year": 2024
+      },
+      "afatinib": {
+        "product_id": "P201300171",
+        "url": "https://www.pmda.go.jp/files/000210320.pdf",
+        "year": 2013
+      },
+      "aflibercept": {
+        "product_id": "P20221006001",
+        "url": "https://www.pmda.go.jp/files/000264250.pdf",
+        "year": 2022
+      },
+      "afstyla": {
+        "product_id": "P20171025003",
+        "url": "https://www.pmda.go.jp/files/000231145.pdf",
+        "year": 2017
+      },
+      "airwin": {
+        "product_id": "P20250623003",
+        "url": "https://www.pmda.go.jp/files/000279147.pdf",
+        "year": 2025
+      },
+      "akalux": {
+        "product_id": "P20201013001",
+        "url": "https://www.pmda.go.jp/files/000239770.pdf",
+        "year": 2020
+      },
+      "alabel/alaglio": {
+        "product_id": "P201300043",
+        "url": "https://www.pmda.go.jp/files/000153482.pdf",
+        "year": 2013
+      },
+      "albutrepenonacog alfa": {
+        "product_id": "P20161021003",
+        "url": "https://www.pmda.go.jp/files/000221483.pdf",
+        "year": 2016
+      },
+      "alecensa": {
+        "product_id": "P201400094",
+        "url": "https://www.pmda.go.jp/files/000208811.pdf",
+        "year": 2014
+      },
+      "alectinib": {
+        "product_id": "P201400094",
+        "url": "https://www.pmda.go.jp/files/000208811.pdf",
+        "year": 2014
+      },
+      "alglucosidase alfa": {
+        "product_id": "P200700024",
+        "url": "https://www.pmda.go.jp/files/000153325.pdf",
+        "year": 2007
+      },
+      "alhemo": {
+        "product_id": "P20230911002",
+        "url": "https://www.pmda.go.jp/files/000279143.pdf",
+        "year": 2023
+      },
+      "alirocumab": {
+        "product_id": "P20160701001",
+        "url": "https://www.pmda.go.jp/files/000224582.pdf",
+        "year": 2016
+      },
+      "aliskiren": {
+        "product_id": "P200900037",
+        "url": "https://www.pmda.go.jp/files/000153807.pdf",
+        "year": 2009
+      },
+      "allergen scratch extract positive control \"torii\" histamine di": {
+        "product_id": "P20150924002",
+        "url": "https://www.pmda.go.jp/files/000216840.pdf",
+        "year": 2015
+      },
+      "ambrisentan": {
+        "product_id": "P20210322003",
+        "url": "https://www.pmda.go.jp/files/000248791.pdf",
+        "year": 2021
+      },
+      "amenalief": {
+        "product_id": "P20170619001",
+        "url": "https://www.pmda.go.jp/files/000227731.pdf",
+        "year": 2017
+      },
+      "amenamevir": {
+        "product_id": "P20170619001",
+        "url": "https://www.pmda.go.jp/files/000227731.pdf",
+        "year": 2017
+      },
+      "aminolevulinic acid": {
+        "product_id": "P201300043",
+        "url": "https://www.pmda.go.jp/files/000153482.pdf",
+        "year": 2013
+      },
+      "amivantamab": {
+        "product_id": "P20250415002",
+        "url": "https://www.pmda.go.jp/files/000278396.pdf",
+        "year": 2025
+      },
+      "anagliptin": {
+        "product_id": "P20151221001",
+        "url": "https://www.pmda.go.jp/files/000218646.pdf",
+        "year": 2015
+      },
+      "anamorelin": {
+        "product_id": "P20210113006",
+        "url": "https://www.pmda.go.jp/files/000242929.pdf",
+        "year": 2021
+      },
+      "andembry": {
+        "product_id": "P20250306001",
+        "url": "https://www.pmda.go.jp/files/000277970.pdf",
+        "year": 2025
+      },
+      "anoro ellipta": {
+        "product_id": "P201400076",
+        "url": "https://www.pmda.go.jp/files/000208866.pdf",
+        "year": 2014
+      },
+      "antithrombin gamma": {
+        "product_id": "P20150701001",
+        "url": "https://www.pmda.go.jp/files/000216795.pdf",
+        "year": 2015
+      },
+      "apadamtase alfa": {
+        "product_id": "P20240319001",
+        "url": "https://www.pmda.go.jp/files/000272019.pdf",
+        "year": 2024
+      },
+      "apadamtase alfa / cinaxadamtase alfa": {
+        "product_id": "P20240319001",
+        "url": "https://www.pmda.go.jp/files/000272019.pdf",
+        "year": 2024
+      },
+      "apalutamide": {
+        "product_id": "P20190419001",
+        "url": "https://www.pmda.go.jp/files/000239551.pdf",
+        "year": 2019
+      },
+      "apixaban": {
+        "product_id": "P201200166",
+        "url": "https://www.pmda.go.jp/files/000208682.pdf",
+        "year": 2012
+      },
+      "apremilast": {
+        "product_id": "P20161220001",
+        "url": "https://www.pmda.go.jp/files/000230195.pdf",
+        "year": 2016
+      },
+      "artist": {
+        "product_id": "P20150812001",
+        "url": "https://www.pmda.go.jp/files/000217011.pdf",
+        "year": 2015
+      },
+      "asfotase alfa": {
+        "product_id": "P20150721001",
+        "url": "https://www.pmda.go.jp/files/000213563.pdf",
+        "year": 2015
+      },
+      "aspirin": {
+        "product_id": "P201400017",
+        "url": "https://www.pmda.go.jp/files/000208812.pdf",
+        "year": 2014
+      },
+      "aspirin/lansoprazole": {
+        "product_id": "P201400017",
+        "url": "https://www.pmda.go.jp/files/000208812.pdf",
+        "year": 2014
+      },
+      "asunaprevir": {
+        "product_id": "P20161205001",
+        "url": "https://www.pmda.go.jp/files/000226231.pdf",
+        "year": 2016
+      },
+      "atezolizumab": {
+        "product_id": "P20190904003",
+        "url": "https://www.pmda.go.jp/files/000234772.pdf",
+        "year": 2019
+      },
+      "augtyro": {
+        "product_id": "P20241011002",
+        "url": "https://www.pmda.go.jp/files/000277632.pdf",
+        "year": 2024
+      },
+      "avacopan": {
+        "product_id": "P20211014001",
+        "url": "https://www.pmda.go.jp/files/000250305.pdf",
+        "year": 2021
+      },
+      "avalglucosidase alfa": {
+        "product_id": "P20211007002",
+        "url": "https://www.pmda.go.jp/files/000270056.pdf",
+        "year": 2021
+      },
+      "avastin": {
+        "product_id": "P20160518003",
+        "url": "https://www.pmda.go.jp/files/000224436.pdf",
+        "year": 2016
+      },
+      "avastin initial": {
+        "product_id": "P200700027",
+        "url": "https://www.pmda.go.jp/files/000224437.pdf",
+        "year": 2007
+      },
+      "avastin initial approval": {
+        "product_id": "P200700027",
+        "url": "https://www.pmda.go.jp/files/000224437.pdf",
+        "year": 2007
+      },
+      "avastin partial change approval": {
+        "product_id": "P20160518003",
+        "url": "https://www.pmda.go.jp/files/000224436.pdf",
+        "year": 2016
+      },
+      "avelumab": {
+        "product_id": "P20171024003",
+        "url": "https://www.pmda.go.jp/files/000233296.pdf",
+        "year": 2017
+      },
+      "avigan": {
+        "product_id": "P201400047",
+        "url": "https://www.pmda.go.jp/files/000210319.pdf",
+        "year": 2014
+      },
+      "awiqli": {
+        "product_id": "P20240722001",
+        "url": "https://www.pmda.go.jp/files/000274762.pdf",
+        "year": 2024
+      },
+      "baloxavir marboxil": {
+        "product_id": "P20201118001",
+        "url": "https://www.pmda.go.jp/files/000246924.pdf",
+        "year": 2020
+      },
+      "baricitinib": {
+        "product_id": "P20210419001",
+        "url": "https://www.pmda.go.jp/files/000243207.pdf",
+        "year": 2021
+      },
+      "bavencio": {
+        "product_id": "P20171024003",
+        "url": "https://www.pmda.go.jp/files/000233296.pdf",
+        "year": 2017
+      },
+      "beclabuvir": {
+        "product_id": "P20161205001",
+        "url": "https://www.pmda.go.jp/files/000226231.pdf",
+        "year": 2016
+      },
+      "belimumab": {
+        "product_id": "P20190917002",
+        "url": "https://www.pmda.go.jp/files/000235893.pdf",
+        "year": 2019
+      },
+      "bendamustine": {
+        "product_id": "P20161222002",
+        "url": "https://www.pmda.go.jp/files/000227269.pdf",
+        "year": 2016
+      },
+      "benlysta": {
+        "product_id": "P20190917002",
+        "url": "https://www.pmda.go.jp/files/000235893.pdf",
+        "year": 2019
+      },
+      "benlysta initial": {
+        "product_id": "P20171019002",
+        "url": "https://www.pmda.go.jp/files/000235894.pdf",
+        "year": 2017
+      },
+      "benlysta initial approval": {
+        "product_id": "P20171019002",
+        "url": "https://www.pmda.go.jp/files/000235894.pdf",
+        "year": 2017
+      },
+      "benlysta partial change approval": {
+        "product_id": "P20190917002",
+        "url": "https://www.pmda.go.jp/files/000235893.pdf",
+        "year": 2019
+      },
+      "benralizumab": {
+        "product_id": "P20240422001",
+        "url": "https://www.pmda.go.jp/files/000271106.pdf",
+        "year": 2024
+      },
+      "benzoyl peroxide": {
+        "product_id": "P201500002",
+        "url": "https://www.pmda.go.jp/files/000218938.pdf",
+        "year": 2015
+      },
+      "bepotastine besilate": {
+        "product_id": "P20150615001",
+        "url": "https://www.pmda.go.jp/files/000216694.pdf",
+        "year": 2015
+      },
+      "berotralstat": {
+        "product_id": "P20201124005",
+        "url": "https://www.pmda.go.jp/files/000242285.pdf",
+        "year": 2020
+      },
+      "besponsa": {
+        "product_id": "P20240318003",
+        "url": "https://www.pmda.go.jp/files/000271597.pdf",
+        "year": 2024
+      },
+      "besponsa partial change approval": {
+        "product_id": "P20240318003",
+        "url": "https://www.pmda.go.jp/files/000271597.pdf",
+        "year": 2024
+      },
+      "betanis": {
+        "product_id": "P201100119",
+        "url": "https://www.pmda.go.jp/files/000204240.pdf",
+        "year": 2011
+      },
+      "bevacizumab": {
+        "product_id": "P20160518003",
+        "url": "https://www.pmda.go.jp/files/000224436.pdf",
+        "year": 2016
+      },
+      "bevespi aerosphere": {
+        "product_id": "P20190620002",
+        "url": "https://www.pmda.go.jp/files/000240531.pdf",
+        "year": 2019
+      },
+      "beyonttra": {
+        "product_id": "P20250401001",
+        "url": "https://www.pmda.go.jp/files/000278404.pdf",
+        "year": 2025
+      },
+      "bictegravir": {
+        "product_id": "P20190423002",
+        "url": "https://www.pmda.go.jp/files/000238705.pdf",
+        "year": 2019
+      },
+      "bictegravir /emtricitabine /tenofovir alafenamide": {
+        "product_id": "P20190423002",
+        "url": "https://www.pmda.go.jp/files/000238705.pdf",
+        "year": 2019
+      },
+      "biktarvy": {
+        "product_id": "P20190423002",
+        "url": "https://www.pmda.go.jp/files/000238705.pdf",
+        "year": 2019
+      },
+      "binimetinib": {
+        "product_id": "P20201126004",
+        "url": "https://www.pmda.go.jp/files/000240841.pdf",
+        "year": 2020
+      },
+      "blonanserin": {
+        "product_id": "P20210405001",
+        "url": "https://www.pmda.go.jp/files/000248223.pdf",
+        "year": 2021
+      },
+      "borofalan ( 10 b)": {
+        "product_id": "P20200410001",
+        "url": "https://www.pmda.go.jp/files/000237990.pdf",
+        "year": 2020
+      },
+      "bortezomib": {
+        "product_id": "P20190828003",
+        "url": "https://www.pmda.go.jp/files/000240737.pdf",
+        "year": 2019
+      },
+      "bosentan": {
+        "product_id": "P20150918002",
+        "url": "https://www.pmda.go.jp/files/000218422.pdf",
+        "year": 2015
+      },
+      "botox": {
+        "product_id": "P20150618004",
+        "url": "https://www.pmda.go.jp/files/000216948.pdf",
+        "year": 2015
+      },
+      "botulinum toxin type a": {
+        "product_id": "P20150618004",
+        "url": "https://www.pmda.go.jp/files/000216948.pdf",
+        "year": 2015
+      },
+      "braftovi": {
+        "product_id": "P20201126003",
+        "url": "https://www.pmda.go.jp/files/000240840.pdf",
+        "year": 2020
+      },
+      "braftovi initial": {
+        "product_id": "P20190122005",
+        "url": "https://www.pmda.go.jp/files/000240418.pdf",
+        "year": 2019
+      },
+      "braftovi initial approval": {
+        "product_id": "P20190122005",
+        "url": "https://www.pmda.go.jp/files/000240418.pdf",
+        "year": 2019
+      },
+      "braftovi partial change approval": {
+        "product_id": "P20201126003",
+        "url": "https://www.pmda.go.jp/files/000240840.pdf",
+        "year": 2020
+      },
+      "brentuximab vedotin": {
+        "product_id": "P20191210001",
+        "url": "https://www.pmda.go.jp/files/000243154.pdf",
+        "year": 2019
+      },
+      "brexpiprazole": {
+        "product_id": "P20240115002",
+        "url": "https://www.pmda.go.jp/files/000272245.pdf",
+        "year": 2024
+      },
+      "breztri aerosphere": {
+        "product_id": "P20190620001",
+        "url": "https://www.pmda.go.jp/files/000240532.pdf",
+        "year": 2019
+      },
+      "bridion": {
+        "product_id": "P201000004",
+        "url": "https://www.pmda.go.jp/files/000153538.pdf",
+        "year": 2010
+      },
+      "brodalumab": {
+        "product_id": "P20160705001",
+        "url": "https://www.pmda.go.jp/files/000219040.pdf",
+        "year": 2016
+      },
+      "budesonide": {
+        "product_id": "P20190620001",
+        "url": "https://www.pmda.go.jp/files/000240532.pdf",
+        "year": 2019
+      },
+      "budesonide/ glycopyrronium bromide/formoterol": {
+        "product_id": "P20190620001",
+        "url": "https://www.pmda.go.jp/files/000240532.pdf",
+        "year": 2019
+      },
+      "burosumab": {
+        "product_id": "P20191017002",
+        "url": "https://www.pmda.go.jp/files/000235589.pdf",
+        "year": 2019
+      },
+      "cablivi": {
+        "product_id": "P20221011001",
+        "url": "https://www.pmda.go.jp/files/000265467.pdf",
+        "year": 2022
+      },
+      "camzyos": {
+        "product_id": "P20250403002",
+        "url": "https://www.pmda.go.jp/files/000279144.pdf",
+        "year": 2025
+      },
+      "canakinumab": {
+        "product_id": "P20161213001",
+        "url": "https://www.pmda.go.jp/files/000227995.pdf",
+        "year": 2016
+      },
+      "caplacizumab": {
+        "product_id": "P20221011001",
+        "url": "https://www.pmda.go.jp/files/000265467.pdf",
+        "year": 2022
+      },
+      "capmatinib": {
+        "product_id": "P20200624005",
+        "url": "https://www.pmda.go.jp/files/000238885.pdf",
+        "year": 2020
+      },
+      "carfilzomib": {
+        "product_id": "P20160530002",
+        "url": "https://www.pmda.go.jp/files/000224115.pdf",
+        "year": 2016
+      },
+      "carteolol": {
+        "product_id": "P20160921002",
+        "url": "https://www.pmda.go.jp/files/000223317.pdf",
+        "year": 2016
+      },
+      "carteolol / latanoprost": {
+        "product_id": "P20160921002",
+        "url": "https://www.pmda.go.jp/files/000223317.pdf",
+        "year": 2016
+      },
+      "carvedilol": {
+        "product_id": "P20150812001",
+        "url": "https://www.pmda.go.jp/files/000217011.pdf",
+        "year": 2015
+      },
+      "casirivimab": {
+        "product_id": "P20210719001",
+        "url": "https://www.pmda.go.jp/files/000244787.pdf",
+        "year": 2021
+      },
+      "casirivimab and imdevimab": {
+        "product_id": "P20210719001",
+        "url": "https://www.pmda.go.jp/files/000244787.pdf",
+        "year": 2021
+      },
+      "catridecacog": {
+        "product_id": "P201500030",
+        "url": "https://www.pmda.go.jp/files/000213204.pdf",
+        "year": 2015
+      },
+      "cemiplimab": {
+        "product_id": "P20230120001",
+        "url": "https://www.pmda.go.jp/files/000265791.pdf",
+        "year": 2023
+      },
+      "cerdartolen": {
+        "product_id": "P201300160",
+        "url": "https://www.pmda.go.jp/files/000204241.pdf",
+        "year": 2013
+      },
+      "cerdelga": {
+        "product_id": "P20150604001",
+        "url": "https://www.pmda.go.jp/files/000215814.pdf",
+        "year": 2015
+      },
+      "ceritinib": {
+        "product_id": "P20160318001",
+        "url": "https://www.pmda.go.jp/files/000221838.pdf",
+        "year": 2016
+      },
+      "cervarix": {
+        "product_id": "P200900052",
+        "url": "https://www.pmda.go.jp/files/000153196.pdf",
+        "year": 2009
+      },
+      "cetuximab sarotalocan": {
+        "product_id": "P20201013001",
+        "url": "https://www.pmda.go.jp/files/000239770.pdf",
+        "year": 2020
+      },
+      "cibinqo": {
+        "product_id": "P20211011001",
+        "url": "https://www.pmda.go.jp/files/000251034.pdf",
+        "year": 2021
+      },
+      "cilgavimab": {
+        "product_id": "P20220829001",
+        "url": "https://www.pmda.go.jp/files/000250093.pdf",
+        "year": 2022
+      },
+      "cinaxadamtase alfa": {
+        "product_id": "P20240319001",
+        "url": "https://www.pmda.go.jp/files/000272019.pdf",
+        "year": 2024
+      },
+      "clazosentan": {
+        "product_id": "P20210112001",
+        "url": "https://www.pmda.go.jp/files/000264059.pdf",
+        "year": 2022
+      },
+      "clenafin": {
+        "product_id": "P201400074",
+        "url": "https://www.pmda.go.jp/files/000211073.pdf",
+        "year": 2014
+      },
+      "clindamycin phosphate": {
+        "product_id": "P201500002",
+        "url": "https://www.pmda.go.jp/files/000218938.pdf",
+        "year": 2015
+      },
+      "clindamycin phosphate /benzoyl peroxide": {
+        "product_id": "P201500002",
+        "url": "https://www.pmda.go.jp/files/000218938.pdf",
+        "year": 2015
+      },
+      "clozapine": {
+        "product_id": "P200900024",
+        "url": "https://www.pmda.go.jp/files/000153638.pdf",
+        "year": 2009
+      },
+      "clozaril": {
+        "product_id": "P200900024",
+        "url": "https://www.pmda.go.jp/files/000153638.pdf",
+        "year": 2009
+      },
+      "cobicistat": {
+        "product_id": "P20160621001",
+        "url": "https://www.pmda.go.jp/files/000222430.pdf",
+        "year": 2016
+      },
+      "collagenase (clostridium histolyticum)": {
+        "product_id": "P20150724001",
+        "url": "https://www.pmda.go.jp/files/000215883.pdf",
+        "year": 2015
+      },
+      "comirnaty (note 2) (monovalent, original)": {
+        "product_id": "P20211108001",
+        "url": "https://www.pmda.go.jp/files/000245968.pdf",
+        "year": 2021
+      },
+      "comirnaty (note 2) (monovalent, original) initial": {
+        "product_id": "P20210212001",
+        "url": "https://www.pmda.go.jp/files/000243206.pdf",
+        "year": 2021
+      },
+      "comirnaty (note 2) (monovalent, original) initial approval": {
+        "product_id": "P20210212001",
+        "url": "https://www.pmda.go.jp/files/000243206.pdf",
+        "year": 2021
+      },
+      "comirnaty (note 2) (monovalent, original) partial change approval": {
+        "product_id": "P20211108001",
+        "url": "https://www.pmda.go.jp/files/000245968.pdf",
+        "year": 2021
+      },
+      "comirnaty for 5 to 11 years old (note 2) (bivalent, original/omicron ba.4-5)": {
+        "product_id": "P20230216001",
+        "url": "https://www.pmda.go.jp/files/000253046.pdf",
+        "year": 2023
+      },
+      "comirnaty for 5 to 11 years old (note 2) (bivalent, original/omicron ba.4-5) partial change approval": {
+        "product_id": "P20230216001",
+        "url": "https://www.pmda.go.jp/files/000253046.pdf",
+        "year": 2023
+      },
+      "comirnaty for 5 to 11 years old (note 2) (monovalent, original)": {
+        "product_id": "P20220826003",
+        "url": "https://www.pmda.go.jp/files/000249127.pdf",
+        "year": 2022
+      },
+      "comirnaty for 5 to 11 years old (note 2) (monovalent, original) initial": {
+        "product_id": "P20220117002",
+        "url": "https://www.pmda.go.jp/files/000245994.pdf",
+        "year": 2022
+      },
+      "comirnaty for 5 to 11 years old (note 2) (monovalent, original) initial approval": {
+        "product_id": "P20220117002",
+        "url": "https://www.pmda.go.jp/files/000245994.pdf",
+        "year": 2022
+      },
+      "comirnaty for 5 to 11 years old (note 2) (monovalent, original) partial change approval": {
+        "product_id": "P20220826003",
+        "url": "https://www.pmda.go.jp/files/000249127.pdf",
+        "year": 2022
+      },
+      "comirnaty for 6 months to 4 years old (note 2) (bivalent, original/omicron ba.4-5)": {
+        "product_id": "P20230803001",
+        "url": "https://www.pmda.go.jp/files/000266328.pdf",
+        "year": 2023
+      },
+      "comirnaty for 6 months to 4 years old (note 2) (bivalent, original/omicron ba.4-5) partial change approval": {
+        "product_id": "P20230803001",
+        "url": "https://www.pmda.go.jp/files/000266328.pdf",
+        "year": 2023
+      },
+      "comirnaty for 6 months to 4 years old (note 2) (monovalent, original) initial": {
+        "product_id": "P20220926003",
+        "url": "https://www.pmda.go.jp/files/000249724.pdf",
+        "year": 2022
+      },
+      "comirnaty for 6 months to 4 years old (note 2) (monovalent, original) initial approval": {
+        "product_id": "P20220926003",
+        "url": "https://www.pmda.go.jp/files/000249724.pdf",
+        "year": 2022
+      },
+      "comirnaty rtu (note 2) (bivalent, original/omicron ba.1)": {
+        "product_id": "P20220912001",
+        "url": "https://www.pmda.go.jp/files/000249126.pdf",
+        "year": 2022
+      },
+      "comirnaty rtu (note 2) (bivalent, original/omicron ba.1) partial change approval": {
+        "product_id": "P20220912001",
+        "url": "https://www.pmda.go.jp/files/000249126.pdf",
+        "year": 2022
+      },
+      "comirnaty rtu (note 2) (bivalent, original/omicron ba.4-5)": {
+        "product_id": "P20230803001",
+        "url": "https://www.pmda.go.jp/files/000266328.pdf",
+        "year": 2023
+      },
+      "comirnaty rtu (note 2) (bivalent, original/omicron ba.4-5) partial change approval": {
+        "product_id": "P20230803001",
+        "url": "https://www.pmda.go.jp/files/000266328.pdf",
+        "year": 2023
+      },
+      "concizumab": {
+        "product_id": "P20230911002",
+        "url": "https://www.pmda.go.jp/files/000279143.pdf",
+        "year": 2023
+      },
+      "copegus": {
+        "product_id": "P20170328004",
+        "url": "https://www.pmda.go.jp/files/000227562.pdf",
+        "year": 2017
+      },
+      "copegus partial change approval": {
+        "product_id": "P20170328004",
+        "url": "https://www.pmda.go.jp/files/000227562.pdf",
+        "year": 2017
+      },
+      "corectim": {
+        "product_id": "P20191209001",
+        "url": "https://www.pmda.go.jp/files/000240793.pdf",
+        "year": 2019
+      },
+      "coronavirus (sars-cov-2) rna vaccine": {
+        "product_id": "P20250318001",
+        "url": "https://www.pmda.go.jp/files/000278208.pdf",
+        "year": 2025
+      },
+      "coronavirus (sars-cov-2) rna vaccine (active ingredient: mafb-7256a)": {
+        "product_id": "P20231128001",
+        "url": "https://www.pmda.go.jp/files/000270669.pdf",
+        "year": 2023
+      },
+      "coronavirus (sars-cov-2) rna vaccine (active ingredient: ufrenmeran)": {
+        "product_id": "P20230803003",
+        "url": "https://www.pmda.go.jp/files/000266892.pdf",
+        "year": 2023
+      },
+      "coronavirus (sars-cov-2) rna vaccine (active ingredients of bivalent original": {
+        "product_id": "P20231018002",
+        "url": "https://www.pmda.go.jp/files/000274240.pdf",
+        "year": 2023
+      },
+      "coronavirus (sars-cov-2) rna vaccine (active ingredients of bivalent original/omicron ba.1 vaccine: elasomeran and imelasomeran) (active ingredients of bivalent original/omicron ba.4-5 vaccine: elasomeran and davesomeran) (active ingredient of monovalent omicron xbb.1.5 vaccine: andusomeran)": {
+        "product_id": "P20231018002",
+        "url": "https://www.pmda.go.jp/files/000274240.pdf",
+        "year": 2023
+      },
+      "coronavirus (sars-cov-2) rna vaccine (active ingredients: elasomeran": {
+        "product_id": "P20230727001",
+        "url": "https://www.pmda.go.jp/files/000269293.pdf",
+        "year": 2023
+      },
+      "coronavirus (sars-cov-2) rna vaccine (active ingredients: elasomeran and davesomeran)": {
+        "product_id": "P20230727001",
+        "url": "https://www.pmda.go.jp/files/000269293.pdf",
+        "year": 2023
+      },
+      "coronavirus (sars-cov-2) rna vaccine (active ingredients: tozinameran": {
+        "product_id": "P20230803001",
+        "url": "https://www.pmda.go.jp/files/000266328.pdf",
+        "year": 2023
+      },
+      "coronavirus (sars-cov-2) rna vaccine (active ingredients: tozinameran and famtozinameran)": {
+        "product_id": "P20230803001",
+        "url": "https://www.pmda.go.jp/files/000266328.pdf",
+        "year": 2023
+      },
+      "coronavirus modified uridine rna vaccine (sars-cov-2) (active ingredient: elasomeran)": {
+        "product_id": "P20210519003",
+        "url": "https://www.pmda.go.jp/files/000243267.pdf",
+        "year": 2021
+      },
+      "coronavirus modified uridine rna vaccine (sars-cov-2) (active ingredient: tozinameran)": {
+        "product_id": "P20220117002",
+        "url": "https://www.pmda.go.jp/files/000245994.pdf",
+        "year": 2022
+      },
+      "coronavirus modified uridine rna vaccine (sars-cov-2) (active ingredients: elasomeran": {
+        "product_id": "P20220912003",
+        "url": "https://www.pmda.go.jp/files/000249128.pdf",
+        "year": 2022
+      },
+      "coronavirus modified uridine rna vaccine (sars-cov-2) (active ingredients: elasomeran and imelasomeran)": {
+        "product_id": "P20220912003",
+        "url": "https://www.pmda.go.jp/files/000249128.pdf",
+        "year": 2022
+      },
+      "coronavirus modified uridine rna vaccine (sars-cov-2) (active ingredients: tozinameran": {
+        "product_id": "P20230216001",
+        "url": "https://www.pmda.go.jp/files/000253046.pdf",
+        "year": 2023
+      },
+      "coronavirus modified uridine rna vaccine (sars-cov-2) (active ingredients: tozinameran and famtozinameran)": {
+        "product_id": "P20230216001",
+        "url": "https://www.pmda.go.jp/files/000253046.pdf",
+        "year": 2023
+      },
+      "coronavirus modified uridine rna vaccine (sars-cov-2) (active ingredients: tozinameran and riltozinameran)": {
+        "product_id": "P20220912001",
+        "url": "https://www.pmda.go.jp/files/000249126.pdf",
+        "year": 2022
+      },
+      "cosentyx": {
+        "product_id": "P20151210002",
+        "url": "https://www.pmda.go.jp/files/000216877.pdf",
+        "year": 2015
+      },
+      "cosentyx initial": {
+        "product_id": "P201400171",
+        "url": "https://www.pmda.go.jp/files/000216876.pdf",
+        "year": 2014
+      },
+      "cosentyx initial approval": {
+        "product_id": "P201400171",
+        "url": "https://www.pmda.go.jp/files/000216876.pdf",
+        "year": 2014
+      },
+      "cosentyx partial change approval": {
+        "product_id": "P20151210002",
+        "url": "https://www.pmda.go.jp/files/000216877.pdf",
+        "year": 2015
+      },
+      "covgoze": {
+        "product_id": "P20240719001",
+        "url": "https://www.pmda.go.jp/files/000276160.pdf",
+        "year": 2024
+      },
+      "covid-19 (sars-cov-2) vaccine (recombinant adenovirus vector)": {
+        "product_id": "P20220617001",
+        "url": "https://www.pmda.go.jp/files/000250190.pdf",
+        "year": 2022
+      },
+      "covid-19 (sars-cov-2) vaccine (recombinant chimpanzee adenovirus vector)": {
+        "product_id": "P20210519002",
+        "url": "https://www.pmda.go.jp/files/000250094.pdf",
+        "year": 2021
+      },
+      "crizotinib": {
+        "product_id": "P20170515002",
+        "url": "https://www.pmda.go.jp/files/000228503.pdf",
+        "year": 2017
+      },
+      "crovalimab": {
+        "product_id": "P20240423001",
+        "url": "https://www.pmda.go.jp/files/000273123.pdf",
+        "year": 2024
+      },
+      "crysvita": {
+        "product_id": "P20191017002",
+        "url": "https://www.pmda.go.jp/files/000235589.pdf",
+        "year": 2019
+      },
+      "cymbalta": {
+        "product_id": "P20161209002",
+        "url": "https://www.pmda.go.jp/files/000229930.pdf",
+        "year": 2016
+      },
+      "cymbalta partial change approval": {
+        "product_id": "P20161209002",
+        "url": "https://www.pmda.go.jp/files/000229930.pdf",
+        "year": 2016
+      },
+      "cyramza": {
+        "product_id": "P20160518002",
+        "url": "https://www.pmda.go.jp/files/000219877.pdf",
+        "year": 2016
+      },
+      "cyramza initial": {
+        "product_id": "P201500028",
+        "url": "https://www.pmda.go.jp/files/000219876.pdf",
+        "year": 2015
+      },
+      "cyramza initial approval": {
+        "product_id": "P201500028",
+        "url": "https://www.pmda.go.jp/files/000219876.pdf",
+        "year": 2015
+      },
+      "cyramza partial change approval": {
+        "product_id": "P20160518002",
+        "url": "https://www.pmda.go.jp/files/000219877.pdf",
+        "year": 2016
+      },
+      "dabigatran etexilate methanesulfonate": {
+        "product_id": "P201100019",
+        "url": "https://www.pmda.go.jp/files/000207341.pdf",
+        "year": 2011
+      },
+      "dabrafenib mesilate": {
+        "product_id": "P20180320002",
+        "url": "https://www.pmda.go.jp/files/000237164.pdf",
+        "year": 2018
+      },
+      "daclatasvir": {
+        "product_id": "P20161205001",
+        "url": "https://www.pmda.go.jp/files/000226231.pdf",
+        "year": 2016
+      },
+      "daclatasvir / asunaprevir/beclabuvir": {
+        "product_id": "P20161205001",
+        "url": "https://www.pmda.go.jp/files/000226231.pdf",
+        "year": 2016
+      },
+      "dacomitinib": {
+        "product_id": "P20190109001",
+        "url": "https://www.pmda.go.jp/files/000235181.pdf",
+        "year": 2019
+      },
+      "daichirona": {
+        "product_id": "P20250318001",
+        "url": "https://www.pmda.go.jp/files/000278208.pdf",
+        "year": 2025
+      },
+      "daichirona (monovalent, omicron xbb.1.5)": {
+        "product_id": "P20231128001",
+        "url": "https://www.pmda.go.jp/files/000270669.pdf",
+        "year": 2023
+      },
+      "daichirona (monovalent, omicron xbb.1.5) partial change approval": {
+        "product_id": "P20231128001",
+        "url": "https://www.pmda.go.jp/files/000270669.pdf",
+        "year": 2023
+      },
+      "daichirona (monovalent, original) initial": {
+        "product_id": "P20230803003",
+        "url": "https://www.pmda.go.jp/files/000266892.pdf",
+        "year": 2023
+      },
+      "daichirona (monovalent, original) initial approval": {
+        "product_id": "P20230803003",
+        "url": "https://www.pmda.go.jp/files/000266892.pdf",
+        "year": 2023
+      },
+      "daichirona partial change approval": {
+        "product_id": "P20250318001",
+        "url": "https://www.pmda.go.jp/files/000278208.pdf",
+        "year": 2025
+      },
+      "daklinza": {
+        "product_id": "P201400112",
+        "url": "https://www.pmda.go.jp/files/000209021.pdf",
+        "year": 2014
+      },
+      "damoctocog alfa pegol": {
+        "product_id": "P20181016003",
+        "url": "https://www.pmda.go.jp/files/000229786.pdf",
+        "year": 2018
+      },
+      "danicopan": {
+        "product_id": "P20240214001",
+        "url": "https://www.pmda.go.jp/files/000271107.pdf",
+        "year": 2024
+      },
+      "dapagliflozin propylene glycolate": {
+        "product_id": "P20201126002",
+        "url": "https://www.pmda.go.jp/files/000246621.pdf",
+        "year": 2020
+      },
+      "daratumumab": {
+        "product_id": "P20190828002",
+        "url": "https://www.pmda.go.jp/files/000240736.pdf",
+        "year": 2019
+      },
+      "darinaparsin": {
+        "product_id": "P20220608001",
+        "url": "https://www.pmda.go.jp/files/000263873.pdf",
+        "year": 2022
+      },
+      "darolutamide": {
+        "product_id": "P20200207001",
+        "url": "https://www.pmda.go.jp/files/000236125.pdf",
+        "year": 2020
+      },
+      "darvias": {
+        "product_id": "P20220608001",
+        "url": "https://www.pmda.go.jp/files/000263873.pdf",
+        "year": 2022
+      },
+      "darzalex": {
+        "product_id": "P20190828002",
+        "url": "https://www.pmda.go.jp/files/000240736.pdf",
+        "year": 2019
+      },
+      "darzalex initial": {
+        "product_id": "P20171025001",
+        "url": "https://www.pmda.go.jp/files/000234203.pdf",
+        "year": 2017
+      },
+      "darzalex initial approval": {
+        "product_id": "P20171025001",
+        "url": "https://www.pmda.go.jp/files/000234203.pdf",
+        "year": 2017
+      },
+      "darzalex partial change approval": {
+        "product_id": "P20190828002",
+        "url": "https://www.pmda.go.jp/files/000240736.pdf",
+        "year": 2019
+      },
+      "datopotamab deruxtecan": {
+        "product_id": "P20250120002",
+        "url": "https://www.pmda.go.jp/files/000277284.pdf",
+        "year": 2025
+      },
+      "datroway": {
+        "product_id": "P20250120002",
+        "url": "https://www.pmda.go.jp/files/000277284.pdf",
+        "year": 2025
+      },
+      "davesomeran)": {
+        "product_id": "P20230727001",
+        "url": "https://www.pmda.go.jp/files/000269293.pdf",
+        "year": 2023
+      },
+      "davesomeran) (active ingredient of monovalent omicron xbb.1.5 vaccine: andusomeran)": {
+        "product_id": "P20231018002",
+        "url": "https://www.pmda.go.jp/files/000274240.pdf",
+        "year": 2023
+      },
+      "dayvigo": {
+        "product_id": "P20200203001",
+        "url": "https://www.pmda.go.jp/files/000236878.pdf",
+        "year": 2020
+      },
+      "delamanid": {
+        "product_id": "P201400075",
+        "url": "https://www.pmda.go.jp/files/000209024.pdf",
+        "year": 2014
+      },
+      "delgocitinib": {
+        "product_id": "P20191209001",
+        "url": "https://www.pmda.go.jp/files/000240793.pdf",
+        "year": 2019
+      },
+      "deltyba": {
+        "product_id": "P201400075",
+        "url": "https://www.pmda.go.jp/files/000209024.pdf",
+        "year": 2014
+      },
+      "denosumab": {
+        "product_id": "P20170628002",
+        "url": "https://www.pmda.go.jp/files/000228530.pdf",
+        "year": 2017
+      },
+      "dexmedetomidine": {
+        "product_id": "P20230217003",
+        "url": "https://www.pmda.go.jp/files/000265792.pdf",
+        "year": 2023
+      },
+      "difamilast": {
+        "product_id": "P20211001002",
+        "url": "https://www.pmda.go.jp/files/000250545.pdf",
+        "year": 2021
+      },
+      "diphtheria or tetanus toxoid conjugates)": {
+        "product_id": "P201500029",
+        "url": "https://www.pmda.go.jp/files/000216064.pdf",
+        "year": 2015
+      },
+      "diquafosol": {
+        "product_id": "P201000026",
+        "url": "https://www.pmda.go.jp/files/000153954.pdf",
+        "year": 2010
+      },
+      "diquas": {
+        "product_id": "P201000026",
+        "url": "https://www.pmda.go.jp/files/000153954.pdf",
+        "year": 2010
+      },
+      "dolutegravir": {
+        "product_id": "P201400046",
+        "url": "https://www.pmda.go.jp/files/000209096.pdf",
+        "year": 2014
+      },
+      "donanemab": {
+        "product_id": "P20240920001",
+        "url": "https://www.pmda.go.jp/files/000275604.pdf",
+        "year": 2024
+      },
+      "dried recombinant herpes zoster vaccine (derived from chinese hamster ovary cells)": {
+        "product_id": "P20180329002",
+        "url": "https://www.pmda.go.jp/files/000233792.pdf",
+        "year": 2018
+      },
+      "duac": {
+        "product_id": "P201500002",
+        "url": "https://www.pmda.go.jp/files/000218938.pdf",
+        "year": 2015
+      },
+      "duloxetine": {
+        "product_id": "P20161209002",
+        "url": "https://www.pmda.go.jp/files/000229930.pdf",
+        "year": 2016
+      },
+      "dupilumab": {
+        "product_id": "P20240228001",
+        "url": "https://www.pmda.go.jp/files/000274306.pdf",
+        "year": 2024
+      },
+      "dupixent": {
+        "product_id": "P20240228001",
+        "url": "https://www.pmda.go.jp/files/000274306.pdf",
+        "year": 2024
+      },
+      "dupixent initial": {
+        "product_id": "P20180129001",
+        "url": "https://www.pmda.go.jp/files/000235351.pdf",
+        "year": 2018
+      },
+      "dupixent initial approval": {
+        "product_id": "P20180129001",
+        "url": "https://www.pmda.go.jp/files/000235351.pdf",
+        "year": 2018
+      },
+      "dupixent partial change approval": {
+        "product_id": "P20240228001",
+        "url": "https://www.pmda.go.jp/files/000274306.pdf",
+        "year": 2024
+      },
+      "durvalumab": {
+        "product_id": "P20200814001",
+        "url": "https://www.pmda.go.jp/files/000243599.pdf",
+        "year": 2020
+      },
+      "dutasteride": {
+        "product_id": "P20151001001",
+        "url": "https://www.pmda.go.jp/files/000245812.pdf",
+        "year": 2015
+      },
+      "dysval": {
+        "product_id": "P20220413001",
+        "url": "https://www.pmda.go.jp/files/000252828.pdf",
+        "year": 2022
+      },
+      "ebglyss": {
+        "product_id": "P20240131001",
+        "url": "https://www.pmda.go.jp/files/000270578.pdf",
+        "year": 2024
+      },
+      "eculizumab": {
+        "product_id": "P20180110001",
+        "url": "https://www.pmda.go.jp/files/000231967.pdf",
+        "year": 2018
+      },
+      "edaravone": {
+        "product_id": "P20150625003",
+        "url": "https://www.pmda.go.jp/files/000212453.pdf",
+        "year": 2015
+      },
+      "edoxaban": {
+        "product_id": "P201100072",
+        "url": "https://www.pmda.go.jp/files/000220894.pdf",
+        "year": 2011
+      },
+      "efgartigimod alfa": {
+        "product_id": "P20240322001",
+        "url": "https://www.pmda.go.jp/files/000273743.pdf",
+        "year": 2024
+      },
+      "efient": {
+        "product_id": "P201400039",
+        "url": "https://www.pmda.go.jp/files/000213561.pdf",
+        "year": 2014
+      },
+      "efinaconazole": {
+        "product_id": "P201400074",
+        "url": "https://www.pmda.go.jp/files/000211073.pdf",
+        "year": 2014
+      },
+      "elapegademase": {
+        "product_id": "P20190423001",
+        "url": "https://www.pmda.go.jp/files/000235387.pdf",
+        "year": 2019
+      },
+      "elbasvir": {
+        "product_id": "P20161013004",
+        "url": "https://www.pmda.go.jp/files/000224903.pdf",
+        "year": 2016
+      },
+      "eliglustat": {
+        "product_id": "P20150604001",
+        "url": "https://www.pmda.go.jp/files/000215814.pdf",
+        "year": 2015
+      },
+      "eliquis": {
+        "product_id": "P201200166",
+        "url": "https://www.pmda.go.jp/files/000208682.pdf",
+        "year": 2012
+      },
+      "elobixibat": {
+        "product_id": "P20180201001",
+        "url": "https://www.pmda.go.jp/files/000232054.pdf",
+        "year": 2018
+      },
+      "elotuzumab": {
+        "product_id": "P20161025001",
+        "url": "https://www.pmda.go.jp/files/000233297.pdf",
+        "year": 2016
+      },
+      "eltrombopag olamine": {
+        "product_id": "P20170822001",
+        "url": "https://www.pmda.go.jp/files/000233994.pdf",
+        "year": 2017
+      },
+      "elvitegravir": {
+        "product_id": "P20160621001",
+        "url": "https://www.pmda.go.jp/files/000222430.pdf",
+        "year": 2016
+      },
+      "elvitegravir/cobicistat/ emtricitabine/tenofovir alafenamide": {
+        "product_id": "P20160621001",
+        "url": "https://www.pmda.go.jp/files/000222430.pdf",
+        "year": 2016
+      },
+      "elvitegravir/cobicistat/ emtricitabine/tenofovir disoproxil": {
+        "product_id": "P201300045",
+        "url": "https://www.pmda.go.jp/files/000205730.pdf",
+        "year": 2013
+      },
+      "emgality": {
+        "product_id": "P20210113007",
+        "url": "https://www.pmda.go.jp/files/000247408.pdf",
+        "year": 2021
+      },
+      "emicizumab": {
+        "product_id": "P20180329003",
+        "url": "https://www.pmda.go.jp/files/000236236.pdf",
+        "year": 2018
+      },
+      "empliciti": {
+        "product_id": "P20161025001",
+        "url": "https://www.pmda.go.jp/files/000233297.pdf",
+        "year": 2016
+      },
+      "emtricitabine": {
+        "product_id": "P20190423002",
+        "url": "https://www.pmda.go.jp/files/000238705.pdf",
+        "year": 2019
+      },
+      "emulsion-adjuvanted cell-culture derived influenza ha vaccine (prototype)": {
+        "product_id": "P201500034",
+        "url": "https://www.pmda.go.jp/files/000213511.pdf",
+        "year": 2015
+      },
+      "emulsion-adjuvanted cell-culture derived influenza ha vaccine (prototype) for intramuscular injection \"kaketsuken\"": {
+        "product_id": "P201500034",
+        "url": "https://www.pmda.go.jp/files/000213511.pdf",
+        "year": 2015
+      },
+      "enarodustat": {
+        "product_id": "P20200923001",
+        "url": "https://www.pmda.go.jp/files/000243772.pdf",
+        "year": 2020
+      },
+      "enaroy": {
+        "product_id": "P20200923001",
+        "url": "https://www.pmda.go.jp/files/000243772.pdf",
+        "year": 2020
+      },
+      "encorafenib": {
+        "product_id": "P20201126003",
+        "url": "https://www.pmda.go.jp/files/000240840.pdf",
+        "year": 2020
+      },
+      "enhertu": {
+        "product_id": "P20200918001",
+        "url": "https://www.pmda.go.jp/files/000238707.pdf",
+        "year": 2020
+      },
+      "enhertu initial": {
+        "product_id": "P20200420002",
+        "url": "https://www.pmda.go.jp/files/000238706.pdf",
+        "year": 2020
+      },
+      "enhertu initial approval": {
+        "product_id": "P20200420002",
+        "url": "https://www.pmda.go.jp/files/000238706.pdf",
+        "year": 2020
+      },
+      "enhertu partial change approval": {
+        "product_id": "P20200918001",
+        "url": "https://www.pmda.go.jp/files/000238707.pdf",
+        "year": 2020
+      },
+      "ensitrelvir fumaric acid": {
+        "product_id": "P20240306001",
+        "url": "https://www.pmda.go.jp/files/000273156.pdf",
+        "year": 2024
+      },
+      "entrectinib": {
+        "product_id": "P20190716001",
+        "url": "https://www.pmda.go.jp/files/000232794.pdf",
+        "year": 2019
+      },
+      "epoprostenol": {
+        "product_id": "P20170228001",
+        "url": "https://www.pmda.go.jp/files/000227028.pdf",
+        "year": 2017
+      },
+      "epoprostenol act": {
+        "product_id": "P20170228001",
+        "url": "https://www.pmda.go.jp/files/000227028.pdf",
+        "year": 2017
+      },
+      "epoprostenol act partial change approval": {
+        "product_id": "P20170228001",
+        "url": "https://www.pmda.go.jp/files/000227028.pdf",
+        "year": 2017
+      },
+      "eptacog alfa (activated)": {
+        "product_id": "P20241001001",
+        "url": "https://www.pmda.go.jp/files/000277929.pdf",
+        "year": 2024
+      },
+      "erelsa": {
+        "product_id": "P20161013004",
+        "url": "https://www.pmda.go.jp/files/000224903.pdf",
+        "year": 2016
+      },
+      "eribulin mesilate": {
+        "product_id": "P20160303003",
+        "url": "https://www.pmda.go.jp/files/000219171.pdf",
+        "year": 2016
+      },
+      "erleada": {
+        "product_id": "P20190419001",
+        "url": "https://www.pmda.go.jp/files/000239551.pdf",
+        "year": 2019
+      },
+      "esaxerenone": {
+        "product_id": "P20190109003",
+        "url": "https://www.pmda.go.jp/files/000231769.pdf",
+        "year": 2019
+      },
+      "esflurbiprofen": {
+        "product_id": "P20150930001",
+        "url": "https://www.pmda.go.jp/files/000225702.pdf",
+        "year": 2015
+      },
+      "esflurbiprofen/mentha oil": {
+        "product_id": "P20150930001",
+        "url": "https://www.pmda.go.jp/files/000225702.pdf",
+        "year": 2015
+      },
+      "etelcalcetide": {
+        "product_id": "P20161220003",
+        "url": "https://www.pmda.go.jp/files/000227138.pdf",
+        "year": 2016
+      },
+      "evenity": {
+        "product_id": "P20190122003",
+        "url": "https://www.pmda.go.jp/files/000232793.pdf",
+        "year": 2019
+      },
+      "evocalcet": {
+        "product_id": "P20191213001",
+        "url": "https://www.pmda.go.jp/files/000241166.pdf",
+        "year": 2019
+      },
+      "evolocumab": {
+        "product_id": "P20160125001",
+        "url": "https://www.pmda.go.jp/files/000217925.pdf",
+        "year": 2016
+      },
+      "evrenzo": {
+        "product_id": "P20191007001",
+        "url": "https://www.pmda.go.jp/files/000234811.pdf",
+        "year": 2019
+      },
+      "evusheld": {
+        "product_id": "P20220829001",
+        "url": "https://www.pmda.go.jp/files/000250093.pdf",
+        "year": 2022
+      },
+      "evusheld (note 2)": {
+        "product_id": "P20220829001",
+        "url": "https://www.pmda.go.jp/files/000250093.pdf",
+        "year": 2022
+      },
+      "eylea": {
+        "product_id": "P20221006001",
+        "url": "https://www.pmda.go.jp/files/000264250.pdf",
+        "year": 2022
+      },
+      "eylea partial change approval": {
+        "product_id": "P20221006001",
+        "url": "https://www.pmda.go.jp/files/000264250.pdf",
+        "year": 2022
+      },
+      "ezetimibe": {
+        "product_id": "P20190325001",
+        "url": "https://www.pmda.go.jp/files/000232846.pdf",
+        "year": 2019
+      },
+      "ezetimibe / rosuvastatin": {
+        "product_id": "P20190325001",
+        "url": "https://www.pmda.go.jp/files/000232846.pdf",
+        "year": 2019
+      },
+      "ezharmia": {
+        "product_id": "P20240620001",
+        "url": "https://www.pmda.go.jp/files/000272485.pdf",
+        "year": 2024
+      },
+      "ezharmia initial": {
+        "product_id": "P20221007001",
+        "url": "https://www.pmda.go.jp/files/000269997.pdf",
+        "year": 2022
+      },
+      "ezharmia initial approval": {
+        "product_id": "P20221007001",
+        "url": "https://www.pmda.go.jp/files/000269997.pdf",
+        "year": 2022
+      },
+      "ezharmia partial change approval": {
+        "product_id": "P20240620001",
+        "url": "https://www.pmda.go.jp/files/000272485.pdf",
+        "year": 2024
+      },
+      "fabhalta": {
+        "product_id": "P20240710003",
+        "url": "https://www.pmda.go.jp/files/000275874.pdf",
+        "year": 2024
+      },
+      "famtozinameran)": {
+        "product_id": "P20230803001",
+        "url": "https://www.pmda.go.jp/files/000266328.pdf",
+        "year": 2023
+      },
+      "farydak": {
+        "product_id": "P20150706003",
+        "url": "https://www.pmda.go.jp/files/000212785.pdf",
+        "year": 2015
+      },
+      "fasenra": {
+        "product_id": "P20240422001",
+        "url": "https://www.pmda.go.jp/files/000271106.pdf",
+        "year": 2024
+      },
+      "fasenra initial": {
+        "product_id": "P20180216003",
+        "url": "https://www.pmda.go.jp/files/000236124.pdf",
+        "year": 2018
+      },
+      "fasenra initial approval": {
+        "product_id": "P20180216003",
+        "url": "https://www.pmda.go.jp/files/000236124.pdf",
+        "year": 2018
+      },
+      "fasenra partial change approval": {
+        "product_id": "P20240422001",
+        "url": "https://www.pmda.go.jp/files/000271106.pdf",
+        "year": 2024
+      },
+      "favipiravir": {
+        "product_id": "P201400047",
+        "url": "https://www.pmda.go.jp/files/000210319.pdf",
+        "year": 2014
+      },
+      "feburic": {
+        "product_id": "P20160601001",
+        "url": "https://www.pmda.go.jp/files/000223355.pdf",
+        "year": 2016
+      },
+      "feburic initial": {
+        "product_id": "P201100023",
+        "url": "https://www.pmda.go.jp/files/000223354.pdf",
+        "year": 2011
+      },
+      "feburic initial approval": {
+        "product_id": "P201100023",
+        "url": "https://www.pmda.go.jp/files/000223354.pdf",
+        "year": 2011
+      },
+      "feburic partial change approval": {
+        "product_id": "P20160601001",
+        "url": "https://www.pmda.go.jp/files/000223355.pdf",
+        "year": 2016
+      },
+      "febuxostat": {
+        "product_id": "P20160601001",
+        "url": "https://www.pmda.go.jp/files/000223355.pdf",
+        "year": 2016
+      },
+      "filgotinib": {
+        "product_id": "P20201005005",
+        "url": "https://www.pmda.go.jp/files/000247830.pdf",
+        "year": 2020
+      },
+      "finerenone": {
+        "product_id": "P20220317001",
+        "url": "https://www.pmda.go.jp/files/000264058.pdf",
+        "year": 2022
+      },
+      "flortaucipir ( 18 f)": {
+        "product_id": "P20250107001",
+        "url": "https://www.pmda.go.jp/files/000277406.pdf",
+        "year": 2025
+      },
+      "formoterol": {
+        "product_id": "P20190620002",
+        "url": "https://www.pmda.go.jp/files/000240531.pdf",
+        "year": 2019
+      },
+      "forodesine": {
+        "product_id": "P20170406002",
+        "url": "https://www.pmda.go.jp/files/000226817.pdf",
+        "year": 2017
+      },
+      "forteo": {
+        "product_id": "P201000037",
+        "url": "https://www.pmda.go.jp/files/000207926.pdf",
+        "year": 2010
+      },
+      "forxiga": {
+        "product_id": "P20201126002",
+        "url": "https://www.pmda.go.jp/files/000246621.pdf",
+        "year": 2020
+      },
+      "forxiga initial": {
+        "product_id": "P201400016",
+        "url": "https://www.pmda.go.jp/files/000210230.pdf",
+        "year": 2014
+      },
+      "forxiga initial approval": {
+        "product_id": "P201400016",
+        "url": "https://www.pmda.go.jp/files/000210230.pdf",
+        "year": 2014
+      },
+      "forxiga partial change approval": {
+        "product_id": "P20201126002",
+        "url": "https://www.pmda.go.jp/files/000246621.pdf",
+        "year": 2020
+      },
+      "fosaprepitant meglumine": {
+        "product_id": "P20160308003",
+        "url": "https://www.pmda.go.jp/files/000217926.pdf",
+        "year": 2016
+      },
+      "freeze-dried polyethylene glycol-treated human normal immunoglobulin": {
+        "product_id": "P20160928001",
+        "url": "https://www.pmda.go.jp/files/000223352.pdf",
+        "year": 2016
+      },
+      "freeze-dried smallpox vaccine prepared in cell culture": {
+        "product_id": "P20220802001",
+        "url": "https://www.pmda.go.jp/files/000247943.pdf",
+        "year": 2022
+      },
+      "freeze-dried smallpox vaccine prepared in cell culture lc16 “kmb”": {
+        "product_id": "P20220802001",
+        "url": "https://www.pmda.go.jp/files/000247943.pdf",
+        "year": 2022
+      },
+      "freeze-dried smallpox vaccine prepared in cell culture lc16 “kmb” partial change approval": {
+        "product_id": "P20220802001",
+        "url": "https://www.pmda.go.jp/files/000247943.pdf",
+        "year": 2022
+      },
+      "futibatinib": {
+        "product_id": "P20230704001",
+        "url": "https://www.pmda.go.jp/files/000267944.pdf",
+        "year": 2023
+      },
+      "galafold": {
+        "product_id": "P20180409001",
+        "url": "https://www.pmda.go.jp/files/000233695.pdf",
+        "year": 2018
+      },
+      "galcanezumab": {
+        "product_id": "P20210113007",
+        "url": "https://www.pmda.go.jp/files/000247408.pdf",
+        "year": 2021
+      },
+      "garadacimab": {
+        "product_id": "P20250306001",
+        "url": "https://www.pmda.go.jp/files/000277970.pdf",
+        "year": 2025
+      },
+      "garenoxacin mesilate": {
+        "product_id": "P200700040",
+        "url": "https://www.pmda.go.jp/files/000153135.pdf",
+        "year": 2007
+      },
+      "gefapixant citrate": {
+        "product_id": "P20210107001",
+        "url": "https://www.pmda.go.jp/files/000263285.pdf",
+        "year": 2022
+      },
+      "geninax": {
+        "product_id": "P200700040",
+        "url": "https://www.pmda.go.jp/files/000153135.pdf",
+        "year": 2007
+      },
+      "genvoya": {
+        "product_id": "P20160621001",
+        "url": "https://www.pmda.go.jp/files/000222430.pdf",
+        "year": 2016
+      },
+      "gilteritinib": {
+        "product_id": "P20181016002",
+        "url": "https://www.pmda.go.jp/files/000228502.pdf",
+        "year": 2018
+      },
+      "gimeracil": {
+        "product_id": "P20221128002",
+        "url": "https://www.pmda.go.jp/files/000267330.pdf",
+        "year": 2022
+      },
+      "giotrif": {
+        "product_id": "P201300171",
+        "url": "https://www.pmda.go.jp/files/000210320.pdf",
+        "year": 2013
+      },
+      "glecaprevir": {
+        "product_id": "P20171013002",
+        "url": "https://www.pmda.go.jp/files/000230308.pdf",
+        "year": 2017
+      },
+      "glecaprevir /pibrentasvir": {
+        "product_id": "P20171013002",
+        "url": "https://www.pmda.go.jp/files/000230308.pdf",
+        "year": 2017
+      },
+      "glycopyrronium bromide": {
+        "product_id": "P20190620002",
+        "url": "https://www.pmda.go.jp/files/000240531.pdf",
+        "year": 2019
+      },
+      "glycopyrronium bromide/ formoterol": {
+        "product_id": "P20190620002",
+        "url": "https://www.pmda.go.jp/files/000240531.pdf",
+        "year": 2019
+      },
+      "goofice": {
+        "product_id": "P20180201001",
+        "url": "https://www.pmda.go.jp/files/000232054.pdf",
+        "year": 2018
+      },
+      "grazoprevir": {
+        "product_id": "P20161013003",
+        "url": "https://www.pmda.go.jp/files/000224902.pdf",
+        "year": 2016
+      },
+      "grazyna": {
+        "product_id": "P20161013003",
+        "url": "https://www.pmda.go.jp/files/000224902.pdf",
+        "year": 2016
+      },
+      "guanfacine": {
+        "product_id": "P20190612001",
+        "url": "https://www.pmda.go.jp/files/000235724.pdf",
+        "year": 2019
+      },
+      "guselkumab": {
+        "product_id": "P20180402005",
+        "url": "https://www.pmda.go.jp/files/000234741.pdf",
+        "year": 2018
+      },
+      "halaven": {
+        "product_id": "P20160303003",
+        "url": "https://www.pmda.go.jp/files/000219171.pdf",
+        "year": 2016
+      },
+      "halaven initial": {
+        "product_id": "P201100077",
+        "url": "https://www.pmda.go.jp/files/000219170.pdf",
+        "year": 2011
+      },
+      "halaven initial approval": {
+        "product_id": "P201100077",
+        "url": "https://www.pmda.go.jp/files/000219170.pdf",
+        "year": 2011
+      },
+      "halaven partial change approval": {
+        "product_id": "P20160303003",
+        "url": "https://www.pmda.go.jp/files/000219171.pdf",
+        "year": 2016
+      },
+      "harvoni": {
+        "product_id": "P20150615003",
+        "url": "https://www.pmda.go.jp/files/000215262.pdf",
+        "year": 2015
+      },
+      "hemangiol": {
+        "product_id": "P20160728001",
+        "url": "https://www.pmda.go.jp/files/000223356.pdf",
+        "year": 2016
+      },
+      "hemlibra": {
+        "product_id": "P20180329003",
+        "url": "https://www.pmda.go.jp/files/000236236.pdf",
+        "year": 2018
+      },
+      "herceptin": {
+        "product_id": "P20220323002",
+        "url": "https://www.pmda.go.jp/files/000263433.pdf",
+        "year": 2022
+      },
+      "herceptin partial change approval": {
+        "product_id": "P20220323002",
+        "url": "https://www.pmda.go.jp/files/000263433.pdf",
+        "year": 2022
+      },
+      "histamine di": {
+        "product_id": "P20150924002",
+        "url": "https://www.pmda.go.jp/files/000216840.pdf",
+        "year": 2015
+      },
+      "hiyasta": {
+        "product_id": "P20210706001",
+        "url": "https://www.pmda.go.jp/files/000250457.pdf",
+        "year": 2021
+      },
+      "humira": {
+        "product_id": "P20161018002",
+        "url": "https://www.pmda.go.jp/files/000224547.pdf",
+        "year": 2016
+      },
+      "humira partial change approval": {
+        "product_id": "P20161018002",
+        "url": "https://www.pmda.go.jp/files/000224547.pdf",
+        "year": 2016
+      },
+      "hympavzi": {
+        "product_id": "P20250116001",
+        "url": "https://www.pmda.go.jp/files/000278381.pdf",
+        "year": 2025
+      },
+      "ibrutinib": {
+        "product_id": "P20230213002",
+        "url": "https://www.pmda.go.jp/files/000266405.pdf",
+        "year": 2023
+      },
+      "idarucizumab": {
+        "product_id": "P20161019001",
+        "url": "https://www.pmda.go.jp/files/000222407.pdf",
+        "year": 2016
+      },
+      "idelvion": {
+        "product_id": "P20161021003",
+        "url": "https://www.pmda.go.jp/files/000221483.pdf",
+        "year": 2016
+      },
+      "ilaris": {
+        "product_id": "P20161213001",
+        "url": "https://www.pmda.go.jp/files/000227995.pdf",
+        "year": 2016
+      },
+      "ilaris partial change approval": {
+        "product_id": "P20161213001",
+        "url": "https://www.pmda.go.jp/files/000227995.pdf",
+        "year": 2016
+      },
+      "imbruvica": {
+        "product_id": "P20230213002",
+        "url": "https://www.pmda.go.jp/files/000266405.pdf",
+        "year": 2023
+      },
+      "imbruvica partial change approval": {
+        "product_id": "P20230213002",
+        "url": "https://www.pmda.go.jp/files/000266405.pdf",
+        "year": 2023
+      },
+      "imdevimab": {
+        "product_id": "P20210719001",
+        "url": "https://www.pmda.go.jp/files/000244787.pdf",
+        "year": 2021
+      },
+      "imeglimin": {
+        "product_id": "P20210630002",
+        "url": "https://www.pmda.go.jp/files/000246722.pdf",
+        "year": 2021
+      },
+      "imelasomeran)": {
+        "product_id": "P20220912003",
+        "url": "https://www.pmda.go.jp/files/000249128.pdf",
+        "year": 2022
+      },
+      "imelasomeran) (active ingredients of bivalent original": {
+        "product_id": "P20231018002",
+        "url": "https://www.pmda.go.jp/files/000274240.pdf",
+        "year": 2023
+      },
+      "imfinzi": {
+        "product_id": "P20200814001",
+        "url": "https://www.pmda.go.jp/files/000243599.pdf",
+        "year": 2020
+      },
+      "imfinzi initial": {
+        "product_id": "P20180727001",
+        "url": "https://www.pmda.go.jp/files/000238551.pdf",
+        "year": 2018
+      },
+      "imfinzi initial approval": {
+        "product_id": "P20180727001",
+        "url": "https://www.pmda.go.jp/files/000238551.pdf",
+        "year": 2018
+      },
+      "imfinzi partial change approval": {
+        "product_id": "P20200814001",
+        "url": "https://www.pmda.go.jp/files/000243599.pdf",
+        "year": 2020
+      },
+      "inavir": {
+        "product_id": "P20190522002",
+        "url": "https://www.pmda.go.jp/files/000239716.pdf",
+        "year": 2019
+      },
+      "inavir initial": {
+        "product_id": "P201000050",
+        "url": "https://www.pmda.go.jp/files/000211260.pdf",
+        "year": 2010
+      },
+      "inavir initial approval": {
+        "product_id": "P201000050",
+        "url": "https://www.pmda.go.jp/files/000211260.pdf",
+        "year": 2010
+      },
+      "inavir partial change approval": {
+        "product_id": "P20190522002",
+        "url": "https://www.pmda.go.jp/files/000239716.pdf",
+        "year": 2019
+      },
+      "infliximab": {
+        "product_id": "P20150824001",
+        "url": "https://www.pmda.go.jp/files/000213562.pdf",
+        "year": 2015
+      },
+      "inotuzumab ozogamicin": {
+        "product_id": "P20240318003",
+        "url": "https://www.pmda.go.jp/files/000271597.pdf",
+        "year": 2024
+      },
+      "insulin aspart": {
+        "product_id": "P201200167",
+        "url": "https://www.pmda.go.jp/files/000153726.pdf",
+        "year": 2012
+      },
+      "insulin degludec": {
+        "product_id": "P20150813001",
+        "url": "https://www.pmda.go.jp/files/000269814.pdf",
+        "year": 2015
+      },
+      "insulin degludec / insulin aspart": {
+        "product_id": "P201200167",
+        "url": "https://www.pmda.go.jp/files/000153726.pdf",
+        "year": 2012
+      },
+      "insulin glargine [insulin glargine biosimilar 1]": {
+        "product_id": "P201400152",
+        "url": "https://www.pmda.go.jp/files/000210092.pdf",
+        "year": 2014
+      },
+      "insulin glargine bs [lilly]": {
+        "product_id": "P201400152",
+        "url": "https://www.pmda.go.jp/files/000210092.pdf",
+        "year": 2014
+      },
+      "insulin icodec": {
+        "product_id": "P20240722001",
+        "url": "https://www.pmda.go.jp/files/000274762.pdf",
+        "year": 2024
+      },
+      "intuniv": {
+        "product_id": "P20190612001",
+        "url": "https://www.pmda.go.jp/files/000235724.pdf",
+        "year": 2019
+      },
+      "intuniv partial change approval": {
+        "product_id": "P20190612001",
+        "url": "https://www.pmda.go.jp/files/000235724.pdf",
+        "year": 2019
+      },
+      "ipilimumab": {
+        "product_id": "P20201002002",
+        "url": "https://www.pmda.go.jp/files/000244665.pdf",
+        "year": 2020
+      },
+      "ipragliflozin l-proline": {
+        "product_id": "P20181225001",
+        "url": "https://www.pmda.go.jp/files/000230401.pdf",
+        "year": 2018
+      },
+      "iptacopan": {
+        "product_id": "P20240710003",
+        "url": "https://www.pmda.go.jp/files/000275874.pdf",
+        "year": 2024
+      },
+      "irribow": {
+        "product_id": "P201500048",
+        "url": "https://www.pmda.go.jp/files/000216189.pdf",
+        "year": 2015
+      },
+      "isatuximab": {
+        "product_id": "P20200710001",
+        "url": "https://www.pmda.go.jp/files/000242148.pdf",
+        "year": 2020
+      },
+      "isentress": {
+        "product_id": "P200800025",
+        "url": "https://www.pmda.go.jp/files/000153689.pdf",
+        "year": 2008
+      },
+      "istodax": {
+        "product_id": "P20170628001",
+        "url": "https://www.pmda.go.jp/files/000233298.pdf",
+        "year": 2017
+      },
+      "istradefylline": {
+        "product_id": "P201300035",
+        "url": "https://www.pmda.go.jp/files/000153870.pdf",
+        "year": 2013
+      },
+      "ixazomib citrate": {
+        "product_id": "P20170405001",
+        "url": "https://www.pmda.go.jp/files/000225743.pdf",
+        "year": 2017
+      },
+      "ixekizumab": {
+        "product_id": "P20160725001",
+        "url": "https://www.pmda.go.jp/files/000224346.pdf",
+        "year": 2016
+      },
+      "izcargo": {
+        "product_id": "P20210402002",
+        "url": "https://www.pmda.go.jp/files/000242410.pdf",
+        "year": 2021
+      },
+      "januvia/glactiv": {
+        "product_id": "P200900043",
+        "url": "https://www.pmda.go.jp/files/000153174.pdf",
+        "year": 2009
+      },
+      "jaypirca": {
+        "product_id": "P20240710001",
+        "url": "https://www.pmda.go.jp/files/000275223.pdf",
+        "year": 2024
+      },
+      "jcovden": {
+        "product_id": "P20220617001",
+        "url": "https://www.pmda.go.jp/files/000250190.pdf",
+        "year": 2022
+      },
+      "jeselhy": {
+        "product_id": "P20220706001",
+        "url": "https://www.pmda.go.jp/files/000252522.pdf",
+        "year": 2022
+      },
+      "jivi": {
+        "product_id": "P20181016003",
+        "url": "https://www.pmda.go.jp/files/000229786.pdf",
+        "year": 2018
+      },
+      "jyseleca": {
+        "product_id": "P20201005005",
+        "url": "https://www.pmda.go.jp/files/000247830.pdf",
+        "year": 2020
+      },
+      "kadcyla": {
+        "product_id": "P201300137",
+        "url": "https://www.pmda.go.jp/files/000153735.pdf",
+        "year": 2013
+      },
+      "kanuma": {
+        "product_id": "P20160425001",
+        "url": "https://www.pmda.go.jp/files/000219254.pdf",
+        "year": 2016
+      },
+      "kavigale": {
+        "product_id": "P20250124001",
+        "url": "https://www.pmda.go.jp/files/000277669.pdf",
+        "year": 2025
+      },
+      "kenketu glovenin-i": {
+        "product_id": "P20160928001",
+        "url": "https://www.pmda.go.jp/files/000223352.pdf",
+        "year": 2016
+      },
+      "kenketu glovenin-i partial change approval": {
+        "product_id": "P20160928001",
+        "url": "https://www.pmda.go.jp/files/000223352.pdf",
+        "year": 2016
+      },
+      "kerendia": {
+        "product_id": "P20220317001",
+        "url": "https://www.pmda.go.jp/files/000264058.pdf",
+        "year": 2022
+      },
+      "kevzara": {
+        "product_id": "P20170929001",
+        "url": "https://www.pmda.go.jp/files/000226413.pdf",
+        "year": 2017
+      },
+      "keytruda": {
+        "product_id": "P20200812001",
+        "url": "https://www.pmda.go.jp/files/000245967.pdf",
+        "year": 2020
+      },
+      "keytruda initial": {
+        "product_id": "P20161025002",
+        "url": "https://www.pmda.go.jp/files/000226881.pdf",
+        "year": 2016
+      },
+      "keytruda initial approval": {
+        "product_id": "P20161025002",
+        "url": "https://www.pmda.go.jp/files/000226881.pdf",
+        "year": 2016
+      },
+      "keytruda partial change approval": {
+        "product_id": "P20200812001",
+        "url": "https://www.pmda.go.jp/files/000245967.pdf",
+        "year": 2020
+      },
+      "kisunla": {
+        "product_id": "P20240920001",
+        "url": "https://www.pmda.go.jp/files/000275604.pdf",
+        "year": 2024
+      },
+      "kostaive": {
+        "product_id": "P20240917001",
+        "url": "https://www.pmda.go.jp/files/000277423.pdf",
+        "year": 2024
+      },
+      "kostaive initial": {
+        "product_id": "P20231122002",
+        "url": "https://www.pmda.go.jp/files/000269813.pdf",
+        "year": 2023
+      },
+      "kostaive initial approval": {
+        "product_id": "P20231122002",
+        "url": "https://www.pmda.go.jp/files/000269813.pdf",
+        "year": 2023
+      },
+      "kostaive partial change approval": {
+        "product_id": "P20240917001",
+        "url": "https://www.pmda.go.jp/files/000277423.pdf",
+        "year": 2024
+      },
+      "kyprolis": {
+        "product_id": "P20160530002",
+        "url": "https://www.pmda.go.jp/files/000224115.pdf",
+        "year": 2016
+      },
+      "lagevrio": {
+        "product_id": "P20211223001",
+        "url": "https://www.pmda.go.jp/files/000245005.pdf",
+        "year": 2021
+      },
+      "lagevrio (note 2)": {
+        "product_id": "P20211223001",
+        "url": "https://www.pmda.go.jp/files/000245005.pdf",
+        "year": 2021
+      },
+      "laninamivir octanoate": {
+        "product_id": "P20190522002",
+        "url": "https://www.pmda.go.jp/files/000239716.pdf",
+        "year": 2019
+      },
+      "lansoprazole": {
+        "product_id": "P201400017",
+        "url": "https://www.pmda.go.jp/files/000208812.pdf",
+        "year": 2014
+      },
+      "laserphyrin": {
+        "product_id": "P201500050",
+        "url": "https://www.pmda.go.jp/files/000216837.pdf",
+        "year": 2015
+      },
+      "latanoprost": {
+        "product_id": "P20160921002",
+        "url": "https://www.pmda.go.jp/files/000223317.pdf",
+        "year": 2016
+      },
+      "lazcluze": {
+        "product_id": "P20250415003",
+        "url": "https://www.pmda.go.jp/files/000278385.pdf",
+        "year": 2025
+      },
+      "lazertinib mesilate": {
+        "product_id": "P20250415003",
+        "url": "https://www.pmda.go.jp/files/000278385.pdf",
+        "year": 2025
+      },
+      "lebrikizumab": {
+        "product_id": "P20240131001",
+        "url": "https://www.pmda.go.jp/files/000270578.pdf",
+        "year": 2024
+      },
+      "lecanemab": {
+        "product_id": "P20230919001",
+        "url": "https://www.pmda.go.jp/files/000267068.pdf",
+        "year": 2023
+      },
+      "ledipasvir acetonate": {
+        "product_id": "P20150615003",
+        "url": "https://www.pmda.go.jp/files/000215262.pdf",
+        "year": 2015
+      },
+      "ledipasvir acetonate/sofosbuvir": {
+        "product_id": "P20150615003",
+        "url": "https://www.pmda.go.jp/files/000215262.pdf",
+        "year": 2015
+      },
+      "lemborexant": {
+        "product_id": "P20200203001",
+        "url": "https://www.pmda.go.jp/files/000236878.pdf",
+        "year": 2020
+      },
+      "lenalidomide": {
+        "product_id": "P20170306001",
+        "url": "https://www.pmda.go.jp/files/000228384.pdf",
+        "year": 2017
+      },
+      "lenvatinib mesilate": {
+        "product_id": "P20210318004",
+        "url": "https://www.pmda.go.jp/files/000246143.pdf",
+        "year": 2021
+      },
+      "lenvima": {
+        "product_id": "P20210318004",
+        "url": "https://www.pmda.go.jp/files/000246143.pdf",
+        "year": 2021
+      },
+      "lenvima initial": {
+        "product_id": "P201500005",
+        "url": "https://www.pmda.go.jp/files/000210264.pdf",
+        "year": 2015
+      },
+      "lenvima initial approval": {
+        "product_id": "P201500005",
+        "url": "https://www.pmda.go.jp/files/000210264.pdf",
+        "year": 2015
+      },
+      "lenvima partial change approval": {
+        "product_id": "P20210318004",
+        "url": "https://www.pmda.go.jp/files/000246143.pdf",
+        "year": 2021
+      },
+      "leqembi": {
+        "product_id": "P20230919001",
+        "url": "https://www.pmda.go.jp/files/000267068.pdf",
+        "year": 2023
+      },
+      "letermovir": {
+        "product_id": "P20180402007",
+        "url": "https://www.pmda.go.jp/files/000232850.pdf",
+        "year": 2018
+      },
+      "lialda": {
+        "product_id": "P20250702001",
+        "url": "https://www.pmda.go.jp/files/000278663.pdf",
+        "year": 2025
+      },
+      "lialda partial change approval": {
+        "product_id": "P20250702001",
+        "url": "https://www.pmda.go.jp/files/000278663.pdf",
+        "year": 2025
+      },
+      "libtayo": {
+        "product_id": "P20230120001",
+        "url": "https://www.pmda.go.jp/files/000265791.pdf",
+        "year": 2023
+      },
+      "liraglutide": {
+        "product_id": "P201000012",
+        "url": "https://www.pmda.go.jp/files/000153180.pdf",
+        "year": 2010
+      },
+      "litfulo": {
+        "product_id": "P20230628001",
+        "url": "https://www.pmda.go.jp/files/000266925.pdf",
+        "year": 2023
+      },
+      "livalo": {
+        "product_id": "P20150703001",
+        "url": "https://www.pmda.go.jp/files/000221617.pdf",
+        "year": 2015
+      },
+      "livtencity": {
+        "product_id": "P20240628002",
+        "url": "https://www.pmda.go.jp/files/000276092.pdf",
+        "year": 2024
+      },
+      "lixiana": {
+        "product_id": "P201100072",
+        "url": "https://www.pmda.go.jp/files/000220894.pdf",
+        "year": 2011
+      },
+      "lixisenatide": {
+        "product_id": "P201300098",
+        "url": "https://www.pmda.go.jp/files/000153885.pdf",
+        "year": 2013
+      },
+      "lonasen": {
+        "product_id": "P20210405001",
+        "url": "https://www.pmda.go.jp/files/000248223.pdf",
+        "year": 2021
+      },
+      "lonasen partial change approval": {
+        "product_id": "P20210405001",
+        "url": "https://www.pmda.go.jp/files/000248223.pdf",
+        "year": 2021
+      },
+      "lonoctocog alfa": {
+        "product_id": "P20171025003",
+        "url": "https://www.pmda.go.jp/files/000231145.pdf",
+        "year": 2017
+      },
+      "lonsurf": {
+        "product_id": "P20190828001",
+        "url": "https://www.pmda.go.jp/files/000233503.pdf",
+        "year": 2019
+      },
+      "lonsurf initial": {
+        "product_id": "P201400019",
+        "url": "https://www.pmda.go.jp/files/000207987.pdf",
+        "year": 2014
+      },
+      "lonsurf initial approval": {
+        "product_id": "P201400019",
+        "url": "https://www.pmda.go.jp/files/000207987.pdf",
+        "year": 2014
+      },
+      "lonsurf partial change approval": {
+        "product_id": "P20190828001",
+        "url": "https://www.pmda.go.jp/files/000233503.pdf",
+        "year": 2019
+      },
+      "loqoa": {
+        "product_id": "P20150930001",
+        "url": "https://www.pmda.go.jp/files/000225702.pdf",
+        "year": 2015
+      },
+      "lorbrena": {
+        "product_id": "P20181019001",
+        "url": "https://www.pmda.go.jp/files/000228981.pdf",
+        "year": 2018
+      },
+      "lorlatinib": {
+        "product_id": "P20181019001",
+        "url": "https://www.pmda.go.jp/files/000228981.pdf",
+        "year": 2018
+      },
+      "lumicef": {
+        "product_id": "P20160705001",
+        "url": "https://www.pmda.go.jp/files/000219040.pdf",
+        "year": 2016
+      },
+      "lupkynis": {
+        "product_id": "P20240925004",
+        "url": "https://www.pmda.go.jp/files/000277843.pdf",
+        "year": 2024
+      },
+      "lusutrombopag": {
+        "product_id": "P20150917001",
+        "url": "https://www.pmda.go.jp/files/000215708.pdf",
+        "year": 2015
+      },
+      "lyfnua": {
+        "product_id": "P20210107001",
+        "url": "https://www.pmda.go.jp/files/000263285.pdf",
+        "year": 2022
+      },
+      "lynparza": {
+        "product_id": "P20230824001",
+        "url": "https://www.pmda.go.jp/files/000269956.pdf",
+        "year": 2023
+      },
+      "lynparza partial change approval": {
+        "product_id": "P20230824001",
+        "url": "https://www.pmda.go.jp/files/000269956.pdf",
+        "year": 2023
+      },
+      "lytgobi": {
+        "product_id": "P20230704001",
+        "url": "https://www.pmda.go.jp/files/000267944.pdf",
+        "year": 2023
+      },
+      "lyxumia": {
+        "product_id": "P201300098",
+        "url": "https://www.pmda.go.jp/files/000153885.pdf",
+        "year": 2013
+      },
+      "macugen": {
+        "product_id": "P200800028",
+        "url": "https://www.pmda.go.jp/files/000153104.pdf",
+        "year": 2008
+      },
+      "maribavir": {
+        "product_id": "P20240628002",
+        "url": "https://www.pmda.go.jp/files/000276092.pdf",
+        "year": 2024
+      },
+      "marstacimab": {
+        "product_id": "P20250116001",
+        "url": "https://www.pmda.go.jp/files/000278381.pdf",
+        "year": 2025
+      },
+      "mavacamten": {
+        "product_id": "P20250403002",
+        "url": "https://www.pmda.go.jp/files/000279144.pdf",
+        "year": 2025
+      },
+      "maviret": {
+        "product_id": "P20171013002",
+        "url": "https://www.pmda.go.jp/files/000230308.pdf",
+        "year": 2017
+      },
+      "mayzent": {
+        "product_id": "P20200623002",
+        "url": "https://www.pmda.go.jp/files/000241414.pdf",
+        "year": 2020
+      },
+      "mecobalamin": {
+        "product_id": "P20241004001",
+        "url": "https://www.pmda.go.jp/files/000277177.pdf",
+        "year": 2024
+      },
+      "mekinist": {
+        "product_id": "P20180320003",
+        "url": "https://www.pmda.go.jp/files/000237163.pdf",
+        "year": 2018
+      },
+      "mekinist initial": {
+        "product_id": "P20160315001",
+        "url": "https://www.pmda.go.jp/files/000233741.pdf",
+        "year": 2016
+      },
+      "mekinist initial approval": {
+        "product_id": "P20160315001",
+        "url": "https://www.pmda.go.jp/files/000233741.pdf",
+        "year": 2016
+      },
+      "mekinist partial change approval": {
+        "product_id": "P20180320003",
+        "url": "https://www.pmda.go.jp/files/000237163.pdf",
+        "year": 2018
+      },
+      "mektovi": {
+        "product_id": "P20201126004",
+        "url": "https://www.pmda.go.jp/files/000240841.pdf",
+        "year": 2020
+      },
+      "mektovi initial": {
+        "product_id": "P20190122004",
+        "url": "https://www.pmda.go.jp/files/000240419.pdf",
+        "year": 2019
+      },
+      "mektovi initial approval": {
+        "product_id": "P20190122004",
+        "url": "https://www.pmda.go.jp/files/000240419.pdf",
+        "year": 2019
+      },
+      "mektovi partial change approval": {
+        "product_id": "P20201126004",
+        "url": "https://www.pmda.go.jp/files/000240841.pdf",
+        "year": 2020
+      },
+      "memantine": {
+        "product_id": "P201100018",
+        "url": "https://www.pmda.go.jp/files/000207435.pdf",
+        "year": 2011
+      },
+      "memary": {
+        "product_id": "P201100018",
+        "url": "https://www.pmda.go.jp/files/000207435.pdf",
+        "year": 2011
+      },
+      "mentha oil": {
+        "product_id": "P20150930001",
+        "url": "https://www.pmda.go.jp/files/000225702.pdf",
+        "year": 2015
+      },
+      "mepolizumab": {
+        "product_id": "P20160419002",
+        "url": "https://www.pmda.go.jp/files/000221523.pdf",
+        "year": 2016
+      },
+      "mesalazine": {
+        "product_id": "P20250702001",
+        "url": "https://www.pmda.go.jp/files/000278663.pdf",
+        "year": 2025
+      },
+      "metreleptin": {
+        "product_id": "P201300038",
+        "url": "https://www.pmda.go.jp/files/000153334.pdf",
+        "year": 2013
+      },
+      "migalastat": {
+        "product_id": "P20180409001",
+        "url": "https://www.pmda.go.jp/files/000233695.pdf",
+        "year": 2018
+      },
+      "mikeluna": {
+        "product_id": "P20160921002",
+        "url": "https://www.pmda.go.jp/files/000223317.pdf",
+        "year": 2016
+      },
+      "minnebro": {
+        "product_id": "P20190109003",
+        "url": "https://www.pmda.go.jp/files/000231769.pdf",
+        "year": 2019
+      },
+      "mirabegron": {
+        "product_id": "P201100119",
+        "url": "https://www.pmda.go.jp/files/000204240.pdf",
+        "year": 2011
+      },
+      "mirikizumab": {
+        "product_id": "P20230420001",
+        "url": "https://www.pmda.go.jp/files/000265667.pdf",
+        "year": 2023
+      },
+      "mitchga": {
+        "product_id": "P20220418001",
+        "url": "https://www.pmda.go.jp/files/000252994.pdf",
+        "year": 2022
+      },
+      "miticure": {
+        "product_id": "P20151009001",
+        "url": "https://www.pmda.go.jp/files/000214453.pdf",
+        "year": 2015
+      },
+      "mogamulizumab": {
+        "product_id": "P20180828001",
+        "url": "https://www.pmda.go.jp/files/000235773.pdf",
+        "year": 2018
+      },
+      "moizerto": {
+        "product_id": "P20211001002",
+        "url": "https://www.pmda.go.jp/files/000250545.pdf",
+        "year": 2021
+      },
+      "molnupiravir": {
+        "product_id": "P20211223001",
+        "url": "https://www.pmda.go.jp/files/000245005.pdf",
+        "year": 2021
+      },
+      "mulpleta": {
+        "product_id": "P20150917001",
+        "url": "https://www.pmda.go.jp/files/000215708.pdf",
+        "year": 2015
+      },
+      "mundesine": {
+        "product_id": "P20170406002",
+        "url": "https://www.pmda.go.jp/files/000226817.pdf",
+        "year": 2017
+      },
+      "myozyme": {
+        "product_id": "P200700024",
+        "url": "https://www.pmda.go.jp/files/000153325.pdf",
+        "year": 2007
+      },
+      "naldemedine tosilate": {
+        "product_id": "P20170308001",
+        "url": "https://www.pmda.go.jp/files/000222647.pdf",
+        "year": 2017
+      },
+      "nalfurafine": {
+        "product_id": "P201400168",
+        "url": "https://www.pmda.go.jp/files/000211074.pdf",
+        "year": 2014
+      },
+      "nemolizumab": {
+        "product_id": "P20220418001",
+        "url": "https://www.pmda.go.jp/files/000252994.pdf",
+        "year": 2022
+      },
+      "nexviazyme": {
+        "product_id": "P20211007002",
+        "url": "https://www.pmda.go.jp/files/000270056.pdf",
+        "year": 2021
+      },
+      "ninlaro": {
+        "product_id": "P20170405001",
+        "url": "https://www.pmda.go.jp/files/000225743.pdf",
+        "year": 2017
+      },
+      "nintedanib ethanesulfonate": {
+        "product_id": "P20200601001",
+        "url": "https://www.pmda.go.jp/files/000243773.pdf",
+        "year": 2020
+      },
+      "niraparib tosilate": {
+        "product_id": "P20201008001",
+        "url": "https://www.pmda.go.jp/files/000245811.pdf",
+        "year": 2020
+      },
+      "nirmatrelvir": {
+        "product_id": "P20220209002",
+        "url": "https://www.pmda.go.jp/files/000246305.pdf",
+        "year": 2022
+      },
+      "nirmatrelvir and ritonavir": {
+        "product_id": "P20220209002",
+        "url": "https://www.pmda.go.jp/files/000246305.pdf",
+        "year": 2022
+      },
+      "nitisinone": {
+        "product_id": "P201400145",
+        "url": "https://www.pmda.go.jp/files/000209718.pdf",
+        "year": 2014
+      },
+      "nivolumab": {
+        "product_id": "P20211208001",
+        "url": "https://www.pmda.go.jp/files/000246571.pdf",
+        "year": 2021
+      },
+      "nonacog beta pegol": {
+        "product_id": "P20180710001",
+        "url": "https://www.pmda.go.jp/files/000238159.pdf",
+        "year": 2018
+      },
+      "nopicor": {
+        "product_id": "P201400168",
+        "url": "https://www.pmda.go.jp/files/000211074.pdf",
+        "year": 2014
+      },
+      "nouriast": {
+        "product_id": "P201300035",
+        "url": "https://www.pmda.go.jp/files/000153870.pdf",
+        "year": 2013
+      },
+      "novoeight": {
+        "product_id": "P201400003",
+        "url": "https://www.pmda.go.jp/files/000203945.pdf",
+        "year": 2014
+      },
+      "novoseven": {
+        "product_id": "P20241001001",
+        "url": "https://www.pmda.go.jp/files/000277929.pdf",
+        "year": 2024
+      },
+      "novoseven partial change approval": {
+        "product_id": "P20241001001",
+        "url": "https://www.pmda.go.jp/files/000277929.pdf",
+        "year": 2024
+      },
+      "novothirteen": {
+        "product_id": "P201500030",
+        "url": "https://www.pmda.go.jp/files/000213204.pdf",
+        "year": 2015
+      },
+      "nubeqa": {
+        "product_id": "P20200207001",
+        "url": "https://www.pmda.go.jp/files/000236125.pdf",
+        "year": 2020
+      },
+      "nucala": {
+        "product_id": "P20160419002",
+        "url": "https://www.pmda.go.jp/files/000221523.pdf",
+        "year": 2016
+      },
+      "nusinersen": {
+        "product_id": "P20170731001",
+        "url": "https://www.pmda.go.jp/files/000228334.pdf",
+        "year": 2017
+      },
+      "nuvaxovid": {
+        "product_id": "P20240906001",
+        "url": "https://www.pmda.go.jp/files/000277969.pdf",
+        "year": 2024
+      },
+      "nuvaxovid initial": {
+        "product_id": "P20220415001",
+        "url": "https://www.pmda.go.jp/files/000248293.pdf",
+        "year": 2022
+      },
+      "nuvaxovid initial approval": {
+        "product_id": "P20220415001",
+        "url": "https://www.pmda.go.jp/files/000248293.pdf",
+        "year": 2022
+      },
+      "nuvaxovid partial change approval": {
+        "product_id": "P20240906001",
+        "url": "https://www.pmda.go.jp/files/000277969.pdf",
+        "year": 2024
+      },
+      "ofev": {
+        "product_id": "P20200601001",
+        "url": "https://www.pmda.go.jp/files/000243773.pdf",
+        "year": 2020
+      },
+      "ofev initial": {
+        "product_id": "P20150619001",
+        "url": "https://www.pmda.go.jp/files/000214531.pdf",
+        "year": 2015
+      },
+      "ofev initial approval": {
+        "product_id": "P20150619001",
+        "url": "https://www.pmda.go.jp/files/000214531.pdf",
+        "year": 2015
+      },
+      "ofev partial change approval": {
+        "product_id": "P20200601001",
+        "url": "https://www.pmda.go.jp/files/000243773.pdf",
+        "year": 2020
+      },
+      "olanedine": {
+        "product_id": "P20150716001",
+        "url": "https://www.pmda.go.jp/files/000215815.pdf",
+        "year": 2015
+      },
+      "olanexidine gluconate": {
+        "product_id": "P20150716001",
+        "url": "https://www.pmda.go.jp/files/000215815.pdf",
+        "year": 2015
+      },
+      "olanzapine": {
+        "product_id": "P20171221002",
+        "url": "https://www.pmda.go.jp/files/000224954.pdf",
+        "year": 2017
+      },
+      "olaparib": {
+        "product_id": "P20230824001",
+        "url": "https://www.pmda.go.jp/files/000269956.pdf",
+        "year": 2023
+      },
+      "olipudase alfa": {
+        "product_id": "P20220322002",
+        "url": "https://www.pmda.go.jp/files/000247409.pdf",
+        "year": 2022
+      },
+      "olodaterol": {
+        "product_id": "P20150908001",
+        "url": "https://www.pmda.go.jp/files/000216005.pdf",
+        "year": 2015
+      },
+      "olumiant": {
+        "product_id": "P20210419001",
+        "url": "https://www.pmda.go.jp/files/000243207.pdf",
+        "year": 2021
+      },
+      "olumiant initial": {
+        "product_id": "P20170724002",
+        "url": "https://www.pmda.go.jp/files/000242825.pdf",
+        "year": 2017
+      },
+      "olumiant initial approval": {
+        "product_id": "P20170724002",
+        "url": "https://www.pmda.go.jp/files/000242825.pdf",
+        "year": 2017
+      },
+      "olumiant partial change approval": {
+        "product_id": "P20210419001",
+        "url": "https://www.pmda.go.jp/files/000243207.pdf",
+        "year": 2021
+      },
+      "omalizumab": {
+        "product_id": "P200900001",
+        "url": "https://www.pmda.go.jp/files/000153931.pdf",
+        "year": 2009
+      },
+      "ombitasvir": {
+        "product_id": "P20161011002",
+        "url": "https://www.pmda.go.jp/files/000222649.pdf",
+        "year": 2016
+      },
+      "ombitasvir /paritaprevir /ritonavir": {
+        "product_id": "P20161011002",
+        "url": "https://www.pmda.go.jp/files/000222649.pdf",
+        "year": 2016
+      },
+      "omicron ba.1 vaccine: elasomeran": {
+        "product_id": "P20231018002",
+        "url": "https://www.pmda.go.jp/files/000274240.pdf",
+        "year": 2023
+      },
+      "omicron ba.4-5 vaccine: elasomeran": {
+        "product_id": "P20231018002",
+        "url": "https://www.pmda.go.jp/files/000274240.pdf",
+        "year": 2023
+      },
+      "omvoh": {
+        "product_id": "P20230420001",
+        "url": "https://www.pmda.go.jp/files/000265667.pdf",
+        "year": 2023
+      },
+      "ongentys": {
+        "product_id": "P20200619001",
+        "url": "https://www.pmda.go.jp/files/000243472.pdf",
+        "year": 2020
+      },
+      "opdivo": {
+        "product_id": "P20211208001",
+        "url": "https://www.pmda.go.jp/files/000246571.pdf",
+        "year": 2021
+      },
+      "opdivo initial": {
+        "product_id": "P201400114",
+        "url": "https://www.pmda.go.jp/files/000209430.pdf",
+        "year": 2014
+      },
+      "opdivo initial approval": {
+        "product_id": "P201400114",
+        "url": "https://www.pmda.go.jp/files/000209430.pdf",
+        "year": 2014
+      },
+      "opdivo partial change approval": {
+        "product_id": "P20211208001",
+        "url": "https://www.pmda.go.jp/files/000246571.pdf",
+        "year": 2021
+      },
+      "opicapone": {
+        "product_id": "P20200619001",
+        "url": "https://www.pmda.go.jp/files/000243472.pdf",
+        "year": 2020
+      },
+      "orencia": {
+        "product_id": "P201000041",
+        "url": "https://www.pmda.go.jp/files/000153322.pdf",
+        "year": 2010
+      },
+      "orfadin": {
+        "product_id": "P201400145",
+        "url": "https://www.pmda.go.jp/files/000209718.pdf",
+        "year": 2014
+      },
+      "orkedia": {
+        "product_id": "P20191213001",
+        "url": "https://www.pmda.go.jp/files/000241166.pdf",
+        "year": 2019
+      },
+      "orkedia initial": {
+        "product_id": "P20180413003",
+        "url": "https://www.pmda.go.jp/files/000235777.pdf",
+        "year": 2018
+      },
+      "orkedia initial approval": {
+        "product_id": "P20180413003",
+        "url": "https://www.pmda.go.jp/files/000235777.pdf",
+        "year": 2018
+      },
+      "orkedia partial change approval": {
+        "product_id": "P20191213001",
+        "url": "https://www.pmda.go.jp/files/000241166.pdf",
+        "year": 2019
+      },
+      "orladeyo": {
+        "product_id": "P20201124005",
+        "url": "https://www.pmda.go.jp/files/000242285.pdf",
+        "year": 2020
+      },
+      "osimertinib mesilate": {
+        "product_id": "P20160411001",
+        "url": "https://www.pmda.go.jp/files/000220615.pdf",
+        "year": 2016
+      },
+      "ostabalo": {
+        "product_id": "P20210322006",
+        "url": "https://www.pmda.go.jp/files/000251036.pdf",
+        "year": 2021
+      },
+      "oteracil": {
+        "product_id": "P20221128002",
+        "url": "https://www.pmda.go.jp/files/000267330.pdf",
+        "year": 2022
+      },
+      "otezla": {
+        "product_id": "P20161220001",
+        "url": "https://www.pmda.go.jp/files/000230195.pdf",
+        "year": 2016
+      },
+      "pabinafusp alfa": {
+        "product_id": "P20210402002",
+        "url": "https://www.pmda.go.jp/files/000242410.pdf",
+        "year": 2021
+      },
+      "paclitaxel": {
+        "product_id": "P20190905002",
+        "url": "https://www.pmda.go.jp/files/000234773.pdf",
+        "year": 2019
+      },
+      "panobinostat lactate": {
+        "product_id": "P20150706003",
+        "url": "https://www.pmda.go.jp/files/000212785.pdf",
+        "year": 2015
+      },
+      "paritaprevir": {
+        "product_id": "P20161011002",
+        "url": "https://www.pmda.go.jp/files/000222649.pdf",
+        "year": 2016
+      },
+      "parmodia": {
+        "product_id": "P20170718001",
+        "url": "https://www.pmda.go.jp/files/000226672.pdf",
+        "year": 2017
+      },
+      "parmodia xr": {
+        "product_id": "P20230724002",
+        "url": "https://www.pmda.go.jp/files/000266893.pdf",
+        "year": 2023
+      },
+      "parsabiv": {
+        "product_id": "P20161220003",
+        "url": "https://www.pmda.go.jp/files/000227138.pdf",
+        "year": 2016
+      },
+      "pasireotide pamoate": {
+        "product_id": "P20180319001",
+        "url": "https://www.pmda.go.jp/files/000234111.pdf",
+        "year": 2018
+      },
+      "paxlovid": {
+        "product_id": "P20220209002",
+        "url": "https://www.pmda.go.jp/files/000246305.pdf",
+        "year": 2022
+      },
+      "paxlovid (note 2)": {
+        "product_id": "P20220209002",
+        "url": "https://www.pmda.go.jp/files/000246305.pdf",
+        "year": 2022
+      },
+      "pazopanib": {
+        "product_id": "P201200143",
+        "url": "https://www.pmda.go.jp/files/000153553.pdf",
+        "year": 2012
+      },
+      "peficitinib hydrobromide": {
+        "product_id": "P20190419003",
+        "url": "https://www.pmda.go.jp/files/000233074.pdf",
+        "year": 2019
+      },
+      "pegaptanib": {
+        "product_id": "P200800028",
+        "url": "https://www.pmda.go.jp/files/000153104.pdf",
+        "year": 2008
+      },
+      "pemafibrate": {
+        "product_id": "P20230724002",
+        "url": "https://www.pmda.go.jp/files/000266893.pdf",
+        "year": 2023
+      },
+      "pembrolizumab": {
+        "product_id": "P20200812001",
+        "url": "https://www.pmda.go.jp/files/000245967.pdf",
+        "year": 2020
+      },
+      "peramivir": {
+        "product_id": "P201000001",
+        "url": "https://www.pmda.go.jp/files/000153628.pdf",
+        "year": 2010
+      },
+      "perjeta": {
+        "product_id": "P20220323001",
+        "url": "https://www.pmda.go.jp/files/000263434.pdf",
+        "year": 2022
+      },
+      "perjeta initial": {
+        "product_id": "P201300075",
+        "url": "https://www.pmda.go.jp/files/000263435.pdf",
+        "year": 2013
+      },
+      "perjeta initial approval": {
+        "product_id": "P201300075",
+        "url": "https://www.pmda.go.jp/files/000263435.pdf",
+        "year": 2013
+      },
+      "perjeta partial change approval": {
+        "product_id": "P20220323001",
+        "url": "https://www.pmda.go.jp/files/000263434.pdf",
+        "year": 2022
+      },
+      "pertuzumab": {
+        "product_id": "P20220323001",
+        "url": "https://www.pmda.go.jp/files/000263434.pdf",
+        "year": 2022
+      },
+      "phozevel": {
+        "product_id": "P20231016001",
+        "url": "https://www.pmda.go.jp/files/000271700.pdf",
+        "year": 2023
+      },
+      "piasky": {
+        "product_id": "P20240423001",
+        "url": "https://www.pmda.go.jp/files/000273123.pdf",
+        "year": 2024
+      },
+      "pibrentasvir": {
+        "product_id": "P20171013002",
+        "url": "https://www.pmda.go.jp/files/000230308.pdf",
+        "year": 2017
+      },
+      "pimitespib": {
+        "product_id": "P20220706001",
+        "url": "https://www.pmda.go.jp/files/000252522.pdf",
+        "year": 2022
+      },
+      "pirespa": {
+        "product_id": "P200800051",
+        "url": "https://www.pmda.go.jp/files/000153687.pdf",
+        "year": 2008
+      },
+      "pirfenidone": {
+        "product_id": "P200800051",
+        "url": "https://www.pmda.go.jp/files/000153687.pdf",
+        "year": 2008
+      },
+      "pirtobrutinib": {
+        "product_id": "P20240710001",
+        "url": "https://www.pmda.go.jp/files/000275223.pdf",
+        "year": 2024
+      },
+      "pitavastatin": {
+        "product_id": "P20150703001",
+        "url": "https://www.pmda.go.jp/files/000221617.pdf",
+        "year": 2015
+      },
+      "pivlaz": {
+        "product_id": "P20210112001",
+        "url": "https://www.pmda.go.jp/files/000264059.pdf",
+        "year": 2022
+      },
+      "pneumococcal 10-valent conjugate vaccine adsorbed (non-typeable haemophilus influenzae [nthi] protein d": {
+        "product_id": "P201500029",
+        "url": "https://www.pmda.go.jp/files/000216064.pdf",
+        "year": 2015
+      },
+      "pneumococcal 10-valent conjugate vaccine adsorbed (non-typeable haemophilus influenzae [nthi] protein d, diphtheria or tetanus toxoid conjugates)": {
+        "product_id": "P201500029",
+        "url": "https://www.pmda.go.jp/files/000216064.pdf",
+        "year": 2015
+      },
+      "pomalidomide": {
+        "product_id": "P201500027",
+        "url": "https://www.pmda.go.jp/files/000215395.pdf",
+        "year": 2015
+      },
+      "pomalyst": {
+        "product_id": "P201500027",
+        "url": "https://www.pmda.go.jp/files/000215395.pdf",
+        "year": 2015
+      },
+      "poteligeo": {
+        "product_id": "P20180828001",
+        "url": "https://www.pmda.go.jp/files/000235773.pdf",
+        "year": 2018
+      },
+      "poteligeo initial": {
+        "product_id": "P201200046",
+        "url": "https://www.pmda.go.jp/files/000153052.pdf",
+        "year": 2012
+      },
+      "poteligeo initial approval": {
+        "product_id": "P201200046",
+        "url": "https://www.pmda.go.jp/files/000153052.pdf",
+        "year": 2012
+      },
+      "poteligeo partial change approval": {
+        "product_id": "P20180828001",
+        "url": "https://www.pmda.go.jp/files/000235773.pdf",
+        "year": 2018
+      },
+      "pradaxa": {
+        "product_id": "P201100019",
+        "url": "https://www.pmda.go.jp/files/000207341.pdf",
+        "year": 2011
+      },
+      "pralia": {
+        "product_id": "P20170628002",
+        "url": "https://www.pmda.go.jp/files/000228530.pdf",
+        "year": 2017
+      },
+      "pralia partial change approval": {
+        "product_id": "P20170628002",
+        "url": "https://www.pmda.go.jp/files/000228530.pdf",
+        "year": 2017
+      },
+      "praluent": {
+        "product_id": "P20160701001",
+        "url": "https://www.pmda.go.jp/files/000224582.pdf",
+        "year": 2016
+      },
+      "prasugrel": {
+        "product_id": "P201400039",
+        "url": "https://www.pmda.go.jp/files/000213561.pdf",
+        "year": 2014
+      },
+      "precedex": {
+        "product_id": "P20230217003",
+        "url": "https://www.pmda.go.jp/files/000265792.pdf",
+        "year": 2023
+      },
+      "precedex partial change approval": {
+        "product_id": "P20230217003",
+        "url": "https://www.pmda.go.jp/files/000265792.pdf",
+        "year": 2023
+      },
+      "prevymis": {
+        "product_id": "P20180402007",
+        "url": "https://www.pmda.go.jp/files/000232850.pdf",
+        "year": 2018
+      },
+      "prizbind": {
+        "product_id": "P20161019001",
+        "url": "https://www.pmda.go.jp/files/000222407.pdf",
+        "year": 2016
+      },
+      "proemend": {
+        "product_id": "P20160308003",
+        "url": "https://www.pmda.go.jp/files/000217926.pdf",
+        "year": 2016
+      },
+      "propranolol": {
+        "product_id": "P20160728001",
+        "url": "https://www.pmda.go.jp/files/000223356.pdf",
+        "year": 2016
+      },
+      "qalsody": {
+        "product_id": "P20250110001",
+        "url": "https://www.pmda.go.jp/files/000277928.pdf",
+        "year": 2025
+      },
+      "quattrovac": {
+        "product_id": "P201200103",
+        "url": "https://www.pmda.go.jp/files/000153291.pdf",
+        "year": 2012
+      },
+      "quizartinib": {
+        "product_id": "P20190628001",
+        "url": "https://www.pmda.go.jp/files/000240288.pdf",
+        "year": 2019
+      },
+      "radicut": {
+        "product_id": "P20150625003",
+        "url": "https://www.pmda.go.jp/files/000212453.pdf",
+        "year": 2015
+      },
+      "raltegravir": {
+        "product_id": "P200800025",
+        "url": "https://www.pmda.go.jp/files/000153689.pdf",
+        "year": 2008
+      },
+      "ramelteon": {
+        "product_id": "P201000021",
+        "url": "https://www.pmda.go.jp/files/000153012.pdf",
+        "year": 2010
+      },
+      "ramosetron": {
+        "product_id": "P201500048",
+        "url": "https://www.pmda.go.jp/files/000216189.pdf",
+        "year": 2015
+      },
+      "ramucirumab": {
+        "product_id": "P20160518002",
+        "url": "https://www.pmda.go.jp/files/000219877.pdf",
+        "year": 2016
+      },
+      "rapalimus": {
+        "product_id": "P20240124001",
+        "url": "https://www.pmda.go.jp/files/000271105.pdf",
+        "year": 2024
+      },
+      "rapalimus initial": {
+        "product_id": "P20180402001",
+        "url": "https://www.pmda.go.jp/files/000225368.pdf",
+        "year": 2018
+      },
+      "rapalimus initial approval": {
+        "product_id": "P20180402001",
+        "url": "https://www.pmda.go.jp/files/000225368.pdf",
+        "year": 2018
+      },
+      "rapalimus partial change approval": {
+        "product_id": "P20240124001",
+        "url": "https://www.pmda.go.jp/files/000271105.pdf",
+        "year": 2024
+      },
+      "rapiacta": {
+        "product_id": "P201000001",
+        "url": "https://www.pmda.go.jp/files/000153628.pdf",
+        "year": 2010
+      },
+      "rasburicase": {
+        "product_id": "P200900054",
+        "url": "https://www.pmda.go.jp/files/000153036.pdf",
+        "year": 2009
+      },
+      "rasilez": {
+        "product_id": "P200900037",
+        "url": "https://www.pmda.go.jp/files/000153807.pdf",
+        "year": 2009
+      },
+      "rasuritek": {
+        "product_id": "P200900054",
+        "url": "https://www.pmda.go.jp/files/000153036.pdf",
+        "year": 2009
+      },
+      "rebetol": {
+        "product_id": "P20170328003",
+        "url": "https://www.pmda.go.jp/files/000227563.pdf",
+        "year": 2017
+      },
+      "rebetol partial change approval": {
+        "product_id": "P20170328003",
+        "url": "https://www.pmda.go.jp/files/000227563.pdf",
+        "year": 2017
+      },
+      "recombinant adsorbed bivalent human papillomavirus-like particle vaccine (derived from trichoplusia ni cell)": {
+        "product_id": "P200900052",
+        "url": "https://www.pmda.go.jp/files/000153196.pdf",
+        "year": 2009
+      },
+      "recombinant coronavirus (sars-cov-2) vaccine": {
+        "product_id": "P20240719001",
+        "url": "https://www.pmda.go.jp/files/000276160.pdf",
+        "year": 2024
+      },
+      "refixia": {
+        "product_id": "P20180710001",
+        "url": "https://www.pmda.go.jp/files/000238159.pdf",
+        "year": 2018
+      },
+      "regorafenib": {
+        "product_id": "P20170607002",
+        "url": "https://www.pmda.go.jp/files/000227545.pdf",
+        "year": 2017
+      },
+      "regroth": {
+        "product_id": "P20161018003",
+        "url": "https://www.pmda.go.jp/files/000223081.pdf",
+        "year": 2016
+      },
+      "relugolix": {
+        "product_id": "P20190124001",
+        "url": "https://www.pmda.go.jp/files/000236064.pdf",
+        "year": 2019
+      },
+      "relumina": {
+        "product_id": "P20190124001",
+        "url": "https://www.pmda.go.jp/files/000236064.pdf",
+        "year": 2019
+      },
+      "remdesivir": {
+        "product_id": "P20200518001",
+        "url": "https://www.pmda.go.jp/files/000243209.pdf",
+        "year": 2020
+      },
+      "remicade": {
+        "product_id": "P20150824001",
+        "url": "https://www.pmda.go.jp/files/000213562.pdf",
+        "year": 2015
+      },
+      "remitch": {
+        "product_id": "P200900003",
+        "url": "https://www.pmda.go.jp/files/000153525.pdf",
+        "year": 2009
+      },
+      "repatha": {
+        "product_id": "P20160125001",
+        "url": "https://www.pmda.go.jp/files/000217925.pdf",
+        "year": 2016
+      },
+      "repotrectinib": {
+        "product_id": "P20241011002",
+        "url": "https://www.pmda.go.jp/files/000277632.pdf",
+        "year": 2024
+      },
+      "revcovi": {
+        "product_id": "P20190423001",
+        "url": "https://www.pmda.go.jp/files/000235387.pdf",
+        "year": 2019
+      },
+      "revlimid": {
+        "product_id": "P20170306001",
+        "url": "https://www.pmda.go.jp/files/000228384.pdf",
+        "year": 2017
+      },
+      "revlimid partial change approval": {
+        "product_id": "P20170306001",
+        "url": "https://www.pmda.go.jp/files/000228384.pdf",
+        "year": 2017
+      },
+      "revolade": {
+        "product_id": "P20170822001",
+        "url": "https://www.pmda.go.jp/files/000233994.pdf",
+        "year": 2017
+      },
+      "revolade initial": {
+        "product_id": "P201000062",
+        "url": "https://www.pmda.go.jp/files/000208512.pdf",
+        "year": 2010
+      },
+      "revolade initial approval": {
+        "product_id": "P201000062",
+        "url": "https://www.pmda.go.jp/files/000208512.pdf",
+        "year": 2010
+      },
+      "revolade partial change approval": {
+        "product_id": "P20170822001",
+        "url": "https://www.pmda.go.jp/files/000233994.pdf",
+        "year": 2017
+      },
+      "rexulti": {
+        "product_id": "P20240115002",
+        "url": "https://www.pmda.go.jp/files/000272245.pdf",
+        "year": 2024
+      },
+      "rexulti partial change approval": {
+        "product_id": "P20240115002",
+        "url": "https://www.pmda.go.jp/files/000272245.pdf",
+        "year": 2024
+      },
+      "ribavirin": {
+        "product_id": "P20170328004",
+        "url": "https://www.pmda.go.jp/files/000227562.pdf",
+        "year": 2017
+      },
+      "riltozinameran)": {
+        "product_id": "P20220912001",
+        "url": "https://www.pmda.go.jp/files/000249126.pdf",
+        "year": 2022
+      },
+      "rinvoq": {
+        "product_id": "P20210831002",
+        "url": "https://www.pmda.go.jp/files/000250304.pdf",
+        "year": 2021
+      },
+      "rinvoq partial change approval": {
+        "product_id": "P20210831002",
+        "url": "https://www.pmda.go.jp/files/000250304.pdf",
+        "year": 2021
+      },
+      "riociguat": {
+        "product_id": "P201300173",
+        "url": "https://www.pmda.go.jp/files/000207309.pdf",
+        "year": 2013
+      },
+      "risankizumab": {
+        "product_id": "P20190329001",
+        "url": "https://www.pmda.go.jp/files/000239461.pdf",
+        "year": 2019
+      },
+      "risperdal": {
+        "product_id": "P20160303001",
+        "url": "https://www.pmda.go.jp/files/000220043.pdf",
+        "year": 2016
+      },
+      "risperidone": {
+        "product_id": "P20160303001",
+        "url": "https://www.pmda.go.jp/files/000220043.pdf",
+        "year": 2016
+      },
+      "ritlecitinib tosilate": {
+        "product_id": "P20230628001",
+        "url": "https://www.pmda.go.jp/files/000266925.pdf",
+        "year": 2023
+      },
+      "ritonavir": {
+        "product_id": "P20220209002",
+        "url": "https://www.pmda.go.jp/files/000246305.pdf",
+        "year": 2022
+      },
+      "rituxan": {
+        "product_id": "P20220704001",
+        "url": "https://www.pmda.go.jp/files/000265591.pdf",
+        "year": 2022
+      },
+      "rituxan partial change approval": {
+        "product_id": "P20220704001",
+        "url": "https://www.pmda.go.jp/files/000265591.pdf",
+        "year": 2022
+      },
+      "rituximab": {
+        "product_id": "P20220704001",
+        "url": "https://www.pmda.go.jp/files/000265591.pdf",
+        "year": 2022
+      },
+      "rivaroxaban": {
+        "product_id": "P20201215001",
+        "url": "https://www.pmda.go.jp/files/000247811.pdf",
+        "year": 2020
+      },
+      "romidepsin": {
+        "product_id": "P20170628001",
+        "url": "https://www.pmda.go.jp/files/000233298.pdf",
+        "year": 2017
+      },
+      "romiplate": {
+        "product_id": "P20190620003",
+        "url": "https://www.pmda.go.jp/files/000236502.pdf",
+        "year": 2019
+      },
+      "romiplate initial": {
+        "product_id": "P201100020",
+        "url": "https://www.pmda.go.jp/files/000236304.pdf",
+        "year": 2011
+      },
+      "romiplate initial approval": {
+        "product_id": "P201100020",
+        "url": "https://www.pmda.go.jp/files/000236304.pdf",
+        "year": 2011
+      },
+      "romiplate partial change approval": {
+        "product_id": "P20190620003",
+        "url": "https://www.pmda.go.jp/files/000236502.pdf",
+        "year": 2019
+      },
+      "romiplostim": {
+        "product_id": "P20190620003",
+        "url": "https://www.pmda.go.jp/files/000236502.pdf",
+        "year": 2019
+      },
+      "romosozumab": {
+        "product_id": "P20190122003",
+        "url": "https://www.pmda.go.jp/files/000232793.pdf",
+        "year": 2019
+      },
+      "ronapreve (note 2)": {
+        "product_id": "P20211029001",
+        "url": "https://www.pmda.go.jp/files/000244786.pdf",
+        "year": 2021
+      },
+      "ronapreve (note 2) initial": {
+        "product_id": "P20210719001",
+        "url": "https://www.pmda.go.jp/files/000244787.pdf",
+        "year": 2021
+      },
+      "ronapreve (note 2) initial approval": {
+        "product_id": "P20210719001",
+        "url": "https://www.pmda.go.jp/files/000244787.pdf",
+        "year": 2021
+      },
+      "ronapreve (note 2) partial change approval": {
+        "product_id": "P20211029001",
+        "url": "https://www.pmda.go.jp/files/000244786.pdf",
+        "year": 2021
+      },
+      "rosuvastatin": {
+        "product_id": "P20190325001",
+        "url": "https://www.pmda.go.jp/files/000232846.pdf",
+        "year": 2019
+      },
+      "rosuzet": {
+        "product_id": "P20190325001",
+        "url": "https://www.pmda.go.jp/files/000232846.pdf",
+        "year": 2019
+      },
+      "roxadustat": {
+        "product_id": "P20191007001",
+        "url": "https://www.pmda.go.jp/files/000234811.pdf",
+        "year": 2019
+      },
+      "rozebalamin": {
+        "product_id": "P20241004001",
+        "url": "https://www.pmda.go.jp/files/000277177.pdf",
+        "year": 2024
+      },
+      "rozerem": {
+        "product_id": "P201000021",
+        "url": "https://www.pmda.go.jp/files/000153012.pdf",
+        "year": 2010
+      },
+      "rozlytrek": {
+        "product_id": "P20190716001",
+        "url": "https://www.pmda.go.jp/files/000232794.pdf",
+        "year": 2019
+      },
+      "rurioctocog alfa pegol": {
+        "product_id": "P20160322005",
+        "url": "https://www.pmda.go.jp/files/000219621.pdf",
+        "year": 2016
+      },
+      "rybrevant": {
+        "product_id": "P20250415002",
+        "url": "https://www.pmda.go.jp/files/000278396.pdf",
+        "year": 2025
+      },
+      "rybrevant initial": {
+        "product_id": "P20241010001",
+        "url": "https://www.pmda.go.jp/files/000278271.pdf",
+        "year": 2024
+      },
+      "rybrevant initial approval": {
+        "product_id": "P20241010001",
+        "url": "https://www.pmda.go.jp/files/000278271.pdf",
+        "year": 2024
+      },
+      "rybrevant partial change approval": {
+        "product_id": "P20250415002",
+        "url": "https://www.pmda.go.jp/files/000278396.pdf",
+        "year": 2025
+      },
+      "ryzodeg": {
+        "product_id": "P201200167",
+        "url": "https://www.pmda.go.jp/files/000153726.pdf",
+        "year": 2012
+      },
+      "samsca": {
+        "product_id": "P201400040",
+        "url": "https://www.pmda.go.jp/files/000208511.pdf",
+        "year": 2014
+      },
+      "samtasu": {
+        "product_id": "P20220318001",
+        "url": "https://www.pmda.go.jp/files/000252154.pdf",
+        "year": 2022
+      },
+      "sarclisa": {
+        "product_id": "P20200710001",
+        "url": "https://www.pmda.go.jp/files/000242148.pdf",
+        "year": 2020
+      },
+      "sargmalin": {
+        "product_id": "P20240329002",
+        "url": "https://www.pmda.go.jp/files/000272776.pdf",
+        "year": 2024
+      },
+      "sargramostim": {
+        "product_id": "P20240329002",
+        "url": "https://www.pmda.go.jp/files/000272776.pdf",
+        "year": 2024
+      },
+      "sarilumab": {
+        "product_id": "P20170929001",
+        "url": "https://www.pmda.go.jp/files/000226413.pdf",
+        "year": 2017
+      },
+      "sebelipase alfa": {
+        "product_id": "P20160425001",
+        "url": "https://www.pmda.go.jp/files/000219254.pdf",
+        "year": 2016
+      },
+      "secukinumab": {
+        "product_id": "P20151210002",
+        "url": "https://www.pmda.go.jp/files/000216877.pdf",
+        "year": 2015
+      },
+      "seebri": {
+        "product_id": "P201200141",
+        "url": "https://www.pmda.go.jp/files/000153897.pdf",
+        "year": 2012
+      },
+      "selexipag": {
+        "product_id": "P20161011001",
+        "url": "https://www.pmda.go.jp/files/000222147.pdf",
+        "year": 2016
+      },
+      "semaglutide": {
+        "product_id": "P20230303002",
+        "url": "https://www.pmda.go.jp/files/000265142.pdf",
+        "year": 2023
+      },
+      "shingrix": {
+        "product_id": "P20180329002",
+        "url": "https://www.pmda.go.jp/files/000233792.pdf",
+        "year": 2018
+      },
+      "signifor": {
+        "product_id": "P20180319001",
+        "url": "https://www.pmda.go.jp/files/000234111.pdf",
+        "year": 2018
+      },
+      "signifor partial change approval": {
+        "product_id": "P20180319001",
+        "url": "https://www.pmda.go.jp/files/000234111.pdf",
+        "year": 2018
+      },
+      "simeprevir": {
+        "product_id": "P201300141",
+        "url": "https://www.pmda.go.jp/files/000227565.pdf",
+        "year": 2013
+      },
+      "sipavibart": {
+        "product_id": "P20250124001",
+        "url": "https://www.pmda.go.jp/files/000277669.pdf",
+        "year": 2025
+      },
+      "siponimod fumaric acid": {
+        "product_id": "P20200623002",
+        "url": "https://www.pmda.go.jp/files/000241414.pdf",
+        "year": 2020
+      },
+      "sirolimus": {
+        "product_id": "P20240124001",
+        "url": "https://www.pmda.go.jp/files/000271105.pdf",
+        "year": 2024
+      },
+      "sitagliptin phosphate": {
+        "product_id": "P200900043",
+        "url": "https://www.pmda.go.jp/files/000153174.pdf",
+        "year": 2009
+      },
+      "skyrizi": {
+        "product_id": "P20190329001",
+        "url": "https://www.pmda.go.jp/files/000239461.pdf",
+        "year": 2019
+      },
+      "smyraf": {
+        "product_id": "P20190419003",
+        "url": "https://www.pmda.go.jp/files/000233074.pdf",
+        "year": 2019
+      },
+      "sofosbuvir": {
+        "product_id": "P20170323002",
+        "url": "https://www.pmda.go.jp/files/000227564.pdf",
+        "year": 2017
+      },
+      "soliris": {
+        "product_id": "P20180110001",
+        "url": "https://www.pmda.go.jp/files/000231967.pdf",
+        "year": 2018
+      },
+      "soliris initial": {
+        "product_id": "P201000032",
+        "url": "https://www.pmda.go.jp/files/000153009.pdf",
+        "year": 2010
+      },
+      "soliris initial approval": {
+        "product_id": "P201000032",
+        "url": "https://www.pmda.go.jp/files/000153009.pdf",
+        "year": 2010
+      },
+      "soliris partial change approval": {
+        "product_id": "P20180110001",
+        "url": "https://www.pmda.go.jp/files/000231967.pdf",
+        "year": 2018
+      },
+      "sotatercept": {
+        "product_id": "P20250623003",
+        "url": "https://www.pmda.go.jp/files/000279147.pdf",
+        "year": 2025
+      },
+      "sotrovimab": {
+        "product_id": "P20210927001",
+        "url": "https://www.pmda.go.jp/files/000245006.pdf",
+        "year": 2021
+      },
+      "sovaldi": {
+        "product_id": "P20170323002",
+        "url": "https://www.pmda.go.jp/files/000227564.pdf",
+        "year": 2017
+      },
+      "sovaldi initial": {
+        "product_id": "P201500031",
+        "url": "https://www.pmda.go.jp/files/000210796.pdf",
+        "year": 2015
+      },
+      "sovaldi initial approval": {
+        "product_id": "P201500031",
+        "url": "https://www.pmda.go.jp/files/000210796.pdf",
+        "year": 2015
+      },
+      "sovaldi partial change approval": {
+        "product_id": "P20170323002",
+        "url": "https://www.pmda.go.jp/files/000227564.pdf",
+        "year": 2017
+      },
+      "sovriad": {
+        "product_id": "P201300141",
+        "url": "https://www.pmda.go.jp/files/000227565.pdf",
+        "year": 2013
+      },
+      "spikevax": {
+        "product_id": "P20250527002",
+        "url": "https://www.pmda.go.jp/files/000278978.pdf",
+        "year": 2025
+      },
+      "spikevax (note 2) (bivalent, original/omicron ba.1)": {
+        "product_id": "P20220912003",
+        "url": "https://www.pmda.go.jp/files/000249128.pdf",
+        "year": 2022
+      },
+      "spikevax (note 2) (bivalent, original/omicron ba.1) (bivalent, original/omicron ba.4-5) (monovalent, omicron xbb.1.5)": {
+        "product_id": "P20231018002",
+        "url": "https://www.pmda.go.jp/files/000274240.pdf",
+        "year": 2023
+      },
+      "spikevax (note 2) (bivalent, original/omicron ba.1) (bivalent, original/omicron ba.4-5) (monovalent, omicron xbb.1.5) partial change approval": {
+        "product_id": "P20231018002",
+        "url": "https://www.pmda.go.jp/files/000274240.pdf",
+        "year": 2023
+      },
+      "spikevax (note 2) (bivalent, original/omicron ba.1) partial change approval": {
+        "product_id": "P20220912003",
+        "url": "https://www.pmda.go.jp/files/000249128.pdf",
+        "year": 2022
+      },
+      "spikevax (note 2) (bivalent, original/omicron ba.4-5)": {
+        "product_id": "P20230727001",
+        "url": "https://www.pmda.go.jp/files/000269293.pdf",
+        "year": 2023
+      },
+      "spikevax (note 2) (bivalent, original/omicron ba.4-5) partial change approval": {
+        "product_id": "P20230727001",
+        "url": "https://www.pmda.go.jp/files/000269293.pdf",
+        "year": 2023
+      },
+      "spikevax (previously covid-19 vaccine moderna) (note 2) (monovalent, original)": {
+        "product_id": "P20211213004",
+        "url": "https://www.pmda.go.jp/files/000249129.pdf",
+        "year": 2021
+      },
+      "spikevax (previously covid-19 vaccine moderna) (note 2) (monovalent, original) initial": {
+        "product_id": "P20210519003",
+        "url": "https://www.pmda.go.jp/files/000243267.pdf",
+        "year": 2021
+      },
+      "spikevax (previously covid-19 vaccine moderna) (note 2) (monovalent, original) initial approval": {
+        "product_id": "P20210519003",
+        "url": "https://www.pmda.go.jp/files/000243267.pdf",
+        "year": 2021
+      },
+      "spikevax (previously covid-19 vaccine moderna) (note 2) (monovalent, original) partial change approval": {
+        "product_id": "P20211213004",
+        "url": "https://www.pmda.go.jp/files/000249129.pdf",
+        "year": 2021
+      },
+      "spikevax partial change approval": {
+        "product_id": "P20250527002",
+        "url": "https://www.pmda.go.jp/files/000278978.pdf",
+        "year": 2025
+      },
+      "spinraza": {
+        "product_id": "P20171013001",
+        "url": "https://www.pmda.go.jp/files/000228335.pdf",
+        "year": 2017
+      },
+      "spinraza initial": {
+        "product_id": "P20170731001",
+        "url": "https://www.pmda.go.jp/files/000228334.pdf",
+        "year": 2017
+      },
+      "spinraza initial approval": {
+        "product_id": "P20170731001",
+        "url": "https://www.pmda.go.jp/files/000228334.pdf",
+        "year": 2017
+      },
+      "spinraza partial change approval": {
+        "product_id": "P20171013001",
+        "url": "https://www.pmda.go.jp/files/000228335.pdf",
+        "year": 2017
+      },
+      "spiolto": {
+        "product_id": "P20150908001",
+        "url": "https://www.pmda.go.jp/files/000216005.pdf",
+        "year": 2015
+      },
+      "squarekids": {
+        "product_id": "P201400110",
+        "url": "https://www.pmda.go.jp/files/000210040.pdf",
+        "year": 2014
+      },
+      "steboronine": {
+        "product_id": "P20200410001",
+        "url": "https://www.pmda.go.jp/files/000237990.pdf",
+        "year": 2020
+      },
+      "stelara": {
+        "product_id": "P20170407001",
+        "url": "https://www.pmda.go.jp/files/000227668.pdf",
+        "year": 2017
+      },
+      "stelara initial": {
+        "product_id": "P201100021",
+        "url": "https://www.pmda.go.jp/files/000153747.pdf",
+        "year": 2011
+      },
+      "stelara initial approval": {
+        "product_id": "P201100021",
+        "url": "https://www.pmda.go.jp/files/000153747.pdf",
+        "year": 2011
+      },
+      "stelara partial change approval": {
+        "product_id": "P20170407001",
+        "url": "https://www.pmda.go.jp/files/000227668.pdf",
+        "year": 2017
+      },
+      "stivarga": {
+        "product_id": "P20170607002",
+        "url": "https://www.pmda.go.jp/files/000227545.pdf",
+        "year": 2017
+      },
+      "stivarga initial": {
+        "product_id": "P201300044",
+        "url": "https://www.pmda.go.jp/files/000153351.pdf",
+        "year": 2013
+      },
+      "stivarga initial approval": {
+        "product_id": "P201300044",
+        "url": "https://www.pmda.go.jp/files/000153351.pdf",
+        "year": 2013
+      },
+      "stivarga partial change approval": {
+        "product_id": "P20170607002",
+        "url": "https://www.pmda.go.jp/files/000227545.pdf",
+        "year": 2017
+      },
+      "strensiq": {
+        "product_id": "P20150721001",
+        "url": "https://www.pmda.go.jp/files/000213563.pdf",
+        "year": 2015
+      },
+      "stribild": {
+        "product_id": "P201300045",
+        "url": "https://www.pmda.go.jp/files/000205730.pdf",
+        "year": 2013
+      },
+      "sugammadex": {
+        "product_id": "P201000004",
+        "url": "https://www.pmda.go.jp/files/000153538.pdf",
+        "year": 2010
+      },
+      "suglat": {
+        "product_id": "P20181225001",
+        "url": "https://www.pmda.go.jp/files/000230401.pdf",
+        "year": 2018
+      },
+      "suglat initial": {
+        "product_id": "P201300172",
+        "url": "https://www.pmda.go.jp/files/000206796.pdf",
+        "year": 2013
+      },
+      "suglat initial approval": {
+        "product_id": "P201300172",
+        "url": "https://www.pmda.go.jp/files/000206796.pdf",
+        "year": 2013
+      },
+      "suglat partial change approval": {
+        "product_id": "P20181225001",
+        "url": "https://www.pmda.go.jp/files/000230401.pdf",
+        "year": 2018
+      },
+      "suiny": {
+        "product_id": "P20151221001",
+        "url": "https://www.pmda.go.jp/files/000218646.pdf",
+        "year": 2015
+      },
+      "sunvepra": {
+        "product_id": "P201400113",
+        "url": "https://www.pmda.go.jp/files/000209023.pdf",
+        "year": 2014
+      },
+      "symproic": {
+        "product_id": "P20170308001",
+        "url": "https://www.pmda.go.jp/files/000222647.pdf",
+        "year": 2017
+      },
+      "synflorix": {
+        "product_id": "P201500029",
+        "url": "https://www.pmda.go.jp/files/000216064.pdf",
+        "year": 2015
+      },
+      "tabrecta": {
+        "product_id": "P20200624005",
+        "url": "https://www.pmda.go.jp/files/000238885.pdf",
+        "year": 2020
+      },
+      "tafamidis meglumine": {
+        "product_id": "P20190412003",
+        "url": "https://www.pmda.go.jp/files/000237869.pdf",
+        "year": 2019
+      },
+      "tafinlar": {
+        "product_id": "P20180320002",
+        "url": "https://www.pmda.go.jp/files/000237164.pdf",
+        "year": 2018
+      },
+      "tafinlar initial": {
+        "product_id": "P20160315002",
+        "url": "https://www.pmda.go.jp/files/000233740.pdf",
+        "year": 2016
+      },
+      "tafinlar initial approval": {
+        "product_id": "P20160315002",
+        "url": "https://www.pmda.go.jp/files/000233740.pdf",
+        "year": 2016
+      },
+      "tafinlar partial change approval": {
+        "product_id": "P20180320002",
+        "url": "https://www.pmda.go.jp/files/000237164.pdf",
+        "year": 2018
+      },
+      "tagrisso": {
+        "product_id": "P20160411001",
+        "url": "https://www.pmda.go.jp/files/000220615.pdf",
+        "year": 2016
+      },
+      "takecab": {
+        "product_id": "P201400173",
+        "url": "https://www.pmda.go.jp/files/000211075.pdf",
+        "year": 2014
+      },
+      "takelda": {
+        "product_id": "P201400017",
+        "url": "https://www.pmda.go.jp/files/000208812.pdf",
+        "year": 2014
+      },
+      "talaporfin": {
+        "product_id": "P201500050",
+        "url": "https://www.pmda.go.jp/files/000216837.pdf",
+        "year": 2015
+      },
+      "talazoparib tosilate": {
+        "product_id": "P20240205001",
+        "url": "https://www.pmda.go.jp/files/000270833.pdf",
+        "year": 2024
+      },
+      "talion": {
+        "product_id": "P20150615001",
+        "url": "https://www.pmda.go.jp/files/000216694.pdf",
+        "year": 2015
+      },
+      "taltz": {
+        "product_id": "P20160725001",
+        "url": "https://www.pmda.go.jp/files/000224346.pdf",
+        "year": 2016
+      },
+      "talzenna": {
+        "product_id": "P20240205001",
+        "url": "https://www.pmda.go.jp/files/000270833.pdf",
+        "year": 2024
+      },
+      "tasfygo": {
+        "product_id": "P20240913001",
+        "url": "https://www.pmda.go.jp/files/000276614.pdf",
+        "year": 2024
+      },
+      "tasurgratinib succinate": {
+        "product_id": "P20240913001",
+        "url": "https://www.pmda.go.jp/files/000276614.pdf",
+        "year": 2024
+      },
+      "tauvid": {
+        "product_id": "P20250107001",
+        "url": "https://www.pmda.go.jp/files/000277406.pdf",
+        "year": 2025
+      },
+      "tavneos": {
+        "product_id": "P20211014001",
+        "url": "https://www.pmda.go.jp/files/000250305.pdf",
+        "year": 2021
+      },
+      "tazemetostat hydrobromide": {
+        "product_id": "P20210708001",
+        "url": "https://www.pmda.go.jp/files/000250191.pdf",
+        "year": 2021
+      },
+      "tazverik": {
+        "product_id": "P20210708001",
+        "url": "https://www.pmda.go.jp/files/000250191.pdf",
+        "year": 2021
+      },
+      "tecentriq": {
+        "product_id": "P20190904003",
+        "url": "https://www.pmda.go.jp/files/000234772.pdf",
+        "year": 2019
+      },
+      "tecentriq initial": {
+        "product_id": "P20180216002",
+        "url": "https://www.pmda.go.jp/files/000234771.pdf",
+        "year": 2018
+      },
+      "tecentriq initial approval": {
+        "product_id": "P20180216002",
+        "url": "https://www.pmda.go.jp/files/000234771.pdf",
+        "year": 2018
+      },
+      "tecentriq partial change approval": {
+        "product_id": "P20190904003",
+        "url": "https://www.pmda.go.jp/files/000234772.pdf",
+        "year": 2019
+      },
+      "tecovirimat": {
+        "product_id": "P20250117002",
+        "url": "https://www.pmda.go.jp/files/000276155.pdf",
+        "year": 2025
+      },
+      "tegafur": {
+        "product_id": "P20221128002",
+        "url": "https://www.pmda.go.jp/files/000267330.pdf",
+        "year": 2022
+      },
+      "tegafur/gimeracil /oteracil": {
+        "product_id": "P20221128002",
+        "url": "https://www.pmda.go.jp/files/000267330.pdf",
+        "year": 2022
+      },
+      "tenapanor": {
+        "product_id": "P20231016001",
+        "url": "https://www.pmda.go.jp/files/000271700.pdf",
+        "year": 2023
+      },
+      "tenelia": {
+        "product_id": "P201200070",
+        "url": "https://www.pmda.go.jp/files/000153594.pdf",
+        "year": 2012
+      },
+      "teneligliptin hydrobromide": {
+        "product_id": "P201200070",
+        "url": "https://www.pmda.go.jp/files/000153594.pdf",
+        "year": 2012
+      },
+      "tenofovir alafenamide": {
+        "product_id": "P20190423002",
+        "url": "https://www.pmda.go.jp/files/000238705.pdf",
+        "year": 2019
+      },
+      "tenofovir disoproxil": {
+        "product_id": "P201300045",
+        "url": "https://www.pmda.go.jp/files/000205730.pdf",
+        "year": 2013
+      },
+      "tepmetko": {
+        "product_id": "P20200420001",
+        "url": "https://www.pmda.go.jp/files/000236338.pdf",
+        "year": 2020
+      },
+      "tepotinib": {
+        "product_id": "P20200420001",
+        "url": "https://www.pmda.go.jp/files/000236338.pdf",
+        "year": 2020
+      },
+      "tepoxx": {
+        "product_id": "P20250117002",
+        "url": "https://www.pmda.go.jp/files/000276155.pdf",
+        "year": 2025
+      },
+      "teriparatide": {
+        "product_id": "P201000037",
+        "url": "https://www.pmda.go.jp/files/000207926.pdf",
+        "year": 2010
+      },
+      "tetrabik": {
+        "product_id": "P201200102",
+        "url": "https://www.pmda.go.jp/files/000153343.pdf",
+        "year": 2012
+      },
+      "thaled": {
+        "product_id": "P20210217001",
+        "url": "https://www.pmda.go.jp/files/000252521.pdf",
+        "year": 2021
+      },
+      "thaled initial": {
+        "product_id": "P200800053",
+        "url": "https://www.pmda.go.jp/files/000153348.pdf",
+        "year": 2008
+      },
+      "thaled initial approval": {
+        "product_id": "P200800053",
+        "url": "https://www.pmda.go.jp/files/000153348.pdf",
+        "year": 2008
+      },
+      "thaled partial change approval": {
+        "product_id": "P20210217001",
+        "url": "https://www.pmda.go.jp/files/000252521.pdf",
+        "year": 2021
+      },
+      "thalidomide": {
+        "product_id": "P20210217001",
+        "url": "https://www.pmda.go.jp/files/000252521.pdf",
+        "year": 2021
+      },
+      "tiotropium bromide": {
+        "product_id": "P20150908001",
+        "url": "https://www.pmda.go.jp/files/000216005.pdf",
+        "year": 2015
+      },
+      "tiotropium bromide /olodaterol": {
+        "product_id": "P20150908001",
+        "url": "https://www.pmda.go.jp/files/000216005.pdf",
+        "year": 2015
+      },
+      "tipiracil": {
+        "product_id": "P20190828001",
+        "url": "https://www.pmda.go.jp/files/000233503.pdf",
+        "year": 2019
+      },
+      "tirabrutinib": {
+        "product_id": "P20200407003",
+        "url": "https://www.pmda.go.jp/files/000237315.pdf",
+        "year": 2020
+      },
+      "tirzepatide": {
+        "product_id": "P20241223001",
+        "url": "https://www.pmda.go.jp/files/000278664.pdf",
+        "year": 2024
+      },
+      "tivicay": {
+        "product_id": "P201400046",
+        "url": "https://www.pmda.go.jp/files/000209096.pdf",
+        "year": 2014
+      },
+      "tixagevimab": {
+        "product_id": "P20220829001",
+        "url": "https://www.pmda.go.jp/files/000250093.pdf",
+        "year": 2022
+      },
+      "tixagevimab and cilgavimab": {
+        "product_id": "P20220829001",
+        "url": "https://www.pmda.go.jp/files/000250093.pdf",
+        "year": 2022
+      },
+      "tocilizumab": {
+        "product_id": "P20220114001",
+        "url": "https://www.pmda.go.jp/files/000246328.pdf",
+        "year": 2022
+      },
+      "tofacitinib citrate": {
+        "product_id": "P20180620001",
+        "url": "https://www.pmda.go.jp/files/000237584.pdf",
+        "year": 2018
+      },
+      "tofersen": {
+        "product_id": "P20250110001",
+        "url": "https://www.pmda.go.jp/files/000277928.pdf",
+        "year": 2025
+      },
+      "tolvaptan": {
+        "product_id": "P201400040",
+        "url": "https://www.pmda.go.jp/files/000208511.pdf",
+        "year": 2014
+      },
+      "tolvaptan phosphate": {
+        "product_id": "P20220318001",
+        "url": "https://www.pmda.go.jp/files/000252154.pdf",
+        "year": 2022
+      },
+      "topiloric/uriadec": {
+        "product_id": "P201300069",
+        "url": "https://www.pmda.go.jp/files/000153624.pdf",
+        "year": 2013
+      },
+      "topina": {
+        "product_id": "P200700033",
+        "url": "https://www.pmda.go.jp/files/000153173.pdf",
+        "year": 2007
+      },
+      "topiramate": {
+        "product_id": "P200700033",
+        "url": "https://www.pmda.go.jp/files/000153173.pdf",
+        "year": 2007
+      },
+      "topiroxostat": {
+        "product_id": "P201300069",
+        "url": "https://www.pmda.go.jp/files/000153624.pdf",
+        "year": 2013
+      },
+      "trabectedin": {
+        "product_id": "P20151008001",
+        "url": "https://www.pmda.go.jp/files/000216480.pdf",
+        "year": 2015
+      },
+      "tracleer": {
+        "product_id": "P20150918002",
+        "url": "https://www.pmda.go.jp/files/000218422.pdf",
+        "year": 2015
+      },
+      "tracleer (pediatric dispersible tablets)": {
+        "product_id": "P20150918002",
+        "url": "https://www.pmda.go.jp/files/000218422.pdf",
+        "year": 2015
+      },
+      "trafermin": {
+        "product_id": "P20161018003",
+        "url": "https://www.pmda.go.jp/files/000223081.pdf",
+        "year": 2016
+      },
+      "trametinib dimethyl sulfoxide": {
+        "product_id": "P20180320003",
+        "url": "https://www.pmda.go.jp/files/000237163.pdf",
+        "year": 2018
+      },
+      "trastuzumab": {
+        "product_id": "P20220323002",
+        "url": "https://www.pmda.go.jp/files/000263433.pdf",
+        "year": 2022
+      },
+      "trastuzumab deruxtecan": {
+        "product_id": "P20200420002",
+        "url": "https://www.pmda.go.jp/files/000238706.pdf",
+        "year": 2020
+      },
+      "trastuzumab emtansine": {
+        "product_id": "P201300137",
+        "url": "https://www.pmda.go.jp/files/000153735.pdf",
+        "year": 2013
+      },
+      "treakisym": {
+        "product_id": "P20161222002",
+        "url": "https://www.pmda.go.jp/files/000227269.pdf",
+        "year": 2016
+      },
+      "treakisym partial change approval": {
+        "product_id": "P20161222002",
+        "url": "https://www.pmda.go.jp/files/000227269.pdf",
+        "year": 2016
+      },
+      "trelagliptin succinate": {
+        "product_id": "P201500001",
+        "url": "https://www.pmda.go.jp/files/000213963.pdf",
+        "year": 2015
+      },
+      "tremfya": {
+        "product_id": "P20180402005",
+        "url": "https://www.pmda.go.jp/files/000234741.pdf",
+        "year": 2018
+      },
+      "trerief": {
+        "product_id": "P20180622001",
+        "url": "https://www.pmda.go.jp/files/000235933.pdf",
+        "year": 2018
+      },
+      "trerief initial": {
+        "product_id": "P200900005",
+        "url": "https://www.pmda.go.jp/files/000235932.pdf",
+        "year": 2009
+      },
+      "trerief initial approval": {
+        "product_id": "P200900005",
+        "url": "https://www.pmda.go.jp/files/000235932.pdf",
+        "year": 2009
+      },
+      "trerief partial change approval": {
+        "product_id": "P20180622001",
+        "url": "https://www.pmda.go.jp/files/000235933.pdf",
+        "year": 2018
+      },
+      "tresiba": {
+        "product_id": "P20150813001",
+        "url": "https://www.pmda.go.jp/files/000269814.pdf",
+        "year": 2015
+      },
+      "tresiba initial": {
+        "product_id": "P201200136",
+        "url": "https://www.pmda.go.jp/files/000153683.pdf",
+        "year": 2012
+      },
+      "tresiba initial approval": {
+        "product_id": "P201200136",
+        "url": "https://www.pmda.go.jp/files/000153683.pdf",
+        "year": 2012
+      },
+      "tresiba partial change approval": {
+        "product_id": "P20150813001",
+        "url": "https://www.pmda.go.jp/files/000269814.pdf",
+        "year": 2015
+      },
+      "trifluridine": {
+        "product_id": "P20190828001",
+        "url": "https://www.pmda.go.jp/files/000233503.pdf",
+        "year": 2019
+      },
+      "trifluridine and tipiracil": {
+        "product_id": "P20190828001",
+        "url": "https://www.pmda.go.jp/files/000233503.pdf",
+        "year": 2019
+      },
+      "ts-1": {
+        "product_id": "P20221128002",
+        "url": "https://www.pmda.go.jp/files/000267330.pdf",
+        "year": 2022
+      },
+      "ts-1 partial change approval": {
+        "product_id": "P20221128002",
+        "url": "https://www.pmda.go.jp/files/000267330.pdf",
+        "year": 2022
+      },
+      "tucidinostat": {
+        "product_id": "P20210706001",
+        "url": "https://www.pmda.go.jp/files/000250457.pdf",
+        "year": 2021
+      },
+      "turoctocog alfa": {
+        "product_id": "P201400003",
+        "url": "https://www.pmda.go.jp/files/000203945.pdf",
+        "year": 2014
+      },
+      "twymeeg": {
+        "product_id": "P20210630002",
+        "url": "https://www.pmda.go.jp/files/000246722.pdf",
+        "year": 2021
+      },
+      "umeclidinium bromide": {
+        "product_id": "P201400076",
+        "url": "https://www.pmda.go.jp/files/000208866.pdf",
+        "year": 2014
+      },
+      "umeclidinium bromide/ vilanterol trifenatate": {
+        "product_id": "P201400076",
+        "url": "https://www.pmda.go.jp/files/000208866.pdf",
+        "year": 2014
+      },
+      "upadacitinib": {
+        "product_id": "P20210831002",
+        "url": "https://www.pmda.go.jp/files/000250304.pdf",
+        "year": 2021
+      },
+      "uptravi": {
+        "product_id": "P20161011001",
+        "url": "https://www.pmda.go.jp/files/000222147.pdf",
+        "year": 2016
+      },
+      "ustekinumab": {
+        "product_id": "P20170407001",
+        "url": "https://www.pmda.go.jp/files/000227668.pdf",
+        "year": 2017
+      },
+      "vadadustat": {
+        "product_id": "P20200619002",
+        "url": "https://www.pmda.go.jp/files/000243933.pdf",
+        "year": 2020
+      },
+      "vafseo": {
+        "product_id": "P20200619002",
+        "url": "https://www.pmda.go.jp/files/000243933.pdf",
+        "year": 2020
+      },
+      "valbenazine tosilate": {
+        "product_id": "P20220413001",
+        "url": "https://www.pmda.go.jp/files/000252828.pdf",
+        "year": 2022
+      },
+      "valemetostat tosilate": {
+        "product_id": "P20240620001",
+        "url": "https://www.pmda.go.jp/files/000272485.pdf",
+        "year": 2024
+      },
+      "valganciclovir": {
+        "product_id": "P20230320001",
+        "url": "https://www.pmda.go.jp/files/000270863.pdf",
+        "year": 2023
+      },
+      "valixa": {
+        "product_id": "P20230320001",
+        "url": "https://www.pmda.go.jp/files/000270863.pdf",
+        "year": 2023
+      },
+      "valixa partial change approval": {
+        "product_id": "P20230320001",
+        "url": "https://www.pmda.go.jp/files/000270863.pdf",
+        "year": 2023
+      },
+      "vanflyta": {
+        "product_id": "P20190628001",
+        "url": "https://www.pmda.go.jp/files/000240288.pdf",
+        "year": 2019
+      },
+      "vaxzevria": {
+        "product_id": "P20210519002",
+        "url": "https://www.pmda.go.jp/files/000250094.pdf",
+        "year": 2021
+      },
+      "vaxzevria (note 2)": {
+        "product_id": "P20210519002",
+        "url": "https://www.pmda.go.jp/files/000250094.pdf",
+        "year": 2021
+      },
+      "veklury": {
+        "product_id": "P20200518001",
+        "url": "https://www.pmda.go.jp/files/000243209.pdf",
+        "year": 2020
+      },
+      "veklury (note 2)": {
+        "product_id": "P20200518001",
+        "url": "https://www.pmda.go.jp/files/000243209.pdf",
+        "year": 2020
+      },
+      "velcade": {
+        "product_id": "P20190828003",
+        "url": "https://www.pmda.go.jp/files/000240737.pdf",
+        "year": 2019
+      },
+      "velcade partial change approval": {
+        "product_id": "P20190828003",
+        "url": "https://www.pmda.go.jp/files/000240737.pdf",
+        "year": 2019
+      },
+      "velexbru": {
+        "product_id": "P20200811004",
+        "url": "https://www.pmda.go.jp/files/000241167.pdf",
+        "year": 2020
+      },
+      "velexbru initial": {
+        "product_id": "P20200407003",
+        "url": "https://www.pmda.go.jp/files/000237315.pdf",
+        "year": 2020
+      },
+      "velexbru initial approval": {
+        "product_id": "P20200407003",
+        "url": "https://www.pmda.go.jp/files/000237315.pdf",
+        "year": 2020
+      },
+      "velexbru partial change approval": {
+        "product_id": "P20200811004",
+        "url": "https://www.pmda.go.jp/files/000241167.pdf",
+        "year": 2020
+      },
+      "vemlidy": {
+        "product_id": "P20161201002",
+        "url": "https://www.pmda.go.jp/files/000222576.pdf",
+        "year": 2016
+      },
+      "vericiguat": {
+        "product_id": "P20210602001",
+        "url": "https://www.pmda.go.jp/files/000250274.pdf",
+        "year": 2021
+      },
+      "verquvo": {
+        "product_id": "P20210602001",
+        "url": "https://www.pmda.go.jp/files/000250274.pdf",
+        "year": 2021
+      },
+      "victoza": {
+        "product_id": "P201000012",
+        "url": "https://www.pmda.go.jp/files/000153180.pdf",
+        "year": 2010
+      },
+      "viekirax": {
+        "product_id": "P20161011002",
+        "url": "https://www.pmda.go.jp/files/000222649.pdf",
+        "year": 2016
+      },
+      "viekirax initial": {
+        "product_id": "P20151019001",
+        "url": "https://www.pmda.go.jp/files/000216650.pdf",
+        "year": 2015
+      },
+      "viekirax initial approval": {
+        "product_id": "P20151019001",
+        "url": "https://www.pmda.go.jp/files/000216650.pdf",
+        "year": 2015
+      },
+      "viekirax partial change approval": {
+        "product_id": "P20161011002",
+        "url": "https://www.pmda.go.jp/files/000222649.pdf",
+        "year": 2016
+      },
+      "vilanterol trifenatate": {
+        "product_id": "P201400076",
+        "url": "https://www.pmda.go.jp/files/000208866.pdf",
+        "year": 2014
+      },
+      "viltepso": {
+        "product_id": "P20200408002",
+        "url": "https://www.pmda.go.jp/files/000237467.pdf",
+        "year": 2020
+      },
+      "viltolarsen": {
+        "product_id": "P20200408002",
+        "url": "https://www.pmda.go.jp/files/000237467.pdf",
+        "year": 2020
+      },
+      "vizimpro": {
+        "product_id": "P20190109001",
+        "url": "https://www.pmda.go.jp/files/000235181.pdf",
+        "year": 2019
+      },
+      "voclosporin": {
+        "product_id": "P20240925004",
+        "url": "https://www.pmda.go.jp/files/000277843.pdf",
+        "year": 2024
+      },
+      "volibris": {
+        "product_id": "P20210322003",
+        "url": "https://www.pmda.go.jp/files/000248791.pdf",
+        "year": 2021
+      },
+      "volibris partial change approval": {
+        "product_id": "P20210322003",
+        "url": "https://www.pmda.go.jp/files/000248791.pdf",
+        "year": 2021
+      },
+      "vonoprazan": {
+        "product_id": "P201400173",
+        "url": "https://www.pmda.go.jp/files/000211075.pdf",
+        "year": 2014
+      },
+      "votrient": {
+        "product_id": "P201200143",
+        "url": "https://www.pmda.go.jp/files/000153553.pdf",
+        "year": 2012
+      },
+      "voydeya": {
+        "product_id": "P20240214001",
+        "url": "https://www.pmda.go.jp/files/000271107.pdf",
+        "year": 2024
+      },
+      "vyloy": {
+        "product_id": "P20240422003",
+        "url": "https://www.pmda.go.jp/files/000272323.pdf",
+        "year": 2024
+      },
+      "vyndaqel": {
+        "product_id": "P20190412003",
+        "url": "https://www.pmda.go.jp/files/000237869.pdf",
+        "year": 2019
+      },
+      "vyndaqel initial": {
+        "product_id": "P201300127",
+        "url": "https://www.pmda.go.jp/files/000153750.pdf",
+        "year": 2013
+      },
+      "vyndaqel initial approval": {
+        "product_id": "P201300127",
+        "url": "https://www.pmda.go.jp/files/000153750.pdf",
+        "year": 2013
+      },
+      "vyndaqel partial change approval": {
+        "product_id": "P20190412003",
+        "url": "https://www.pmda.go.jp/files/000237869.pdf",
+        "year": 2019
+      },
+      "vyvgart": {
+        "product_id": "P20240322001",
+        "url": "https://www.pmda.go.jp/files/000273743.pdf",
+        "year": 2024
+      },
+      "vyvgart initial": {
+        "product_id": "P20211223002",
+        "url": "https://www.pmda.go.jp/files/000252640.pdf",
+        "year": 2021
+      },
+      "vyvgart initial approval": {
+        "product_id": "P20211223002",
+        "url": "https://www.pmda.go.jp/files/000252640.pdf",
+        "year": 2021
+      },
+      "vyvgart partial change approval": {
+        "product_id": "P20240322001",
+        "url": "https://www.pmda.go.jp/files/000273743.pdf",
+        "year": 2024
+      },
+      "wegovy": {
+        "product_id": "P20230303002",
+        "url": "https://www.pmda.go.jp/files/000265142.pdf",
+        "year": 2023
+      },
+      "xalkori": {
+        "product_id": "P20170515002",
+        "url": "https://www.pmda.go.jp/files/000228503.pdf",
+        "year": 2017
+      },
+      "xalkori initial": {
+        "product_id": "P201200051",
+        "url": "https://www.pmda.go.jp/files/000153949.pdf",
+        "year": 2012
+      },
+      "xalkori initial approval": {
+        "product_id": "P201200051",
+        "url": "https://www.pmda.go.jp/files/000153949.pdf",
+        "year": 2012
+      },
+      "xalkori partial change approval": {
+        "product_id": "P20170515002",
+        "url": "https://www.pmda.go.jp/files/000228503.pdf",
+        "year": 2017
+      },
+      "xarelto": {
+        "product_id": "P20201215001",
+        "url": "https://www.pmda.go.jp/files/000247811.pdf",
+        "year": 2020
+      },
+      "xarelto partial change approval": {
+        "product_id": "P20201215001",
+        "url": "https://www.pmda.go.jp/files/000247811.pdf",
+        "year": 2020
+      },
+      "xeljanz": {
+        "product_id": "P20180620001",
+        "url": "https://www.pmda.go.jp/files/000237584.pdf",
+        "year": 2018
+      },
+      "xeljanz initial": {
+        "product_id": "P201300041",
+        "url": "https://www.pmda.go.jp/files/000153609.pdf",
+        "year": 2013
+      },
+      "xeljanz initial approval": {
+        "product_id": "P201300041",
+        "url": "https://www.pmda.go.jp/files/000153609.pdf",
+        "year": 2013
+      },
+      "xeljanz partial change approval": {
+        "product_id": "P20180620001",
+        "url": "https://www.pmda.go.jp/files/000237584.pdf",
+        "year": 2018
+      },
+      "xenpozyme": {
+        "product_id": "P20220322002",
+        "url": "https://www.pmda.go.jp/files/000247409.pdf",
+        "year": 2022
+      },
+      "xevudy": {
+        "product_id": "P20210927001",
+        "url": "https://www.pmda.go.jp/files/000245006.pdf",
+        "year": 2021
+      },
+      "xevudy (note 2)": {
+        "product_id": "P20210927001",
+        "url": "https://www.pmda.go.jp/files/000245006.pdf",
+        "year": 2021
+      },
+      "xiaflex": {
+        "product_id": "P20150724001",
+        "url": "https://www.pmda.go.jp/files/000215883.pdf",
+        "year": 2015
+      },
+      "ximency": {
+        "product_id": "P20161205001",
+        "url": "https://www.pmda.go.jp/files/000226231.pdf",
+        "year": 2016
+      },
+      "xocova": {
+        "product_id": "P20240306001",
+        "url": "https://www.pmda.go.jp/files/000273156.pdf",
+        "year": 2024
+      },
+      "xocova (note 3)": {
+        "product_id": "P20220719001",
+        "url": "https://www.pmda.go.jp/files/000249828.pdf",
+        "year": 2022
+      },
+      "xofluza": {
+        "product_id": "P20201118001",
+        "url": "https://www.pmda.go.jp/files/000246924.pdf",
+        "year": 2020
+      },
+      "xofluza initial": {
+        "product_id": "P20180312001",
+        "url": "https://www.pmda.go.jp/files/000225380.pdf",
+        "year": 2018
+      },
+      "xofluza initial approval": {
+        "product_id": "P20180312001",
+        "url": "https://www.pmda.go.jp/files/000225380.pdf",
+        "year": 2018
+      },
+      "xofluza partial change approval": {
+        "product_id": "P20201118001",
+        "url": "https://www.pmda.go.jp/files/000246924.pdf",
+        "year": 2020
+      },
+      "xolair": {
+        "product_id": "P200900001",
+        "url": "https://www.pmda.go.jp/files/000153931.pdf",
+        "year": 2009
+      },
+      "xospata": {
+        "product_id": "P20181016002",
+        "url": "https://www.pmda.go.jp/files/000228502.pdf",
+        "year": 2018
+      },
+      "yervoy": {
+        "product_id": "P20201002002",
+        "url": "https://www.pmda.go.jp/files/000244665.pdf",
+        "year": 2020
+      },
+      "yervoy initial": {
+        "product_id": "P20150722002",
+        "url": "https://www.pmda.go.jp/files/000215223.pdf",
+        "year": 2015
+      },
+      "yervoy initial approval": {
+        "product_id": "P20150722002",
+        "url": "https://www.pmda.go.jp/files/000215223.pdf",
+        "year": 2015
+      },
+      "yervoy partial change approval": {
+        "product_id": "P20201002002",
+        "url": "https://www.pmda.go.jp/files/000244665.pdf",
+        "year": 2020
+      },
+      "yondelis": {
+        "product_id": "P20151008001",
+        "url": "https://www.pmda.go.jp/files/000216480.pdf",
+        "year": 2015
+      },
+      "zafatek": {
+        "product_id": "P201500001",
+        "url": "https://www.pmda.go.jp/files/000213963.pdf",
+        "year": 2015
+      },
+      "zagallo": {
+        "product_id": "P20151001001",
+        "url": "https://www.pmda.go.jp/files/000245812.pdf",
+        "year": 2015
+      },
+      "zejula": {
+        "product_id": "P20201008001",
+        "url": "https://www.pmda.go.jp/files/000245811.pdf",
+        "year": 2020
+      },
+      "zepbound": {
+        "product_id": "P20241223001",
+        "url": "https://www.pmda.go.jp/files/000278664.pdf",
+        "year": 2024
+      },
+      "zetia": {
+        "product_id": "P200700023",
+        "url": "https://www.pmda.go.jp/files/000153400.pdf",
+        "year": 2007
+      },
+      "zilbrysq": {
+        "product_id": "P20231018001",
+        "url": "https://www.pmda.go.jp/files/000270515.pdf",
+        "year": 2023
+      },
+      "zilucoplan": {
+        "product_id": "P20231018001",
+        "url": "https://www.pmda.go.jp/files/000270515.pdf",
+        "year": 2023
+      },
+      "zolbetuximab": {
+        "product_id": "P20240422003",
+        "url": "https://www.pmda.go.jp/files/000272323.pdf",
+        "year": 2024
+      },
+      "zonisamide": {
+        "product_id": "P20180622001",
+        "url": "https://www.pmda.go.jp/files/000235933.pdf",
+        "year": 2018
+      },
+      "zykadia": {
+        "product_id": "P20160318001",
+        "url": "https://www.pmda.go.jp/files/000221838.pdf",
+        "year": 2016
+      },
+      "zyprexa/olanzapine": {
+        "product_id": "P20171221002",
+        "url": "https://www.pmda.go.jp/files/000224954.pdf",
+        "year": 2017
+      }
+    },
+    "size": 951
+  }
+}

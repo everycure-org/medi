@@ -1,0 +1,140 @@
+{
+  "2-Thymyl-oxy-methyl glyoxalidine Hydrochloride 0.05 + Buffered Aqueous Vehicle- q.s (Nasal Spray)|CHEBI:181765|CHEBI:229644|CHEBI:144535|CHEBI:5948|CHEBI:77715": {
+    "selected_id": "CHEBI:77715",
+    "selected_label": "nasal decongestant",
+    "selected_score": 0.85,
+    "selected_service": "ols+llm_rerank"
+  },
+  "33F CONJUGATED TO CRM197 CARRIER PROTEIN|CHEBI:53710|CHEBI:33837|CHEBI:61422|DRUGBANK:DB16711|CHEBI:16018|MESH:D044243|CHEBI:8389|CHEBI:13534|RXCUI:2566414|RXCUI:2705457": {
+    "selected_id": "DRUGBANK:DB16711",
+    "selected_label": "Streptococcus pneumoniae type 33F capsular polysaccharide diphtheria CRM197 protein conjugate antigen",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "Animal Allergens, Standardized Cat Hair|UMLS:C3485980|CHEBI:88184|CHEBI:75767|PUBCHEM.COMPOUND:16131132|DRUGBANK:DB13904|CHEBI:88186|CHEBI:82655|DRUGBANK:DB10867|DRUGBANK:DB10499|CHEBI:88223": {
+    "selected_id": "DRUGBANK:DB10499",
+    "selected_label": "Felis catus hair",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "COVID-19 Vaccine, mRNA|UNII:JSV288Q5CV|RXCUI:2610328|RXCUI:2623378|RXCUI:2610319|RXCUI:2621900|CHEBI:156484|CHEBI:747321|CHEBI:156503|CHEBI:747320|CHEBI:747322": {
+    "selected_id": "UNII:JSV288Q5CV",
+    "selected_label": "Famtozinameran",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "HUMAN PROTEIN C|DRUGBANK:DB11312|CHEBI:82131|CHEBI:64018|CHEBI:3254|CHEBI:85185|CHEBI:17171|CHEBI:81570|DRUGBANK:DB09222|DRUGBANK:DB00062|CHEBI:5931": {
+    "selected_id": "DRUGBANK:DB11312",
+    "selected_label": "Protein C",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "LIVE ATTENUATED MEASLES VIRUS (TANABE STRAIN)|DRUGBANK:DB10315|DRUGBANK:DB10318|UMLS:C2364569|DRUGBANK:DB10316|DRUGBANK:DB18701|CHEBI:59850|CHEBI:59855|CHEBI:141599|CHEBI:59325|CHEBI:82129": {
+    "selected_id": "DRUGBANK:DB10315",
+    "selected_label": "Measles virus vaccine live attenuated",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "PNEUMOCOCCAL 10- VALENT CONJUGATE VACCINE ADSORBED (NON-TYPEABLE HAEMOPHILUS INFLUENZAE (NTHI) PROTEIN D|DRUGBANK:DB10342|CHEBI:61653|MESH:C586648|MESH:C105256|CHEBI:167106|RXCUI:2109613|CHEBI:167105|CHEBI:167108|CHEBI:167107|RXCUI:2705457": {
+    "selected_id": "MESH:C586648",
+    "selected_label": "10-valent pneumococcal conjugate vaccine",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "PNEUMOCOCCAL 13- VALENT CONJUGATE VACCINE ADSORBED (MUTATED DIPHTHERIA CRM CONJUGATE) 197|CHEBI:167106|CHEBI:167105|CHEBI:167107|CHEBI:167108|RXCUI:2705457|CHEBI:24335|RXCUI:2686970|RXCUI:2566306|RXCUI:901639|RXCUI:2566414": {
+    "selected_id": "RXCUI:901639",
+    "selected_label": "Streptococcus pneumoniae serotype 1 capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 14 capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 18C capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 19A capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 19F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 23F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 3 capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 4 capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 5 capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 6A capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 6B capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 7F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 9V capsular antigen diphtheria CRM197 protein conjugate vaccine Prefilled Syringe",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "PNEUMOCOCCAL 21- VALENT CONJUGATE VACCINE (MUTATED DIPHTHERIA CRM197 CONJUGATE)|CHEBI:167108|CHEBI:167105|RXCUI:2705457|CHEBI:167107|CHEBI:24335|CHEBI:167106|RXCUI:901639|RXCUI:2566414|RXCUI:2566306|RXCUI:2686970": {
+    "selected_id": "RXCUI:2686970",
+    "selected_label": "Streptococcus pneumoniae serotype 10A capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 11A capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 12F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 15A capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 16F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 17F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 19A capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 20A capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 22F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 23A capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 23B capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 24F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 3 capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 31 capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 33F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 35B capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 6A capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 7F capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 8 capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype 9N capsular antigen diphtheria CRM197 protein conjugate vaccine / Streptococcus pneumoniae serotype DEOAC15B capsular antigen diphtheria CRM197 protein conjugate vaccine Injectable Product",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "Pollens - Grasses, Bermuda Grass Cynodon dactylon|CHEBI:176961|UMLS:C0981893|UMLS:C2684346|UMLS:C1165729|RXCUI:1550695|CHEBI:90950|CHEBI:90922|DRUGBANK:DB10351|CHEBI:88404|CHEBI:80192": {
+    "selected_id": "DRUGBANK:DB10351",
+    "selected_label": "Cynodon dactylon pollen",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "RECOMBINANT ADSORBED 9-VALENT HUMAN PAPILLOMAVIRUS VIRUS-LIKE PARTICLE VACCINES (YEAST ORIGIN)|CHEBI:195368|CHEBI:197440|CHEMBL.COMPOUND:CHEMBL2108334|RXCUI:1657137|CHEBI:28798|CHEBI:30216|CHEBI:33233|CHEBI:5931|DRUGBANK:DB00062|RXCUI:1597091": {
+    "selected_id": "RXCUI:1597091",
+    "selected_label": "L1 protein, human papillomavirus type 11 vaccine / L1 protein, human papillomavirus type 16 vaccine / L1 protein, human papillomavirus type 18 vaccine / L1 protein, human papillomavirus type 31 vaccine / L1 protein, human papillomavirus type 33 vaccine / L1 protein, human papillomavirus type 45 vaccine / L1 protein, human papillomavirus type 52 vaccine / L1 protein, human papillomavirus type 58 vaccine / L1 protein, human papillomavirus type 6 vaccine Injectable Product",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "SUSOCTOCOG ALFA (GENETICAL RECOMBINATION)|CHEMBL.COMPOUND:CHEMBL2108455|UNII:5QS67N4551|PUBCHEM.COMPOUND:92043599|CHEMBL.COMPOUND:CHEMBL2109205|CHEBI:29105|CHEBI:5937": {
+    "selected_id": "CHEMBL.COMPOUND:CHEMBL2108455",
+    "selected_label": "octocog alfa",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "Tirzepatide 2.5mg /0.5ml, 5mg/0.5ml, 7.5mg/0.5 ml,10mg/0.5 ml,12.5mg/0.5 ml,15mg/0.5 ml solution for injection in a prefilled pen|CHEBI:194186|CHEBI:145305|CHEBI:179139|CHEBI:179140|CHEBI:172646": {
+    "selected_id": "CHEBI:194186",
+    "selected_label": "tirzepatide",
+    "selected_score": 0.85,
+    "selected_service": "ols+llm_rerank"
+  },
+  "acellular nerve allograft-arwx|RXCUI:2700338|CHEBI:140422|CHEBI:140422|CHEBI:136185|CHEBI:136185|CHEBI:140423|CHEBI:140424|CHEBI:140425|RXCUI:1153961|MESH:D022282": {
+    "selected_id": "RXCUI:2700338",
+    "selected_label": "acellular tissue engineered vessel-tyod 40 CM",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "immune globulin intravenous, human-dira|DRUGBANK:DB11604|DRUGBANK:DB09057|DRUGBANK:DB11603|DRUGBANK:DB13886|DRUGBANK:DB11597|CHEBI:50846|CHEBI:471744|CHEBI:38877|CHEBI:166899|CHEBI:36333": {
+    "selected_id": "DRUGBANK:DB11604",
+    "selected_label": "Tetanus immune globulin, human",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "iodinated I-125 albumin|DRUGBANK:DB09429|CHEBI:135062|CHEBI:135062|DRUGBANK:DB09430|UNII:S1UAI9MKMG|CHEBI:5845|CHEBI:134739|CHEBI:88213|DRUGBANK:DB00062|CHEBI:166964": {
+    "selected_id": "DRUGBANK:DB09429",
+    "selected_label": "Albumin iodinated I-125 serum",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "kit for the preparation of technetium Tc-99m albumin aggregated|UNII:42FOP1YX93|DRUGBANK:DB09447|UNII:MG4KI49HHJ|CHEBI:32186|CHEBI:9423|CHEBI:32187|CHEBI:33353|DRUGBANK:DB00062|CHEBI:166964|CHEBI:234508": {
+    "selected_id": "DRUGBANK:DB09447",
+    "selected_label": "Technetium Tc-99m albumin colloid",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "mirvetuximab soravtansine-gynx|UNII:VIX9T64XBU|UMLS:C5848456|UNII:6PON74J1XY|PUBCHEM.COMPOUND:155885786|UNII:98DE7VN88D": {
+    "selected_id": "UMLS:C5848456",
+    "selected_label": "Injection, mirvetuximab soravtansine-gynx, 1 mg administered",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "radiolabeled albumin technetium Tc-99m albumin colloid kit|DRUGBANK:DB09447|CHEBI:32187|CHEBI:32186|UNII:MG4KI49HHJ|UNII:42FOP1YX93|CHEBI:9423|CHEBI:33353|DRUGBANK:DB00062|CHEBI:166964|CHEBI:234508": {
+    "selected_id": "DRUGBANK:DB09447",
+    "selected_label": "Technetium Tc-99m albumin colloid",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "trastuzumab-anns|RXCUI:2119712|UMLS:C5229220|RXCUI:2119711|RXCUI:2382602|UNII:SE2KH7T06F": {
+    "selected_id": "UMLS:C5229220",
+    "selected_label": "Injection, trastuzumab-anns, biosimilar, (kanjinti), 10 mg",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "trastuzumab-dkst|UMLS:C5229217|RXCUI:2119711|RXCUI:2119712|RXCUI:2382602|UNII:SE2KH7T06F": {
+    "selected_id": "UMLS:C5229217",
+    "selected_label": "Injection, trastuzumab-dkst, biosimilar, (ogivri), 10 mg",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "trastuzumab-pkrb|UMLS:C5229216|RXCUI:2119711|RXCUI:2382602|RXCUI:2119712|UNII:SE2KH7T06F": {
+    "selected_id": "UMLS:C5229216",
+    "selected_label": "Injection, trastuzumab-pkrb, biosimilar, (herzuma), 10 mg",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  },
+  "trastuzumab-qyyp|UMLS:C5229219|RXCUI:2119712|RXCUI:2119711|RXCUI:2382602|UNII:SE2KH7T06F": {
+    "selected_id": "UMLS:C5229219",
+    "selected_label": "Injection, trastuzumab-qyyp, biosimilar, (trazimera), 10 mg",
+    "selected_score": 0.85,
+    "selected_service": "nameres+llm_rerank"
+  }
+}

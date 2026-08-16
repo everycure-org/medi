@@ -1,0 +1,3697 @@
+{
+  "2-Thymyl-oxy-methyl glyoxalidine Hydrochloride 0.05 + Buffered Aqueous Vehicle- q.s (Nasal Spray)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "314885",
+    "score": 15.632166083653768
+  },
+  "ACETIC ACID, GLACIAL": {
+    "ingredients": [
+      "acetic acid"
+    ],
+    "kept": [
+      "acetic acid"
+    ],
+    "rxcui": "168",
+    "score": 17.94294548034668
+  },
+  "ACETIC ACID, GLACIAL; ALUMINUM ACETATE": {
+    "ingredients": [
+      "acetic acid"
+    ],
+    "kept": [
+      "acetic acid"
+    ],
+    "rxcui": "168",
+    "score": 20.68437957763672
+  },
+  "ACETIC ACID, GLACIAL; DESONIDE": {
+    "ingredients": [
+      "acetic acid"
+    ],
+    "kept": [
+      "acetic acid"
+    ],
+    "rxcui": "168",
+    "score": 17.94294548034668
+  },
+  "ACETIC ACID, GLACIAL; HYDROCORTISONE": {
+    "ingredients": [
+      "acetic acid"
+    ],
+    "kept": [
+      "acetic acid"
+    ],
+    "rxcui": "168",
+    "score": 17.94294548034668
+  },
+  "ACETIC ACID, GLACIAL; HYDROCORTISONE; NEOMYCIN SULFATE": {
+    "ingredients": [
+      "acetic acid"
+    ],
+    "kept": [
+      "acetic acid"
+    ],
+    "rxcui": "168",
+    "score": 17.94294548034668
+  },
+  "ADAMTS13, recombinant-krhn": {
+    "ingredients": [
+      "ADAMTS13, recombinant"
+    ],
+    "kept": [
+      "ADAMTS13, recombinant"
+    ],
+    "rxcui": "2670286",
+    "score": 31.23636817932129
+  },
+  "AMINO ACIDS; CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM CHLORIDE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 26.05456298060671
+  },
+  "AMINO ACIDS; CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 25.8892113172091
+  },
+  "AMINO ACIDS; CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM SULFATE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM GLYCEROPHOSPHATE; SOYBEAN OIL": {
+    "ingredients": [
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007721",
+    "score": 22.693313598632812
+  },
+  "AMINO ACIDS; DEXTROSE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "690781",
+    "score": 15.932478904724121
+  },
+  "AMINO ACIDS; DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM ACETATE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM CHLORIDE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 28.498936183636005
+  },
+  "AMINO ACIDS; DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM CHLORIDE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 24.266225761539683
+  },
+  "AMINO ACIDS; DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM CHLORIDE; SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 23.681364817354417
+  },
+  "AMINO ACIDS; DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 24.12204438989813
+  },
+  "AMINO ACIDS; MAGNESIUM ACETATE; POTASSIUM ACETATE; SODIUM CHLORIDE; SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 24.381962221319025
+  },
+  "AMINO ACIDS; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM CHLORIDE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 24.221721001052856
+  },
+  "AMINO ACIDS; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM CHLORIDE; SODIUM PHOSPHATE, DIBASIC": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 23.60183048286438
+  },
+  "AMINO ACIDS; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM CHLORIDE; SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 23.64519626239115
+  },
+  "AMINO ACIDS; MAGNESIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 24.099914073944092
+  },
+  "AMINO ACIDS; MAGNESIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM CHLORIDE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 20.448523702919484
+  },
+  "AMINOSALICYLIC ACID RESIN COMPLEX": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "235558",
+    "score": 19.14211082458496
+  },
+  "AMPHETAMINE RESIN COMPLEX; DEXTROAMPHETAMINE RESIN COMPLEX": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "314497",
+    "score": 30.050695419311523
+  },
+  "ASCORBIC ACID; BIOTIN; CHOLECALCIFEROL; CYANOCOBALAMIN; DEXPANTHENOL; FOLIC ACID; NIACINAMIDE; PYRIDOXINE; RIBOFLAVIN; THIAMINE; TOCOPHEROL ACETATE; VITAMIN A; VITAMIN K": {
+    "ingredients": [
+      "thiamine",
+      "vitamin A",
+      "vitamin B12",
+      "ascorbic acid",
+      "biotin",
+      "dexpanthenol",
+      "alpha tocopherol",
+      "cholecalciferol",
+      "folic acid",
+      "pyridoxine",
+      "niacinamide",
+      "vitamin K1",
+      "riboflavin"
+    ],
+    "kept": [
+      "thiamine",
+      "vitamin A",
+      "vitamin B12",
+      "ascorbic acid",
+      "biotin",
+      "dexpanthenol",
+      "cholecalciferol",
+      "folic acid",
+      "pyridoxine",
+      "niacinamide",
+      "vitamin K1",
+      "riboflavin"
+    ],
+    "rxcui": "1304558",
+    "score": 29.813113949366812
+  },
+  "ASCORBIC ACID; BIOTIN; CYANOCOBALAMIN; DEXPANTHENOL; ERGOCALCIFEROL; FOLIC ACID; NIACINAMIDE; PYRIDOXINE; RIBOFLAVIN 5'-PHOSPHATE SODIUM; THIAMINE; VITAMIN A; VITAMIN E": {
+    "ingredients": [
+      "thiamine",
+      "vitamin A",
+      "vitamin B12",
+      "ascorbic acid",
+      "biotin",
+      "dexpanthenol",
+      "alpha tocopherol",
+      "ergocalciferol",
+      "folic acid",
+      "pyridoxine",
+      "niacinamide",
+      "vitamin K1",
+      "riboflavin"
+    ],
+    "kept": [
+      "thiamine",
+      "vitamin A",
+      "vitamin B12",
+      "ascorbic acid",
+      "biotin",
+      "dexpanthenol",
+      "ergocalciferol",
+      "folic acid",
+      "pyridoxine",
+      "niacinamide",
+      "vitamin K1",
+      "riboflavin"
+    ],
+    "rxcui": "1305199",
+    "score": 26.32937286484573
+  },
+  "ASCORBIC ACID; BIOTIN; CYANOCOBALAMIN; ERGOCALCIFEROL; FOLIC ACID; NIACINAMIDE; PANTOTHENIC ACID; PHYTONADIONE; PYRIDOXINE; RIBOFLAVIN; THIAMINE; VITAMIN A PALMITATE; VITAMIN E": {
+    "ingredients": [
+      "thiamine",
+      "ascorbic acid",
+      "biotin",
+      "folic acid",
+      "pantothenate",
+      "pyridoxine",
+      "niacinamide",
+      "riboflavin"
+    ],
+    "kept": [
+      "thiamine",
+      "ascorbic acid",
+      "biotin",
+      "folic acid",
+      "pantothenate",
+      "pyridoxine",
+      "niacinamide",
+      "riboflavin"
+    ],
+    "rxcui": "1090062",
+    "score": 28.827667236328125
+  },
+  "Adenovirus Type 4 and Type 7 Vaccine, Live, Oral": {
+    "ingredients": [
+      "adenovirus type 7 vaccine live"
+    ],
+    "kept": [
+      "adenovirus type 7 vaccine live"
+    ],
+    "rxcui": "1099937",
+    "score": 24.994150161743164
+  },
+  "Albumin (Human)-kjda": {
+    "ingredients": [
+      "albumin human, USP"
+    ],
+    "kept": [
+      "albumin human, USP"
+    ],
+    "rxcui": "2054166",
+    "score": 26.13262939453125
+  },
+  "Allogeneic Cultured Keratinocytes and Fibroblasts in Bovine Collagen": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2586641",
+    "score": 31.40829668045044
+  },
+  "Allogeneic cultured keratinocytes and dermal fibroblasts in murine collagen-dsat": {
+    "ingredients": [
+      "allogeneic cultured keratinocytes and dermal fibroblasts in murine collagen"
+    ],
+    "kept": [
+      "allogeneic cultured keratinocytes and dermal fibroblasts in murine collagen"
+    ],
+    "rxcui": "2626470",
+    "score": 45.762427451393826
+  },
+  "Animal Allergens, Standardized Cat Hair": {
+    "ingredients": [
+      "cat hair extract"
+    ],
+    "kept": [],
+    "rxcui": "248123",
+    "score": 21.277300071716308
+  },
+  "Animal Allergens, Standardized Cat Pelt": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "668317",
+    "score": 24.47719200134277
+  },
+  "Anthrax Vaccine Adsorbed, Adjuvanted": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2644683",
+    "score": 24.850872039794922
+  },
+  "Anti-thymocyte Globulin (Rabbit)": {
+    "ingredients": [
+      "lymphocyte immune globulin, anti-thymocyte globulin"
+    ],
+    "kept": [],
+    "rxcui": "107044",
+    "score": 32.59203338623047
+  },
+  "Antihemophilic Factor (Recombinant), Fc Fusion protein": {
+    "ingredients": [
+      "efmoroctocog alfa"
+    ],
+    "kept": [],
+    "rxcui": "1543095",
+    "score": 26.952545166015625
+  },
+  "Antihemophilic Factor (Recombinant), Full Length": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1599513",
+    "score": 20.602946620446776
+  },
+  "Antihemophilic Factor (Recombinant), GlycoPEGylated-exei": {
+    "ingredients": [
+      "factor VIII"
+    ],
+    "kept": [
+      "factor VIII"
+    ],
+    "rxcui": "2275722",
+    "score": 37.31097412109375
+  },
+  "Antihemophilic Factor (Recombinant), PEGylated": {
+    "ingredients": [
+      "factor VIII"
+    ],
+    "kept": [
+      "factor VIII"
+    ],
+    "rxcui": "1741397",
+    "score": 22.42355728149414
+  },
+  "Antihemophilic Factor (Recombinant), Plasma/Albumin Free": {
+    "ingredients": [
+      "factor VIII"
+    ],
+    "kept": [
+      "factor VIII"
+    ],
+    "rxcui": "1300485",
+    "score": 24.116758346557617
+  },
+  "Antihemophilic Factor (Recombinant), Plasma/Albumin Free Method": {
+    "ingredients": [
+      "factor VIII"
+    ],
+    "kept": [
+      "factor VIII"
+    ],
+    "rxcui": "1300485",
+    "score": 24.116758346557617
+  },
+  "Antihemophilic Factor (Recombinant), Porcine Sequence": {
+    "ingredients": [
+      "factor VIII"
+    ],
+    "kept": [
+      "factor VIII"
+    ],
+    "rxcui": "1592899",
+    "score": 26.053367614746094
+  },
+  "Antihemophilic Factor (Recombinant), Single Chain": {
+    "ingredients": [
+      "factor VIII"
+    ],
+    "kept": [
+      "factor VIII"
+    ],
+    "rxcui": "1796384",
+    "score": 20.322334626941682
+  },
+  "Antihemophilic Factor/von Willebrand Factor Complex (Human)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "689366",
+    "score": 27.689903259277344
+  },
+  "BETA CAROTENE": {
+    "ingredients": [
+      "beta carotene"
+    ],
+    "kept": [
+      "beta carotene"
+    ],
+    "rxcui": "19143",
+    "score": 15.64613151550293
+  },
+  "BUDESONIDE; FORMOTEROL FUMARATE; GLYCOPYRROLATE": {
+    "ingredients": [
+      "glycopyrronium",
+      "budesonide",
+      "formoterol"
+    ],
+    "kept": [
+      "glycopyrronium",
+      "budesonide",
+      "formoterol"
+    ],
+    "rxcui": "2662629",
+    "score": 20.814759981083874
+  },
+  "Botulism Antitoxin Bivalent (Equine) Types A and B.": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "846078",
+    "score": 24.925939559936523
+  },
+  "Botulism Antitoxin Heptavalent (A, B, C, D, E, F, G) - (Equine)": {
+    "ingredients": [
+      "botulinum neurotoxin B immune FAB2",
+      "botulinum neurotoxin A immune FAB2",
+      "botulinum neurotoxin C immune FAB2",
+      "botulinum neurotoxin D immune FAB2",
+      "botulinum neurotoxin E immune FAB2",
+      "botulinum neurotoxin F immune FAB2",
+      "botulinum neurotoxin G immune FAB2"
+    ],
+    "kept": [
+      "botulinum neurotoxin B immune FAB2",
+      "botulinum neurotoxin A immune FAB2",
+      "botulinum neurotoxin C immune FAB2",
+      "botulinum neurotoxin D immune FAB2",
+      "botulinum neurotoxin E immune FAB2",
+      "botulinum neurotoxin F immune FAB2",
+      "botulinum neurotoxin G immune FAB2"
+    ],
+    "rxcui": "1722719",
+    "score": 31.153831481933594
+  },
+  "Botulism Immune Globulin Intravenous (Human)": {
+    "ingredients": [
+      "botulism immune globulin IV human"
+    ],
+    "kept": [
+      "botulism immune globulin IV human"
+    ],
+    "rxcui": "544488",
+    "score": 23.203725814819336
+  },
+  "Buparvaquone 5% w/v Solution for Injection (For": {
+    "ingredients": [
+      "nicardipine"
+    ],
+    "kept": [],
+    "rxcui": "858609",
+    "score": 12.42874323144118
+  },
+  "CALCIFEDIOL": {
+    "ingredients": [
+      "calcifediol"
+    ],
+    "kept": [
+      "calcifediol"
+    ],
+    "rxcui": "1889",
+    "score": 13.751701354980469
+  },
+  "CALCITONIN SALMON": {
+    "ingredients": [
+      "salmon calcitonin"
+    ],
+    "kept": [
+      "salmon calcitonin"
+    ],
+    "rxcui": "36118",
+    "score": 18.104915618896484
+  },
+  "CALCITONIN SALMON RECOMBINANT": {
+    "ingredients": [
+      "salmon calcitonin"
+    ],
+    "kept": [
+      "salmon calcitonin"
+    ],
+    "rxcui": "36118",
+    "score": 20.83367156982422
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; GLUTATHIONE DISULFIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM BICARBONATE; SODIUM CHLORIDE; SODIUM PHOSPHATE": {
+    "ingredients": [
+      "calcium chloride",
+      "sodium phosphate, dibasic",
+      "sodium bicarbonate",
+      "glucose",
+      "glutathione",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "calcium chloride",
+      "sodium phosphate, dibasic",
+      "sodium bicarbonate",
+      "glutathione",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007071",
+    "score": 29.426133994886605
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; LACTIC ACID; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM BICARBONATE; SODIUM CHLORIDE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "691023",
+    "score": 25.965694427490234
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM CHLORIDE; OXIGLUTATIONE; POTASSIUM CHLORIDE; SODIUM BICARBONATE; SODIUM CHLORIDE; SODIUM PHOSPHATE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "689969",
+    "score": 28.20339012145996
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007721",
+    "score": 26.604488372802734
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM CITRATE": {
+    "ingredients": [
+      "calcium chloride",
+      "sodium acetate",
+      "sodium citrate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "calcium chloride",
+      "sodium acetate",
+      "sodium citrate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007530",
+    "score": 29.30142593383789
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM LACTATE": {
+    "ingredients": [
+      "lactate",
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "lactate",
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1008283",
+    "score": 29.91596794128418
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "691023",
+    "score": 23.885635375976562
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM CHLORIDE; SODIUM CHLORIDE; SODIUM LACTATE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "691023",
+    "score": 23.885635375976562
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; MAGNESIUM SULFATE; POTASSIUM CHLORIDE; SODIUM BICARBONATE; SODIUM CHLORIDE; SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "sodium bicarbonate",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "sodium bicarbonate",
+      "sodium chloride"
+    ],
+    "rxcui": "1006906",
+    "score": 27.4423885345459
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "glucose",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "216554",
+    "score": 22.75811195373535
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; POTASSIUM CHLORIDE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "glucose",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "216554",
+    "score": 21.021953582763672
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; POTASSIUM CHLORIDE; SODIUM CHLORIDE; SODIUM LACTATE": {
+    "ingredients": [
+      "lactate",
+      "calcium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "lactate",
+      "calcium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1008377",
+    "score": 24.386972427368164
+  },
+  "CALCIUM CHLORIDE; DEXTROSE; SODIUM CHLORIDE; SODIUM LACTATE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "690665",
+    "score": 21.579328536987305
+  },
+  "CALCIUM CHLORIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007721",
+    "score": 26.604488372802734
+  },
+  "CALCIUM CHLORIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM CITRATE": {
+    "ingredients": [
+      "calcium chloride",
+      "sodium acetate",
+      "sodium citrate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "calcium chloride",
+      "sodium acetate",
+      "sodium citrate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007530",
+    "score": 29.30142593383789
+  },
+  "CALCIUM CHLORIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM LACTATE": {
+    "ingredients": [
+      "lactate",
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "lactate",
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1008283",
+    "score": 29.91596794128418
+  },
+  "CALCIUM CHLORIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM BICARBONATE; SODIUM CHLORIDE; SODIUM PHOSPHATE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "689969",
+    "score": 28.20339012145996
+  },
+  "CALCIUM CHLORIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "calcium chloride",
+      "sodium acetate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007721",
+    "score": 22.54149830341339
+  },
+  "CALCIUM; MEGLUMINE; METRIZOIC ACID": {
+    "ingredients": [
+      "meglumine"
+    ],
+    "kept": [
+      "meglumine"
+    ],
+    "rxcui": "6704",
+    "score": 12.441713333129883
+  },
+  "CEFADROXIL/CEFADROXIL HEMIHYDRATE": {
+    "ingredients": [
+      "cefadroxil"
+    ],
+    "kept": [
+      "cefadroxil"
+    ],
+    "rxcui": "1297878",
+    "score": 23.532522201538086
+  },
+  "CIDOFOVIR": {
+    "ingredients": [
+      "cidofovir"
+    ],
+    "kept": [
+      "cidofovir"
+    ],
+    "rxcui": "83171",
+    "score": 13.947649955749512
+  },
+  "CITRIC ACID; UREA C-13": {
+    "ingredients": [
+      "urea"
+    ],
+    "kept": [
+      "urea"
+    ],
+    "rxcui": "226724",
+    "score": 21.052682876586914
+  },
+  "COVID-19 Vaccine, Adjuvanted": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2674936",
+    "score": 25.834148159480094
+  },
+  "COVID-19 Vaccine, mRNA": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2397740",
+    "score": 27.46147346496582
+  },
+  "Candida albicans Skin Test Antigen for Cellular Hypersensitivity": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "313930",
+    "score": 21.528932680402484
+  },
+  "Cannabidiol Bulk Drug, Cannabidiol Oral": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2283144",
+    "score": 20.6574649810791
+  },
+  "Chikungunya Vaccine, Live": {
+    "ingredients": [
+      "chikungunya virus antigen, live attenuated LR2006 OPY1 strain"
+    ],
+    "kept": [
+      "chikungunya virus antigen, live attenuated LR2006 OPY1 strain"
+    ],
+    "rxcui": "2673238",
+    "score": 19.815813064575195
+  },
+  "Chikungunya Vaccine, Recombinant": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2707352",
+    "score": 19.329504013061523
+  },
+  "Cholera Vaccine, Live, Oral": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1799327",
+    "score": 19.661544799804688
+  },
+  "Cidofovir dihydrate bulk drug and Cidofovir injection 75 mg/ ml (5 ml single use vial)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2735849",
+    "score": 22.460582733154297
+  },
+  "Coagulation Factor IX (Recombinant)": {
+    "ingredients": [
+      "factor IX"
+    ],
+    "kept": [
+      "factor IX"
+    ],
+    "rxcui": "1300488",
+    "score": 22.021928787231445
+  },
+  "Coagulation Factor IX (Recombinant), Albumin Fusion Protein": {
+    "ingredients": [
+      "factor IX"
+    ],
+    "kept": [
+      "factor IX"
+    ],
+    "rxcui": "1743992",
+    "score": 29.00373649597168
+  },
+  "Coagulation Factor IX (Recombinant), Fc Fusion Protein": {
+    "ingredients": [
+      "coagulation factor IX recombinant immunoglobulin G1 fusion protein"
+    ],
+    "kept": [
+      "coagulation factor IX recombinant immunoglobulin G1 fusion protein"
+    ],
+    "rxcui": "1535944",
+    "score": 29.701993942260742
+  },
+  "Coagulation Factor IX (Recombinant), GlycoPEGylated": {
+    "ingredients": [
+      "factor IX"
+    ],
+    "kept": [
+      "factor IX"
+    ],
+    "rxcui": "1990855",
+    "score": 26.783761978149414
+  },
+  "Coagulation Factor XIII A-Subunit (Recombinant)": {
+    "ingredients": [
+      "factor XIII"
+    ],
+    "kept": [
+      "factor XIII"
+    ],
+    "rxcui": "1488293",
+    "score": 33.963229675292965
+  },
+  "Coagulation Factor Xa (Recombinant), Inactivated-zhzo": {
+    "ingredients": [
+      "andexanet alfa"
+    ],
+    "kept": [],
+    "rxcui": "2045125",
+    "score": 38.77968215942383
+  },
+  "Coccidioides immitis Spherule-Derived Skin Test Antigen": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "214441",
+    "score": 38.1181755065918
+  },
+  "Concentrate of Proteolytic enzyme enriched in Bromelain topical gel": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2265520",
+    "score": 19.124088287353516
+  },
+  "Crotalidae Immune F(ab')2 (Equine)": {
+    "ingredients": [
+      "Crotalidae immune F(ab')2"
+    ],
+    "kept": [
+      "Crotalidae immune F(ab')2"
+    ],
+    "rxcui": "2101270",
+    "score": 24.999610900878906
+  },
+  "Crotalidae Polyvalent Immune Fab (Ovine)": {
+    "ingredients": [
+      "Agkistrodon piscivorus antivenin",
+      "Crotalus adamanteus antivenin",
+      "Crotalus atrox antivenin",
+      "Crotalus scutulatus antivenin"
+    ],
+    "kept": [
+      "Crotalus adamanteus antivenin",
+      "Crotalus atrox antivenin",
+      "Crotalus scutulatus antivenin"
+    ],
+    "rxcui": "1008507",
+    "score": 29.967050552368164
+  },
+  "DASABUVIR SODIUM; OMBITASVIR, PARITAPREVIR, RITONAVIR": {
+    "ingredients": [
+      "ombitasvir",
+      "paritaprevir",
+      "dasabuvir",
+      "ritonavir"
+    ],
+    "kept": [
+      "ombitasvir",
+      "paritaprevir",
+      "dasabuvir",
+      "ritonavir"
+    ],
+    "rxcui": "1600259",
+    "score": 27.836315155029297
+  },
+  "DASATINIB": {
+    "ingredients": [
+      "dasatinib"
+    ],
+    "kept": [
+      "dasatinib"
+    ],
+    "rxcui": "475342",
+    "score": 12.564090728759766
+  },
+  "DEHYDRATED ALCOHOL": {
+    "ingredients": [
+      "ethanol"
+    ],
+    "kept": [],
+    "rxcui": "1310469",
+    "score": 16.04636001586914
+  },
+  "DEXTROSE": {
+    "ingredients": [
+      "glucose"
+    ],
+    "kept": [],
+    "rxcui": "4850",
+    "score": 10.870040893554688
+  },
+  "DEXTROSE; MAGNESIUM ACETATE TETRAHYDRATE; POTASSIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "magnesium acetate"
+    ],
+    "kept": [
+      "magnesium acetate"
+    ],
+    "rxcui": "317246",
+    "score": 20.94024085998535
+  },
+  "DEXTROSE; MAGNESIUM ACETATE; POTASSIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "magnesium acetate",
+      "potassium acetate",
+      "sodium chloride"
+    ],
+    "kept": [
+      "magnesium acetate",
+      "potassium acetate",
+      "sodium chloride"
+    ],
+    "rxcui": "1008703",
+    "score": 20.217540740966797
+  },
+  "DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM ACETATE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 24.726064224243164
+  },
+  "DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM CHLORIDE; SODIUM LACTATE; SODIUM PHOSPHATE, MONOBASIC ANHYDROUS": {
+    "ingredients": [
+      "lactate",
+      "sodium phosphate, monobasic",
+      "glucose",
+      "dibasic potassium phosphate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "lactate",
+      "sodium phosphate, monobasic",
+      "dibasic potassium phosphate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007776",
+    "score": 33.70940079689026
+  },
+  "DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, MONOBASIC; SODIUM CHLORIDE; SODIUM LACTATE": {
+    "ingredients": [
+      "lactate",
+      "sodium phosphate, monobasic",
+      "potassium phosphate",
+      "glucose",
+      "magnesium chloride",
+      "potassium chloride"
+    ],
+    "kept": [
+      "lactate",
+      "sodium phosphate, monobasic",
+      "potassium phosphate",
+      "magnesium chloride",
+      "potassium chloride"
+    ],
+    "rxcui": "1007526",
+    "score": 28.612445481618245
+  },
+  "DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, MONOBASIC; SODIUM LACTATE; SODIUM PHOSPHATE, MONOBASIC ANHYDROUS": {
+    "ingredients": [
+      "lactate",
+      "sodium phosphate, monobasic",
+      "potassium phosphate",
+      "glucose",
+      "magnesium chloride",
+      "potassium chloride"
+    ],
+    "kept": [
+      "lactate",
+      "sodium phosphate, monobasic",
+      "potassium phosphate",
+      "magnesium chloride",
+      "potassium chloride"
+    ],
+    "rxcui": "1007526",
+    "score": 31.97572738102504
+  },
+  "DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "magnesium acetate",
+      "potassium acetate",
+      "sodium chloride"
+    ],
+    "kept": [
+      "magnesium acetate",
+      "potassium acetate",
+      "sodium chloride"
+    ],
+    "rxcui": "1008703",
+    "score": 23.61086082458496
+  },
+  "DEXTROSE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM GLUCONATE": {
+    "ingredients": [
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1008699",
+    "score": 26.838470458984375
+  },
+  "DEXTROSE; POTASSIUM CHLORIDE": {
+    "ingredients": [
+      "glucose",
+      "potassium chloride"
+    ],
+    "kept": [
+      "potassium chloride"
+    ],
+    "rxcui": "216544",
+    "score": 15.414902687072754
+  },
+  "DEXTROSE; POTASSIUM CHLORIDE; POTASSIUM LACTATE; SODIUM CHLORIDE; SODIUM PHOSPHATE, MONOBASIC ANHYDROUS": {
+    "ingredients": [
+      "sodium phosphate, monobasic",
+      "potassium lactate",
+      "glucose",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, monobasic",
+      "potassium lactate",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007274",
+    "score": 25.920890790765938
+  },
+  "DEXTROSE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, DIBASIC; SODIUM ACETATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "glucose",
+      "dibasic potassium phosphate",
+      "sodium acetate",
+      "sodium chloride"
+    ],
+    "kept": [
+      "dibasic potassium phosphate",
+      "sodium acetate",
+      "sodium chloride"
+    ],
+    "rxcui": "1007747",
+    "score": 25.096470165252686
+  },
+  "DEXTROSE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, MONOBASIC; SODIUM CHLORIDE; SODIUM LACTATE": {
+    "ingredients": [
+      "sodium phosphate, monobasic",
+      "potassium lactate",
+      "glucose",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, monobasic",
+      "potassium lactate",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007274",
+    "score": 25.89711015701294
+  },
+  "DEXTROSE; POTASSIUM CHLORIDE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "glucose",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "216554",
+    "score": 18.800498962402344
+  },
+  "DEXTROSE; SODIUM CHLORIDE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "216546",
+    "score": 14.551780700683594
+  },
+  "DOXECITINE; DOXRIBTIMINE": {
+    "ingredients": [
+      "doxribtimine",
+      "doxecitine"
+    ],
+    "kept": [
+      "doxribtimine",
+      "doxecitine"
+    ],
+    "rxcui": "2734326",
+    "score": 20.91661834716797
+  },
+  "Dengue Tetravalent Vaccine, Live": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2169487",
+    "score": 24.925846099853516
+  },
+  "Digoxin Immune Fab (Ovine)": {
+    "ingredients": [
+      "digoxin antibodies Fab fragments"
+    ],
+    "kept": [
+      "digoxin antibodies Fab fragments"
+    ],
+    "rxcui": "1745257",
+    "score": 24.90114974975586
+  },
+  "Diphtheria & Tetanus Toxoids & Acellular Pertussis Vaccine Adsorbed": {
+    "ingredients": [
+      "acellular pertussis vaccine, inactivated",
+      "diphtheria toxoid vaccine, inactivated",
+      "tetanus toxoid vaccine, inactivated"
+    ],
+    "kept": [
+      "acellular pertussis vaccine, inactivated",
+      "diphtheria toxoid vaccine, inactivated",
+      "tetanus toxoid vaccine, inactivated"
+    ],
+    "rxcui": "1007584",
+    "score": 26.06449159894671
+  },
+  "Diphtheria & Tetanus Toxoids Adsorbed": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "91604",
+    "score": 21.82815450977912
+  },
+  "Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed and Inactivated Poliovirus Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1868740",
+    "score": 33.385643005371094
+  },
+  "Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed, Hepatitis B (Recombinant) and Inactivated Poliovirus Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1868740",
+    "score": 33.385643005371094
+  },
+  "Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed, Inactivated Poliovirus and Haemophilus b Conjugate (Tetanus Toxoid Conjugate) Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1868740",
+    "score": 39.2910041809082
+  },
+  "Diphtheria and Tetanus Toxoids and Acellular Pertussis, Inactivated Poliovirus, Haemophilus b Conjugate and Hepatitis B Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2048821",
+    "score": 35.11199687451124
+  },
+  "ELAGOLIX SODIUM,ESTRADIOL,NORETHINDRONE ACETATE; ELAGOLIX SODIUM": {
+    "ingredients": [
+      "elagolix",
+      "estradiol",
+      "norethindrone"
+    ],
+    "kept": [
+      "elagolix",
+      "estradiol",
+      "norethindrone"
+    ],
+    "rxcui": "2371763",
+    "score": 26.049047470092773
+  },
+  "ELEXACAFTOR, IVACAFTOR, TEZACAFTOR; IVACAFTOR": {
+    "ingredients": [
+      "ivacaftor",
+      "tezacaftor",
+      "elexacaftor"
+    ],
+    "kept": [
+      "ivacaftor",
+      "tezacaftor",
+      "elexacaftor"
+    ],
+    "rxcui": "2257010",
+    "score": 27.998394012451172
+  },
+  "ENALAPRILAT": {
+    "ingredients": [
+      "enalaprilat"
+    ],
+    "kept": [
+      "enalaprilat"
+    ],
+    "rxcui": "3829",
+    "score": 13.842875480651855
+  },
+  "ENTECAVIR": {
+    "ingredients": [
+      "entecavir"
+    ],
+    "kept": [
+      "entecavir"
+    ],
+    "rxcui": "306266",
+    "score": 13.516088485717773
+  },
+  "ESTRADIOL HEMIHYDRATE": {
+    "ingredients": [
+      "estradiol"
+    ],
+    "kept": [
+      "estradiol"
+    ],
+    "rxcui": "236859",
+    "score": 16.008930206298828
+  },
+  "ETRIPAMIL": {
+    "ingredients": [
+      "etripamil"
+    ],
+    "kept": [
+      "etripamil"
+    ],
+    "rxcui": "2730302",
+    "score": 14.589739799499512
+  },
+  "EXENATIDE SYNTHETIC": {
+    "ingredients": [
+      "exenatide"
+    ],
+    "kept": [
+      "exenatide"
+    ],
+    "rxcui": "60548",
+    "score": 15.48311996459961
+  },
+  "Ebola Zaire Vaccine, Live": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2268061",
+    "score": 25.397371292114258
+  },
+  "Ephedrine Sulphide 75mg Sustained Release Capsule.": {
+    "ingredients": [
+      "ephedrine"
+    ],
+    "kept": [
+      "ephedrine"
+    ],
+    "rxcui": "372021",
+    "score": 10.403027534484863
+  },
+  "Epsilon Caproic Acid 250mg/ml Injection": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1990",
+    "score": 10.651979446411133
+  },
+  "Etifoxine Hydrochloride Bulk drug & Etifoxine Hydrochloride capsules 50 mg": {
+    "ingredients": [
+      "etifoxine"
+    ],
+    "kept": [
+      "etifoxine"
+    ],
+    "rxcui": "236215",
+    "score": 23.153446197509766
+  },
+  "Etodolac i.m injection 400mg/2ml (Additional dosage form)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1431387",
+    "score": 13.952244922092984
+  },
+  "FLUDEOXYGLUCOSE F-18": {
+    "ingredients": [
+      "fluorodeoxyglucose F18"
+    ],
+    "kept": [],
+    "rxcui": "1362737",
+    "score": 25.523658752441406
+  },
+  "FLUTICASONE FUROATE; UMECLIDINIUM BROMIDE; VILANTEROL TRIFENATATE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1996278",
+    "score": 25.267589950561522
+  },
+  "FLUTICASONE FUROATE; VILANTEROL TRIFENATATE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1486450",
+    "score": 19.06847219467163
+  },
+  "FORMOTEROL FUMARATE; GLYCOPYRROLATE": {
+    "ingredients": [
+      "glycopyrronium",
+      "formoterol"
+    ],
+    "kept": [
+      "glycopyrronium",
+      "formoterol"
+    ],
+    "rxcui": "2659257",
+    "score": 17.780627887486936
+  },
+  "Factor XIII Concentrate (Human)": {
+    "ingredients": [
+      "factor XIII"
+    ],
+    "kept": [
+      "factor XIII"
+    ],
+    "rxcui": "1091605",
+    "score": 20.17341699145635
+  },
+  "Feracrylum 3% gel": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": null,
+    "score": null
+  },
+  "Feracrylum 3% solution": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": null,
+    "score": null
+  },
+  "Fesoteroterodine Fumarate Extended Release Tablets 4mg and 8mg and Fesoteroterodine Fumarate Bulk": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "845152",
+    "score": 16.00565528869629
+  },
+  "Fibrin Sealant (Human)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1748604",
+    "score": 17.909154651641845
+  },
+  "Fibrin Sealant (Tisseel)": {
+    "ingredients": [
+      "thrombin",
+      "fibrinogen"
+    ],
+    "kept": [
+      "fibrinogen"
+    ],
+    "rxcui": "2003662",
+    "score": 20.49260577964783
+  },
+  "Fibrin Sealant Patch": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "4384",
+    "score": 13.77652359008789
+  },
+  "Fingolimod Capsules 0.5mg and Fingolimod hydrochloridebulk": {
+    "ingredients": [
+      "fingolimod"
+    ],
+    "kept": [
+      "fingolimod"
+    ],
+    "rxcui": "1012895",
+    "score": 18.86347007751465
+  },
+  "GLYCOPYRROLATE": {
+    "ingredients": [
+      "glycopyrronium"
+    ],
+    "kept": [
+      "glycopyrronium"
+    ],
+    "rxcui": "4955",
+    "score": 7.20240592956543
+  },
+  "GLYCOPYRROLATE; INDACATEROL MALEATE": {
+    "ingredients": [
+      "indacaterol",
+      "glycopyrronium"
+    ],
+    "kept": [
+      "indacaterol",
+      "glycopyrronium"
+    ],
+    "rxcui": "1721575",
+    "score": 18.089550018310547
+  },
+  "GLYCOPYRROLATE; NEOSTIGMINE METHYLSULFATE": {
+    "ingredients": [
+      "glycopyrronium",
+      "neostigmine"
+    ],
+    "kept": [
+      "glycopyrronium",
+      "neostigmine"
+    ],
+    "rxcui": "2645814",
+    "score": 19.667685946393494
+  },
+  "GRISEOFULVIN, MICROCRYSTALLINE": {
+    "ingredients": [
+      "griseofulvin"
+    ],
+    "kept": [
+      "griseofulvin"
+    ],
+    "rxcui": "91077",
+    "score": 18.45405387878418
+  },
+  "GRISEOFULVIN, MICROSIZE": {
+    "ingredients": [
+      "griseofulvin"
+    ],
+    "kept": [
+      "griseofulvin"
+    ],
+    "rxcui": "91077",
+    "score": 19.213619232177734
+  },
+  "GRISEOFULVIN, ULTRAMICROCRYSTALLINE": {
+    "ingredients": [
+      "griseofulvin"
+    ],
+    "kept": [
+      "griseofulvin"
+    ],
+    "rxcui": "217398",
+    "score": 19.15109634399414
+  },
+  "GRISEOFULVIN, ULTRAMICROSIZE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "91078",
+    "score": 19.19741439819336
+  },
+  "Gimeracil bulk & Oteracil potassium bulk and Tegafur 15mg/20mg, Gimeracil 4.35mg/5.8mg and Oteracil 11.8mg/15.8mg capsules": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2674374",
+    "score": 40.186350202560426
+  },
+  "HPC, Cord Blood": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2641200",
+    "score": 15.518500582377117
+  },
+  "Haemophilus b Conjugate (Meningococcal Protein Conjugate) and Hepatitis B (Recombinant) Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2481183",
+    "score": 29.967435836791992
+  },
+  "Hamycin Glycerine (300,000 Units/ml) Suspension": {
+    "ingredients": [
+      "glycerin"
+    ],
+    "kept": [
+      "glycerin"
+    ],
+    "rxcui": "4910",
+    "score": 9.209156036376953
+  },
+  "Hematopoietic Progenitor Cells, Cord (HPC-C)": {
+    "ingredients": [
+      "human cord blood hematopoietic progenitor cell"
+    ],
+    "kept": [],
+    "rxcui": "1307732",
+    "score": 24.49079385333591
+  },
+  "Hepatitis A & Hepatitis B (Recombinant) Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "466527",
+    "score": 23.474321365356445
+  },
+  "Hepatitis A Vaccine Inactivated": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "253174",
+    "score": 20.01426124572754
+  },
+  "Hepatitis B Vaccine (Recombinant), Adjuvanted": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "466527",
+    "score": 23.35706329345703
+  },
+  "House Dust Mites (Dermatophagoides farinae and Dermatophagoides pteronyssinus) Allergen Extract": {
+    "ingredients": [
+      "American house dust mite allergenic extract"
+    ],
+    "kept": [],
+    "rxcui": "1116977",
+    "score": 31.32054328918457
+  },
+  "Human Papillomavirus 9-valent Vaccine, Recombinant": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1600501",
+    "score": 29.142333984375
+  },
+  "Human Papillomavirus Bivalent (Types 16 and 18) Vaccine, Recombinant": {
+    "ingredients": [
+      "L1 protein, human papillomavirus type 16 vaccine",
+      "L1 protein, human papillomavirus type 18 vaccine"
+    ],
+    "kept": [],
+    "rxcui": "1301889",
+    "score": 25.175924264907838
+  },
+  "Human Papillomavirus Quadrivalent (Types 6, 11, 16 and 18) Vaccine, Recombinant": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1137451",
+    "score": 25.878097187995913
+  },
+  "IOFLUPANE I-123": {
+    "ingredients": [
+      "ioflupane"
+    ],
+    "kept": [
+      "ioflupane"
+    ],
+    "rxcui": "1426874",
+    "score": 29.786548614501953
+  },
+  "IVACAFTOR; IVACAFTOR, TEZACAFTOR": {
+    "ingredients": [
+      "ivacaftor",
+      "tezacaftor"
+    ],
+    "kept": [
+      "ivacaftor",
+      "tezacaftor"
+    ],
+    "rxcui": "1996267",
+    "score": 23.44402503967285
+  },
+  "Immune Globulin Infusion (Human)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "797550",
+    "score": 17.45688247680664
+  },
+  "Immune Globulin Infusion (Human), 10% with Recombinant Human Hyaluronidase": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1552037",
+    "score": 18.889737392730588
+  },
+  "Immune Globulin Injection (Human) 10% Caprylate/Chromatography Purified": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "435522",
+    "score": 15.606742789480421
+  },
+  "Immune Globulin Intravenous (Human)": {
+    "ingredients": [
+      "botulism immune globulin IV human"
+    ],
+    "kept": [],
+    "rxcui": "544488",
+    "score": 17.471368079884847
+  },
+  "Immune Globulin Intravenous (Human), 10% Liquid": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1425213",
+    "score": 16.836244583129883
+  },
+  "Immune Globulin Intravenous (Human)-ifas": {
+    "ingredients": [
+      "immunoglobulin G"
+    ],
+    "kept": [],
+    "rxcui": "2102433",
+    "score": 28.36654281616211
+  },
+  "Immune Globulin Intravenous, Human-kthm, 10% Solution": {
+    "ingredients": [
+      "immunoglobulin G"
+    ],
+    "kept": [],
+    "rxcui": "2726012",
+    "score": 30.128023147583008
+  },
+  "Immune Globulin Intravenous, Human-slra": {
+    "ingredients": [
+      "immunoglobulin G"
+    ],
+    "kept": [],
+    "rxcui": "2123035",
+    "score": 32.487525939941406
+  },
+  "Immune Globulin Subcutaneous (Human), 20% Liquid": {
+    "ingredients": [
+      "immunoglobulin G"
+    ],
+    "kept": [],
+    "rxcui": "617615",
+    "score": 17.374086380004883
+  },
+  "Immune Globulin Subcutaneous (Human), 20% Solution": {
+    "ingredients": [
+      "immunoglobulin G"
+    ],
+    "kept": [],
+    "rxcui": "617615",
+    "score": 17.374086380004883
+  },
+  "Immune Globulin Subcutaneous (Human)-hipp": {
+    "ingredients": [
+      "immunoglobulin G"
+    ],
+    "kept": [],
+    "rxcui": "2167145",
+    "score": 29.09178352355957
+  },
+  "Influenza A (H5N1) Monovalent Vaccine, Adjuvanted": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "729564",
+    "score": 23.82304536342621
+  },
+  "Influenza A (H5N1) Virus Monovalent Vaccine, Adjuvanted": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "729564",
+    "score": 23.834962844848633
+  },
+  "Influenza Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "5806",
+    "score": 12.753272883605957
+  },
+  "Influenza Vaccine Live, Intranasal": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1868625",
+    "score": 17.41342806816101
+  },
+  "Influenza Vaccine, Adjuvanted": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2048624",
+    "score": 14.222473237752915
+  },
+  "Influenza Virus Vaccine, H5N1": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "729564",
+    "score": 19.269729614257812
+  },
+  "Insects (Whole Body), Mite Dermatophagoides farinae": {
+    "ingredients": [
+      "American house dust mite allergenic extract"
+    ],
+    "kept": [],
+    "rxcui": "1116977",
+    "score": 27.963640213012695
+  },
+  "Insects (Whole Body), Mite Dermatophagoides pteronyssinus": {
+    "ingredients": [
+      "European house dust mite allergenic extract"
+    ],
+    "kept": [],
+    "rxcui": "1116979",
+    "score": 27.876779556274414
+  },
+  "Isavuconazolesulfate 100mg capsules": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": null,
+    "score": null
+  },
+  "Japanese Encephalitis Vaccine, Inactivated, Adsorbed": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2638742",
+    "score": 26.723064422607422
+  },
+  "LEVACETYLLEUCINE": {
+    "ingredients": [
+      "levacetylleucine"
+    ],
+    "kept": [
+      "levacetylleucine"
+    ],
+    "rxcui": "2375522",
+    "score": 14.589739799499512
+  },
+  "LEVOKETOCONAZOLE": {
+    "ingredients": [
+      "ketoconazole"
+    ],
+    "kept": [
+      "ketoconazole"
+    ],
+    "rxcui": "2588846",
+    "score": 9.589739799499512
+  },
+  "LEVONORDEFRIN; MEPIVACAINE HYDROCHLORIDE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "700757",
+    "score": 19.151903022766113
+  },
+  "LEVONORDEFRIN; PROCAINE HYDROCHLORIDE; PROPOXYCAINE HYDROCHLORIDE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "238067",
+    "score": 20.583309781256677
+  },
+  "Letermovir Bulk Drug &Letermovir Tablets 240mg and 480 mg": {
+    "ingredients": [
+      "letermovir"
+    ],
+    "kept": [
+      "letermovir"
+    ],
+    "rxcui": "1988672",
+    "score": 21.528377532958984
+  },
+  "Lumacaftor bulk, Ivacaftor bulk & Lumacaftor and Ivacaftor tablets 100mg/125mg and 200mg/125mg": {
+    "ingredients": [
+      "ivacaftor",
+      "lumacaftor"
+    ],
+    "kept": [
+      "ivacaftor",
+      "lumacaftor"
+    ],
+    "rxcui": "1655928",
+    "score": 31.106189727783203
+  },
+  "Lymphocyte Immune Globulin, Anti-thymocyte Globulin (Equine)": {
+    "ingredients": [
+      "lymphocyte immune globulin, anti-thymocyte globulin"
+    ],
+    "kept": [
+      "lymphocyte immune globulin, anti-thymocyte globulin"
+    ],
+    "rxcui": "91601",
+    "score": 39.61837387084961
+  },
+  "MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, MONOBASIC; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM GLUCONATE; SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE": {
+    "ingredients": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic",
+      "potassium phosphate",
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1007748",
+    "score": 35.260040283203125
+  },
+  "MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM GLUCONATE": {
+    "ingredients": [
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium acetate",
+      "sodium gluconate",
+      "magnesium chloride",
+      "potassium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1008699",
+    "score": 26.838470458984375
+  },
+  "MAGNESIUM CHLORIDE; SODIUM BICARBONATE; SODIUM CHLORIDE": {
+    "ingredients": [
+      "sodium bicarbonate",
+      "magnesium chloride",
+      "sodium chloride"
+    ],
+    "kept": [
+      "sodium bicarbonate",
+      "magnesium chloride",
+      "sodium chloride"
+    ],
+    "rxcui": "1008784",
+    "score": 20.841466903686523
+  },
+  "Measles, Mumps and Rubella Vaccine Live": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "29406",
+    "score": 27.422428131103516
+  },
+  "Measles, Mumps and Rubella Virus Vaccine Live": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "29406",
+    "score": 28.148115158081055
+  },
+  "Measles, Mumps, Rubella and Varicella Virus Vaccine Live": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1844493",
+    "score": 30.27329444885254
+  },
+  "Meningococcal (Groups A, C, Y and W-135) Polysaccharide Diphtheria Toxoid Conjugate Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2057757",
+    "score": 31.921785962846545
+  },
+  "Meningococcal (Groups A, C, Y, W) Conjugate Vaccine": {
+    "ingredients": [
+      "meningococcal polysaccharide vaccine group Y"
+    ],
+    "kept": [
+      "meningococcal polysaccharide vaccine group Y"
+    ],
+    "rxcui": "314725",
+    "score": 20.756105967930385
+  },
+  "Meningococcal (Groups A, C, Y, and W-135) Oligosaccharide Diphtheria CRM197 Conjugate Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2058554",
+    "score": 33.3245334370931
+  },
+  "Meningococcal Groups A, B, C, W and Y Vaccine": {
+    "ingredients": [
+      "meningococcal group A polysaccharide",
+      "meningococcal group C polysaccharide",
+      "meningococcal polysaccharide vaccine group W-135",
+      "meningococcal polysaccharide vaccine group Y"
+    ],
+    "kept": [
+      "meningococcal group A polysaccharide",
+      "meningococcal group C polysaccharide",
+      "meningococcal polysaccharide vaccine group W-135",
+      "meningococcal polysaccharide vaccine group Y"
+    ],
+    "rxcui": "1008395",
+    "score": 23.003418922424316
+  },
+  "Meningococcal Groups A, B, C, W, and Y Vaccine": {
+    "ingredients": [
+      "meningococcal group A polysaccharide",
+      "meningococcal group C polysaccharide",
+      "meningococcal polysaccharide vaccine group W-135",
+      "meningococcal polysaccharide vaccine group Y"
+    ],
+    "kept": [
+      "meningococcal group A polysaccharide",
+      "meningococcal group C polysaccharide",
+      "meningococcal polysaccharide vaccine group W-135",
+      "meningococcal polysaccharide vaccine group Y"
+    ],
+    "rxcui": "1008395",
+    "score": 23.003418922424316
+  },
+  "Meningococcal Groups C and Y and Haemophilus b Tetanus Toxoid Conjugate Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1437917",
+    "score": 32.34437561035156
+  },
+  "Meningococcal Polysaccharide Vaccine, Groups A and C Combined": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2057759",
+    "score": 25.817277908325195
+  },
+  "Meningococcal Polysaccharide Vaccine, Groups A, C, Y, and W-135 Combined": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2058224",
+    "score": 29.06251260795593
+  },
+  "NILOTINIB D-TARTRATE": {
+    "ingredients": [
+      "nilotinib"
+    ],
+    "kept": [
+      "nilotinib"
+    ],
+    "rxcui": "2715454",
+    "score": 25.518280029296875
+  },
+  "NITROFURANTOIN, MACROCRYSTALLINE": {
+    "ingredients": [
+      "nitrofurantoin"
+    ],
+    "kept": [
+      "nitrofurantoin"
+    ],
+    "rxcui": "235559",
+    "score": 18.882610321044922
+  },
+  "NITROFURANTOIN; NITROFURANTOIN, MACROCRYSTALLINE": {
+    "ingredients": [
+      "nitrofurantoin"
+    ],
+    "kept": [
+      "nitrofurantoin"
+    ],
+    "rxcui": "235559",
+    "score": 23.990684509277344
+  },
+  "NONOXYNOL-9": {
+    "ingredients": [
+      "nonoxynol-9"
+    ],
+    "kept": [
+      "nonoxynol-9"
+    ],
+    "rxcui": "53750",
+    "score": 21.63004493713379
+  },
+  "PHENTERMINE RESIN COMPLEX": {
+    "ingredients": [
+      "phentermine"
+    ],
+    "kept": [
+      "phentermine"
+    ],
+    "rxcui": "221138",
+    "score": 19.602840423583984
+  },
+  "PURIFIED WATER": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1256434",
+    "score": 16.078645706176758
+  },
+  "Peanut (Arachis hypogaea) Allergen Powder-dnfp": {
+    "ingredients": [
+      "peanut allergenic extract"
+    ],
+    "kept": [
+      "peanut allergenic extract"
+    ],
+    "rxcui": "2279402",
+    "score": 34.485630416870116
+  },
+  "Pneumococcal 13-valent Conjugate Vaccine (Diphtheria CRM197 Protein)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2058228",
+    "score": 36.047183990478516
+  },
+  "Pneumococcal 15-valent Conjugate Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2571293",
+    "score": 29.413028717041016
+  },
+  "Pneumococcal 20-valent Conjugate Vaccine": {
+    "ingredients": [
+      "Streptococcus pneumoniae serotype 10A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 11A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 12F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 15B capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 8 capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 33F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 22F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 14 capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 18C capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 19F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 23F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 4 capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 6B capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 9V capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 1 capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 19A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 3 capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 5 capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 6A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 7F capsular antigen diphtheria CRM197 protein conjugate vaccine"
+    ],
+    "kept": [],
+    "rxcui": "2566308",
+    "score": 28.863101959228516
+  },
+  "Pneumococcal 21-valent Conjugate Vaccine": {
+    "ingredients": [
+      "Streptococcus pneumoniae serotype 10A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 11A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 12F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 8 capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 33F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 22F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 15A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 16F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 17F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 20A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 23A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 23B capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 24F capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 31 capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 35B capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 9N capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype DEOAC15B capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 19A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 3 capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 6A capsular antigen diphtheria CRM197 protein conjugate vaccine",
+      "Streptococcus pneumoniae serotype 7F capsular antigen diphtheria CRM197 protein conjugate vaccine"
+    ],
+    "kept": [],
+    "rxcui": "2686972",
+    "score": 31.70873260498047
+  },
+  "Pneumococcal 7-valent Conjugate Vaccine (Diphtheria CRM197 Protein)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "312464",
+    "score": 34.81590270996094
+  },
+  "Pneumococcal Vaccine, Polyvalent": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "298583",
+    "score": 18.117734832962515
+  },
+  "Pollens - Grasses, Bermuda Grass Cynodon dactylon": {
+    "ingredients": [
+      "Bermuda grass pollen extract"
+    ],
+    "kept": [
+      "Bermuda grass pollen extract"
+    ],
+    "rxcui": "851906",
+    "score": 24.052044599883413
+  },
+  "Pollens - Grasses, Bluegrass, Kentucky (June) Poa pratensis": {
+    "ingredients": [
+      "Kentucky bluegrass pollen extract"
+    ],
+    "kept": [
+      "Kentucky bluegrass pollen extract"
+    ],
+    "rxcui": "852834",
+    "score": 21.825857879519464
+  },
+  "Pollens - Grasses, Fescue, Meadow Festuca elatior": {
+    "ingredients": [
+      "meadow fescue grass pollen extract"
+    ],
+    "kept": [
+      "meadow fescue grass pollen extract"
+    ],
+    "rxcui": "851918",
+    "score": 23.13499938419887
+  },
+  "Pollens - Grasses, Orchard Grass Dactylis glomerata": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "124341",
+    "score": 28.89141082763672
+  },
+  "Pollens - Grasses, Redtop Agrostis alba": {
+    "ingredients": [
+      "redtop grass pollen extract"
+    ],
+    "kept": [
+      "redtop grass pollen extract"
+    ],
+    "rxcui": "851870",
+    "score": 18.71862948735555
+  },
+  "Pollens - Grasses, Ryegrass, Perennial Lolium perenne": {
+    "ingredients": [
+      "Lolium perenne allergenic extract"
+    ],
+    "kept": [
+      "Lolium perenne allergenic extract"
+    ],
+    "rxcui": "1427059",
+    "score": 23.032542700475577
+  },
+  "Pollens - Grasses, Sweet Vernal Grass Anthoxanthum odoratum": {
+    "ingredients": [
+      "sweet vernal grass pollen extract"
+    ],
+    "kept": [
+      "sweet vernal grass pollen extract"
+    ],
+    "rxcui": "851898",
+    "score": 25.44124927520752
+  },
+  "Pollens - Grasses, Timothy Phleum pratense": {
+    "ingredients": [
+      "Timothy grass pollen extract"
+    ],
+    "kept": [
+      "Timothy grass pollen extract"
+    ],
+    "rxcui": "851994",
+    "score": 21.965592447916666
+  },
+  "Pollens - Weeds and Garden Plants, Ragweed, Short Ambrosia artemisiifolia": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "896150",
+    "score": 23.738220843725607
+  },
+  "Pollens - Weeds and Garden Plants, Ragweed, Short Ambrosia elatior": {
+    "ingredients": [
+      "short ragweed pollen extract"
+    ],
+    "kept": [
+      "short ragweed pollen extract"
+    ],
+    "rxcui": "896135",
+    "score": 22.95039176940918
+  },
+  "Pooled Plasma (Human), Solvent/Detergent Treated": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "389307",
+    "score": 31.71706199645996
+  },
+  "Positive Skin Test Control-Histamine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "318237",
+    "score": 23.11206064224243
+  },
+  "Proper Name": {
+    "ingredients": [
+      "mometasone"
+    ],
+    "kept": [],
+    "rxcui": "1148520",
+    "score": 8.484818458557129
+  },
+  "Prothrombin complex concentrate, human-lans": {
+    "ingredients": [
+      "prothrombin"
+    ],
+    "kept": [
+      "prothrombin"
+    ],
+    "rxcui": "2643202",
+    "score": 31.255634307861328
+  },
+  "RADIUM RA-223 DICHLORIDE": {
+    "ingredients": [
+      "radium"
+    ],
+    "kept": [
+      "radium"
+    ],
+    "rxcui": "1424174",
+    "score": 37.87961196899414
+  },
+  "Respiratory Syncytial Virus Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2672856",
+    "score": 21.316757202148438
+  },
+  "Respiratory Syncytial Virus Vaccine, Adjuvanted": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2639228",
+    "score": 24.930044174194336
+  },
+  "Rho(D) Immune Globulin Intravenous (Human)": {
+    "ingredients": [
+      "Rho(D) immune globulin"
+    ],
+    "kept": [
+      "Rho(D) immune globulin"
+    ],
+    "rxcui": "1789837",
+    "score": 23.069049835205078
+  },
+  "Rotavirus Vaccine, Live, Oral": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2207021",
+    "score": 19.3609619140625
+  },
+  "Rotavirus Vaccine, Live, Oral, Pentavalent": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "860432",
+    "score": 24.435665130615234
+  },
+  "Rubber Panel Thin-Layer Rapid Use Epicutaneous Patch Test": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1368610",
+    "score": 28.94670371872102
+  },
+  "SODIUM BICARBONATE; TARTARIC ACID": {
+    "ingredients": [
+      "sodium bicarbonate",
+      "tartaric acid"
+    ],
+    "kept": [
+      "sodium bicarbonate",
+      "tartaric acid"
+    ],
+    "rxcui": "690527",
+    "score": 18.958677291870117
+  },
+  "SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE; SODIUM PHOSPHATE, MONOBASIC, MONOHYDRATE": {
+    "ingredients": [
+      "sodium phosphate, dibasic"
+    ],
+    "kept": [
+      "sodium phosphate, dibasic"
+    ],
+    "rxcui": "221090",
+    "score": 24.27950096130371
+  },
+  "STERILE WATER FOR INJECTION": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2467748",
+    "score": 17.48228645324707
+  },
+  "STERILE WATER FOR IRRIGATION": {
+    "ingredients": [
+      "water"
+    ],
+    "kept": [
+      "water"
+    ],
+    "rxcui": "150985",
+    "score": 19.912246704101562
+  },
+  "SULFUR": {
+    "ingredients": [
+      "sulfur"
+    ],
+    "kept": [
+      "sulfur"
+    ],
+    "rxcui": "10223",
+    "score": 11.317660331726074
+  },
+  "SULFUR HEXAFLUORIDE LIPID-TYPE A MICROSPHERES": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2004515",
+    "score": 36.99026870727539
+  },
+  "Sheep Pox Vaccine (For Veterinary)": {
+    "ingredients": [
+      "menthol"
+    ],
+    "kept": [],
+    "rxcui": "993827",
+    "score": 12.741356563568115
+  },
+  "Short Ragweed Pollen Allergen Extract": {
+    "ingredients": [
+      "short ragweed pollen extract"
+    ],
+    "kept": [
+      "short ragweed pollen extract"
+    ],
+    "rxcui": "896135",
+    "score": 21.033645629882812
+  },
+  "Smallpox (Vaccinia) Vaccine, Live": {
+    "ingredients": [
+      "vaccinia virus strain New York City Board of Health live antigen"
+    ],
+    "kept": [
+      "vaccinia virus strain New York City Board of Health live antigen"
+    ],
+    "rxcui": "1492300",
+    "score": 24.437923431396484
+  },
+  "Smallpox and Mpox Vaccine, Live, Non-replicating": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2203550",
+    "score": 33.3649061203003
+  },
+  "Sweet Vernal, Orchard, Perennial Rye, Timothy, and Kentucky Blue Grass Mixed Pollens Allergen Extract": {
+    "ingredients": [
+      "orchard grass pollen extract",
+      "sweet vernal grass pollen extract",
+      "Timothy grass pollen extract",
+      "perennial rye grass pollen extract",
+      "Kentucky bluegrass pollen extract"
+    ],
+    "kept": [
+      "orchard grass pollen extract",
+      "sweet vernal grass pollen extract",
+      "Timothy grass pollen extract",
+      "perennial rye grass pollen extract",
+      "Kentucky bluegrass pollen extract"
+    ],
+    "rxcui": "1550699",
+    "score": 36.64409967150007
+  },
+  "TRIPLE SULFA (SULFABENZAMIDE;SULFACETAMIDE;SULFATHIAZOLE)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2109033",
+    "score": 24.947486995779013
+  },
+  "Tenofovir Alafenamide Hemifumarate Bulk Emtricitabine 200mg/200mg +Tenofovir Alafenamide 10/25 mg Tablets": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2721103",
+    "score": 30.343223571777344
+  },
+  "Tetanus Toxoid, Reduced Diphtheria Toxoid and Acellular Pertussis Vaccine, Adsorbed": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1908427",
+    "score": 33.480247497558594
+  },
+  "Tetanus and Diphtheria Toxoids Adsorbed": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "885380",
+    "score": 22.843639490718843
+  },
+  "Thin-Layer Rapid Use Epicutaneous Patch Test": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1368610",
+    "score": 28.64015561914264
+  },
+  "Tiamulin hydrogen fumarate solution for injection 162 mg/ml (additional Dosage form)": {
+    "ingredients": [
+      "tiamulin fumarate"
+    ],
+    "kept": [
+      "tiamulin fumarate"
+    ],
+    "rxcui": "1314589",
+    "score": 15.526145935058594
+  },
+  "Tick-Borne Encephalitis Vaccine": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "152978",
+    "score": 35.75119400024414
+  },
+  "Timothy Grass Pollen Allergen Extract": {
+    "ingredients": [
+      "Timothy grass pollen extract"
+    ],
+    "kept": [
+      "Timothy grass pollen extract"
+    ],
+    "rxcui": "851994",
+    "score": 22.41227912902832
+  },
+  "Topiroxostat tablets 20mg, 40mg and 60mg and bulk": {
+    "ingredients": [
+      "ivacaftor",
+      "tezacaftor",
+      "elexacaftor"
+    ],
+    "kept": [],
+    "rxcui": "2635022",
+    "score": 11.259484395368354
+  },
+  "Tuberculin, Purified Protein Derivative": {
+    "ingredients": [
+      "purified protein derivative of tuberculin"
+    ],
+    "kept": [
+      "purified protein derivative of tuberculin"
+    ],
+    "rxcui": "8948",
+    "score": 23.35015869140625
+  },
+  "Typhoid Vaccine Live Oral Ty21a": {
+    "ingredients": [
+      "Salmonella typhi Ty21a live antigen"
+    ],
+    "kept": [],
+    "rxcui": "762595",
+    "score": 22.999164581298828
+  },
+  "UMECLIDINIUM BROMIDE; VILANTEROL TRIFENATATE": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1486451",
+    "score": 21.497825622558594
+  },
+  "UNOPROSTONE ISOPROPYL": {
+    "ingredients": [
+      "isopropyl unoprostone"
+    ],
+    "kept": [
+      "isopropyl unoprostone"
+    ],
+    "rxcui": "135313",
+    "score": 17.478504180908203
+  },
+  "UREA C-13": {
+    "ingredients": [
+      "urea"
+    ],
+    "kept": [
+      "urea"
+    ],
+    "rxcui": "226724",
+    "score": 21.052682876586914
+  },
+  "Varicella Virus Vaccine Live": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "235572",
+    "score": 21.367046356201172
+  },
+  "Venoms, Honey Bee Venom": {
+    "ingredients": [
+      "honey bee venom"
+    ],
+    "kept": [
+      "honey bee venom"
+    ],
+    "rxcui": "124427",
+    "score": 25.044898986816406
+  },
+  "Venoms, Mixed Vespid Venom Protein": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2270562",
+    "score": 27.842388153076172
+  },
+  "Venoms, Wasp Venom Protein": {
+    "ingredients": [
+      "wasp venom protein"
+    ],
+    "kept": [
+      "wasp venom protein"
+    ],
+    "rxcui": "260051",
+    "score": 24.765544891357422
+  },
+  "Venoms, White Faced Hornet Venom Protein": {
+    "ingredients": [
+      "bald-faced hornet venom protein"
+    ],
+    "kept": [],
+    "rxcui": "1297525",
+    "score": 29.345561981201172
+  },
+  "Venoms, Yellow Hornet Venom Protein": {
+    "ingredients": [
+      "yellow hornet venom protein"
+    ],
+    "kept": [
+      "yellow hornet venom protein"
+    ],
+    "rxcui": "1297537",
+    "score": 27.74658966064453
+  },
+  "Venoms, Yellow Jacket Venom Protein": {
+    "ingredients": [
+      "yellow jacket venom protein"
+    ],
+    "kept": [
+      "yellow jacket venom protein"
+    ],
+    "rxcui": "285170",
+    "score": 27.93189239501953
+  },
+  "Vonoprazan fumarate Bulk drug& Vonoprazan tablets 10mg/20 mg": {
+    "ingredients": [
+      "vonoprazan"
+    ],
+    "kept": [
+      "vonoprazan"
+    ],
+    "rxcui": "2604576",
+    "score": 20.690458297729492
+  },
+  "XENON XE-129 HYPERPOLARIZED": {
+    "ingredients": [
+      "xenon"
+    ],
+    "kept": [
+      "xenon"
+    ],
+    "rxcui": "2626220",
+    "score": 38.10087966918945
+  },
+  "Zoster Vaccine Live": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1444006",
+    "score": 19.31849479675293
+  },
+  "Zoster Vaccine Recombinant, Adjuvanted": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2734309",
+    "score": 18.942874954920295
+  },
+  "acellular nerve allograft-arwx": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2729872",
+    "score": 42.4168701171875
+  },
+  "acellular tissue engineered vessel-tyod": {
+    "ingredients": [
+      "acellular tissue engineered vessel"
+    ],
+    "kept": [
+      "acellular tissue engineered vessel"
+    ],
+    "rxcui": "2700340",
+    "score": 44.734806060791016
+  },
+  "aflibercept-boav": {
+    "ingredients": [
+      "aflibercept"
+    ],
+    "kept": [
+      "aflibercept"
+    ],
+    "rxcui": "2725885",
+    "score": 32.05519485473633
+  },
+  "allogeneic processed thymus tissue-agdc": {
+    "ingredients": [
+      "allogeneic processed thymus tissue"
+    ],
+    "kept": [
+      "allogeneic processed thymus tissue"
+    ],
+    "rxcui": "2626459",
+    "score": 42.4843864440918
+  },
+  "amivantamab and hyaluronidase-lpuj": {
+    "ingredients": [
+      "amivantamab",
+      "hyaluronidase"
+    ],
+    "kept": [
+      "amivantamab",
+      "hyaluronidase"
+    ],
+    "rxcui": "2729292",
+    "score": 33.770111083984375
+  },
+  "antihemophilic factor (recombinant), Fc-VWF-XTEN fusion protein-ehtl": {
+    "ingredients": [
+      "antihemophilic factor (recombinant), Fc-VWF-XTEN fusion protein"
+    ],
+    "kept": [
+      "antihemophilic factor (recombinant), Fc-VWF-XTEN fusion protein"
+    ],
+    "rxcui": "2631083",
+    "score": 62.810420989990234
+  },
+  "atoltivimab, maftivimab, and odesivimab-ebgn": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2706518",
+    "score": 41.377838134765625
+  },
+  "autologous cultured chondrocytes on porcine collagen membrane": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "1868050",
+    "score": 24.15056111017863
+  },
+  "bevacizumab-nwgd": {
+    "ingredients": [
+      "bevacizumab"
+    ],
+    "kept": [
+      "bevacizumab"
+    ],
+    "rxcui": "2712044",
+    "score": 31.682830810546875
+  },
+  "clesrovimab-cfor": {
+    "ingredients": [
+      "clesrovimab"
+    ],
+    "kept": [
+      "clesrovimab"
+    ],
+    "rxcui": "2716803",
+    "score": 34.86687469482422
+  },
+  "coagulation factor VIIa (recombinant)-jncw": {
+    "ingredients": [
+      "factor VIIa"
+    ],
+    "kept": [
+      "factor VIIa"
+    ],
+    "rxcui": "2386863",
+    "score": 32.521766662597656
+  },
+  "datopotamab deruxtecan-dlnk": {
+    "ingredients": [
+      "datopotamab deruxtecan"
+    ],
+    "kept": [
+      "datopotamab deruxtecan"
+    ],
+    "rxcui": "2703034",
+    "score": 38.60112380981445
+  },
+  "delandistrogene moxeparvovec-rokl": {
+    "ingredients": [
+      "delandistrogene moxeparvovec"
+    ],
+    "kept": [
+      "delandistrogene moxeparvovec"
+    ],
+    "rxcui": "2641674",
+    "score": 31.25114631652832
+  },
+  "denosumab-bmwo": {
+    "ingredients": [
+      "denosumab"
+    ],
+    "kept": [
+      "denosumab"
+    ],
+    "rxcui": "2717851",
+    "score": 30.87158966064453
+  },
+  "denosumab-bnht": {
+    "ingredients": [
+      "denosumab"
+    ],
+    "kept": [
+      "denosumab"
+    ],
+    "rxcui": "2717527",
+    "score": 30.44834327697754
+  },
+  "denosumab-desu": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2730678",
+    "score": 32.641700744628906
+  },
+  "denosumab-dssb": {
+    "ingredients": [
+      "denosumab"
+    ],
+    "kept": [
+      "denosumab"
+    ],
+    "rxcui": "2725498",
+    "score": 31.02750587463379
+  },
+  "denosumab-kyqq": {
+    "ingredients": [
+      "denosumab"
+    ],
+    "kept": [
+      "denosumab"
+    ],
+    "rxcui": "2725924",
+    "score": 30.931745529174805
+  },
+  "denosumab-mobz": {
+    "ingredients": [
+      "denosumab"
+    ],
+    "kept": [
+      "denosumab"
+    ],
+    "rxcui": "2729308",
+    "score": 31.095478057861328
+  },
+  "denosumab-nxxp": {
+    "ingredients": [
+      "denosumab"
+    ],
+    "kept": [
+      "denosumab"
+    ],
+    "rxcui": "2723334",
+    "score": 30.58262825012207
+  },
+  "denosumab-qbde": {
+    "ingredients": [
+      "denosumab"
+    ],
+    "kept": [
+      "denosumab"
+    ],
+    "rxcui": "2725562",
+    "score": 30.931745529174805
+  },
+  "depemokimab-ulaa": {
+    "ingredients": [
+      "depemokimab"
+    ],
+    "kept": [
+      "depemokimab"
+    ],
+    "rxcui": "2729264",
+    "score": 35.041221618652344
+  },
+  "donislecel-jujn": {
+    "ingredients": [
+      "donislecel"
+    ],
+    "kept": [
+      "donislecel"
+    ],
+    "rxcui": "2642260",
+    "score": 34.81842041015625
+  },
+  "eladocagene exuparvovec-tneq": {
+    "ingredients": [
+      "eladocagene exuparvovec"
+    ],
+    "kept": [
+      "eladocagene exuparvovec"
+    ],
+    "rxcui": "2698765",
+    "score": 39.91394805908203
+  },
+  "epoetin alfa-epbx": {
+    "ingredients": [
+      "epoetin alfa"
+    ],
+    "kept": [
+      "epoetin alfa"
+    ],
+    "rxcui": "2047589",
+    "score": 29.432453155517578
+  },
+  "etuvetidigene autotemcel": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2729813",
+    "score": 20.72624969482422
+  },
+  "fecal microbiota spores, live-brpk": {
+    "ingredients": [
+      "fecal microbiota spores, live"
+    ],
+    "kept": [
+      "fecal microbiota spores, live"
+    ],
+    "rxcui": "2636536",
+    "score": 40.80265426635742
+  },
+  "fecal microbiota, live-jslm": {
+    "ingredients": [
+      "fecal microbiota, live"
+    ],
+    "kept": [
+      "fecal microbiota, live"
+    ],
+    "rxcui": "2626728",
+    "score": 37.94580841064453
+  },
+  "fibrinogen, human–chmt": {
+    "ingredients": [
+      "fibrinogen"
+    ],
+    "kept": [
+      "fibrinogen"
+    ],
+    "rxcui": "2730328",
+    "score": 31.2291202545166
+  },
+  "fibrinolysin and desoxyribonuclease combined [bovine], with chloramphenicol": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "689286",
+    "score": 24.171524047851562
+  },
+  "fidanacogene elaparvovec-dzkt": {
+    "ingredients": [
+      "fidanacogene elaparvovec"
+    ],
+    "kept": [
+      "fidanacogene elaparvovec"
+    ],
+    "rxcui": "2681020",
+    "score": 37.61445236206055
+  },
+  "filgrastim-txid": {
+    "ingredients": [
+      "filgrastim"
+    ],
+    "kept": [
+      "filgrastim"
+    ],
+    "rxcui": "2700365",
+    "score": 30.951229095458984
+  },
+  "garadacimab-gxii": {
+    "ingredients": [
+      "garadacimab"
+    ],
+    "kept": [
+      "garadacimab"
+    ],
+    "rxcui": "2717168",
+    "score": 34.783992767333984
+  },
+  "hyaluronidase human": {
+    "ingredients": [
+      "hyaluronidase"
+    ],
+    "kept": [
+      "hyaluronidase"
+    ],
+    "rxcui": "1300478",
+    "score": 13.64561499490738
+  },
+  "i)Cefaclor Monohydrate 250mg/500mg Capsule. ii)Cefaclor Monohydrate 125mg/5ml & 250mg/5ml Suspension. iii)Cefaclor Monohydrate 100mg/ml Drops. iv)Cefaclor 187mg/5ml Suspension (For paediatric use).": {
+    "ingredients": [
+      "cefaclor"
+    ],
+    "kept": [
+      "cefaclor"
+    ],
+    "rxcui": "313888",
+    "score": 43.67463684082031
+  },
+  "i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride 20mg/ml Injection.": {
+    "ingredients": [
+      "nefopam"
+    ],
+    "kept": [
+      "nefopam"
+    ],
+    "rxcui": "4324",
+    "score": 21.184917449951172
+  },
+  "immune globulin intravenous, human-dira": {
+    "ingredients": [
+      "immunoglobulin G"
+    ],
+    "kept": [],
+    "rxcui": "2706382",
+    "score": 31.886219024658203
+  },
+  "immune globulin intravenous, human-stwk": {
+    "ingredients": [
+      "immunoglobulin G"
+    ],
+    "kept": [],
+    "rxcui": "2672094",
+    "score": 31.859506607055664
+  },
+  "immune globulin subcutaneous, human-klhw": {
+    "ingredients": [
+      "immunoglobulin G"
+    ],
+    "kept": [],
+    "rxcui": "2196290",
+    "score": 32.238739013671875
+  },
+  "insulin aspart protamine and insulin aspart": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2004040",
+    "score": 26.426687240600586
+  },
+  "insulin aspart-szjj": {
+    "ingredients": [
+      "insulin aspart, human"
+    ],
+    "kept": [
+      "insulin aspart, human"
+    ],
+    "rxcui": "2705729",
+    "score": 31.059473037719727
+  },
+  "insulin aspart-xjhz": {
+    "ingredients": [
+      "insulin aspart, human"
+    ],
+    "kept": [
+      "insulin aspart, human"
+    ],
+    "rxcui": "2720519",
+    "score": 31.02566146850586
+  },
+  "insulin isophane human": {
+    "ingredients": [
+      "insulin isophane"
+    ],
+    "kept": [
+      "insulin isophane"
+    ],
+    "rxcui": "253181",
+    "score": 17.94744873046875
+  },
+  "insulin isophane human and insulin human": {
+    "ingredients": [
+      "insulin isophane"
+    ],
+    "kept": [
+      "insulin isophane"
+    ],
+    "rxcui": "253181",
+    "score": 24.22916030883789
+  },
+  "insulin lispro protamine and insulin lispro": {
+    "ingredients": [
+      "insulin lispro protamine, human"
+    ],
+    "kept": [
+      "insulin lispro protamine, human"
+    ],
+    "rxcui": "314684",
+    "score": 28.16171646118164
+  },
+  "insulin lispro-aabc": {
+    "ingredients": [
+      "insulin lispro"
+    ],
+    "kept": [
+      "insulin lispro"
+    ],
+    "rxcui": "2376838",
+    "score": 31.732566833496094
+  },
+  "iodinated I-125 albumin": {
+    "ingredients": [
+      "albumin,iodinated I-125 serum"
+    ],
+    "kept": [
+      "albumin,iodinated I-125 serum"
+    ],
+    "rxcui": "317177",
+    "score": 25.127147674560547
+  },
+  "iodinated I-131 albumin": {
+    "ingredients": [
+      "albumin,iodinated I-131 serum"
+    ],
+    "kept": [
+      "albumin,iodinated I-131 serum"
+    ],
+    "rxcui": "314301",
+    "score": 28.7613468170166
+  },
+  "kit for the preparation of technetium Tc-99m albumin aggregated": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "817371",
+    "score": 35.38511276245117
+  },
+  "lerodalcibep-liga": {
+    "ingredients": [
+      "lerodalcibep"
+    ],
+    "kept": [
+      "lerodalcibep"
+    ],
+    "rxcui": "2729461",
+    "score": 34.9888916015625
+  },
+  "linvoseltamab-gcpt": {
+    "ingredients": [
+      "linvoseltamab"
+    ],
+    "kept": [
+      "linvoseltamab"
+    ],
+    "rxcui": "2719477",
+    "score": 33.8399543762207
+  },
+  "narsoplimab-wuug": {
+    "ingredients": [
+      "narsoplimab"
+    ],
+    "kept": [
+      "narsoplimab"
+    ],
+    "rxcui": "2732292",
+    "score": 35.171592712402344
+  },
+  "natalizumab-sztn": {
+    "ingredients": [
+      "natalizumab"
+    ],
+    "kept": [
+      "natalizumab"
+    ],
+    "rxcui": "2725169",
+    "score": 34.07297134399414
+  },
+  "nipocalimab-aahu": {
+    "ingredients": [
+      "nipocalimab"
+    ],
+    "kept": [
+      "nipocalimab"
+    ],
+    "rxcui": "2712692",
+    "score": 34.103458404541016
+  },
+  "nivolumab and hyaluronidase-nvhy": {
+    "ingredients": [
+      "nivolumab",
+      "hyaluronidase"
+    ],
+    "kept": [
+      "nivolumab",
+      "hyaluronidase"
+    ],
+    "rxcui": "2700793",
+    "score": 34.15870666503906
+  },
+  "omalizumab-igec": {
+    "ingredients": [
+      "omalizumab"
+    ],
+    "kept": [
+      "omalizumab"
+    ],
+    "rxcui": "2725997",
+    "score": 32.344581604003906
+  },
+  "omidubicel-onlv": {
+    "ingredients": [
+      "omidubicel"
+    ],
+    "kept": [
+      "omidubicel"
+    ],
+    "rxcui": "2637354",
+    "score": 34.81842041015625
+  },
+  "onasemnogene abeparvovec-brve": {
+    "ingredients": [
+      "onasemnogene abeparvovec"
+    ],
+    "kept": [
+      "onasemnogene abeparvovec"
+    ],
+    "rxcui": "2727303",
+    "score": 35.49960708618164
+  },
+  "onasemnogene abeparvovec-xioi": {
+    "ingredients": [
+      "onasemnogene abeparvovec"
+    ],
+    "kept": [
+      "onasemnogene abeparvovec"
+    ],
+    "rxcui": "2170225",
+    "score": 32.33287048339844
+  },
+  "pegfilgrastim-unne": {
+    "ingredients": [
+      "pegfilgrastim"
+    ],
+    "kept": [
+      "pegfilgrastim"
+    ],
+    "rxcui": "2737544",
+    "score": 32.63654327392578
+  },
+  "pegzilarginase-nbln": {
+    "ingredients": [
+      "pegzilarginase"
+    ],
+    "kept": [
+      "pegzilarginase"
+    ],
+    "rxcui": "2738649",
+    "score": 34.577537536621094
+  },
+  "pembrolizumab and berahyaluronidase alfa-pmph": {
+    "ingredients": [
+      "pembrolizumab",
+      "berahyaluronidase alfa"
+    ],
+    "kept": [
+      "pembrolizumab",
+      "berahyaluronidase alfa"
+    ],
+    "rxcui": "2723761",
+    "score": 34.176460960388184
+  },
+  "penpulimab-kcqx": {
+    "ingredients": [
+      "penpulimab"
+    ],
+    "kept": [
+      "penpulimab"
+    ],
+    "rxcui": "2712646",
+    "score": 36.26702880859375
+  },
+  "pertuzumab, trastuzumab, and hyaluronidase-zzxf": {
+    "ingredients": [
+      "pertuzumab",
+      "trastuzumab",
+      "hyaluronidase"
+    ],
+    "kept": [
+      "pertuzumab",
+      "trastuzumab",
+      "hyaluronidase"
+    ],
+    "rxcui": "2382603",
+    "score": 36.71643829345703
+  },
+  "pertuzumab-dpzb": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "2728393",
+    "score": 35.608428955078125
+  },
+  "plasminogen, human-tvmh": {
+    "ingredients": [
+      "plasminogen"
+    ],
+    "kept": [
+      "plasminogen"
+    ],
+    "rxcui": "2557201",
+    "score": 32.41717529296875
+  },
+  "radiolabeled albumin technetium Tc-99m albumin colloid kit": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "813372",
+    "score": 37.59425354003906
+  },
+  "ranibizumab-leyk": {
+    "ingredients": [
+      "ranibizumab"
+    ],
+    "kept": [
+      "ranibizumab"
+    ],
+    "rxcui": "2744883",
+    "score": 32.830413818359375
+  },
+  "remestemcel-L-rknd": {
+    "ingredients": [
+      "remestemcel-L"
+    ],
+    "kept": [
+      "remestemcel-L"
+    ],
+    "rxcui": "2700764",
+    "score": 35.87173843383789
+  },
+  "revakinagene taroretcel-lwey": {
+    "ingredients": [
+      "revakinagene taroretcel"
+    ],
+    "kept": [
+      "revakinagene taroretcel"
+    ],
+    "rxcui": "2708831",
+    "score": 39.83437728881836
+  },
+  "rituximab and hyaluronidase human": {
+    "ingredients": [
+      "rituximab",
+      "hyaluronidase"
+    ],
+    "kept": [
+      "rituximab",
+      "hyaluronidase"
+    ],
+    "rxcui": "2646070",
+    "score": 17.413002018928527
+  },
+  "rituximab-abbs": {
+    "ingredients": [
+      "rituximab"
+    ],
+    "kept": [
+      "rituximab"
+    ],
+    "rxcui": "2105824",
+    "score": 31.407917022705078
+  },
+  "rituximab-arrx": {
+    "ingredients": [
+      "rituximab"
+    ],
+    "kept": [
+      "rituximab"
+    ],
+    "rxcui": "2472325",
+    "score": 31.434616088867188
+  },
+  "rituximab-pvvr": {
+    "ingredients": [
+      "rituximab"
+    ],
+    "kept": [
+      "rituximab"
+    ],
+    "rxcui": "2273510",
+    "score": 31.356101989746094
+  },
+  "sibeprenlimab-szsi": {
+    "ingredients": [
+      "sibeprenlimab"
+    ],
+    "kept": [
+      "sibeprenlimab"
+    ],
+    "rxcui": "2728394",
+    "score": 35.09573745727539
+  },
+  "technetium 99m tc fanolesomab": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "833285",
+    "score": 24.672921955108645
+  },
+  "telisotuzumab vedotin-tllv": {
+    "ingredients": [
+      "telisotuzumab"
+    ],
+    "kept": [
+      "telisotuzumab"
+    ],
+    "rxcui": "2714236",
+    "score": 36.46380615234375
+  },
+  "tocilizumab-aazg": {
+    "ingredients": [
+      "tocilizumab"
+    ],
+    "kept": [
+      "tocilizumab"
+    ],
+    "rxcui": "2679427",
+    "score": 30.471981048583984
+  },
+  "tocilizumab-anoh": {
+    "ingredients": [
+      "tocilizumab"
+    ],
+    "kept": [
+      "tocilizumab"
+    ],
+    "rxcui": "2705421",
+    "score": 30.338077545166016
+  },
+  "tocilizumab-bavi": {
+    "ingredients": [
+      "tocilizumab"
+    ],
+    "kept": [
+      "tocilizumab"
+    ],
+    "rxcui": "2680283",
+    "score": 31.07900619506836
+  },
+  "tositumomab and iodine I-131 tositumomab": {
+    "ingredients": [
+      "tositumomab"
+    ],
+    "kept": [
+      "tositumomab"
+    ],
+    "rxcui": "234449",
+    "score": 35.74524688720703
+  },
+  "tralokinumab-ldrm": {
+    "ingredients": [
+      "tralokinumab"
+    ],
+    "kept": [
+      "tralokinumab"
+    ],
+    "rxcui": "2589374",
+    "score": 33.31550979614258
+  },
+  "ustekinumab-aauz": {
+    "ingredients": [
+      "ustekinumab"
+    ],
+    "kept": [
+      "ustekinumab"
+    ],
+    "rxcui": "2702602",
+    "score": 29.59149169921875
+  },
+  "ustekinumab-auub": {
+    "ingredients": [
+      "ustekinumab"
+    ],
+    "kept": [
+      "ustekinumab"
+    ],
+    "rxcui": "2700665",
+    "score": 29.523075103759766
+  },
+  "ustekinumab-hmny": {
+    "ingredients": [
+      "ustekinumab"
+    ],
+    "kept": [
+      "ustekinumab"
+    ],
+    "rxcui": "2725083",
+    "score": 29.66368293762207
+  },
+  "ustekinumab-kfce": {
+    "ingredients": [
+      "ustekinumab"
+    ],
+    "kept": [
+      "ustekinumab"
+    ],
+    "rxcui": "2705577",
+    "score": 29.72056770324707
+  },
+  "ustekinumab-srlf": {
+    "ingredients": [
+      "ustekinumab"
+    ],
+    "kept": [
+      "ustekinumab"
+    ],
+    "rxcui": "2717063",
+    "score": 29.863788604736328
+  },
+  "ustekinumab-stba": {
+    "ingredients": [
+      "ustekinumab"
+    ],
+    "kept": [
+      "ustekinumab"
+    ],
+    "rxcui": "2700389",
+    "score": 29.645259857177734
+  },
+  "valoctocogene roxaparvovec-rvox": {
+    "ingredients": [
+      "valoctocogene roxaparvovec"
+    ],
+    "kept": [
+      "valoctocogene roxaparvovec"
+    ],
+    "rxcui": "2641609",
+    "score": 39.95634078979492
+  },
+  "von Willebrand Factor/Coagulation Factor VIII Complex (Human)": {
+    "ingredients": [],
+    "kept": [],
+    "rxcui": "896752",
+    "score": 30.005504608154297
+  },
+  "zopapogene imadenovec-drba": {
+    "ingredients": [
+      "zopapogene imadenovec"
+    ],
+    "kept": [
+      "zopapogene imadenovec"
+    ],
+    "rxcui": "2723360",
+    "score": 39.21146011352539
+  }
+}

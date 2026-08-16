@@ -1,0 +1,2502 @@
+{
+  "_version": 1,
+  "disease acute glomerulonephritis umls c0156221": {
+    "normalized_id": "MONDO:0001871",
+    "normalized_label": "acute diffuse glomerulonephritis",
+    "grounding_confidence": 0.8833,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease pain hp 0012531": {
+    "normalized_id": "HP:0012531",
+    "normalized_label": "Pain",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease delayed puberty hp 0000823": {
+    "normalized_id": "HP:0000823",
+    "normalized_label": "Delayed puberty",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease septic abortion doid 2910": {
+    "normalized_id": "MONDO:0001881",
+    "normalized_label": "septic shock",
+    "grounding_confidence": 0.84,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease diabetic foot infection umls c0744130": {
+    "normalized_id": "MONDO:0005266",
+    "normalized_label": "diabetic retinopathy",
+    "grounding_confidence": 0.8671,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease corneal injury umls c0339289": {
+    "normalized_id": "MONDO:0006713",
+    "normalized_label": "Corneal pannus",
+    "grounding_confidence": 0.8857,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease nausea gravidarum umls c1868935": {
+    "normalized_id": "MONDO:0001976",
+    "normalized_label": "chorea gravidarum",
+    "grounding_confidence": 0.8175,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease vomiting hp 0002013": {
+    "normalized_id": "HP:0002013",
+    "normalized_label": "Vomiting",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease pruritus hp 0000989": {
+    "normalized_id": "HP:0000989",
+    "normalized_label": "Pruritus",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease ventricular arrhythmia hp 0004308": {
+    "normalized_id": "HP:0004308",
+    "normalized_label": "Ventricular arrhythmia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease bronchospasm exercise induced umls c0015263": {
+    "normalized_id": "MONDO:0001358",
+    "normalized_label": "Bronchospasm",
+    "grounding_confidence": 0.88,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease rigidity hp 0002063": {
+    "normalized_id": "HP:0002063",
+    "normalized_label": "Rigidity",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease group a streptococcal infections umls c0554628": {
+    "normalized_id": "MONDO:0700218",
+    "normalized_label": "group B streptococcal infection",
+    "grounding_confidence": 0.941,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease fever hp 0001945": {
+    "normalized_id": "HP:0001945",
+    "normalized_label": "Fever",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease primary dysmenorrhea umls c0149875": {
+    "normalized_id": "MONDO:0005387",
+    "normalized_label": "primary ovarian failure",
+    "grounding_confidence": 0.8332,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute bursitis umls c1290158": {
+    "normalized_id": "MONDO:0010643",
+    "normalized_label": "acute leukemia",
+    "grounding_confidence": 0.8286,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute rheumatic carditis umls c5441648": {
+    "normalized_id": "MONDO:0021777",
+    "normalized_label": "acute rheumatic heart disease",
+    "grounding_confidence": 0.926,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease iron deficiency umls c0240066": {
+    "normalized_id": "MONDO:0001356",
+    "normalized_label": "iron deficiency anemia",
+    "grounding_confidence": 0.9364,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease edema hp 0000969": {
+    "normalized_id": "HP:0000969",
+    "normalized_label": "Edema",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease muscular headache umls c0393736": {
+    "normalized_id": "MONDO:0020121",
+    "normalized_label": "muscular dystrophy",
+    "grounding_confidence": 0.8335,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease gold poisoning umls c0274944": {
+    "normalized_id": "MONDO:0029000",
+    "normalized_label": "poisoning",
+    "grounding_confidence": 0.8069,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metabolic acidosis and metabolic alkalosis umls c0342599": {
+    "normalized_id": "MONDO:0000440",
+    "normalized_label": "metabolic acidosis",
+    "grounding_confidence": 0.8857,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease thromboembolism hp 0001907": {
+    "normalized_id": "HP:0001907",
+    "normalized_label": "Thromboembolism",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease peripheral arterial embolism umls c0564750": {
+    "normalized_id": "MONDO:0005386",
+    "normalized_label": "peripheral arterial disease",
+    "grounding_confidence": 0.926,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease dry skin hp hp 0000958": {
+    "normalized_id": "HP:HP:0000958",
+    "normalized_label": "Dry skin",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease sick sinus tachycardia umls c1406796": {
+    "normalized_id": "MONDO:0001823",
+    "normalized_label": "sick sinus syndrome",
+    "grounding_confidence": 0.8548,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease primary hypercholesterolemia umls c0342879": {
+    "normalized_id": "MONDO:0005439",
+    "normalized_label": "familial hypercholesterolemia",
+    "grounding_confidence": 0.8394,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute prostatitis umls c0149524": {
+    "normalized_id": "MONDO:0001838",
+    "normalized_label": "acute gonococcal prostatitis",
+    "grounding_confidence": 0.8861,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease herpes zoster keratitis umls c1275687": {
+    "normalized_id": "MONDO:0005609",
+    "normalized_label": "herpes zoster",
+    "grounding_confidence": 0.913,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease paroxysmal atrial flutter umls c0741292": {
+    "normalized_id": "MONDO:1030011",
+    "normalized_label": "paroxysmal atrial fibrillation",
+    "grounding_confidence": 0.9136,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease infective conjunctivitis umls c0497209": {
+    "normalized_id": "MONDO:0005808",
+    "normalized_label": "inclusion conjunctivitis",
+    "grounding_confidence": 0.8327,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease miosis hp 0000616": {
+    "normalized_id": "HP:0000616",
+    "normalized_label": "Miosis",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease epilepsy akinetic umls c0347869": {
+    "normalized_id": "MONDO:0005027",
+    "normalized_label": "epilepsy",
+    "grounding_confidence": 0.8889,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease oropharyngeal candidiasis umls c0919659": {
+    "normalized_id": "MONDO:0001648",
+    "normalized_label": "esophageal candidiasis",
+    "grounding_confidence": 0.8197,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute mania umls c0235165": {
+    "normalized_id": "MONDO:0010643",
+    "normalized_label": "acute leukemia",
+    "grounding_confidence": 0.87,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease cough hp 0012735": {
+    "normalized_id": "HP:0012735",
+    "normalized_label": "Cough",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease hypocalcemia hp 0002901": {
+    "normalized_id": "HP:0002901",
+    "normalized_label": "Hypocalcemia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease cat allergy umls c0339805": {
+    "normalized_id": "MONDO:0005271",
+    "normalized_label": "Allergy",
+    "grounding_confidence": 0.8788,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease grass allergy umls c1387134": {
+    "normalized_id": "MONDO:0000775",
+    "normalized_label": "drug allergy",
+    "grounding_confidence": 0.8009,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease neurogenic bladder hp 0000011": {
+    "normalized_id": "HP:0000011",
+    "normalized_label": "Neurogenic bladder",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease asymptomatic trichomoniasis umls c0343734": {
+    "normalized_id": "MONDO:0000927",
+    "normalized_label": "asymptomatic neurosyphilis",
+    "grounding_confidence": 0.8885,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease liver abscess amebic umls c0023886": {
+    "normalized_id": "MONDO:0700051",
+    "normalized_label": "Liver Abscess",
+    "grounding_confidence": 0.9238,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease bacterial sepsis umls c0684256": {
+    "normalized_id": "MONDO:0005229",
+    "normalized_label": "bacteriemia",
+    "grounding_confidence": 0.8868,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease ulcerative esophagitis umls c2586050": {
+    "normalized_id": "MONDO:0005101",
+    "normalized_label": "ulcerative colitis",
+    "grounding_confidence": 0.8982,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease neurogenic detrusor overactivity umls c0341736": {
+    "normalized_id": "MONDO:0001935",
+    "normalized_label": "neurogenic arthropathy",
+    "grounding_confidence": 0.865,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic pain hp 0012532": {
+    "normalized_id": "HP:0012532",
+    "normalized_label": "Chronic pain",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease atrophic vulva doid 14275": {
+    "normalized_id": "MONDO:0005659",
+    "normalized_label": "atrophic rhinitis",
+    "grounding_confidence": 0.8345,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease muscle spasm of thoracic back umls c4040434": {
+    "normalized_id": "MONDO:0004323",
+    "normalized_label": "Muscle Atrophy",
+    "grounding_confidence": 0.8292,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease nausea and vomiting hp 0002017": {
+    "normalized_id": "HP:0002017",
+    "normalized_label": "Nausea and vomiting",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease acute bacterial sinusitis umls c0275556": {
+    "normalized_id": "MONDO:0002186",
+    "normalized_label": "acute maxillary sinusitis",
+    "grounding_confidence": 0.9265,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease refractory cardiac ischaemia umls c1112767": {
+    "normalized_id": "MONDO:0018353",
+    "normalized_label": "refractory celiac disease",
+    "grounding_confidence": 0.8894,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease allergic condition umls c0851444": {
+    "normalized_id": "MONDO:0006525",
+    "normalized_label": "allergic contact dermatitis",
+    "grounding_confidence": 0.8838,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease spasticity hp 0001257": {
+    "normalized_id": "HP:0001257",
+    "normalized_label": "Spasticity",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease acute otitis media hp 0000371": {
+    "normalized_id": "HP:0000371",
+    "normalized_label": "Acute otitis media",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease vertebral compression fracture hp hp 0002953": {
+    "normalized_id": "HP:HP:0002953",
+    "normalized_label": "Vertebral compression fracture",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease hepatic impairment umls c0948807": {
+    "normalized_id": "MONDO:0001787",
+    "normalized_label": "hepatic infarction",
+    "grounding_confidence": 0.8825,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease agitation hp 0000713": {
+    "normalized_id": "HP:0000713",
+    "normalized_label": "Agitation",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease tremor hp 0001337": {
+    "normalized_id": "HP:0001337",
+    "normalized_label": "Tremor",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease convulsive disorder umls c0234972": {
+    "normalized_id": "MONDO:0009013",
+    "normalized_label": "convulsive disorder, familial, with prenatal or early onset",
+    "grounding_confidence": 0.8644,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hypercholesterolemia hp 0003124": {
+    "normalized_id": "HP:0003124",
+    "normalized_label": "Hypercholesterolemia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease premenstrual dysphoric disorder umls c0520676": {
+    "normalized_id": "MONDO:0004169",
+    "normalized_label": "premenstrual tension",
+    "grounding_confidence": 0.8507,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease abnormality of extrapyramidal motor function hp 0002071": {
+    "normalized_id": "HP:0002071",
+    "normalized_label": "Abnormality of extrapyramidal motor function",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease urate nephropathy umls c2955673": {
+    "normalized_id": "MONDO:0007416",
+    "normalized_label": "Balkan nephropathy",
+    "grounding_confidence": 0.8033,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease generalized edema hp 0007430": {
+    "normalized_id": "HP:0007430",
+    "normalized_label": "Generalized edema",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease supraventricular arrhythmia hp hp 0005115": {
+    "normalized_id": "HP:HP:0005115",
+    "normalized_label": "Supraventricular arrhythmia",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease ischemic stroke hp 0002140": {
+    "normalized_id": "HP:0002140",
+    "normalized_label": "Ischemic stroke",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease skin ulcer hp 0200042": {
+    "normalized_id": "HP:0200042",
+    "normalized_label": "Skin ulcer",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease esophageal erosions umls c0341117": {
+    "normalized_id": "MONDO:0003749",
+    "normalized_label": "esophageal disorder",
+    "grounding_confidence": 0.9118,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metastatic colorectal carcinoma umls c4744564": {
+    "normalized_id": "MONDO:0004956",
+    "normalized_label": "metastatic prostate carcinoma",
+    "grounding_confidence": 0.9086,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hypertensive crisis unspecified umls c4268474": {
+    "normalized_id": "MONDO:0001302",
+    "normalized_label": "hypertensive heart disease",
+    "grounding_confidence": 0.8642,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease aggressive behavior hp 0000718": {
+    "normalized_id": "HP:0000718",
+    "normalized_label": "Aggressive behavior",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease diabetic peripheral neuropathic pain umls c1963916": {
+    "normalized_id": "MONDO:0000960",
+    "normalized_label": "diabetic peripheral angiopathy",
+    "grounding_confidence": 0.9137,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease nummular eczema hp hp 0033120": {
+    "normalized_id": "HP:HP:0033120",
+    "normalized_label": "Nummular eczema",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease acne urticata umls c0406297": {
+    "normalized_id": "MONDO:0011438",
+    "normalized_label": "acne",
+    "grounding_confidence": 0.8615,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease pruritus ani umls c0033775": {
+    "normalized_id": "MONDO:0008321",
+    "normalized_label": "pruritus, hereditary localized",
+    "grounding_confidence": 0.8385,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease back pain hp 0003418": {
+    "normalized_id": "HP:0003418",
+    "normalized_label": "Back pain",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease bilateral tonic clonic seizure hp 0002069": {
+    "normalized_id": "HP:0002069",
+    "normalized_label": "Bilateral tonic-clonic seizure",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease chronic idiopathic constipation umls c0267509": {
+    "normalized_id": "MONDO:0044212",
+    "normalized_label": "chronic idiopathic urticaria",
+    "grounding_confidence": 0.9179,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease aids related illness umls c0740842": {
+    "normalized_id": "MONDO:0005639",
+    "normalized_label": "AIDS related complex",
+    "grounding_confidence": 0.9,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease deep pain on intercourse umls c0423747": {
+    "normalized_id": "MONDO:0004903",
+    "normalized_label": "deep keratitis",
+    "grounding_confidence": 0.8381,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease bloody diarrhea hp 0025085": {
+    "normalized_id": "HP:0025085",
+    "normalized_label": "Bloody diarrhea",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease carbon monoxide poisoning umls c0007020": {
+    "normalized_id": "MONDO:0800373",
+    "normalized_label": "carbon monoxide poisoning",
+    "grounding_confidence": 1.0,
+    "grounding_service": "nameres",
+    "grounding_status": "accepted"
+  },
+  "disease staphylococcus epidermidis infection umls c1096572": {
+    "normalized_id": "MONDO:0005545",
+    "normalized_label": "staphylococcus aureus infection",
+    "grounding_confidence": 0.9005,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease proteus mirabilis infection umls c0276078": {
+    "normalized_id": "MONDO:0008318",
+    "normalized_label": "Proteus syndrome",
+    "grounding_confidence": 0.8358,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease pseudomonas aeruginosa infection umls c0854135": {
+    "normalized_id": "MONDO:0005141",
+    "normalized_label": "Pseudomonas infection",
+    "grounding_confidence": 0.8932,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease photophobia hp 0000613": {
+    "normalized_id": "HP:0000613",
+    "normalized_label": "Photophobia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease tinea barbae caused by microsporum canis umls c0276733": {
+    "normalized_id": "MONDO:0000242",
+    "normalized_label": "tinea barbae",
+    "grounding_confidence": 0.86,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute sinusitis hp 0000255": {
+    "normalized_id": "HP:0000255",
+    "normalized_label": "Acute sinusitis",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease hyperuricemia hp 0002149": {
+    "normalized_id": "HP:0002149",
+    "normalized_label": "Hyperuricemia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease liver transplant rejection umls c0400968": {
+    "normalized_id": "MONDO:0002691",
+    "normalized_label": "liver cancer",
+    "grounding_confidence": 0.8316,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease female hypogonadism hp 0000134": {
+    "normalized_id": "HP:0000134",
+    "normalized_label": "Female hypogonadism",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease familial hypercholesterolemia heterozygous umls c0342882": {
+    "normalized_id": "MONDO:0005439",
+    "normalized_label": "familial hypercholesterolemia",
+    "grounding_confidence": 0.9318,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease polyuria hp 0000103": {
+    "normalized_id": "HP:0000103",
+    "normalized_label": "Polyuria",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease hyperinsulinemia hp 0000842": {
+    "normalized_id": "HP:0000842",
+    "normalized_label": "Hyperinsulinemia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease familial hypophosphatemia umls c0020631": {
+    "normalized_id": "MONDO:0005439",
+    "normalized_label": "familial hypercholesterolemia",
+    "grounding_confidence": 0.8843,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease vertical disease transmission umls c0242648": {
+    "normalized_id": "MONDO:0008652",
+    "normalized_label": "Vertical Talus",
+    "grounding_confidence": 0.8375,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease diarrhea functional due to spastic colon umls c0856217": {
+    "normalized_id": "MONDO:0001673",
+    "normalized_label": "diarrhea",
+    "grounding_confidence": 0.8381,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute enterocolitis umls c3203466": {
+    "normalized_id": "MONDO:0010643",
+    "normalized_label": "acute leukemia",
+    "grounding_confidence": 0.8281,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease recurrent cardiac decompensation umls c1740826": {
+    "normalized_id": "MONDO:0005936",
+    "normalized_label": "recurrent pneumonia",
+    "grounding_confidence": 0.8686,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease radiation induced nausea and vomiting efo 0006912": {
+    "normalized_id": "MONDO:0011648",
+    "normalized_label": "radiation-induced meningioma",
+    "grounding_confidence": 0.9092,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease necatoriasis due to necator americanus disorder umls c0027529": {
+    "normalized_id": "MONDO:0005870",
+    "normalized_label": "necatoriasis",
+    "grounding_confidence": 0.849,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease systemic embolism umls c5400523": {
+    "normalized_id": "MONDO:0005100",
+    "normalized_label": "systemic sclerosis",
+    "grounding_confidence": 0.8917,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease staphylococcal enterocolitis umls c0038157": {
+    "normalized_id": "MONDO:0024313",
+    "normalized_label": "staphylococcal infection",
+    "grounding_confidence": 0.9223,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hyperkalemia hp 0002153": {
+    "normalized_id": "HP:0002153",
+    "normalized_label": "Hyperkalemia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease ventricular standstill umls c4285916": {
+    "normalized_id": "MONDO:0002070",
+    "normalized_label": "ventricular septal defect",
+    "grounding_confidence": 0.8965,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic bacterial prostatitis umls c1720797": {
+    "normalized_id": "MONDO:0022103",
+    "normalized_label": "chronic prostatitis",
+    "grounding_confidence": 0.8889,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease xerostomia hp 0000217": {
+    "normalized_id": "HP:0000217",
+    "normalized_label": "Xerostomia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease recurrent depression umls c0221480": {
+    "normalized_id": "MONDO:0004617",
+    "normalized_label": "recurrent hypersomnia",
+    "grounding_confidence": 0.9084,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease influenza like illness umls c0521839": {
+    "normalized_id": "MONDO:0005812",
+    "normalized_label": "influenza",
+    "grounding_confidence": 0.8818,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease left ventricular hypertrophy hp 0001712": {
+    "normalized_id": "HP:0001712",
+    "normalized_label": "Left ventricular hypertrophy",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease primary hypothyroidism hp 0000832": {
+    "normalized_id": "HP:0000832",
+    "normalized_label": "Primary hypothyroidism",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease tertiary hypothyroidism umls c0854492": {
+    "normalized_id": "MONDO:0004497",
+    "normalized_label": "tertiary syphilis",
+    "grounding_confidence": 0.8936,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease osteopenia hp 0000938": {
+    "normalized_id": "HP:0000938",
+    "normalized_label": "Osteopenia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease keratosis palmaris umls c0856543": {
+    "normalized_id": "MONDO:0007857",
+    "normalized_label": "keratosis palmaris et plantaris-clinodactyly syndrome",
+    "grounding_confidence": 0.8679,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic retention of urine umls c0341743": {
+    "normalized_id": "MONDO:0004605",
+    "normalized_label": "chronic ulcer of skin",
+    "grounding_confidence": 0.838,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute pulmonary embolism umls c2882221": {
+    "normalized_id": "MONDO:0005279",
+    "normalized_label": "pulmonary embolism",
+    "grounding_confidence": 0.8241,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute malaria umls c2930826": {
+    "normalized_id": "MONDO:0010643",
+    "normalized_label": "acute leukemia",
+    "grounding_confidence": 0.8567,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease pollakisuria hp hp 0100515": {
+    "normalized_id": "HP:HP:0100515",
+    "normalized_label": "Pollakisuria",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease severe hypoglycaemia umls c4728082": {
+    "normalized_id": "MONDO:0005091",
+    "normalized_label": "severe acute respiratory syndrome",
+    "grounding_confidence": 0.826,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease klebsiella pneumoniae infection umls c0948802": {
+    "normalized_id": "MONDO:0030602",
+    "normalized_label": "Klebsiella pneumonia",
+    "grounding_confidence": 0.929,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease infection caused by enterobacter umls c0948205": {
+    "normalized_id": "MONDO:0024410",
+    "normalized_label": "infection caused by Bifidobacterium",
+    "grounding_confidence": 0.9008,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chyluria schistosomiasis umls c1397929": {
+    "normalized_id": "MONDO:0006001",
+    "normalized_label": "urinary schistosomiasis",
+    "grounding_confidence": 0.8542,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease inappropriate sinus tachycardia so stated umls c5819186": {
+    "normalized_id": "MONDO:0006802",
+    "normalized_label": "inappropriate ADH syndrome",
+    "grounding_confidence": 0.8794,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease rhinitis seasonal umls c1322281": {
+    "normalized_id": "MONDO:0003014",
+    "normalized_label": "rhinitis",
+    "grounding_confidence": 0.8941,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease perennial rhinitis umls c0848309": {
+    "normalized_id": "MONDO:0024332",
+    "normalized_label": "perennial allergic rhinitis",
+    "grounding_confidence": 0.9,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hirsutism hp 0001007": {
+    "normalized_id": "HP:0001007",
+    "normalized_label": "Hirsutism",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease chronic emphysema umls c1265792": {
+    "normalized_id": "MONDO:0005607",
+    "normalized_label": "chronic bronchitis",
+    "grounding_confidence": 0.8288,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease emphysematous bronchitis umls c0155874": {
+    "normalized_id": "MONDO:0005742",
+    "normalized_label": "emphysematous cholecystitis",
+    "grounding_confidence": 0.9115,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic asthmatic bronchitis umls c0264348": {
+    "normalized_id": "MONDO:0005607",
+    "normalized_label": "chronic bronchitis",
+    "grounding_confidence": 0.8841,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease bilateral tonic clonic seizure with focal onset hp hp 0007334": {
+    "normalized_id": "HP:HP:0007334",
+    "normalized_label": "Bilateral tonic-clonic seizure with focal onset",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease anemia due to chronic kidney disease stage 1 umls c5438213": {
+    "normalized_id": "MONDO:0020725",
+    "normalized_label": "anemia due to chronic disorder",
+    "grounding_confidence": 0.8879,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease moraxella infections umls c0852874": {
+    "normalized_id": "MONDO:0006878",
+    "normalized_label": "Moraxellaceae infectious disease",
+    "grounding_confidence": 0.8772,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease diabetic peripheral neuropathy umls c0740447": {
+    "normalized_id": "MONDO:0000960",
+    "normalized_label": "diabetic peripheral angiopathy",
+    "grounding_confidence": 0.9452,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease impairment of activities of daily living hp 0031058": {
+    "normalized_id": "HP:0031058",
+    "normalized_label": "Impairment of activities of daily living",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease muscle stiffness hp 0003552": {
+    "normalized_id": "HP:0003552",
+    "normalized_label": "Muscle stiffness",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease anal fissure haemorrhage umls c4523946": {
+    "normalized_id": "MONDO:0000754",
+    "normalized_label": "anal fistula",
+    "grounding_confidence": 0.85,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease syncope hp 0001279": {
+    "normalized_id": "HP:0001279",
+    "normalized_label": "Syncope",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease adrenal hyperplasia hp 0008221": {
+    "normalized_id": "HP:0008221",
+    "normalized_label": "Adrenal hyperplasia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease severe dehydration umls c3472181": {
+    "normalized_id": "MONDO:0005358",
+    "normalized_label": "Severe Dengue",
+    "grounding_confidence": 0.865,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease rheumatic disorder umls c3495832": {
+    "normalized_id": "MONDO:0005554",
+    "normalized_label": "rheumatic disorder",
+    "grounding_confidence": 1.0,
+    "grounding_service": "ols",
+    "grounding_status": "accepted"
+  },
+  "disease dysmenorrhea non psychogenic umls c0564774": {
+    "normalized_id": "MONDO:1060205",
+    "normalized_label": "dysmenorrhea",
+    "grounding_confidence": 0.88,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease headache hp 0002315": {
+    "normalized_id": "HP:0002315",
+    "normalized_label": "Headache",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease dyslipidemia due to type 1 diabetes mellitus umls c4076027": {
+    "normalized_id": "MONDO:0005015",
+    "normalized_label": "diabetes mellitus",
+    "grounding_confidence": 0.63,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease intractable ulcer umls c1265812": {
+    "normalized_id": "MONDO:0043839",
+    "normalized_label": "ulcer disease",
+    "grounding_confidence": 0.5072,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease arthralgia hp 0002829": {
+    "normalized_id": "HP:0002829",
+    "normalized_label": "Arthralgia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease pharyngalgia hp hp 0033050": {
+    "normalized_id": "HP:HP:0033050",
+    "normalized_label": "Pharyngalgia",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease regional enteritis umls c0678202": {
+    "normalized_id": "MONDO:0043579",
+    "normalized_label": "enteritis",
+    "grounding_confidence": 0.627,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease erosive esophagitis umls c0267055": {
+    "normalized_id": "MONDO:0001409",
+    "normalized_label": "esophagitis",
+    "grounding_confidence": 0.7646,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease multiple gastric ulcers umls c0341178": {
+    "normalized_id": "MONDO:0043839",
+    "normalized_label": "ulcer disease",
+    "grounding_confidence": 0.6205,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease upper respiratory infections umls c0041912": {
+    "normalized_id": "MONDO:0024355",
+    "normalized_label": "respiratory tract infectious disorder",
+    "grounding_confidence": 0.6825,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease partial thickness burn umls c0332687": {
+    "normalized_id": "MONDO:0043519",
+    "normalized_label": "burn",
+    "grounding_confidence": 0.5303,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease full thickness burn umls c0433445": {
+    "normalized_id": "MONDO:0043519",
+    "normalized_label": "burn",
+    "grounding_confidence": 0.5351,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease gynaecological infection umls c1262234": {
+    "normalized_id": "MONDO:0005550",
+    "normalized_label": "infectious disease",
+    "grounding_confidence": 0.5574,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease abdominal pain hp 0002027": {
+    "normalized_id": "HP:0002027",
+    "normalized_label": "Abdominal pain",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease bowel urgency hp hp 0012701": {
+    "normalized_id": "HP:HP:0012701",
+    "normalized_label": "Bowel urgency",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease bowel incontinence hp 0002607": {
+    "normalized_id": "HP:0002607",
+    "normalized_label": "Bowel incontinence",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease acute psychosis umls c0281774": {
+    "normalized_id": "MONDO:0005485",
+    "normalized_label": "psychotic disorder",
+    "grounding_confidence": 0.63,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic psychosis umls c0221764": {
+    "normalized_id": "MONDO:0005485",
+    "normalized_label": "psychotic disorder",
+    "grounding_confidence": 0.652,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease tachycardia hp 0001649": {
+    "normalized_id": "HP:0001649",
+    "normalized_label": "Tachycardia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease metastatic malignant neoplasm to bone umls c0153690": {
+    "normalized_id": "MONDO:0045024",
+    "normalized_label": "cancer or benign tumor",
+    "grounding_confidence": 0.5949,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease polydipsia hp 0001959": {
+    "normalized_id": "HP:0001959",
+    "normalized_label": "Polydipsia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease neurocysticercosis umls c0338437": {
+    "normalized_id": "MONDO:0015484",
+    "normalized_label": "cysticercosis",
+    "grounding_confidence": 0.8048,
+    "grounding_service": "ols",
+    "grounding_status": "review_recommended"
+  },
+  "disease gastric retention umls c0585136": {
+    "normalized_id": "MONDO:0001056",
+    "normalized_label": "gastric cancer",
+    "grounding_confidence": 0.8684,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic iron overload umls c1739382": {
+    "normalized_id": "MONDO:0001014",
+    "normalized_label": "chronic leukemia",
+    "grounding_confidence": 0.8476,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease isolated gonadotropin deficiency umls c0271577": {
+    "normalized_id": "MONDO:0010139",
+    "normalized_label": "isolated thyroid-stimulating hormone deficiency",
+    "grounding_confidence": 0.8611,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute bronchospasm umls c0741804": {
+    "normalized_id": "MONDO:0001358",
+    "normalized_label": "Bronchospasm",
+    "grounding_confidence": 0.8333,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease nontoxic diffuse goiter umls c5779675": {
+    "normalized_id": "MONDO:0001104",
+    "normalized_label": "toxic diffuse goiter",
+    "grounding_confidence": 0.9399,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease human herpesvirus 6 viraemia umls c5906714": {
+    "normalized_id": "MONDO:0015157",
+    "normalized_label": "human herpesvirus 8-related tumor",
+    "grounding_confidence": 0.895,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute congestive heart failure umls c0264719": {
+    "normalized_id": "MONDO:0001899",
+    "normalized_label": "rheumatic congestive heart failure",
+    "grounding_confidence": 0.8275,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease comedonal acne hp hp 0040137": {
+    "normalized_id": "HP:HP:0040137",
+    "normalized_label": "Comedonal acne",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease coma hp 0001259": {
+    "normalized_id": "HP:0001259",
+    "normalized_label": "Coma",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease ph positive acute lymphoblastic leukemia hp hp 0004848": {
+    "normalized_id": "HP:HP:0004848",
+    "normalized_label": "Ph-positive acute lymphoblastic leukemia",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease bradycardia hp 0001662": {
+    "normalized_id": "HP:0001662",
+    "normalized_label": "Bradycardia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease progressive vaccinia umls c2721678": {
+    "normalized_id": "MONDO:0007240",
+    "normalized_label": "progressive familial heart block, type 1A",
+    "grounding_confidence": 0.8412,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute heart failure umls c0264714": {
+    "normalized_id": "MONDO:0002492",
+    "normalized_label": "acute kidney failure",
+    "grounding_confidence": 0.8546,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease gastrointestinal hemorrhage hp 0002239": {
+    "normalized_id": "HP:0002239",
+    "normalized_label": "Gastrointestinal hemorrhage",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease sepsis hp 0100806": {
+    "normalized_id": "HP:0100806",
+    "normalized_label": "Sepsis",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease heparin induced thrombocytopenia with thrombosis umls c0272275": {
+    "normalized_id": "MONDO:0018048",
+    "normalized_label": "heparin-induced thrombocytopenia",
+    "grounding_confidence": 0.9333,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease infection by scedosporium boydii umls c0276706": {
+    "normalized_id": "MONDO:0021941",
+    "normalized_label": "infection by Trypanosoma rhodesiense",
+    "grounding_confidence": 0.8685,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease ovarian cancer stage iv umls c4721779": {
+    "normalized_id": "MONDO:0008170",
+    "normalized_label": "ovarian cancer",
+    "grounding_confidence": 0.9217,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease functional asplenia umls c0272405": {
+    "normalized_id": "MONDO:0001272",
+    "normalized_label": "functional diarrhea",
+    "grounding_confidence": 0.9025,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease gonorrhea of rectum umls c0275665": {
+    "normalized_id": "MONDO:0004277",
+    "normalized_label": "gonorrhea",
+    "grounding_confidence": 0.8947,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease biliary colic umls c0151824": {
+    "normalized_id": "MONDO:0008867",
+    "normalized_label": "biliary atresia",
+    "grounding_confidence": 0.8585,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease necrobiosis lipoidica diabeticorum umls c0392445": {
+    "normalized_id": "MONDO:0006583",
+    "normalized_label": "necrobiosis lipoidica",
+    "grounding_confidence": 0.9235,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease megaloblastic anemia due to vitamin b 12 deficiency umls c0815316": {
+    "normalized_id": "MONDO:0001700",
+    "normalized_label": "megaloblastic anemia",
+    "grounding_confidence": 0.8769,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease malabsorption hp 0002024": {
+    "normalized_id": "HP:0002024",
+    "normalized_label": "Malabsorption",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease haemophilus parainfluenzae infection umls c1096597": {
+    "normalized_id": "MONDO:0000889",
+    "normalized_label": "haemophilus meningitis",
+    "grounding_confidence": 0.8678,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease lung small cell carcinoma p subtype umls c5706270": {
+    "normalized_id": "MONDO:0008433",
+    "normalized_label": "small cell lung carcinoma",
+    "grounding_confidence": 0.8181,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease menorrhagia hp 0000132": {
+    "normalized_id": "HP:0000132",
+    "normalized_label": "Menorrhagia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease psoriasis of scalp umls c0406326": {
+    "normalized_id": "MONDO:0005083",
+    "normalized_label": "psoriasis",
+    "grounding_confidence": 0.9,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease perianal warts umls c0343730": {
+    "normalized_id": "MONDO:0004871",
+    "normalized_label": "perianal hematoma",
+    "grounding_confidence": 0.8866,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hyponatremia hp 0002902": {
+    "normalized_id": "HP:0002902",
+    "normalized_label": "Hyponatremia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease recurrent deep vein thrombosis hp hp 0004850": {
+    "normalized_id": "HP:HP:0004850",
+    "normalized_label": "Recurrent deep vein thrombosis",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease carbamate poisoning umls c0344132": {
+    "normalized_id": "MONDO:0018019",
+    "normalized_label": "lead poisoning",
+    "grounding_confidence": 0.8018,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease mushroom poisoning umls c0026865": {
+    "normalized_id": "MONDO:0005865",
+    "normalized_label": "mushroom workers' lung",
+    "grounding_confidence": 0.8626,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease zinc deficiency efo 1000003": {
+    "normalized_id": "MONDO:0011973",
+    "normalized_label": "zinc deficiency, transient neonatal",
+    "grounding_confidence": 0.8857,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease stage 3 chronic kidney disease hp hp 0012625": {
+    "normalized_id": "HP:HP:0012625",
+    "normalized_label": "Stage 3 chronic kidney disease",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease stage 4 chronic kidney disease hp hp 0012626": {
+    "normalized_id": "HP:HP:0012626",
+    "normalized_label": "Stage 4 chronic kidney disease",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease dehydration hp 0001944": {
+    "normalized_id": "HP:0001944",
+    "normalized_label": "Dehydration",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease oral ulcer hp 0000155": {
+    "normalized_id": "HP:0000155",
+    "normalized_label": "Oral ulcer",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease central nervous system depression disorder umls c0151559": {
+    "normalized_id": "MONDO:0024619",
+    "normalized_label": "central nervous system infectious disorder",
+    "grounding_confidence": 0.9119,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hypothalamic luteinizing hormone releasing hormone deficiency hp hp 0012287": {
+    "normalized_id": "HP:HP:0012287",
+    "normalized_label": "Hypothalamic luteinizing hormone-releasing hormone deficiency",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease keratosis plantaris umls c3495878": {
+    "normalized_id": "MONDO:0007857",
+    "normalized_label": "keratosis palmaris et plantaris-clinodactyly syndrome",
+    "grounding_confidence": 0.8296,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease wasting syndrome umls c0043046": {
+    "normalized_id": "MONDO:0005797",
+    "normalized_label": "HIV wasting syndrome",
+    "grounding_confidence": 0.85,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hyperammonemic encephalopathy umls c1960448": {
+    "normalized_id": "MONDO:0014332",
+    "normalized_label": "hyperammonemic encephalopathy due to carbonic anhydrase VA deficiency",
+    "grounding_confidence": 0.8841,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease cognitive impairment hp 0100543": {
+    "normalized_id": "HP:0100543",
+    "normalized_label": "Cognitive impairment",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease nongonococcal cervicitis umls c1960274": {
+    "normalized_id": "MONDO:0021157",
+    "normalized_label": "gonococcal cervicitis",
+    "grounding_confidence": 0.9266,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute bacterial simple cystitis umls c5769488": {
+    "normalized_id": "MONDO:0001650",
+    "normalized_label": "acute cystitis",
+    "grounding_confidence": 0.8322,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease premenstrual cramps umls c1698508": {
+    "normalized_id": "MONDO:0004169",
+    "normalized_label": "premenstrual tension",
+    "grounding_confidence": 0.8874,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease carcinoid syndrome diarrhea umls c4543399": {
+    "normalized_id": "MONDO:0100347",
+    "normalized_label": "carcinoid syndrome",
+    "grounding_confidence": 0.9333,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease opioid withdrawal umls c0029104": {
+    "normalized_id": "MONDO:0001225",
+    "normalized_label": "opioid abuse",
+    "grounding_confidence": 0.8275,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease burn infection umls c0548923": {
+    "normalized_id": "MONDO:0043544",
+    "normalized_label": "Cross Infection",
+    "grounding_confidence": 0.8094,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hypoketotic hypoglycemia hp hp 0001985": {
+    "normalized_id": "HP:HP:0001985",
+    "normalized_label": "Hypoketotic hypoglycemia",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease clostridium difficile diarrhea umls c0235952": {
+    "normalized_id": "MONDO:0000705",
+    "normalized_label": "Clostridium difficile colitis",
+    "grounding_confidence": 0.912,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic rhinosinusitis with nasal polyps efo 1002029": {
+    "normalized_id": "MONDO:0006031",
+    "normalized_label": "chronic rhinosinusitis",
+    "grounding_confidence": 0.91,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease iron overload umls c0282193": {
+    "normalized_id": "MONDO:0859316",
+    "normalized_label": "iron overload, susceptibility to",
+    "grounding_confidence": 0.8813,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease gastroesophageal junction cancer umls c5400195": {
+    "normalized_id": "MONDO:0850129",
+    "normalized_label": "gastroesophageal cancer",
+    "grounding_confidence": 0.9264,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease erythema nodosum leprosum umls c0343467": {
+    "normalized_id": "MONDO:0850231",
+    "normalized_label": "erythema nodosum",
+    "grounding_confidence": 0.928,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metastatic gastric carcinoma umls c4727169": {
+    "normalized_id": "MONDO:0004956",
+    "normalized_label": "metastatic prostate carcinoma",
+    "grounding_confidence": 0.903,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease alkalosis hp 0001948": {
+    "normalized_id": "HP:0001948",
+    "normalized_label": "Alkalosis",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease respiratory distress hp 0002098": {
+    "normalized_id": "HP:0002098",
+    "normalized_label": "Respiratory distress",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease cardiomegaly hp 0001640": {
+    "normalized_id": "HP:0001640",
+    "normalized_label": "Cardiomegaly",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease infection umls c3714514": {
+    "normalized_id": "MONDO:0021666",
+    "normalized_label": "ear infection",
+    "grounding_confidence": 0.8234,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease decreased circulating copper concentration hp hp 0011967": {
+    "normalized_id": "HP:HP:0011967",
+    "normalized_label": "Decreased circulating copper concentration",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease relapsed refractory multiple myeloma umls c5577628": {
+    "normalized_id": "MONDO:0000901",
+    "normalized_label": "relapsed/refractory diffuse large B-cell lymphoma",
+    "grounding_confidence": 0.8983,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease plasma cell myeloma refractory umls c4551538": {
+    "normalized_id": "MONDO:0009693",
+    "normalized_label": "plasma cell myeloma",
+    "grounding_confidence": 0.9267,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hyperammonemia hp 0001987": {
+    "normalized_id": "HP:0001987",
+    "normalized_label": "Hyperammonemia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease cerebral vasospasm umls c0265110": {
+    "normalized_id": "MONDO:0005356",
+    "normalized_label": "coronary vasospasm",
+    "grounding_confidence": 0.8452,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute disseminated candidiasis umls c0343884": {
+    "normalized_id": "MONDO:0019383",
+    "normalized_label": "acute disseminated encephalomyelitis",
+    "grounding_confidence": 0.8976,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease folic acid overdose umls c0573830": {
+    "normalized_id": "MONDO:0001860",
+    "normalized_label": "folic acid deficiency anemia",
+    "grounding_confidence": 0.8331,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic anal fissure umls c0349071": {
+    "normalized_id": "MONDO:0001014",
+    "normalized_label": "chronic leukemia",
+    "grounding_confidence": 0.8617,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease apnea hp 0002104": {
+    "normalized_id": "HP:0002104",
+    "normalized_label": "Apnea",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease anxiety state umls c0700613": {
+    "normalized_id": "MONDO:0011918",
+    "normalized_label": "anxiety",
+    "grounding_confidence": 0.9077,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute labyrinthitis umls c3536631": {
+    "normalized_id": "MONDO:0001820",
+    "normalized_label": "focal labyrinthitis",
+    "grounding_confidence": 0.8531,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute left ventricular failure umls c1306063": {
+    "normalized_id": "MONDO:0019542",
+    "normalized_label": "acute liver failure",
+    "grounding_confidence": 0.874,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease liposarcoma metastatic umls c0855059": {
+    "normalized_id": "MONDO:0005060",
+    "normalized_label": "liposarcoma",
+    "grounding_confidence": 0.9,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hypochloremia hp 0003113": {
+    "normalized_id": "HP:0003113",
+    "normalized_label": "Hypochloremia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease chronic metabolic acidosis hp hp 0001996": {
+    "normalized_id": "HP:HP:0001996",
+    "normalized_label": "Chronic metabolic acidosis",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease skin squamous cell carcinoma metastatic umls c4087141": {
+    "normalized_id": "MONDO:0002529",
+    "normalized_label": "skin squamous cell carcinoma",
+    "grounding_confidence": 0.9436,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metastatic basal cell carcinoma umls c1304306": {
+    "normalized_id": "MONDO:0044907",
+    "normalized_label": "metastatic squamous cell carcinoma",
+    "grounding_confidence": 0.9025,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease thoracic diseases umls c0039978": {
+    "normalized_id": "MONDO:0005396",
+    "normalized_label": "thoracic aortic aneurysm",
+    "grounding_confidence": 0.8459,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease functional constipation umls c0401146": {
+    "normalized_id": "MONDO:0001318",
+    "normalized_label": "functional gastric disease",
+    "grounding_confidence": 0.8668,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease influenza due to influenza virus type b umls c0276353": {
+    "normalized_id": "MONDO:0005812",
+    "normalized_label": "influenza",
+    "grounding_confidence": 0.845,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease pancreatic islet cell hyperplasia hp 0004510": {
+    "normalized_id": "HP:0004510",
+    "normalized_label": "Pancreatic islet-cell hyperplasia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease decreased corneal sensation hp hp 0012155": {
+    "normalized_id": "HP:HP:0012155",
+    "normalized_label": "Decreased corneal sensation",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease demodex blepharitis umls c5780078": {
+    "normalized_id": "MONDO:0024283",
+    "normalized_label": "Demodex folliculitis",
+    "grounding_confidence": 0.8515,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acute infectious disease umls c0275518": {
+    "normalized_id": "MONDO:0005113",
+    "normalized_label": "bacterial infectious disease",
+    "grounding_confidence": 0.8251,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease mycoplasma pneumoniae infection umls c3824874": {
+    "normalized_id": "MONDO:0005867",
+    "normalized_label": "Mycoplasma pneumoniae pneumonia",
+    "grounding_confidence": 0.9336,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease rectal fistula nos umls c5926931": {
+    "normalized_id": "MONDO:0004754",
+    "normalized_label": "rectal prolapse",
+    "grounding_confidence": 0.8507,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease vaginal ulcer umls c0566951": {
+    "normalized_id": "MONDO:0001155",
+    "normalized_label": "Marginal ulcer",
+    "grounding_confidence": 0.9267,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease epistaxis hp 0000421": {
+    "normalized_id": "HP:0000421",
+    "normalized_label": "Epistaxis",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease acute insomnia umls c4546137": {
+    "normalized_id": "MONDO:0013600",
+    "normalized_label": "insomnia",
+    "grounding_confidence": 0.8571,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic insomnia umls c0751249": {
+    "normalized_id": "MONDO:0001014",
+    "normalized_label": "chronic leukemia",
+    "grounding_confidence": 0.8568,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease transient hypothyroidism umls c0271795": {
+    "normalized_id": "MONDO:0015792",
+    "normalized_label": "transient congenital hypothyroidism",
+    "grounding_confidence": 0.8871,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hyperhidrosis hp 0000975": {
+    "normalized_id": "HP:0000975",
+    "normalized_label": "Hyperhidrosis",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease fungal endophthalmitis umls c1532533": {
+    "normalized_id": "MONDO:0016047",
+    "normalized_label": "endophthalmitis",
+    "grounding_confidence": 0.8051,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic rhinosinusitis without nasal polyps efo 1002030": {
+    "normalized_id": "MONDO:0006031",
+    "normalized_label": "chronic rhinosinusitis",
+    "grounding_confidence": 0.9023,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease datura poisoning umls c0275249": {
+    "normalized_id": "MONDO:0029000",
+    "normalized_label": "poisoning",
+    "grounding_confidence": 0.8542,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease recurrent glioblastoma umls c4288305": {
+    "normalized_id": "MONDO:0005936",
+    "normalized_label": "recurrent pneumonia",
+    "grounding_confidence": 0.8604,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metastatic urothelial carcinoma umls c4288754": {
+    "normalized_id": "MONDO:0004956",
+    "normalized_label": "metastatic prostate carcinoma",
+    "grounding_confidence": 0.9163,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease esophageal stricture lower esophagus umls c0743586": {
+    "normalized_id": "MONDO:0003749",
+    "normalized_label": "esophageal disorder",
+    "grounding_confidence": 0.8499,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metastatic hepatocellular carcinoma umls c0744869": {
+    "normalized_id": "MONDO:0004956",
+    "normalized_label": "metastatic prostate carcinoma",
+    "grounding_confidence": 0.8886,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease neoplasm metastasis umls c0027627": {
+    "normalized_id": "MONDO:0005070",
+    "normalized_label": "neoplasm",
+    "grounding_confidence": 0.8842,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease clostridium difficile infection efo 0009130": {
+    "normalized_id": "MONDO:0000705",
+    "normalized_label": "Clostridium difficile colitis",
+    "grounding_confidence": 0.9456,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease follicular lymphoma refractory umls c1335723": {
+    "normalized_id": "MONDO:0018906",
+    "normalized_label": "follicular lymphoma",
+    "grounding_confidence": 0.9267,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metastatic gastric adenocarcinoma umls c3160888": {
+    "normalized_id": "MONDO:0006228",
+    "normalized_label": "gastric papillary adenocarcinoma",
+    "grounding_confidence": 0.8027,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease vulvovaginal signs and symptoms umls c0852329": {
+    "normalized_id": "MONDO:0006014",
+    "normalized_label": "vulvovaginal candidiasis",
+    "grounding_confidence": 0.8493,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease upper limb spasticity hp 0006986": {
+    "normalized_id": "HP:0006986",
+    "normalized_label": "Upper limb spasticity",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease hepatomegaly hp 0002240": {
+    "normalized_id": "HP:0002240",
+    "normalized_label": "Hepatomegaly",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease splenomegaly hp 0001744": {
+    "normalized_id": "HP:0001744",
+    "normalized_label": "Splenomegaly",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease staphylococcus aureus skin infection umls c1739131": {
+    "normalized_id": "MONDO:0005545",
+    "normalized_label": "staphylococcus aureus infection",
+    "grounding_confidence": 0.9529,
+    "grounding_service": "nameres",
+    "grounding_status": "accepted"
+  },
+  "disease acute respiratory insufficiency umls c0865850": {
+    "normalized_id": "MONDO:0001208",
+    "normalized_label": "acute respiratory failure",
+    "grounding_confidence": 0.9088,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hypercapnia hp 0012416": {
+    "normalized_id": "HP:0012416",
+    "normalized_label": "Hypercapnia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease acute coccidioidomycosis umls c3840167": {
+    "normalized_id": "MONDO:0005706",
+    "normalized_label": "coccidioidomycosis",
+    "grounding_confidence": 0.8056,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease disseminated coccidioidomycosis umls c0276667": {
+    "normalized_id": "MONDO:0042233",
+    "normalized_label": "disseminated candidiasis",
+    "grounding_confidence": 0.8914,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease irritable bowel syndrome with diarrhea umls c0348898": {
+    "normalized_id": "MONDO:0005052",
+    "normalized_label": "irritable bowel syndrome",
+    "grounding_confidence": 0.9263,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease reticular veins umls c5906718": {
+    "normalized_id": "MONDO:0009973",
+    "normalized_label": "reticular dysgenesis",
+    "grounding_confidence": 0.9124,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metastatic endometrial carcinoma umls c0813148": {
+    "normalized_id": "MONDO:0004956",
+    "normalized_label": "metastatic prostate carcinoma",
+    "grounding_confidence": 0.8957,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease breast cancer recurrent umls c0278493": {
+    "normalized_id": "MONDO:0007254",
+    "normalized_label": "breast cancer",
+    "grounding_confidence": 0.913,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease progressive cgvhd umls c3539781": {
+    "normalized_id": "MONDO:0020074",
+    "normalized_label": "progressive myoclonus epilepsy",
+    "grounding_confidence": 0.8396,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease acquired methemoglobinemia umls c0271905": {
+    "normalized_id": "MONDO:0018740",
+    "normalized_label": "drug-induced methemoglobinemia",
+    "grounding_confidence": 0.8105,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease pancreatic adenocarcinoma metastatic umls c0861727": {
+    "normalized_id": "MONDO:0006047",
+    "normalized_label": "pancreatic adenocarcinoma",
+    "grounding_confidence": 0.9389,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease muscle weakness hp 0001324": {
+    "normalized_id": "HP:0001324",
+    "normalized_label": "Muscle weakness",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease abnormal bleeding hp 0001892": {
+    "normalized_id": "HP:0001892",
+    "normalized_label": "Abnormal bleeding",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease idiopathic macular telangiectasia type 2 umls c5231121": {
+    "normalized_id": "MONDO:0018146",
+    "normalized_label": "idiopathic macular telangiectasia type 1",
+    "grounding_confidence": 0.99,
+    "grounding_service": "nameres",
+    "grounding_status": "accepted"
+  },
+  "disease staphylococcus saprophyticus infection umls c1142267": {
+    "normalized_id": "MONDO:0005545",
+    "normalized_label": "staphylococcus aureus infection",
+    "grounding_confidence": 0.8983,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease episodic migraine umls c4760993": {
+    "normalized_id": "MONDO:0016227",
+    "normalized_label": "episodic ataxia",
+    "grounding_confidence": 0.8579,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease polyphagia hp 0002591": {
+    "normalized_id": "HP:0002591",
+    "normalized_label": "Polyphagia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease perinatal hbv infection umls c3854623": {
+    "normalized_id": "MONDO:0100086",
+    "normalized_label": "perinatal disease",
+    "grounding_confidence": 0.8455,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease inflammatory abnormality of the eye hp 0100533": {
+    "normalized_id": "HP:0100533",
+    "normalized_label": "Inflammatory abnormality of the eye",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease abnormality of acid base homeostasis hp 0004360": {
+    "normalized_id": "HP:0004360",
+    "normalized_label": "Abnormality of acid-base homeostasis",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease myelofibrosis due to another disorder umls c0242006": {
+    "normalized_id": "MONDO:0009692",
+    "normalized_label": "myelofibrosis",
+    "grounding_confidence": 0.8703,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metastatic uveal melanoma umls c4725091": {
+    "normalized_id": "MONDO:0005191",
+    "normalized_label": "metastatic melanoma",
+    "grounding_confidence": 0.9204,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease neuroblastoma recurrent umls c0278695": {
+    "normalized_id": "MONDO:0005072",
+    "normalized_label": "neuroblastoma",
+    "grounding_confidence": 0.913,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease refractory neuroblastoma umls c4525059": {
+    "normalized_id": "MONDO:0018353",
+    "normalized_label": "refractory celiac disease",
+    "grounding_confidence": 0.8613,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease branch retinal vein occlusion with macular edema umls c0339507": {
+    "normalized_id": "MONDO:0001630",
+    "normalized_label": "branch retinal artery occlusion",
+    "grounding_confidence": 0.8666,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease myocardial contusions umls c0273112": {
+    "normalized_id": "MONDO:0005068",
+    "normalized_label": "myocardial infarction",
+    "grounding_confidence": 0.9003,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease mite allergy umls c4087338": {
+    "normalized_id": "MONDO:0005271",
+    "normalized_label": "Allergy",
+    "grounding_confidence": 0.8135,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease non small cell lung cancer recurrent umls c0278517": {
+    "normalized_id": "MONDO:0005233",
+    "normalized_label": "non-small cell lung carcinoma",
+    "grounding_confidence": 0.9033,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease metastatic esophageal squamous cell carcinoma umls c1142025": {
+    "normalized_id": "MONDO:0044907",
+    "normalized_label": "metastatic squamous cell carcinoma",
+    "grounding_confidence": 0.8923,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease aids defining illness umls c0740830": {
+    "normalized_id": "MONDO:0012268",
+    "normalized_label": "AIDS",
+    "grounding_confidence": 0.8381,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease recurrent chronic lymphoid leukemia umls c0854802": {
+    "normalized_id": "MONDO:0004948",
+    "normalized_label": "B-cell chronic lymphocytic leukemia",
+    "grounding_confidence": 0.8071,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease urothelial carcinoma recurrent umls c4049507": {
+    "normalized_id": "MONDO:0040679",
+    "normalized_label": "urothelial carcinoma",
+    "grounding_confidence": 0.9333,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease focal eeg discharges with secondary generalization hp hp 0011188": {
+    "normalized_id": "HP:HP:0011188",
+    "normalized_label": "Focal EEG discharges with secondary generalization",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease antisocial behavior umls c0233523": {
+    "normalized_id": "MONDO:0800413",
+    "normalized_label": "antisocial behavior, susceptibility to",
+    "grounding_confidence": 0.9,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease intraoperative hemorrhage of spleen umls c3648432": {
+    "normalized_id": "MONDO:0013792",
+    "normalized_label": "intracerebral hemorrhage",
+    "grounding_confidence": 0.851,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease stage 1 chronic kidney disease hp hp 0012623": {
+    "normalized_id": "HP:HP:0012623",
+    "normalized_label": "Stage 1 chronic kidney disease",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease stage 2 chronic kidney disease hp hp 0012624": {
+    "normalized_id": "HP:HP:0012624",
+    "normalized_label": "Stage 2 chronic kidney disease",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease rhabdomyosarcoma with tfcp2 rearrangement umls c5907813": {
+    "normalized_id": "MONDO:0005212",
+    "normalized_label": "rhabdomyosarcoma",
+    "grounding_confidence": 0.878,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease neurofibromatosis 1 doid 0111253": {
+    "normalized_id": "MONDO:0016755",
+    "normalized_label": "neurofibroma",
+    "grounding_confidence": 0.9263,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease hypoventilation hp 0002791": {
+    "normalized_id": "HP:0002791",
+    "normalized_label": "Hypoventilation",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease facial hirsutism hp 0009937": {
+    "normalized_id": "HP:0009937",
+    "normalized_label": "Facial hirsutism",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease bone pain hp 0002653": {
+    "normalized_id": "HP:0002653",
+    "normalized_label": "Bone pain",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease morganella infection umls c0343404": {
+    "normalized_id": "MONDO:0005982",
+    "normalized_label": "tinea infection",
+    "grounding_confidence": 0.8132,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease invasive meningococcal disease umls c3873491": {
+    "normalized_id": "MONDO:0004953",
+    "normalized_label": "invasive ductal breast carcinoma",
+    "grounding_confidence": 0.8296,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease transthyretin cardiac amyloidosis hp hp 0031327": {
+    "normalized_id": "HP:HP:0031327",
+    "normalized_label": "Transthyretin cardiac amyloidosis",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease hypermagnesemia hp 0002918": {
+    "normalized_id": "HP:0002918",
+    "normalized_label": "Hypermagnesemia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease hypoproteinemia hp 0003075": {
+    "normalized_id": "HP:0003075",
+    "normalized_label": "Hypoproteinemia",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease cervical squamous intraepithelial neoplasia 1 umls c1527424": {
+    "normalized_id": "MONDO:0042491",
+    "normalized_label": "cervical squamous intraepithelial neoplasia",
+    "grounding_confidence": 0.9911,
+    "grounding_service": "nameres",
+    "grounding_status": "accepted"
+  },
+  "disease vulval intraepithelial neoplasia grade 2 umls c0495107": {
+    "normalized_id": "MONDO:0005198",
+    "normalized_label": "vulvar intraepithelial neoplasia",
+    "grounding_confidence": 0.8907,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease pancreatic carcinoma non resectable umls c0854776": {
+    "normalized_id": "MONDO:0005893",
+    "normalized_label": "pancreatic endocrine carcinoma",
+    "grounding_confidence": 0.8895,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease infectious enteritis umls c0021342": {
+    "normalized_id": "MONDO:0005810",
+    "normalized_label": "infectious mononucleosis",
+    "grounding_confidence": 0.8483,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease familial hyperlipidaemia umls c0694546": {
+    "normalized_id": "MONDO:0003689",
+    "normalized_label": "familial hemolytic anemia",
+    "grounding_confidence": 0.8893,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease psoriasis vulgaris efo 1001494": {
+    "normalized_id": "MONDO:0005083",
+    "normalized_label": "psoriasis",
+    "grounding_confidence": 0.9,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease old myocardial infarction umls c0155668": {
+    "normalized_id": "MONDO:0005068",
+    "normalized_label": "myocardial infarction",
+    "grounding_confidence": 0.8673,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease decreased liver function hp 0001410": {
+    "normalized_id": "HP:0001410",
+    "normalized_label": "Decreased liver function",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease peritoneal abscess of subhepatic umls c1561631": {
+    "normalized_id": "MONDO:0005906",
+    "normalized_label": "peritonsillar abscess",
+    "grounding_confidence": 0.8551,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease h5n1 influenza umls c2748361": {
+    "normalized_id": "MONDO:0018695",
+    "normalized_label": "avian influenza",
+    "grounding_confidence": 0.8094,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease adult t cell lymphoma leukaemia recurrent umls c0280427": {
+    "normalized_id": "MONDO:0019471",
+    "normalized_label": "adult T-cell leukemia/lymphoma",
+    "grounding_confidence": 0.9063,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease renal anaemia umls c1142276": {
+    "normalized_id": "MONDO:0005086",
+    "normalized_label": "renal cell carcinoma",
+    "grounding_confidence": 0.8713,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease helicobacter pylori associated gastritis umls c0343378": {
+    "normalized_id": "MONDO:0006781",
+    "normalized_label": "Helicobacter pylori infectious disease",
+    "grounding_confidence": 0.8972,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease atonic seizure not intractable umls c3495022": {
+    "normalized_id": "MONDO:0008845",
+    "normalized_label": "atonic-astatic syndrome of Foerster",
+    "grounding_confidence": 0.8276,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease periodontal inflammation umls c3495798": {
+    "normalized_id": "MONDO:0002635",
+    "normalized_label": "periodontal disorder",
+    "grounding_confidence": 0.8567,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease generalized onset seizure hp 0002197": {
+    "normalized_id": "HP:0002197",
+    "normalized_label": "Generalized-onset seizure",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease venous malformation hp 0012721": {
+    "normalized_id": "HP:0012721",
+    "normalized_label": "Venous malformation",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease blue rubber bleb nevus syndrome omim 112200": {
+    "normalized_id": "MONDO:0007203",
+    "normalized_label": "blue rubber bleb nevus",
+    "grounding_confidence": 0.9419,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease mixed vascular malformation umls c0340845": {
+    "normalized_id": "MONDO:0018717",
+    "normalized_label": "mixed cystic lymphatic malformation",
+    "grounding_confidence": 0.8409,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease periarthritis scapulohumeralis umls c0877557": {
+    "normalized_id": "MONDO:0006898",
+    "normalized_label": "periarthritis",
+    "grounding_confidence": 0.8867,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease anal intraepithelial neoplasia ain iii umls c1274831": {
+    "normalized_id": "MONDO:0022394",
+    "normalized_label": "cervical intraepithelial neoplasia",
+    "grounding_confidence": 0.8018,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic hepatitis c genotype 2 umls c4049395": {
+    "normalized_id": "MONDO:0005354",
+    "normalized_label": "chronic hepatitis C virus infection",
+    "grounding_confidence": 0.9015,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease cytomegalovirus viremia umls c0877635": {
+    "normalized_id": "MONDO:0000878",
+    "normalized_label": "cytomegalovirus retinitis",
+    "grounding_confidence": 0.9239,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease infection by cladosporium species umls c0864807": {
+    "normalized_id": "MONDO:0021941",
+    "normalized_label": "infection by Trypanosoma rhodesiense",
+    "grounding_confidence": 0.8766,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease short stature hp 0004322": {
+    "normalized_id": "HP:0004322",
+    "normalized_label": "Short stature",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease short stature homeobox deficiency umls c3897045": {
+    "normalized_id": "MONDO:0014403",
+    "normalized_label": "short stature due to GHSR deficiency",
+    "grounding_confidence": 0.911,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease paroxysmal nodal tachycardia umls c0546960": {
+    "normalized_id": "MONDO:0100244",
+    "normalized_label": "paroxysmal nocturnal hemoglobinuria",
+    "grounding_confidence": 0.8465,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease thickened skin hp 0001072": {
+    "normalized_id": "HP:0001072",
+    "normalized_label": "Thickened skin",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease impaired glucose tolerance hp 0040270": {
+    "normalized_id": "HP:0040270",
+    "normalized_label": "Impaired glucose tolerance",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease lower limb spasticity hp 0002061": {
+    "normalized_id": "HP:0002061",
+    "normalized_label": "Lower limb spasticity",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease neuropathic pain hp hp 6000040": {
+    "normalized_id": "HP:HP:6000040",
+    "normalized_label": "Neuropathic pain",
+    "grounding_confidence": 0.7778,
+    "grounding_service": "gilda",
+    "grounding_status": "review_recommended"
+  },
+  "disease typical absence seizure hp 0011147": {
+    "normalized_id": "HP:0011147",
+    "normalized_label": "Typical absence seizure",
+    "grounding_confidence": 1.0,
+    "grounding_service": "oak",
+    "grounding_status": "accepted"
+  },
+  "disease gonorrhea of pharynx umls c0149966": {
+    "normalized_id": "MONDO:0004277",
+    "normalized_label": "gonorrhea",
+    "grounding_confidence": 0.89,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease gonococcal epididymitis umls c0341778": {
+    "normalized_id": "MONDO:0015455",
+    "normalized_label": "gonococcal conjunctivitis",
+    "grounding_confidence": 0.8546,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease idiopathic edema umls c0238094": {
+    "normalized_id": "MONDO:0001182",
+    "normalized_label": "idiopathic corneal edema",
+    "grounding_confidence": 0.9208,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease intestinal strongyloidiasis umls c0348997": {
+    "normalized_id": "MONDO:0006807",
+    "normalized_label": "intestinal perforation",
+    "grounding_confidence": 0.8636,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease thrombotic stroke umls c0242129": {
+    "normalized_id": "MONDO:0018896",
+    "normalized_label": "thrombotic thrombocytopenic purpura",
+    "grounding_confidence": 0.8622,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease chronic low back pain umls c0457949": {
+    "normalized_id": "MONDO:0001014",
+    "normalized_label": "chronic leukemia",
+    "grounding_confidence": 0.8476,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  },
+  "disease uterine hemorrhage umls c0042134": {
+    "normalized_id": "MONDO:0004701",
+    "normalized_label": "uterine polyp",
+    "grounding_confidence": 0.8385,
+    "grounding_service": "nameres",
+    "grounding_status": "review_recommended"
+  }
+}
