@@ -12,6 +12,7 @@ import os
 from dataclasses import dataclass
 
 from medic.curie_utils import get_prefix
+from medic.curie_utils import MEDIC_W3ID_ROOT
 
 MANUAL = "semapv:ManualMappingCuration"
 COLUMNS = ["subject_id", "predicate_id", "object_id", "object_label",
@@ -74,7 +75,9 @@ class NormalizationMappingStore:
     def save(self) -> None:
         os.makedirs(os.path.dirname(self.path) or ".", exist_ok=True)
         with open(self.path, "w", newline="") as fh:
-            fh.write(f"# mapping_set_id: https://w3id.org/medic/mappings/{self.entity_type}_normalization\n")
+            fh.write(
+                f"# mapping_set_id: {MEDIC_W3ID_ROOT}/mappings/{self.entity_type}_normalization\n"
+            )
             writer = csv.DictWriter(fh, fieldnames=COLUMNS, delimiter="\t")
             writer.writeheader()
             for sid in sorted(self._rows):

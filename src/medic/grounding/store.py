@@ -15,6 +15,7 @@ import csv
 import os
 from dataclasses import dataclass, field
 
+from medic.curie_utils import MEDIC_W3ID_ROOT
 from medic.grounding.lexical.preprocess import base_normalize
 
 MANUAL = "semapv:ManualMappingCuration"
@@ -225,7 +226,9 @@ class LiteralMappingStore:
     def save(self) -> None:
         os.makedirs(os.path.dirname(self.path) or ".", exist_ok=True)
         with open(self.path, "w", newline="") as fh:
-            fh.write(f"# mapping_set_id: https://w3id.org/medic/mappings/{self.entity_type}_grounding\n")
+            fh.write(
+                f"# mapping_set_id: {MEDIC_W3ID_ROOT}/mappings/{self.entity_type}_grounding\n"
+            )
             fh.write(f"# mapping_tool: {TOOL}\n")
             for line in _license_header():
                 fh.write(line)

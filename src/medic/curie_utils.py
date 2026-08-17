@@ -12,13 +12,27 @@ from functools import lru_cache
 import curies
 from curies import Converter, ReferenceTuple
 
+#: The single root every MeDIC-minted identifier and mapping-set id hangs off.
+#:
+#: There were two. The LinkML schemas, ``MEDICNE:`` and the mention-id UUID namespace all used
+#: ``https://w3id.org/monarch-initiative/medic/``, while the grounding and normalization store
+#: writers emitted ``mapping_set_id: https://w3id.org/medic/...``. Nothing failed — both simply
+#: 404 until the redirect is registered — but an id scheme is the hardest thing to change after
+#: a release, and these ids are already baked into five git-tracked stores, every product
+#: Mention and every KGX node. Reconciled onto the schema root, and defined once here so the
+#: two cannot drift apart again.
+#:
+#: The w3id redirect itself is still unregistered (#35). That is safe to do after the tag —
+#: registering it later changes no published string — whereas disagreeing roots are not.
+MEDIC_W3ID_ROOT = "https://w3id.org/monarch-initiative/medic"
+
 # MeDIC-specific prefixes not in bioregistry
 _MEDIC_EXTRA_PREFIXES = {
     "PHAROS": "https://pharos.nih.gov/ligands/",
     "OMOP": "https://athena.ohdsi.org/search-terms/terms/",
     # MeDIC named entity — a stable id minted for every extracted source mention
     # (see ``medic.mention``). Anchors the translation/grounding/normalization trail.
-    "MEDICNE": "https://w3id.org/monarch-initiative/medic/MEDICNE_",
+    "MEDICNE": f"{MEDIC_W3ID_ROOT}/MEDICNE_",
 }
 
 
