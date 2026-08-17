@@ -89,7 +89,9 @@ class Matcher:
         ids = {r.object_id for r in picked}
         if len(ids) != 1:
             return None  # ambiguous within winning vocab
-        r = picked[0]
+        # Same reasoning as `_fuzzy`: pick by value, not by whatever order the rows arrived in,
+        # so `object_label` and `object_match_field` cannot depend on SQL row order.
+        r = min(picked, key=lambda x: (x.match_field, x.norm_value))
         return GroundingDecision(
             subject_label=subject, entity_type=self.index.entity_type,
             predicate_id=predicate, object_id=r.object_id, object_label=r.object_label,
@@ -117,7 +119,13 @@ class Matcher:
         return None
 
     def _fuzzy(self, subject, norm):
-        cands = edits1(norm)
+        # `sorted`, not the raw set: `edits1` returns a set, `lookup_norm_many` chunks it into
+        # SQL `IN` batches, and `str` hashing is randomised per process (PYTHONHASHSEED). So
+        # chunk membership — and therefore the order of `rows` — varied run to run, and
+        # `picked[0]` recorded a different `match_string` for the same `object_id`. The id was
+        # always stable; the provenance field churned in a git-tracked artifact, against I-2's
+        # byte-identical reruns.
+        cands = sorted(edits1(norm))
         rows: list[LexRow] = []
         for field in self.fields:
             rows.extend(self.index.lookup_norm_many(cands, field))
@@ -127,7 +135,9 @@ class Matcher:
         ids = {r.object_id for r in picked}
         if len(ids) != 1:
             return None  # ambiguous edit-1 neighborhood -> skip
-        r = picked[0]
+        # Explicit tie-break rather than list position: several rows can carry the same
+        # object_id via different synonyms, and `match_string` (below) is whichever one wins.
+        r = min(picked, key=lambda x: (x.match_field, x.norm_value))
         return GroundingDecision(
             subject_label=subject, entity_type=self.index.entity_type,
             predicate_id=RULE_PREDICATE["fuzzy_edit1_unique"], object_id=r.object_id,
