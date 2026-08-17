@@ -682,9 +682,34 @@ gh-release version draft="true":
     # v2.0.0 build. Comparing them here is the only point where both are known.
     stamped=$(uv run python -c "from medic.versions import medic_release; print(medic_release())")
     if [ "v${stamped}" != "{{version}}" ]; then
-        echo "ERROR: artefacts are stamped ${stamped}, releasing {{version}}." >&2
+        echo "ERROR: the installed distribution is ${stamped}, releasing {{version}}." >&2
         echo "       Tag the commit, then 'uv sync' to refresh the installed version," >&2
         echo "       then rebuild so the stamp matches: git tag {{version}} && uv sync && just build-all" >&2
+        exit 1
+    fi
+
+    # ...and the check above is NOT sufficient on its own. `medic_release()` describes the
+    # virtualenv, not the files being uploaded: `uv sync` after tagging satisfies it while
+    # products/ and exports/ still hold whatever the last build wrote. Doing exactly what the
+    # message above says but skipping `just build-all` shipped assets stamped 1.0.1 under a
+    # v2.0.0 tag — 17,070 `tool_version: 1.0.1` strings across the three products. So read the
+    # stamp out of the artefacts themselves, which is the thing consumers actually see.
+    meta="exports/medic_kgx_metadata.yaml"
+    if [ ! -f "${meta}" ]; then
+        echo "ERROR: ${meta} is missing — cannot verify what the artefacts are stamped with." >&2
+        echo "       Run 'just build-all' before releasing." >&2
+        exit 1
+    fi
+    artefact=$(sed -n 's/^medic_version:[[:space:]]*//p' "${meta}" | head -1 | tr -d '"'"'"' \r')
+    if [ -z "${artefact}" ]; then
+        echo "ERROR: ${meta} carries no medic_version — refusing to guess." >&2
+        exit 1
+    fi
+    if [ "v${artefact}" != "{{version}}" ]; then
+        echo "ERROR: the built artefacts are stamped ${artefact}, releasing {{version}}." >&2
+        echo "       The installed version matches but the files on disk are from an older" >&2
+        echo "       build. Rebuild so the artefacts carry the version being released:" >&2
+        echo "           just build-all" >&2
         exit 1
     fi
 
