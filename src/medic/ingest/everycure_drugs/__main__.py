@@ -131,9 +131,13 @@ def ingest_everycure(
         drugbank_raw = _clean(row.get("drugbank_id", ""))
         drugbank = _ensure_prefix(drugbank_raw, "DRUGBANK:") if drugbank_raw else ""
 
+        # `everycure_id` is deliberately NOT a provenance id here. `alternate_ids` becomes
+        # `skos:exactMatch` in the SSSOM export — the strongest identity claim SSSOM has — and
+        # this id is the one the comment above says we do not trust. Publishing it asserted
+        # `CHEBI:749610 (ofatumumab) skos:exactMatch CHEBI:28887 (dimethyl ether)`, an anti-CD20
+        # monoclonal antibody declared identical to a solvent, across 119 CHEBI->CHEBI rows.
+        # It stays on the record as `everycure_id`, which is what "kept as provenance" means.
         provenance_ids: list[str] = []
-        if everycure_id:
-            provenance_ids.append(everycure_id)
         if drugbank and drugbank != everycure_id:
             provenance_ids.append(drugbank)
 

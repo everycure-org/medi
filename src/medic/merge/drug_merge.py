@@ -294,6 +294,15 @@ def _merge_group(drug_id: str, records: list[dict], rules_lookup=None) -> dict:
         rec_grounding = rec.get("grounding")
         if isinstance(rec_grounding, dict):
             rec_components = {str(c) for c in (rec_grounding.get("components") or []) if c}
+        # Same reasoning, second source: EveryCure's own pre-grounded id. The ingester calls it
+        # "untrusted" and grounds the *name* instead, then folded the id into `alternate_ids`
+        # anyway — so the export asserted `ofatumumab skos:exactMatch dimethyl ether`. Filtered
+        # on read for the same reason as the components: kb/drugs/everycure was written with
+        # these already folded in, and re-ingesting to drop a derived field is a much larger
+        # blast radius than excluding it here, where the record still carries `everycure_id`.
+        everycure_id = str(rec.get("everycure_id") or "")
+        if everycure_id:
+            rec_components.add(everycure_id)
         alt = rec.get("alternate_ids", [])
         if isinstance(alt, list):
             all_alt_ids.update(str(x) for x in alt if x and str(x) not in rec_components)
