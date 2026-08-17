@@ -674,7 +674,7 @@ classes:
     slots: [category, input_value, output_value, output_label, method, tool, tool_version,
             agent, confidence, confidence_basis, status, applied_rules, quality, flags, comment]
     slot_usage:
-      confidence: {required: true}
+      confidence: {required: true, minimum_value: 0.0, maximum_value: 1.0}
       confidence_basis: {required: true}
   ExtractionStep:
     is_a: TransformationStep
@@ -849,9 +849,14 @@ slots:
     description: Who/what ran the step.
   confidence:
     range: float
-    minimum_value: 0.0
-    maximum_value: 1.0
-    description: 0-1 step confidence.
+    description: >-
+      0-1 step confidence. The bounds live on `TransformationStep.slot_usage` rather than
+      here because this slot is deliberately reused with three non-numeric ranges —
+      `ConfidenceEnum` (Evidence), `ConfidenceBreakdown` (SourceAssertion) and
+      `PairConfidence` (IndicationAssociation). A `minimum_value` here is inherited by all
+      of them, and gen-pydantic emits it as a `ge` constraint applied to an object, which
+      makes the generated model unable to validate any product carrying an object-ranged
+      confidence. Keep the bounds attached to the float usage only.
   status:
     range: StepStatus
     description: Curation lifecycle state.
