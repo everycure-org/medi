@@ -207,11 +207,20 @@ These are hard rules. A change that breaks one is a bug, not a tradeoff.
      disease index without a decision (`grounding/lexical/loaders/umls.py: DEFAULT_DISEASE_SAB`).
      Matching is internal lookup and stays; emitting one of its strings as `object_label`
      publishes it into the SSSOM stores and every downstream product, which is redistribution.
-     `RESTRICTED_LABEL_SAB_PREFIXES` names the restricted vocabularies and
-     `LABEL_SAB_PREFERENCE` picks the published label from an open one. A concept known *only*
-     to a restricted vocabulary ships **unnamed** — an empty label is honest; the id still
-     resolves and the mapping still works. 28,542 of 1,146,023 UMLS concepts are in that
-     position, and the index build logs the count rather than letting it be discovered later.
+     `LABEL_SAB_DECISIONS` is an **allowlist**: it names every vocabulary that may supply a
+     published label, each with the decision permitting it, and `LABEL_SAB_PREFERENCE` picks
+     between them. A vocabulary absent from the map fails closed. A concept known *only* to
+     such vocabularies ships **unnamed** — an empty label is honest; the id still resolves and
+     the mapping still works. The index build logs the count rather than letting it be
+     discovered later.
+
+     This was a blocklist (`RESTRICTED_LABEL_SAB_PREFIXES = ("MDR",)`) until 2026-08-16, and
+     the direction was the defect: a blocklist enumerates what is forbidden, so anything nobody
+     thought of publishes silently. **WHO ICD-10 was publishing verbatim rubrics** as KGX node
+     names on that basis (UMLS Appendix 1 Category 3 — publication expressly excluded), while
+     `SNOMEDCT_US` and `ICD10CM` carried unexamined scope caveats. Reversing to an allowlist
+     makes adding a vocabulary a licensing decision that has to be written down; a test asserts
+     every preferred vocabulary carries one. See LICENSING.md for the per-vocabulary record.
 
      **SNOMED CT is not restricted** (decided 2026-08-15 on the Global Patient Set). One caveat
      is recorded rather than resolved: the GPS is a *subset* of SNOMED CT while the index
