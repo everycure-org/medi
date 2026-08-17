@@ -1,0 +1,217 @@
+# Which build outputs may be published as release assets, and on whose terms.
+#
+# `just gh-release` used to glob `exports/*.{csv,xlsx,jsonl,tsv}` and ship whatever it
+# found. That makes publication the default: the KGX export added 57 MB of new assets —
+# including 4.6 MB of verbatim EMA/PMDA/DailyMed label text — and nothing asked whether
+# they could lawfully ship. Here an unlisted file is REFUSED, so a new export forces a
+# decision rather than inheriting one.
+#
+# `sources` on each asset drives the attribution notice generated for the release
+# (medic.release_assets), so the notice can never drift out of sync with what is
+# actually being published. Terms per source are in LICENSING.md.
+
+notice: |
+  Contains data from {sources}. Data has been edited: source records were parsed,
+  translated, normalised, and mapped to ontology identifiers by the MeDIC pipeline.
+  None of these bodies endorses this derived work.
+
+# The licence position, stated once and flowed into every artifact that can carry it
+# (exports/NOTICE.md, the KGX metadata, the SSSOM headers, the release body).
+license:
+  # What MeDIC grants over a released file *as a whole*. CC BY rather than CC0 because
+  # every shipped file mixes MeDIC's own assertions with verbatim source strings, and EMA
+  # and PMDA both require attribution: declaring CC0 would tell a consumer attribution is
+  # optional, which is exactly the misreading LICENSING.md warns against.
+  medic_contribution: https://creativecommons.org/licenses/by/4.0/
+
+  # MeDIC's own contribution — the assertion that a source string resolves to a given
+  # CURIE, by a given method, at a given confidence — is still offered without conditions.
+  # The file-level CC BY comes from the third-party content beside it, not from MeDIC
+  # wanting credit for the mappings.
+  medic_assertions_offered_as: https://creativecommons.org/publicdomain/zero/1.0/
+
+  # The passthrough. This is the load-bearing sentence: processing does not launder terms.
+  passthrough: >-
+    MeDIC grants no rights over upstream source content. The original licence of each
+    contributing source remains in force and must be respected; parsing, translation,
+    normalisation and mapping to ontology identifiers do not alter it. Where terms
+    conflict, the stricter governs.
+
+  terms_url: https://github.com/monarch-initiative/medic/blob/main/LICENSING.md
+
+# attribution:
+#   required — a licence condition; the source must be named when the data is redistributed
+#   courtesy — public-domain or equivalent; naming it is good practice, not an obligation
+#   none     — no declared licence upstream; see LICENSING.md for the redistribution reading
+sources:
+  dailymed:
+    name: the U.S. National Library of Medicine (DailyMed)
+    attribution: courtesy
+  orangebook:
+    name: the U.S. Food and Drug Administration (Orange Book)
+    attribution: courtesy
+  purplebook:
+    name: the U.S. Food and Drug Administration (Purple Book)
+    attribution: courtesy
+  cureid:
+    name: FDA/NCATS CURE-ID
+    attribution: courtesy
+  ema:
+    name: the European Medicines Agency (© EMA)
+    attribution: required
+  pmda:
+    name: the Pharmaceuticals and Medical Devices Agency of Japan (PMDA, https://www.pmda.go.jp)
+    attribution: required
+  cdsco:
+    name: the Central Drugs Standard Control Organisation of India (CDSCO)
+    attribution: required          # unverified upstream; assumed required (LICENSING.md)
+  grls:
+    name: the Russian State Register of Medicines (GRLS)
+    attribution: none
+  cde:
+    name: the China NMPA Center for Drug Evaluation
+    attribution: none
+  everycure:
+    name: EveryCure (drug-list and disease-list, CC BY 4.0)
+    attribution: required
+  mondo:
+    name: the Mondo Disease Ontology (CC BY 4.0)
+    attribution: required
+  pubmed:
+    name: PubMed
+    attribution: courtesy
+
+assets:
+  # ---- products ----------------------------------------------------------------
+  - path: products/drug_list.yaml
+    sources: [orangebook, purplebook, ema, pmda, grls, cdsco, cde, everycure]
+    ship: true
+
+  - path: products/disease_list.yaml
+    sources: [mondo, everycure]
+    ship: true
+    note: >-
+      Carries 1,443 MedDRA identifiers as crossreferences, inherited from Mondo. Bare
+      identifiers only — no MedDRA dictionary terms — so the MSSO restriction on term text
+      does not attach. See LICENSING.md.
+
+  - path: products/indication_list.yaml
+    sources: [dailymed, ema, pmda, cdsco]
+    ship: true
+    note: >-
+      Contains ~4.9 MB of verbatim indication text, each excerpt capped at 500 characters
+      (PMDA 988). EMA and PMDA account for ~1.9 MB and both require attribution.
+
+  - path: products/contraindication_list.yaml
+    sources: [dailymed]
+    ship: true
+
+  - path: products/research_list.yaml
+    sources: [pubmed, cureid]
+    ship: true
+
+  - path: products/adverse_event_list.yaml
+    sources: []
+    ship: false
+    note: >-
+      HELD. MedDRA reaches MeDIC through FAERS and PVLens under an ICH/MSSO subscription
+      licence that restricts redistribution of dictionary terms. Nothing MedDRA-derived is
+      built today (the product is an empty stub and kb/adverse_events/ holds only
+      .gitkeep); this entry keeps it that way once the ingest lands.
+
+  # ---- exports: legacy tabular -------------------------------------------------
+  - path: exports/drug_list_flexible.csv
+    sources: [orangebook, purplebook, ema, pmda, grls, cdsco, cde, everycure]
+    ship: true
+
+  - path: exports/drug_list_stringent.csv
+    sources: [orangebook, purplebook, ema, pmda, everycure]
+    ship: true
+    note: Excludes the approved_india and approved_russia columns by construction.
+
+  - path: exports/orangebook.xlsx
+    sources: [orangebook]
+    ship: true
+
+  - path: exports/purplebook.xlsx
+    sources: [purplebook]
+    ship: true
+
+  - path: exports/ema.xlsx
+    sources: [ema]
+    ship: true
+
+  - path: exports/pmda.xlsx
+    sources: [pmda]
+    ship: true
+
+  - path: exports/russia.csv
+    sources: [grls]
+    ship: true
+    note: >-
+      Derived record table, not the GRLS source archive (which is never redistributed).
+      5,885 rows of DeepL-translated English drug name + ChEBI id + approval date. The
+      Cyrillic originals and the GRLS registration numbers are in kb/ but are NOT exported.
+
+  - path: exports/india.csv
+    sources: [cdsco]
+    ship: true
+    note: >-
+      112 rows. Unlike russia.csv this DOES carry verbatim source content: the CDSCO
+      formulation string, plus short indication phrases on 101 of 112 rows. CDSCO terms are
+      undeclared upstream; LICENSING.md assumes attribution is required. Revisit before any
+      commercial redistribution.
+
+  # ---- exports: graph and mappings ---------------------------------------------
+  - path: exports/medic_nodes.jsonl
+    sources: [orangebook, purplebook, ema, pmda, grls, cdsco, cde, everycure, mondo]
+    ship: true
+
+  - path: exports/medic_edges.jsonl
+    sources: [dailymed, ema, pmda, cdsco, pubmed]
+    ship: true
+    note: >-
+      Contains ~4.6 MB of verbatim label text in supporting_text — the same excerpts as
+      products/indication_list.yaml, capped identically. EMA+PMDA ~1.8 MB.
+
+  - path: exports/medic_kgx_metadata.yaml
+    sources: []
+    medic_authored: true
+    ship: true
+    note: Counts and licensing metadata for the KGX graph; carries the attribution notice.
+
+  - path: exports/NOTICE.md
+    sources: []
+    medic_authored: true
+    ship: true
+    note: >-
+      Generated. The general licensing notice for the whole release — attribution, the
+      passthrough statement, and the per-asset source table. Every release asset is covered
+      here; the per-format notices (KGX metadata, SSSOM header) are convenience copies for
+      formats that can carry one.
+
+  - path: exports/infores_medic.yaml
+    sources: []
+    medic_authored: true
+    ship: true
+    note: Proposed Translator information-resource entry. MeDIC-authored.
+
+  - path: exports/medic_drug_mappings.sssom.tsv
+    sources: [orangebook, purplebook, ema, pmda, grls, cdsco, cde, everycure]
+    ship: true
+    note: >-
+      Mapping assertions are CC0 (MeDIC's own contribution), but subject_label reproduces
+      verbatim source strings, which stay under source terms. The file header states both.
+
+  - path: exports/medic_statements.tsv
+    sources: [dailymed, ema, pmda, cdsco, grls, cde, pubmed]
+    ship: true
+    note: >-
+      No in-band licence header: docs/reliability.md documents reading this file with
+      csv.DictReader, which a leading '#' comment block would break. Attribution travels
+      with the release NOTICE instead.
+
+  - path: exports/medic_reliable.tsv
+    sources: [dailymed, ema, pmda, cdsco, grls, cde, pubmed]
+    ship: true
+    note: Same as medic_statements.tsv.

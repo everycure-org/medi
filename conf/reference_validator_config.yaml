@@ -1,0 +1,26 @@
+# Configuration for linkml-reference-validator
+# See: https://linkml.github.io/linkml-reference-validator/
+#
+# unknown_prefix_severity: WARNING means that when a reference cannot be
+# fetched (e.g., due to transient network errors), it will be reported as
+# a WARNING instead of an ERROR. This prevents CI failures from flaky
+# connectivity while still catching real validation errors.
+unknown_prefix_severity: WARNING
+
+# skip_prefixes: reference prefixes the validator cannot fetch and should
+# silently skip. These are regulatory document identifiers, not literature
+# references, so snippet validation does not apply.
+skip_prefixes:
+  - DailyMed
+  - FAERS
+  - EMA
+  - PMDA
+  - OrangeBook
+  - PurpleBook
+  - NCT
+  - MONDO
+  - DOI
+  - CHEBI
+  - DRUGBANK
+  - RXNORM
+  - MedDRA

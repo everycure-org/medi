@@ -1,0 +1,155 @@
+id: https://w3id.org/monarch-initiative/medic/authority
+name: authority
+title: MeDIC Authority and Source Role Schema
+description: >-
+  Models regulatory authorities, data source roles, and the regulatory status
+  of approved indications. Cleanly separates "who approved this" (authority)
+  from "where we got this information" (source) and "what role that source plays"
+  (primary vs intermediary vs non-regulatory).
+license: BSD-3-Clause
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+default_prefix: medic
+default_range: string
+
+imports:
+  - linkml:types
+
+enums:
+  RegulatoryAuthorityEnum:
+    description: >-
+      A regulatory body that approves drugs and indications in a jurisdiction.
+      Only true regulatory bodies appear here — not data republishers.
+    permissible_values:
+      FDA:
+        description: US Food and Drug Administration
+      EMA:
+        description: European Medicines Agency
+      PMDA:
+        description: Japan Pharmaceuticals and Medical Devices Agency
+      CDSCO:
+        description: Central Drugs Standard Control Organisation (India)
+      MOH_RUSSIA:
+        description: Ministry of Health of the Russian Federation
+      NMPA_CHINA:
+        description: National Medical Products Administration (China)
+
+  DataSourceRoleEnum:
+    description: >-
+      Whether a data source is the regulatory authority itself (PRIMARY),
+      a third-party republisher of the authority's data (INTERMEDIARY),
+      or unrelated to any regulatory authority (NON_REGULATORY).
+    permissible_values:
+      PRIMARY:
+        description: Data comes directly from the regulatory authority itself
+      INTERMEDIARY:
+        description: Data is republished from a regulatory authority by a third party (e.g. DailyMed for FDA SPLs)
+      NON_REGULATORY:
+        description: Source is not affiliated with any regulatory authority (e.g. EveryCure, PubMed, ClinicalTrials.gov)
+
+  RegulatoryApprovalStatusEnum:
+    description: Status of a drug-disease indication relative to a regulatory authority.
+    permissible_values:
+      APPROVED:
+        description: Officially approved indication
+      WITHDRAWN:
+        description: Previously approved, now withdrawn
+      INVESTIGATIONAL:
+        description: Under investigation, not yet approved
+      OFF_LABEL:
+        description: Used for this indication but not formally approved by the authority
+
+  DataSourceNameEnum:
+    description: >-
+      Concrete data source. Discriminates between distinct authoritative
+      artifacts (e.g. an FDA approval may surface in DailyMed, the Orange Book,
+      or the Purple Book — these are complementary, not substitutes).
+    permissible_values:
+      DAILYMED:
+        description: FDA Structured Product Label (DailyMed) — the prescribing label
+      ORANGEBOOK:
+        description: FDA Orange Book — small-molecule drug approvals (NDA/ANDA)
+      PURPLEBOOK:
+        description: FDA Purple Book — biologics license database (BLA)
+      EMA_EPAR:
+        description: European Medicines Agency European Public Assessment Report
+      PMDA:
+        description: Japan PMDA approval data (English review portal)
+      CDSCO:
+        description: India CDSCO approved new drugs list
+      GRLS:
+        description: Russia State Register of Medicines (GRLS)
+      CDE_CHINA:
+        description: China NMPA Center for Drug Evaluation
+      OTHER:
+        description: Any other source not listed above
+
+classes:
+  RegulatoryStatus:
+    description: >-
+      Regulatory status of a drug-disease indication for a specific authority
+      and source artifact. An indication may have multiple RegulatoryStatus
+      entries — one per authoritative artifact (e.g. an FDA-approved drug may
+      have a DailyMed label entry AND an Orange Book NDA entry AND a Purple
+      Book BLA entry, all complementing each other).
+    attributes:
+      authority:
+        range: RegulatoryAuthorityEnum
+        required: true
+        description: The regulatory authority that approved (or considered) this indication
+      source:
+        range: DataSourceNameEnum
+        description: >-
+          Concrete data source artifact (DAILYMED, ORANGEBOOK, PURPLEBOOK,
+          EMA_EPAR, PMDA, ...). Used by downstream consumers to label the
+          link correctly instead of guessing from URL hostname.
+      status:
+        range: RegulatoryApprovalStatusEnum
+        required: true
+        description: The approval status of the indication for this authority
+      source_role:
+        range: DataSourceRoleEnum
+        description: Whether the source is primary, intermediary, or non-regulatory
+      regulatory_document_url:
+        range: string
+        description: >-
+          Stable URL to the per-record landing page on the regulatory authority
+          (e.g. DailyMed lookup.cfm?setid=X, Drugs@FDA NDA overview, EMA EPAR
+          product page). Falls back to a search URL only when no per-record
+          page exists.
+      source_document_url:
+        range: string
+        description: >-
+          When available, a direct URL to the underlying approval document PDF
+          (e.g. SPL label PDF, Drugs@FDA approval letter, EMA assessment report
+          PDF, PMDA review report PDF). Optional; consumers should prefer this
+          over `regulatory_document_url` when both are present.
+      approval_date:
+        range: string
+        description: Date of approval (YYYYMMDD), if available from the source
+      marketing_status:
+        range: string
+        description: >-
+          Marketing status for this approval where the source publishes one
+          (FDA: RX / OTC / DISCN / NONE — see MarketingStatusEnum in drug.yaml).
+          Most permissive across USA sources. Empty when the source has no such field.
+      application_number:
+        range: string
+        description: >-
+          Regulatory application identifier. For ORANGEBOOK: NDA/ANDA pipe-joined
+          (e.g. "020233|020441"). For EMA_EPAR: EMEA product number. For PMDA:
+          approval number when available.
+      bla_number:
+        range: string
+        description: Pipe-joined BLA numbers (Purple Book biologics license applications)
+      setid:
+        range: string
+        description: DailyMed SPL set_id (UUID) for label-based deep links
+      product_id:
+        range: string
+        description: >-
+          Per-product identifier on the source registry (e.g. PMDA iyakuSearch
+          identifier). Used to build deep links when no jurisdiction-wide
+          numbering scheme exists.

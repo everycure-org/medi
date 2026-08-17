@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ols-mcp": {
+      "command": "uvx",
+      "args": ["ols-mcp"]
+    }
+  }
+}

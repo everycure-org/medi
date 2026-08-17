@@ -1,0 +1,14 @@
+orangebook:
+  url: "https://www.fda.gov/media/76860/download"
+  format: zip
+  target_file: products.txt
+
+purplebook:
+  # Purple Book download index: https://purplebooksearch.fda.gov/downloads
+  # FDA publishes a fresh CSV monthly under accessdata.fda.gov; bump this when a newer file is available.
+  url: "https://www.accessdata.fda.gov/drugsatfda_docs/PurpleBook/2026/purplebook-search-March-data-download.csv"
+  format: csv
+
+ema:
+  url: "https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx"
+  format: excel

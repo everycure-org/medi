@@ -1,0 +1,3013 @@
+- drug_disease: CHEBI:5855|UMLS:C0009326
+  ema: false
+  evidence:
+  - approval_date: '19710101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Rheumatism
+    original_drug_label: Ibuprofen 200mg Tablet
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Anti rheumatic.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0009326
+  final_normalized_disease_label: Disease, Collagen
+  final_normalized_drug_id: CHEBI:5855
+  final_normalized_drug_label: ibuprofen
+  indications_text: Anti rheumatic.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:3478|UMLS:C0035243
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: respiratory infections
+    original_drug_label: i)Cefaclor Monohydrate 250mg/500mg Capsule. ii)Cefaclor Monohydrate 125mg/5ml & 250mg/5ml Suspension. iii)Cefaclor Monohydrate 100mg/ml Drops. iv)Cefaclor 187mg/5ml Suspension (For paediatric use).
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Antibiotic- In respiratory infections, ENT infection, UT infections, Skin and skin structure infections.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0035243
+  final_normalized_disease_label: Respiratory infections
+  final_normalized_drug_id: CHEBI:3478
+  final_normalized_drug_label: cefaclor
+  indications_text: Antibiotic- In respiratory infections, ENT infection, UT infections, Skin and skin structure infections.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:3478|HP:0000010
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: urinary tract infections
+    original_drug_label: i)Cefaclor Monohydrate 250mg/500mg Capsule. ii)Cefaclor Monohydrate 125mg/5ml & 250mg/5ml Suspension. iii)Cefaclor Monohydrate 100mg/ml Drops. iv)Cefaclor 187mg/5ml Suspension (For paediatric use).
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Antibiotic- In respiratory infections, ENT infection, UT infections, Skin and skin structure infections.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0000010
+  final_normalized_disease_label: Recurrent urinary tract infections
+  final_normalized_drug_id: CHEBI:3478
+  final_normalized_drug_label: cefaclor
+  indications_text: Antibiotic- In respiratory infections, ENT infection, UT infections, Skin and skin structure infections.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:3478|UMLS:C0037278
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: skin infections
+    original_drug_label: i)Cefaclor Monohydrate 250mg/500mg Capsule. ii)Cefaclor Monohydrate 125mg/5ml & 250mg/5ml Suspension. iii)Cefaclor Monohydrate 100mg/ml Drops. iv)Cefaclor 187mg/5ml Suspension (For paediatric use).
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Antibiotic- In respiratory infections, ENT infection, UT infections, Skin and skin structure infections.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0037278
+  final_normalized_disease_label: Skin infections
+  final_normalized_drug_id: CHEBI:3478
+  final_normalized_drug_label: cefaclor
+  indications_text: Antibiotic- In respiratory infections, ENT infection, UT infections, Skin and skin structure infections.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:7772|MONDO:0005412
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: duodenal ulcer
+    original_drug_label: Omeprazole 10mg/20mg Enteric Coated Granules Capsule
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Short term treatment of duodenal ulcer, gastric ulcer, reflux oesophagitis, management of Zollinger- Ellison syndrome.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005412
+  final_normalized_disease_label: duodenal ulcer
+  final_normalized_drug_id: CHEBI:7772
+  final_normalized_drug_label: omeprazole
+  indications_text: Short term treatment of duodenal ulcer, gastric ulcer, reflux oesophagitis, management of Zollinger- Ellison syndrome.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:7772|MONDO:0001126
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: gastric ulcer
+    original_drug_label: Omeprazole 10mg/20mg Enteric Coated Granules Capsule
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Short term treatment of duodenal ulcer, gastric ulcer, reflux oesophagitis, management of Zollinger- Ellison syndrome.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0001126
+  final_normalized_disease_label: gastric ulcer
+  final_normalized_drug_id: CHEBI:7772
+  final_normalized_drug_label: omeprazole
+  indications_text: Short term treatment of duodenal ulcer, gastric ulcer, reflux oesophagitis, management of Zollinger- Ellison syndrome.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:7772|MONDO:0019610
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Zollinger-Ellison syndrome
+    original_drug_label: Omeprazole 10mg/20mg Enteric Coated Granules Capsule
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Short term treatment of duodenal ulcer, gastric ulcer, reflux oesophagitis, management of Zollinger- Ellison syndrome.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0019610
+  final_normalized_disease_label: Zollinger-Ellison syndrome
+  final_normalized_drug_id: CHEBI:7772
+  final_normalized_drug_label: omeprazole
+  indications_text: Short term treatment of duodenal ulcer, gastric ulcer, reflux oesophagitis, management of Zollinger- Ellison syndrome.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:88316|UMLS:C0184567
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Acute pain
+    original_drug_label: i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride 20mg/ml Injection.
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0184567
+  final_normalized_disease_label: Acute Pain
+  final_normalized_drug_id: CHEBI:88316
+  final_normalized_drug_label: nefopam
+  indications_text: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:88316|HP:0012532
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: chronic pain
+    original_drug_label: i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride 20mg/ml Injection.
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0012532
+  final_normalized_disease_label: Chronic pain
+  final_normalized_drug_id: CHEBI:88316
+  final_normalized_drug_label: nefopam
+  indications_text: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:88316|UMLS:C0030201
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: post-operative pain
+    original_drug_label: i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride 20mg/ml Injection.
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0030201
+  final_normalized_disease_label: Pain, Postoperative
+  final_normalized_drug_id: CHEBI:88316
+  final_normalized_drug_label: nefopam
+  indications_text: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:88316|UMLS:C0011388
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: dental pain
+    original_drug_label: i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride 20mg/ml Injection.
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0011388
+  final_normalized_disease_label: Dental Pins
+  final_normalized_drug_id: CHEBI:88316
+  final_normalized_drug_label: nefopam
+  indications_text: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:88316|UMLS:C0026858
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: musculo-skeletal pain
+    original_drug_label: i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride 20mg/ml Injection.
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0026858
+  final_normalized_disease_label: Musculoskeletal Pain
+  final_normalized_drug_id: CHEBI:88316
+  final_normalized_drug_label: nefopam
+  indications_text: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:88316|UMLS:C0596240
+  ema: false
+  evidence:
+  - approval_date: '19910101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: cancer pain
+    original_drug_label: i)Nefopam Hydrochloride 30mg Tablet. ii)Nefopam Hydrochloride 20mg/ml Injection.
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0596240
+  final_normalized_disease_label: Pains, Cancer
+  final_normalized_drug_id: CHEBI:88316
+  final_normalized_drug_label: nefopam
+  indications_text: Non narcotic analgesic- Acute and chronic pain, including post-operative pain, dental pain, musculo-skeletal pain, acute traumatic pain and cancer pain.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749017|MONDO:0008383
+  ema: false
+  evidence:
+  - approval_date: '20010909'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Acute rheumatoid arthritis
+    original_drug_label: Hydroxychloroquine Sulphate Tablets
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Acute or Chronic rheumatoid arthritis in adults patients
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0008383
+  final_normalized_disease_label: rheumatoid arthritis
+  final_normalized_drug_id: CHEBI:749017
+  final_normalized_drug_label: hydroxychloroquine sulfate
+  indications_text: Acute or Chronic rheumatoid arthritis in adults patients
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749017|MONDO:0008383
+  ema: false
+  evidence:
+  - approval_date: '20010909'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Chronic rheumatoid arthritis
+    original_drug_label: Hydroxychloroquine Sulphate Tablets
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Acute or Chronic rheumatoid arthritis in adults patients
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0008383
+  final_normalized_disease_label: rheumatoid arthritis
+  final_normalized_drug_id: CHEBI:749017
+  final_normalized_drug_label: hydroxychloroquine sulfate
+  indications_text: Acute or Chronic rheumatoid arthritis in adults patients
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749017|UMLS:C0031736
+  ema: false
+  evidence:
+  - approval_date: '20061013'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Polymorphic light eruption
+    original_drug_label: Hydroxychloroquine Sulphate Tablets (addl. Indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Polymorphic light eruption
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0031736
+  final_normalized_disease_label: Sun allergy
+  final_normalized_drug_id: CHEBI:749017
+  final_normalized_drug_label: hydroxychloroquine sulfate
+  indications_text: Polymorphic light eruption
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: DRON:00019004|MONDO:0011786
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: allergic rhinitis
+    original_drug_label: Levocetirizine ODS 2.5mg /5mg (Additional dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For allergic rhinitis and chronic urticaria.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0011786
+  final_normalized_disease_label: allergic rhinitis
+  final_normalized_drug_id: DRON:00019004
+  final_normalized_drug_label: levocetirizine
+  indications_text: For allergic rhinitis and chronic urticaria.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: DRON:00019004|MONDO:0850230
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: chronic urticaria
+    original_drug_label: Levocetirizine ODS 2.5mg /5mg (Additional dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For allergic rhinitis and chronic urticaria.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0850230
+  final_normalized_disease_label: chronic urticaria
+  final_normalized_drug_id: DRON:00019004
+  final_normalized_drug_label: levocetirizine
+  indications_text: For allergic rhinitis and chronic urticaria.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749378|MONDO:0018881
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: myelodysplastic syndromes
+    original_drug_label: Decitabine Injection 30mg/vial (Additional pack size)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult p
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0018881
+  final_normalized_disease_label: myelodysplastic syndrome
+  final_normalized_drug_id: CHEBI:749378
+  final_normalized_drug_label: decitabine
+  indications_text: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult patients aged 65 yrs and above with newly diagnosed de novo or secondary acute myeloid leukemia, according to WHO classification, who are not candidates for standard induction chemotherapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749378|MONDO:0005272
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: refractory anemia
+    original_drug_label: Decitabine Injection 30mg/vial (Additional pack size)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult p
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005272
+  final_normalized_disease_label: myelodysplastic syndrome with single lineage dysplasia
+  final_normalized_drug_id: CHEBI:749378
+  final_normalized_drug_label: decitabine
+  indications_text: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult patients aged 65 yrs and above with newly diagnosed de novo or secondary acute myeloid leukemia, according to WHO classification, who are not candidates for standard induction chemotherapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749378|MONDO:0019157
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: refractory anemia with ringed sideroblasts
+    original_drug_label: Decitabine Injection 30mg/vial (Additional pack size)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult p
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0019157
+  final_normalized_disease_label: myelodysplastic syndrome with ring sideroblasts
+  final_normalized_drug_id: CHEBI:749378
+  final_normalized_drug_label: decitabine
+  indications_text: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult patients aged 65 yrs and above with newly diagnosed de novo or secondary acute myeloid leukemia, according to WHO classification, who are not candidates for standard induction chemotherapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749378|UMLS:C0002894
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: refractory anemia with excess blasts
+    original_drug_label: Decitabine Injection 30mg/vial (Additional pack size)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult p
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0002894
+  final_normalized_disease_label: Anemia, Refractory, with Excess of Blasts
+  final_normalized_drug_id: CHEBI:749378
+  final_normalized_drug_label: decitabine
+  indications_text: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult patients aged 65 yrs and above with newly diagnosed de novo or secondary acute myeloid leukemia, according to WHO classification, who are not candidates for standard induction chemotherapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749378|MONDO:0015692
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: refractory anemia with excess blasts in transformation
+    original_drug_label: Decitabine Injection 30mg/vial (Additional pack size)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult p
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0015692
+  final_normalized_disease_label: refractory anemia with excess blasts in transformation
+  final_normalized_drug_id: CHEBI:749378
+  final_normalized_drug_label: decitabine
+  indications_text: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult patients aged 65 yrs and above with newly diagnosed de novo or secondary acute myeloid leukemia, according to WHO classification, who are not candidates for standard induction chemotherapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749378|MONDO:0020311
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: chronic myelomonocytic leukemia
+    original_drug_label: Decitabine Injection 30mg/vial (Additional pack size)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult p
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0020311
+  final_normalized_disease_label: chronic myelomonocytic leukemia
+  final_normalized_drug_id: CHEBI:749378
+  final_normalized_drug_label: decitabine
+  indications_text: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult patients aged 65 yrs and above with newly diagnosed de novo or secondary acute myeloid leukemia, according to WHO classification, who are not candidates for standard induction chemotherapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749378|MONDO:0018874
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: acute myeloid leukemia
+    original_drug_label: Decitabine Injection 30mg/vial (Additional pack size)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult p
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0018874
+  final_normalized_disease_label: acute myeloid leukemia
+  final_normalized_drug_id: CHEBI:749378
+  final_normalized_drug_label: decitabine
+  indications_text: 1. For treatment of patients with myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French- American-British subtypes(refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia) and intermediate-1, intermediate-2, and high-risk international Prognostic Scoring System groups. 2. For the treatment of adult patients aged 65 yrs and above with newly diagnosed de novo or secondary acute myeloid leukemia, according to WHO classification, who are not candidates for standard induction chemotherapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:66919|MONDO:0009891
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: polycythemia vera
+    original_drug_label: Ruxolitinib Tablet 5mg/15mg/20mg (Additional indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0009891
+  final_normalized_disease_label: acquired polycythemia vera
+  final_normalized_drug_id: CHEBI:66919
+  final_normalized_drug_label: ruxolitinib
+  indications_text: Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:71219|UMLS:C5206410
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Advanced Soft Tissue Sarcoma
+    original_drug_label: Pazopanib Tablet 200mg/400mg (additional indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of patients with advanced Soft Tissue Sarcoma (STS) who have received prior chemotherapy.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C5206410
+  final_normalized_disease_label: Advanced Soft Tissue Sarcoma
+  final_normalized_drug_id: CHEBI:71219
+  final_normalized_drug_label: pazopanib
+  indications_text: For the treatment of patients with advanced Soft Tissue Sarcoma (STS) who have received prior chemotherapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:70710|UMLS:C3495949
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: locally advanced breast cancer
+    original_drug_label: Eribulin mesylate solution for injection 0.88mg in 2ml vial (Add. Indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of patients with locally advanced or metastatic breast cancer who have progressed after at least one chemotherapeutic regimens for advanced disease. Prior therapy should have included an anthracycline and a taxane in either the adjuvant or metastatic setting unless patients were not suitable for these treatments.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C3495949
+  final_normalized_disease_label: Locally advanced breast cancer
+  final_normalized_drug_id: CHEBI:70710
+  final_normalized_drug_label: eribulin mesylate
+  indications_text: For the treatment of patients with locally advanced or metastatic breast cancer who have progressed after at least one chemotherapeutic regimens for advanced disease. Prior therapy should have included an anthracycline and a taxane in either the adjuvant or metastatic setting unless patients were not suitable for these treatments.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:70710|UMLS:C0278488
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: metastatic breast cancer
+    original_drug_label: Eribulin mesylate solution for injection 0.88mg in 2ml vial (Add. Indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of patients with locally advanced or metastatic breast cancer who have progressed after at least one chemotherapeutic regimens for advanced disease. Prior therapy should have included an anthracycline and a taxane in either the adjuvant or metastatic setting unless patients were not suitable for these treatments.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0278488
+  final_normalized_disease_label: ''
+  final_normalized_drug_id: CHEBI:70710
+  final_normalized_drug_label: eribulin mesylate
+  indications_text: For the treatment of patients with locally advanced or metastatic breast cancer who have progressed after at least one chemotherapeutic regimens for advanced disease. Prior therapy should have included an anthracycline and a taxane in either the adjuvant or metastatic setting unless patients were not suitable for these treatments.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:49662|MONDO:0011827
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: patent ductus arteriosus
+    original_drug_label: Indomethacin Injection 1mg/vial (additional Dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: To close a hemodynamically significant patent ductus arteriosus (PDA) in premature infants weighing between 500g and 1750g when after 48 hrs. usual medical management (e.g. fluid restriction, diuretics, digitalis, respiratory support, etc.) is ineffective. Clear-cut clinical evidence of hemodynamically significant patent ductus arteriosus should be present, such as respratory distress, a continous murmur, a hyperactive precordium, cardiomegaly and pulmonary plethora on chest X-ray.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0011827
+  final_normalized_disease_label: patent ductus arteriosus
+  final_normalized_drug_id: CHEBI:49662
+  final_normalized_drug_label: indometacin
+  indications_text: To close a hemodynamically significant patent ductus arteriosus (PDA) in premature infants weighing between 500g and 1750g when after 48 hrs. usual medical management (e.g. fluid restriction, diuretics, digitalis, respiratory support, etc.) is ineffective. Clear-cut clinical evidence of hemodynamically significant patent ductus arteriosus should be present, such as respratory distress, a continous murmur, a hyperactive precordium, cardiomegaly and pulmonary plethora on chest X-ray.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:6129|UMLS:C0030201
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: post-operative pain
+    original_drug_label: Ketorolac ODS 10mg (Additional Dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of short-term management of post-operative pain and musco-skeletal pain.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0030201
+  final_normalized_disease_label: Pain, Postoperative
+  final_normalized_drug_id: CHEBI:6129
+  final_normalized_drug_label: ketorolac
+  indications_text: For the treatment of short-term management of post-operative pain and musco-skeletal pain.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:6129|UMLS:C0026858
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: musculoskeletal pain
+    original_drug_label: Ketorolac ODS 10mg (Additional Dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of short-term management of post-operative pain and musco-skeletal pain.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0026858
+  final_normalized_disease_label: Musculoskeletal Pain
+  final_normalized_drug_id: CHEBI:6129
+  final_normalized_drug_label: ketorolac
+  indications_text: For the treatment of short-term management of post-operative pain and musco-skeletal pain.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:181016|UMLS:C0275879
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: swine dysentery
+    original_drug_label: Tiamulin hydrogen fumarate solution for injection 162 mg/ml (additional Dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For treatment and prevention of swine dysentery caused by Branchyspira hydodysenteriae. The product is not appropriate for use for the prevention of disease at the level of herd treatment but should only be used for prevention of swine dysentery in individual animals with a known history of exposure to diseased animals.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0275879
+  final_normalized_disease_label: ''
+  final_normalized_drug_id: CHEBI:181016
+  final_normalized_drug_label: Tiamulin fumarate
+  indications_text: For treatment and prevention of swine dysentery caused by Branchyspira hydodysenteriae. The product is not appropriate for use for the prevention of disease at the level of herd treatment but should only be used for prevention of swine dysentery in individual animals with a known history of exposure to diseased animals.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:50730|MONDO:0024332
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: perennial allergic rhinitis
+    original_drug_label: Montelukast Orally Disintegrating Strips 4mg/5mg/10mg (additional Dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the Relief of perennial allergic rhinitis in adults & pediatric patients 6 months of age and older.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0024332
+  final_normalized_disease_label: perennial allergic rhinitis
+  final_normalized_drug_id: CHEBI:50730
+  final_normalized_drug_label: montelukast
+  indications_text: For the Relief of perennial allergic rhinitis in adults & pediatric patients 6 months of age and older.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:72296|UMLS:C0149871
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Deep vein thrombosis
+    original_drug_label: Apixaban Tablets 2.5/5mg (additional Indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and prevention of Recurrent DVT and PE in adult patients.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0149871
+  final_normalized_disease_label: Blood clot in a deep vein
+  final_normalized_drug_id: CHEBI:72296
+  final_normalized_drug_label: apixaban
+  indications_text: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and prevention of Recurrent DVT and PE in adult patients.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:72296|HP:0002204
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Pulmonary embolism
+    original_drug_label: Apixaban Tablets 2.5/5mg (additional Indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and prevention of Recurrent DVT and PE in adult patients.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0002204
+  final_normalized_disease_label: Pulmonary embolism
+  final_normalized_drug_id: CHEBI:72296
+  final_normalized_drug_label: apixaban
+  indications_text: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and prevention of Recurrent DVT and PE in adult patients.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:72296|HP:0004850
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Recurrent deep vein thrombosis
+    original_drug_label: Apixaban Tablets 2.5/5mg (additional Indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and prevention of Recurrent DVT and PE in adult patients.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0004850
+  final_normalized_disease_label: Recurrent deep vein thrombosis
+  final_normalized_drug_id: CHEBI:72296
+  final_normalized_drug_label: apixaban
+  indications_text: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and prevention of Recurrent DVT and PE in adult patients.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:72296|UMLS:C1735914
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Recurrent pulmonary embolism
+    original_drug_label: Apixaban Tablets 2.5/5mg (additional Indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and prevention of Recurrent DVT and PE in adult patients.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C1735914
+  final_normalized_disease_label: Recurrent pulmonary embolism
+  final_normalized_drug_id: CHEBI:72296
+  final_normalized_drug_label: apixaban
+  indications_text: Treatment of deep vein thrombosis (DVT) and pulmonary Embolism (PE), and prevention of Recurrent DVT and PE in adult patients.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:66919|MONDO:0044903
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: myelofibrosis
+    original_drug_label: Ruxolitinib 10mg tablet (additional Strength)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0044903
+  final_normalized_disease_label: myelofibrosis
+  final_normalized_drug_id: CHEBI:66919
+  final_normalized_drug_label: ruxolitinib
+  indications_text: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:66919|MONDO:0009692
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: primary myelofibrosis
+    original_drug_label: Ruxolitinib 10mg tablet (additional Strength)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0009692
+  final_normalized_disease_label: primary myelofibrosis
+  final_normalized_drug_id: CHEBI:66919
+  final_normalized_drug_label: ruxolitinib
+  indications_text: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:66919|UMLS:C3805232
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: post-polycythemia vera myelofibrosis
+    original_drug_label: Ruxolitinib 10mg tablet (additional Strength)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C3805232
+  final_normalized_disease_label: Post-polycythemia Vera Myelofibrosis
+  final_normalized_drug_id: CHEBI:66919
+  final_normalized_drug_label: ruxolitinib
+  indications_text: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:66919|UMLS:C3805233
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: post-essential thrombocythemia myelofibrosis
+    original_drug_label: Ruxolitinib 10mg tablet (additional Strength)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C3805233
+  final_normalized_disease_label: Post-Essential Thrombocythemia Myelofibrosis
+  final_normalized_drug_id: CHEBI:66919
+  final_normalized_drug_label: ruxolitinib
+  indications_text: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:66919|MONDO:0009891
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: polycythemia vera
+    original_drug_label: Ruxolitinib 10mg tablet (additional Strength)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0009891
+  final_normalized_disease_label: acquired polycythemia vera
+  final_normalized_drug_id: CHEBI:66919
+  final_normalized_drug_label: ruxolitinib
+  indications_text: 1. For the treatment of patients with myelofibrosis including primary myelofibrosis, post-polycythemeia vera myelofibrosis or post- essential thrombocythemia myelofibrosis 2. Treatment of patients with polycythemia vera who are resistant to or intolerant of hydroxyurea.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:6539|UMLS:C0003469
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: anxiety disorders
+    original_drug_label: Lorazepam Orodispersible Tablet 1mg/2mg (additional Dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the management of anxiety disorders or for the short term relief of symptoms of anxiety or anxiety associated with depressive symptoms.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0003469
+  final_normalized_disease_label: Disorder, Anxiety
+  final_normalized_drug_id: CHEBI:6539
+  final_normalized_drug_label: Lorazepam
+  indications_text: For the management of anxiety disorders or for the short term relief of symptoms of anxiety or anxiety associated with depressive symptoms.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:6539|MONDO:0011918
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: anxiety
+    original_drug_label: Lorazepam Orodispersible Tablet 1mg/2mg (additional Dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the management of anxiety disorders or for the short term relief of symptoms of anxiety or anxiety associated with depressive symptoms.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0011918
+  final_normalized_disease_label: anxiety
+  final_normalized_drug_id: CHEBI:6539
+  final_normalized_drug_label: Lorazepam
+  indications_text: For the management of anxiety disorders or for the short term relief of symptoms of anxiety or anxiety associated with depressive symptoms.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:6539|UMLS:C0086132
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: depressive symptoms
+    original_drug_label: Lorazepam Orodispersible Tablet 1mg/2mg (additional Dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the management of anxiety disorders or for the short term relief of symptoms of anxiety or anxiety associated with depressive symptoms.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0086132
+  final_normalized_disease_label: Depressive Symptoms
+  final_normalized_drug_id: CHEBI:6539
+  final_normalized_drug_label: Lorazepam
+  indications_text: For the management of anxiety disorders or for the short term relief of symptoms of anxiety or anxiety associated with depressive symptoms.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:3175|MONDO:0006604
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: rosacea
+    original_drug_label: Brimonidine topical gel 0.33% (Add. Dosage form/indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the topical treatment of persistent (non- transient) facial erythema of rosacea in adults 18 years of age or older.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0006604
+  final_normalized_disease_label: rosacea
+  final_normalized_drug_id: CHEBI:3175
+  final_normalized_drug_label: brimonidine
+  indications_text: For the topical treatment of persistent (non- transient) facial erythema of rosacea in adults 18 years of age or older.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:68579|MONDO:0005542
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: acute coronary syndrome
+    original_drug_label: Rivaroxaban tablet 2.5mg (add. strength)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Rivaroxaban 2.5mg tablet, co-administered with Acetylsalicylic acid (ASA) alone or with ASA plus Clopidogrel or Ticlopidine, is indicated for the prevention of atherothrombotic events in adult patients after an acute coronary syndrome (ACS) with elevated cardiac biomarkers.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005542
+  final_normalized_disease_label: acute coronary syndrome
+  final_normalized_drug_id: CHEBI:68579
+  final_normalized_drug_label: rivaroxaban
+  indications_text: Rivaroxaban 2.5mg tablet, co-administered with Acetylsalicylic acid (ASA) alone or with ASA plus Clopidogrel or Ticlopidine, is indicated for the prevention of atherothrombotic events in adult patients after an acute coronary syndrome (ACS) with elevated cardiac biomarkers.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:6367|UMLS:C0751495
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: partial seizures
+    original_drug_label: Lamotrigine ER Tablet 25mg/50mg/100mg/200 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Add-on therapy for partial and secondary generalised tonic-clonic seizures.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0751495
+  final_normalized_disease_label: Focal seizures
+  final_normalized_drug_id: CHEBI:6367
+  final_normalized_drug_label: lamotrigine
+  indications_text: Add-on therapy for partial and secondary generalised tonic-clonic seizures.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:6367|HP:0007334
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: secondary generalised tonic-clonic seizures
+    original_drug_label: Lamotrigine ER Tablet 25mg/50mg/100mg/200 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Add-on therapy for partial and secondary generalised tonic-clonic seizures.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0007334
+  final_normalized_disease_label: Bilateral tonic-clonic seizure with focal onset
+  final_normalized_drug_id: CHEBI:6367
+  final_normalized_drug_label: lamotrigine
+  indications_text: Add-on therapy for partial and secondary generalised tonic-clonic seizures.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:135335|UMLS:C2747816
+  ema: false
+  evidence:
+  - approval_date: '20101203'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: severe malaria
+    original_drug_label: Arteether injection 150mg/mL
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for the treatment of severe malaria including cerebral malaria and as a second line in chloroquine resistant malaria cases only.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C2747816
+  final_normalized_disease_label: Severe Malaria
+  final_normalized_drug_id: CHEBI:135335
+  final_normalized_drug_label: artemotil
+  indications_text: Indicated for the treatment of severe malaria including cerebral malaria and as a second line in chloroquine resistant malaria cases only.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:135335|MONDO:0005625
+  ema: false
+  evidence:
+  - approval_date: '20101203'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: cerebral malaria
+    original_drug_label: Arteether injection 150mg/mL
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for the treatment of severe malaria including cerebral malaria and as a second line in chloroquine resistant malaria cases only.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005625
+  final_normalized_disease_label: cerebral malaria
+  final_normalized_drug_id: CHEBI:135335
+  final_normalized_drug_label: artemotil
+  indications_text: Indicated for the treatment of severe malaria including cerebral malaria and as a second line in chloroquine resistant malaria cases only.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:748790|MONDO:0005148
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: type 2 diabetes mellitus
+    original_drug_label: Exenatide 2 mg powder and solvent for prolonged release suspension for injection in a prefilled pen (s.c. Injection) (Additional strength)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For treatment of type 2 diabetes mellitus in combination with Metformin Sulphonylurea Thiazolidinedione Metformin and Sulphonylurea Metformin and Thiazolidinedione In Adults who have not achieved adequate glycemic control on maximally tolerated doses of these oral therapies.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005148
+  final_normalized_disease_label: type 2 diabetes mellitus
+  final_normalized_drug_id: CHEBI:748790
+  final_normalized_drug_label: exenatide
+  indications_text: For treatment of type 2 diabetes mellitus in combination with Metformin Sulphonylurea Thiazolidinedione Metformin and Sulphonylurea Metformin and Thiazolidinedione In Adults who have not achieved adequate glycemic control on maximally tolerated doses of these oral therapies.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:28940|UMLS:C1272352
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Vitamin D3 deficiency
+    original_drug_label: Vitamin D3 (Cholecalciferol) Orally disintegrating strips 2000 IU (additional Dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of Vitamin D3 deficiency.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C1272352
+  final_normalized_disease_label: Vitamin D3 Deficiency
+  final_normalized_drug_id: CHEBI:28940
+  final_normalized_drug_label: calciol
+  indications_text: For the treatment of Vitamin D3 deficiency.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:41879|MONDO:0004728
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Diabetic Macular Edema
+    original_drug_label: Dexamethasone Intravitreal implant 0.7mg (Additional Indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of visual impairment due to Diabetic Macular Edema (DME) who are pseudophakic or who are considered insufficiently responsive to, or unsuitable for non-corticosteroid therapy.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0004728
+  final_normalized_disease_label: diabetic macular edema
+  final_normalized_drug_id: CHEBI:41879
+  final_normalized_drug_label: dexamethasone
+  indications_text: For the treatment of visual impairment due to Diabetic Macular Edema (DME) who are pseudophakic or who are considered insufficiently responsive to, or unsuitable for non-corticosteroid therapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:41879|HP:0000505
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: visual impairment
+    original_drug_label: Dexamethasone Intravitreal implant 0.7mg (Additional Indication)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of visual impairment due to Diabetic Macular Edema (DME) who are pseudophakic or who are considered insufficiently responsive to, or unsuitable for non-corticosteroid therapy.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0000505
+  final_normalized_disease_label: Visual impairment
+  final_normalized_drug_id: CHEBI:41879
+  final_normalized_drug_label: dexamethasone
+  indications_text: For the treatment of visual impairment due to Diabetic Macular Edema (DME) who are pseudophakic or who are considered insufficiently responsive to, or unsuitable for non-corticosteroid therapy.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:10126|MONDO:0013600
+  ema: false
+  evidence:
+  - approval_date: '20150101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: insomnia
+    original_drug_label: Zolpidem Tartarate Orally disintegrating Tablet 5mg/10mg (Additional dosage form)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For insomnia.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0013600
+  final_normalized_disease_label: insomnia
+  final_normalized_drug_id: CHEBI:10126
+  final_normalized_drug_label: zolpidem tartrate
+  indications_text: For insomnia.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:681569|UMLS:C4521228
+  ema: false
+  evidence:
+  - approval_date: '20180116'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: refractory acute lymphoblastic leukemia
+    original_drug_label: Clofarabine Bulk & Injection 20 mg/20ml vial
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of patients 1 to 21 years old with relapsed or refractory acute lymphoblastic leukemia after at least two prior regimens. This indication is based upon response rate
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C4521228
+  final_normalized_disease_label: ''
+  final_normalized_drug_id: CHEBI:681569
+  final_normalized_drug_label: clofarabine
+  indications_text: For the treatment of patients 1 to 21 years old with relapsed or refractory acute lymphoblastic leukemia after at least two prior regimens. This indication is based upon response rate
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:135601|UMLS:C0404501
+  ema: false
+  evidence:
+  - approval_date: '20180116'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Uterine torsion
+    original_drug_label: Denaverine Hydrochloride Injection (Vet.)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 'cattle : Facilitation of parturition in heifers; activation of interrupted parturitions; insufficient opening of the soft birth canal; narrowness of the cervix of first and second degree after corrrection of uterine torsions; improvement of the conditions for foetotomy; regulation of labour contractions of the utreus Dogs: Activation of Interrupted parturition'
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0404501
+  final_normalized_disease_label: Uterine torsion
+  final_normalized_drug_id: CHEBI:135601
+  final_normalized_drug_label: denaverine
+  indications_text: 'cattle : Facilitation of parturition in heifers; activation of interrupted parturitions; insufficient opening of the soft birth canal; narrowness of the cervix of first and second degree after corrrection of uterine torsions; improvement of the conditions for foetotomy; regulation of labour contractions of the utreus Dogs: Activation of Interrupted parturition'
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:85155|HP:0002018
+  ema: false
+  evidence:
+  - approval_date: '20180220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: nausea
+    original_drug_label: Netupitant 300 mg + Palonosetron 0.5 mg Capsule
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the prevention of acute and delayed nausea and vomiting associated with highly emetogenic Cisplatin-based cancer chemotherapy - For the prevention of acute and delayed nausea and vomiting associated with moderate emetogenic cancer chemotherapy in adult
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0002018
+  final_normalized_disease_label: Nausea
+  final_normalized_drug_id: CHEBI:85155
+  final_normalized_drug_label: netupitant
+  indications_text: For the prevention of acute and delayed nausea and vomiting associated with highly emetogenic Cisplatin-based cancer chemotherapy - For the prevention of acute and delayed nausea and vomiting associated with moderate emetogenic cancer chemotherapy in adult
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:85155|HP:0002013
+  ema: false
+  evidence:
+  - approval_date: '20180220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: vomiting
+    original_drug_label: Netupitant 300 mg + Palonosetron 0.5 mg Capsule
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the prevention of acute and delayed nausea and vomiting associated with highly emetogenic Cisplatin-based cancer chemotherapy - For the prevention of acute and delayed nausea and vomiting associated with moderate emetogenic cancer chemotherapy in adult
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0002013
+  final_normalized_disease_label: Vomiting
+  final_normalized_drug_id: CHEBI:85155
+  final_normalized_drug_label: netupitant
+  indications_text: For the prevention of acute and delayed nausea and vomiting associated with highly emetogenic Cisplatin-based cancer chemotherapy - For the prevention of acute and delayed nausea and vomiting associated with moderate emetogenic cancer chemotherapy in adult
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:5063|UMLS:C0277355
+  ema: false
+  evidence:
+  - approval_date: '20180220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: flea infestations
+    original_drug_label: Fipronil 6.1 % m/v + Permethrin 54.5% m/V spot on solution for Dog (Vet.)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In dogs, to be used against infestations with fleas and/or ticks when repellant (anti feeding) activity is necessary against sand- flies and/or mosquitoes
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0277355
+  final_normalized_disease_label: Flea Infestations
+  final_normalized_drug_id: CHEBI:5063
+  final_normalized_drug_label: fipronil
+  indications_text: In dogs, to be used against infestations with fleas and/or ticks when repellant (anti feeding) activity is necessary against sand- flies and/or mosquitoes
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:5063|UMLS:C0040196
+  ema: false
+  evidence:
+  - approval_date: '20180220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: tick infestations
+    original_drug_label: Fipronil 6.1 % m/v + Permethrin 54.5% m/V spot on solution for Dog (Vet.)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In dogs, to be used against infestations with fleas and/or ticks when repellant (anti feeding) activity is necessary against sand- flies and/or mosquitoes
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0040196
+  final_normalized_disease_label: Infestation, Tick
+  final_normalized_drug_id: CHEBI:5063
+  final_normalized_drug_label: fipronil
+  indications_text: In dogs, to be used against infestations with fleas and/or ticks when repellant (anti feeding) activity is necessary against sand- flies and/or mosquitoes
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:39214|MONDO:0003472
+  ema: false
+  evidence:
+  - approval_date: '20180220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: lice infestation
+    original_drug_label: Paziquantel 0.0065 g + Abamectin 0.00025 g tablets for cat (Vet)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0003472
+  final_normalized_disease_label: lice infestation
+  final_normalized_drug_id: CHEBI:39214
+  final_normalized_drug_label: abamectin
+  indications_text: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:39214|UMLS:C0277355
+  ema: false
+  evidence:
+  - approval_date: '20180220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: flea infestation
+    original_drug_label: Paziquantel 0.0065 g + Abamectin 0.00025 g tablets for cat (Vet)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0277355
+  final_normalized_disease_label: Flea Infestations
+  final_normalized_drug_id: CHEBI:39214
+  final_normalized_drug_label: abamectin
+  indications_text: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:39214|UMLS:C0277457
+  ema: false
+  evidence:
+  - approval_date: '20180220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: notedric mange
+    original_drug_label: Paziquantel 0.0065 g + Abamectin 0.00025 g tablets for cat (Vet)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0277457
+  final_normalized_disease_label: Infestation by Notoedres
+  final_normalized_drug_id: CHEBI:39214
+  final_normalized_drug_label: abamectin
+  indications_text: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:39214|UMLS:C0277438
+  ema: false
+  evidence:
+  - approval_date: '20180220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: cheyletiellosis
+    original_drug_label: Paziquantel 0.0065 g + Abamectin 0.00025 g tablets for cat (Vet)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0277438
+  final_normalized_disease_label: Cheyletiella dermatitis
+  final_normalized_drug_id: CHEBI:39214
+  final_normalized_drug_label: abamectin
+  indications_text: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:39214|UMLS:C0024709
+  ema: false
+  evidence:
+  - approval_date: '20180220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: mange
+    original_drug_label: Paziquantel 0.0065 g + Abamectin 0.00025 g tablets for cat (Vet)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0024709
+  final_normalized_disease_label: Mange
+  final_normalized_drug_id: CHEBI:39214
+  final_normalized_drug_label: abamectin
+  indications_text: In infestation of cats with endoparasites tapewoms (teniae), flukes, roundworms (nematodes); with ectoparasites - lice, fleas, pasture ticks, notedric mange (feline scabies), "walking" dandruff (cheyletiellosis) and other mange, and particularly in cases of complex endo and
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749728|UMLS:C2317131
+  ema: false
+  evidence:
+  - approval_date: '20190204'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Acute Rhinosinusitis
+    original_drug_label: Fenspiride hydrochloride film coated extended release tablet 80 mg and Fenspiride hydrochloride bulk
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. Acute Rhinosinusitis 2. Moderate persistent asthma as an add- on therapy
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C2317131
+  final_normalized_disease_label: Acute rhinosinusitis
+  final_normalized_drug_id: CHEBI:749728
+  final_normalized_drug_label: fenspiride hydrochloride
+  indications_text: 1. Acute Rhinosinusitis 2. Moderate persistent asthma as an add- on therapy
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749728|UMLS:C1960047
+  ema: false
+  evidence:
+  - approval_date: '20190204'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Moderate persistent asthma
+    original_drug_label: Fenspiride hydrochloride film coated extended release tablet 80 mg and Fenspiride hydrochloride bulk
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 1. Acute Rhinosinusitis 2. Moderate persistent asthma as an add- on therapy
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C1960047
+  final_normalized_disease_label: Moderate persistent asthma NOS
+  final_normalized_drug_id: CHEBI:749728
+  final_normalized_drug_label: fenspiride hydrochloride
+  indications_text: 1. Acute Rhinosinusitis 2. Moderate persistent asthma as an add- on therapy
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:135954|UMLS:C0861154
+  ema: false
+  evidence:
+  - approval_date: '20190206'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: allergic rhinoconjunctivitis
+    original_drug_label: Bilastine tablets 20 mg and Bilastine Bulk
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For symptomatic treatment of allergic rhino-conjuctivitis (seasonal and perennial) and utricaria in adults
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0861154
+  final_normalized_disease_label: ''
+  final_normalized_drug_id: CHEBI:135954
+  final_normalized_drug_label: bilastine
+  indications_text: For symptomatic treatment of allergic rhino-conjuctivitis (seasonal and perennial) and utricaria in adults
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:135954|MONDO:0005492
+  ema: false
+  evidence:
+  - approval_date: '20190206'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: urticaria
+    original_drug_label: Bilastine tablets 20 mg and Bilastine Bulk
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For symptomatic treatment of allergic rhino-conjuctivitis (seasonal and perennial) and utricaria in adults
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005492
+  final_normalized_disease_label: urticaria
+  final_normalized_drug_id: CHEBI:135954
+  final_normalized_drug_label: bilastine
+  indications_text: For symptomatic treatment of allergic rhino-conjuctivitis (seasonal and perennial) and utricaria in adults
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:31689|MONDO:0008383
+  ema: false
+  evidence:
+  - approval_date: '20190218'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: rheumatoid arthritis
+    original_drug_label: Iguratimod film coated tablets 25mg and Iguratimod Bulk
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of active rheumatoid arthritis symptoms
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0008383
+  final_normalized_disease_label: rheumatoid arthritis
+  final_normalized_drug_id: CHEBI:31689
+  final_normalized_drug_label: Iguratimod
+  indications_text: For the treatment of active rheumatoid arthritis symptoms
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:177541|MONDO:0005148
+  ema: false
+  evidence:
+  - approval_date: '20190426'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: type 2 diabetes mellitus
+    original_drug_label: Remogliflozin etabonate bulk and Remogliflozin etabonate film coated tablets 100 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated in adults aged 18 years and older with type2 diabetes mellitus to improve glycemic control as:-  Monotherapy when diet and exercise alone do not provide adequate glyceamic control.  Add on therapy with metformin, together with diet and exercise, when these do not provide adequate glyceamic control.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005148
+  final_normalized_disease_label: type 2 diabetes mellitus
+  final_normalized_drug_id: CHEBI:177541
+  final_normalized_drug_label: remogliflozin etabonate
+  indications_text: Indicated in adults aged 18 years and older with type2 diabetes mellitus to improve glycemic control as:-  Monotherapy when diet and exercise alone do not provide adequate glyceamic control.  Add on therapy with metformin, together with diet and exercise, when these do not provide adequate glyceamic control.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:753399|UMLS:C0003128
+  ema: false
+  evidence:
+  - approval_date: '20190617'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Anovulation
+    original_drug_label: Menotrophin injection 600 IU/ml, 1 ml & 2 ml multi dose vial (Highly purified)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 'Menotropin is indicated for the treatment of female and male infertility in the following conditions: Anovulation , including Polycystic Ovarian Disease (PCOD), in women who have been unresponsive to the treatment with'
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0003128
+  final_normalized_disease_label: Anovulations
+  final_normalized_drug_id: CHEBI:753399
+  final_normalized_drug_label: menotropins
+  indications_text: 'Menotropin is indicated for the treatment of female and male infertility in the following conditions: Anovulation , including Polycystic Ovarian Disease (PCOD), in women who have been unresponsive to the treatment with'
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:753399|UMLS:C0032460
+  ema: false
+  evidence:
+  - approval_date: '20190617'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Polycystic Ovarian Disease
+    original_drug_label: Menotrophin injection 600 IU/ml, 1 ml & 2 ml multi dose vial (Highly purified)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: 'Menotropin is indicated for the treatment of female and male infertility in the following conditions: Anovulation , including Polycystic Ovarian Disease (PCOD), in women who have been unresponsive to the treatment with'
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0032460
+  final_normalized_disease_label: Polycystic ovaries
+  final_normalized_drug_id: CHEBI:753399
+  final_normalized_drug_label: menotropins
+  indications_text: 'Menotropin is indicated for the treatment of female and male infertility in the following conditions: Anovulation , including Polycystic Ovarian Disease (PCOD), in women who have been unresponsive to the treatment with'
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:132268|UMLS:C0278987
+  ema: false
+  evidence:
+  - approval_date: '20200103'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: metastatic non-small cell lung cancer
+    original_drug_label: Dacomitinib tablet 15mg, 30mg and 45mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the first line treatmrnt of patients with metastatic non-small cell lung cancer (NSCLC) with epidermal growth factor receptor (EGFR) exon 19 deletion or exon 21 L858R substitution mutations
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0278987
+  final_normalized_disease_label: Stage IV Non-Small Cell Lung Cancer
+  final_normalized_drug_id: CHEBI:132268
+  final_normalized_drug_label: dacomitinib
+  indications_text: For the first line treatmrnt of patients with metastatic non-small cell lung cancer (NSCLC) with epidermal growth factor receptor (EGFR) exon 19 deletion or exon 21 L858R substitution mutations
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:31247|UMLS:C5231206
+  ema: false
+  evidence:
+  - approval_date: '20200304'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Stage I Hypertension
+    original_drug_label: Azelnidipine tablets IP 8 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of Stage I Hypertension
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C5231206
+  final_normalized_disease_label: Hypertension stage 1
+  final_normalized_drug_id: CHEBI:31247
+  final_normalized_drug_label: Azelnidipine
+  indications_text: For the treatment of Stage I Hypertension
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:17015|MONDO:0015486
+  ema: false
+  evidence:
+  - approval_date: '20200311'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: keratoconus
+    original_drug_label: Riboflavin Ophthalmic Solution 0.1%
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: It is intended to treat keratoconus and corneal ecstasia following refractive surgery
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0015486
+  final_normalized_disease_label: keratoconus
+  final_normalized_drug_id: CHEBI:17015
+  final_normalized_drug_label: riboflavin
+  indications_text: It is intended to treat keratoconus and corneal ecstasia following refractive surgery
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:135945|UMLS:C0079731
+  ema: false
+  evidence:
+  - approval_date: '20200311'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Non-Hodgkin's B-Cell Lymphoma
+    original_drug_label: Pixantrone 29mg powder for concentrate for solution for infusion
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated as 3rd line and 4th line therapy for the treatment of adult patients with multiply relapsed or refractory aggresive Non-Hodgkins B- Cell Lymphomas (NHL)
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0079731
+  final_normalized_disease_label: B cell lymphoma
+  final_normalized_drug_id: CHEBI:135945
+  final_normalized_drug_label: pixantrone
+  indications_text: Indicated as 3rd line and 4th line therapy for the treatment of adult patients with multiply relapsed or refractory aggresive Non-Hodgkins B- Cell Lymphomas (NHL)
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:135954|MONDO:0011786
+  ema: false
+  evidence:
+  - approval_date: '20200311'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: allergic rhinitis
+    original_drug_label: FDC of Bilastine 20mg and Montelukast 10mg tablets
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for the treatment of allergic rhinitis in adults.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0011786
+  final_normalized_disease_label: allergic rhinitis
+  final_normalized_drug_id: CHEBI:135954
+  final_normalized_drug_label: bilastine
+  indications_text: Indicated for the treatment of allergic rhinitis in adults.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:43602|MONDO:0005388
+  ema: false
+  evidence:
+  - approval_date: '20200311'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: primary biliary cholangitis
+    original_drug_label: Obeticholic acid bulk drug and Obeticholic acid 5mg/10mg tablets
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of primary biliary cholangitis (also known as primary biliary cirrhosis) in combination with
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005388
+  final_normalized_disease_label: primary biliary cholangitis
+  final_normalized_drug_id: CHEBI:43602
+  final_normalized_drug_label: obeticholic acid
+  indications_text: For the treatment of primary biliary cholangitis (also known as primary biliary cirrhosis) in combination with
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:43602|MONDO:0005388
+  ema: false
+  evidence:
+  - approval_date: '20200311'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: primary biliary cirrhosis
+    original_drug_label: Obeticholic acid bulk drug and Obeticholic acid 5mg/10mg tablets
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of primary biliary cholangitis (also known as primary biliary cirrhosis) in combination with
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005388
+  final_normalized_disease_label: primary biliary cholangitis
+  final_normalized_drug_id: CHEBI:43602
+  final_normalized_drug_label: obeticholic acid
+  indications_text: For the treatment of primary biliary cholangitis (also known as primary biliary cirrhosis) in combination with
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:66876|MONDO:0005362
+  ema: false
+  evidence:
+  - approval_date: '20210226'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: erectile dysfunction
+    original_drug_label: Avanafil bulk and Avanafil tablets 50mg/100mg/200mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of erectile dysfunction
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005362
+  final_normalized_disease_label: erectile dysfunction
+  final_normalized_drug_id: CHEBI:66876
+  final_normalized_drug_label: avanafil
+  indications_text: For the treatment of erectile dysfunction
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:757127|MONDO:0005041
+  ema: false
+  evidence:
+  - approval_date: '20210312'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: glaucoma
+    original_drug_label: Omidenepag isopropyl ophthalmic solution 0.002% w/v
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of glaucoma and ocular hypertension
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005041
+  final_normalized_disease_label: glaucoma
+  final_normalized_drug_id: CHEBI:757127
+  final_normalized_drug_label: omidenepag isopropyl
+  indications_text: For the treatment of glaucoma and ocular hypertension
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:757127|MONDO:0006875
+  ema: false
+  evidence:
+  - approval_date: '20210312'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: ocular hypertension
+    original_drug_label: Omidenepag isopropyl ophthalmic solution 0.002% w/v
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For the treatment of glaucoma and ocular hypertension
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0006875
+  final_normalized_disease_label: ocular hypertension
+  final_normalized_drug_id: CHEBI:757127
+  final_normalized_drug_label: omidenepag isopropyl
+  indications_text: For the treatment of glaucoma and ocular hypertension
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:136050|MONDO:0004592
+  ema: false
+  evidence:
+  - approval_date: '20210415'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: impetigo
+    original_drug_label: Ozenoxacin bulk and Ozenoxacin cream 1% w/w
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for the topical treatment of impetigo due to staphylococcus aureus or streptococcus pyogenes in adult and pediatric patients 2 months of age and older
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0004592
+  final_normalized_disease_label: impetigo
+  final_normalized_drug_id: CHEBI:136050
+  final_normalized_drug_label: ozenoxacin
+  indications_text: Indicated for the topical treatment of impetigo due to staphylococcus aureus or streptococcus pyogenes in adult and pediatric patients 2 months of age and older
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:15866|MONDO:0100096
+  ema: false
+  evidence:
+  - approval_date: '20210501'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: COVID-19
+    original_drug_label: 2-Deoxy-D-Glucose bulk and 2-Deoxy-D-Glucose 2.34g & 5.85g sachet
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: As an adjunct therapy only in moderate to severe Covid-19 patients
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0100096
+  final_normalized_disease_label: COVID-19
+  final_normalized_drug_id: CHEBI:15866
+  final_normalized_drug_label: 2-deoxy-D-glucose
+  indications_text: As an adjunct therapy only in moderate to severe Covid-19 patients
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:231693|UMLS:C0278987
+  ema: false
+  evidence:
+  - approval_date: '20210512'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: metastatic non-small cell lung cancer
+    original_drug_label: Capmatinib 150mg and 200mg film coated tablets
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Capmatinib is a kinase inhibitor indicated for the treatment of adult patient with metastatic non-small cell lung cancer (NSCLC) whose tumors have a mutation that leads to mesenchymal epithelial transition (MET) exon 14 skipping.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0278987
+  final_normalized_disease_label: Stage IV Non-Small Cell Lung Cancer
+  final_normalized_drug_id: CHEBI:231693
+  final_normalized_drug_label: capmatinib
+  indications_text: Capmatinib is a kinase inhibitor indicated for the treatment of adult patient with metastatic non-small cell lung cancer (NSCLC) whose tumors have a mutation that leads to mesenchymal epithelial transition (MET) exon 14 skipping.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:134692|MONDO:0005140
+  ema: false
+  evidence:
+  - approval_date: '20210512'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: epithelial ovarian cancer
+    original_drug_label: Rucaparib camsylate bulk and Rucaparib tablets 200mg/300mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approve
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005140
+  final_normalized_disease_label: ovarian carcinoma
+  final_normalized_drug_id: CHEBI:134692
+  final_normalized_drug_label: rucaparib camsylate
+  indications_text: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approved companion diagnostic for RUBRACA. Prostate cancer • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic) associated metastatic castration-resistant prostate cancer (mCRPC) who have been treated with androgen receptor-directed therapy and a
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:134692|MONDO:0002158
+  ema: false
+  evidence:
+  - approval_date: '20210512'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: fallopian tube cancer
+    original_drug_label: Rucaparib camsylate bulk and Rucaparib tablets 200mg/300mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approve
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0002158
+  final_normalized_disease_label: fallopian tube cancer
+  final_normalized_drug_id: CHEBI:134692
+  final_normalized_drug_label: rucaparib camsylate
+  indications_text: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approved companion diagnostic for RUBRACA. Prostate cancer • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic) associated metastatic castration-resistant prostate cancer (mCRPC) who have been treated with androgen receptor-directed therapy and a
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:134692|MONDO:0015686
+  ema: false
+  evidence:
+  - approval_date: '20210512'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: primary peritoneal cancer
+    original_drug_label: Rucaparib camsylate bulk and Rucaparib tablets 200mg/300mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approve
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0015686
+  final_normalized_disease_label: primary peritoneal carcinoma
+  final_normalized_drug_id: CHEBI:134692
+  final_normalized_drug_label: rucaparib camsylate
+  indications_text: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approved companion diagnostic for RUBRACA. Prostate cancer • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic) associated metastatic castration-resistant prostate cancer (mCRPC) who have been treated with androgen receptor-directed therapy and a
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:134692|MONDO:0008315
+  ema: false
+  evidence:
+  - approval_date: '20210512'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: prostate cancer
+    original_drug_label: Rucaparib camsylate bulk and Rucaparib tablets 200mg/300mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approve
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0008315
+  final_normalized_disease_label: prostate cancer
+  final_normalized_drug_id: CHEBI:134692
+  final_normalized_drug_label: rucaparib camsylate
+  indications_text: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approved companion diagnostic for RUBRACA. Prostate cancer • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic) associated metastatic castration-resistant prostate cancer (mCRPC) who have been treated with androgen receptor-directed therapy and a
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:134692|UMLS:C4721208
+  ema: false
+  evidence:
+  - approval_date: '20210512'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: metastatic castration-resistant prostate cancer
+    original_drug_label: Rucaparib camsylate bulk and Rucaparib tablets 200mg/300mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approve
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C4721208
+  final_normalized_disease_label: Metastatic castration-resistant prostate cancer
+  final_normalized_drug_id: CHEBI:134692
+  final_normalized_drug_label: rucaparib camsylate
+  indications_text: Ovarian cancer • For the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated epithelial ovarian, fallopian tube, or primary peritoneal cancer who have been treated with two or more chemotherapies. Select patients for therapy based on an FDA- approved companion diagnostic for RUBRACA. Prostate cancer • For the treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic) associated metastatic castration-resistant prostate cancer (mCRPC) who have been treated with androgen receptor-directed therapy and a
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:9670|MONDO:0008383
+  ema: false
+  evidence:
+  - approval_date: '20220120'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: rheumatoid arthritis
+    original_drug_label: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0008383
+  final_normalized_disease_label: rheumatoid arthritis
+  final_normalized_drug_id: CHEBI:9670
+  final_normalized_drug_label: Triamcinolone hexacetonide
+  indications_text: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:9670|UMLS:C3495559
+  ema: false
+  evidence:
+  - approval_date: '20220120'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Juvenile Idiopathic Arthritis
+    original_drug_label: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C3495559
+  final_normalized_disease_label: Arthritis, Juvenile
+  final_normalized_drug_id: CHEBI:9670
+  final_normalized_drug_label: Triamcinolone hexacetonide
+  indications_text: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:9670|HP:0002758
+  ema: false
+  evidence:
+  - approval_date: '20220120'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Osteoarthritis
+    original_drug_label: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0002758
+  final_normalized_disease_label: Osteoarthritis
+  final_normalized_drug_id: CHEBI:9670
+  final_normalized_drug_label: Triamcinolone hexacetonide
+  indications_text: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:9670|HP:0100769
+  ema: false
+  evidence:
+  - approval_date: '20220120'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Synovitis
+    original_drug_label: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0100769
+  final_normalized_disease_label: Synovitis
+  final_normalized_drug_id: CHEBI:9670
+  final_normalized_drug_label: Triamcinolone hexacetonide
+  indications_text: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:9670|MONDO:0004857
+  ema: false
+  evidence:
+  - approval_date: '20220120'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: tendinitis
+    original_drug_label: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0004857
+  final_normalized_disease_label: tendinitis
+  final_normalized_drug_id: CHEBI:9670
+  final_normalized_drug_label: Triamcinolone hexacetonide
+  indications_text: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:9670|MONDO:0002471
+  ema: false
+  evidence:
+  - approval_date: '20220120'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: bursitis
+    original_drug_label: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0002471
+  final_normalized_disease_label: bursitis
+  final_normalized_drug_id: CHEBI:9670
+  final_normalized_drug_label: Triamcinolone hexacetonide
+  indications_text: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:9670|MONDO:0001875
+  ema: false
+  evidence:
+  - approval_date: '20220120'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: epicondylitis
+    original_drug_label: Triamcinolone Hexacetonide injectable suspension 20mg/ml
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0001875
+  final_normalized_disease_label: epicondylitis
+  final_normalized_drug_id: CHEBI:9670
+  final_normalized_drug_label: Triamcinolone hexacetonide
+  indications_text: For intraarticular, intra-synovial or periarticular use in adults and adolescents for the symptomatic treatment of subacute and chronic inflammatory joint diseases including rheumatoid arthritis and Juvenile Idiopathic Arthritis (JIA), Osteoarthritis and post-tramautic arthritis, Synovitis, tendinitis, bursitis and epicondylitis.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:16480|MONDO:0100096
+  ema: false
+  evidence:
+  - approval_date: '20220208'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: COVID-19
+    original_drug_label: Nitric oxide nasal spray
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For treatment of adult high risk patients with mild Covid-19 having risk of progression of the disease.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0100096
+  final_normalized_disease_label: COVID-19
+  final_normalized_drug_id: CHEBI:16480
+  final_normalized_drug_label: nitric oxide
+  indications_text: For treatment of adult high risk patients with mild Covid-19 having risk of progression of the disease.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:142432|HP:0001635
+  ema: false
+  evidence:
+  - approval_date: '20220225'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: chronic heart failure
+    original_drug_label: Vericiguat tablets 2.5mg/ 5mg/ 10mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated to reduce the risk of cardiovascular death and heart failure (HF) hospitalization following a hospitalization for heart failure or need for outpatient IV diuretics, in adults with symptomatic chronic HF and ejection fraction less than 45%
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0001635
+  final_normalized_disease_label: Congestive heart failure
+  final_normalized_drug_id: CHEBI:142432
+  final_normalized_drug_label: vericiguat
+  indications_text: Indicated to reduce the risk of cardiovascular death and heart failure (HF) hospitalization following a hospitalization for heart failure or need for outpatient IV diuretics, in adults with symptomatic chronic HF and ejection fraction less than 45%
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:142432|MONDO:0005252
+  ema: false
+  evidence:
+  - approval_date: '20220225'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: heart failure
+    original_drug_label: Vericiguat tablets 2.5mg/ 5mg/ 10mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated to reduce the risk of cardiovascular death and heart failure (HF) hospitalization following a hospitalization for heart failure or need for outpatient IV diuretics, in adults with symptomatic chronic HF and ejection fraction less than 45%
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005252
+  final_normalized_disease_label: heart failure
+  final_normalized_drug_id: CHEBI:142432
+  final_normalized_drug_label: vericiguat
+  indications_text: Indicated to reduce the risk of cardiovascular death and heart failure (HF) hospitalization following a hospitalization for heart failure or need for outpatient IV diuretics, in adults with symptomatic chronic HF and ejection fraction less than 45%
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:755923|MONDO:0100096
+  ema: false
+  evidence:
+  - approval_date: '20220302'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: COVID-19
+    original_drug_label: Inosine pranobex bulk and Inosine pranobex 500mg tablet
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: As add on therapy for treatment of mild Covid-19 patients with co-morbidities and moderate Covid-19 patients, in light of Covid 19 outbreak for restricted emergency use in the country
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0100096
+  final_normalized_disease_label: COVID-19
+  final_normalized_drug_id: CHEBI:755923
+  final_normalized_drug_label: inosine pranobex
+  indications_text: As add on therapy for treatment of mild Covid-19 patients with co-morbidities and moderate Covid-19 patients, in light of Covid 19 outbreak for restricted emergency use in the country
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:230352|HP:0001903
+  ema: false
+  evidence:
+  - approval_date: '20220303'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Anemia
+    original_drug_label: Desidustat bulk and Desidustat tablets 25mg and 50mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For treatment of Anemia in adult patients with chronic kidney disease (CKD) not on Dialysis and on Dialysis
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0001903
+  final_normalized_disease_label: Anemia
+  final_normalized_drug_id: CHEBI:230352
+  final_normalized_drug_label: Desidustat
+  indications_text: For treatment of Anemia in adult patients with chronic kidney disease (CKD) not on Dialysis and on Dialysis
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:230352|MONDO:0005300
+  ema: false
+  evidence:
+  - approval_date: '20220303'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: chronic kidney disease
+    original_drug_label: Desidustat bulk and Desidustat tablets 25mg and 50mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For treatment of Anemia in adult patients with chronic kidney disease (CKD) not on Dialysis and on Dialysis
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005300
+  final_normalized_disease_label: chronic kidney disease
+  final_normalized_drug_id: CHEBI:230352
+  final_normalized_drug_label: Desidustat
+  indications_text: For treatment of Anemia in adult patients with chronic kidney disease (CKD) not on Dialysis and on Dialysis
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:66901|MONDO:0009061
+  ema: false
+  evidence:
+  - approval_date: '20220311'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: cystic fibrosis
+    original_drug_label: Lumacaftor bulk, Ivacaftor bulk & Lumacaftor and Ivacaftor tablets 100mg/125mg and 200mg/125mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for the treatment of cystic fibrosis (CF) in patient age 2 years and older who are homozygous for the F508del mutation in the CFTR gene.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0009061
+  final_normalized_disease_label: cystic fibrosis
+  final_normalized_drug_id: CHEBI:66901
+  final_normalized_drug_label: ivacaftor
+  indications_text: Indicated for the treatment of cystic fibrosis (CF) in patient age 2 years and older who are homozygous for the F508del mutation in the CFTR gene.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:6484|HP:0000821
+  ema: false
+  evidence:
+  - approval_date: '20220404'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Hypothyroidism
+    original_drug_label: Liothyronine sodium bulk and Liothyronine sodium tablets 5mcg & 20 mcg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: To treat some of the more severe conditions in which the thyroid does not produce enough thyroxine and balance the effect of medicines used to treat an
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0000821
+  final_normalized_disease_label: Hypothyroidism
+  final_normalized_drug_id: CHEBI:6484
+  final_normalized_drug_label: liothyronine sodium
+  indications_text: To treat some of the more severe conditions in which the thyroid does not produce enough thyroxine and balance the effect of medicines used to treat an
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:755791|UMLS:C0001144
+  ema: false
+  evidence:
+  - approval_date: '20230113'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Acne Vulgaris
+    original_drug_label: Trifarotene 50 microgram/g (0.005% w/w) Cream
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for the cutaneous treatment of Acne Vulgaris of the face and /or trunk in patients 12 years of age and older.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0001144
+  final_normalized_disease_label: Acne
+  final_normalized_drug_id: CHEBI:755791
+  final_normalized_drug_label: trifarotene
+  indications_text: Indicated for the cutaneous treatment of Acne Vulgaris of the face and /or trunk in patients 12 years of age and older.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:134677|MONDO:0004980
+  ema: false
+  evidence:
+  - approval_date: '20230120'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: atopic dermatitis
+    original_drug_label: Crisaborole Ointment 2%
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for topical treatment of mild to moderate atopic dermatitis in adult and paediatric patients 2 years of age and older
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0004980
+  final_normalized_disease_label: atopic eczema
+  final_normalized_drug_id: CHEBI:134677
+  final_normalized_drug_label: crisaborole
+  indications_text: Indicated for topical treatment of mild to moderate atopic dermatitis in adult and paediatric patients 2 years of age and older
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:756996|MONDO:0005148
+  ema: false
+  evidence:
+  - approval_date: '20230106'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: type 2 diabetes mellitus
+    original_drug_label: Imeglimin Hydrochloride Tablet 500mg/1000mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Type 2 diabetes Mellitus
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005148
+  final_normalized_disease_label: type 2 diabetes mellitus
+  final_normalized_drug_id: CHEBI:756996
+  final_normalized_drug_label: imeglimin
+  indications_text: Type 2 diabetes Mellitus
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:134677|MONDO:0004980
+  ema: false
+  evidence:
+  - approval_date: '20230210'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: atopic dermatitis
+    original_drug_label: Crisaborole Bulk Drug
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for topical treament of mild to moderate atopic dermatitis in adult and pediatric patients 2 years of age and older
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0004980
+  final_normalized_disease_label: atopic eczema
+  final_normalized_drug_id: CHEBI:134677
+  final_normalized_drug_label: crisaborole
+  indications_text: Indicated for topical treament of mild to moderate atopic dermatitis in adult and pediatric patients 2 years of age and older
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:194186|MONDO:0005148
+  ema: false
+  evidence:
+  - approval_date: '20240101'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: type 2 diabetes mellitus
+    original_drug_label: Tirzepatide 2.5mg /0.5ml, 5mg/0.5ml, 7.5mg/0.5 ml,10mg/0.5 ml,12.5mg/0.5 ml,15mg/0.5 ml solution for injection in a prefilled pen
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005148
+  final_normalized_disease_label: type 2 diabetes mellitus
+  final_normalized_drug_id: CHEBI:194186
+  final_normalized_drug_label: tirzepatide
+  indications_text: Indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749946|UMLS:C4552431
+  ema: false
+  evidence:
+  - approval_date: '20240202'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: complicated urinary tract infections
+    original_drug_label: Plazomicin injection 500mg/10ml (50mg/ml)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated in patients 18 years of age or older for the treatment of complicated urinary tract infections (cUTI), including pyelonephritis caused by the following susceptible microorganism(s)  Escherichia coli,  Klebsiella pneumoniae,  Proteus mirabilis, and  Enterobacter cloacae
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C4552431
+  final_normalized_disease_label: ''
+  final_normalized_drug_id: CHEBI:749946
+  final_normalized_drug_label: plazomicin
+  indications_text: Indicated in patients 18 years of age or older for the treatment of complicated urinary tract infections (cUTI), including pyelonephritis caused by the following susceptible microorganism(s)  Escherichia coli,  Klebsiella pneumoniae,  Proteus mirabilis, and  Enterobacter cloacae
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:749946|MONDO:0006939
+  ema: false
+  evidence:
+  - approval_date: '20240202'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: pyelonephritis
+    original_drug_label: Plazomicin injection 500mg/10ml (50mg/ml)
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated in patients 18 years of age or older for the treatment of complicated urinary tract infections (cUTI), including pyelonephritis caused by the following susceptible microorganism(s)  Escherichia coli,  Klebsiella pneumoniae,  Proteus mirabilis, and  Enterobacter cloacae
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0006939
+  final_normalized_disease_label: pyelonephritis
+  final_normalized_drug_id: CHEBI:749946
+  final_normalized_drug_label: plazomicin
+  indications_text: Indicated in patients 18 years of age or older for the treatment of complicated urinary tract infections (cUTI), including pyelonephritis caused by the following susceptible microorganism(s)  Escherichia coli,  Klebsiella pneumoniae,  Proteus mirabilis, and  Enterobacter cloacae
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:135272|MONDO:0011918
+  ema: false
+  evidence:
+  - approval_date: '20240321'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: anxiety
+    original_drug_label: Etifoxine Hydrochloride Bulk drug & Etifoxine Hydrochloride capsules 50 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for psychosomatic manifestations of anxiety
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0011918
+  final_normalized_disease_label: anxiety
+  final_normalized_drug_id: CHEBI:135272
+  final_normalized_drug_label: etifoxine
+  indications_text: Indicated for psychosomatic manifestations of anxiety
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:136048|MONDO:0001126
+  ema: false
+  evidence:
+  - approval_date: '20240508'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: gastric ulcer
+    original_drug_label: Vonoprazan fumarate Bulk drug& Vonoprazan tablets 10mg/20 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of earl'
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0001126
+  final_normalized_disease_label: gastric ulcer
+  final_normalized_drug_id: CHEBI:136048
+  final_normalized_drug_label: vonoprazan
+  indications_text: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of early-stage cancer, or Helicobacter pylori gastritis.'
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:136048|MONDO:0005412
+  ema: false
+  evidence:
+  - approval_date: '20240508'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: duodenal ulcer
+    original_drug_label: Vonoprazan fumarate Bulk drug& Vonoprazan tablets 10mg/20 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of earl'
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005412
+  final_normalized_disease_label: duodenal ulcer
+  final_normalized_drug_id: CHEBI:136048
+  final_normalized_drug_label: vonoprazan
+  indications_text: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of early-stage cancer, or Helicobacter pylori gastritis.'
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:136048|MONDO:0006226
+  ema: false
+  evidence:
+  - approval_date: '20240508'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: gastric MALT lymphoma
+    original_drug_label: Vonoprazan fumarate Bulk drug& Vonoprazan tablets 10mg/20 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of earl'
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0006226
+  final_normalized_disease_label: gastric mucosa-associated lymphoid tissue lymphoma
+  final_normalized_drug_id: CHEBI:136048
+  final_normalized_drug_label: vonoprazan
+  indications_text: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of early-stage cancer, or Helicobacter pylori gastritis.'
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:136048|MONDO:0008558
+  ema: false
+  evidence:
+  - approval_date: '20240508'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: idiopathic thrombocytopenic purpura
+    original_drug_label: Vonoprazan fumarate Bulk drug& Vonoprazan tablets 10mg/20 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of earl'
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0008558
+  final_normalized_disease_label: autoimmune thrombocytopenic purpura
+  final_normalized_drug_id: CHEBI:136048
+  final_normalized_drug_label: vonoprazan
+  indications_text: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of early-stage cancer, or Helicobacter pylori gastritis.'
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:136048|UMLS:C0343378
+  ema: false
+  evidence:
+  - approval_date: '20240508'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Helicobacter pylori gastritis
+    original_drug_label: Vonoprazan fumarate Bulk drug& Vonoprazan tablets 10mg/20 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of earl'
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0343378
+  final_normalized_disease_label: Helicobacter Pylori-Associated Gastritis
+  final_normalized_drug_id: CHEBI:136048
+  final_normalized_drug_label: vonoprazan
+  indications_text: ' Treatment of reflux esophagitis(RE)  Treatment of gastric ulcer (GU)  Treatment of duodenal ulcer(DU)  Prevention of recurrence of gastric ulcer or duodenal ulcer during low- dose aspirin administration.  Prevention of recurrence of gastric ulcer or duodenal ulcer during NSAIDs administration.  Adjunct to Helicobacter pylori eradication associated with: Gastric ulcer, Duodenal ulcer, gastric MALT lymphoma, idiopathic thrombocytopenic purpura, the stomach after endoscopic resection of early-stage cancer, or Helicobacter pylori gastritis.'
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:760420|UMLS:C0267055
+  ema: false
+  evidence:
+  - approval_date: '20250210'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Erosive esophagitis
+    original_drug_label: Fexuprazan hydrochloride Bulk Drug and Fexuprazan hydrochloride Tablets 40mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for the treatment of erosive esophagitis(EE).
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0267055
+  final_normalized_disease_label: Erosive oesophagitis
+  final_normalized_drug_id: CHEBI:760420
+  final_normalized_drug_label: fexuprazan hydrochloride
+  indications_text: Indicated for the treatment of erosive esophagitis(EE).
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:85973|MONDO:0005009
+  ema: false
+  evidence:
+  - approval_date: '20250220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: congestive heart failure
+    original_drug_label: Edoxaban Tablets 15mg, 30mg and 60mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005009
+  final_normalized_disease_label: congestive heart failure
+  final_normalized_drug_id: CHEBI:85973
+  final_normalized_drug_label: edoxaban
+  indications_text: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:85973|HP:0000822
+  ema: false
+  evidence:
+  - approval_date: '20250220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: hypertension
+    original_drug_label: Edoxaban Tablets 15mg, 30mg and 60mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0000822
+  final_normalized_disease_label: Hypertension
+  final_normalized_drug_id: CHEBI:85973
+  final_normalized_drug_label: edoxaban
+  indications_text: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:85973|MONDO:0005015
+  ema: false
+  evidence:
+  - approval_date: '20250220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: diabetes mellitus
+    original_drug_label: Edoxaban Tablets 15mg, 30mg and 60mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005015
+  final_normalized_disease_label: diabetes mellitus
+  final_normalized_drug_id: CHEBI:85973
+  final_normalized_drug_label: edoxaban
+  indications_text: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:85973|MONDO:0005098
+  ema: false
+  evidence:
+  - approval_date: '20250220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: stroke
+    original_drug_label: Edoxaban Tablets 15mg, 30mg and 60mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005098
+  final_normalized_disease_label: stroke disorder
+  final_normalized_drug_id: CHEBI:85973
+  final_normalized_drug_label: edoxaban
+  indications_text: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:85973|UMLS:C0007787
+  ema: false
+  evidence:
+  - approval_date: '20250220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: transient ischaemic attack
+    original_drug_label: Edoxaban Tablets 15mg, 30mg and 60mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0007787
+  final_normalized_disease_label: Transient ischemic attacks
+  final_normalized_drug_id: CHEBI:85973
+  final_normalized_drug_label: edoxaban
+  indications_text: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:85973|UMLS:C0149871
+  ema: false
+  evidence:
+  - approval_date: '20250220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: deep vein thrombosis
+    original_drug_label: Edoxaban Tablets 15mg, 30mg and 60mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0149871
+  final_normalized_disease_label: Blood clot in a deep vein
+  final_normalized_drug_id: CHEBI:85973
+  final_normalized_drug_label: edoxaban
+  indications_text: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:85973|MONDO:0005279
+  ema: false
+  evidence:
+  - approval_date: '20250220'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: pulmonary embolism
+    original_drug_label: Edoxaban Tablets 15mg, 30mg and 60mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005279
+  final_normalized_disease_label: pulmonary embolism
+  final_normalized_drug_id: CHEBI:85973
+  final_normalized_drug_label: edoxaban
+  indications_text: In prevention of stroke and systemic embolism in adult patients with non- valvular atrial fibrillation (NVAF) with one or more risk factors, such as congestive heart failure, hypertension, age ≥ 75 years, diabetes mellitus, prior stroke or transient ischaemic attack(TIA). For the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and for the prevention of recurrent DVT and PE in adults.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:755275|UMLS:C0020461
+  ema: false
+  evidence:
+  - approval_date: '20250305'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Hyperkalaemia
+    original_drug_label: Sodium Zirconium Cyclosilicate powder for Oral Suspension (LOKELMA) 5g/10g
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated for the treatment of Hyperkalaemia in adult patients.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0020461
+  final_normalized_disease_label: Elevated serum potassium levels
+  final_normalized_drug_id: CHEBI:755275
+  final_normalized_drug_label: sodium zirconium cyclosilicate
+  indications_text: Indicated for the treatment of Hyperkalaemia in adult patients.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:754827|HP:0002077
+  ema: false
+  evidence:
+  - approval_date: '20250327'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Migraine with aura
+    original_drug_label: Rimegepant Oral disintegrating tablets (ODT) 75 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For Acute treatment of migraine with or without aura in adults with a previous insufficient response to triptans.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0002077
+  final_normalized_disease_label: Migraine with aura
+  final_normalized_drug_id: CHEBI:754827
+  final_normalized_drug_label: rimegepant
+  indications_text: For Acute treatment of migraine with or without aura in adults with a previous insufficient response to triptans.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:754827|HP:0002083
+  ema: false
+  evidence:
+  - approval_date: '20250327'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: Migraine without aura
+    original_drug_label: Rimegepant Oral disintegrating tablets (ODT) 75 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: For Acute treatment of migraine with or without aura in adults with a previous insufficient response to triptans.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: HP:0002083
+  final_normalized_disease_label: Migraine without aura
+  final_normalized_drug_id: CHEBI:754827
+  final_normalized_drug_label: rimegepant
+  indications_text: For Acute treatment of migraine with or without aura in adults with a previous insufficient response to triptans.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:754975|UMLS:C2363741
+  ema: false
+  evidence:
+  - approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: HIV-1 infection
+    original_drug_label: Doravirine Bulk Drug and Doravirine Tablets 100mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Indicated in combination with other antiretroviral agents for the treatment of HIV-1 infection in adults
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C2363741
+  final_normalized_disease_label: ''
+  final_normalized_drug_id: CHEBI:754975
+  final_normalized_drug_label: doravirine
+  indications_text: Indicated in combination with other antiretroviral agents for the treatment of HIV-1 infection in adults
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:134716|MONDO:0005090
+  ema: false
+  evidence:
+  - approval_date: '20260216'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: schizophrenia
+    original_drug_label: Brexpiprazole Tablets 0.25/0.5/1/2/3/4 mg
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Brexpiprazole is indicated for treatment of schizophrenia.
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005090
+  final_normalized_disease_label: schizophrenia
+  final_normalized_drug_id: CHEBI:134716
+  final_normalized_drug_label: brexpiprazole
+  indications_text: Brexpiprazole is indicated for treatment of schizophrenia.
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:178199|MONDO:0005233
+  ema: false
+  evidence:
+  - approval_date: '20260310'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: non-small cell lung cancer
+    original_drug_label: Sotorasib 240mg Film Coated Tablets.
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Treatment of adult patients with KRAS G12C-mutated locally advanced or metastatic non-small cell lung cancer (NSCLC), who have received at least one prior systemic therapy
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: MONDO:0005233
+  final_normalized_disease_label: non-small cell lung carcinoma
+  final_normalized_drug_id: CHEBI:178199
+  final_normalized_drug_label: sotorasib
+  indications_text: Treatment of adult patients with KRAS G12C-mutated locally advanced or metastatic non-small cell lung cancer (NSCLC), who have received at least one prior systemic therapy
+  pmda: false
+  relationship_type: INDICATION
+- drug_disease: CHEBI:178199|UMLS:C0007131
+  ema: false
+  evidence:
+  - approval_date: '20260310'
+    approval_status: APPROVED
+    confidence: HIGH
+    explanation: CDSCO-approved indication from India primary source PDF
+    jurisdiction: INDIA
+    original_disease_label: NSCLC
+    original_drug_label: Sotorasib 240mg Film Coated Tablets.
+    reference: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/
+    snippet: Treatment of adult patients with KRAS G12C-mutated locally advanced or metastatic non-small cell lung cancer (NSCLC), who have received at least one prior systemic therapy
+    source_role: PRIMARY
+    source_type: REGULATORY
+  fda: false
+  final_normalized_disease_id: UMLS:C0007131
+  final_normalized_disease_label: Non-small cell lung carcinoma
+  final_normalized_drug_id: CHEBI:178199
+  final_normalized_drug_label: sotorasib
+  indications_text: Treatment of adult patients with KRAS G12C-mutated locally advanced or metastatic non-small cell lung cancer (NSCLC), who have received at least one prior systemic therapy
+  pmda: false
+  relationship_type: INDICATION

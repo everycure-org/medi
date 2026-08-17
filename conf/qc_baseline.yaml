@@ -1,0 +1,26 @@
+# Expected build scale, with tolerance bands. `just qc` compares every count against this and
+# warns or fails on drift, so a source silently halving is loud instead of invisible.
+#
+# Update deliberately, in the same commit as whatever changed the scale, and say why in the
+# message — an unexplained baseline bump is indistinguishable from papering over a regression.
+#
+# 2026-08-12, second revision: the PMDA per-approval fix (release2 item 6) reached the products.
+# PMDA now emits one indication record per approval row instead of one per active ingredient, so
+# its assertions rose 1,841 -> 2,620 (+42%) and total indication pairs 6,338 -> 6,504. QC caught
+# the drift on the first run after the re-ingest, which is what it is for.
+
+tolerance:
+  warn_pct: 5     # drift a human should look at
+  fail_pct: 20    # drift that stops the build
+
+counts:
+  indication_list.pairs: 6504
+  indication_list.assertions: 9716
+  indication_list.by_source.DAILYMED: 3910
+  indication_list.by_source.EMA: 3054
+  indication_list.by_source.PMDA: 2620
+  indication_list.by_source.INDIA: 132
+  contraindication_list.pairs: 2399
+  contraindication_list.assertions: 2978
+  contraindication_list.by_source.DAILYMED: 2978
+  drug_list.drugs: 4323

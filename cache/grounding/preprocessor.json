@@ -1,0 +1,738 @@
+{
+  "adalimumab-aacf": {
+    "active_moiety": "adalimumab",
+    "components": [
+      "adalimumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "adalimumab-atto": {
+    "active_moiety": "adalimumab",
+    "components": [
+      "adalimumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "adalimumab-fkjp": {
+    "active_moiety": "adalimumab",
+    "components": [
+      "adalimumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "aflibercept (genetical recombination) [aflibercept biosimilar 1]": {
+    "active_moiety": "aflibercept",
+    "components": [
+      "aflibercept"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "agalsidase beta": {
+    "active_moiety": "agalsidase beta",
+    "components": [
+      "agalsidase beta"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "anhydrous sodium sulfate": {
+    "active_moiety": "sodium sulfate",
+    "components": [
+      "sodium sulfate"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "anti-human thymocyte immunoglobulin": {
+    "active_moiety": "antithymocyte immunoglobulin",
+    "components": [
+      "antithymocyte immunoglobulin"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "antivenin (micrurus fulvius)": {
+    "active_moiety": "Coral snake antivenin",
+    "components": [
+      "Coral snake antivenin"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "bcg vaccine": {
+    "active_moiety": "Bacillus Calmette-Guérin",
+    "components": [
+      "Bacillus Calmette-Guérin"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "becaplermin": {
+    "active_moiety": "becaplermin",
+    "components": [
+      "becaplermin"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "belantamab mafodotin (genetical recombination)": {
+    "active_moiety": "belantamab mafodotin",
+    "components": [
+      "belantamab mafodotin"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "bempedoic acid": {
+    "active_moiety": "bempedoic acid",
+    "components": [
+      "bempedoic acid"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "beractant": {
+    "active_moiety": "beractant",
+    "components": [
+      "beractant"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "bevacizumab-maly": {
+    "active_moiety": "bevacizumab",
+    "components": [
+      "bevacizumab"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "bevacizumab-nwgd": {
+    "active_moiety": "bevacizumab",
+    "components": [
+      "bevacizumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "blinatumomab": {
+    "active_moiety": "blinatumomab",
+    "components": [
+      "blinatumomab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "brodalumab": {
+    "active_moiety": "brodalumab",
+    "components": [
+      "brodalumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "burosumab": {
+    "active_moiety": "burosumab",
+    "components": [
+      "burosumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "cantharidin": {
+    "active_moiety": "cantharidin",
+    "components": [
+      "cantharidin"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "ceftazidime hydrate": {
+    "active_moiety": "ceftazidime",
+    "components": [
+      "ceftazidime"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "cemiplimab (genetical recombination)": {
+    "active_moiety": "cemiplimab",
+    "components": [
+      "cemiplimab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "cerliponase alfa": {
+    "active_moiety": "cerliponase alfa",
+    "components": [
+      "cerliponase alfa"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "chymopapain": {
+    "active_moiety": "chymopapain",
+    "components": [
+      "chymopapain"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "coagulation factor ix (recombinant)": {
+    "active_moiety": "Coagulation Factor IX",
+    "components": [
+      "Coagulation Factor IX"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "daclizumab": {
+    "active_moiety": "daclizumab",
+    "components": [
+      "daclizumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "daratumumab": {
+    "active_moiety": "daratumumab",
+    "components": [
+      "daratumumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "datopotamab deruxtecan-dlnk": {
+    "active_moiety": "datopotamab deruxtecan",
+    "components": [
+      "datopotamab deruxtecan"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "delandistrogene moxeparvovec-rokl": {
+    "active_moiety": "delandistrogene moxeparvovec",
+    "components": [
+      "delandistrogene moxeparvovec"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "denosumab-nxxp": {
+    "active_moiety": "denosumab",
+    "components": [
+      "denosumab"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "dermatophagoides farinae extract": {
+    "active_moiety": "dermatophagoides farinae extract",
+    "components": [
+      "dermatophagoides farinae extract"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "diazepam": {
+    "active_moiety": "diazepam",
+    "components": [
+      "diazepam"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "ecallantide": {
+    "active_moiety": "ecallantide",
+    "components": [
+      "ecallantide"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "efanesoctocog alfa (genetical recombination)": {
+    "active_moiety": "efanesoctocog alfa",
+    "components": [
+      "efanesoctocog alfa"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "efgartigimod alfa-fcab": {
+    "active_moiety": "efgartigimod alfa",
+    "components": [
+      "efgartigimod alfa"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "elvitegravir": {
+    "active_moiety": "elvitegravir",
+    "components": [
+      "elvitegravir"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "etanercept": {
+    "active_moiety": "etanercept",
+    "components": [
+      "etanercept"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "ethinylestrad iol": {
+    "active_moiety": "ethinylestradiol",
+    "components": [
+      "ethinylestradiol"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "factor ix complex": {
+    "active_moiety": "Factor IX Complex",
+    "components": [
+      "Factor IX",
+      "Factor II",
+      "Factor VII",
+      "Factor X"
+    ],
+    "confidence": 0.95,
+    "is_combination": true
+  },
+  "factor x": {
+    "active_moiety": "coagulation factor X",
+    "components": [
+      "coagulation factor X"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "fibrin sealant (human)": {
+    "active_moiety": "Fibrin Sealant",
+    "components": [
+      "Fibrinogen",
+      "Thrombin"
+    ],
+    "confidence": 0.95,
+    "is_combination": true
+  },
+  "foslevodopa": {
+    "active_moiety": "levodopa",
+    "components": [
+      "levodopa"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "fremanezumab-vfrm": {
+    "active_moiety": "fremanezumab",
+    "components": [
+      "fremanezumab"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "fruquintinib": {
+    "active_moiety": "fruquintinib",
+    "components": [
+      "fruquintinib"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "garadacimab-gxii": {
+    "active_moiety": "garadacimab",
+    "components": [
+      "garadacimab"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "gozetotide": {
+    "active_moiety": "gozetotide",
+    "components": [
+      "gozetotide"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "imiglucerase": {
+    "active_moiety": "imiglucerase",
+    "components": [
+      "imiglucerase"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "indacaterol acetate": {
+    "active_moiety": "indacaterol",
+    "components": [
+      "indacaterol"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "insulin lispro protamine and insulin lispro": {
+    "active_moiety": "insulin lispro",
+    "components": [
+      "insulin lispro protamine",
+      "insulin lispro"
+    ],
+    "confidence": 0.95,
+    "is_combination": true
+  },
+  "ivosidenib": {
+    "active_moiety": "ivosidenib",
+    "components": [
+      "ivosidenib"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "lanadelumab-flyo": {
+    "active_moiety": "lanadelumab",
+    "components": [
+      "lanadelumab"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "marstacimab": {
+    "active_moiety": "marstacimab",
+    "components": [
+      "marstacimab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "mavacamten": {
+    "active_moiety": "mavacamten",
+    "components": [
+      "mavacamten"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "mecasermin rinfabate": {
+    "active_moiety": "mecasermin rinfabate",
+    "components": [
+      "mecasermin rinfabate"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "meningococcal polysaccharide vaccine, group a": {
+    "active_moiety": "Meningococcal Polysaccharide Group A",
+    "components": [
+      "Meningococcal Polysaccharide Group A"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "nivolumab and hyaluronidase-nvhy": {
+    "active_moiety": "nivolumab and hyaluronidase",
+    "components": [
+      "nivolumab",
+      "hyaluronidase"
+    ],
+    "confidence": 0.95,
+    "is_combination": true
+  },
+  "norethisterone": {
+    "active_moiety": "norethisterone",
+    "components": [
+      "norethisterone"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "ocriplasmin": {
+    "active_moiety": "ocriplasmin",
+    "components": [
+      "ocriplasmin"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "omidubicel-onlv": {
+    "active_moiety": "omidubicel",
+    "components": [
+      "omidubicel"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "ozanimod hydrochloride": {
+    "active_moiety": "ozanimod",
+    "components": [
+      "ozanimod"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "panitumumab": {
+    "active_moiety": "panitumumab",
+    "components": [
+      "panitumumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "pegademase bovine": {
+    "active_moiety": "pegademase bovine",
+    "components": [
+      "pegademase bovine"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "pegaspargase": {
+    "active_moiety": "pegaspargase",
+    "components": [
+      "pegaspargase"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "pegfilgrastim": {
+    "active_moiety": "pegfilgrastim",
+    "components": [
+      "pegfilgrastim"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "poractant alfa": {
+    "active_moiety": "poractant alfa",
+    "components": [
+      "poractant alfa"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "potassium chloride": {
+    "active_moiety": "potassium chloride",
+    "components": [
+      "potassium chloride"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "protein c concentrate (human)": {
+    "active_moiety": "Protein C",
+    "components": [
+      "Protein C"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "ranibizumab": {
+    "active_moiety": "ranibizumab",
+    "components": [
+      "ranibizumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "ranibizumab-eqrn": {
+    "active_moiety": "ranibizumab",
+    "components": [
+      "ranibizumab"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "rasburicase": {
+    "active_moiety": "rasburicase",
+    "components": [
+      "rasburicase"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "reteplase": {
+    "active_moiety": "reteplase",
+    "components": [
+      "reteplase"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "rho(d) immune globulin (human)": {
+    "active_moiety": "Rho(D) Immune Globulin",
+    "components": [
+      "Rho(D) Immune Globulin"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "rho(d) immune globulin intravenous (human)": {
+    "active_moiety": "Rho(D) Immune Globulin",
+    "components": [
+      "Rho(D) Immune Globulin"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "ritonavir": {
+    "active_moiety": "ritonavir",
+    "components": [
+      "ritonavir"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "rituximab and hyaluronidase human": {
+    "active_moiety": "rituximab and hyaluronidase human",
+    "components": [
+      "rituximab",
+      "hyaluronidase human"
+    ],
+    "confidence": 0.95,
+    "is_combination": true
+  },
+  "sodium zirconium cyclosilicate powder for oral suspension (lokelma) 5g/10g": {
+    "active_moiety": "Zirconium Cyclosilicate",
+    "components": [
+      "Zirconium Cyclosilicate"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "sotatercept": {
+    "active_moiety": "sotatercept",
+    "components": [
+      "sotatercept"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "taletrectinib adipate": {
+    "active_moiety": "taletrectinib",
+    "components": [
+      "taletrectinib"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "talquetamab": {
+    "active_moiety": "talquetamab",
+    "components": [
+      "talquetamab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "tapinarof": {
+    "active_moiety": "tapinarof",
+    "components": [
+      "tapinarof"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "tazobactam": {
+    "active_moiety": "tazobactam",
+    "components": [
+      "tazobactam"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "thrombin topical (recombinant)": {
+    "active_moiety": "thrombin",
+    "components": [
+      "thrombin"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "tisotumab vedotin (genetical recombination)": {
+    "active_moiety": "tisotumab vedotin",
+    "components": [
+      "tisotumab vedotin"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "tofersen": {
+    "active_moiety": "tofersen",
+    "components": [
+      "tofersen"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "trastuzumab": {
+    "active_moiety": "trastuzumab",
+    "components": [
+      "trastuzumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "trastuzumab and hyaluronidase-oysk": {
+    "active_moiety": "trastuzumab and hyaluronidase",
+    "components": [
+      "trastuzumab",
+      "hyaluronidase"
+    ],
+    "confidence": 0.95,
+    "is_combination": true
+  },
+  "turoctocog alpha": {
+    "active_moiety": "turoctocog alfa",
+    "components": [
+      "turoctocog alfa"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "typhoid vi polysaccharide vaccine": {
+    "active_moiety": "Typhoid Vi Polysaccharide Vaccine",
+    "components": [
+      "Typhoid Vi Polysaccharide Vaccine"
+    ],
+    "confidence": 0.95,
+    "is_combination": false
+  },
+  "urokinase": {
+    "active_moiety": "urokinase",
+    "components": [
+      "urokinase"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "ustekinumab-aekn": {
+    "active_moiety": "ustekinumab",
+    "components": [
+      "ustekinumab"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "velpatasvir": {
+    "active_moiety": "velpatasvir",
+    "components": [
+      "velpatasvir"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  },
+  "zanubrutinib": {
+    "active_moiety": "zanubrutinib",
+    "components": [
+      "zanubrutinib"
+    ],
+    "confidence": 1.0,
+    "is_combination": false
+  }
+}

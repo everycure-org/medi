@@ -1,0 +1,274 @@
+id: https://w3id.org/monarch-initiative/medic/drug
+name: drug
+title: MeDIC Drug Entity Schema
+description: >-
+  Drug entity schema for MeDIC. Modeled after the existing drug_list_flexible.csv
+  and the everycure/drug-list dataset. Each drug has a canonical ID following the
+  Biolink ChemicalEntity prefix priority order.
+
+imports:
+  - linkml:types
+  - evidence
+  - grounding
+  - provenance
+  - authority
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+
+default_prefix: medic
+
+enums:
+  MarketingStatusEnum:
+    description: FDA marketing status categories
+    permissible_values:
+      RX:
+        description: Prescription drug
+      OTC:
+        description: Over-the-counter drug
+      DISCN:
+        description: Discontinued
+      NONE:
+        description: No marketing status available
+
+  DrugFeatureEnum:
+    description: >-
+      A classification tag a drug can carry. Replaces the flat boolean is_* fields: a drug
+      lists only the features it has (an empty list means none fire). Most are derived
+      deterministically from ATC prefixes; NO_THERAPEUTIC_VALUE and METALLIC_SALT are LLM-set.
+    permissible_values:
+      STEROID: {description: A steroid.}
+      ANTIMICROBIAL: {description: An antimicrobial.}
+      CHEMOTHERAPY: {description: A chemotherapy agent.}
+      GLUCOSE_REGULATOR: {description: Regulates glucose.}
+      VACCINE_OR_ANTIGEN: {description: A vaccine or antigen.}
+      NO_THERAPEUTIC_VALUE: {description: "No direct therapeutic value (vehicle, excipient)."}
+      METALLIC_SALT: {description: A metallic salt.}
+      ALLERGEN: {description: An allergen extract.}
+      RADIOISOTOPE_OR_DIAGNOSTIC_AGENT: {description: A radioisotope or diagnostic agent.}
+      CANCER_DRUG: {description: Used for cancer treatment.}
+      ANTIPSYCHOTIC: {description: An antipsychotic.}
+      SEDATIVE: {description: A sedative.}
+      ANALGESIC: {description: An analgesic.}
+      CARDIOVASCULAR: {description: A cardiovascular agent.}
+      CELL_THERAPY: {description: A cell therapy.}
+      COMBINATION_THERAPY: {description: A combination/coformulated product (ingredients on combination_therapy_ingredients).}
+
+classes:
+  ATCClassification:
+    description: >-
+      Anatomical Therapeutic Chemical (ATC) classification for a drug, nested so the levels
+      travel together. `codes` is every ATC code assigned; `main`/`level1`..`level5` decompose
+      the primary code into its hierarchical anatomical/therapeutic/chemical groups.
+    attributes:
+      codes:
+        range: string
+        multivalued: true
+        description: All ATC classification codes assigned to the drug.
+      main:
+        range: string
+        description: Anatomical main group (ATC level 1 letter, e.g. "L").
+      level1:
+        range: string
+        description: ATC level 1 (anatomical main group, e.g. "L04").
+      level2:
+        range: string
+        description: ATC level 2 (therapeutic subgroup).
+      level3:
+        range: string
+        description: ATC level 3 (pharmacological subgroup).
+      level4:
+        range: string
+        description: ATC level 4 (chemical subgroup).
+      level5:
+        range: string
+        description: ATC level 5 (chemical substance).
+
+  Drug:
+    description: >-
+      A drug entity with approval status across multiple jurisdictions,
+      chemical identifiers, and classification flags.
+    attributes:
+      # Identity lives on `identity` (a Mention: identity.resolved_id / resolved_label);
+      # see the transformation-provenance section below.
+      source_ingredients:
+        range: string
+        multivalued: true
+        description: Original ingredient name(s) from regulatory source(s)
+      synonyms:
+        range: string
+        multivalued: true
+        description: Alternative names for the drug
+
+      # Jurisdiction approvals now live on `approvals` (RegulatoryStatus list): the
+      # per-authority approval, marketing status, dates, and application numbers.
+
+      # Drug classification tags as a single list (supersedes the is_* booleans below,
+      # kept additively until the rebuild). A drug lists only the features it has.
+      features:
+        range: DrugFeatureEnum
+        multivalued: true
+        description: The classification tags this drug carries (empty = none).
+
+      # Combination therapy
+      is_combination_therapy:
+        range: boolean
+        description: Whether this is a combination therapy product
+      combination_therapy_ingredients:
+        range: string
+        multivalued: true
+        description: Individual ingredient names for combination therapies
+      combination_therapy_ingredients_curies:
+        range: string
+        multivalued: true
+        description: CURIEs for individual ingredients of combination therapies
+
+      # Drug property flags
+      is_steroid:
+        range: boolean
+        description: Whether the drug is a steroid
+      is_antimicrobial:
+        range: boolean
+        description: Whether the drug is an antimicrobial
+      is_chemotherapy:
+        range: boolean
+        description: Whether the drug is a chemotherapy agent
+      is_glucose_regulator:
+        range: boolean
+        description: Whether the drug regulates glucose
+      is_vaccine_or_antigen:
+        range: boolean
+        description: Whether the drug is a vaccine or antigen
+      is_no_therapeutic_value:
+        range: boolean
+        description: Whether the drug has no direct therapeutic value (vehicles, excipients)
+      is_metallic_salt:
+        range: boolean
+        description: Whether the drug is a metallic salt
+      is_allergen:
+        range: boolean
+        description: Whether the drug is an allergen extract
+      is_radioisotope_or_diagnostic_agent:
+        range: boolean
+        description: Whether the drug is a radioisotope or diagnostic agent
+      is_cancer_drug:
+        range: boolean
+        description: Whether the drug is used for cancer treatment
+
+      # Additional flags from EveryCure drug-list
+      is_antipsychotic:
+        range: boolean
+        description: Whether the drug is an antipsychotic
+      is_sedative:
+        range: boolean
+        description: Whether the drug is a sedative
+      is_analgesic:
+        range: boolean
+        description: Whether the drug is an analgesic
+      is_cardiovascular:
+        range: boolean
+        description: Whether the drug is a cardiovascular agent
+      is_cell_therapy:
+        range: boolean
+        description: Whether the drug is a cell therapy
+
+      # Drug classification
+      drug_class:
+        range: string
+        description: Drug class (e.g., "Nucleoside reverse transcriptase inhibitor")
+      therapeutic_area:
+        range: string
+        description: Therapeutic area (e.g., "Antimicrobial")
+      drug_function:
+        range: string
+        description: Drug function (e.g., "Antiviral")
+      drug_target:
+        range: string
+        description: Drug target (e.g., "HIV")
+
+      # ===================================================================
+      # Transformation-provenance model (v2.0 target shape; added additively
+      # alongside the flat fields above, which are removed with the rebuild).
+      # ===================================================================
+      identity:
+        range: Mention
+        inlined: true
+        description: >-
+          The drug's identity as a resolved source Mention: the verbatim literal + stable
+          id, its resolution container (the ordered pipeline: grounding, + translation for
+          zh/ru sources), and the resolved canonical CHEBI id/label.
+      approvals:
+        range: RegulatoryStatus
+        multivalued: true
+        inlined_as_list: true
+        description: >-
+          Per-jurisdiction approval records (the "drug is approved" claim), one per
+          authoritative artifact. Supersedes the flat approved_usa/europe/japan/...
+          booleans + marketing_status_usa + approval_date + application_number.
+      reliability:
+        range: ReliabilityTierEnum
+        description: >-
+          Source-uniform trustworthiness tier for this drug's identity, computed from
+          the identity mention's grounding/translation steps (src/medic/reliability.py).
+
+      # Stage-0/1/2 resolution (translation, grounding, normalization) is captured as the
+      # ordered `identity.resolution.pipeline` trail — no separate flat objects.
+
+      # Evidence and provenance
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        description: >-
+          Evidence items documenting regulatory approvals and other provenance
+          for this drug entity across jurisdictions
+
+      # Identifiers and chemical data
+      alternate_ids:
+        range: string
+        multivalued: true
+        description: All other known identifiers for this drug
+      drugbank_id:
+        range: string
+        description: DrugBank identifier
+      # ATC nested in one object (supersedes the flat atc_* fields below, kept additively).
+      atc:
+        range: ATCClassification
+        inlined: true
+        description: Nested ATC classification (codes + hierarchical levels).
+      atc_codes:
+        range: string
+        multivalued: true
+        description: ATC classification codes
+      atc_main:
+        range: string
+        description: Primary ATC code
+      atc_level1:
+        range: string
+        description: ATC level 1 (anatomical main group)
+      atc_level2:
+        range: string
+        description: ATC level 2 (therapeutic subgroup)
+      atc_level3:
+        range: string
+        description: ATC level 3 (pharmacological subgroup)
+      atc_level4:
+        range: string
+        description: ATC level 4 (chemical subgroup)
+      atc_level5:
+        range: string
+        description: ATC level 5 (chemical substance)
+      smiles:
+        range: string
+        description: SMILES chemical structure notation
+
+  DrugList:
+    description: A collection of Drug entities
+    attributes:
+      drugs:
+        range: Drug
+        multivalued: true
+        inlined_as_list: true
+        description: The list of drugs

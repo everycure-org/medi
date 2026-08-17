@@ -1,0 +1,27 @@
+associations:
+- curation_date: '2026-04-12T09:13:48.314684'
+  curation_status: DRAFT
+  curator: medic-research-skill
+  deep_research_used: true
+  disease_id: MONDO:0018874
+  disease_label: acute myeloid leukemia
+  drug_id: CHEBI:63452
+  drug_label: midostaurin
+  evidence:
+  - confidence: MEDIUM
+    curator:
+      curator_id: https://github.com/monarch-initiative/medic/blob/f60076dc17a9c62e51e4acfaf83f6566b7b0b1cb/.claude/skills/medic-research-curation/SKILL.md
+      curator_type: AI_AGENT
+      name: MEDIC research skill extracting evidence from Perplexity deep research
+    evidence_source: HUMAN_CLINICAL
+    explanation: RATIFY trial showed survival benefit when added to chemotherapy for FLT3+ AML
+    max_research_phase: PHASE_III
+    original_disease_label: acute myeloid leukemia
+    original_drug_label: midostaurin
+    reference: PMID:28644114
+    reference_title: Midostaurin plus Chemotherapy for Acute Myeloid Leukemia with a FLT3 Mutation.
+    snippet: We conducted a phase 3 trial to determine whether the addition of midostaurin - an oral multitargeted
+      kinase inhibitor that is active in patients with a FLT3 mutation - to standard chemotherapy would
+      prolong overall survival in this population.
+    source_type: LITERATURE
+  notes: FLT3 inhibitor added to induction for FLT3+ AML

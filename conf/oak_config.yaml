@@ -1,0 +1,50 @@
+# OAK Configuration for MeDIC term validation
+# Maps ontology prefixes to OAK adapter strings
+#
+# Adapter types:
+#   sqlite:obo:<name>  - Pre-built SQLite databases (fast, offline, recommended)
+#   ols:               - Ontology Lookup Service (EBI, online)
+#   ""                 - Skip validation for this prefix
+
+ontology_adapters:
+  # Disease ontology
+  MONDO: sqlite:obo:mondo
+
+  # Phenotype ontology
+  HP: sqlite:obo:hp
+
+  # Chemical entities (drugs)
+  CHEBI: sqlite:obo:chebi
+
+  # Medical Action Ontology (treatments, interventions)
+  MAXO: sqlite:obo:maxo
+
+  # Anatomy ontology
+  UBERON: sqlite:obo:uberon
+
+  # Gene Ontology
+  GO: sqlite:obo:go
+
+  # NCI Thesaurus
+  NCIT: sqlite:obo:ncit
+
+  # Skip validation for these common prefixes
+  linkml: ""
+  schema: ""
+  xsd: ""
+  rdf: ""
+  rdfs: ""
+  owl: ""
+
+  # Drug identifiers not in OBO - skip validation
+  UNII: ""
+  DRUGBANK: ""
+  RXNORM: ""
+  ATC: ""
+  PUBCHEM.COMPOUND: ""
+  CHEMBL.COMPOUND: ""
+  MESH: ""
+  DRON: ""
+
+  # MedDRA terms - no OBO adapter available
+  MedDRA: ""

@@ -1,0 +1,240 @@
+"""Acquire real DailyMed SPL XML labels via the DailyMed v2 REST API.
+
+This populates ``data/raw/dailymed/`` with one SPL XML per setid so the
+SPL-XML mining path in ``medic.ingest.dailymed.__main__`` activates instead of
+the legacy Excel fallback.
+
+Acquisition strategy
+--------------------
+The full DailyMed bulk release (human prescription labels) is split across
+multiple multi-GB ZIP archives — tens of GB total, most of it labels for
+drug-formulation-manufacturer combinations we never ground. Downloading all of
+it unattended is wasteful.
+
+Instead we drive acquisition from the **merged drug list**
+(``products/drug_list.yaml``): for each USA-approved drug we query
+
+    https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?drug_name=<NAME>
+
+pick the most recently published SPL setid, and download the clean per-setid
+SPL XML
+
+    https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/<SETID>.xml
+
+into ``data/raw/dailymed/<SETID>.xml``. This fetches exactly one representative
+label per drug we actually care about (a few thousand small XML files, a few
+hundred MB) rather than the entire corpus.
+
+The module is resumable (existing setid files are skipped) and rate-limited
+with a small inter-request delay. A manifest mapping drug name -> setid is
+cached to ``cache/enrichment/dailymed_acquire.json``.
+
+Source isolation (docs/source-isolation.md): this only fetches FDA SPL labels
+and only ever produces USA-jurisdiction evidence downstream.
+"""
+
+from __future__ import annotations
+
+import argparse
+import logging
+import time
+from pathlib import Path
+
+import httpx
+import yaml
+
+from medic import product_view as pv
+from medic.enrichment.cache import EnrichmentCache
+
+logger = logging.getLogger(__name__)
+
+SPLS_LIST_URL = "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json"
+SPL_XML_URL = "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/{setid}.xml"
+
+DEFAULT_DATA_DIR = Path("data/raw/dailymed")
+DEFAULT_DRUG_LIST = Path("products/drug_list.yaml")
+ACQUIRE_CACHE_PATH = Path("cache/enrichment/dailymed_acquire.json")
+
+_cache: EnrichmentCache | None = None
+
+
+def _get_cache() -> EnrichmentCache:
+    global _cache
+    if _cache is None:
+        _cache = EnrichmentCache(ACQUIRE_CACHE_PATH)
+    return _cache
+
+
+def _usa_drug_names(drug_list_path: Path, limit: int = 0) -> list[str]:
+    """Return distinct USA-approved drug names from the merged drug list.
+
+    Prefers the raw ``source_ingredients`` strings (upstream label spelling,
+    best DailyMed query hits) and falls back to ``curie_label``.
+    """
+    if not drug_list_path.exists():
+        logger.warning("Merged drug list not found: %s", drug_list_path)
+        return []
+
+    data = yaml.safe_load(drug_list_path.read_text()) or {}
+    drugs = data.get("drugs", [])
+    names: list[str] = []
+    seen: set[str] = set()
+    for d in drugs:
+        if "FDA" not in pv.approved_authorities(d):
+            continue
+        candidates: list[str] = []
+        ingredients = d.get("source_ingredients") or []
+        if isinstance(ingredients, list):
+            candidates.extend(str(x) for x in ingredients if x)
+        label = pv.drug_label(d)
+        if label:
+            candidates.append(str(label))
+        for name in candidates:
+            key = name.strip().lower()
+            if key and key not in seen:
+                seen.add(key)
+                names.append(name.strip())
+                break  # one representative name per drug is enough
+    if limit > 0:
+        names = names[:limit]
+    logger.info("Selected %d USA-approved drug names to acquire", len(names))
+    return names
+
+
+def _is_usa_approved(value) -> bool:
+    if value is True:
+        return True
+    return str(value).strip().upper() in ("TRUE", "APPROVED", "1")
+
+
+def _most_recent_setid(client: httpx.Client, drug_name: str) -> str | None:
+    """Query the SPL list endpoint and return the most-recent published setid."""
+    try:
+        resp = client.get(
+            SPLS_LIST_URL, params={"drug_name": drug_name, "pagesize": 20}
+        )
+        resp.raise_for_status()
+        payload = resp.json()
+    except Exception as e:  # noqa: BLE001 — network/parse errors are expected
+        logger.debug("SPL list lookup failed for %r: %s", drug_name, e)
+        return None
+
+    data = payload.get("data") or []
+    if not data:
+        return None
+
+    def _date(entry: dict) -> str:
+        return str(entry.get("published_date") or entry.get("publishing_date") or "")
+
+    data_sorted = sorted(data, key=_date, reverse=True)
+    setid = (data_sorted[0].get("setid") or "").strip()
+    return setid or None
+
+
+def _download_spl_xml(
+    client: httpx.Client, setid: str, out_path: Path
+) -> bool:
+    """Download a single SPL XML by setid. Returns True on success."""
+    try:
+        resp = client.get(SPL_XML_URL.format(setid=setid))
+        resp.raise_for_status()
+        content = resp.content
+    except Exception as e:  # noqa: BLE001
+        logger.debug("SPL XML download failed for %s: %s", setid, e)
+        return False
+    if not content or b"<document" not in content[:5000]:
+        logger.debug("SPL XML for %s missing <document> root; skipping", setid)
+        return False
+    out_path.write_bytes(content)
+    return True
+
+
+def acquire(
+    drug_list_path: Path = DEFAULT_DRUG_LIST,
+    data_dir: Path = DEFAULT_DATA_DIR,
+    limit: int = 0,
+    delay: float = 0.2,
+    timeout: float = 30.0,
+) -> dict:
+    """Acquire SPL XML for USA-approved drugs into *data_dir*.
+
+    Returns a summary dict with counts. Resumable: setids whose XML already
+    exists on disk are not re-downloaded.
+    """
+    data_dir.mkdir(parents=True, exist_ok=True)
+    names = _usa_drug_names(drug_list_path, limit=limit)
+    cache = _get_cache()
+
+    counts = {"requested": len(names), "resolved": 0, "downloaded": 0,
+              "cached_hit": 0, "no_spl": 0, "errors": 0, "already_on_disk": 0}
+
+    with httpx.Client(timeout=timeout, follow_redirects=True) as client:
+        for i, name in enumerate(names, 1):
+            key = name.strip().lower()
+            cached = cache.get(key)
+            if cached is not None and cached.get("setid"):
+                setid = cached["setid"]
+                counts["cached_hit"] += 1
+            elif cached is not None and cached.get("match") == "no_results":
+                counts["no_spl"] += 1
+                continue
+            else:
+                setid = _most_recent_setid(client, name)
+                if not setid:
+                    cache.put(key, {"setid": "", "match": "no_results"})
+                    counts["no_spl"] += 1
+                    time.sleep(delay)
+                    continue
+                cache.put(key, {"setid": setid})
+                time.sleep(delay)
+
+            counts["resolved"] += 1
+            out_path = data_dir / f"{setid}.xml"
+            if out_path.exists():
+                counts["already_on_disk"] += 1
+            else:
+                ok = _download_spl_xml(client, setid, out_path)
+                if ok:
+                    counts["downloaded"] += 1
+                else:
+                    counts["errors"] += 1
+                time.sleep(delay)
+
+            if i % 100 == 0:
+                logger.info(
+                    "Acquire progress: %d/%d (downloaded=%d, cached=%d, no_spl=%d)",
+                    i, len(names), counts["downloaded"],
+                    counts["cached_hit"], counts["no_spl"],
+                )
+                cache.flush()
+
+    cache.flush()
+    logger.info("Acquire done: %s", counts)
+    return counts
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Acquire DailyMed SPL XML via the v2 API into data/raw/dailymed/"
+    )
+    parser.add_argument("--drug-list", type=Path, default=DEFAULT_DRUG_LIST)
+    parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
+    parser.add_argument(
+        "--limit", type=int, default=0,
+        help="Limit number of drugs to acquire (0 = all USA-approved)",
+    )
+    parser.add_argument("--delay", type=float, default=0.2,
+                        help="Seconds to sleep between API requests")
+    args = parser.parse_args()
+
+    logging.basicConfig(level=logging.INFO)
+    acquire(
+        drug_list_path=args.drug_list,
+        data_dir=args.data_dir,
+        limit=args.limit,
+        delay=args.delay,
+    )
+
+
+if __name__ == "__main__":
+    main()

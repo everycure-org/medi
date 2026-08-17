@@ -1,0 +1,17 @@
+# LLM model configuration for MeDIC
+#
+# Models are specified in litellm format: provider/model-name
+# Supported providers: anthropic, openai, together_ai, etc.
+# See: https://docs.litellm.ai/docs/providers
+#
+# Override per-run via environment variables:
+#   MEDIC_LLM_MODEL=anthropic/claude-sonnet-4-20250514
+#   MEDIC_LLM_MODEL_FAST=anthropic/claude-haiku-4-5-20251001
+
+# Standard model — used for reasoning tasks:
+# grounding preprocessing, candidate reranking
+model: anthropic/claude-sonnet-4-5-20250929
+
+# Fast model — used for high-volume tasks:
+# disease extraction, drug classification, snippet curation
+model_fast: anthropic/claude-haiku-4-5-20251001

@@ -1,0 +1,12 @@
+counts:
+  http_error: 0
+  no_results: 443
+  ok: 1606
+samples:
+  http_error: []
+  no_results:
+  - (s,r,r,s)-nebivolol
+  - 16-fluoroestradiol
+  - 177lu-psma-617
+  - 2-phenylbutyric acid
+  - 21 day ethinyl estradiol 0.000625 mg/hr / etonogestrel 0.005 mg/hr vaginal system

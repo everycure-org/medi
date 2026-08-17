@@ -1,0 +1,191 @@
+import sqlite3
+
+from medic.grounding.lexical.build import open_index
+from medic.grounding.lexical.index import COLS
+from medic.grounding.lexical.matcher import Matcher
+from medic.grounding.lexical.preprocess import base_normalize
+from medic.grounding.store import LiteralMappingStore
+
+
+def _fixture_db(path, rows):
+    con = sqlite3.connect(path)
+    con.execute(f"CREATE TABLE lex ({', '.join(c + ' TEXT' for c in COLS)})")
+    con.executemany(f"INSERT INTO lex VALUES ({', '.join('?' * len(COLS))})", rows)
+    con.execute("CREATE INDEX ix_raw ON lex (raw_value, match_field)")
+    con.execute("CREATE INDEX ix_norm ON lex (norm_value, match_field)")
+    con.commit()
+    con.close()
+
+
+def _r(oid, value, field="label", prefix=None):
+    prefix = prefix or oid.split(":")[0]
+    return (oid, value, value, value.strip(), base_normalize(value), field, "exact", prefix)
+
+
+def _matcher(tmp_path, rows, entity="diseases"):
+    db = tmp_path / f"{entity}.db"
+    _fixture_db(str(db), rows)
+    store = LiteralMappingStore(str(tmp_path / "g.sssom.tsv"), entity)
+    store.load()
+    return Matcher(open_index(entity, str(db)), store)
+
+
+def _one(matcher, name):
+    ds = matcher.ground(name)
+    return ds[0]
+
+
+def test_exact_label(tmp_path):
+    m = _matcher(tmp_path, [_r("MONDO:0007947", "Marfan syndrome")])
+    d = _one(m, "Marfan syndrome")
+    assert d.object_id == "MONDO:0007947" and d.grounding_quality == "lexical_exact"
+
+
+def test_normalized_when_case_differs(tmp_path):
+    m = _matcher(tmp_path, [_r("MONDO:0007947", "Marfan syndrome")])
+    d = _one(m, "MARFAN   SYNDROME")
+    assert d.object_id == "MONDO:0007947" and d.grounding_quality == "lexical_exact_normalized"
+
+
+def test_rung_major_exact_label_hp_beats_synonym_mondo(tmp_path):
+    m = _matcher(tmp_path, [
+        _r("MONDO:1", "foo bar", field="exactSynonym"),
+        _r("HP:2", "foo bar", field="label")])
+    assert _one(m, "foo bar").object_id == "HP:2"
+
+
+def test_surgery_disease_to_disorder(tmp_path):
+    m = _matcher(tmp_path, [_r("MONDO:3", "heart disorder")])
+    d = _one(m, "heart disease")
+    assert d.object_id == "MONDO:3" and d.subject_preprocessing == ["disease_to_disorder"]
+    assert d.grounding_quality == "lexical_exact_surgery"
+
+
+def test_ambiguous_is_unresolved(tmp_path):
+    m = _matcher(tmp_path, [_r("MONDO:4", "xyz"), _r("MONDO:5", "xyz")])
+    d = _one(m, "xyz")
+    assert d.grounding_quality == "unresolved" and d.predicate_id == "sssom:NoTermFound"
+
+
+def test_disease_does_not_match_related_synonym(tmp_path):
+    # related-synonym matching is drugs-only
+    m = _matcher(tmp_path, [_r("MONDO:6", "acyclovir foo", field="relatedSynonym")])
+    assert _one(m, "acyclovir foo").object_id is None
+
+
+def test_drug_related_synonym_closematch(tmp_path):
+    m = _matcher(tmp_path, [_r("CHEBI:2453", "aciclovir", field="relatedSynonym")], entity="drugs")
+    d = _one(m, "aciclovir")
+    assert d.object_id == "CHEBI:2453"
+    assert d.predicate_id == "skos:closeMatch"
+    assert d.object_match_field == "oio:hasRelatedSynonym"
+
+
+def test_drug_salt_strip(tmp_path):
+    m = _matcher(tmp_path, [_r("CHEBI:2676", "amoxicillin")], entity="drugs")
+    d = _one(m, "amoxicillin sodium")
+    assert d.object_id == "CHEBI:2676"
+    assert d.subject_preprocessing == ["salt_ester_strip"]
+    assert d.predicate_id == "skos:closeMatch"
+
+
+def test_disease_qualifier_strip_broadmatch(tmp_path):
+    m = _matcher(tmp_path, [_r("MONDO:7", "plaque psoriasis")])
+    d = _one(m, "moderate to severe plaque psoriasis")
+    assert d.object_id == "MONDO:7"
+    assert d.subject_preprocessing == ["qualifier_strip"]
+    assert d.predicate_id == "skos:broadMatch"
+
+
+def test_combination_split(tmp_path):
+    m = _matcher(tmp_path, [_r("CHEBI:2676", "amoxicillin"), _r("CHEBI:3729", "clavulanic acid")],
+                 entity="drugs")
+    ds = m.ground("amoxicillin; clavulanic acid")
+    assert {d.object_id for d in ds} == {"CHEBI:2676", "CHEBI:3729"}
+    assert all("combination_split" in d.subject_preprocessing for d in ds)
+
+
+def test_formulation_strip_single(tmp_path):
+    m = _matcher(tmp_path, [_r("CHEBI:5855", "ibuprofen")], entity="drugs")
+    d = _one(m, "Ibuprofen 200mg Tablet")
+    assert d.object_id == "CHEBI:5855"
+    assert d.subject_preprocessing == ["formulation_strip"]
+    assert d.predicate_id == "skos:closeMatch"
+
+
+def test_formulation_strip_composes_with_salt(tmp_path):
+    # strip dose/form -> 'diclofenac sodium' -> salt-strip -> 'diclofenac'
+    m = _matcher(tmp_path, [_r("CHEBI:47381", "diclofenac")], entity="drugs")
+    d = _one(m, "Diclofenac Sodium 1gm Gel")
+    assert d.object_id == "CHEBI:47381"
+    assert d.subject_preprocessing == ["formulation_strip", "salt_ester_strip"]
+    assert d.predicate_id == "skos:closeMatch"
+
+
+def test_formulation_strip_then_combination_split(tmp_path):
+    # residue is itself a combination: strip -> 'netupitant + palonosetron' -> split
+    m = _matcher(tmp_path, [_r("CHEBI:85155", "netupitant"), _r("CHEBI:85161", "palonosetron")],
+                 entity="drugs")
+    ds = m.ground("Netupitant 300 mg + Palonosetron 0.5 mg Capsule")
+    assert {d.object_id for d in ds} == {"CHEBI:85155", "CHEBI:85161"}
+    for d in ds:
+        assert d.subject_preprocessing == ["formulation_strip", "combination_split"]
+        assert d.predicate_id == "skos:closeMatch"
+
+
+def test_formulation_strip_confidence_capped(tmp_path):
+    m = _matcher(tmp_path, [_r("CHEBI:5855", "ibuprofen")], entity="drugs")
+    d = _one(m, "Ibuprofen 200mg Tablet")
+    assert d.confidence <= 0.80  # capped at formulation_strip certainty
+
+
+def test_drug_inn_suffix_in_to_ine(tmp_path):
+    m = _matcher(tmp_path, [_r("CHEBI:9137", "sibutramine")], entity="drugs")
+    d = _one(m, "Sibutramin")
+    assert d.object_id == "CHEBI:9137"
+    assert d.subject_preprocessing == ["inn_suffix_in_to_ine"]
+    assert d.predicate_id == "skos:closeMatch"
+
+
+def test_drug_inn_z_to_s(tmp_path):
+    m = _matcher(tmp_path, [_r("CHEBI:135762", "methylprednisolone")], entity="drugs")
+    d = _one(m, "Methylprednizolone")
+    assert d.object_id == "CHEBI:135762" and d.subject_preprocessing == ["inn_z_to_s"]
+
+
+def test_translation_dictionary(tmp_path):
+    m = _matcher(tmp_path, [_r("CHEBI:1", "benzoyl peroxide")], entity="drugs")
+    m.translation = {"benzoid peroxide": "benzoyl peroxide"}
+    d = _one(m, "Benzoid peroxide")
+    assert d.object_id == "CHEBI:1" and d.subject_preprocessing == ["translation_dictionary"]
+
+
+def test_fuzzy_edit1_unique(tmp_path):
+    m = _matcher(tmp_path, [_r("CHEBI:66903", "vismodegib")], entity="drugs")
+    d = _one(m, "Vismodegi")  # one deletion away, unique
+    assert d.object_id == "CHEBI:66903"
+    assert d.subject_preprocessing == ["fuzzy_edit1_unique"]
+    assert d.predicate_id == "skos:closeMatch"
+
+
+def test_cyrillic_transliteration_composes(tmp_path):
+    # Cyrillic -> transliterate -> exact-match the Latin form
+    m = _matcher(tmp_path, [_r("CHEBI:66876", "avanafil")], entity="drugs")
+    d = _one(m, "Аванафил")
+    assert d.object_id == "CHEBI:66876"
+    assert "cyrillic_transliteration" in d.subject_preprocessing
+    assert d.predicate_id == "skos:closeMatch"
+
+
+def test_cyrillic_transliteration_composes_with_fuzzy(tmp_path):
+    # Абакавир -> abakavir -> (fuzzy edit-1) -> abacavir
+    m = _matcher(tmp_path, [_r("CHEBI:421707", "abacavir")], entity="drugs")
+    d = _one(m, "Абакавир")
+    assert d.object_id == "CHEBI:421707"
+    assert d.subject_preprocessing == ["cyrillic_transliteration", "fuzzy_edit1_unique"]
+
+
+def test_fuzzy_edit1_ambiguous_is_skipped(tmp_path):
+    # "xat" is edit-1 from both "cat" and "bat" -> ambiguous -> unresolved
+    m = _matcher(tmp_path, [_r("CHEBI:1", "cat"), _r("CHEBI:2", "bat")], entity="drugs")
+    assert _one(m, "xat").object_id is None

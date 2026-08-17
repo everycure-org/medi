@@ -1,0 +1,173 @@
+id: https://w3id.org/monarch-initiative/medic/disease
+name: disease
+title: MeDIC Disease Entity Schema
+description: >-
+  Disease entity schema for MeDIC. Modeled after the existing matrix-disease-list.tsv
+  product. Uses Mondo ontology identifiers.
+
+imports:
+  - linkml:types
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  medic: https://w3id.org/monarch-initiative/medic/
+  MONDO: http://purl.obolibrary.org/obo/MONDO_
+
+default_prefix: medic
+
+classes:
+  Disease:
+    description: >-
+      A disease entity from the Mondo disease ontology with filter flags
+      used for matrix construction.
+    attributes:
+      category_class:
+        range: string
+        required: true
+        description: Mondo CURIE (e.g., MONDO:0017545)
+      label:
+        range: string
+        required: true
+        description: Disease name
+      definition:
+        range: string
+        description: Text definition of the disease
+      synonyms:
+        range: string
+        multivalued: true
+        description: Alternative names for the disease
+      subsets:
+        range: string
+        multivalued: true
+        description: >-
+          Subset tags (e.g., mondo:harrisons_view_hereditary_disease,
+          mondo:gard_rare, mondo:nord_rare)
+      crossreferences:
+        range: string
+        multivalued: true
+        description: >-
+          Cross-references to external databases
+          (MEDGEN, UMLS, GARD, Orphanet, ICD, etc.)
+
+      # Filter flags used for matrix construction
+      f_matrix_manually_excluded:
+        range: boolean
+        description: Manually excluded from matrix
+      f_matrix_manually_included:
+        range: boolean
+        description: Manually included in matrix
+      f_clingen:
+        range: boolean
+        description: Present in ClinGen
+      f_grouping_subset:
+        range: boolean
+        description: Is a grouping-level term in Mondo
+      f_orphanet_subtype:
+        range: boolean
+        description: Is an Orphanet subtype
+      f_omimps:
+        range: boolean
+        description: Has OMIM phenotypic series mapping
+      f_leaf:
+        range: boolean
+        description: Is a leaf node in the Mondo hierarchy
+      f_gard_rare:
+        range: boolean
+        description: Listed as rare in GARD
+      f_nord_rare:
+        range: boolean
+        description: Listed as rare in NORD
+      f_ordo_subtype:
+        range: boolean
+        description: Is an ORDO subtype
+      f_mondo_top_grouping_hereditary_disease:
+        range: boolean
+        description: Under Mondo top grouping for hereditary disease
+      f_mondo_top_grouping_chromosomal_disorder:
+        range: boolean
+        description: Under Mondo top grouping for chromosomal disorder
+      f_mondo_top_grouping_disorder_of_development:
+        range: boolean
+        description: Under Mondo top grouping for disorder of development
+      f_mondo_top_grouping_musculoskeletal:
+        range: boolean
+        description: Under Mondo top grouping for musculoskeletal disorder
+      f_has_phenopackets:
+        range: boolean
+        description: Has associated phenopackets
+      f_has_phenotype_annotations:
+        range: boolean
+        description: Has HPO phenotype annotations
+      f_has_gene_associations:
+        range: boolean
+        description: Has known gene associations
+      f_is_rare:
+        range: boolean
+        description: Considered a rare disease (union of GARD, NORD, Orphanet)
+      f_has_treatment:
+        range: boolean
+        description: Has known treatments
+      f_is_cancer:
+        range: boolean
+        description: Is a cancer/neoplasm
+      f_is_infectious:
+        range: boolean
+        description: Is an infectious disease
+      f_is_metabolic:
+        range: boolean
+        description: Is a metabolic disease
+      f_is_autoimmune:
+        range: boolean
+        description: Is an autoimmune disease
+      f_is_neurological:
+        range: boolean
+        description: Is a neurological disease
+      f_is_cardiovascular:
+        range: boolean
+        description: Is a cardiovascular disease
+      f_in_scope:
+        range: boolean
+        description: >-
+          Final filter flag: whether this disease is in scope for the matrix.
+          Computed from the other flags.
+
+      # Boolean flags from HuggingFace dataset (everycure/disease-list)
+      is_clingen:
+        range: boolean
+        description: Present in ClinGen (HuggingFace dataset flag)
+      is_cancer_or_benign_tumor:
+        range: boolean
+        description: Is a cancer or benign tumor (HuggingFace dataset flag)
+      is_rare:
+        range: boolean
+        description: Is a rare disease (HuggingFace dataset flag)
+      is_gard_rare:
+        range: boolean
+        description: Listed as rare in GARD (HuggingFace dataset flag)
+      is_nord_rare:
+        range: boolean
+        description: Listed as rare in NORD (HuggingFace dataset flag)
+      is_ordo_subtype:
+        range: boolean
+        description: Is an ORDO subtype (HuggingFace dataset flag)
+      is_hereditary_disease:
+        range: boolean
+        description: Is a hereditary disease (HuggingFace dataset flag)
+      is_chromosomal_disorder:
+        range: boolean
+        description: Is a chromosomal disorder (HuggingFace dataset flag)
+      is_disorder_of_development:
+        range: boolean
+        description: Is a disorder of development (HuggingFace dataset flag)
+      is_musculoskeletal:
+        range: boolean
+        description: Is a musculoskeletal disorder (HuggingFace dataset flag)
+
+  DiseaseList:
+    description: A collection of Disease entities
+    attributes:
+      diseases:
+        range: Disease
+        multivalued: true
+        inlined_as_list: true
+        description: The list of diseases

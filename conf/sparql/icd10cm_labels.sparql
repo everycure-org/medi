@@ -1,0 +1,6 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?c ?type ?val WHERE {
+  { ?c skos:prefLabel ?val . BIND("label" AS ?type) }
+  UNION
+  { ?c skos:altLabel ?val . BIND("syn" AS ?type) }
+}

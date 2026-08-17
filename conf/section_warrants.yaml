@@ -1,0 +1,55 @@
+# Section warrants — which source sections assert which relation *by construction*.
+#
+# Some sources carry no cue phrase in the extracted text: an EMA "therapeutic indication"
+# cell or a PMDA indication column is often just a bare disease list. The relation is still
+# established — not by wording, but by **where the text came from**. That is structural
+# provenance, and this file is where it is curated rather than guessed.
+#
+# When no phrase-level trigger is found in the text, `build_assertion` consults this table:
+# if the record's source (and section, when known) warrants the relation being asserted, the
+# assertion records `trigger_cue: section_header` plus the `section_warrant` that licensed it.
+# If the table does NOT warrant it, the cue stays `none_found` — an honest gap.
+#
+# A warrant with a `section_code` is checked before the bare-`source` warrant, and only licenses
+# the relation it names — an indication warrant must never license a contraindication.
+# Add a source only when it is genuinely single-purpose.
+#
+# Schema: `SectionWarrantSet` in src/medic/schema/provenance.yaml.
+# Validate: uv run linkml-validate --schema src/medic/schema/provenance.yaml \
+#             --target-class SectionWarrantSet conf/section_warrants.yaml
+
+warrants:
+
+# FDA SPL sections are LOINC-coded and single-purpose by definition.
+- source: DAILYMED
+  section_code: LOINC:34067-9
+  relationship: INDICATION
+  description: FDA SPL "Indications & Usage" section — contains approved indications only.
+
+- source: DAILYMED
+  section_code: LOINC:34070-3
+  relationship: CONTRAINDICATION
+  description: FDA SPL "Contraindications" section — contains contraindications only.
+
+# EMA: MeDIC reads the "therapeutic indication" cell of the EMA medicines spreadsheet.
+# That column holds indications only; EMA contraindications would require parsing the
+# EPAR SmPC PDF (§4.3), which MeDIC does not currently ingest (SPEC task ledger 6).
+- source: EMA
+  relationship: INDICATION
+  description: EMA medicines spreadsheet "therapeutic indication" cell — indications only.
+
+# PMDA: the approvals table's indication column. Contraindications live in the Japanese
+# package insert, which is not ingested.
+- source: PMDA
+  relationship: INDICATION
+  description: PMDA approvals table indication column — indications only.
+
+# CDSCO (India): the "Indication" column of the year-batch approval PDFs. Both the directory
+# name (INDIA) and the authority name (CDSCO) appear as the record's source, so both are listed.
+- source: INDIA
+  relationship: INDICATION
+  description: CDSCO approved-new-drugs "Indication" column — indications only.
+
+- source: CDSCO
+  relationship: INDICATION
+  description: CDSCO approved-new-drugs "Indication" column — indications only.

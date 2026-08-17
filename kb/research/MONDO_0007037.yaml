@@ -1,0 +1,26 @@
+associations:
+- curation_date: '2026-04-12T09:12:59.593407'
+  curation_status: DRAFT
+  curator: medic-research-skill
+  deep_research_used: true
+  disease_id: MONDO:0007037
+  disease_label: achondroplasia
+  drug_id: UNII:7SE5582Q2P
+  drug_label: Vosoritide
+  evidence:
+  - confidence: MEDIUM
+    curator:
+      curator_id: https://github.com/monarch-initiative/medic/blob/f60076dc17a9c62e51e4acfaf83f6566b7b0b1cb/.claude/skills/medic-research-curation/SKILL.md
+      curator_type: AI_AGENT
+      name: MEDIC research skill extracting evidence from Perplexity deep research
+    evidence_source: HUMAN_CLINICAL
+    explanation: Phase 2 trial showed sustained increase in annualized growth velocity for up to 42 months
+    max_research_phase: PHASE_II
+    original_disease_label: achondroplasia
+    original_drug_label: Vosoritide
+    reference: PMID:31269546
+    reference_title: C-Type Natriuretic Peptide Analogue Therapy in Children with Achondroplasia.
+    snippet: In a multinational, phase 2, dose-finding study and extension study, we evaluated the safety
+      and side-effect profile of vosoritide in children (5 to 14 years of age) with achondroplasia.
+    source_type: LITERATURE
+  notes: FDA/EMA/PMDA approved CNP analog for achondroplasia in children

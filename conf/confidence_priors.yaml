@@ -1,0 +1,126 @@
+# Calibrated fallback confidences for steps that produce no measured score (design spec D7).
+#
+# Every step must declare a confidence and a basis (invariant I-11). A value from this file is
+# an ASSUMPTION, and the step using it is stamped `confidence_basis: PRIOR` so the assumption is
+# visible in the product. Before this existed, an unmeasured step simply omitted `confidence`
+# and contributed nothing to the aggregate — an unreviewed machine translation cost a record
+# exactly zero.
+#
+# These are DATA-QUALITY numbers — how sure we are the linking is right — not evidence strength
+# about the claim itself. See docs/sepio-sieve-alignment.md §3.
+#
+# Schema: `ConfidencePriorSet` in src/medic/schema/provenance.yaml.
+# Validate: uv run linkml-validate --schema src/medic/schema/provenance.yaml \
+#             --target-class ConfidencePriorSet conf/confidence_priors.yaml
+#
+# ---------------------------------------------------------------------------------------------
+# HOW THIS FILE GROWS
+#
+# A prior is scoped to the exact producer that ran: either a versioned model
+# (agent_name + agent_version) or a tool (tool + tool_version) — exactly one, never both.
+#
+# On the FIRST use of a producer with no prior, one is MINTED from its family default below,
+# appended here with `auto_generated: true`, and used. The build does not break, and the new
+# record shows up in the diff for a human to calibrate or override. This file is a build output
+# in the same sense as mappings/*.sssom.tsv: written by the pipeline, git-tracked, hand-editable.
+#
+# An existing record is NEVER overwritten, so a human edit always wins. When you calibrate one,
+# set `calibrated: true` and `auto_generated: false` and say what you measured it against.
+#
+# Family values are deliberately VERSION-INDEPENDENT — a Haiku is a Haiku. A producer matching
+# no family still raises, because inventing a number for an unknown tool is worse than failing.
+# ---------------------------------------------------------------------------------------------
+
+defaults:
+
+- family: DEEPL
+  applies_to: TOOL
+  name_matches: babelon
+  value: 0.95
+  rationale: >-
+    Machine translation through babelon (DeepL). DeepL publishes no engine version and no
+    per-string score, so the value is fixed at the family level across babelon releases.
+
+- family: HAIKU
+  applies_to: AGENT
+  name_matches: haiku
+  value: 0.85
+  rationale: Smallest model tier; lowest default extraction reliability.
+
+- family: SONNET
+  applies_to: AGENT
+  name_matches: sonnet
+  value: 0.90
+  rationale: Mid model tier.
+
+- family: OPUS
+  applies_to: AGENT
+  name_matches: opus
+  value: 0.95
+  rationale: Large model tier.
+
+- family: FABLE
+  applies_to: AGENT
+  name_matches: fable
+  value: 0.97
+  rationale: Highest model tier.
+
+priors:
+
+- category: EXTRACTION
+  method: LLM
+  agent_name: anthropic/claude-haiku-4-5-20251001
+  agent_version: claude-haiku-4-5-20251001
+  value: 0.85
+  calibrated: false
+  auto_generated: false
+  family: HAIKU
+  rationale: >-
+    HAIKU family default, for an LLM extraction that returned no self-reported score. Not
+    measured; pending a comparison against a manually-reviewed extraction sample (spec R4).
+
+- category: TRANSLATION
+  method: API
+  tool: babelon
+  tool_version: '0.3.6'
+  value: 0.95
+  calibrated: false
+  auto_generated: false
+  family: DEEPL
+  rationale: >-
+    DEEPL family default, for unreviewed machine translation. Pending calibration against
+    reviewed translations (spec R4).
+
+- category: TRANSLATION
+  method: HUMAN
+  tool: babelon
+  tool_version: '0.3.6'
+  value: 1.0
+  calibrated: false
+  auto_generated: false
+  rationale: >-
+    An unconfirmed human translation carrying no explicit score. Not the DEEPL family — a human
+    translated it; babelon was only the transport. A CONFIRMED human translation never reaches
+    this table, being stamped DETERMINISTIC instead.
+
+- category: GROUNDING
+  method: LEXICAL_MATCH
+  tool: medic-lexical-grounder
+  tool_version: '1'
+  value: 0.75
+  calibrated: false
+  auto_generated: false
+  rationale: >-
+    A grounding store row that predates confidence recording. Deliberately conservative: the
+    match succeeded, but nothing recorded how well.
+
+- category: GROUNDING
+  method: SOURCE_ASSERTED
+  tool: medic-lexical-grounder
+  tool_version: '1'
+  value: 0.70
+  calibrated: false
+  auto_generated: false
+  rationale: >-
+    The source supplied a pre-grounded identifier and no match was performed, so there is
+    nothing to score. Lower than an unscored lexical match because nothing was checked at all.
