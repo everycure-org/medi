@@ -42,6 +42,15 @@ class GroundingDecision:
     predicate_id: str = ""
     confidence: float | None = None
     applied_rules: tuple[str, ...] = field(default_factory=tuple)
+    #: The string the index actually matched. Dropping this column is what made `quality()`
+    #: unable to tell `lexical_exact` from `lexical_exact_normalized` — see `quality()`.
+    match_string: str = ""
+    mapping_justification: str = ""
+
+    @property
+    def subject_preprocessing(self) -> tuple[str, ...]:
+        """Alias so `matcher.quality_of` can read this view's decision unchanged."""
+        return self.applied_rules
 
     def flags(self) -> list[str]:
         """GroundingFlags implied by this decision's rules and predicate."""
@@ -55,19 +64,23 @@ class GroundingDecision:
         return out
 
     def quality(self) -> str:
-        """`GroundingQualityEnum` value implied by the rules that fired.
+        """`GroundingQualityEnum` value for this decision.
 
-        Derived, not guessed: no rules is an exact hit; base normalization alone is
-        non-semantic; anything else changed the string semantically (surgery).
+        Delegates to `matcher.quality_of`, the same function the grounder itself uses, so a
+        decision read back from the store is classified exactly as it was when made.
+
+        It used to re-derive the value from `applied_rules` alone, because this view dropped
+        the store's `match_string` column. That cannot distinguish `lexical_exact` ("the
+        string was unchanged") from `lexical_exact_normalized` ("it matched only after
+        normalization") — the distinction *is* a comparison of `match_string` against the
+        trimmed subject. With no rules recorded it answered `lexical_exact`, so 10,656 drug
+        steps in the on-label products asserted no transform had happened when one had:
+        `VORICONAZOLE` matched `voriconazole` and published as "string unchanged". The
+        on-label products reported zero `lexical_exact_normalized` for drugs while
+        `drug_list.yaml`, which goes through `quality_of`, reported 2,200.
         """
-        rules = set(self.applied_rules)
-        if "rxnorm_resolve" in rules:
-            return "rxnorm_proposed"
-        if not rules:
-            return "lexical_exact"
-        if rules <= {"base_normalization"}:
-            return "lexical_exact_normalized"
-        return "lexical_exact_surgery"
+        from medic.grounding.lexical.matcher import quality_of
+        return quality_of(self)
 
     def as_grounding(self, *, original_string: str = "") -> dict:
         """Render as the legacy ``grounding`` object shape ``build_mention`` consumes."""
@@ -113,6 +126,11 @@ class GroundingStoreView:
                 predicate_id=getattr(d, "predicate_id", "") or "",
                 confidence=conf,
                 applied_rules=tuple(d.subject_preprocessing or ()),
+                # Both are needed by `quality_of`: without `mapping_justification` every
+                # decision reads as `curated`, and without `match_string` an exact hit cannot
+                # be told from one that only matched after normalization.
+                match_string=getattr(d, "match_string", "") or "",
+                mapping_justification=getattr(d, "mapping_justification", "") or "",
             )
             if dec.subject_id:
                 self._by_subject.setdefault(dec.subject_id, dec)
