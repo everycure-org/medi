@@ -36,7 +36,7 @@ from medic.grounding.lexical.preprocess import (
 from medic.grounding.store import (
     LEXICAL,
     NO_TERM,
-    RXNORM,
+    RXNORM_RULE,
     GroundingDecision,
     LiteralMappingStore,
 )
@@ -52,9 +52,11 @@ _FIELD_CONF = {"label": 1.0, "exactSynonym": 0.95, "relatedSynonym": 0.85}
 
 
 def quality_of(d: GroundingDecision) -> str:
-    if d.predicate_id == NO_TERM:
+    if d.predicate_id == NO_TERM or d.object_id == NO_TERM:
         return "unresolved"
-    if d.mapping_justification == RXNORM:
+    # Keyed on the preprocessing rule, not the justification: the justification has to be a
+    # legal `semapv:` term (SSSOM conformance) and can no longer carry a MeDIC marker.
+    if RXNORM_RULE in (d.subject_preprocessing or ()):
         return "rxnorm_proposed"
     if d.mapping_justification != LEXICAL:
         return "curated"

@@ -12,8 +12,8 @@ RxNav is a *network* call, so it must NOT live inside the offline matcher. This
 module runs as a separate, **cached** enrichment (``cache/enrichment/rxnorm_resolve.json``,
 resumable) and writes the recovered mappings as *proposed* rows into the grounding
 SSSOM store (``mappings/drug_grounding.sssom.tsv``). Those proposals carry a distinct
-``mapping_justification`` (``RXNORM``) so a curator can review them; offline grounding
-runs then read them deterministically from the store.
+``subject_preprocessing`` rule (``rxnorm_resolve``) so a curator can review them; offline
+grounding runs then read them deterministically from the store.
 
 False-positive guard
 --------------------
@@ -35,7 +35,14 @@ from pathlib import Path
 
 from medic.curie_utils import get_prefix
 from medic.enrichment.cache import EnrichmentCache
-from medic.grounding.store import RXNORM, GroundingDecision, LiteralMappingStore
+from medic.grounding.store import (
+    NO_TERM,
+    RXNORM_RULE,
+    UNSPECIFIED,
+    GroundingDecision,
+    LiteralMappingStore,
+    is_locked,
+)
 from medic.ingest.common import should_skip_expensive_calls
 
 logger = logging.getLogger(__name__)
@@ -44,11 +51,12 @@ RXNAV_BASE = "https://rxnav.nlm.nih.gov/REST/"
 CACHE_PATH = Path("cache/enrichment/rxnorm_resolve.json")
 GROUNDING_STORE = "mappings/drug_grounding.sssom.tsv"
 
-# Distinct justification so curators can spot (and offline runs can read) RxNorm
-# proposals separately from lexical (auto) and manual (curated) rows. Defined in the
-# store so the matcher and store agree on the locked-justification set.
-RXNORM_JUSTIFICATION = RXNORM
-RXNORM_PREPROCESS = "rxnorm_resolve"
+# These rows are distinguished by their `subject_preprocessing` rule, not by a bespoke
+# `mapping_justification`. The justification slot is an SSSOM enum and only accepts `semapv:`
+# terms — writing the bare string `RXNORM` there made every one of these rows fail SSSOM
+# validation (460 errors). The rule was always present on the same rows, so nothing is lost.
+RXNORM_JUSTIFICATION = UNSPECIFIED
+RXNORM_PREPROCESS = RXNORM_RULE
 
 _NONWORD = re.compile(r"[^a-z0-9]+")
 
@@ -273,9 +281,9 @@ def collect_residue(store: LiteralMappingStore) -> list[str]:
     residue: list[str] = []
     seen: set[str] = set()
     for rows in store._rows.values():  # noqa: SLF001 (module-owned store)
-        if any(d.mapping_justification in {"semapv:ManualMappingCuration", RXNORM} for d in rows):
+        if any(is_locked(d) for d in rows):
             continue
-        if all(d.predicate_id == "sssom:NoTermFound" for d in rows):
+        if all(d.predicate_id == NO_TERM or d.object_id == NO_TERM for d in rows):
             subj = rows[0].subject_label
             if subj and subj not in seen:
                 seen.add(subj)

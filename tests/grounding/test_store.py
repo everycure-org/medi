@@ -39,14 +39,16 @@ def test_manual_row_preserved_over_auto(tmp_path):
 
 
 def test_rxnorm_proposal_preserved_over_auto_and_locked(tmp_path):
-    # An RxNorm proposal (justification RXNORM) is locked: it survives a later auto write
-    # and is reported by locked_rows so the matcher can short-circuit on it offline.
+    # An RxNorm proposal is locked: it survives a later auto write and is reported by
+    # locked_rows so the matcher can short-circuit on it offline. The lock is keyed on the
+    # `rxnorm_resolve` preprocessing rule; it used to be keyed on a bare `RXNORM`
+    # mapping_justification, which is not a legal semapv term and failed SSSOM validation.
     p = tmp_path / "drug_grounding.sssom.tsv"
     s = LiteralMappingStore(str(p), "drugs")
     s.load()
     prop = _auto("Ephedrine Sulphide 75mg", "CHEBI:15407")
     prop.entity_type = "drugs"
-    prop.mapping_justification = "RXNORM"
+    prop.mapping_justification = "RXNORM"  # legacy spelling; migrated on read
     prop.subject_preprocessing = ["rxnorm_resolve"]
     s.record_subject("Ephedrine Sulphide 75mg", [prop])
     s.save()
@@ -61,7 +63,10 @@ def test_rxnorm_proposal_preserved_over_auto_and_locked(tmp_path):
     s3.load()
     rows = s3.lookup("Ephedrine Sulphide 75mg")
     assert len(rows) == 1 and rows[0].object_id == "CHEBI:15407"
-    assert rows[0].mapping_justification == "RXNORM"
+    # The legacy `RXNORM` justification is migrated to a legal semapv term on read, and the
+    # marker that actually identifies the row lives in subject_preprocessing.
+    assert rows[0].mapping_justification == "semapv:UnspecifiedMatching"
+    assert "rxnorm_resolve" in rows[0].subject_preprocessing
     assert s3.locked_rows("Ephedrine Sulphide 75mg")  # matcher short-circuits on these
     assert not s3.manual_rows("Ephedrine Sulphide 75mg")  # but not classed as hand-curated
 

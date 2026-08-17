@@ -5,7 +5,8 @@ base-normalized subject literal; a literal may have several rows (combination dr
 one string to several ids). Rows tagged ``semapv:ManualMappingCuration`` are the
 authoritative cache: if a subject has any manual row, its whole row-set is preserved on
 regeneration and wins over auto (``semapv:LexicalMatching``) rows. Unresolved decisions
-are written too (``predicate_id: sssom:NoTermFound``) so the store is a complete audit.
+are written too — as ``object_id: sssom:NoTermFound`` against a real predicate — so the
+store is a complete audit that a standard SSSOM reader can still read.
 """
 
 from __future__ import annotations
@@ -29,8 +30,36 @@ TOOL = "medic-lexical-grounder"
 # still tell an auto-proposal from a hand-curated decision.
 RXNORM = "RXNORM"
 
-# Justifications whose row-sets survive regeneration and short-circuit the live matcher.
-LOCKED_JUSTIFICATIONS = frozenset({MANUAL, RXNORM})
+#: What an RxNorm proposal's ``mapping_justification`` is actually written as.
+#:
+#: It used to be the bare string ``RXNORM``, which is not a ``semapv:`` term and therefore not
+#: a legal ``mapping_justification`` — ``sssom.validate`` raised 460 errors on it, all
+#: "'RXNORM' does not match '^semapv:...'". The information was never lost: every one of these
+#: rows already carries ``rxnorm_resolve`` in ``subject_preprocessing``, which is where a
+#: MeDIC-specific marker belongs. An SSSOM enum slot is not the place to keep a local flag.
+UNSPECIFIED = "semapv:UnspecifiedMatching"
+
+#: ``subject_preprocessing`` entry that marks a row as an RxNorm resolver proposal.
+RXNORM_RULE = "rxnorm_resolve"
+
+#: The predicate written on an unresolved row. SSSOM expresses "we looked and found nothing"
+#: as ``object_id: sssom:NoTermFound`` against a real predicate — the predicate says what was
+#: sought, the object says it was not found. Writing ``NoTermFound`` into ``predicate_id`` with
+#: an empty ``object_id`` (what this store used to do) is malformed, and every SSSOM reader
+#: drops the row: ``parse_sssom_table`` took 21,186 rows of the drug store and returned 11,301.
+#: The 12,444 unresolved decisions are exactly the rows I-4 exists to expose to a curator.
+UNRESOLVED_PREDICATE = "skos:exactMatch"
+
+
+def is_locked(d: "GroundingDecision") -> bool:
+    """Does a curated/proposed source own this row?
+
+    Locked rows survive regeneration and short-circuit the live matcher. Keyed on the
+    preprocessing rule rather than the justification, because the justification now has to be
+    a legal ``semapv:`` term and can no longer carry a MeDIC-specific marker.
+    """
+    return (d.mapping_justification == MANUAL
+            or RXNORM_RULE in (d.subject_preprocessing or ()))
 
 COLUMNS = [
     "subject_type", "subject_label", "subject_id", "predicate_id",
@@ -114,13 +143,28 @@ class LiteralMappingStore:
         with open(self.path, newline="") as fh:
             reader = csv.DictReader((ln for ln in fh if not ln.startswith("#")), delimiter="\t")
             for r in reader:
+                object_id = r["object_id"] or None
+                predicate_id = r["predicate_id"]
+                # `sssom:NoTermFound` in `object_id` is the on-disk spelling of "unresolved".
+                # In memory that stays `object_id=None` + `predicate_id=NO_TERM`, so every
+                # consumer of a decision is unchanged by the file-format fix. The second arm
+                # reads stores written before it.
+                if object_id == NO_TERM or predicate_id == NO_TERM:
+                    object_id, predicate_id = None, NO_TERM
+                justification = r["mapping_justification"]
+                preprocessing = [s for s in r["subject_preprocessing"].split("|") if s]
+                # Back-compat: rows written when the RxNorm marker lived in the justification.
+                if justification == RXNORM:
+                    justification = UNSPECIFIED
+                    if RXNORM_RULE not in preprocessing:
+                        preprocessing.append(RXNORM_RULE)
                 d = GroundingDecision(
                     subject_label=r["subject_label"], entity_type=self.entity_type,
-                    predicate_id=r["predicate_id"], object_id=r["object_id"] or None,
+                    predicate_id=predicate_id, object_id=object_id,
                     object_label=r["object_label"] or None,
                     object_match_field=r["object_match_field"] or None,
-                    mapping_justification=r["mapping_justification"],
-                    subject_preprocessing=[s for s in r["subject_preprocessing"].split("|") if s],
+                    mapping_justification=justification,
+                    subject_preprocessing=preprocessing,
                     match_string=r["match_string"] or None,
                     confidence=float(r["confidence"]) if r["confidence"] else None,
                     subject_id=r.get("subject_id") or None,
@@ -144,10 +188,7 @@ class LiteralMappingStore:
         The live matcher short-circuits on these so offline runs read them deterministically
         instead of re-grounding; ``record_subject`` refuses to overwrite them.
         """
-        return [
-            d for d in self.lookup(subject_label)
-            if d.mapping_justification in LOCKED_JUSTIFICATIONS
-        ]
+        return [d for d in self.lookup(subject_label) if is_locked(d)]
 
     def record_subject(
         self, subject_label: str, decisions: list[GroundingDecision],
@@ -171,7 +212,7 @@ class LiteralMappingStore:
         """
         k = _key(subject_label)
         existing = self._rows.get(k)
-        if existing and any(d.mapping_justification in LOCKED_JUSTIFICATIONS for d in existing):
+        if existing and any(is_locked(d) for d in existing):
             return  # curator / proposer owns this subject
         inherited = next((d.subject_id for d in existing or [] if d.subject_id), "")
         for d in decisions:
@@ -192,10 +233,13 @@ class LiteralMappingStore:
             writer.writeheader()
             for k in sorted(self._rows):
                 for d in sorted(self._rows[k], key=lambda x: x.object_id or ""):
+                    unresolved = d.object_id is None or d.predicate_id == NO_TERM
                     writer.writerow({
                         "subject_type": "rdfs literal", "subject_label": d.subject_label,
-                        "subject_id": d.subject_id or "", "predicate_id": d.predicate_id,
-                        "object_id": d.object_id or "", "object_label": d.object_label or "",
+                        "subject_id": d.subject_id or "",
+                        "predicate_id": UNRESOLVED_PREDICATE if unresolved else d.predicate_id,
+                        "object_id": NO_TERM if unresolved else (d.object_id or ""),
+                        "object_label": d.object_label or "",
                         "object_match_field": d.object_match_field or "",
                         "mapping_justification": d.mapping_justification,
                         "subject_preprocessing": "|".join(d.subject_preprocessing),
