@@ -70,8 +70,8 @@ requires that modified content say so and not be presented as originating from t
 | [EMA](docs/sources/ema.md) | EU | © EMA. Reproduction permitted, commercial and non-commercial, **provided EMA is acknowledged as the source in each copy**. EU database right also applies. | **Required** | Yes, with attribution |
 | [PMDA](docs/sources/pmda.md) | Japan | Japan [Public Data License 1.0](https://www.pmda.go.jp/english/0013.html). Source citation required; edited content must be marked as edited. | **Required** | Yes, with attribution + edit notice |
 | [India CDSCO](docs/sources/india.md) | India | No licence declared on cdsco.gov.in. Indian government open data is normally GODL-India (attribution). **Unverified — confirm before commercial redistribution.** | Assume required | Derived only, cautiously |
-| [Russia GRLS](docs/sources/russia.md) | Russia | No open licence. State register, bulk export obtained out-of-band. | n/a | Derived records only — **never the source archive** |
-| [China CDE/NMPA](docs/sources/china.md) | China | No open licence. Approvals table scraped out-of-band. | n/a | Derived records only — **never the source archive** |
+| [Russia GRLS](docs/sources/russia.md) | Russia | No open licence. State register, bulk export obtained out-of-band. | n/a | Derived records only — **never the source archive**. Published derived records include the verbatim Cyrillic name and registration number, in `kb/`, `mappings/`, and the KGX export; see the Russia/China decision below. |
+| [China CDE/NMPA](docs/sources/china.md) | China | No open licence. Approvals table scraped out-of-band. | n/a | Derived records only — **never the source archive**. Published derived records include the verbatim CJK name, in `kb/`, `mappings/`, and the KGX export; see the Russia/China decision below. |
 | [EveryCure drug-list](docs/sources/everycure.md) | — | CC BY 4.0 (HuggingFace `everycure/drug-list`) | **Required** | Yes, with attribution |
 | [EveryCure disease-list](docs/sources/disease_list.md) | — | CC BY 4.0 (HuggingFace `everycure/disease-list`) | **Required** | Yes, with attribution |
 | [PVLens](docs/sources/pvlens.md) | USA | Software is GPL-3.0; MeDIC consumes its CSV *output*, not its code, so no copyleft attaches. Output carries MedDRA terms. | — | Not by default (see MedDRA) |
@@ -175,9 +175,48 @@ The same excerpts appear in `products/indication_list.yaml` (~4.9 MB) and, trunc
   a shipped disease label.
 - **`exports/russia.csv` and `exports/india.csv` ship, deliberately.** Both are now explicit
   manifest entries with the reasoning recorded on them, rather than a side effect of a glob.
-  `russia.csv` holds 5,885 rows of *DeepL-translated English* drug name + ChEBI id + approval date;
-  the Cyrillic originals and the GRLS registration numbers stay in `kb/` and are not exported.
+  `russia.csv` holds 5,885 rows of *DeepL-translated English* drug name + ChEBI id + approval date.
   Revisit `india.csv` before commercial redistribution (see above).
+
+  This bullet used to end: *"the Cyrillic originals and the GRLS registration numbers stay in
+  `kb/` and are not exported."* **Both halves of that were false**, and it is corrected here
+  rather than quietly deleted because a sign-off was taken against it (2026-08-17):
+
+  - *"stay in `kb/`"* implied containment. `kb/` **is** the public repository:
+    `kb/drugs/russia/russia.yaml` (7.5 MB, 5,885 records) and `kb/drugs/china/china.yaml`
+    (1.6 MB, 1,521 records) are tracked and published, carrying the verbatim originals and
+    ~29k registration numbers.
+  - *"are not exported"* is true of `russia.csv` and false of the KGX export, which carries
+    GRLS registration numbers in `medic_application_numbers` on 1,540 nodes and verbatim
+    Cyrillic/CJK strings in `medic_original_literal` and `synonym` on 758.
+
+  There are three copies of this content — `kb/`, `mappings/drug_translation.babelon.tsv`
+  (7,212 verbatim strings), and the KGX export — and they stand or fall together. Removing one
+  while the others remain publishes the same strings *and* breaks reproducibility, which is
+  strictly worse than either coherent option.
+
+- **Russia and China derived records are published, knowingly** (decision 2026-08-17, pending
+  Monarch leadership sign-off — see `analysis/licensing-risk-2026-08-16.md` D-5).
+
+  What ships is per-record *facts* — that a drug with a given INN is registered in that
+  jurisdiction, under a registration number, on a date — paired with MeDIC's own translation
+  and grounding. That is a derived record, not a reproduction of the register's structure,
+  selection or presentation. The verbatim source strings are retained deliberately: invariants
+  I-7 and I-8 make the source string the anchor of the whole transformation chain, and
+  stripping them would make this release's central traceability claim untrue for two of its
+  sources.
+
+  The residual exposure is **bulk, not any individual string**: 5,885 records is substantially
+  the whole GRLS export, which is where a database-right or unfair-extraction argument would
+  live if one exists. Neither GRLS nor CDE grants an open licence, and neither is in a
+  jurisdiction with an EU-style sui generis database right, but this has not been assessed by
+  anyone qualified to read those terms. It is recorded as an accepted risk rather than a
+  cleared one.
+
+  Unchanged and not up for revision: **the source archives themselves are never redistributed**
+  (`sources/manual-sources.zip` was removed for exactly this reason). The line is derived
+  records yes, source archive no — and this bullet is what applying that line to `kb/` looks
+  like when written down.
 - ~~**The SSSOM headers overstate the position.**~~ RESOLVED. Both the export
   (`exports/medic_drug_mappings.sssom.tsv`) and the in-repo decision stores
   (`mappings/*_grounding.sssom.tsv`) now declare CC BY 4.0 with a `#comment:` recording that

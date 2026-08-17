@@ -249,3 +249,4 @@ data/raw/
 # Manual sources (China CDE + Russia GRLS) are not redistributable — see LICENSING.md.
 # The archive is hosted out-of-band and downloaded into background/; it must never be committed.
 sources/manual-sources.zip
+analysis/licensing-risk-2026-08-16.md
