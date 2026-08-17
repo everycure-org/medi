@@ -17,6 +17,7 @@ USA-jurisdiction only.
 import argparse
 import hashlib
 import logging
+import os
 import re
 import xml.etree.ElementTree as ET
 import zipfile
@@ -246,6 +247,36 @@ def _text_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
 
 
+# A cache miss under MEDIC_SKIP_EXPENSIVE_CALLS used to return [] silently, so the
+# "cheap" rebuild path *dropped rows* instead of failing — a build that looks like a
+# success and quietly ships fewer indications. Count them and fail at the end of the
+# ingest with the full tally, rather than raising on the first (same reasoning as
+# `_report_failures` in on_label_merge: the count is the signal).
+_skipped_uncached: dict[str, int] = {}
+
+
+def _note_skipped_uncached(kind: str) -> None:
+    _skipped_uncached[kind] = _skipped_uncached.get(kind, 0) + 1
+
+
+def _raise_if_rows_were_silently_dropped() -> None:
+    if not _skipped_uncached:
+        return
+    if os.environ.get("MEDIC_ALLOW_UNCACHED_DROPS", "").strip() in ("1", "true", "yes"):
+        logger.warning(
+            "MEDIC_ALLOW_UNCACHED_DROPS set: %s extraction(s) dropped uncached",
+            _skipped_uncached,
+        )
+        return
+    detail = ", ".join(f"{n} {kind}" for kind, n in sorted(_skipped_uncached.items()))
+    raise RuntimeError(
+        f"MEDIC_SKIP_EXPENSIVE_CALLS is set and {detail} extraction(s) were not in the "
+        "committed cache, so those rows would be silently dropped. Either run without "
+        "MEDIC_SKIP_EXPENSIVE_CALLS to populate the cache (and commit it), or accept a "
+        "partial build explicitly with MEDIC_ALLOW_UNCACHED_DROPS=1."
+    )
+
+
 # Real disease names rarely exceed 200 chars; anything longer is almost
 # certainly LLM prose (refusal explanation, hedge, instruction echo) that
 # leaked past the "None" sentinel.
@@ -312,6 +343,7 @@ def extract_diseases_from_text(indication_text: str) -> list[str]:
         return _screen_negated_indications(cached.get("diseases", []), indication_text)
 
     if should_skip_expensive_calls():
+        _note_skipped_uncached("indication")
         return []
 
     from medic.llm import llm_call
@@ -360,6 +392,7 @@ def extract_contraindicated_diseases_from_text(contraindication_text: str) -> li
         return cached.get("diseases", [])
 
     if should_skip_expensive_calls():
+        _note_skipped_uncached("contraindication")
         return []
 
     from medic.llm import llm_call
@@ -794,6 +827,11 @@ def main():
         _contra_disease_cache.flush()
     if _allergen_cache is not None:
         _allergen_cache.flush()
+
+    # Fail loudly if the "cheap" path dropped extractions rather than shipping a
+    # quietly under-populated build. Runs after the flushes so whatever work *was*
+    # done is still persisted.
+    _raise_if_rows_were_silently_dropped()
     try:
         from medic.ingest.dailymed.setid_lookup import (
             flush_cache as flush_setid_cache,

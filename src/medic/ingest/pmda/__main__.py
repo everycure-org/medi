@@ -24,6 +24,7 @@ from medic.ingest.grounding import (
     ground_records,
     resolve_disease_onto_record,
 )
+from medic.ingest.sanity import check_row_floor, record_source
 
 logger = logging.getLogger(__name__)
 
@@ -394,6 +395,13 @@ def main(
             f"PDF at {PRIMARY_PDF}, then re-run. "
             f"Underlying error: {e!r}"
         ) from e
+
+    # Sanity: `parse_pmda_pdf` skips any page whose header map does not resolve and
+    # returns [] on a layout change, which would overwrite kb/drugs/pmda and
+    # kb/indications/pmda with empty files and still exit 0. The floor turns that
+    # into a loud failure. (Same control as Russia/China.)
+    check_row_floor("pmda", len(records))
+    record_source("pmda", str(pdf_path), len(records))
 
     logger.info(
         "Using PMDA primary source: %d unique ingredients from %d raw records",

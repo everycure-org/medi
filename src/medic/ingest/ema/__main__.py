@@ -45,6 +45,7 @@ from medic.ingest.common import (
 from medic.ingest.ema.fetch_epar import fetch_epar_pdf
 from medic.ingest.ema.parse_epar import extract_contraindications_text
 from medic.ingest.grounding import ground_records
+from medic.ingest.sanity import check_row_floor, record_source
 from medic.spans import SNIPPET_CHAR_CAP
 
 logger = logging.getLogger(__name__)
@@ -557,6 +558,13 @@ def main(
 
     # Parse raw data
     records = parse_ema(raw_path)
+
+    # Sanity: `parse_ema` returns [] when an expected column is renamed upstream —
+    # a warning, not an exception — which would otherwise overwrite kb/drugs/ema
+    # and kb/indications/ema with empty files and still exit 0. The floor turns
+    # upstream layout drift into a loud failure. (Same control as Russia/China.)
+    check_row_floor("ema", len(records))
+    record_source("ema", str(raw_path), len(records))
 
     # Ground records
     grounding_service = get_grounding_service(grounding_backend)
