@@ -52,19 +52,36 @@ ALLERGEN_CACHE_PATH = Path("cache/enrichment/dailymed_allergen.json")
 # ---------------------------------------------------------------------------
 
 
+def _flatten_section_text(section: ET.Element) -> str:
+    """Flatten an SPL section to plain text, including nested subsections.
+
+    Real SPLs keep only a lead-in sentence ("... indicated for the treatment of
+    patients with:") in the LOINC-coded section's own <text>, and put the actual
+    indication list in <component><section> children. Reading only the direct
+    <text> child therefore dropped the whole list on 23% of labels and returned a
+    fragment on most of the rest, which left the LLM to supply the missing
+    diseases from prior knowledge.
+
+    <title> elements are included because a subsection's disease name frequently
+    appears only in its heading. Structural elements (<code>, <ingredient>) are
+    skipped so ingredient names cannot leak into the indication text.
+    """
+    wanted = (f"{{{NS['v3']}}}title", f"{{{NS['v3']}}}text")
+    parts: list[str] = []
+    for elem in section.iter():
+        if elem.tag in wanted:
+            raw = ET.tostring(elem, encoding="unicode")
+            clean = re.sub(r"<[^>]+>", " ", raw)
+            chunk = " ".join(clean.split())
+            if chunk:
+                parts.append(chunk)
+    return " ".join(parts)
+
+
 def extract_section_text(xml_path: str | Path, loinc_code: str) -> str:
     """Extract free-text from an SPL section identified by LOINC code."""
     tree = ET.parse(xml_path)
-    root = tree.getroot()
-    for section in root.iter(f"{{{NS['v3']}}}section"):
-        code = section.find("v3:code", NS)
-        if code is not None and code.get("code") == loinc_code:
-            text_elem = section.find("v3:text", NS)
-            if text_elem is not None:
-                raw = ET.tostring(text_elem, encoding="unicode")
-                clean = re.sub(r"<[^>]+>", " ", raw)
-                return " ".join(clean.split())
-    return ""
+    return _extract_section_text_from_root(tree.getroot(), loinc_code)
 
 
 def extract_active_ingredients(xml_path: str | Path) -> list[str]:
@@ -173,15 +190,14 @@ def mine_spl_labels(data_dir: Path, max_labels: int = 0) -> pd.DataFrame:
 
 
 def _extract_section_text_from_root(root: ET.Element, loinc_code: str) -> str:
-    """Extract section text directly from an already-parsed root element."""
+    """Extract section text directly from an already-parsed root element.
+
+    Reads the whole matched section subtree — see `_flatten_section_text`.
+    """
     for section in root.iter(f"{{{NS['v3']}}}section"):
         code = section.find("v3:code", NS)
         if code is not None and code.get("code") == loinc_code:
-            text_elem = section.find("v3:text", NS)
-            if text_elem is not None:
-                raw = ET.tostring(text_elem, encoding="unicode")
-                clean = re.sub(r"<[^>]+>", " ", raw)
-                return " ".join(clean.split())
+            return _flatten_section_text(section)
     return ""
 
 

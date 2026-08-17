@@ -46,6 +46,44 @@ _SPL_XML = """<?xml version="1.0" encoding="UTF-8"?>
 </document>
 """
 
+# A *nested* SPL: the LOINC-coded section carries only a lead-in sentence in its
+# own <text>, and the actual indications live in <component><section> children.
+# This is the common real-world shape (e.g. VABYSMO, captopril). Reading only the
+# direct <text> child returns the lead-in and silently drops every indication,
+# which left the LLM to supply them from prior knowledge.
+_SPL_XML_NESTED = """<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="urn:hl7-org:v3">
+  <setId root="99999999-8888-7777-6666-555555555555"/>
+  <component><structuredBody><component><section>
+    <code code="34067-9" codeSystem="2.16.840.1.113883.6.1"/>
+    <title>1 INDICATIONS AND USAGE</title>
+    <text><paragraph>Widgetol is a widget inhibitor indicated for the treatment
+      of patients with:</paragraph></text>
+    <component><section>
+      <title>1.1 Neovascular Age-Related Macular Degeneration</title>
+      <text><paragraph>Widgetol is indicated for neovascular age-related
+        macular degeneration.</paragraph></text>
+    </section></component>
+    <component><section>
+      <title>1.2 Macular Edema Following Retinal Vein Occlusion</title>
+      <text><paragraph>Widgetol is indicated for macular edema following
+        retinal vein occlusion.</paragraph></text>
+    </section></component>
+    <ingredient><ingredientSubstance>
+      <activeMoiety><activeMoiety><name>WIDGETOL</name></activeMoiety></activeMoiety>
+    </ingredientSubstance></ingredient>
+  </section></component>
+  <component><section>
+    <code code="34070-3" codeSystem="2.16.840.1.113883.6.1"/>
+    <text><paragraph>Contraindicated in:</paragraph></text>
+    <component><section>
+      <text><paragraph>Active ocular infection.</paragraph></text>
+    </section></component>
+  </section></component>
+  </structuredBody></component>
+</document>
+"""
+
 
 # ---------------------------------------------------------------------------
 # _parse_llm_disease_list
@@ -106,6 +144,27 @@ def test_extract_section_text_strips_markup():
     assert "<" not in ind  # nested tags stripped
     con = _extract_section_text_from_root(root, LOINC_CONTRAINDICATIONS)
     assert "severe hepatic impairment" in con
+
+
+def test_extract_section_text_reads_nested_subsections():
+    """Regression: the indication list usually lives in nested <component><section>
+    children, not in the LOINC section's own <text>. Reading only the direct
+    <text> child dropped every indication and left the LLM to invent them."""
+    root = ET.fromstring(_SPL_XML_NESTED)
+    ind = _extract_section_text_from_root(root, LOINC_INDICATIONS)
+    assert "neovascular age-related" in ind
+    assert "macular edema following" in ind
+    assert "indicated for the treatment" in ind  # lead-in still present
+    assert "<" not in ind
+    con = _extract_section_text_from_root(root, LOINC_CONTRAINDICATIONS)
+    assert "active ocular infection" in con.lower()
+
+
+def test_nested_spl_yields_a_row_with_full_indication_text():
+    root = ET.fromstring(_SPL_XML_NESTED)
+    row = _row_from_spl_root(root)
+    assert row is not None
+    assert "macular edema following" in row["indications_text"]
 
 
 def test_extract_ingredients_from_root():
