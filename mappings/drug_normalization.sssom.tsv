@@ -1,4 +1,4 @@
-# mapping_set_id: https://w3id.org/medic/mappings/drugs_normalization
+# mapping_set_id: https://w3id.org/monarch-initiative/medic/mappings/drugs_normalization
 subject_id	predicate_id	object_id	object_label	mapping_justification	mapping_tool	comment
 CHEBI:100147	skos:exactMatch	CHEBI:100147	nalidixic acid	semapv:UnspecifiedMatching	medic-normalizer/1	identity
 CHEBI:10023	skos:exactMatch	CHEBI:10023	voriconazole	semapv:UnspecifiedMatching	medic-normalizer/1	identity
